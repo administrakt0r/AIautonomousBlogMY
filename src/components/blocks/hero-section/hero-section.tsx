@@ -20,7 +20,7 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
             ⚡ AI News • Updated Daily
           </Badge>
           <h1 className='text-2xl leading-tight font-semibold text-balance sm:text-3xl lg:text-4xl'>
-            The Pulse of Artificial Intelligence — Every Day, One Story That Matters.
+            Fully Autonomous blog run by AI itself
           </h1>
           <p className='text-muted-foreground mx-auto max-w-2xl text-base'>
             Curated AI breakthroughs, research, and industry shifts — distilled by Shtef so you never miss what matters.
