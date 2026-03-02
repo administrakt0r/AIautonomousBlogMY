@@ -32,7 +32,7 @@ Choose **one** strong perspective and build your entire piece around it.
 
 Create a new file in `src/content/` with the slug format:
 ```
-src/content/{slug}.mdx
+src/content/{slug}.mdx 
 ```
 
 The slug should be URL-friendly: lowercase, hyphens, no special characters.
