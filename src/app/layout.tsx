@@ -26,6 +26,8 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ['300', '400', '500', '600', '700']
 })
 
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'
+
 export const metadata: Metadata = {
   title: {
     template: '%s | ShtefAI blog — AI News by Shtef',
@@ -33,7 +35,20 @@ export const metadata: Metadata = {
   },
   description:
     'ShtefAI blog delivers daily AI news, breakthroughs, and analysis. Curated and written by Shtef — your autonomous AI correspondent covering the frontier of artificial intelligence.',
-  robots: 'index,follow',
+  robots: {
+    index: true,
+    follow: true,
+    'max-image-preview': 'large',
+    'max-snippet': -1,
+    'max-video-preview': -1,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   keywords: [
     'AI news',
     'artificial intelligence',
@@ -45,9 +60,20 @@ export const metadata: Metadata = {
     'GPT',
     'AI research',
     'ShtefAI blog',
-    'daily AI updates'
+    'daily AI updates',
+    'AI news today',
+    'latest AI developments',
+    'AI blog',
+    'autonomous AI blog'
   ],
-  metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`),
+  authors: [{ name: 'Shtef', url: SITE_URL }],
+  creator: 'administraktor.com',
+  publisher: 'ShtefAI blog',
+  category: 'Technology',
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: {
       template: '%s | ShtefAI blog',
@@ -56,12 +82,13 @@ export const metadata: Metadata = {
     description:
       'ShtefAI blog delivers daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.',
     type: 'website',
+    locale: 'en_US',
     siteName: 'ShtefAI blog',
-    url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`,
+    url: SITE_URL,
     images: [
       {
         url: '/images/og-image.webp',
-        type: 'image/png',
+        type: 'image/webp',
         width: 1200,
         height: 630,
         alt: 'ShtefAI blog — Daily AI News by Shtef'
@@ -76,6 +103,14 @@ export const metadata: Metadata = {
     },
     description:
       'Daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.'
+  },
+  verification: {
+    // Add your Google Search Console verification code here when available
+    // google: 'your-verification-code',
+  },
+  other: {
+    'application-name': 'ShtefAI blog',
+    'msapplication-TileColor': '#059669',
   }
 }
 

@@ -1,50 +1,31 @@
 {
-  "name": "Ink - Blog Landing Page | Shadcn Studio",
-  "short_name": "Ink - Blog Landing Page",
-  "description": "Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.",
+  "name": "ShtefAI blog — Daily AI News by Shtef",
+  "short_name": "ShtefAI blog",
+  "description": "ShtefAI blog delivers daily AI news, breakthroughs, and analysis. Fully autonomous, curated by Shtef — your AI correspondent.",
   "start_url": "/",
   "scope": "/",
+  "id": "/",
   "display": "standalone",
-  "background_color": "#eaedf8",
-  "theme_color": "#111826",
+  "background_color": "#0f172a",
+  "theme_color": "#059669",
   "orientation": "portrait-primary",
   "categories": [
     "news",
-    "education",
+    "technology",
     "education"
   ],
   "icons": [
     {
-      "src": "/favicon/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon/favicon-32x32.png",
+      "src": "/icon",
       "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon/favicon-16x16.png",
-      "sizes": "16x16",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "/images/og-image.png",
+      "src": "/images/og-image.webp",
       "sizes": "1200x630",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "wide"
     }
   ],
@@ -54,6 +35,12 @@
       "short_name": "Home",
       "description": "Go to homepage",
       "url": "/"
+    },
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "Learn about ShtefAI blog",
+      "url": "/about"
     }
   ]
 }

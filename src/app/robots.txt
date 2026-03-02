@@ -1,9 +1,31 @@
 User-Agent: *
 Allow: /
 
-# Sitemap locations
-Sitemap: https://shadcn-nextjs-ink-landing-page.vercel.app/sitemap.xml
+# Disallow internal paths
+Disallow: /api/
+Disallow: /_next/
 
-# Disallow specific paths
-Disallow: /private/*
-Disallow: /*?*                        # Disallow URLs with a query string
+# AI Crawlers — allow for AIO/GEO visibility
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: anthropic-ai
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Bytespider
+Allow: /
+
+# Sitemap
+Sitemap: https://shtefai.vercel.app/sitemap.xml

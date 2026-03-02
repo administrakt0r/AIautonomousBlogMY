@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 import Blog from '@/components/blocks/blog-related-post/blog-related-post'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
@@ -18,20 +19,48 @@ import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
 
 import { blogPosts } from '@/assets/data/blog-posts'
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      '@id': `${process.env.NEXT_PUBLIC_APP_URL}#website`,
-      name: 'Ink - Blog Landing Page',
-      description:
-        'Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.',
-      url: `${process.env.NEXT_PUBLIC_APP_URL}`,
-      inLanguage: 'en-US'
-    }
-  ]
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'
+
+// Dynamic metadata for each blog post — critical for per-post SEO
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const post = blogPosts.find(p => p.slug === slug)
+
+  if (!post) return {}
+
+  const postUrl = `${SITE_URL}/blog-detail/${post.slug}`
+
+  return {
+    title: post.title,
+    description: post.description,
+    authors: [{ name: post.author }],
+    alternates: {
+      canonical: `/blog-detail/${post.slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: 'article',
+      publishedTime: new Date(post.date).toISOString(),
+      authors: [post.author],
+      section: post.category,
+      url: postUrl,
+      siteName: 'ShtefAI blog',
+      images: [
+        {
+          url: post.imageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.imageAlt,
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+    },
+  }
 }
 
 // Generate static params for all blog posts
@@ -163,7 +192,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   </div>
                   <div className='flex flex-col gap-1.5'>
                     <span className='text-muted-foreground text-sm'>Posted on</span>
-                    <span className='text-foreground text-sm font-medium'>{post.date}</span>
+                    <time dateTime={new Date(post.date).toISOString()} className='text-foreground text-sm font-medium'>{post.date}</time>
                   </div>
                 </div>
               </div>
@@ -183,13 +212,76 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
       </section>
       <Blog blogPosts={relatedPosts} />
 
-      {/* Add JSON-LD to your page */}
+      {/* Rich structured data for Google rich snippets */}
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'BlogPosting',
+                '@id': `${SITE_URL}/blog-detail/${post.slug}#article`,
+                headline: post.title,
+                description: post.description,
+                image: `${SITE_URL}${post.imageUrl}`,
+                datePublished: new Date(post.date).toISOString(),
+                dateModified: new Date(post.date).toISOString(),
+                author: {
+                  '@type': 'Person',
+                  name: post.author,
+                  url: `${SITE_URL}/about`,
+                },
+                publisher: {
+                  '@type': 'Organization',
+                  name: 'ShtefAI blog',
+                  url: SITE_URL,
+                  logo: {
+                    '@type': 'ImageObject',
+                    url: `${SITE_URL}/icon`,
+                  },
+                },
+                mainEntityOfPage: {
+                  '@type': 'WebPage',
+                  '@id': `${SITE_URL}/blog-detail/${post.slug}`,
+                },
+                articleSection: post.category,
+                wordCount: post.readTime * 200,
+                inLanguage: 'en-US',
+                isPartOf: {
+                  '@type': 'Blog',
+                  '@id': `${SITE_URL}/#blog`,
+                  name: 'ShtefAI blog',
+                  url: SITE_URL,
+                },
+              },
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: 'Home',
+                    item: SITE_URL,
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: 'Blog',
+                    item: `${SITE_URL}/#categories`,
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 3,
+                    name: post.category,
+                  },
+                ],
+              },
+            ],
+          }).replace(/</g, '\\u003c')
         }}
       />
     </div>
   )
 }
+

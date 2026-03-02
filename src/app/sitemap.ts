@@ -1,19 +1,39 @@
 import type { MetadataRoute } from 'next'
 
+import { blogPosts } from '@/assets/data/blog-posts'
+
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const routes = [
-    '',
-    '/blog-detail/scaling-design-component-system',
-    '/blog-detail/user-behavior-design',
-    '/blog-detail/product-launch-checklist',
-    '/blog-detail/empathy-driven-design',
-    '/blog-detail/fast-apps-blueprint',
-    '/blog-detail/product-kpis-tracking',
-    '/blog-detail/ai-driven-workflows',
-    '/blog-detail/scalable-code'
+  // Static pages
+  const staticRoutes: MetadataRoute.Sitemap = [
+    {
+      url: BASE_URL,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 1.0,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/responsible-ai-usage`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
   ]
 
-  return routes.map(route => ({
-    url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}${route}`
+  // Dynamic blog post routes
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map(post => ({
+    url: `${BASE_URL}/blog-detail/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
   }))
+
+  return [...staticRoutes, ...blogRoutes]
 }

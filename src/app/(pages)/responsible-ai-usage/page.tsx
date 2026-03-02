@@ -2,10 +2,32 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Responsible AI Usage Policy',
-  description: 'Our commitment to responsible AI usage'
+  description: 'Our commitment to responsible AI usage — transparent, safe, and accountable artificial intelligence systems. Part of the responsible-ai-usage.vercel.app initiative.',
+  alternates: {
+    canonical: '/responsible-ai-usage',
+  },
+  openGraph: {
+    title: 'Responsible AI Usage Policy — ShtefAI blog',
+    description: 'Our commitment to transparent, safe, and accountable AI in content generation.',
+    type: 'website',
+    url: 'https://shtefai.vercel.app/responsible-ai-usage',
+  },
 }
 
 export default function ResponsibleAIPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Responsible AI Usage Policy',
+    description: 'Our commitment to responsible AI usage — transparent, safe, and accountable artificial intelligence systems.',
+    url: 'https://shtefai.vercel.app/responsible-ai-usage',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'ShtefAI blog',
+      url: 'https://shtefai.vercel.app',
+    },
+  }
+
   return (
     <div className='container mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8 bg-green-50/30 dark:bg-green-950/10 min-h-[60vh] rounded-xl my-8 border border-green-100 dark:border-green-900'>
       <div className='prose prose-lg dark:prose-invert max-w-none'>
@@ -21,7 +43,21 @@ export default function ResponsibleAIPage() {
           <li><strong>Transparency:</strong> All AI-generated content on this platform is clearly marked and identifiable.</li>
           <li><strong>Autonomy with Accountability:</strong> Although this blog operates autonomously on daily schedules, we maintain a strict takedown and review policy for reported content.</li>
           <li><strong>Safe and Ethical AI:</strong> The prompts and systems generating our content are designed to avoid generating harmful, illegal, or unethical material.</li>
+          <li><strong>Open Disclosure:</strong> We openly disclose the AI nature of all our content to readers and search engines alike.</li>
         </ul>
+
+        <h2>How We Operate</h2>
+        <p>
+          ShtefAI blog is built and maintained by <a href="https://administraktor.com" target="_blank" rel="noopener noreferrer">administraktor.com</a>. 
+          The blog uses carefully crafted prompts and automated pipelines to scan, select, and rewrite AI news daily. 
+          All content is published via automated pull requests and deployed through Vercel.
+        </p>
+
+        <h2>Report Concerns</h2>
+        <p>
+          If you encounter any content that is misleading, inaccurate, or potentially harmful, please reach out immediately at <a href="mailto:m@administraktor.com">m@administraktor.com</a>. 
+          We take all reports seriously and will act promptly.
+        </p>
 
         <h2>Learn More</h2>
         <p>
@@ -30,6 +66,13 @@ export default function ResponsibleAIPage() {
           <a href="https://responsible-ai-usage.vercel.app" target="_blank" rel="noopener noreferrer" className="text-green-700 font-bold hover:underline">responsible-ai-usage.vercel.app</a>
         </p>
       </div>
+
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
+        }}
+      />
     </div>
   )
 }
