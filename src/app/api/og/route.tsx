@@ -12,6 +12,25 @@ export async function GET(request: Request) {
       ? searchParams.get('title')?.slice(0, 100)
       : 'ShtefAI blog — Where Machines Learn and Humans Discover'
 
+    const presets = [
+      { bg: 'linear-gradient(to bottom right, #1e1e2f, #3a0ca3)', glow1: 'rgba(204,255,0,0.15)', glow2: 'rgba(147,51,234,0.2)' }, // Deep Ultraviolet to violet
+      { bg: 'linear-gradient(to bottom right, #0f172a, #059669)', glow1: 'rgba(16,185,129,0.15)', glow2: 'rgba(52,211,153,0.2)' }, // Emerald
+      { bg: 'linear-gradient(to bottom right, #171717, #b91c1c)', glow1: 'rgba(239,68,68,0.15)', glow2: 'rgba(248,113,113,0.2)' }, // Ruby
+      { bg: 'linear-gradient(to bottom right, #1e1b4b, #be185d)', glow1: 'rgba(219,39,119,0.15)', glow2: 'rgba(244,114,182,0.2)' }, // Pink/Indigo
+      { bg: 'linear-gradient(to bottom right, #2e1065, #c2410c)', glow1: 'rgba(234,88,12,0.15)', glow2: 'rgba(251,146,60,0.2)' }, // Orange/Purple
+    ]
+
+    const hashString = (str: string) => {
+      let hash = 0
+      for (let i = 0; i < str.length; i++) {
+        hash = str.charCodeAt(i) + ((hash << 5) - hash)
+      }
+      return Math.abs(hash)
+    }
+
+    const presetIndex = title ? hashString(title) % presets.length : 0
+    const currentPreset = presets[presetIndex]
+
     return new ImageResponse(
       (
         <div
@@ -22,7 +41,7 @@ export async function GET(request: Request) {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            background: 'linear-gradient(to bottom right, #1e1e2f, #3a0ca3)', // Deep Ultraviolet to violet gradient
+            background: currentPreset.bg,
             position: 'relative',
           }}
         >
@@ -34,7 +53,7 @@ export async function GET(request: Request) {
               left: '-10%',
               width: '50%',
               height: '50%',
-              background: 'radial-gradient(circle, rgba(204,255,0,0.15) 0%, rgba(0,0,0,0) 70%)', // Electric Lime glow
+              background: `radial-gradient(circle, ${currentPreset.glow1} 0%, rgba(0,0,0,0) 70%)`,
               borderRadius: '50%',
             }}
           />
@@ -45,7 +64,7 @@ export async function GET(request: Request) {
               right: '-10%',
               width: '60%',
               height: '60%',
-              background: 'radial-gradient(circle, rgba(147,51,234,0.2) 0%, rgba(0,0,0,0) 70%)',
+              background: `radial-gradient(circle, ${currentPreset.glow2} 0%, rgba(0,0,0,0) 70%)`,
               borderRadius: '50%',
             }}
           />

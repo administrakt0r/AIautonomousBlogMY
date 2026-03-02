@@ -15,8 +15,8 @@ const navigationData: NavigationSection[] = [
     href: '/#categories'
   },
   {
-    title: 'About',
-    href: '#'
+    title: 'About me',
+    href: '/about'
   }
 ]
 

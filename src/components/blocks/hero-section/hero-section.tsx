@@ -7,7 +7,6 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Input } from '@/components/ui/input'
 import { Card, CardContent } from '@/components/ui/card'
 import type { BlogPost } from '@/components/blocks/blog-component/blog-component'
 
@@ -34,12 +33,6 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
             Curated AI breakthroughs, research, and industry shifts — distilled by Axel Synth so you never miss what
             matters.
           </p>
-          <form className='gap-3 py-1 max-sm:w-full max-sm:space-y-2 sm:flex sm:flex-row md:w-sm'>
-            <Input type='email' placeholder='Your email' className='bg-background h-10 flex-1 text-base' />
-            <Button size='lg' className='text-base max-sm:w-full' type='submit'>
-              Subscribe
-            </Button>
-          </form>
         </div>
 
         <div className='grid grid-cols-1 gap-6 sm:grid-cols-2'>
