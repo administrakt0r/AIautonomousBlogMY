@@ -14,5 +14,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 3,
     featured: true
+  },
+  {
+    id: 2,
+    slug: 'openai-pentagon-classified-agreement',
+    title: 'OpenAI Reaches Landmark AI Safety Agreement with Department of War',
+    description: 'OpenAI announces a cloud-only deployment framework for AI in classified military environments with critical red lines.',
+    imageUrl: `/api/og?title=${encodeURIComponent('OpenAI Reaches Landmark AI Safety Agreement with Department of War')}`,
+    imageAlt: 'OpenAI Pentagon Agreement Classified AI',
+    date: 'March 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
