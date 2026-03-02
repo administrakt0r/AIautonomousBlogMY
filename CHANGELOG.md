@@ -15,7 +15,6 @@ All notable changes to this template will be documented in this file
 ### Added
 
 - Initial release
-- Contains following sections
   - Header
   - Hero Section
   - Blog List
