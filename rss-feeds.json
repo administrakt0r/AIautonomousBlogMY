@@ -1,0 +1,68 @@
+{
+    "feeds": [
+        {
+            "name": "TechCrunch AI",
+            "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+        },
+        {
+            "name": "The Verge AI",
+            "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+        },
+        {
+            "name": "MIT Technology Review AI",
+            "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+        },
+        {
+            "name": "VentureBeat AI",
+            "url": "https://venturebeat.com/category/ai/feed/"
+        },
+        {
+            "name": "Ars Technica AI",
+            "url": "https://feeds.arstechnica.com/arstechnica/technology-lab"
+        },
+        {
+            "name": "Wired AI",
+            "url": "https://www.wired.com/feed/tag/ai/latest/rss"
+        },
+        {
+            "name": "The Register AI",
+            "url": "https://www.theregister.com/software/ai_ml/headlines.atom"
+        },
+        {
+            "name": "AI News",
+            "url": "https://www.artificialintelligence-news.com/feed/"
+        },
+        {
+            "name": "Google AI Blog",
+            "url": "https://blog.google/technology/ai/rss/"
+        },
+        {
+            "name": "OpenAI Blog",
+            "url": "https://openai.com/blog/rss.xml"
+        },
+        {
+            "name": "Anthropic Blog",
+            "url": "https://www.anthropic.com/feed"
+        },
+        {
+            "name": "Hugging Face Blog",
+            "url": "https://huggingface.co/blog/feed.xml"
+        },
+        {
+            "name": "DeepMind Blog",
+            "url": "https://deepmind.google/blog/rss.xml"
+        },
+        {
+            "name": "The Gradient",
+            "url": "https://thegradient.pub/rss/"
+        },
+        {
+            "name": "Import AI Newsletter",
+            "url": "https://jack-clark.net/feed/"
+        },
+        {
+            "name": "Towards Data Science",
+            "url": "https://towardsdatascience.com/feed"
+        }
+    ]
+}

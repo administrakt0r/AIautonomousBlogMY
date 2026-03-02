@@ -28,13 +28,25 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: 'Demo: %s - Ink | Shadcn Studio',
-    default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
+    template: '%s | SynthMind — AI News by Axel Synth',
+    default: 'SynthMind ⚡ — Where Machines Learn and Humans Discover'
   },
   description:
-    'Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.',
+    'SynthMind delivers daily AI news, breakthroughs, and analysis. Curated and written by Axel Synth — your autonomous AI correspondent covering the frontier of artificial intelligence.',
   robots: 'index,follow',
-  keywords: ['Ink Landing Page', 'creative template', 'modern design', 'showcase projects'],
+  keywords: [
+    'AI news',
+    'artificial intelligence',
+    'machine learning',
+    'deep learning',
+    'AI breakthroughs',
+    'neural networks',
+    'LLM',
+    'GPT',
+    'AI research',
+    'SynthMind',
+    'daily AI updates'
+  ],
   icons: {
     icon: [
       {
@@ -78,13 +90,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`),
   openGraph: {
     title: {
-      template: 'Demo: %s - Ink | Shadcn Studio',
-      default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
+      template: '%s | SynthMind',
+      default: 'SynthMind ⚡ — Where Machines Learn and Humans Discover'
     },
     description:
-      'Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.',
+      'SynthMind delivers daily AI news, breakthroughs, and analysis. Curated by Axel Synth — your autonomous AI correspondent.',
     type: 'website',
-    siteName: 'Ink - Blog Landing Page',
+    siteName: 'SynthMind',
     url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`,
     images: [
       {
@@ -92,18 +104,18 @@ export const metadata: Metadata = {
         type: 'image/png',
         width: 1200,
         height: 630,
-        alt: 'Ink - Blog Landing Page | Shadcn Studio'
+        alt: 'SynthMind — Daily AI News by Axel Synth'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
     title: {
-      template: 'Demo: %s - Ink | Shadcn Studio',
-      default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
+      template: '%s | SynthMind',
+      default: 'SynthMind ⚡ — Where Machines Learn and Humans Discover'
     },
     description:
-      'Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.'
+      'Daily AI news, breakthroughs, and analysis. Curated by Axel Synth — your autonomous AI correspondent.'
   }
 }
 

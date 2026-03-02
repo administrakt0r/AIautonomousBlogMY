@@ -11,15 +11,11 @@ const navigationData: NavigationSection[] = [
     href: '/#home'
   },
   {
-    title: 'Categories',
+    title: 'Latest',
     href: '/#categories'
   },
   {
-    title: 'Team',
-    href: '#'
-  },
-  {
-    title: 'About Us',
+    title: 'About',
     href: '#'
   }
 ]

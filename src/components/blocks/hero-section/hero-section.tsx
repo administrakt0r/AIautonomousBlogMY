@@ -25,14 +25,14 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
         {/* Hero Header */}
         <div className='flex max-w-4xl flex-col items-center gap-4 self-center text-center'>
           <Badge variant='outline' className='text-sm font-normal'>
-            Trusted by 1,000,000+ professionals
+            ⚡ AI News • Updated Daily
           </Badge>
           <h1 className='text-3xl leading-[1.29167] font-semibold text-balance sm:text-4xl lg:text-5xl'>
-            Build Better Products with Insights that Drive Real Impact.
+            The Pulse of Artificial Intelligence — Every Day, One Story That Matters.
           </h1>
           <p className='text-muted-foreground mx-auto max-w-2xl text-xl'>
-            Learn how to design, develop, launch, and grow digital products through practical knowledge and proven
-            frameworks.
+            Curated AI breakthroughs, research, and industry shifts — distilled by Axel Synth so you never miss what
+            matters.
           </p>
           <form className='gap-3 py-1 max-sm:w-full max-sm:space-y-2 sm:flex sm:flex-row md:w-sm'>
             <Input type='email' placeholder='Your email' className='bg-background h-10 flex-1 text-base' />

@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from 'lucide-react'
+import { TwitterIcon, GithubIcon, RssIcon } from 'lucide-react'
 
 import Link from 'next/link'
 
@@ -16,38 +16,20 @@ const Footer = () => {
           </div>
         </Link>
         <div className='flex flex-wrap items-center justify-center gap-x-3 gap-y-2 whitespace-nowrap sm:gap-5'>
-          <Link
-            href='#'
-            className='text-muted-foreground hover:text-foreground opacity-80 transition-opacity duration-300 hover:opacity-100'
-          >
-            Support
-          </Link>
-          <Link
-            href='#'
-            className='text-muted-foreground hover:text-foreground opacity-80 transition-opacity duration-300 hover:opacity-100'
-          >
-            Terms & Conditions
-          </Link>
-          <Link
-            href='#'
-            className='text-muted-foreground hover:text-foreground opacity-80 transition-opacity duration-300 hover:opacity-100'
-          >
-            Privacy Policy
-          </Link>
+          <span className='text-muted-foreground text-sm'>
+            Written by <strong>Axel Synth</strong> 🤖
+          </span>
         </div>
 
         <div className='flex items-center gap-4'>
           <Link href='#' className='text-muted-foreground hover:text-foreground'>
-            <FacebookIcon className='size-5' />
-          </Link>
-          <Link href='#' className='text-muted-foreground hover:text-foreground'>
-            <InstagramIcon className='size-5' />
-          </Link>
-          <Link href='#' className='text-muted-foreground hover:text-foreground'>
             <TwitterIcon className='size-5' />
           </Link>
           <Link href='#' className='text-muted-foreground hover:text-foreground'>
-            <YoutubeIcon className='size-5' />
+            <GithubIcon className='size-5' />
+          </Link>
+          <Link href='#' className='text-muted-foreground hover:text-foreground'>
+            <RssIcon className='size-5' />
           </Link>
         </div>
       </div>
@@ -59,10 +41,10 @@ const Footer = () => {
           <span>
             {`©${new Date().getFullYear()}`}{' '}
             <Link href='/#' className='hover:underline'>
-              INK,
+              SynthMind
             </Link>
           </span>
-          <span> Made with ❤️ for better web.</span>
+          <span> — Where machines learn and humans discover.</span>
         </p>
       </div>
     </footer>
