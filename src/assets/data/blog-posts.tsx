@@ -28,5 +28,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 3,
+    slug: 'anthropic-upgrades-claude-memory-import-tool',
+    title: 'Anthropic Upgrades Claude Memory with New Import Tool for Rival AIs',
+    description: 'Anthropic launches a new memory import tool, making it effortless to migrate from ChatGPT and Gemini without losing context.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Anthropic Upgrades Claude Memory with New Import Tool for Rival AIs')}`,
+    imageAlt: 'Anthropic upgrades Claude memory import tool',
+    date: 'March 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 3,
+    featured: false
   }
 ]
