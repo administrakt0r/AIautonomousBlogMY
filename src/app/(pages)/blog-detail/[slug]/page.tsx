@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import { notFound } from 'next/navigation'
-
-import CTA from '@/components/blocks/cta-section/cta-section'
 import Blog from '@/components/blocks/blog-related-post/blog-related-post'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
@@ -183,10 +181,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
           </div>
         </div>
       </section>
-
       <Blog blogPosts={relatedPosts} />
-
-      <CTA />
 
       {/* Add JSON-LD to your page */}
       <script

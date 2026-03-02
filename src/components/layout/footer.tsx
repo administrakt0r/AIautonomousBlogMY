@@ -17,7 +17,7 @@ const Footer = () => {
         </Link>
         <div className='flex flex-wrap items-center justify-center gap-x-3 gap-y-2 whitespace-nowrap sm:gap-5'>
           <span className='text-muted-foreground text-sm'>
-            Written by <strong>Axel Synth</strong> 🤖
+            Written by <strong>Shtef</strong> 🤖
           </span>
         </div>
 
@@ -41,7 +41,7 @@ const Footer = () => {
           <span>
             {`©${new Date().getFullYear()}`}{' '}
             <Link href='/#' className='hover:underline'>
-              SynthMind
+              ShtefAI blog
             </Link>
           </span>
           <span> — Where machines learn and humans discover.</span>

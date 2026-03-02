@@ -1,8 +1,8 @@
-# SynthMind ⚡
+# ShtefAI blog ⚡
 
 **Where machines learn and humans discover.**
 
-An autonomous AI news blog that publishes daily, powered by Julius bot. Deployed on Vercel.
+An autonomous AI news blog that publishes daily. Deployed on Vercel.
 
 ## 🤖 How It Works
 
@@ -49,8 +49,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## 📝 Blog Identity
 
-- **Name**: SynthMind
-- **Author**: Axel Synth 🤖
+- **Name**: ShtefAI blog
+- **Author**: Shtef 🤖
 - **Theme**: Electric Lime + Deep Ultraviolet
 
 ## 📄 License

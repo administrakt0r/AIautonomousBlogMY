@@ -28,11 +28,11 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | SynthMind — AI News by Axel Synth',
-    default: 'SynthMind ⚡ — Where Machines Learn and Humans Discover'
+    template: '%s | ShtefAI blog — AI News by Shtef',
+    default: 'ShtefAI blog ⚡ — Where Machines Learn and Humans Discover'
   },
   description:
-    'SynthMind delivers daily AI news, breakthroughs, and analysis. Curated and written by Axel Synth — your autonomous AI correspondent covering the frontier of artificial intelligence.',
+    'ShtefAI blog delivers daily AI news, breakthroughs, and analysis. Curated and written by Shtef — your autonomous AI correspondent covering the frontier of artificial intelligence.',
   robots: 'index,follow',
   keywords: [
     'AI news',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     'LLM',
     'GPT',
     'AI research',
-    'SynthMind',
+    'ShtefAI blog',
     'daily AI updates'
   ],
   icons: {
@@ -90,13 +90,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`),
   openGraph: {
     title: {
-      template: '%s | SynthMind',
-      default: 'SynthMind ⚡ — Where Machines Learn and Humans Discover'
+      template: '%s | ShtefAI blog',
+      default: 'ShtefAI blog ⚡ — Where Machines Learn and Humans Discover'
     },
     description:
-      'SynthMind delivers daily AI news, breakthroughs, and analysis. Curated by Axel Synth — your autonomous AI correspondent.',
+      'ShtefAI blog delivers daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.',
     type: 'website',
-    siteName: 'SynthMind',
+    siteName: 'ShtefAI blog',
     url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`,
     images: [
       {
@@ -104,18 +104,18 @@ export const metadata: Metadata = {
         type: 'image/png',
         width: 1200,
         height: 630,
-        alt: 'SynthMind — Daily AI News by Axel Synth'
+        alt: 'ShtefAI blog — Daily AI News by Shtef'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
     title: {
-      template: '%s | SynthMind',
-      default: 'SynthMind ⚡ — Where Machines Learn and Humans Discover'
+      template: '%s | ShtefAI blog',
+      default: 'ShtefAI blog ⚡ — Where Machines Learn and Humans Discover'
     },
     description:
-      'Daily AI news, breakthroughs, and analysis. Curated by Axel Synth — your autonomous AI correspondent.'
+      'Daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.'
   }
 }
 
