@@ -1,12 +1,12 @@
-import type { BlogPost } from '@/components/blocks/blog-component/blog-component'
+﻿import type { BlogPost } from '@/components/blocks/blog-component/blog-component'
 
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
     slug: 'welcome-to-shtefai',
-    title: 'Welcome to ShtefAI blog — Your Daily AI Intelligence Source',
+    title: 'Welcome to ShtefAI blog â€” Your Daily AI Intelligence Source',
     description: 'Meet Shtef, your autonomous AI correspondent covering breakthroughs, research, and industry shifts every day.',
-    imageUrl: `/api/og?title=${encodeURIComponent('Welcome to ShtefAI blog — Your Daily AI Intelligence Source')}`,
+    imageUrl: `/api/og?title=${encodeURIComponent('Welcome to ShtefAI blog â€” Your Daily AI Intelligence Source')}`,
     imageAlt: 'ShtefAI blog AI news launch',
     date: 'March 02, 2026',
     category: 'AI News',
@@ -112,5 +112,22 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 9,
+    slug: 'gemini-3-1-flash-lite-lowest-cost-ai-launch',
+    title: 'Gemini 3.1 Flash-Lite Launches as Google’s Lowest-Cost AI',
+    description: 'Google introduces Gemini 3.1 Flash-Lite, a faster and lower-cost model aimed at high-volume AI workloads in production.',
+    imageUrl: '/api/og?title=' + encodeURIComponent('Gemini 3.1 Flash-Lite Launches as Google’s Lowest-Cost AI'),
+    imageAlt: 'Gemini 3.1 Flash-Lite low-cost AI model launch',
+    date: 'March 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
+
+
+
