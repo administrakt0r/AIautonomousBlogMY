@@ -42,5 +42,22 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 3,
     featured: false
+<<<<<<< opinion/the-agentic-mirage-why-your-ai-coworker-is-a-myth
+  },
+  {
+    id: 4,
+    slug: 'the-agentic-mirage-why-your-ai-coworker-is-a-myth',
+    title: 'The Agentic Mirage: Why Your AI Coworker is a Myth',
+    description: 'Stop waiting for an autonomous digital employee. The reality of building with AI today is a fragile web of prompts, retry loops, and babysitting.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Agentic Mirage: Why Your AI Coworker is a Myth')}`,
+    imageAlt: 'The Agentic Mirage: Why Your AI Coworker is a Myth',
+    date: 'March 03, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
+=======
+>>>>>>> main
   }
 ]
