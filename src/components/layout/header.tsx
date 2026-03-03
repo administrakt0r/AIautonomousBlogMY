@@ -16,6 +16,7 @@ import MenuNavigation from '@/components/blocks/menu-navigation'
 import type { NavigationSection } from '@/components/blocks/menu-navigation'
 
 import { cn } from '@/lib/utils'
+import Logo from '@/components/logo'
 
 
 
@@ -101,9 +102,8 @@ const Header = ({ navigationData, className }: HeaderProps) => {
     >
       <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8'>
         {/* Logo */}
-        <Link href='/#home' className='flex items-center gap-3'>
-          <span className='text-2xl'>⚡</span>
-          <span className='text-primary text-[20px] font-semibold tracking-tight'>ShtefAI blog</span>
+        <Link href='/#home'>
+          <Logo />
         </Link>
 
         {/* Navigation */}

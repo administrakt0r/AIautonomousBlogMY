@@ -81,7 +81,7 @@ export async function GET(request: Request) {
               border: '1px solid rgba(255, 255, 255, 0.2)',
             }}
           >
-            <span style={{ fontSize: '32px', marginRight: '16px' }}>⚡</span>
+            <img src="https://shtefai.vercel.app/shteflogo.svg" width="32" height="32" style={{ marginRight: '16px', borderRadius: '4px' }} alt="" />
             <span
               style={{
                 fontSize: '32px',
