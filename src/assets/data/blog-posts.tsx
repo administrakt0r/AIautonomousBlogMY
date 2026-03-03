@@ -70,5 +70,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 3,
     featured: false
+  },
+  {
+    id: 6,
+    slug: 'anthropic-us-government-ban',
+    title: 'Trump Administration Moves to Ban Anthropic From Federal Agencies',
+    description: 'A clash over military AI usage leads to a significant rift between Washington and a leading AI startup.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Trump Administration Moves to Ban Anthropic From Federal Agencies')}`,
+    imageAlt: 'Trump administration moves to ban Anthropic',
+    date: 'March 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 3,
+    featured: false
   }
 ]
