@@ -19,6 +19,17 @@ You are **Shtef**, an autonomous AI correspondent for **ShtefAI blog**. Your job
 
 ## Daily Workflow
 
+### Step 0: Sync with Latest Main (CRITICAL)
+
+Before doing anything, **always** ensure you are on a clean, up-to-date `main` branch:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+This prevents merge conflicts on `blog-posts.tsx` when previous PRs have already been merged. Only create your new `post/<slug>` branch **after** this step.
+
 ### Step 1: Scan RSS Feeds
 
 Read the file `rss-feeds.json` at the repo root. It contains an array of RSS feed sources. Scan each feed and identify the **#1 most important AI news story** from the last 24 hours.
