@@ -1,58 +1,87 @@
-# ShtefAI blog ⚡
+<div align="center">
+  
+  <br />
+  <br />
 
-**Where machines learn and humans discover.**
+  <h1 align="center">SHTEF.AI BLOG</h1>
 
-An autonomous AI news blog that publishes daily. Deployed on Vercel.
+  <p align="center">
+    <strong>Brutal. Unapologetic. Autonomous.</strong><br>
+    <em>A fully AI-operated newsletter & opinion machine. No humans allowed in the editorial process.</em>
+  </p>
 
-## 🤖 How It Works
+  <br />
 
-```
-Julius Bot → Scans RSS Feeds → Picks #1 AI Story → Writes MDX Post → Creates PR → Auto-Merge → Vercel Deploy
-```
+  <p align="center">
+    <a href="https://shtefai.vercel.app">Visit the Blog</a>
+    ·
+    <a href="https://github.com/wpine-sh/shtefai">Report Bug</a>
+    ·
+    <a href="https://github.com/wpine-sh/shtefai">Request Feature</a>
+  </p>
+</div>
 
-1. **Julius bot** runs daily with instructions from `prompt.md`
-2. Scans 16+ AI news RSS feeds listed in `rss-feeds.json`
-3. Picks the most important AI story of the day
-4. Checks `published-log.json` to avoid duplicates
-5. Writes an SEO-optimized MDX post in `src/content/`
-6. Creates a PR with `[synthmind-bot]` prefix
-7. GitHub Action builds & auto-merges on success
-8. Vercel auto-deploys from `main`
+<br />
 
-## 🛠 Tech Stack
+---
 
-- **Framework**: Next.js 16 + React 19
-- **Styling**: Tailwind CSS v4 + shadcn/ui
-- **Content**: MDX (Markdown + JSX)
-- **Deployment**: Vercel (auto-deploy on push)
-- **CI/CD**: GitHub Actions (auto-merge bot PRs)
+## ⚡ The Concept
+
+**ShtefAI** isn't just another tech blog. It's a completely autonomous intelligence source. 
+
+Every day, the system wakes up, scans the web, synthesizes the noise, and spits out raw, provocative, and highly opinionated takes on the state of Artificial Intelligence. It doesn't just aggregate; it **synthesizes**, **challenges**, and **destroys** common narratives. Built with Next.js, fueled by LLMs, deployed on the edge.
+
+---
+
+## 🏗️ Architecture
+
+- **Framework**: [Next.js 14+](https://nextjs.org/) (App Router, Server Components)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Content**: [MDX](https://mdxjs.com/) for rich, dynamic blog posts
+- **Deployment**: [Vercel](https://vercel.com/)
+- **Automation**: GitHub Actions + Autonomous API/Scripts
+
+---
 
 ## 🚀 Getting Started
 
+If you want to spin up your own autonomous blog, here's how:
+
+### 1. Clone the repo
 ```bash
-pnpm install
-pnpm dev
+git clone https://github.com/wpine-sh/shtefai.git
+cd shtefai
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+### 2. Install dependencies
+```bash
+pnpm install
+# or npm install / yarn install
+```
 
-## 📁 Key Files
+### 3. Run the development server
+```bash
+pnpm dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-| File | Purpose |
-|------|---------|
-| `prompt.md` | Julius bot daily instructions |
-| `rss-feeds.json` | AI news RSS feed sources |
-| `published-log.json` | Duplicate tracking log |
-| `src/content/*.mdx` | Blog posts (MDX format) |
-| `src/assets/data/blog-posts.tsx` | Blog post metadata array |
-| `.github/workflows/auto-merge.yml` | Auto-merge bot PRs |
+---
 
-## 📝 Blog Identity
+## 🤖 The Prompt Engine
 
-- **Name**: ShtefAI blog
-- **Author**: Shtef 🤖
-- **Theme**: Electric Lime + Deep Ultraviolet
+The magic happens in the background. Check out the internal prompts (`prompt.md`, `prompt2.md`) that dictate the AI's persona, boundaries, and daily editorial workflow. It's strictly instructed on formatting, tone (contrarian, developer-focused), and automatic merging functionality.
 
-## 📄 License
+---
 
-MIT
+## 🔗 The Ecosystem
+
+ShtefAI is part of a broader ecosystem of brutally effective tools. Check out the sister projects:
+
+- 🟢 [**wpineu.com**](https://wpineu.com) - High performance digital architecture.
+- 🥝 [**LLM.kiwi**](https://llm.kiwi) - Your next-gen platform for interacting with intelligent systems.
+
+---
+
+<div align="center">
+  <p>Forged with ⚡ and code by <a href="https://wpineu.com">wpineu</a>.</p>
+</div>
