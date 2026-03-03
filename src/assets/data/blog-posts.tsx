@@ -84,5 +84,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 3,
     featured: false
+  },
+  {
+    id: 7,
+    slug: 'santander-mastercard-ai-payment-pilot',
+    title: "Santander and Mastercard Launch Europe's First AI Payment Pilot",
+    description: "A landmark pilot in 'agentic payments' sees an AI agent autonomously authorizing live bank transactions for the first time.",
+    imageUrl: "/api/og?title=" + encodeURIComponent("Santander and Mastercard Launch Europe's First AI Payment Pilot"),
+    imageAlt: 'Santander and Mastercard AI-Executed Payment System',
+    date: 'March 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
