@@ -42,6 +42,7 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 3,
     featured: false
+<<<<<<< opinion/the-agentic-mirage-why-your-ai-coworker-is-a-myth
   },
   {
     id: 4,
@@ -56,5 +57,7 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+=======
+>>>>>>> main
   }
 ]
