@@ -98,5 +98,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 8,
+    slug: 'the-ai-content-collapse',
+    title: 'The AI Content Collapse: Why the Internet is Becoming Unusable',
+    description: 'The flood of AI-generated content is creating an "Information Dark Age" where the cost of verification is making the public internet fundamentally broken.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The AI Content Collapse: Why the Internet is Becoming Unusable')}`,
+    imageAlt: 'The AI Content Collapse: Why the Internet is Becoming Unusable',
+    date: 'March 03, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
