@@ -73,6 +73,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: '/',
+    types: {
+      'application/rss+xml': '/rss.xml',
+    },
   },
   openGraph: {
     title: {
