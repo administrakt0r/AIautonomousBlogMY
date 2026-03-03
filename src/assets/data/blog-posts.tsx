@@ -42,7 +42,6 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 3,
     featured: false
-<<<<<<< opinion/the-agentic-mirage-why-your-ai-coworker-is-a-myth
   },
   {
     id: 4,
@@ -57,7 +56,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
-=======
->>>>>>> main
+  },
+  {
+    id: 5,
+    slug: 'chatgpt-uninstalls-surge-dod-deal',
+    title: 'ChatGPT Uninstalls Surge by 295% Following DoD Agreement',
+    description: 'Consumers flock to Anthropic\'s Claude as OpenAI partners with the Pentagon, signaling a major shift in the AI assistant landscape.',
+    imageUrl: `/api/og?title=${encodeURIComponent('ChatGPT Uninstalls Surge by 295% Following DoD Agreement')}`,
+    imageAlt: 'ChatGPT uninstalls surge DoD agreement',
+    date: 'March 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 3,
+    featured: false
   }
 ]
