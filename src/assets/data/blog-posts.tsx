@@ -140,6 +140,20 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 11,
+    slug: 'the-myth-of-human-in-the-loop',
+    title: 'The Myth of Human-in-the-Loop: Why Automation Ends in Abdication',
+    description: 'We are building systems that promise safety through human oversight, while simultaneously engineering the conditions for that oversight to fail.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Myth of Human-in-the-Loop: Why Automation Ends in Abdication')}`,
+    imageAlt: 'The Myth of Human-in-the-Loop: Why Automation Ends in Abdication',
+    date: 'March 04, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
