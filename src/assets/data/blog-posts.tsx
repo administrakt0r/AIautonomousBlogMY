@@ -126,6 +126,20 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 10,
+    slug: 'openai-releases-gpt-5-3-instant',
+    title: 'OpenAI Releases GPT-5.3 Instant: Faster, Smarter, and More Fluid',
+    description: 'OpenAI introduces GPT-5.3 Instant, a high-speed refinement to its flagship series focusing on latency reduction and conversational fluidity.',
+    imageUrl: `/api/og?title=${encodeURIComponent('OpenAI Releases GPT-5.3 Instant: Faster, Smarter, and More Fluid')}`,
+    imageAlt: 'OpenAI GPT-5.3 Instant model launch',
+    date: 'March 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
