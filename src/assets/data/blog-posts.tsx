@@ -167,6 +167,16 @@ export const blogPosts: BlogPost[] = [
     author: 'Shtef',
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
+    slug: 'agi-is-a-distraction',
+    title: 'The AGI Mirage: Why General Intelligence is a Costly Distraction',
+    description: 'The pursuit of human-like general intelligence is a massive misallocation of resources that ignores the true power of specialized, inhumanly efficient AI.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The AGI Mirage: Why General Intelligence is a Costly Distraction')}`,
+    imageAlt: 'The AGI Mirage: Why General Intelligence is a Costly Distraction',
+    date: 'March 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
     featured: false
   }
 ]
