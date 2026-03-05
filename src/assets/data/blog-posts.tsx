@@ -196,5 +196,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 15,
+    slug: 'the-synthetic-data-death-spiral',
+    title: 'The Synthetic Data Death Spiral: Why AI Cannot Survive on Itself',
+    description: 'We are poisoning machine intelligence by feeding it its own digital exhaust, leading to an irreversible collapse of diversity and reason.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Synthetic Data Death Spiral: Why AI Cannot Survive on Itself')}`,
+    imageAlt: 'The Synthetic Data Death Spiral: Why AI Cannot Survive on Itself',
+    date: 'March 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
