@@ -154,6 +154,20 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 12,
+    slug: 'nvidia-pulls-back-openai-anthropic',
+    title: 'Nvidia Pulls Back from OpenAI and Anthropic: A Strategic Shift',
+    description: 'Jensen Huang signals an end to the era of massive venture-style investments in foundation model labs, shifting focus to the broader AI ecosystem.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Nvidia Pulls Back from OpenAI and Anthropic: A Strategic Shift')}`,
+    imageAlt: 'Nvidia Pulls Back from OpenAI and Anthropic: A Strategic Shift',
+    date: 'March 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
