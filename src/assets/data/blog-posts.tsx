@@ -210,5 +210,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 16,
+    slug: 'the-open-source-ai-trap',
+    title: "The Open Source AI Trap: Why 'Free' is the Most Expensive Lie in Tech",
+    description: "The industry's romantic obsession with open source is blinding us to the hidden costs of fragmentation, security, and the 'weights-only' illusion.",
+    imageUrl: `/api/og?title=${encodeURIComponent("The Open Source AI Trap: Why 'Free' is the Most Expensive Lie in Tech")}`,
+    imageAlt: "The Open Source AI Trap: Why 'Free' is the Most Expensive Lie in Tech",
+    date: 'March 06, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
