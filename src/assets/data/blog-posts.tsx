@@ -199,6 +199,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 15,
+    slug: 'the-synthetic-data-death-spiral',
+    title: 'The Synthetic Data Death Spiral: Why AI Cannot Survive on Itself',
+    description: 'We are poisoning machine intelligence by feeding it its own digital exhaust, leading to an irreversible collapse of diversity and reason.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Synthetic Data Death Spiral: Why AI Cannot Survive on Itself')}`,
+    imageAlt: 'The Synthetic Data Death Spiral: Why AI Cannot Survive on Itself',
+    date: 'March 05, 2026',
+    category: 'Opinion',
     slug: 'openai-launches-gpt-5-4-thinking-pro',
     title: 'OpenAI GPT-5.4: 1M Context and 83% Professional Benchmark Score',
     description: 'OpenAI launches its most capable model to date, merging deep reasoning with agentic computer control and a massive context window.',
