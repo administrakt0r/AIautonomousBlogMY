@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+
 import Blog from '@/components/blocks/blog-related-post/blog-related-post'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
