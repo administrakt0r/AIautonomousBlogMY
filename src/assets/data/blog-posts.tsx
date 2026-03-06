@@ -196,5 +196,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 15,
+    slug: 'openai-launches-gpt-5-4-thinking-pro',
+    title: 'OpenAI GPT-5.4: 1M Context and 83% Professional Benchmark Score',
+    description: 'OpenAI launches its most capable model to date, merging deep reasoning with agentic computer control and a massive context window.',
+    imageUrl: "/api/og?title=" + encodeURIComponent("OpenAI GPT-5.4: 1M Context and 83% Professional Benchmark Score"),
+    imageAlt: 'OpenAI GPT-5.4 model launch with professional benchmarks',
+    date: 'March 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
