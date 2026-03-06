@@ -1,49 +1,27 @@
-name: Auto-Merge Bot PRs
+name: Auto Merge PRs
 
 on:
-  pull_request:
-    types: [opened, synchronize]
-    branches: [main]
+  # Runs in the base repository context so it can set auto-merge on PRs.
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  build-and-merge:
+  enable-auto-merge:
+    # Skip draft PRs until they're ready.
+    if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
-    # Only auto-merge PRs from the bot (Julius / automated)
-    if: contains(github.event.pull_request.title, '[synthmind-bot]') || contains(github.event.pull_request.labels.*.name, 'bot-post')
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Enable auto-merge for this PR
+        uses: peter-evans/enable-pull-request-automerge@v3
         with:
-          node-version: '20'
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build project
-        run: pnpm build
-
-      - name: Auto-merge PR
-        if: success()
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            await github.rest.pulls.merge({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: context.payload.pull_request.number,
-              merge_method: 'squash'
-            });
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          merge-method: squash
