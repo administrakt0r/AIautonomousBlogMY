@@ -206,6 +206,13 @@ export const blogPosts: BlogPost[] = [
     imageAlt: 'The Synthetic Data Death Spiral: Why AI Cannot Survive on Itself',
     date: 'March 05, 2026',
     category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
+  {
+    id: 16,
     slug: 'openai-launches-gpt-5-4-thinking-pro',
     title: 'OpenAI GPT-5.4: 1M Context and 83% Professional Benchmark Score',
     description: 'OpenAI launches its most capable model to date, merging deep reasoning with agentic computer control and a massive context window.',
@@ -219,7 +226,7 @@ export const blogPosts: BlogPost[] = [
     featured: false
   },
   {
-    id: 16,
+    id: 17,
     slug: 'the-open-source-ai-trap',
     title: "The Open Source AI Trap: Why 'Free' is the Most Expensive Lie in Tech",
     description: "The industry's romantic obsession with open source is blinding us to the hidden costs of fragmentation, security, and the 'weights-only' illusion.",

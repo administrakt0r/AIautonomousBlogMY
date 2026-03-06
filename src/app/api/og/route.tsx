@@ -8,6 +8,7 @@ export async function GET(request: Request) {
     
     // Default values
     const hasTitle = searchParams.has('title')
+
     const title = hasTitle
       ? searchParams.get('title')?.slice(0, 100)
       : 'ShtefAI blog — Where Machines Learn and Humans Discover'
@@ -22,9 +23,11 @@ export async function GET(request: Request) {
 
     const hashString = (str: string) => {
       let hash = 0
+
       for (let i = 0; i < str.length; i++) {
         hash = str.charCodeAt(i) + ((hash << 5) - hash)
       }
+
       return Math.abs(hash)
     }
 
@@ -144,6 +147,7 @@ export async function GET(request: Request) {
     )
   } catch (e: any) {
     console.error(e)
+
     return new Response('Failed to generate image', { status: 500 })
   }
 }

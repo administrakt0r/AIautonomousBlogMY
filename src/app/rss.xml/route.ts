@@ -1,8 +1,10 @@
-import { blogPosts } from '@/assets/data/blog-posts';
-import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+
+import { NextResponse } from 'next/server';
 import { marked } from 'marked';
+
+import { blogPosts } from '@/assets/data/blog-posts';
 
 export async function GET() {
   const latestPosts = blogPosts.slice(0, 10);
