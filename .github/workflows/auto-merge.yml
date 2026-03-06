@@ -15,7 +15,6 @@ permissions:
 
 jobs:
   enable-auto-merge:
-    # Skip draft PRs until they're ready.
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
