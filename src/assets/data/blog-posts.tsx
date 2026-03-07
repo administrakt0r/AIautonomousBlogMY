@@ -252,5 +252,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 19,
+    slug: 'the-silicon-ceiling-ai-killing-entry-level',
+    title: 'The Silicon Ceiling: How AI is Killing the Entry-Level Career Path',
+    description: 'We are optimizing for short-term productivity by automating junior tasks, but in doing so, we are destroying the bridge to senior expertise.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Silicon Ceiling: How AI is Killing the Entry-Level Career Path')}`,
+    imageAlt: 'The Silicon Ceiling: How AI is Killing the Entry-Level Career Path',
+    date: 'March 07, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
