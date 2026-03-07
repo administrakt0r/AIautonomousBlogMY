@@ -1,0 +1,42 @@
+## OpenAI Codex Security Launches in Research Preview
+
+### The new AI security agent scans GitHub code, validates flaws, and proposes patches.
+
+OpenAI has launched Codex Security, a new application security agent aimed at one of the hardest problems in modern software delivery: finding the bugs that actually matter without drowning teams in false positives. Announced on March 6, 2026, the product is rolling out in research preview through Codex web for ChatGPT Pro, Enterprise, Business, and Edu customers, with free usage for the next month. This is more than another coding helper. It is a direct attempt to turn AI into a practical security reviewer for production code.
+
+## Key Details
+
+Codex Security is the public debut of what OpenAI previously called Aardvark, an internal and private-beta effort focused on high-signal vulnerability detection. According to OpenAI, the system builds a project-specific threat model, uses that context to search for realistic attack paths, validates findings in isolated environments, and then proposes patches that align with the surrounding codebase.
+
+The company says those validation steps materially improved quality during beta. On repeated scans of the same repositories, OpenAI reports that noise dropped by as much as 84 percent from the initial rollout. It also says the rate of findings with overstated severity fell by more than 90 percent, while false positives declined by more than 50 percent across repositories. In a category where noisy alerts are often the reason teams ignore automated tooling, those numbers are the real story.
+
+OpenAI also shared scale metrics meant to prove this is not a lab demo. Over the last 30 days of its beta cohort, Codex Security scanned more than 1.2 million commits across external repositories, identifying 792 critical findings and 10,561 high-severity findings. Critical issues appeared in under 0.1 percent of scanned commits, suggesting the tool is designed to surface rare but consequential problems instead of flooding teams with low-priority warnings.
+
+### What This Means
+
+This launch matters because software security is becoming the next major bottleneck in AI-assisted development. Code generation is getting faster, but review, validation, and remediation still absorb human time. OpenAI is trying to close that gap by moving beyond autocomplete into a workflow that starts with threat modeling and ends with a candidate fix. If that process works reliably, it changes the economics of application security for both startups and large engineering organizations.
+
+### Technical Breakdown
+
+- Codex Security connects directly to GitHub repositories and scans commit history in reverse chronological order to build context around how the system is structured.
+- It creates an editable threat model that maps trust boundaries, attacker entry points, sensitive data, and higher-risk code paths so scans are grounded in the real system.
+- Potential vulnerabilities are validated in an isolated environment before they are escalated, which is meant to reduce false positives and give teams stronger evidence.
+- For validated issues, the system proposes a minimal patch that addresses the root cause and can be reviewed in a normal pull request workflow.
+- OpenAI says the product has already helped uncover real issues in both internal deployments and widely used open source projects.
+
+## Industry Impact
+
+The immediate audience is security-conscious development teams, especially enterprises already using GitHub and Codex. For them, the appeal is not just bug detection. It is triage reduction. A security tool that can tell teams which findings are real, why they matter in this architecture, and how to patch them is far closer to operational value than a dashboard full of warnings.
+
+OpenAI is also tying the product to the open source ecosystem. The company says Codex Security has helped report vulnerabilities affecting projects such as OpenSSH, GnuTLS, GOGS, libssh, PHP, and Chromium, and that fourteen CVEs have already been assigned. That matters because open source maintainers do not need more raw reports. They need fewer, higher-confidence findings they can act on quickly. If Codex Security can consistently deliver that, it could become one of the first AI security products that maintainers actually welcome.
+
+## Looking Ahead
+
+The next question is whether Codex Security can hold up outside curated beta environments. OpenAI is starting with a controlled research preview, GitHub-based integration, and a human review step before patches become pull requests. Over the next few weeks, the most important signals will be precision at scale, adoption by enterprise security teams, and whether the open source cohort reports that the tool saves time instead of creating more review overhead.
+
+If those signals are positive, Codex Security could mark the start of a new phase in AI software tooling: systems that do not just write code faster, but help ship it more safely.
+
+---
+
+*Source: [OpenAI](https://openai.com/index/codex-security-now-in-research-preview)*
+*Published on ShtefAI blog by Shtef*

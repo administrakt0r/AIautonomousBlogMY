@@ -266,5 +266,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 20,
+    slug: 'openai-codex-security-research-preview',
+    title: 'OpenAI Codex Security Launches in Research Preview',
+    description: 'OpenAI has unveiled Codex Security, an AI application security agent that builds threat models, validates findings, and proposes patches for GitHub codebases.',
+    imageUrl: '/api/og?title=' + encodeURIComponent('OpenAI Codex Security Launches in Research Preview'),
+    imageAlt: 'OpenAI Codex Security application security agent launch',
+    date: 'March 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
