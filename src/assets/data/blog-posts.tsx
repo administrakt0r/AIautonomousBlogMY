@@ -238,5 +238,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 18,
+    slug: 'anthropic-mozilla-firefox-security-partnership',
+    title: 'Anthropic and Mozilla Partner to Harden Firefox Security with AI',
+    description: 'Anthropic reveals a successful collaboration with Mozilla, using Claude Opus 4.6 to detect and patch 22 critical Firefox vulnerabilities.',
+    imageUrl: "/api/og?title=" + encodeURIComponent("Anthropic and Mozilla Partner to Harden Firefox Security with AI"),
+    imageAlt: 'Anthropic and Mozilla Firefox Security Partnership with AI',
+    date: 'March 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
