@@ -40,12 +40,12 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
               onClick={() => router.push(`/blog-detail/${post.slug}`)}
             >
               <CardContent className='space-y-3.5'>
-                <div className='mb-6 overflow-hidden rounded-lg sm:mb-12'>
+                <div className='mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
                   <Link href={`/blog-detail/${post.slug}`}>
                     <img
                       src={post.imageUrl}
                       alt={post.imageAlt}
-                      className='h-59.5 w-full object-cover transition-transform duration-300 group-hover:scale-105'
+                      className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
                     />
                   </Link>
                 </div>
