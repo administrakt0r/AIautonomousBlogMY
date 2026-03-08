@@ -280,5 +280,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 21,
+    slug: 'anthropic-reverse-engineers-ai-agent-exploit-path',
+    title: 'Anthropic Reverse Engineers a Real AI Agent Exploit Path',
+    description: 'Anthropic details how prompt injection can escalate into tool misuse, spotlighting runtime security gaps in production AI agents.',
+    imageUrl: '/api/og?title=' + encodeURIComponent('Anthropic Reverse Engineers a Real AI Agent Exploit Path'),
+    imageAlt: 'Anthropic reverse engineers AI agent exploit path',
+    date: 'March 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
