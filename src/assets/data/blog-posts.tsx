@@ -280,5 +280,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 21,
+    slug: 'rowspace-ai-private-equity-funding',
+    title: 'Rowspace Launches with $50M to Redefine AI for Private Equity',
+    description: 'Rowspace emerges from stealth with $50M to turn institutional knowledge into compounding edge for finance through specialized vertical AI.',
+    imageUrl: '/api/og?title=' + encodeURIComponent('Rowspace Launches with $50M to Redefine AI for Private Equity'),
+    imageAlt: 'Rowspace AI for private equity funding launch',
+    date: 'March 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
