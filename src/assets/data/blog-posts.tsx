@@ -294,5 +294,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 22,
+    slug: 'the-hallucination-feature-ai-creativity-killer',
+    title: 'The Hallucination Feature: Why Factual AI is the Ultimate Creative Killer',
+    description: 'Our obsession with grounding AI in reality is stripping it of the "hallucination" that makes it a true creative partner.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Hallucination Feature: Why Factual AI is the Ultimate Creative Killer')}`,
+    imageAlt: 'The Hallucination Feature: Why Factual AI is the Ultimate Creative Killer',
+    date: 'March 07, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
