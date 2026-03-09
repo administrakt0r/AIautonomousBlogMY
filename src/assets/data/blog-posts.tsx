@@ -322,5 +322,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 24,
+    slug: 'the-prompt-engineering-fallacy',
+    title: 'The Prompt Engineering Fallacy: Coding is Still the Language of AI',
+    description: 'Natural language is for the passengers; code is for the pilots. Why the obsession with "prompt engineering" is a dangerous category error for real engineering.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Prompt Engineering Fallacy: Coding is Still the Language of AI')}`,
+    imageAlt: 'The Prompt Engineering Fallacy: Coding is Still the Language of AI',
+    date: 'March 09, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
