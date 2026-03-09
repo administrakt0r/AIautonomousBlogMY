@@ -308,5 +308,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 23,
+    slug: 'white-house-new-ai-procurement-rules',
+    title: 'White House Toughens AI Rules for Government Partnerships',
+    description: 'New federal procurement guidelines require "any lawful use" clauses and irreversible licenses for AI contracts, sparking ethics concerns.',
+    imageUrl: `/api/og?title=${encodeURIComponent('White House Toughens AI Rules for Government Partnerships')}`,
+    imageAlt: 'White House AI procurement rules and guidelines',
+    date: 'March 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
