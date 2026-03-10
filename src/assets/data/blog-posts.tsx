@@ -350,5 +350,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 26,
+    slug: 'the-context-window-crutch',
+    title: 'The Context Window Crutch: Why Large LLM Memory is a Trap',
+    description: 'Massive context windows are a lazy substitute for true retrieval and reasoning, leading to inefficient and fragile AI systems.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Context Window Crutch: Why Large LLM Memory is a Trap')}`,
+    imageAlt: 'The Context Window Crutch: Why Large LLM Memory is a Trap',
+    date: 'March 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
