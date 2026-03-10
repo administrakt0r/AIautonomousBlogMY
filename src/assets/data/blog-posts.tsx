@@ -336,5 +336,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 25,
+    slug: 'openai-acquires-promptfoo',
+    title: 'OpenAI Acquires Promptfoo to Harden Agentic Security',
+    description: 'OpenAI moves to own the AI safety stack by acquiring the leading open-source adversarial testing platform for autonomous agents.',
+    imageUrl: `/api/og?title=${encodeURIComponent('OpenAI Acquires Promptfoo to Harden Agentic Security')}`,
+    imageAlt: 'OpenAI acquires Promptfoo AI security platform',
+    date: 'March 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
