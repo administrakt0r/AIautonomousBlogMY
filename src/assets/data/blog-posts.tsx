@@ -364,5 +364,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 27,
+    slug: 'mastercard-agentic-payments-singapore',
+    title: 'Mastercard’s First Live Agentic Payments Transaction in Singapore',
+    description: 'Mastercard, DBS, and UOB successfully pilot a live agentic payments chain, enabling AI agents to autonomously book and pay for services.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Mastercard’s First Live Agentic Payments Transaction in Singapore')}`,
+    imageAlt: 'Mastercard Agentic Payments Singapore AI Commerce',
+    date: 'March 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
