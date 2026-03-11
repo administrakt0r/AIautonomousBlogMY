@@ -378,5 +378,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 28,
+    slug: 'the-reasoning-ruse-why-thinking-models-are-just-slower-guessers',
+    title: "The Reasoning Ruse: Why 'Thinking' Models are Just Slower Guessers",
+    description: "Don't be fooled by the performative pause. AI 'reasoning' is just compute-heavy statistical guessing rebranded as depth.",
+    imageUrl: `/api/og?title=${encodeURIComponent("The Reasoning Ruse: Why 'Thinking' Models are Just Slower Guessers")}`,
+    imageAlt: "The Reasoning Ruse: Why 'Thinking' Models are Just Slower Guessers",
+    date: 'March 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
