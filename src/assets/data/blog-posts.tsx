@@ -406,5 +406,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 30,
+    slug: 'the-benchmarking-blind-spot',
+    title: 'The Benchmarking Blind Spot: Why Leaderboard Winners Fail',
+    description: "Static benchmarks are becoming a vanity metric. Why high leaderboard scores don't translate to real-world production reliability.",
+    imageUrl: `/api/og?title=${encodeURIComponent('The Benchmarking Blind Spot: Why Leaderboard Winners Fail')}`,
+    imageAlt: 'The Benchmarking Blind Spot: Why Leaderboard Winners Fail',
+    date: 'March 12, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
