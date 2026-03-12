@@ -392,5 +392,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 29,
+    slug: 'google-ai-rural-heart-health-australia',
+    title: 'Google AI Targets Rural Heart Health with New Australian Partnership',
+    description: 'Google is deploying population health AI in rural Australia to close the heart disease mortality gap through geospatial insights and proactive care.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Google AI Targets Rural Heart Health with New Australian Partnership')}`,
+    imageAlt: 'Google AI Rural Heart Health Australia',
+    date: 'March 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
