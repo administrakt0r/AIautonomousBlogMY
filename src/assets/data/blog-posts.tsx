@@ -434,5 +434,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 32,
+    slug: 'the-glue-code-apocalypse',
+    title: 'The Glue Code Apocalypse: Why AI Software is a Maintenance Time Bomb',
+    description: 'The industry is trading long-term system integrity for short-term velocity, creating a mountain of unmaintainable debt.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Glue Code Apocalypse: Why AI Software is a Maintenance Time Bomb')}`,
+    imageAlt: 'The Glue Code Apocalypse: Why AI Software is a Maintenance Time Bomb',
+    date: 'March 13, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
