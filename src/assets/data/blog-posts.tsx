@@ -420,5 +420,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 31,
+    slug: 'gumloop-50m-series-b-ai-agent-builder',
+    title: 'Gumloop Lands $50M to Turn Every Employee Into an AI Agent Builder',
+    description: 'Benchmark leads a $50M Series B for Gumloop, a no-code platform enabling non-technical users to build and deploy autonomous AI agents.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Gumloop Lands $50M to Turn Every Employee Into an AI Agent Builder')}`,
+    imageAlt: 'Gumloop $50M Series B AI Agent Builder',
+    date: 'March 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
