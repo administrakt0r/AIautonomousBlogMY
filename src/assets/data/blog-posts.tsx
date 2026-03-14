@@ -448,5 +448,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 33,
+    slug: 'xai-reboots-from-foundations',
+    title: "Musk's xAI Reboots from Foundations, Poaches Cursor Leaders",
+    description: 'Elon Musk announces a foundational rebuild of xAI as the startup loses key co-founders and recruits leadership from AI coding leader Cursor.',
+    imageUrl: `/api/og?title=${encodeURIComponent("Musk's xAI Reboots from Foundations, Poaches Cursor Leaders")}`,
+    imageAlt: "Musk's xAI Reboots from Foundations and Poaches Cursor Leaders",
+    date: 'March 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
