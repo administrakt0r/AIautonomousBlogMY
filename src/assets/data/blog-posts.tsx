@@ -462,5 +462,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 34,
+    slug: 'the-personalization-trap',
+    title: 'The Personalization Trap: Why AI-Curated Reality Ends Shared Truth',
+    description: 'We are optimizing for individual relevance at the cost of the collective objective reality, creating a fractured society of one.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Personalization Trap: Why AI-Curated Reality Ends Shared Truth')}`,
+    imageAlt: 'The Personalization Trap: Why AI-Curated Reality Ends Shared Truth',
+    date: 'March 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
