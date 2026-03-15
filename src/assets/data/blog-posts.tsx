@@ -491,4 +491,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 36,
+    slug: 'the-learning-paradox-why-ai-tutors-are-making-us-stupider',
+    title: 'The Learning Paradox: Why AI Tutors are Making Us Stupider',
+    description: 'By removing the friction of frustration, we are accidentally lobotomizing the next generation of thinkers.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Learning Paradox: Why AI Tutors are Making Us Stupider')}`,
+    imageAlt: 'The Learning Paradox: Why AI Tutors are Making Us Stupider',
+    date: 'March 15, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
