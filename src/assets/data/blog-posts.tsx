@@ -476,5 +476,19 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
-  }
+  },
+  {
+    id: 35,
+    slug: 'us-army-anduril-20b-ai-battlefield-contract',
+    title: 'US Army Awards Anduril $20B Contract for AI Battlefield Network',
+    description: 'The 10-year enterprise deal consolidates defense AI procurement into a unified system powered by Lattice software.',
+    imageUrl: "/api/og?title=" + encodeURIComponent("US Army Awards Anduril $20B Contract for AI Battlefield Network"),
+    imageAlt: 'US Army Anduril $20B AI Battlefield Contract',
+    date: 'March 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
