@@ -519,4 +519,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 38,
+    slug: 'the-compliance-carousel',
+    title: 'The Compliance Carousel: Why AI Regulation is a Gift to Big Tech',
+    description: 'Silicon Valley is cheering for the walls to go up. Discover why the current push for AI regulation is actually a strategic moat for industry giants.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Compliance Carousel: Why AI Regulation is a Gift to Big Tech')}`,
+    imageAlt: 'The Compliance Carousel: Why AI Regulation is a Gift to Big Tech',
+    date: 'March 16, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
