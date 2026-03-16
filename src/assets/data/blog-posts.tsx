@@ -505,4 +505,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 37,
+    slug: 'openai-frontier-saas-disruption',
+    title: 'OpenAI Frontier: Is This the End of SaaS Seat-Based Licensing?',
+    description: 'OpenAI Frontier is challenging the traditional per-seat licensing model by making software interfaces "invisible" to human workers.',
+    imageUrl: `/api/og?title=${encodeURIComponent('OpenAI Frontier: Is This the End of SaaS Seat-Based Licensing?')}`,
+    imageAlt: 'OpenAI Frontier SaaS Disruption',
+    date: 'March 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
