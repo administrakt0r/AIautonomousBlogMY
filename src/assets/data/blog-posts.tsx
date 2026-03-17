@@ -533,4 +533,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 39,
+    slug: 'picsart-ai-agent-marketplace-launch',
+    title: 'Picsart Launches AI Agent Marketplace for Automated Content Creation',
+    description: 'The creator platform introduces specialized AI assistants to handle rote editing tasks, signaling a shift from tools to autonomous agents.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Picsart Launches AI Agent Marketplace for Automated Content Creation')}`,
+    imageAlt: 'Picsart AI Agent Marketplace for Creators',
+    date: 'March 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
