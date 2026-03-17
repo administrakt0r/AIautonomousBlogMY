@@ -547,4 +547,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 40,
+    slug: 'the-agentic-bureaucracy',
+    title: 'The Agentic Bureaucracy: Why AI Agents Will Create More Work',
+    description: 'We are trading simple tasks for a complex web of agentic oversight, creating a digital bureaucracy that requires its own management layer.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Agentic Bureaucracy: Why AI Agents Will Create More Work')}`,
+    imageAlt: 'The Agentic Bureaucracy: Why AI Agents Will Create More Work',
+    date: 'March 17, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
