@@ -561,4 +561,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 41,
+    slug: 'openai-releases-gpt-5-4-mini-and-nano',
+    title: 'OpenAI Releases GPT-5.4 mini and nano for High-Speed AI Agents',
+    description: 'New models deliver GPT-5.4 performance at lower costs and latency, optimized for coding, tool use, and real-time subagents.',
+    imageUrl: `/api/og?title=${encodeURIComponent('OpenAI Releases GPT-5.4 mini and nano for High-Speed AI Agents')}`,
+    imageAlt: 'OpenAI GPT-5.4 mini and nano model launch for developers',
+    date: 'March 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
