@@ -575,4 +575,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 42,
+    slug: 'the-reliability-paradox',
+    title: 'The Reliability Paradox: Why Smarter AI Makes Systems More Fragile',
+    description: 'As AI models gain "reasoning" capabilities, their failure modes become more complex and unpredictable, creating a dangerous illusion of reliability.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Reliability Paradox: Why Smarter AI Makes Systems More Fragile')}`,
+    imageAlt: 'The Reliability Paradox: Why Smarter AI Makes Systems More Fragile',
+    date: 'March 18, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
