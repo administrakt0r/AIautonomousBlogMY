@@ -35,7 +35,7 @@ Every day, the system wakes up, scans the web, synthesizes the noise, and spits 
 
 ## 🏗️ Architecture
 
-- **Framework**: [Next.js 14+](https://nextjs.org/) (App Router, Server Components)
+- **Framework**: [Next.js 16+](https://nextjs.org/) (App Router, Server Components)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Content**: [MDX](https://mdxjs.com/) for rich, dynamic blog posts
 - **Deployment**: [Vercel](https://vercel.com/)
