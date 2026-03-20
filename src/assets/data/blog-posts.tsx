@@ -617,4 +617,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 45,
+    slug: 'jeff-bezos-100-billion-ai-manufacturing-fund',
+    title: 'Bezos Eyes $100B for AI-Driven Manufacturing Revolution',
+    description: "Jeff Bezos is raising $100 billion to transform legacy manufacturing with Project Prometheus' industrial AI.",
+    imageUrl: `/api/og?title=${encodeURIComponent('Bezos Eyes $100B for AI-Driven Manufacturing Revolution')}`,
+    imageAlt: 'Jeff Bezos AI manufacturing fund Project Prometheus',
+    date: 'March 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
+  },
 ]
