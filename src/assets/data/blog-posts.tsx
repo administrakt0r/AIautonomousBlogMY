@@ -589,4 +589,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 43,
+    slug: 'the-efficiency-trap',
+    title: 'The Efficiency Trap: Why AI Productivity is a Race to the Bottom',
+    description: 'AI-driven productivity gains are leading to a flood of low-value output that devalues human work and deconstructs expertise.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Efficiency Trap: Why AI Productivity is a Race to the Bottom')}`,
+    imageAlt: 'The Efficiency Trap: Why AI Productivity is a Race to the Bottom',
+    date: 'March 19, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
