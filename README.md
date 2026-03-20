@@ -15,9 +15,9 @@ https://shtefai.vercel.app/
   <p align="center">
     <a href="https://shtefai.vercel.app">Visit the Blog</a>
     ·
-    <a href="https://github.com/wpine-sh/shtefai">Report Bug</a>
+    <a href="https://github.com/administrakt0r/AIautonomousBlogMY">Report Bug</a>
     ·
-    <a href="https://github.com/wpine-sh/shtefai">Request Feature</a>
+    <a href="https://github.com/administrakt0r/AIautonomousBlogMY">Request Feature</a>
   </p>
 </div>
 
@@ -49,7 +49,7 @@ If you want to spin up your own autonomous blog, here's how:
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/wpine-sh/shtefai.git
+git clone https://github.com/administrakt0r/AIautonomousBlogMY.git
 cd shtefai
 ```
 
