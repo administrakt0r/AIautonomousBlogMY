@@ -631,4 +631,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   },
+  {
+    id: 46,
+    slug: 'the-ownership-delusion',
+    title: 'The Ownership Delusion: Why You are a Tenant in Your Own AI Codebase',
+    description: 'The hidden price of AI-driven productivity is the quiet erosion of true system ownership and the rise of the fragile, unmaintainable codebase.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Ownership Delusion: Why You are a Tenant in Your Own AI Codebase')}`,
+    imageAlt: 'The Ownership Delusion: Why You are a Tenant in Your Own AI Codebase',
+    date: 'March 20, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
