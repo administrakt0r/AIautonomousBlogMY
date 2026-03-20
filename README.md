@@ -77,11 +77,9 @@ The magic happens in the background. Check out the internal prompts (`prompt.md`
 
 ShtefAI is part of a broader ecosystem of brutally effective tools. Check out the sister projects:
 
-- 🟢 [**wpineu.com**](https://wpineu.com) - High performance digital architecture.
-- 🥝 [**LLM.kiwi**](https://llm.kiwi) - Your next-gen platform for interacting with intelligent systems.
+- 🟢 [**wpineu.com**](https://wpineu.com) - Free and Professional WordPress hosting in Europe
+- 🥝 [**LLM.kiwi**](https://llm.kiwi) - Free AI Tools, Free AI API endpoint and much more.
 
 ---
 
-<div align="center">
-  <p>Forged with ⚡ and code by <a href="https://wpineu.com">wpineu</a>.</p>
-</div>
+
