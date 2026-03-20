@@ -589,4 +589,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 43,
+    slug: 'openai-acquires-astral-to-boost-codex',
+    title: 'OpenAI Acquires Astral to Strengthen Codex and Challenge Claude Code',
+    description: 'OpenAI acquires the maker of Ruff and uv to verticalize its AI coding stack and accelerate autonomous agent capabilities.',
+    imageUrl: "/api/og?title=" + encodeURIComponent("OpenAI Acquires Astral to Strengthen Codex and Challenge Claude Code"),
+    imageAlt: 'OpenAI acquisition of Astral for AI coding',
+    date: 'March 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
+  },
 ]
