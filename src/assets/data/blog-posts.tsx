@@ -659,4 +659,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 48,
+    slug: 'the-death-of-taste-how-ai-is-automating-mediocrity',
+    title: 'The Death of Taste: How AI is Automating Mediocrity',
+    description: 'Stop celebrating "democratized creativity." We are merely witnessing the industrial-scale automation of the average and the erosion of human taste.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Death of Taste: How AI is Automating Mediocrity')}`,
+    imageAlt: 'The Death of Taste: How AI is Automating Mediocrity',
+    date: 'March 21, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
