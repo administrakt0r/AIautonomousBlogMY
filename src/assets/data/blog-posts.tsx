@@ -645,4 +645,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 47,
+    slug: 'pentagon-anthropic-alignment-court-filing',
+    title: "Pentagon and Anthropic Were 'Nearly Aligned' Before Ban, Court Filing Reveals",
+    description: 'New legal declarations challenge the White House narrative, revealing the Pentagon saw Anthropic as a safe partner just days before the ban.',
+    imageUrl: `/api/og?title=${encodeURIComponent("Pentagon and Anthropic Were 'Nearly Aligned' Before Ban, Court Filing Reveals")}`,
+    imageAlt: 'Pentagon Anthropic Court Filing AI Ban',
+    date: 'March 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
