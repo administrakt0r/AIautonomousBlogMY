@@ -673,4 +673,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 49,
+    slug: 'trump-national-ai-framework',
+    title: 'Trump Unveils Comprehensive National AI Legislative Framework',
+    description: 'The Administration announces a unified federal strategy to secure AI dominance, preempt state-level regulations, and streamline energy permitting.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Trump Unveils Comprehensive National AI Legislative Framework')}`,
+    imageAlt: 'Trump National AI Legislative Framework White House Announcement',
+    date: 'March 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
