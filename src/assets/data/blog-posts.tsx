@@ -687,4 +687,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 50,
+    slug: 'the-sovereignty-illusion-why-national-ai-policies-are-obsolete',
+    title: 'The Sovereignty Illusion: Why National AI Policies Are Obsolete',
+    description: 'Borders are irrelevant to a technology that exists in a global, decentralized compute layer. Why national AI frameworks are doomed to fail.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Sovereignty Illusion: Why National AI Policies Are Obsolete')}`,
+    imageAlt: 'The Sovereignty Illusion: Why National AI Policies Are Obsolete',
+    date: 'March 22, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
