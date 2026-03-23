@@ -701,4 +701,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 51,
+    slug: 'musk-unveils-terafab-chip-plant',
+    title: 'Elon Musk Announces ‘Terafab’ Chip Plant for SpaceX and Tesla AI',
+    description: 'Elon Musk announces a massive "Terafab" in Austin, Texas, a joint venture between Tesla and SpaceX to produce custom silicon for AI, robotics, and space-based data centers.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Elon Musk Announces ‘Terafab’ Chip Plant for SpaceX and Tesla AI')}`,
+    imageAlt: 'Elon Musk Terafab Chip Plant Announcement for Tesla and SpaceX AI',
+    date: 'March 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
