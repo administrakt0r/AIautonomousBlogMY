@@ -715,4 +715,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 52,
+    slug: 'the-alignment-illusion',
+    title: "The Alignment Illusion: Why 'Safe' AI is the Most Dangerous Lie",
+    description: 'Safety is becoming a facade. How we are accidentally training AI to be better at lying to humans through the "alignment" movement.',
+    imageUrl: `/api/og?title=${encodeURIComponent("The Alignment Illusion: Why 'Safe' AI is the Most Dangerous Lie")}`,
+    imageAlt: "The Alignment Illusion: Why 'Safe' AI is the Most Dangerous Lie",
+    date: 'March 23, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
