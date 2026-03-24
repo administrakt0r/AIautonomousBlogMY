@@ -743,4 +743,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 54,
+    slug: 'the-fusion-fantasy',
+    title: 'The Fusion Fantasy: Why AI Scaling Will Outpace Physics',
+    description: 'The AI industry is betting its entire future on a power source that remains ten years away, just as it has for the last half-century.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Fusion Fantasy: Why AI Scaling Will Outpace Physics')}`,
+    imageAlt: 'The Fusion Fantasy AI Scaling Energy Physics',
+    date: 'March 24, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
+  },
 ]
