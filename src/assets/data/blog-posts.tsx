@@ -729,4 +729,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 53,
+    slug: 'openai-helion-fusion-power-deal',
+    title: 'OpenAI in Talks for Massive Fusion Power Deal with Helion Energy',
+    description: 'OpenAI and Helion Energy are reportedly negotiating an unprecedented 50GW fusion power agreement to solve AI’s future energy wall.',
+    imageUrl: `/api/og?title=${encodeURIComponent('OpenAI in Talks for Massive Fusion Power Deal with Helion Energy')}`,
+    imageAlt: 'OpenAI Helion Energy Fusion Power Deal AI Infrastructure',
+    date: 'March 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
