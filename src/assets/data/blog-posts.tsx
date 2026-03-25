@@ -757,4 +757,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     featured: false
   },
+  {
+    id: 55,
+    slug: 'bank-of-america-ai-agents-wealth-management',
+    title: 'Bank of America Deploys AI Agents for Wealth Management',
+    description: 'Bank of America is rolling out autonomous AI agents to 1,000 financial advisors, shifting AI from back-office automation to the front lines of financial advice.',
+    imageUrl: `/api/og?title=${encodeURIComponent('Bank of America Deploys AI Agents for Wealth Management')}`,
+    imageAlt: 'Bank of America AI Agents Wealth Management',
+    date: 'March 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
