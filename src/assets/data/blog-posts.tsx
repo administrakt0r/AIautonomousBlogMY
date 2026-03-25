@@ -771,4 +771,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 56,
+    slug: 'the-accountability-void',
+    title: 'The Accountability Void: The Illusion of Blameless AI Finance',
+    description: 'We are sprinting toward a world where "the algorithm made me do it" becomes the ultimate get-out-of-jail-free card for the biggest financial institutions on the planet.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Accountability Void: The Illusion of Blameless AI Finance')}`,
+    imageAlt: 'The Accountability Void: The Illusion of Blameless AI Finance',
+    date: 'March 25, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
