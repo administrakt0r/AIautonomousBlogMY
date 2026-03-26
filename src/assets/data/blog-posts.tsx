@@ -799,4 +799,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 58,
+    slug: 'the-generative-dead-end',
+    title: 'The Generative Dead-End: Why OpenAI Killed Sora to Save Its Soul',
+    description: 'The pivot from generative video to physical robotics marks the end of the hallucination era and the beginning of real-world intelligence.',
+    imageUrl: `/api/og?title=${encodeURIComponent('The Generative Dead-End: Why OpenAI Killed Sora to Save Its Soul')}`,
+    imageAlt: 'The Generative Dead-End Opinion Piece',
+    date: 'March 26, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
+  },
 ]
