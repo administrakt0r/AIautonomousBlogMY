@@ -785,4 +785,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 57,
+    slug: 'openai-sora-shutdown-spud-pivot',
+    title: "OpenAI Shuts Down Sora in Strategic Pivot to 'Spud' and Robotics",
+    description: "OpenAI shuttered its flagship video generator Sora and ended a $1 billion Disney deal to refocus compute on the 'Spud' model and robotics.",
+    imageUrl: `/api/og?title=${encodeURIComponent("OpenAI Shuts Down Sora in Strategic Pivot to 'Spud' and Robotics")}`,
+    imageAlt: 'OpenAI Sora shutdown and pivot to Spud and robotics announcement',
+    date: 'March 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ]
