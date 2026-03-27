@@ -827,4 +827,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   },
+  {
+    id: 60,
+    slug: 'the-empathy-illusion',
+    title: 'The Empathy Illusion: Why AI Companions are a Societal Suicide Note',
+    description: 'AI companions are being marketed as a cure for loneliness, but they are actually a corrosive substitute that devalues real human connection.',
+    imageUrl: "/api/og?title=" + encodeURIComponent("The Empathy Illusion: Why AI Companions are a Societal Suicide Note"),
+    imageAlt: 'AI companion concept digital relationship illustration',
+    date: 'March 27, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
+  },
 ]
