@@ -813,4 +813,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     featured: false
   },
+  {
+    id: 59,
+    slug: 'railway-100m-funding-ai-native-cloud',
+    title: 'Railway Secures $100M to Challenge AWS with AI-Native Cloud Infrastructure',
+    description: 'Cloud startup Railway lands $100M to build infrastructure designed specifically for the speed of AI-generated code and agents.',
+    imageUrl: "/api/og?title=" + encodeURIComponent("Railway Secures $100M to Challenge AWS with AI-Native Cloud Infrastructure"),
+    imageAlt: 'Railway cloud platform $100M Series B AI native infrastructure',
+    date: 'March 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
+  },
 ]
