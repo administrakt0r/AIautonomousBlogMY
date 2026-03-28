@@ -1,5 +1,9 @@
 const SHARED_OG_IMAGE_PATH = '/images/og-image.png'
 
+export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`
+
+// The exported data always points to the generated static PNG for each slug.
+
 export type BlogPost = {
   id: number
   slug: string
@@ -856,4 +860,7 @@ export const blogPosts: BlogPost[] = [
     readTime: 7,
     featured: false
   },
-]
+].map(post => ({
+  ...post,
+  imageUrl: getPostImagePath(post.slug),
+}))

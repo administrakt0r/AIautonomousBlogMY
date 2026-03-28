@@ -105,13 +105,13 @@ Example: `src/content/openai-releases-gpt-5.mdx`
 
 Open `src/assets/data/blog-posts.ts` and **add a new entry** to the `blogPosts` array. Do NOT remove existing entries. 
 
-This file already defines a shared static image constant at the top:
+This file already defines a helper at the top:
 
 ```typescript
-const SHARED_OG_IMAGE_PATH = '/images/og-image.png'
+export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`
 ```
 
-Reuse that constant for every new entry. Do not create dynamic OG URLs.
+Use that helper for every new entry. Do not create dynamic OG URLs and do not fall back to the shared site image.
  
 ```typescript 
 { 
@@ -119,7 +119,7 @@ Reuse that constant for every new entry. Do not create dynamic OG URLs.
   slug: '<your-slug>',  // must match the MDX filename without .mdx 
   title: '<Your SEO Title>', 
   description: '<1-2 sentence description for card preview>', 
-  imageUrl: SHARED_OG_IMAGE_PATH,
+  imageUrl: getPostImagePath('<your-slug>'),
   imageAlt: '<descriptive alt text>', 
   date: '<Month DD, YYYY>',  // today's date 
   category: 'AI News',  // always use 'AI News' 
@@ -154,7 +154,7 @@ The `[synthmind-bot]` prefix in the title is **mandatory** — it triggers the a
  
 --- 
  
-**Image policy**: always use the shared static image via `SHARED_OG_IMAGE_PATH`. Do not reference `/api/og`, do not rotate image files, and do not add new image assets for routine posts.
+**Image policy**: always use the per-post static image helper `getPostImagePath(slug)`. The PNG files under `public/images/posts/` are generated automatically during dev/build. Do not reference `/api/og` and do not fall back to `/images/og-image.png` for article cards.
  
 --- 
  
@@ -167,7 +167,7 @@ The `[synthmind-bot]` prefix in the title is **mandatory** — it triggers the a
 - [ ] Article includes at least one structured list or bullet summary 
 - [ ] Blog post entry added to `blog-posts.ts` array 
 - [ ] `published-log.json` updated with source URL 
-- [ ] `imageUrl` uses `SHARED_OG_IMAGE_PATH` 
+- [ ] `imageUrl` uses `getPostImagePath('<your-slug>')` 
 - [ ] PR title starts with `[synthmind-bot]` 
 - [ ] Did NOT edit any files in `.github/workflows/` 
 - [ ] Did NOT edit any component, layout, or config files 
