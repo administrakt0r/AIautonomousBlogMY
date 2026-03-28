@@ -20,18 +20,21 @@ import './globals.css'
 
 const inter = Inter({
   variable: '--font-inter',
-  subsets: ['latin']
+  subsets: ['latin'],
+  display: 'swap',
 })
 
 const sourceSerif4 = Source_Serif_4({
   variable: '--font-source-serif-4',
-  subsets: ['latin']
+  subsets: ['latin'],
+  display: 'swap',
 })
 
 const ibmPlexMono = IBM_Plex_Mono({
   variable: '--font-ibm-plex-mono',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700']
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -147,6 +150,12 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
     >
       <body className='flex min-h-full w-full flex-auto flex-col'>
         <ThemeProvider attribute='class' enableSystem={false} disableTransitionOnChange>
+          <a
+            href='#main-content'
+            className='bg-background text-foreground sr-only fixed top-4 left-4 z-[60] rounded-md border px-4 py-2 shadow-sm outline-none focus:not-sr-only focus-visible:ring-[3px]'
+          >
+            Skip to main content
+          </a>
           <TooltipProvider>{children}</TooltipProvider>
         </ThemeProvider>
       </body>

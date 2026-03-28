@@ -199,7 +199,16 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               </div>
 
               <div>
-                <img src={post.imageUrl} alt={post.imageAlt} loading='eager' className='max-h-148 w-full rounded-[8px]' />
+                <img
+                  src={post.imageUrl}
+                  alt={post.imageAlt}
+                  width={1200}
+                  height={630}
+                  loading='eager'
+                  fetchPriority='high'
+                  decoding='async'
+                  className='max-h-148 w-full rounded-[8px]'
+                />
               </div>
 
               <article id='content' className='space-y-12'>

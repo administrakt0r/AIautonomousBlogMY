@@ -37,6 +37,7 @@ const getPostHtml = async (post) => {
     return await marked.parse(mdxContent)
   } catch (error) {
     console.error(`Failed to generate RSS content for ${post.slug}`, error)
+
     return `<p>${post.description}</p>`
   }
 }

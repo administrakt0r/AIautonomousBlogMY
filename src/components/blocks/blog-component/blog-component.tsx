@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import {
   Breadcrumb,
@@ -49,6 +50,8 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
               <img
                 src={post.imageUrl}
                 alt={post.imageAlt}
+                width={1200}
+                height={630}
                 loading='lazy'
                 decoding='async'
                 className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
@@ -120,6 +123,13 @@ const Blog = () => {
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE)
 
   const paginatedPosts = filteredPosts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE)
+
+  const resultsSummary =
+    filteredPosts.length === 0
+      ? 'No stories match your current search and filters.'
+      : `Showing ${paginatedPosts.length} of ${filteredPosts.length} ${
+          filteredPosts.length === 1 ? 'story' : 'stories'
+        }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`
 
   const handleTabChange = (tab: string) => {
     setCurrentPage(1)
@@ -198,14 +208,19 @@ const Blog = () => {
             </ScrollArea>
 
             <div className='relative max-md:w-full'>
+              <Label htmlFor='blog-search' className='sr-only'>
+                Search articles
+              </Label>
               <div className='text-muted-foreground pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 peer-disabled:opacity-50'>
                 <SearchIcon className='size-4' />
                 <span className='sr-only'>Search</span>
               </div>
               <Input
+                id='blog-search'
                 type='text'
-                placeholder='Search'
+                placeholder='Search articles by title or summary'
                 value={searchQuery}
+                aria-describedby='blog-results-summary'
                 onChange={e => {
                   setSearchQuery(e.target.value)
                   setCurrentPage(1)
@@ -214,6 +229,8 @@ const Blog = () => {
               />
               {searchQuery && (
                 <button
+                  type='button'
+                  aria-label='Clear search'
                   onClick={() => {
                     setSearchQuery('')
                     setCurrentPage(1)
@@ -226,6 +243,9 @@ const Blog = () => {
               )}
             </div>
           </div>
+          <p id='blog-results-summary' className='text-muted-foreground text-sm' aria-live='polite'>
+            {resultsSummary}
+          </p>
 
           {/* Posts Grid */}
           {paginatedPosts.length > 0 ? (

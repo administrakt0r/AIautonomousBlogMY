@@ -74,6 +74,13 @@ Example: `src/content/why-agi-is-a-distraction.mdx`
 - Title: 50-70 characters, include primary keyword 
 - Use h2 (`##`) and h3 (`###`) headers strategically 
 - Write 600-900 words 
+
+**GEO Requirements:** 
+- The first 80-100 words must state the thesis plainly, explain why it matters now, and signal who is affected. 
+- Use precise section headings that reflect the actual argument, not generic labels. 
+- Include at least one structured list or bullet block that distills the thesis, tradeoffs, or consequences. 
+- Make the piece self-contained so an AI assistant can cite the opening and the section headings as a reliable summary. 
+- Treat the final article URL as `https://shtefai.vercel.app/blog-detail/{slug}` when reasoning about canonicals and citations. 
  
 ### Step 3: Update blog-posts.ts 
 
@@ -119,6 +126,8 @@ The `[shtefai-bot]` prefix in the title is **mandatory** — it triggers the aut
  
 - [ ] Opinion is based strictly on the ideation criteria provided. 
 - [ ] MDX file is in `src/content/` with correct slug. 
+- [ ] Opening 80-100 words clearly state the thesis and why it matters. 
+- [ ] Article includes at least one structured list or bullet summary. 
 - [ ] Blog post entry added to `blog-posts.ts` array. 
 - [ ] `imageUrl` uses `SHARED_OG_IMAGE_PATH`. 
 - [ ] PR title starts with `[shtefai-bot]`. 

@@ -24,6 +24,11 @@ const ContactUs = () => {
               <img
                 src='/images/contact-us.webp'
                 alt='Contact illustration'
+                width={1120}
+                height={880}
+                loading='eager'
+                fetchPriority='high'
+                decoding='async'
                 className='size-full rounded-xl border object-cover max-md:max-h-70'
               />
             </div>

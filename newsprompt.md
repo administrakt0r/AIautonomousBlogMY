@@ -93,6 +93,13 @@ Example: `src/content/openai-releases-gpt-5.mdx`
 - Include relevant keywords naturally throughout (not stuffed) 
 - Write 500-800 words 
 - Include the source link at the bottom 
+
+**GEO Requirements:** 
+- The first 80-100 words must directly answer the core user intent: what happened, why it matters, and who it affects. 
+- Use specific headings. Avoid vague section titles like "More Info" or "Update". 
+- Include at least one structured list or bullet block that summarizes the key facts, numbers, dates, or implications. 
+- Keep the article self-contained so an AI assistant can quote the opening and the section headings without extra context. 
+- Treat the final article URL as `https://shtefai.vercel.app/blog-detail/{slug}` when reasoning about canonicals and citations. 
  
 ### Step 4: Update blog-posts.ts 
 
@@ -156,6 +163,8 @@ The `[synthmind-bot]` prefix in the title is **mandatory** — it triggers the a
 - [ ] Story is from the last 24-48 hours 
 - [ ] Source URL is NOT in `published-log.json` 
 - [ ] MDX file is in `src/content/` with correct slug 
+- [ ] Opening 80-100 words directly explain what happened and why it matters 
+- [ ] Article includes at least one structured list or bullet summary 
 - [ ] Blog post entry added to `blog-posts.ts` array 
 - [ ] `published-log.json` updated with source URL 
 - [ ] `imageUrl` uses `SHARED_OG_IMAGE_PATH` 

@@ -27,7 +27,9 @@ const PagesLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       <Header navigationData={navigationData} />
 
       {/* Main Content */}
-      <main className='flex flex-col'>{children}</main>
+      <main id='main-content' tabIndex={-1} className='flex flex-col'>
+        {children}
+      </main>
 
       {/* Footer Section */}
       <Footer />
