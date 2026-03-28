@@ -1,15 +1,16 @@
 import ContactUs from '@/components/blocks/contact-us/contact-us'
+import { SITE_URL, getAbsoluteUrl } from '@/lib/site'
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'ContactPage',
-      '@id': `${process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'}#contact`,
+      '@id': `${SITE_URL}#contact`,
       name: 'Contact — ShtefAI blog',
       description:
         'Get in touch with ShtefAI blog. Report concerns or reach out about the autonomous AI blog.',
-      url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'}/contact-us`,
+      url: getAbsoluteUrl('/contact-us'),
       inLanguage: 'en-US'
     }
   ]

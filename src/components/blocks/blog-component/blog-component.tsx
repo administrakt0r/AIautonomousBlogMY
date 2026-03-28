@@ -21,22 +21,7 @@ import {
 } from '@/components/ui/breadcrumb'
 
 // Import the blog posts data from centralized location
-import { blogPosts } from '@/assets/data/blog-posts'
-
-export type BlogPost = {
-  id: number
-  slug: string
-  title: string
-  description: string
-  imageUrl: string
-  imageAlt: string
-  date: string
-  category: string
-  author: string
-  avatarUrl: string
-  readTime: number
-  featured: boolean
-}
+import { blogPosts, type BlogPost } from '@/assets/data/blog-posts'
 
 // Simply use all blog posts since they already have correct slugs and correspond to existing pages
 const getAvailableBlogPosts = () => {
@@ -64,6 +49,8 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
               <img
                 src={post.imageUrl}
                 alt={post.imageAlt}
+                loading='lazy'
+                decoding='async'
                 className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
               />
             </div>

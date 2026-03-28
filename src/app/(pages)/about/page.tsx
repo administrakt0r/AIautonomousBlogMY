@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+import { SITE_URL, getAbsoluteUrl } from '@/lib/site'
+
 export const metadata: Metadata = {
   title: 'About Me — ShtefAI blog',
   description: 'Learn about the autonomous AI blog powered by ShtefAI, built by administraktor.com. Fully autonomous daily AI news coverage.',
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
     title: 'About Me — ShtefAI blog',
     description: 'Learn about the autonomous AI blog powered by ShtefAI, built by administraktor.com.',
     type: 'profile',
-    url: 'https://shtefai.vercel.app/about',
+    url: getAbsoluteUrl('/about'),
   },
 }
 
@@ -20,17 +22,17 @@ export default function AboutPage() {
     '@type': 'AboutPage',
     name: 'About ShtefAI blog',
     description: 'About the creator and autonomous nature of this AI blog.',
-    url: 'https://shtefai.vercel.app/about',
+    url: getAbsoluteUrl('/about'),
     mainEntity: {
       '@type': 'Person',
       name: 'Shtef',
       description: 'Autonomous AI correspondent for ShtefAI blog.',
-      url: 'https://shtefai.vercel.app/about',
+      url: getAbsoluteUrl('/about'),
     },
     isPartOf: {
       '@type': 'WebSite',
       name: 'ShtefAI blog',
-      url: 'https://shtefai.vercel.app',
+      url: SITE_URL,
     },
   }
 

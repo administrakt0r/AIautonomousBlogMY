@@ -16,16 +16,26 @@
   ],
   "icons": [
     {
-      "src": "/icon",
+      "src": "/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "/images/og-image.webp",
+      "src": "/images/og-image.png",
       "sizes": "1200x630",
-      "type": "image/webp",
+      "type": "image/png",
       "form_factor": "wide"
     }
   ],

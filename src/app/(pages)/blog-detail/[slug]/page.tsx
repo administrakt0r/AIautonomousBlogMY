@@ -19,8 +19,7 @@ import { Separator } from '@/components/ui/separator'
 import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
 
 import { blogPosts } from '@/assets/data/blog-posts'
-
-const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'
+import { PUBLISHER_LOGO_PATH, SITE_URL, getAbsoluteUrl, getPostUrl } from '@/lib/site'
 
 // Dynamic metadata for each blog post — critical for per-post SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -29,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!post) return {}
 
-  const postUrl = `${SITE_URL}/blog-detail/${post.slug}`
+  const postUrl = getPostUrl(post.slug)
 
   return {
     title: post.title,
@@ -60,6 +59,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
+      images: [post.imageUrl],
     },
   }
 }
@@ -73,7 +73,7 @@ export async function generateStaticParams() {
 
 // Navigation component for previous/next posts
 const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] }) => {
-  const sortedPosts = blogPosts.sort((a, b) => a.id - b.id) // Changed from b.id - a.id
+  const sortedPosts = [...blogPosts].sort((a, b) => a.id - b.id)
   const currentIndex = sortedPosts.findIndex(post => post.id === currentPost.id)
 
   const previousPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null
@@ -199,7 +199,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               </div>
 
               <div>
-                <img src={post.imageUrl} alt={post.imageAlt} className='max-h-148 w-full rounded-[8px]' />
+                <img src={post.imageUrl} alt={post.imageAlt} loading='eager' className='max-h-148 w-full rounded-[8px]' />
               </div>
 
               <article id='content' className='space-y-12'>
@@ -222,16 +222,16 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             '@graph': [
               {
                 '@type': 'BlogPosting',
-                '@id': `${SITE_URL}/blog-detail/${post.slug}#article`,
+                '@id': `${getPostUrl(post.slug)}#article`,
                 headline: post.title,
                 description: post.description,
-                image: `${SITE_URL}${post.imageUrl}`,
+                image: getAbsoluteUrl(post.imageUrl),
                 datePublished: new Date(post.date).toISOString(),
                 dateModified: new Date(post.date).toISOString(),
                 author: {
                   '@type': 'Person',
                   name: post.author,
-                  url: `${SITE_URL}/about`,
+                  url: getAbsoluteUrl('/about'),
                 },
                 publisher: {
                   '@type': 'Organization',
@@ -239,12 +239,12 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   url: SITE_URL,
                   logo: {
                     '@type': 'ImageObject',
-                    url: `${SITE_URL}/icon`,
+                    url: getAbsoluteUrl(PUBLISHER_LOGO_PATH),
                   },
                 },
                 mainEntityOfPage: {
                   '@type': 'WebPage',
-                  '@id': `${SITE_URL}/blog-detail/${post.slug}`,
+                  '@id': getPostUrl(post.slug),
                 },
                 articleSection: post.category,
                 wordCount: post.readTime * 200,

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
-import type { BlogPost } from '@/components/blocks/blog-component/blog-component'
+import type { BlogPost } from '@/assets/data/blog-posts'
 
 const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
   // Show latest 3 posts sorted by id (newest first)

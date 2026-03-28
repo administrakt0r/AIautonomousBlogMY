@@ -6,6 +6,14 @@ import type { Metadata } from 'next'
 import { ThemeProvider } from '@/components/theme-provider'
 import { TooltipProvider } from '@/components/ui/tooltip'
 
+import {
+  APPLE_TOUCH_ICON_PATH,
+  FAVICON_16_PATH,
+  FAVICON_32_PATH,
+  FAVICON_PATH,
+  SHARED_OG_IMAGE_PATH,
+  SITE_URL,
+} from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 import './globals.css'
@@ -25,8 +33,6 @@ const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700']
 })
-
-const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'
 
 export const metadata: Metadata = {
   title: {
@@ -77,6 +83,15 @@ export const metadata: Metadata = {
       'application/rss+xml': '/rss.xml',
     },
   },
+  icons: {
+    icon: [
+      { url: FAVICON_PATH, sizes: 'any' },
+      { url: FAVICON_32_PATH, sizes: '32x32', type: 'image/png' },
+      { url: FAVICON_16_PATH, sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: [FAVICON_PATH],
+    apple: [{ url: APPLE_TOUCH_ICON_PATH, sizes: '180x180', type: 'image/png' }],
+  },
   openGraph: {
     title: {
       template: '%s | ShtefAI blog',
@@ -90,8 +105,8 @@ export const metadata: Metadata = {
     url: SITE_URL,
     images: [
       {
-        url: '/images/og-image.webp',
-        type: 'image/webp',
+        url: SHARED_OG_IMAGE_PATH,
+        type: 'image/png',
         width: 1200,
         height: 630,
         alt: 'ShtefAI blog — Daily AI News by Shtef'
@@ -105,7 +120,8 @@ export const metadata: Metadata = {
       default: 'ShtefAI blog ⚡ — Where Machines Learn and Humans Discover'
     },
     description:
-      'Daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.'
+      'Daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.',
+    images: [SHARED_OG_IMAGE_PATH],
   },
   verification: {
     // Add your Google Search Console verification code here when available

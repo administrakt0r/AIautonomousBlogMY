@@ -4,6 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
+    "generate:rss": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --experimental-specifier-resolution=node scripts/generate-rss.mjs",
+    "prebuild": "pnpm generate:rss",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

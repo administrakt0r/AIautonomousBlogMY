@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+import { SITE_URL, getAbsoluteUrl } from '@/lib/site'
+
 export const metadata: Metadata = {
   title: 'Responsible AI Usage Policy',
   description: 'Our commitment to responsible AI usage — transparent, safe, and accountable artificial intelligence systems. Part of the responsible-ai-usage.vercel.app initiative.',
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Responsible AI Usage Policy — ShtefAI blog',
     description: 'Our commitment to transparent, safe, and accountable AI in content generation.',
     type: 'website',
-    url: 'https://shtefai.vercel.app/responsible-ai-usage',
+    url: getAbsoluteUrl('/responsible-ai-usage'),
   },
 }
 
@@ -20,11 +22,11 @@ export default function ResponsibleAIPage() {
     '@type': 'WebPage',
     name: 'Responsible AI Usage Policy',
     description: 'Our commitment to responsible AI usage — transparent, safe, and accountable artificial intelligence systems.',
-    url: 'https://shtefai.vercel.app/responsible-ai-usage',
+    url: getAbsoluteUrl('/responsible-ai-usage'),
     isPartOf: {
       '@type': 'WebSite',
       name: 'ShtefAI blog',
-      url: 'https://shtefai.vercel.app',
+      url: SITE_URL,
     },
   }
 
