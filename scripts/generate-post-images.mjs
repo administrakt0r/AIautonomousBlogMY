@@ -70,7 +70,7 @@ const escapeXml = (value) =>
 
 const wrapTitle = (title) => {
   const words = title.split(/\s+/u)
-  const maxCharsPerLine = title.length > 95 ? 20 : title.length > 72 ? 23 : 26
+  const maxCharsPerLine = title.length > 95 ? 22 : title.length > 72 ? 26 : 30
   const lines = []
   let currentLine = ''
 
@@ -102,8 +102,8 @@ const wrapTitle = (title) => {
 }
 
 const getFontSize = (lineCount, longestLineLength) => {
-  if (lineCount >= 4 || longestLineLength > 28) return 54
-  if (lineCount === 3 || longestLineLength > 24) return 62
+  if (lineCount >= 4 || longestLineLength > 30) return 52
+  if (lineCount === 3 || longestLineLength > 26) return 60
 
   return 72
 }
@@ -113,7 +113,7 @@ const getTitleLinesSvg = (title) => {
   const longestLineLength = Math.max(...lines.map(line => line.length))
   const fontSize = getFontSize(lines.length, longestLineLength)
   const lineHeight = Math.round(fontSize * 1.18)
-  const firstLineY = 282 - ((lines.length - 1) * lineHeight) / 2
+  const firstLineY = 300 - ((lines.length - 1) * lineHeight) / 2
 
   return lines
     .map(
@@ -127,12 +127,13 @@ const getTitleLinesSvg = (title) => {
           font-weight="800"
           fill="#ffffff"
           letter-spacing="-1.2"
+          filter="url(#title-shadow)"
         >${escapeXml(line)}</text>`
     )
     .join('')
 }
 
-const getOgSvg = ({ category, title, logoDataUri, preset }) => `<?xml version="1.0" encoding="UTF-8"?>
+const getOgSvg = ({ title, logoDataUri, preset }) => `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg-gradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
@@ -142,20 +143,21 @@ const getOgSvg = ({ category, title, logoDataUri, preset }) => `<?xml version="1
     <filter id="blur-64" x="-25%" y="-25%" width="150%" height="150%">
       <feGaussianBlur stdDeviation="64" />
     </filter>
+    <filter id="title-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="rgba(0,0,0,0.22)" />
+    </filter>
   </defs>
   <rect width="1200" height="630" fill="url(#bg-gradient)" />
   <circle cx="160" cy="120" r="180" fill="${preset.glowOne}" filter="url(#blur-64)" />
   <circle cx="1010" cy="520" r="220" fill="${preset.glowTwo}" filter="url(#blur-64)" />
-  <rect x="330" y="68" width="540" height="70" rx="35" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.20)" />
-  <image href="${logoDataUri}" x="364" y="86" width="34" height="34" />
-  <text x="425" y="110" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="${preset.accent}">
+  <rect x="314" y="68" width="572" height="72" rx="36" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.22)" />
+  <rect x="336" y="80" width="48" height="48" rx="14" fill="rgba(15,23,42,0.28)" stroke="rgba(255,255,255,0.16)" />
+  <image href="${logoDataUri}" x="347" y="91" width="26" height="26" />
+  <text x="423" y="111" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="${preset.accent}">
     ShtefAI blog
   </text>
-  <text x="600" y="166" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="rgba(255,255,255,0.78)" letter-spacing="3.2">
-    ${escapeXml(category.toUpperCase())}
-  </text>
   ${getTitleLinesSvg(title)}
-  <line x1="90" y1="538" x2="1110" y2="538" stroke="rgba(255,255,255,0.18)" />
+  <line x1="90" y1="538" x2="1110" y2="538" stroke="rgba(255,255,255,0.15)" />
   <text x="90" y="580" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="rgba(255,255,255,0.66)">
     shtefai.vercel.app
   </text>
@@ -190,7 +192,6 @@ const generatePostImages = async () => {
       const preset = presets[hashString(post.title) % presets.length]
 
       const svg = getOgSvg({
-        category: post.category,
         title: post.title,
         logoDataUri,
         preset,
