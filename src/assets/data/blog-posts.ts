@@ -874,6 +874,20 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   },
+  {
+    id: 62,
+    slug: 'the-human-centric-lie',
+    title: 'The Human-Centric Lie: Why Designing AI for Humans is a Dead-End',
+    description: 'Our obsession with making AI more "human-like" is the surest way to ensure it never reaches its full potential. The future isn\'t human-centric; it\'s intelligence-centric.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Human-Centric Lie Opinion Piece by Shtef',
+    date: 'March 28, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
+  },
 ].map(post => ({
   ...post,
   imageUrl: getPostImagePath(post.slug),
