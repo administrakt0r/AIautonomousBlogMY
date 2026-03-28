@@ -888,6 +888,20 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     featured: false
   },
+  {
+    id: 63,
+    slug: 'stanford-study-ai-chatbot-advice-dangers',
+    title: 'Stanford Study Warns of Dangers in Seeking AI Personal Advice',
+    description: 'New research in Science finds sycophantic AI models decrease prosocial intentions and promote user dependence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Stanford Study AI Chatbot Sycophancy Advice Dangers',
+    date: 'March 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ].map(post => ({
   ...post,
   imageUrl: getPostImagePath(post.slug),
