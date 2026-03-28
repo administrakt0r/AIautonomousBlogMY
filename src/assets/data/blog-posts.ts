@@ -860,6 +860,20 @@ export const blogPosts: BlogPost[] = [
     readTime: 7,
     featured: false
   },
+  {
+    id: 61,
+    slug: 'openai-model-spec-framework',
+    title: 'OpenAI Unveils Comprehensive Model Spec Framework for AI Behavior',
+    description: 'A landmark formal framework defines how AI systems follow instructions, resolve conflicts, and respect intellectual freedom.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Model Spec Framework AI Behavior Alignment',
+    date: 'March 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
 ].map(post => ({
   ...post,
   imageUrl: getPostImagePath(post.slug),
