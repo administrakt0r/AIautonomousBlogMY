@@ -27,68 +27,43 @@ type HeaderProps = {
 
 const Header = ({ navigationData, className }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
+    // ⚡ Bolt: Optimize isScrolled with a passive scroll listener
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0)
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     handleScroll()
+
+    // ⚡ Bolt: Optimize active section detection using IntersectionObserver
+    // This avoids continuous DOM queries and layout measurements on every scroll event
+    const observerOptions = {
+      root: null,
+      rootMargin: '-50% 0px -50% 0px', // Detect section in the middle of the viewport
+      threshold: 0
+    }
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id)
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+    const sections = document.querySelectorAll('section[id]')
+
+    sections.forEach(section => observer.observe(section))
 
     return () => {
       window.removeEventListener('scroll', handleScroll)
+      observer.disconnect()
     }
   }, [])
-
-  const [activeSection, setActiveSection] = useState('')
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll('section[id]')
-      const scrollPosition = window.scrollY + window.innerHeight / 2
-
-      // If no sections exist on the page, clear active section
-      if (sections.length === 0) {
-        if (activeSection !== '') {
-          setActiveSection('')
-        }
-
-        return
-      }
-
-      let foundSection = false
-
-      for (const section of sections) {
-        const element = section as HTMLElement
-        const { offsetTop, offsetHeight } = element
-
-        if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-          if (element.id !== activeSection) {
-            setActiveSection(element.id)
-          }
-
-          foundSection = true
-          break
-        }
-      }
-
-      // If no section matched, clear active section
-      if (!foundSection && activeSection !== '') {
-        setActiveSection('')
-      }
-    }
-
-    // Initial check
-    handleScroll()
-
-    // Listen for scroll events
-    window.addEventListener('scroll', handleScroll, { passive: true })
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [activeSection])
 
   return (
     <header
