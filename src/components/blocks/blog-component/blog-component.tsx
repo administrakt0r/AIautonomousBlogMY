@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState, useMemo, useCallback } from 'react'
 
 import { useRouter } from 'next/navigation'
 
@@ -29,13 +29,13 @@ const getAvailableBlogPosts = () => {
   return blogPosts
 }
 
-const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
+const BlogGrid = React.memo(({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
   const router = useRouter()
 
-  const handleCardClick = (post: BlogPost) => {
+  const handleCardClick = useCallback((post: BlogPost) => {
     // Navigate to individual blog pages using the slug
     router.push(`/blog-detail/${post.slug}`)
-  }
+  }, [router])
 
   return (
     <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
@@ -90,7 +90,9 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
       ))}
     </div>
   )
-}
+})
+
+BlogGrid.displayName = 'BlogGrid'
 
 const Blog = () => {
   const [selectedTab, setSelectedTab] = useState('All')
@@ -100,56 +102,69 @@ const Blog = () => {
   const router = useRouter()
 
   // Get only the blog posts that have corresponding pages
-  const availableBlogPosts = getAvailableBlogPosts()
+  const availableBlogPosts = useMemo(() => getAvailableBlogPosts(), [])
 
-  // Filter out featured posts to avoid duplication with hero section
-  // Sort posts by ID in descending order (newest first)
-  const nonFeaturedPosts = availableBlogPosts.filter(post => !post.featured).sort((a, b) => b.id - a.id)
+  // ⚡ Bolt: Memoize nonFeaturedPosts to avoid re-sorting on every render
+  const nonFeaturedPosts = useMemo(() =>
+    availableBlogPosts.filter(post => !post.featured).sort((a, b) => b.id - a.id),
+    [availableBlogPosts]
+  )
 
-  // Dynamically generate categories from the available data
-  const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
-  const categories = ['All', ...uniqueCategories.sort()]
+  // ⚡ Bolt: Memoize categories derived from nonFeaturedPosts
+  const categories = useMemo(() => {
+    const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
 
-  const filteredPosts = nonFeaturedPosts.filter(post => {
-    const matchesCategory = selectedTab === 'All' || post.category === selectedTab
+    return ['All', ...uniqueCategories.sort()]
+  }, [nonFeaturedPosts])
 
-    const matchesSearch =
-      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.description.toLowerCase().includes(searchQuery.toLowerCase())
+  // ⚡ Bolt: Memoize filteredPosts based on tab and search query
+  const filteredPosts = useMemo(() => {
+    const lowerQuery = searchQuery.toLowerCase()
 
-    return matchesCategory && matchesSearch
-  })
+    return nonFeaturedPosts.filter(post => {
+      const matchesCategory = selectedTab === 'All' || post.category === selectedTab
 
-  const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE)
+      const matchesSearch =
+        post.title.toLowerCase().includes(lowerQuery) ||
+        post.description.toLowerCase().includes(lowerQuery)
 
-  const paginatedPosts = filteredPosts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE)
+      return matchesCategory && matchesSearch
+    })
+  }, [nonFeaturedPosts, selectedTab, searchQuery])
 
-  const resultsSummary =
+  const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])
+
+  const paginatedPosts = useMemo(() =>
+    filteredPosts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE),
+    [filteredPosts, currentPage]
+  )
+
+  const resultsSummary = useMemo(() =>
     filteredPosts.length === 0
       ? 'No stories match your current search and filters.'
       : `Showing ${paginatedPosts.length} of ${filteredPosts.length} ${
           filteredPosts.length === 1 ? 'story' : 'stories'
-        }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`
+        }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`,
+    [filteredPosts.length, paginatedPosts.length, selectedTab, searchQuery]
+  )
 
-  const handleTabChange = (tab: string) => {
+  const handleTabChange = useCallback((tab: string) => {
     setCurrentPage(1)
-
     setSelectedTab(tab)
 
     if (tab === 'All') {
       router.push('#categories')
     }
-  }
+  }, [router])
 
-  const handlePageChange = (page: number) => {
+  const handlePageChange = useCallback((page: number) => {
     setCurrentPage(page)
-
     const element = document.getElementById('categories')
 
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
-  }
+  }, [])
 
   return (
     <section className='py-8 sm:py-16 lg:py-24' id='categories'>
