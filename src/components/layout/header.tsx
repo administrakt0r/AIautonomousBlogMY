@@ -18,8 +18,6 @@ import type { NavigationSection } from '@/components/blocks/menu-navigation'
 import { cn } from '@/lib/utils'
 import Logo from '@/components/logo'
 
-
-
 type HeaderProps = {
   navigationData: NavigationSection[]
   className?: string

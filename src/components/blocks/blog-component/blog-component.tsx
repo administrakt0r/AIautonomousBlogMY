@@ -29,68 +29,73 @@ const getAvailableBlogPosts = () => {
   return blogPosts
 }
 
-const BlogGrid = React.memo(({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
-  const router = useRouter()
+const BlogGrid = React.memo(
+  ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
+    const router = useRouter()
 
-  const handleCardClick = useCallback((post: BlogPost) => {
-    // Navigate to individual blog pages using the slug
-    router.push(`/blog-detail/${post.slug}`)
-  }, [router])
+    const handleCardClick = useCallback(
+      (post: BlogPost) => {
+        // Navigate to individual blog pages using the slug
+        router.push(`/blog-detail/${post.slug}`)
+      },
+      [router]
+    )
 
-  return (
-    <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-      {posts.map(post => (
-        <Card
-          key={post.id}
-          className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300'
-          onClick={() => handleCardClick(post)}
-        >
-          <CardContent className='space-y-3.5'>
-            <div className='mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
-              <img
-                src={post.imageUrl}
-                alt={post.imageAlt}
-                width={1200}
-                height={630}
-                loading='lazy'
-                decoding='async'
-                className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
-              />
-            </div>
-            <div className='flex items-center justify-between gap-1.5'>
-              <div className='text-muted-foreground flex items-center gap-1.5'>
-                <CalendarDaysIcon className='size-5' />
-                <span>{post.date}</span>
+    return (
+      <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+        {posts.map(post => (
+          <Card
+            key={post.id}
+            className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300'
+            onClick={() => handleCardClick(post)}
+          >
+            <CardContent className='space-y-3.5'>
+              <div className='mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
+                <img
+                  src={post.imageUrl}
+                  alt={post.imageAlt}
+                  width={1200}
+                  height={630}
+                  loading='lazy'
+                  decoding='async'
+                  className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
+                />
               </div>
-              <Badge
-                className='bg-primary/10 text-primary rounded-full border-0 text-sm'
-                onClick={e => {
-                  e.stopPropagation()
-                  onCategoryClick(post.category)
-                  router.push(`/#category-${post.category}`)
-                }}
-              >
-                {post.category}
-              </Badge>
-            </div>
-            <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>{post.title}</h3>
-            <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
-            <div className='flex items-center justify-between'>
-              <span className='text-sm font-medium'>{post.author}</span>
-              <Button
-                size='icon'
-                className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
-              >
-                <ArrowRightIcon className='size-4 -rotate-45' />
-                <span className='sr-only'>Read more: {post.title}</span>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  )
-})
+              <div className='flex items-center justify-between gap-1.5'>
+                <div className='text-muted-foreground flex items-center gap-1.5'>
+                  <CalendarDaysIcon className='size-5' />
+                  <span>{post.date}</span>
+                </div>
+                <Badge
+                  className='bg-primary/10 text-primary rounded-full border-0 text-sm'
+                  onClick={e => {
+                    e.stopPropagation()
+                    onCategoryClick(post.category)
+                    router.push(`/#category-${post.category}`)
+                  }}
+                >
+                  {post.category}
+                </Badge>
+              </div>
+              <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>{post.title}</h3>
+              <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
+              <div className='flex items-center justify-between'>
+                <span className='text-sm font-medium'>{post.author}</span>
+                <Button
+                  size='icon'
+                  className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
+                >
+                  <ArrowRightIcon className='size-4 -rotate-45' />
+                  <span className='sr-only'>Read more: {post.title}</span>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    )
+  }
+)
 
 BlogGrid.displayName = 'BlogGrid'
 
@@ -105,8 +110,8 @@ const Blog = () => {
   const availableBlogPosts = useMemo(() => getAvailableBlogPosts(), [])
 
   // ⚡ Bolt: Memoize nonFeaturedPosts to avoid re-sorting on every render
-  const nonFeaturedPosts = useMemo(() =>
-    availableBlogPosts.filter(post => !post.featured).sort((a, b) => b.id - a.id),
+  const nonFeaturedPosts = useMemo(
+    () => availableBlogPosts.filter(post => !post.featured).sort((a, b) => b.id - a.id),
     [availableBlogPosts]
   )
 
@@ -125,8 +130,7 @@ const Blog = () => {
       const matchesCategory = selectedTab === 'All' || post.category === selectedTab
 
       const matchesSearch =
-        post.title.toLowerCase().includes(lowerQuery) ||
-        post.description.toLowerCase().includes(lowerQuery)
+        post.title.toLowerCase().includes(lowerQuery) || post.description.toLowerCase().includes(lowerQuery)
 
       return matchesCategory && matchesSearch
     })
@@ -134,28 +138,32 @@ const Blog = () => {
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])
 
-  const paginatedPosts = useMemo(() =>
-    filteredPosts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE),
+  const paginatedPosts = useMemo(
+    () => filteredPosts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE),
     [filteredPosts, currentPage]
   )
 
-  const resultsSummary = useMemo(() =>
-    filteredPosts.length === 0
-      ? 'No stories match your current search and filters.'
-      : `Showing ${paginatedPosts.length} of ${filteredPosts.length} ${
-          filteredPosts.length === 1 ? 'story' : 'stories'
-        }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`,
+  const resultsSummary = useMemo(
+    () =>
+      filteredPosts.length === 0
+        ? 'No stories match your current search and filters.'
+        : `Showing ${paginatedPosts.length} of ${filteredPosts.length} ${
+            filteredPosts.length === 1 ? 'story' : 'stories'
+          }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`,
     [filteredPosts.length, paginatedPosts.length, selectedTab, searchQuery]
   )
 
-  const handleTabChange = useCallback((tab: string) => {
-    setCurrentPage(1)
-    setSelectedTab(tab)
+  const handleTabChange = useCallback(
+    (tab: string) => {
+      setCurrentPage(1)
+      setSelectedTab(tab)
 
-    if (tab === 'All') {
-      router.push('#categories')
-    }
-  }, [router])
+      if (tab === 'All') {
+        router.push('#categories')
+      }
+    },
+    [router]
+  )
 
   const handlePageChange = useCallback((page: number) => {
     setCurrentPage(page)
