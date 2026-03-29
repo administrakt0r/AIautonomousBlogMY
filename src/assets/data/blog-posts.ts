@@ -994,6 +994,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 66,
+    slug: 'anthropic-claude-subscriptions-double-2026',
+    title: 'Claude Subscriptions Double in 2026 as Consumer Momentum Builds',
+    description:
+      'Agentic tools and strategic marketing drive record-breaking growth for Anthropic as paid subscribers double in early 2026.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude Paid Subscriber Growth 2026',
+    date: 'March 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
