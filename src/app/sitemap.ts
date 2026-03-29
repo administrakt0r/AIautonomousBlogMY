@@ -10,20 +10,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: SITE_URL,
       lastModified: new Date(),
       changeFrequency: 'daily',
-      priority: 1.0,
+      priority: 1.0
     },
     {
       url: `${SITE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.6
     },
     {
       url: `${SITE_URL}/responsible-ai-usage`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.5,
-    },
+      priority: 0.5
+    }
   ]
 
   // Dynamic blog post routes
@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: getPostUrl(post.slug),
     lastModified: new Date(post.date),
     changeFrequency: 'weekly' as const,
-    priority: 0.8,
+    priority: 0.8
   }))
 
   return [...staticRoutes, ...blogRoutes]

@@ -41,18 +41,18 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
         <div className='grid grid-cols-1 gap-3 sm:grid-cols-3'>
           {latestPosts.map(item => (
             <Link key={item.id} href={`/blog-detail/${item.slug}`} className='block'>
-              <Card className='group cursor-pointer border py-0 shadow-none transition-colors hover:border-primary/40'>
+              <Card className='group hover:border-primary/40 cursor-pointer border py-0 shadow-none transition-colors'>
                 <CardContent className='flex items-center gap-3 px-4 py-3'>
-                  <div className='min-w-0 flex-1 flex flex-col gap-1'>
+                  <div className='flex min-w-0 flex-1 flex-col gap-1'>
                     <div className='text-muted-foreground flex items-center gap-1.5 text-xs'>
                       <CalendarDaysIcon className='size-3.5 shrink-0' />
                       <time dateTime={new Date(item.date).toISOString()}>{item.date}</time>
                     </div>
-                    <h2 className='line-clamp-2 text-sm leading-snug font-medium transition-colors group-hover:text-primary'>
+                    <h2 className='group-hover:text-primary line-clamp-2 text-sm leading-snug font-medium transition-colors'>
                       {item.title}
                     </h2>
                   </div>
-                  <ArrowUpRightIcon className='text-muted-foreground size-4 shrink-0 transition-colors group-hover:text-primary' />
+                  <ArrowUpRightIcon className='text-muted-foreground group-hover:text-primary size-4 shrink-0 transition-colors' />
                 </CardContent>
               </Card>
             </Link>

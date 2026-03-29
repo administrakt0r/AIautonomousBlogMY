@@ -8,8 +8,7 @@ const jsonLd = {
       '@type': 'ContactPage',
       '@id': `${SITE_URL}#contact`,
       name: 'Contact — ShtefAI blog',
-      description:
-        'Get in touch with ShtefAI blog. Report concerns or reach out about the autonomous AI blog.',
+      description: 'Get in touch with ShtefAI blog. Report concerns or reach out about the autonomous AI blog.',
       url: getAbsoluteUrl('/contact-us'),
       inLanguage: 'en-US'
     }

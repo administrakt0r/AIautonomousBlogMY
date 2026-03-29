@@ -12,7 +12,7 @@ import {
   FAVICON_32_PATH,
   FAVICON_PATH,
   SHARED_OG_IMAGE_PATH,
-  SITE_URL,
+  SITE_URL
 } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
@@ -21,20 +21,20 @@ import './globals.css'
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
-  display: 'swap',
+  display: 'swap'
 })
 
 const sourceSerif4 = Source_Serif_4({
   variable: '--font-source-serif-4',
   subsets: ['latin'],
-  display: 'swap',
+  display: 'swap'
 })
 
 const ibmPlexMono = IBM_Plex_Mono({
   variable: '--font-ibm-plex-mono',
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
+  display: 'swap'
 })
 
 export const metadata: Metadata = {
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
-      'max-video-preview': -1,
-    },
+      'max-video-preview': -1
+    }
   },
   keywords: [
     'AI news',
@@ -83,17 +83,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     types: {
-      'application/rss+xml': '/rss.xml',
-    },
+      'application/rss+xml': '/rss.xml'
+    }
   },
   icons: {
     icon: [
       { url: FAVICON_PATH, sizes: 'any' },
       { url: FAVICON_32_PATH, sizes: '32x32', type: 'image/png' },
-      { url: FAVICON_16_PATH, sizes: '16x16', type: 'image/png' },
+      { url: FAVICON_16_PATH, sizes: '16x16', type: 'image/png' }
     ],
     shortcut: [FAVICON_PATH],
-    apple: [{ url: APPLE_TOUCH_ICON_PATH, sizes: '180x180', type: 'image/png' }],
+    apple: [{ url: APPLE_TOUCH_ICON_PATH, sizes: '180x180', type: 'image/png' }]
   },
   openGraph: {
     title: {
@@ -122,9 +122,8 @@ export const metadata: Metadata = {
       template: '%s | ShtefAI blog',
       default: 'ShtefAI blog ⚡ — Where Machines Learn and Humans Discover'
     },
-    description:
-      'Daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.',
-    images: [SHARED_OG_IMAGE_PATH],
+    description: 'Daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.',
+    images: [SHARED_OG_IMAGE_PATH]
   },
   verification: {
     // Add your Google Search Console verification code here when available
@@ -132,7 +131,7 @@ export const metadata: Metadata = {
   },
   other: {
     'application-name': 'ShtefAI blog',
-    'msapplication-TileColor': '#059669',
+    'msapplication-TileColor': '#059669'
   }
 }
 

@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: post.description,
     authors: [{ name: post.author }],
     alternates: {
-      canonical: `/blog-detail/${post.slug}`,
+      canonical: `/blog-detail/${post.slug}`
     },
     openGraph: {
       title: post.title,
@@ -51,16 +51,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           url: post.imageUrl,
           width: 1200,
           height: 630,
-          alt: post.imageAlt,
+          alt: post.imageAlt
         }
-      ],
+      ]
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: [post.imageUrl],
-    },
+      images: [post.imageUrl]
+    }
   }
 }
 
@@ -193,7 +193,9 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   </div>
                   <div className='flex flex-col gap-1.5'>
                     <span className='text-muted-foreground text-sm'>Posted on</span>
-                    <time dateTime={new Date(post.date).toISOString()} className='text-foreground text-sm font-medium'>{post.date}</time>
+                    <time dateTime={new Date(post.date).toISOString()} className='text-foreground text-sm font-medium'>
+                      {post.date}
+                    </time>
                   </div>
                 </div>
               </div>
@@ -240,7 +242,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                 author: {
                   '@type': 'Person',
                   name: post.author,
-                  url: getAbsoluteUrl('/about'),
+                  url: getAbsoluteUrl('/about')
                 },
                 publisher: {
                   '@type': 'Organization',
@@ -248,12 +250,12 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   url: SITE_URL,
                   logo: {
                     '@type': 'ImageObject',
-                    url: getAbsoluteUrl(PUBLISHER_LOGO_PATH),
-                  },
+                    url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
+                  }
                 },
                 mainEntityOfPage: {
                   '@type': 'WebPage',
-                  '@id': getPostUrl(post.slug),
+                  '@id': getPostUrl(post.slug)
                 },
                 articleSection: post.category,
                 wordCount: post.readTime * 200,
@@ -262,8 +264,8 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   '@type': 'Blog',
                   '@id': `${SITE_URL}/#blog`,
                   name: 'ShtefAI blog',
-                  url: SITE_URL,
-                },
+                  url: SITE_URL
+                }
               },
               {
                 '@type': 'BreadcrumbList',
@@ -272,26 +274,25 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                     '@type': 'ListItem',
                     position: 1,
                     name: 'Home',
-                    item: SITE_URL,
+                    item: SITE_URL
                   },
                   {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Blog',
-                    item: `${SITE_URL}/#categories`,
+                    item: `${SITE_URL}/#categories`
                   },
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: post.category,
-                  },
-                ],
-              },
-            ],
+                    name: post.category
+                  }
+                ]
+              }
+            ]
           }).replace(/</g, '\\u003c')
         }}
       />
     </div>
   )
 }
-

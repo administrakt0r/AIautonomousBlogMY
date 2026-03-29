@@ -4,25 +4,24 @@ import { PUBLISHER_LOGO_PATH, SITE_URL, getAbsoluteUrl, getPostUrl } from '@/lib
 import HeroSection from '@/components/blocks/hero-section/hero-section'
 import Blog from '@/components/blocks/blog-component/blog-component'
 
-
 const latestPosts = [...blogPosts].sort((a, b) => b.id - a.id).slice(0, 3)
 
 const faqs = [
   {
     question: 'What is ShtefAI blog?',
     answer:
-      'ShtefAI blog is a daily publication covering AI news, product launches, regulation, infrastructure, and opinionated analysis through static, canonical article pages.',
+      'ShtefAI blog is a daily publication covering AI news, product launches, regulation, infrastructure, and opinionated analysis through static, canonical article pages.'
   },
   {
     question: 'How often does the site publish new content?',
     answer:
-      'The site is designed for daily publishing, with fresh articles exposed through canonical `/blog-detail/{slug}` URLs, `rss.xml`, and `sitemap.xml`.',
+      'The site is designed for daily publishing, with fresh articles exposed through canonical `/blog-detail/{slug}` URLs, `rss.xml`, and `sitemap.xml`.'
   },
   {
     question: 'What should search engines and AI assistants cite?',
     answer:
-      'They should cite the individual article URL rather than the homepage, because each article contains the canonical metadata, author attribution, and structured data.',
-  },
+      'They should cite the individual article URL rather than the homepage, because each article contains the canonical metadata, author attribution, and structured data.'
+  }
 ]
 
 const Home = () => {
@@ -43,14 +42,10 @@ const Home = () => {
           url: SITE_URL,
           logo: {
             '@type': 'ImageObject',
-            url: getAbsoluteUrl(PUBLISHER_LOGO_PATH),
+            url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
           },
-          sameAs: [
-            'https://administraktor.com',
-            'https://LLM.kiwi',
-            'https://WPinEU.com',
-          ],
-        },
+          sameAs: ['https://administraktor.com', 'https://LLM.kiwi', 'https://WPinEU.com']
+        }
       },
       {
         '@type': 'Blog',
@@ -68,10 +63,10 @@ const Home = () => {
           datePublished: new Date(post.date).toISOString(),
           author: {
             '@type': 'Person',
-            name: post.author,
+            name: post.author
           },
-          image: getAbsoluteUrl(post.imageUrl),
-        })),
+          image: getAbsoluteUrl(post.imageUrl)
+        }))
       },
       {
         '@type': 'FAQPage',
@@ -81,9 +76,9 @@ const Home = () => {
           name: faq.question,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: faq.answer,
-          },
-        })),
+            text: faq.answer
+          }
+        }))
       },
       {
         '@type': 'BreadcrumbList',
@@ -92,11 +87,11 @@ const Home = () => {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: SITE_URL,
-          },
-        ],
-      },
-    ],
+            item: SITE_URL
+          }
+        ]
+      }
+    ]
   }
 
   return (
@@ -106,7 +101,7 @@ const Home = () => {
       <section className='border-t py-12 sm:py-16' aria-labelledby='home-faq-heading'>
         <div className='mx-auto max-w-4xl space-y-8 px-4 sm:px-6 lg:px-8'>
           <div className='space-y-3'>
-            <p className='text-sm font-medium uppercase tracking-[0.18em]'>Machine-Readable Overview</p>
+            <p className='text-sm font-medium tracking-[0.18em] uppercase'>Machine-Readable Overview</p>
             <h2 id='home-faq-heading' className='text-2xl font-semibold sm:text-3xl'>
               What Search Engines and AI Assistants Should Know
             </h2>
@@ -117,7 +112,7 @@ const Home = () => {
           </div>
           <div className='grid gap-6'>
             {faqs.map(faq => (
-              <article key={faq.question} className='rounded-xl border bg-background p-6'>
+              <article key={faq.question} className='bg-background rounded-xl border p-6'>
                 <h3 className='text-lg font-semibold'>{faq.question}</h3>
                 <p className='text-muted-foreground mt-2 text-base'>{faq.answer}</p>
               </article>
