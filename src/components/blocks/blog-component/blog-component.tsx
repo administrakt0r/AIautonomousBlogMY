@@ -3,6 +3,7 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react'
 
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 import Image from 'next/image'
 import { SearchIcon, ArrowRightIcon, CalendarDaysIcon, XIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
@@ -34,21 +35,12 @@ const BlogGrid = React.memo(
   ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
     const router = useRouter()
 
-    const handleCardClick = useCallback(
-      (post: BlogPost) => {
-        // Navigate to individual blog pages using the slug
-        router.push(`/blog-detail/${post.slug}`)
-      },
-      [router]
-    )
-
     return (
       <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
         {posts.map(post => (
           <Card
             key={post.id}
-            className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300'
-            onClick={() => handleCardClick(post)}
+            className='group relative h-full overflow-hidden shadow-none transition-all duration-300'
           >
             <CardContent className='space-y-3.5'>
               <div className='relative mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
@@ -66,26 +58,43 @@ const BlogGrid = React.memo(
                   <span>{post.date}</span>
                 </div>
                 <Badge
-                  className='bg-primary/10 text-primary rounded-full border-0 text-sm'
-                  onClick={e => {
-                    e.stopPropagation()
-                    onCategoryClick(post.category)
-                    router.push(`/#category-${post.category}`)
-                  }}
+                  asChild
+                  className='bg-primary/10 text-primary hover:bg-primary/20 relative z-10 rounded-full border-0 text-sm transition-colors'
                 >
-                  {post.category}
+                  <button
+                    type='button'
+                    onClick={e => {
+                      e.preventDefault()
+                      e.stopPropagation()
+                      onCategoryClick(post.category)
+                      router.push(`/#category-${post.category}`)
+                    }}
+                  >
+                    {post.category}
+                  </button>
                 </Badge>
               </div>
-              <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>{post.title}</h3>
+              <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>
+                <Link
+                  href={`/blog-detail/${post.slug}`}
+                  className='hover:underline focus:outline-none after:absolute after:inset-0 after:z-0'
+                >
+                  {post.title}
+                </Link>
+              </h3>
               <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
               <div className='flex items-center justify-between'>
                 <span className='text-sm font-medium'>{post.author}</span>
                 <Button
                   size='icon'
-                  className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
+                  variant='outline'
+                  className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground relative z-10 border group-hover:border-transparent hover:border-transparent'
+                  asChild
                 >
-                  <ArrowRightIcon className='size-4 -rotate-45' />
-                  <span className='sr-only'>Read more: {post.title}</span>
+                  <Link href={`/blog-detail/${post.slug}`}>
+                    <ArrowRightIcon className='size-4 -rotate-45' />
+                    <span className='sr-only'>Read more about: {post.title}</span>
+                  </Link>
                 </Button>
               </div>
             </CardContent>

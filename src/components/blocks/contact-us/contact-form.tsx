@@ -26,7 +26,11 @@ const ContactForm = () => {
 
   if (isSubmitted) {
     return (
-      <div className='flex flex-col items-center justify-center space-y-4 py-8 text-center'>
+      <div
+        role='status'
+        aria-live='polite'
+        className='flex flex-col items-center justify-center space-y-4 py-8 text-center'
+      >
         <div className='bg-primary/10 rounded-full p-3'>
           <CheckCircleIcon className='text-primary size-10' />
         </div>
@@ -49,7 +53,14 @@ const ContactForm = () => {
           Your Name <span className='text-destructive'>*</span>
         </Label>
         <div className='relative'>
-          <Input id='username' type='text' placeholder='Enter your name here...' className='peer h-10 pr-9' required />
+          <Input
+            id='username'
+            type='text'
+            placeholder='Enter your name here...'
+            className='peer h-10 pr-9'
+            required
+            aria-required='true'
+          />
           <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
             <UserIcon className='size-4' />
             <span className='sr-only'>Name</span>
@@ -63,7 +74,14 @@ const ContactForm = () => {
           Your Email <span className='text-destructive'>*</span>
         </Label>
         <div className='relative'>
-          <Input id='email' type='email' placeholder='Enter your email here...' className='peer h-10 pr-9' required />
+          <Input
+            id='email'
+            type='email'
+            placeholder='Enter your email here...'
+            className='peer h-10 pr-9'
+            required
+            aria-required='true'
+          />
           <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
             <MailIcon className='size-4' />
             <span className='sr-only'>Email</span>
@@ -88,7 +106,13 @@ const ContactForm = () => {
         <Label htmlFor='message'>
           Message <span className='text-destructive'>*</span>
         </Label>
-        <Textarea id='message' className='h-28 resize-none' placeholder='Enter your message' required />
+        <Textarea
+          id='message'
+          className='h-28 resize-none'
+          placeholder='Enter your message'
+          required
+          aria-required='true'
+        />
       </div>
 
       {/* Submit Button */}
