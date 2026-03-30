@@ -1039,6 +1039,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 69,
+    slug: 'anthropic-overtakes-openai-enterprise-adoption-ramp',
+    title: 'Anthropic Overtakes OpenAI in New Enterprise AI Adoption',
+    description:
+      "New data from the Ramp AI Index shows Anthropic winning 70% of head-to-head matches against OpenAI for first-time business AI spend.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Overtakes OpenAI in New Enterprise AI Adoption',
+    date: 'March 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
