@@ -1,9 +1,10 @@
 'use client'
 
-import React, { useState, useMemo, useCallback } from 'react'
+import React, { useState, useMemo, useCallback, useEffect } from 'react'
 
 import { useRouter } from 'next/navigation'
 
+import Image from 'next/image'
 import { SearchIcon, ArrowRightIcon, CalendarDaysIcon, XIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
 import { Badge } from '@/components/ui/badge'
@@ -50,15 +51,13 @@ const BlogGrid = React.memo(
             onClick={() => handleCardClick(post)}
           >
             <CardContent className='space-y-3.5'>
-              <div className='mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
-                <img
+              <div className='relative mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
+                <Image
                   src={post.imageUrl}
                   alt={post.imageAlt}
-                  width={1200}
-                  height={630}
-                  loading='lazy'
-                  decoding='async'
-                  className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
+                  fill
+                  sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                  className='object-cover object-center transition-transform duration-300 group-hover:scale-105'
                 />
               </div>
               <div className='flex items-center justify-between gap-1.5'>
@@ -102,7 +101,20 @@ BlogGrid.displayName = 'BlogGrid'
 const Blog = () => {
   const [selectedTab, setSelectedTab] = useState('All')
   const [searchQuery, setSearchQuery] = useState('')
+
+  // ⚡ Bolt: Debounce search query to reduce the frequency of filtering operations and re-renders
+  const [debouncedSearchQuery, setDebouncedSearchQuery] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedSearchQuery(searchQuery)
+    }, 300)
+
+    return () => {
+      clearTimeout(handler)
+    }
+  }, [searchQuery])
   const POSTS_PER_PAGE = 9
   const router = useRouter()
 
@@ -122,9 +134,9 @@ const Blog = () => {
     return ['All', ...uniqueCategories.sort()]
   }, [nonFeaturedPosts])
 
-  // ⚡ Bolt: Memoize filteredPosts based on tab and search query
+  // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query
   const filteredPosts = useMemo(() => {
-    const lowerQuery = searchQuery.toLowerCase()
+    const lowerQuery = debouncedSearchQuery.toLowerCase()
 
     return nonFeaturedPosts.filter(post => {
       const matchesCategory = selectedTab === 'All' || post.category === selectedTab
@@ -134,7 +146,7 @@ const Blog = () => {
 
       return matchesCategory && matchesSearch
     })
-  }, [nonFeaturedPosts, selectedTab, searchQuery])
+  }, [nonFeaturedPosts, selectedTab, debouncedSearchQuery])
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])
 
@@ -149,8 +161,10 @@ const Blog = () => {
         ? 'No stories match your current search and filters.'
         : `Showing ${paginatedPosts.length} of ${filteredPosts.length} ${
             filteredPosts.length === 1 ? 'story' : 'stories'
-          }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`,
-    [filteredPosts.length, paginatedPosts.length, selectedTab, searchQuery]
+          }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${
+            debouncedSearchQuery ? ` for "${debouncedSearchQuery}"` : ''
+          }.`,
+    [filteredPosts.length, paginatedPosts.length, selectedTab, debouncedSearchQuery]
   )
 
   const handleTabChange = useCallback(

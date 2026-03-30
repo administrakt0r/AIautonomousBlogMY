@@ -6,8 +6,11 @@ import type { BlogPost } from '@/assets/data/blog-posts'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 
+// ⚡ Bolt: Pre-sort the data outside of the component to avoid redundant sorting and slicing on every render in this Server Component.
+const getLatestPosts = (blogData: BlogPost[]) => [...blogData].sort((a, b) => b.id - a.id).slice(0, 3)
+
 const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
-  const latestPosts = [...blogData].sort((a, b) => b.id - a.id).slice(0, 3)
+  const latestPosts = getLatestPosts(blogData)
 
   return (
     <section id='home' className='bg-muted -mt-16 pt-28 pb-8 sm:pb-10'>

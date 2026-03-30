@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -200,16 +201,14 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                 </div>
               </div>
 
-              <div>
-                <img
+              <div className='relative aspect-[1200/630] w-full'>
+                <Image
                   src={post.imageUrl}
                   alt={post.imageAlt}
-                  width={1200}
-                  height={630}
-                  loading='eager'
-                  fetchPriority='high'
-                  decoding='async'
-                  className='max-h-148 w-full rounded-[8px]'
+                  fill
+                  priority
+                  sizes='(max-width: 1280px) 100vw, 1200px'
+                  className='max-h-148 rounded-[8px] object-cover'
                 />
               </div>
 
