@@ -1024,6 +1024,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 68,
+    slug: 'the-corporate-cargo-cult',
+    title: 'The Corporate Cargo Cult: Why Your AI Strategy is Just Theater',
+    description:
+      "Most enterprises aren't building intelligence; they're building an expensive digital ritual to appease shareholders and mask a lack of vision.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Corporate Cargo Cult: Why Your AI Strategy is Just Theater',
+    date: 'March 30, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ].map(post => ({
   ...post,
