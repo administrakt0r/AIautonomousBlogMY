@@ -1,5 +1,7 @@
 'use client'
 
+import React from 'react'
+
 import { ArrowRightIcon, CalendarDaysIcon } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
@@ -14,7 +16,7 @@ interface BlogProps {
   blogPosts?: typeof allBlogPosts
 }
 
-const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
+const Blog = React.memo(({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
   const router = useRouter()
 
   return (
@@ -92,6 +94,8 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
       </div>
     </section>
   )
-}
+})
+
+Blog.displayName = 'BlogRelatedPost'
 
 export default Blog
