@@ -1009,6 +1009,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 67,
+    slug: 'jpmorgan-tracks-employee-ai-usage',
+    title: 'JPMorgan Now Tracks Employee AI Usage to Influence Performance Reviews',
+    description:
+      'The banking giant makes AI literacy a mandatory baseline for its 65,000 technologists, weaving AI metrics into career trajectories.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'JPMorgan AI usage tracking for performance reviews',
+    date: 'March 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ].map(post => ({
   ...post,
