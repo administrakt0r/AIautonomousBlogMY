@@ -103,17 +103,22 @@ const Header = ({ navigationData, className }: HeaderProps) => {
               <TooltipContent>Get in Touch</TooltipContent>
             </Tooltip>
 
-            <MenuDropdown
-              align='end'
-              navigationData={navigationData}
-              activeSection={activeSection}
-              trigger={
-                <Button variant='outline' size='icon' className='lg:hidden'>
-                  <MenuIcon />
-                  <span className='sr-only'>Menu</span>
-                </Button>
-              }
-            />
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <MenuDropdown
+                  align='end'
+                  navigationData={navigationData}
+                  activeSection={activeSection}
+                  trigger={
+                    <Button variant='outline' size='icon' className='lg:hidden'>
+                      <MenuIcon />
+                      <span className='sr-only'>Menu</span>
+                    </Button>
+                  }
+                />
+              </TooltipTrigger>
+              <TooltipContent>Menu</TooltipContent>
+            </Tooltip>
           </div>
         </div>
       </div>
