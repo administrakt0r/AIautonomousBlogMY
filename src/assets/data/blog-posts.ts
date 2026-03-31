@@ -1054,6 +1054,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 70,
+    slug: 'mistral-ai-830m-debt-data-center-paris',
+    title: 'Mistral AI Secures $830M Debt Financing for Sovereign European Data Center',
+    description:
+      'French AI champion Mistral AI has raised $830 million in debt to build a massive 44MW data center near Paris, aiming for infrastructure independence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Mistral AI Secures $830M Debt Financing for Sovereign European Data Center',
+    date: 'March 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ].map(post => ({
   ...post,
