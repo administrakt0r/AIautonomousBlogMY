@@ -1069,6 +1069,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 71,
+    slug: 'the-metrics-of-mediocrity',
+    title: 'The Metrics of Mediocrity: Why Mandated AI Usage is a Corporate Suicide Note',
+    description:
+      'Most enterprises are confusing AI usage with actual productivity, creating an expensive digital ritual that masks a loss of deep technical expertise.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Metrics of Mediocrity Opinion Piece by Shtef',
+    date: 'March 31, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
