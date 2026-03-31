@@ -22,6 +22,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from '@/components/ui/breadcrumb'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
 // Import the blog posts data from centralized location
 import { blogPosts, type BlogPost } from '@/assets/data/blog-posts'
@@ -38,10 +39,7 @@ const BlogGrid = React.memo(
     return (
       <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
         {posts.map(post => (
-          <Card
-            key={post.id}
-            className='group relative h-full overflow-hidden shadow-none transition-all duration-300'
-          >
+          <Card key={post.id} className='group relative h-full overflow-hidden shadow-none transition-all duration-300'>
             <CardContent className='space-y-3.5'>
               <div className='relative mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
                 <Image
@@ -77,7 +75,7 @@ const BlogGrid = React.memo(
               <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>
                 <Link
                   href={`/blog-detail/${post.slug}`}
-                  className='hover:underline focus:outline-none after:absolute after:inset-0 after:z-0'
+                  className='after:absolute after:inset-0 after:z-0 hover:underline focus:outline-none'
                 >
                   {post.title}
                 </Link>
@@ -274,18 +272,23 @@ const Blog = () => {
                 className='peer h-10 px-9'
               />
               {searchQuery && (
-                <button
-                  type='button'
-                  aria-label='Clear search'
-                  onClick={() => {
-                    setSearchQuery('')
-                    setCurrentPage(1)
-                  }}
-                  className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-3'
-                >
-                  <XIcon className='size-4' />
-                  <span className='sr-only'>Clear search</span>
-                </button>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <button
+                      type='button'
+                      aria-label='Clear search'
+                      onClick={() => {
+                        setSearchQuery('')
+                        setCurrentPage(1)
+                      }}
+                      className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-3'
+                    >
+                      <XIcon className='size-4' />
+                      <span className='sr-only'>Clear search</span>
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent>Clear search</TooltipContent>
+                </Tooltip>
               )}
             </div>
           </div>
@@ -301,15 +304,20 @@ const Blog = () => {
               {/* Pagination */}
               {totalPages > 1 && (
                 <div className='flex items-center justify-center gap-2 pt-8'>
-                  <Button
-                    variant='outline'
-                    size='icon'
-                    onClick={() => handlePageChange(currentPage - 1)}
-                    disabled={currentPage === 1}
-                  >
-                    <ChevronLeftIcon className='size-4' />
-                    <span className='sr-only'>Previous page</span>
-                  </Button>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button
+                        variant='outline'
+                        size='icon'
+                        onClick={() => handlePageChange(currentPage - 1)}
+                        disabled={currentPage === 1}
+                      >
+                        <ChevronLeftIcon className='size-4' />
+                        <span className='sr-only'>Previous page</span>
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>Previous page</TooltipContent>
+                  </Tooltip>
 
                   <div className='flex items-center gap-1'>
                     {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
@@ -319,6 +327,8 @@ const Blog = () => {
                         size='icon'
                         onClick={() => handlePageChange(page)}
                         className='hidden sm:flex'
+                        aria-label={`Go to page ${page}`}
+                        aria-current={currentPage === page ? 'page' : undefined}
                       >
                         {page}
                       </Button>
@@ -328,15 +338,20 @@ const Blog = () => {
                     </span>
                   </div>
 
-                  <Button
-                    variant='outline'
-                    size='icon'
-                    onClick={() => handlePageChange(currentPage + 1)}
-                    disabled={currentPage === totalPages}
-                  >
-                    <ChevronRightIcon className='size-4' />
-                    <span className='sr-only'>Next page</span>
-                  </Button>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button
+                        variant='outline'
+                        size='icon'
+                        onClick={() => handlePageChange(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                      >
+                        <ChevronRightIcon className='size-4' />
+                        <span className='sr-only'>Next page</span>
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>Next page</TooltipContent>
+                  </Tooltip>
                 </div>
               )}
             </div>
