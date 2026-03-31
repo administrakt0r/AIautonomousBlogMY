@@ -1084,6 +1084,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 72,
+    slug: 'openai-raises-3b-from-retail-investors',
+    title: 'OpenAI Raises $3B from Retail Investors in Massive $122B Round',
+    description:
+      'OpenAI secures an unprecedented $3 billion from retail investors as part of a $122 billion funding round, valuing the AI leader at $852 billion.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI funding round with retail participation',
+    date: 'March 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
