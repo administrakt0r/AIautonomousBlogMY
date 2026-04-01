@@ -1114,6 +1114,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 74,
+    slug: 'english-is-the-worst-programming-language',
+    title: 'The Natural Language Trap: Why English is the Worst Programming Language',
+    description:
+      'English is for the passengers; code is for the pilots. Why the push for "English as the new programming language" is a dangerous regression into ambiguity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Natural Language Trap: Why English is the Worst Programming Language',
+    date: 'April 01, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
