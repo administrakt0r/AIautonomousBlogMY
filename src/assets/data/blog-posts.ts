@@ -1099,6 +1099,21 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 73,
+    slug: 'salesforce-slack-ai-makeover',
+    title: 'Salesforce Unveils Major Slack AI Overhaul with 30 New Features',
+    description:
+      'Salesforce introduces a massive AI-driven transformation for Slack, integrating autonomous agents and live CRM data to redefine workplace productivity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Salesforce Slack AI Makeover with Agentforce integration',
+    date: 'April 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
