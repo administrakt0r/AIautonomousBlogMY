@@ -1157,6 +1157,20 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 77,
+    slug: 'the-852b-delusion',
+    title: 'The $852B Delusion: Why Retail Investors are Funding Their Own Obsolescence',
+    description: 'Retail investors are pouring capital into the very technology that will automate their professional relevance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The $852B Delusion: Why Retail Investors are Funding Their Own Obsolescence',
+    date: 'April 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ].map(post => ({
   ...post,
