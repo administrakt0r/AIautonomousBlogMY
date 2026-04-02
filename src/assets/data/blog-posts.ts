@@ -1174,6 +1174,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 78,
+    slug: 'microsoft-foundational-mai-models-launch',
+    title: 'Microsoft Unveils Foundational AI Models to Challenge OpenAI and Google',
+    description:
+      'The tech giant releases three high-speed foundational models and its new Foundry platform, signaling a major strategic shift in AI development.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Microsoft Foundational AI Models MAI Series Launch',
+    date: 'April 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
