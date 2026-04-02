@@ -6,6 +6,7 @@ import { ArrowRightIcon, CalendarDaysIcon } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -42,16 +43,14 @@ const Blog = React.memo(({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) =>
               onClick={() => router.push(`/blog-detail/${post.slug}`)}
             >
               <CardContent className='space-y-3.5'>
-                <div className='mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
+                <div className='relative mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
                   <Link href={`/blog-detail/${post.slug}`}>
-                    <img
+                    <Image
                       src={post.imageUrl}
                       alt={post.imageAlt}
-                      width={1200}
-                      height={630}
-                      loading='lazy'
-                      decoding='async'
-                      className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
+                      fill
+                      sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                      className='object-cover object-center transition-transform duration-300 group-hover:scale-105'
                     />
                   </Link>
                 </div>

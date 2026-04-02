@@ -1,28 +1,27 @@
 import { ArrowUpRightIcon, CalendarDaysIcon } from 'lucide-react'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
-import type { BlogPost } from '@/assets/data/blog-posts'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 
-// ⚡ Bolt: Pre-sort the data outside of the component to avoid redundant sorting and slicing on every render in this Server Component.
-const getLatestPosts = (blogData: BlogPost[]) => [...blogData].sort((a, b) => b.id - a.id).slice(0, 3)
+// ⚡ Bolt: Use pre-sorted data from the centralized data store to avoid redundant sorting and slicing on every render in this Server Component.
+import { sortedBlogPosts } from '@/assets/data/blog-posts'
 
-const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
-  const latestPosts = getLatestPosts(blogData)
+const HeroSection = () => {
+  const latestPosts = sortedBlogPosts.slice(0, 3)
 
   return (
     <section id='home' className='bg-muted -mt-16 pt-28 pb-8 sm:pb-10'>
       <div className='mx-auto flex h-full max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8'>
         <div className='flex max-w-3xl flex-col items-center gap-3 self-center text-center'>
           <Badge variant='outline' className='flex items-center gap-1.5 text-sm font-normal'>
-            <img
+            <Image
               src='/shteflogo.svg'
               alt='ShtefAI Logo'
               width={16}
               height={16}
-              decoding='async'
               className='h-4 w-4 rounded-sm'
             />
             AI News • Updated Daily
