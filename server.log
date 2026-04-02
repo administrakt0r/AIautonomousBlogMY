@@ -1,0 +1,27 @@
+
+> shadcn-nextjs-ink-landing-page@1.1.0 predev /app
+> pnpm generate:derived
+
+
+> shadcn-nextjs-ink-landing-page@1.1.0 generate:derived /app
+> pnpm generate:post-images && pnpm generate:rss
+
+
+> shadcn-nextjs-ink-landing-page@1.1.0 generate:post-images /app
+> node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --experimental-specifier-resolution=node scripts/generate-post-images.mjs
+
+
+> shadcn-nextjs-ink-landing-page@1.1.0 generate:rss /app
+> node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --experimental-specifier-resolution=node scripts/generate-rss.mjs
+
+
+> shadcn-nextjs-ink-landing-page@1.1.0 dev /app
+> next dev
+
+⚠ Port 3000 is in use by an unknown process, using available port 3001 instead.
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.0.2:3001
+
+✓ Starting...
+✓ Ready in 1094ms
