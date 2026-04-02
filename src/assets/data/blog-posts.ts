@@ -1143,6 +1143,20 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 76,
+    slug: 'the-ip-extinction',
+    title: 'The IP Extinction: Why Anthropic’s Leak Marks the End of Private Code',
+    description: 'The era of proprietary software is over; we just haven\'t admitted it yet. Discover why AI makes private code an impossibility.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The IP Extinction: Why Anthropic’s Leak Marks the End of Private Code',
+    date: 'April 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
