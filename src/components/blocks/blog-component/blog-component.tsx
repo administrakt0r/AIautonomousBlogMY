@@ -34,7 +34,10 @@ const BlogGrid = React.memo(
     return (
       <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
         {posts.map(post => (
-          <Card key={post.id} className='group relative h-full overflow-hidden shadow-none transition-all duration-300'>
+          <Card
+            key={post.id}
+            className='group relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2'
+          >
             <CardContent className='space-y-3.5'>
               <div className='relative mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
                 <Image
@@ -228,6 +231,7 @@ const Blog = () => {
                 {categories.map(category => (
                   <Button
                     key={category}
+                    type='button'
                     variant={selectedTab === category ? 'secondary' : 'ghost'}
                     size='sm'
                     onClick={() => handleTabChange(category)}
@@ -296,6 +300,7 @@ const Blog = () => {
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button
+                        type='button'
                         variant='outline'
                         size='icon'
                         onClick={() => handlePageChange(currentPage - 1)}
@@ -312,6 +317,7 @@ const Blog = () => {
                     {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
                       <Button
                         key={page}
+                        type='button'
                         variant={currentPage === page ? 'default' : 'outline'}
                         size='icon'
                         onClick={() => handlePageChange(page)}
@@ -330,6 +336,7 @@ const Blog = () => {
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button
+                        type='button'
                         variant='outline'
                         size='icon'
                         onClick={() => handlePageChange(currentPage + 1)}

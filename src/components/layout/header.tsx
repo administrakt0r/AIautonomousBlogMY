@@ -110,7 +110,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
                   navigationData={navigationData}
                   activeSection={activeSection}
                   trigger={
-                    <Button variant='outline' size='icon' className='lg:hidden'>
+                    <Button type='button' variant='outline' size='icon' className='lg:hidden'>
                       <MenuIcon />
                       <span className='sr-only'>Menu</span>
                     </Button>

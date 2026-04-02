@@ -39,20 +39,17 @@ const Blog = React.memo(({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) =>
           {blogPosts.map(post => (
             <Card
               key={post.id}
-              className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300'
-              onClick={() => router.push(`/blog-detail/${post.slug}`)}
+              className='group focus-within:ring-primary relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-offset-2'
             >
               <CardContent className='space-y-3.5'>
                 <div className='relative mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
-                  <Link href={`/blog-detail/${post.slug}`}>
-                    <Image
-                      src={post.imageUrl}
-                      alt={post.imageAlt}
-                      fill
-                      sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                      className='object-cover object-center transition-transform duration-300 group-hover:scale-105'
-                    />
-                  </Link>
+                  <Image
+                    src={post.imageUrl}
+                    alt={post.imageAlt}
+                    fill
+                    sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                    className='object-cover object-center transition-transform duration-300 group-hover:scale-105'
+                  />
                 </div>
                 <div className='flex items-center justify-between gap-1.5'>
                   <div className='text-muted-foreground flex items-center gap-1.5'>
@@ -60,29 +57,41 @@ const Blog = React.memo(({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) =>
                     <span>{post.date}</span>
                   </div>
                   <Badge
-                    className='bg-primary/10 text-primary border-0 text-sm'
-                    onClick={e => {
-                      e.stopPropagation()
-                      router.push(`/#category-${post.category}`)
-                    }}
+                    asChild
+                    className='bg-primary/10 text-primary hover:bg-primary/20 relative z-10 rounded-full border-0 text-sm transition-colors'
                   >
-                    {post.category}
+                    <button
+                      type='button'
+                      onClick={e => {
+                        e.preventDefault()
+                        e.stopPropagation()
+                        router.push(`/#category-${post.category}`)
+                      }}
+                    >
+                      {post.category}
+                    </button>
                   </Badge>
                 </div>
                 <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>
-                  <Link href={`/blog-detail/${post.slug}`}>{post.title}</Link>
+                  <Link
+                    href={`/blog-detail/${post.slug}`}
+                    className='after:absolute after:inset-0 after:z-0 hover:underline focus:outline-none'
+                  >
+                    {post.title}
+                  </Link>
                 </h3>
                 <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
                 <div className='flex items-center justify-between'>
                   <span className='text-sm font-medium'>{post.author}</span>
                   <Button
                     size='icon'
-                    className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
+                    variant='outline'
+                    className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground relative z-10 border group-hover:border-transparent hover:border-transparent'
                     asChild
                   >
                     <Link href={`/blog-detail/${post.slug}`}>
                       <ArrowRightIcon className='size-4 -rotate-45' />
-                      <span className='sr-only'>Read more: {post.title}</span>
+                      <span className='sr-only'>Read more about: {post.title}</span>
                     </Link>
                   </Button>
                 </div>
