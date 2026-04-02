@@ -1045,7 +1045,7 @@ const blogPostsData: BlogPost[] = [
     slug: 'anthropic-overtakes-openai-enterprise-adoption-ramp',
     title: 'Anthropic Overtakes OpenAI in New Enterprise AI Adoption',
     description:
-      "New data from the Ramp AI Index shows Anthropic winning 70% of head-to-head matches against OpenAI for first-time business AI spend.",
+      'New data from the Ramp AI Index shows Anthropic winning 70% of head-to-head matches against OpenAI for first-time business AI spend.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Overtakes OpenAI in New Enterprise AI Adoption',
     date: 'March 31, 2026',
@@ -1133,8 +1133,9 @@ const blogPostsData: BlogPost[] = [
   {
     id: 75,
     slug: 'anthropic-claude-code-leak-github-takedown',
-    title: "Anthropic’s \"Accidental\" Takedown: 8,000 Repos Hit in Claude Code Leak",
-    description: 'Anthropic accidentally exposes Claude Code source code via npm and triggers a massive, imprecise DMCA takedown across GitHub.',
+    title: 'Anthropic’s "Accidental" Takedown: 8,000 Repos Hit in Claude Code Leak',
+    description:
+      'Anthropic accidentally exposes Claude Code source code via npm and triggers a massive, imprecise DMCA takedown across GitHub.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Claude Code Leak GitHub Takedown',
     date: 'April 02, 2026',
@@ -1148,7 +1149,8 @@ const blogPostsData: BlogPost[] = [
     id: 76,
     slug: 'the-ip-extinction',
     title: 'The IP Extinction: Why Anthropic’s Leak Marks the End of Private Code',
-    description: 'The era of proprietary software is over; we just haven\'t admitted it yet. Discover why AI makes private code an impossibility.',
+    description:
+      "The era of proprietary software is over; we just haven't admitted it yet. Discover why AI makes private code an impossibility.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The IP Extinction: Why Anthropic’s Leak Marks the End of Private Code',
     date: 'April 02, 2026',
@@ -1162,7 +1164,8 @@ const blogPostsData: BlogPost[] = [
     id: 77,
     slug: 'the-852b-delusion',
     title: 'The $852B Delusion: Why Retail Investors are Funding Their Own Obsolescence',
-    description: 'Retail investors are pouring capital into the very technology that will automate their professional relevance.',
+    description:
+      'Retail investors are pouring capital into the very technology that will automate their professional relevance.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The $852B Delusion: Why Retail Investors are Funding Their Own Obsolescence',
     date: 'April 02, 2026',
@@ -1192,3 +1195,9 @@ export const sortedNonFeaturedPosts = sortedBlogPosts.filter(post => !post.featu
 
 // Export featured posts
 export const featuredBlogPosts = processedPosts.filter(post => post.featured)
+
+// ⚡ Bolt: Pre-calculate unique categories to avoid redundant computation in components.
+export const uniqueCategories = ['All', ...new Set(processedPosts.map(post => post.category).sort())]
+
+// ⚡ Bolt: Pre-calculate latest 3 posts for the HeroSection and other components.
+export const latestThreePosts = sortedBlogPosts.slice(0, 3)

@@ -15,7 +15,7 @@ const CTA = () => {
           <CardContent>
             <div className='grid grid-cols-1 gap-6 lg:grid-cols-2'>
               {/* Left Column - Image */}
-              <div className='relative h-64 sm:h-80 lg:h-auto overflow-hidden rounded-lg'>
+              <div className='relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-auto'>
                 <Image
                   src='/images/cta.webp'
                   alt='Workspace with laptop'

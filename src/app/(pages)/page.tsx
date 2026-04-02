@@ -1,10 +1,10 @@
-import { sortedBlogPosts } from '@/assets/data/blog-posts'
+import { latestThreePosts } from '@/assets/data/blog-posts'
 import { PUBLISHER_LOGO_PATH, SITE_URL, getAbsoluteUrl, getPostUrl } from '@/lib/site'
 
 import HeroSection from '@/components/blocks/hero-section/hero-section'
 import Blog from '@/components/blocks/blog-component/blog-component'
 
-const latestPosts = sortedBlogPosts.slice(0, 3)
+const latestPosts = latestThreePosts
 
 const faqs = [
   {

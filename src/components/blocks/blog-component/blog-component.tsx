@@ -25,7 +25,7 @@ import {
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
 // Import the blog posts data from centralized location
-import { sortedNonFeaturedPosts, type BlogPost } from '@/assets/data/blog-posts'
+import { sortedNonFeaturedPosts, uniqueCategories, type BlogPost } from '@/assets/data/blog-posts'
 
 const BlogGrid = React.memo(
   ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
@@ -123,12 +123,8 @@ const Blog = () => {
   // ⚡ Bolt: Use pre-sorted non-featured posts from the centralized data store.
   const nonFeaturedPosts = sortedNonFeaturedPosts
 
-  // ⚡ Bolt: Memoize categories derived from nonFeaturedPosts
-  const categories = useMemo(() => {
-    const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
-
-    return ['All', ...uniqueCategories.sort()]
-  }, [nonFeaturedPosts])
+  // ⚡ Bolt: Use pre-calculated unique categories from the centralized data store.
+  const categories = uniqueCategories
 
   // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query
   const filteredPosts = useMemo(() => {

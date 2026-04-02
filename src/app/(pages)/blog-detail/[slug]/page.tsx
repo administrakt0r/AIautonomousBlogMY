@@ -74,11 +74,11 @@ export async function generateStaticParams() {
 
 // Navigation component for previous/next posts
 const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] }) => {
-  const sortedPosts = [...blogPosts].sort((a, b) => a.id - b.id)
-  const currentIndex = sortedPosts.findIndex(post => post.id === currentPost.id)
+  // ⚡ Bolt: Use the pre-sorted blogPosts (ascending by ID) directly to avoid redundant sorting on every render.
+  const currentIndex = blogPosts.findIndex(post => post.id === currentPost.id)
 
-  const previousPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null
-  const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null
+  const previousPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null
+  const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null
 
   return (
     <div className='flex w-full justify-between'>

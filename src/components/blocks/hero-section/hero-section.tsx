@@ -6,24 +6,18 @@ import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 
-// ⚡ Bolt: Use pre-sorted data from the centralized data store to avoid redundant sorting and slicing on every render in this Server Component.
-import { sortedBlogPosts } from '@/assets/data/blog-posts'
+// ⚡ Bolt: Use pre-calculated data from the centralized data store to avoid redundant processing on every render in this Server Component.
+import { latestThreePosts } from '@/assets/data/blog-posts'
 
 const HeroSection = () => {
-  const latestPosts = sortedBlogPosts.slice(0, 3)
+  const latestPosts = latestThreePosts
 
   return (
     <section id='home' className='bg-muted -mt-16 pt-28 pb-8 sm:pb-10'>
       <div className='mx-auto flex h-full max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8'>
         <div className='flex max-w-3xl flex-col items-center gap-3 self-center text-center'>
           <Badge variant='outline' className='flex items-center gap-1.5 text-sm font-normal'>
-            <Image
-              src='/shteflogo.svg'
-              alt='ShtefAI Logo'
-              width={16}
-              height={16}
-              className='h-4 w-4 rounded-sm'
-            />
+            <Image src='/shteflogo.svg' alt='ShtefAI Logo' width={16} height={16} className='h-4 w-4 rounded-sm' />
             AI News • Updated Daily
           </Badge>
           <h1 className='text-2xl leading-tight font-semibold text-balance sm:text-3xl lg:text-4xl'>
