@@ -1143,6 +1143,20 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 76,
+    slug: 'the-compute-fetish-intelligence-is-not-power',
+    title: 'The Compute Fetish: Why Intelligence Is Not Just Raw Power',
+    description: 'Scaling compute is not a strategy; it is a desperate attempt to bypass the hard problem of architectural innovation.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Compute Fetish: Why Intelligence Is Not Just Raw Power',
+    date: 'April 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
