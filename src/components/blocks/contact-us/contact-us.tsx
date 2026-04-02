@@ -22,7 +22,7 @@ const ContactUs = () => {
               <ContactForm />
             </div>
 
-            <div className='relative shadow-none md:col-span-2 min-h-70 lg:min-h-auto'>
+            <div className='relative min-h-70 shadow-none md:col-span-2 lg:min-h-auto'>
               <Image
                 src='/images/contact-us.webp'
                 alt='Contact illustration'
