@@ -25,12 +25,7 @@ import {
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
 // Import the blog posts data from centralized location
-import { blogPosts, type BlogPost } from '@/assets/data/blog-posts'
-
-// Simply use all blog posts since they already have correct slugs and correspond to existing pages
-const getAvailableBlogPosts = () => {
-  return blogPosts
-}
+import { sortedNonFeaturedPosts, type BlogPost } from '@/assets/data/blog-posts'
 
 const BlogGrid = React.memo(
   ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
@@ -125,14 +120,8 @@ const Blog = () => {
   const POSTS_PER_PAGE = 9
   const router = useRouter()
 
-  // Get only the blog posts that have corresponding pages
-  const availableBlogPosts = useMemo(() => getAvailableBlogPosts(), [])
-
-  // ⚡ Bolt: Memoize nonFeaturedPosts to avoid re-sorting on every render
-  const nonFeaturedPosts = useMemo(
-    () => availableBlogPosts.filter(post => !post.featured).sort((a, b) => b.id - a.id),
-    [availableBlogPosts]
-  )
+  // ⚡ Bolt: Use pre-sorted non-featured posts from the centralized data store.
+  const nonFeaturedPosts = sortedNonFeaturedPosts
 
   // ⚡ Bolt: Memoize categories derived from nonFeaturedPosts
   const categories = useMemo(() => {

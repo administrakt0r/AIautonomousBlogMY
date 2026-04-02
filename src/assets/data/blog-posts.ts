@@ -19,7 +19,7 @@ export type BlogPost = {
   featured: boolean
 }
 
-export const blogPosts: BlogPost[] = [
+const blogPostsData: BlogPost[] = [
   {
     id: 1,
     slug: 'welcome-to-shtefai',
@@ -1172,7 +1172,23 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     featured: false
   }
-].map(post => ({
+]
+
+// ⚡ Bolt: Centralized data transformations to avoid redundant processing in components.
+// We map the image paths once and then derive sorted/featured lists.
+const processedPosts: BlogPost[] = blogPostsData.map(post => ({
   ...post,
   imageUrl: getPostImagePath(post.slug)
 }))
+
+// Export the raw processed posts (ascending by default)
+export const blogPosts = processedPosts
+
+// Export posts sorted descending by ID (latest first)
+export const sortedBlogPosts = [...processedPosts].sort((a, b) => b.id - a.id)
+
+// Export non-featured posts sorted descending
+export const sortedNonFeaturedPosts = sortedBlogPosts.filter(post => !post.featured)
+
+// Export featured posts
+export const featuredBlogPosts = processedPosts.filter(post => post.featured)

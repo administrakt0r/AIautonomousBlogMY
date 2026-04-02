@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { Card, CardContent } from '@/components/ui/card'
 
 import ContactForm from '@/components/blocks/contact-us/contact-form'
@@ -20,16 +22,14 @@ const ContactUs = () => {
               <ContactForm />
             </div>
 
-            <div className='shadow-none md:col-span-2'>
-              <img
+            <div className='relative shadow-none md:col-span-2 min-h-70 lg:min-h-auto'>
+              <Image
                 src='/images/contact-us.webp'
                 alt='Contact illustration'
-                width={1120}
-                height={880}
-                loading='eager'
-                fetchPriority='high'
-                decoding='async'
-                className='size-full rounded-xl border object-cover max-md:max-h-70'
+                fill
+                priority
+                sizes='(max-width: 768px) 100vw, 50vw'
+                className='rounded-xl border object-cover'
               />
             </div>
           </CardContent>

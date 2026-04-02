@@ -1,6 +1,8 @@
 'use client'
 
 // Component Imports
+import Image from 'next/image'
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -13,11 +15,13 @@ const CTA = () => {
           <CardContent>
             <div className='grid grid-cols-1 gap-6 lg:grid-cols-2'>
               {/* Left Column - Image */}
-              <div className='relative h-64 sm:h-80 lg:h-auto'>
-                <img
+              <div className='relative h-64 sm:h-80 lg:h-auto overflow-hidden rounded-lg'>
+                <Image
                   src='/images/cta.webp'
                   alt='Workspace with laptop'
-                  className='h-full w-full rounded-lg object-cover'
+                  fill
+                  sizes='(max-width: 1024px) 100vw, 50vw'
+                  className='object-cover'
                 />
               </div>
 
