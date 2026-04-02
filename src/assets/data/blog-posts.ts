@@ -1129,6 +1129,20 @@ export const blogPosts: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 75,
+    slug: 'anthropic-claude-code-leak-github-takedown',
+    title: "Anthropic’s \"Accidental\" Takedown: 8,000 Repos Hit in Claude Code Leak",
+    description: 'Anthropic accidentally exposes Claude Code source code via npm and triggers a massive, imprecise DMCA takedown across GitHub.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude Code Leak GitHub Takedown',
+    date: 'April 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ].map(post => ({
   ...post,
