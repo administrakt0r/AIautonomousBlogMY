@@ -139,7 +139,10 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
           {groupedItems.map((group, groupIndex) => (
             <li key={`toc-group-${group.main.id}-${groupIndex}`}>
               <button
+                type='button'
                 onClick={() => handleClick(group.main.id)}
+                aria-label={`Scroll to section: ${group.main.title}`}
+                aria-current={activeId === group.main.id ? 'location' : undefined}
                 className={`flex items-start gap-2 text-left transition-colors ${
                   activeId === group.main.id
                     ? 'text-foreground font-medium'
@@ -160,7 +163,10 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
                   {group.subs.map((subtitle, subIndex) => (
                     <li key={`toc-sub-${subtitle.id}-${groupIndex}-${subIndex}`}>
                       <button
+                        type='button'
                         onClick={() => handleClick(subtitle.id)}
+                        aria-label={`Scroll to subsection: ${subtitle.title}`}
+                        aria-current={activeId === subtitle.id ? 'location' : undefined}
                         className={`flex items-start gap-2 text-left transition-colors ${
                           activeId === subtitle.id
                             ? 'text-foreground font-medium'

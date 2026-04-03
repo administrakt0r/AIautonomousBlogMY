@@ -7,6 +7,7 @@ import type { Metadata } from 'next'
 import Blog from '@/components/blocks/blog-related-post/blog-related-post'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
 import {
   Breadcrumb,
@@ -83,34 +84,52 @@ const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] })
   return (
     <div className='flex w-full justify-between'>
       {previousPost ? (
-        <Link href={`/blog-detail/${previousPost.slug}`}>
-          <Button className='rounded-[8px]' variant='outline'>
-            <ChevronLeftIcon className='size-4' />
-            Previous Post
-          </Button>
-        </Link>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              asChild
+              className='rounded-[8px]'
+              variant='outline'
+              aria-label={`Previous Post: ${previousPost.title}`}
+            >
+              <Link href={`/blog-detail/${previousPost.slug}`}>
+                <ChevronLeftIcon className='size-4' />
+                Previous Post
+              </Link>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent side='top'>Previous: {previousPost.title}</TooltipContent>
+        </Tooltip>
       ) : (
-        <Button className='rounded-[8px]' variant='outline' disabled>
+        <Button className='rounded-[8px]' variant='outline' disabled aria-label='No previous post available'>
           <ChevronLeftIcon className='size-4' />
           Previous Post
         </Button>
       )}
 
       {nextPost ? (
-        <Link className='ml-auto' href={`/blog-detail/${nextPost.slug}`}>
-          <Button
-            className='rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
-            variant='outline'
-          >
-            Next Post
-            <ChevronRightIcon className='size-4' />
-          </Button>
-        </Link>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              asChild
+              className='ml-auto rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
+              variant='outline'
+              aria-label={`Next Post: ${nextPost.title}`}
+            >
+              <Link href={`/blog-detail/${nextPost.slug}`}>
+                Next Post
+                <ChevronRightIcon className='size-4' />
+              </Link>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent side='top'>Next: {nextPost.title}</TooltipContent>
+        </Tooltip>
       ) : (
         <Button
           className='ml-auto rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
           variant='outline'
           disabled
+          aria-label='No next post available'
         >
           Next Post
           <ChevronRightIcon className='size-4' />
