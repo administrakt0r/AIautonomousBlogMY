@@ -19,7 +19,7 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
 
-import { blogPosts } from '@/assets/data/blog-posts'
+import { blogPosts, blogPostsAsc } from '@/assets/data/blog-posts'
 import { PUBLISHER_LOGO_PATH, SITE_URL, getAbsoluteUrl, getPostUrl } from '@/lib/site'
 
 // Dynamic metadata for each blog post — critical for per-post SEO
@@ -74,11 +74,11 @@ export async function generateStaticParams() {
 
 // Navigation component for previous/next posts
 const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] }) => {
-  const sortedPosts = [...blogPosts].sort((a, b) => a.id - b.id)
-  const currentIndex = sortedPosts.findIndex(post => post.id === currentPost.id)
+  // ⚡ Bolt: Use pre-sorted blogPostsAsc to avoid sorting on every render
+  const currentIndex = blogPostsAsc.findIndex(post => post.id === currentPost.id)
 
-  const previousPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null
-  const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null
+  const previousPost = currentIndex > 0 ? blogPostsAsc[currentIndex - 1] : null
+  const nextPost = currentIndex < blogPostsAsc.length - 1 ? blogPostsAsc[currentIndex + 1] : null
 
   return (
     <div className='flex w-full justify-between'>
@@ -131,12 +131,25 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     notFound()
   }
 
-  // Get related posts with same category first, then fill with other posts
-  const sameCategoryPosts = blogPosts.filter(p => p.category === post.category && p.slug !== post.slug)
-  const otherPosts = blogPosts.filter(p => p.category !== post.category && p.slug !== post.slug)
+  // ⚡ Bolt: Optimize related posts selection with a single pass where possible or more direct filtering
+  // Get related posts with same category first, then fill with other posts, limit to 3
+  const relatedPosts: typeof blogPosts = []
+  const otherPosts: typeof blogPosts = []
 
-  // Combine: same category posts first, then other posts, limit to 3
-  const relatedPosts = [...sameCategoryPosts, ...otherPosts].slice(0, 3)
+  for (const p of blogPosts) {
+    if (p.slug === post.slug) continue
+
+    if (p.category === post.category) {
+      relatedPosts.push(p)
+      if (relatedPosts.length === 3) break
+    } else {
+      otherPosts.push(p)
+    }
+  }
+
+  if (relatedPosts.length < 3) {
+    relatedPosts.push(...otherPosts.slice(0, 3 - relatedPosts.length))
+  }
 
   return (
     <div>

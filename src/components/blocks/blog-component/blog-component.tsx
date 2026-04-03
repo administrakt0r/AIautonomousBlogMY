@@ -25,7 +25,7 @@ import {
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
 // Import the blog posts data from centralized location
-import { sortedNonFeaturedPosts, type BlogPost } from '@/assets/data/blog-posts'
+import { sortedNonFeaturedPosts, categoriesWithAll, type BlogPost } from '@/assets/data/blog-posts'
 
 const BlogGrid = React.memo(
   ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
@@ -36,7 +36,7 @@ const BlogGrid = React.memo(
         {posts.map(post => (
           <Card
             key={post.id}
-            className='group relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2'
+            className='group focus-within:ring-primary relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-offset-2'
           >
             <CardContent className='space-y-3.5'>
               <div className='relative mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
@@ -126,12 +126,8 @@ const Blog = () => {
   // ⚡ Bolt: Use pre-sorted non-featured posts from the centralized data store.
   const nonFeaturedPosts = sortedNonFeaturedPosts
 
-  // ⚡ Bolt: Memoize categories derived from nonFeaturedPosts
-  const categories = useMemo(() => {
-    const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
-
-    return ['All', ...uniqueCategories.sort()]
-  }, [nonFeaturedPosts])
+  // ⚡ Bolt: Use pre-calculated categories from the centralized data store to eliminate redundant useMemo.
+  const categories = categoriesWithAll
 
   // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query
   const filteredPosts = useMemo(() => {
