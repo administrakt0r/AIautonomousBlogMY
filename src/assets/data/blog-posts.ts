@@ -1204,6 +1204,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 80,
+    slug: 'the-algorithmic-editor-media-ownership-critique',
+    title: 'The Algorithmic Editor: Why AI Giants Buying Media Ends Critique',
+    description:
+      'The vertical integration of AI labs and media brands is the final brick in the wall of a digital autocracy where critique is a bug.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI giants acquiring media brands for narrative control',
+    date: 'April 03, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
