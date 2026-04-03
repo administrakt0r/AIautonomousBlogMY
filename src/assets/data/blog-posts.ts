@@ -1232,8 +1232,20 @@ const processedPosts: BlogPost[] = blogPostsData.map(post => ({
 // Export the raw processed posts (ascending by default)
 export const blogPosts = processedPosts
 
+// Export posts sorted ascending by ID
+export const blogPostsAsc = [...processedPosts].sort((a, b) => a.id - b.id)
+
 // Export posts sorted descending by ID (latest first)
 export const sortedBlogPosts = [...processedPosts].sort((a, b) => b.id - a.id)
+
+// Export latest three posts
+export const latestThreePosts = sortedBlogPosts.slice(0, 3)
+
+// Export unique categories (sorted)
+export const uniqueCategories = [...new Set(processedPosts.map(post => post.category))].sort()
+
+// Export categories with 'All' at the start
+export const categoriesWithAll = ['All', ...uniqueCategories]
 
 // Export non-featured posts sorted descending
 export const sortedNonFeaturedPosts = sortedBlogPosts.filter(post => !post.featured)
