@@ -1189,6 +1189,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 79,
+    slug: 'openai-acquires-tbpn-media-move',
+    title: 'OpenAI Acquires TBPN: A Strategic Move into Tech Media Distribution',
+    description:
+      'The AI giant takes its first step into media by acquiring the popular "SportsCenter for Silicon Valley" talk show TBPN.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI acquisition of TBPN tech media move',
+    date: 'April 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
