@@ -3,6 +3,7 @@ import { TwitterIcon, GithubIcon, RssIcon, LeafIcon } from 'lucide-react'
 import Link from 'next/link'
 
 import { Separator } from '@/components/ui/separator'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
 import Logo from '@/components/logo'
 
@@ -23,29 +24,46 @@ const Footer = () => {
             </span>
           </div>
           <div className='flex items-center gap-4'>
-            <Link
-              href='#'
-              className='text-muted-foreground hover:text-foreground transition-colors'
-              aria-label='Twitter'
-            >
-              <TwitterIcon className='size-5' />
-            </Link>
-            <a
-              href='https://github.com/wpine-sh/shtefai'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-muted-foreground hover:text-foreground transition-colors'
-              aria-label='GitHub'
-            >
-              <GithubIcon className='size-5' />
-            </a>
-            <Link
-              href='#'
-              className='text-muted-foreground hover:text-foreground transition-colors'
-              aria-label='RSS Feed'
-            >
-              <RssIcon className='size-5' />
-            </Link>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href='#'
+                  className='text-muted-foreground hover:text-foreground transition-colors'
+                  aria-label='Twitter'
+                >
+                  <TwitterIcon className='size-5' />
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>Twitter</TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  href='https://github.com/wpine-sh/shtefai'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-muted-foreground hover:text-foreground transition-colors'
+                  aria-label='GitHub'
+                >
+                  <GithubIcon className='size-5' />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>GitHub</TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href='#'
+                  className='text-muted-foreground hover:text-foreground transition-colors'
+                  aria-label='RSS Feed'
+                >
+                  <RssIcon className='size-5' />
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>RSS Feed</TooltipContent>
+            </Tooltip>
           </div>
         </div>
 
