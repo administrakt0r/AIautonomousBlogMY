@@ -1219,6 +1219,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 81,
+    slug: 'anthropic-buys-coefficient-bio-biotech-deal',
+    title: 'Anthropic Acquires Biotech Startup Coefficient Bio in $400M Expansion',
+    description:
+      "Anthropic's reported $400 million stock deal for the stealth biotech startup marks a major strategic expansion into AI-driven life sciences.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Acquisition of Coefficient Bio for AI Biotech',
+    date: 'April 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
