@@ -1277,8 +1277,20 @@ const processedPosts: BlogPost[] = blogPostsData.map(post => ({
 // Export the raw processed posts (ascending by default)
 export const blogPosts = processedPosts
 
+// ⚡ Bolt: Create a Map for O(1) lookup by slug to avoid repeated O(n) .find() operations.
+export const blogPostsBySlug = new Map(processedPosts.map(post => [post.slug, post]))
+
 // Export posts sorted ascending by ID
 export const blogPostsAsc = [...processedPosts].sort((a, b) => a.id - b.id)
+
+// ⚡ Bolt: Pre-calculate indices for O(1) navigation in the ascending list.
+export const blogPostsAscWithIndex = blogPostsAsc.map((post, index) => ({
+  ...post,
+  index
+}))
+
+// ⚡ Bolt: Create a Map for O(1) lookup by slug for the indexed list.
+export const blogPostsBySlugWithIndex = new Map(blogPostsAscWithIndex.map(post => [post.slug, post]))
 
 // Export posts sorted descending by ID (latest first)
 export const sortedBlogPosts = [...processedPosts].sort((a, b) => b.id - a.id)
