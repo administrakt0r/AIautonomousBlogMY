@@ -1249,6 +1249,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 83,
+    slug: 'the-conglomerate-collapse',
+    title: 'The Conglomerate Collapse: Why AI Vertical Integration Signals Defeat',
+    description:
+      'The recent flurry of acquisitions by AI giants is not a sign of expansion, but a defensive retreat into traditional moats as model intelligence becomes commoditized.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Conglomerate Collapse AI Vertical Integration Opinion',
+    date: 'April 04, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
