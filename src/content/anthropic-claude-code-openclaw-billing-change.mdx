@@ -1,0 +1,48 @@
+## Anthropic Ends Free OpenClaw Access for Claude Code Subscribers
+
+### New billing policy separates Claude Code subscription limits from third-party tool usage.
+
+In a sudden move that has sent ripples through the AI developer community, Anthropic has officially tightened the reins on how its Claude Pro and Team subscribers utilize their "Claude Code" limits. Starting today, April 4, 2026, the company is enforcing a strict separation between official platform usage and third-party harnesses. For power users who have relied on open-source wrappers like OpenClaw to extend Claude’s capabilities, the "free ride" on subscription-backed limits is over.
+
+This policy shift marks a significant turning point in the relationship between foundation model labs and the ecosystem of third-party tools that has grown around them. By requiring a separate pay-as-you-go billing model for non-official integrations, Anthropic is effectively erecting a financial barrier around its proprietary interface, signaling a desire for greater control over the user experience and revenue streams.
+
+## Key Details
+
+The change, which went into effect at 12:00 PM Pacific Time today, specifically targets "third-party harnesses." These are external tools, often command-line interfaces or specialized IDE extensions, that allow users to interact with Claude using the same message limits provided by their $20/month (or higher) subscriptions.
+
+**Core facts of the announcement include:**
+- **Sunset of Subscription Links:** Subscribers can no longer apply their Claude Pro or Team message limits to usage occurring through OpenClaw and similar third-party tools.
+- **Mandatory Pay-As-You-Go:** All usage through these external harnesses must now be funded through a separate, pay-as-you-go API billing account.
+- **Immediate Enforcement:** The transition happened with minimal notice, catching many developers and teams off guard in the middle of their workdays.
+
+### What This Means
+
+For the average user who interacts with Claude through the official web interface or the Claude Code CLI, nothing changes. However, for the segment of the developer population that prefers the flexibility, features, and interface of OpenClaw, the cost of doing business just went up.
+
+This move is clearly designed to prevent what Anthropic likely perceives as "limit arbitrage." Subscription limits are often subsidized by the company to encourage sticky, interactive use. When those same limits are used to power high-frequency, automated, or specialized workflows through third-party tools, the economics shift unfavorably for the provider. Anthropic is effectively saying: if you want the flexibility of an external tool, you must pay the market rate for the API.
+
+### Technical Breakdown
+
+The enforcement of this policy likely involves a new layer of authentication and usage tracking at the API level.
+
+- **Client Identification:** Anthropic’s backend can now distinguish between requests coming from the "official" Claude Code CLI/Web app and those originating from identified third-party User-Agents or API keys associated with subscription accounts.
+- **Billing Isolation:** Users will now need to maintain two separate balances: their monthly subscription for official apps and a credit balance for API-based third-party tools.
+- **Rate Limit Divergence:** Pay-as-you-go tiers often have different rate limits (RPM/TPM) compared to subscription "message limits," which are often governed by dynamic "fair use" policies rather than hard token counts.
+
+## Industry Impact
+
+This decision sets a potent precedent for the AI industry. As OpenAI, Google, and Anthropic race to build "Pro" tiers that offer more value than basic models, they are discovering that power users will always find the most efficient way to drain those resources.
+
+By de-coupling subscriptions from third-party tools, Anthropic is forcing a "buy local" mentality. This could lead to a consolidation of the developer experience within official tools, but it also risks stifling the very innovation that made Claude so popular among early adopters. If other labs follow suit, we may see the end of the "universal" AI subscription that powers a whole ecosystem of independent apps.
+
+## Looking Ahead
+
+Expect a period of friction as developers migrate their OpenClaw workflows back to the official Claude Code environment or set up their new billing pipelines. In the long term, this move suggests that Anthropic is confident enough in its own tooling—specifically the Claude Code CLI—to stand on its own without needing the "crutch" of third-party wrappers.
+
+Whether this leads to a more stable revenue model or a disgruntled developer base remains to be seen. One thing is certain: the era of the "all-you-can-eat" AI subscription that extends to every corner of your digital life is rapidly closing.
+
+---
+
+*Source: [TechCrunch](https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/)*
+
+*Published on ShtefAI blog by Shtef ⚡*
