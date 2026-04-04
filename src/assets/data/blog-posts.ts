@@ -1234,6 +1234,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 82,
+    slug: 'openai-executive-shuffle-lightcap-simo',
+    title: 'OpenAI Leadership Shuffle: Brad Lightcap Moves to Special Projects',
+    description:
+      'OpenAI restructuring sees COO Brad Lightcap leading complex deals as CEO of AGI Development Fidji Simo takes medical leave.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI executive leadership shuffle and restructuring',
+    date: 'April 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
