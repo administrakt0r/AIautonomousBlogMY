@@ -20,13 +20,15 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
 
-import { blogPosts, blogPostsAsc } from '@/assets/data/blog-posts'
+import { blogPosts, blogPostsBySlug, blogPostsBySlugWithIndex, blogPostsAscWithIndex } from '@/assets/data/blog-posts'
 import { PUBLISHER_LOGO_PATH, SITE_URL, getAbsoluteUrl, getPostUrl } from '@/lib/site'
 
 // Dynamic metadata for each blog post — critical for per-post SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
-  const post = blogPosts.find(p => p.slug === slug)
+
+  // ⚡ Bolt: Use the pre-calculated Map for O(1) slug lookups.
+  const post = blogPostsBySlug.get(slug)
 
   if (!post) return {}
 
@@ -74,12 +76,15 @@ export async function generateStaticParams() {
 }
 
 // Navigation component for previous/next posts
-const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] }) => {
-  // ⚡ Bolt: Use pre-sorted blogPostsAsc to avoid sorting on every render
-  const currentIndex = blogPostsAsc.findIndex(post => post.id === currentPost.id)
+const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
+  // ⚡ Bolt: Use the indexed Map for O(1) index retrieval.
+  const currentPostWithIndex = blogPostsBySlugWithIndex.get(currentPostSlug)
 
-  const previousPost = currentIndex > 0 ? blogPostsAsc[currentIndex - 1] : null
-  const nextPost = currentIndex < blogPostsAsc.length - 1 ? blogPostsAsc[currentIndex + 1] : null
+  if (!currentPostWithIndex) return null
+
+  const currentIndex = currentPostWithIndex.index
+  const previousPost = currentIndex > 0 ? blogPostsAscWithIndex[currentIndex - 1] : null
+  const nextPost = currentIndex < blogPostsAscWithIndex.length - 1 ? blogPostsAscWithIndex[currentIndex + 1] : null
 
   return (
     <div className='flex w-full justify-between'>
@@ -142,7 +147,8 @@ const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] })
 export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
 
-  const post = blogPosts.find(p => p.slug === slug)
+  // ⚡ Bolt: Use the pre-calculated Map for O(1) slug lookups.
+  const post = blogPostsBySlug.get(slug)
 
   const { default: Post } = await import(`@/content/${slug}.mdx`)
 
@@ -150,22 +156,27 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     notFound()
   }
 
-  // ⚡ Bolt: Optimize related posts selection with a single pass where possible or more direct filtering
-  // Get related posts with same category first, then fill with other posts, limit to 3
+  // ⚡ Bolt: Optimized related posts selection with a single pass and early exit.
   const relatedPosts: typeof blogPosts = []
   const otherPosts: typeof blogPosts = []
 
   for (const p of blogPosts) {
+    // Avoid recommending the current post.
     if (p.slug === post.slug) continue
 
     if (p.category === post.category) {
       relatedPosts.push(p)
+
+      // If we've found enough related posts in the same category, we're done.
       if (relatedPosts.length === 3) break
-    } else {
+    } else if (otherPosts.length < 3) {
+      // Keep track of other posts just in case we don't have enough in the same category.
+      // We only need at most 3 in total.
       otherPosts.push(p)
     }
   }
 
+  // Fill in with other posts if we have fewer than 3 related by category.
   if (relatedPosts.length < 3) {
     relatedPosts.push(...otherPosts.slice(0, 3 - relatedPosts.length))
   }
@@ -248,7 +259,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                 <Post />
               </article>
 
-              <PostNavigation currentPost={post} />
+              <PostNavigation currentPostSlug={post.slug} />
             </div>
           </div>
         </div>
