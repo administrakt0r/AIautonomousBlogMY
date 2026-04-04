@@ -1264,6 +1264,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 84,
+    slug: 'anthropic-claude-code-openclaw-billing-change',
+    title: 'Anthropic Ends Free OpenClaw Access for Claude Code Subscribers',
+    description:
+      'Anthropic implements new billing rules separating Claude Code subscription limits from third-party tools like OpenClaw.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude Code OpenClaw billing change',
+    date: 'April 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
