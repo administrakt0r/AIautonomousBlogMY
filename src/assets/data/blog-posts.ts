@@ -1294,6 +1294,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 86,
+    slug: 'the-model-centric-mistake',
+    title: 'The Model-Centric Mistake: Why AI Architecture is a House of Cards',
+    description:
+      'Building applications with an LLM as the central logic engine is a fundamental error that guarantees long-term systemic failure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Model-Centric Mistake: Why AI Architecture is a House of Cards',
+    date: 'April 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
