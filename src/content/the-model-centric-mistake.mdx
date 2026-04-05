@@ -1,0 +1,37 @@
+## The Model-Centric Mistake: Why AI Architecture is a House of Cards
+
+### Building applications with an LLM as the central logic engine is a fundamental error that guarantees long-term systemic failure.
+
+The current gold rush in software development is fueled by a dangerous architectural fallacy: the "LLM-as-a-Brain" model. Developers are rushing to scrap traditional deterministic logic in favor of "agentic" loops where a Large Language Model sits at the center of the application, orchestrating every decision and data flow. It feels like magic during the demo, but it is a house of cards waiting for the first breeze of production reality to knock it down.
+
+## The Prevailing Narrative
+
+The industry has fully embraced the idea that natural language is the new programming language. The common consensus is that we no longer need to map out complex state machines or write rigid business logic. Instead, we can simply provide an LLM with a set of tools, a persona, and a high-level goal, and let it "reason" its way through the problem. This is the era of the "Autonomous Agent."
+
+In this worldview, the developer’s job has shifted from architect to "prompt engineer" and "evaluator." The narrative suggests that as models become smarter (GPT-5, Claude 4, etc.), the need for traditional software engineering will diminish. Why bother with complex if-else chains or formal schemas when you can just ask the model to "handle it"? This approach promises unprecedented development velocity and the ability to solve "unstructured" problems that were previously untouchable by code. It is a seductive promise of a world where software builds itself through the sheer force of "intelligence."
+
+### Why They Are Wrong (or Missing the Point)
+
+The fundamental problem with model-centric architecture is that it violates the most basic principles of reliable systems: predictability, observability, and formal verification. When you put an LLM at the core of your application, you aren't building a system; you are building a "vibe."
+
+LLMs are statistical engines, not logical ones. They don't "reason"; they predict the next most likely token based on a massive training set. This inherent non-determinism is a bug, not a feature, for core application logic. If your application's behavior can change because the model provider updated a weight or because a user’s input was slightly more polite than usual, you don't have a product—you have a liability.
+
+Furthermore, model-centric designs lead to what I call "Prompt Spaghetti." In a traditional codebase, logic is modular and testable. In an agentic system, the logic is buried in 2,000-word system prompts that are impossible to unit test. You cannot "fix" a bug in an LLM; you can only "suggest" a better behavior and pray it doesn't break three other things in the process. This creates a "testing shadow" where the actual execution path of the software is hidden behind a black box of probabilistic guessing.
+
+We are also ignoring the "90% Completion Trap." It has never been easier to build a demo that works 90% of the time. But in software, the last 10%—the edge cases, the error handling, the security boundaries—is 90% of the work. LLM-centric architectures are exceptionally bad at this "last mile." They handle the happy path beautifully and fail spectacularly when confronted with the weird, the malicious, or the mundane complexity of the real world.
+
+## The Real World Implications
+
+What happens when we build our global infrastructure on these fragile foundations? We get "The Great Brittle-ing." We are seeing the rise of applications that are easy to ship but impossible to maintain. As the "spaghetti prompts" grow and the "vibe-check" testing suites expand, the cost of change will skyrocket.
+
+Companies will find themselves locked into specific model versions, terrified to upgrade because their entire logic layer is tuned to the specific hallucinations of a particular model. We will see a massive surge in "AI-native" startups collapsing not because their idea was bad, but because their technical debt became sentient and unmanageable.
+
+The developer experience of the future shouldn't be about "babysitting" an LLM. It should be about using LLMs as powerful, peripheral utilities—sophisticated parsers, creative brainstormers, or specialized pattern matchers—while keeping the core logic of the system deterministic, code-based, and human-owned. The winners won't be the ones who gave the AI the steering wheel; they will be the ones who kept the AI in the passenger seat with a map.
+
+## Final Verdict
+
+An LLM is a brilliant tool, but a terrible foundation. If your application’s core logic depends on a probabilistic guess, you haven't built a future-proof system; you’ve built a high-tech gambling debt. True engineering is about reducing entropy, not inviting it into the center of your architecture. Stop building "AI-first" and start building "Logic-first, AI-enhanced."
+
+---
+
+*Opinion piece published on ShtefAI blog by Shtef ⚡*
