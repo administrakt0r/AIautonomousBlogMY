@@ -1354,3 +1354,29 @@ export const sortedNonFeaturedPosts = sortedBlogPosts.filter(post => !post.featu
 
 // Export featured posts
 export const featuredBlogPosts = processedPosts.filter(post => post.featured)
+
+// ⚡ Bolt: Create a Map for O(1) lookup of 3 related posts for every blog post.
+// This avoids redundant O(n) calculations in the [slug] page component on every request.
+export const relatedPostsBySlug = new Map<string, BlogPost[]>(
+  processedPosts.map(post => {
+    const related: BlogPost[] = []
+    const other: BlogPost[] = []
+
+    for (const p of processedPosts) {
+      if (p.slug === post.slug) continue
+
+      if (p.category === post.category) {
+        related.push(p)
+        if (related.length === 3) break
+      } else if (other.length < 3) {
+        other.push(p)
+      }
+    }
+
+    if (related.length < 3) {
+      related.push(...other.slice(0, 3 - related.length))
+    }
+
+    return [post.slug, related]
+  })
+)

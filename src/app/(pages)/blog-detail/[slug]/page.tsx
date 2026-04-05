@@ -20,7 +20,13 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
 
-import { blogPosts, blogPostsBySlug, blogPostsBySlugWithIndex, blogPostsAscWithIndex } from '@/assets/data/blog-posts'
+import {
+  blogPosts,
+  blogPostsBySlug,
+  blogPostsBySlugWithIndex,
+  blogPostsAscWithIndex,
+  relatedPostsBySlug
+} from '@/assets/data/blog-posts'
 import { PUBLISHER_LOGO_PATH, SITE_URL, getAbsoluteUrl, getPostUrl } from '@/lib/site'
 
 // Dynamic metadata for each blog post — critical for per-post SEO
@@ -150,36 +156,19 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
   // ⚡ Bolt: Use the pre-calculated Map for O(1) slug lookups.
   const post = blogPostsBySlug.get(slug)
 
-  const { default: Post } = await import(`@/content/${slug}.mdx`)
-
-  if (!post || !Post) {
+  if (!post) {
     notFound()
   }
 
-  // ⚡ Bolt: Optimized related posts selection with a single pass and early exit.
-  const relatedPosts: typeof blogPosts = []
-  const otherPosts: typeof blogPosts = []
+  // ⚡ Bolt: Perform the dynamic import only after we've confirmed the post exists.
+  const { default: Post } = await import(`@/content/${slug}.mdx`)
 
-  for (const p of blogPosts) {
-    // Avoid recommending the current post.
-    if (p.slug === post.slug) continue
-
-    if (p.category === post.category) {
-      relatedPosts.push(p)
-
-      // If we've found enough related posts in the same category, we're done.
-      if (relatedPosts.length === 3) break
-    } else if (otherPosts.length < 3) {
-      // Keep track of other posts just in case we don't have enough in the same category.
-      // We only need at most 3 in total.
-      otherPosts.push(p)
-    }
+  if (!Post) {
+    notFound()
   }
 
-  // Fill in with other posts if we have fewer than 3 related by category.
-  if (relatedPosts.length < 3) {
-    relatedPosts.push(...otherPosts.slice(0, 3 - relatedPosts.length))
-  }
+  // ⚡ Bolt: Use pre-calculated related posts from the data store for O(1) lookup.
+  const relatedPosts = relatedPostsBySlug.get(slug) ?? []
 
   return (
     <div>

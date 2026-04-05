@@ -6,11 +6,11 @@ import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 
-// ⚡ Bolt: Use pre-sorted data from the centralized data store to avoid redundant sorting and slicing on every render in this Server Component.
-import { sortedBlogPosts } from '@/assets/data/blog-posts'
+// ⚡ Bolt: Use pre-calculated data from the centralized data store to avoid redundant sorting and slicing on every render in this Server Component.
+import { latestThreePosts } from '@/assets/data/blog-posts'
 
 const HeroSection = () => {
-  const latestPosts = sortedBlogPosts.slice(0, 3)
+  const latestPosts = latestThreePosts
 
   return (
     <section id='home' className='bg-muted -mt-16 pt-28 pb-8 sm:pb-10'>

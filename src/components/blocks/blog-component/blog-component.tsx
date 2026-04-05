@@ -27,6 +27,14 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 // Import the blog posts data from centralized location
 import { sortedNonFeaturedPosts, categoriesWithAll, type BlogPost } from '@/assets/data/blog-posts'
 
+// ⚡ Bolt: Use pre-sorted non-featured posts from the centralized data store.
+const nonFeaturedPosts = sortedNonFeaturedPosts
+
+// ⚡ Bolt: Use pre-calculated categories from the centralized data store.
+const categories = categoriesWithAll
+
+const POSTS_PER_PAGE = 9
+
 const BlogGrid = React.memo(
   ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
     const router = useRouter()
@@ -120,14 +128,8 @@ const Blog = () => {
       clearTimeout(handler)
     }
   }, [searchQuery])
-  const POSTS_PER_PAGE = 9
+
   const router = useRouter()
-
-  // ⚡ Bolt: Use pre-sorted non-featured posts from the centralized data store.
-  const nonFeaturedPosts = sortedNonFeaturedPosts
-
-  // ⚡ Bolt: Use pre-calculated categories from the centralized data store to eliminate redundant useMemo.
-  const categories = categoriesWithAll
 
   // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query
   const filteredPosts = useMemo(() => {
@@ -141,7 +143,7 @@ const Blog = () => {
 
       return matchesCategory && matchesSearch
     })
-  }, [nonFeaturedPosts, selectedTab, debouncedSearchQuery])
+  }, [selectedTab, debouncedSearchQuery])
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])
 
