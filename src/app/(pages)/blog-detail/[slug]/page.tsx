@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
 import Blog from '@/components/blocks/blog-related-post/blog-related-post'
+import { CopyLinkButton } from '@/components/blocks/copy-link-button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
@@ -229,6 +230,10 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                     <time dateTime={new Date(post.date).toISOString()} className='text-foreground text-sm font-medium'>
                       {post.date}
                     </time>
+                  </div>
+                  <div className='flex flex-col items-start justify-center gap-1.5'>
+                    <span className='text-muted-foreground text-sm'>Share</span>
+                    <CopyLinkButton />
                   </div>
                 </div>
               </div>

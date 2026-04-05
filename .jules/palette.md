@@ -21,3 +21,11 @@
 ## 2026-03-31 - Contextual Navigation Tooltips
 **Learning:** Generic "Previous" and "Next" navigation links can be ambiguous. Adding `Tooltip` components that display the specific title of the destination post provides immediate clarity and delight for users before they commit to a click.
 **Action:** Enhance directional navigation with contextual tooltips showing the target content's title.
+
+## 2026-04-05 - Shareable Filter States via URL Hash
+**Learning:** For single-page archive views with tabs or filters, keeping the UI state isolated to React memory makes filtered views unshareable and breaks browser navigation expectations. Synchronizing filtering state with the URL hash (e.g., `#category-Topic`) enables deep linking and a more robust user experience.
+**Action:** Always sync significant UI filter states with URL fragments or query parameters to support shareability and browser history.
+
+## 2026-04-05 - Inline Action Feedback
+**Learning:** Simple utility actions like "Copy Link" provide a high ROI for user sharing but require immediate, unambiguous feedback. Combining icon state changes (e.g., Link to Check) with a persistent "Copied!" tooltip ensures users feel confident the action was successful without intrusive alerts.
+**Action:** Provide dual visual feedback (icon + tooltip/toast) for non-obvious background actions like clipboard copying.

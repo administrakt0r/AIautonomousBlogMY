@@ -39,7 +39,7 @@ type MenuNavigationProps = {
 
 const MenuNavigation = ({ navigationData, activeSection, className }: MenuNavigationProps) => {
   return (
-    <NavigationMenu viewport={false} className={className}>
+    <NavigationMenu viewport={false} className={className} aria-label='Main navigation'>
       <NavigationMenuList className='flex-wrap justify-start gap-3'>
         {navigationData.map(navItem => {
           if (navItem.href) {

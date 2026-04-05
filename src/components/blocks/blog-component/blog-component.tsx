@@ -129,6 +129,31 @@ const Blog = () => {
     }
   }, [searchQuery])
 
+  // 🎨 Palette: Sync selectedTab with URL hash for shareable filtered views
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash
+
+      if (hash.startsWith('#category-')) {
+        const category = decodeURIComponent(hash.replace('#category-', ''))
+
+        if (categories.includes(category)) {
+          setSelectedTab(category)
+          setCurrentPage(1)
+        }
+      } else if (hash === '#categories' || hash === '#home') {
+        setSelectedTab('All')
+      }
+    }
+
+    // Initial check
+    handleHashChange()
+
+    window.addEventListener('hashchange', handleHashChange)
+
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [])
+
   const router = useRouter()
 
   // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query
@@ -169,8 +194,11 @@ const Blog = () => {
       setCurrentPage(1)
       setSelectedTab(tab)
 
+      // 🎨 Palette: Update hash to make filtered view shareable
       if (tab === 'All') {
         router.push('#categories')
+      } else {
+        router.push(`#category-${encodeURIComponent(tab)}`)
       }
     },
     [router]
