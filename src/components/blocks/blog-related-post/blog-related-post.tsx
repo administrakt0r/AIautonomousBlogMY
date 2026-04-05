@@ -11,13 +11,13 @@ import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { blogPosts as allBlogPosts } from '@/assets/data/blog-posts'
+import { latestThreePosts, type BlogPost } from '@/assets/data/blog-posts'
 
 interface BlogProps {
-  blogPosts?: typeof allBlogPosts
+  blogPosts?: BlogPost[]
 }
 
-const Blog = React.memo(({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
+const Blog = React.memo(({ blogPosts = latestThreePosts }: BlogProps) => {
   const router = useRouter()
 
   return (
