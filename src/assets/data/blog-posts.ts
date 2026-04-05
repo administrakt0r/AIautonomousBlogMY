@@ -1309,6 +1309,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 87,
+    slug: 'microsoft-copilot-entertainment-purposes-only',
+    title: "Microsoft Warns Copilot is 'For Entertainment Purposes Only'",
+    description:
+      "A startling disclaimer in Microsoft's terms of use raises questions about AI reliability for professional applications.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Microsoft Copilot 'For Entertainment Purposes Only' Disclaimer",
+    date: 'April 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
