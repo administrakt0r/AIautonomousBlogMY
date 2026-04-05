@@ -1279,6 +1279,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 85,
+    slug: 'ai-agent-liability-business-risk',
+    title: 'AI Agent Liability: The Accountability Gap in Autonomous Business',
+    description:
+      'As AI agents move from pilots to "actively running the business," a critical legal gap is emerging over liability for autonomous errors.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Agent Liability and Business Risk',
+    date: 'April 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
