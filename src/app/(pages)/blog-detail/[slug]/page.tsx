@@ -26,9 +26,10 @@ import {
   blogPostsBySlug,
   blogPostsBySlugWithIndex,
   blogPostsAscWithIndex,
-  relatedPostsBySlug
+  relatedPostsBySlug,
+  blogPostsJsonLd
 } from '@/assets/data/blog-posts'
-import { PUBLISHER_LOGO_PATH, SITE_URL, getAbsoluteUrl, getPostUrl } from '@/lib/site'
+import { getPostUrl } from '@/lib/site'
 
 // Dynamic metadata for each blog post — critical for per-post SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -264,69 +265,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@graph': [
-              {
-                '@type': 'BlogPosting',
-                '@id': `${getPostUrl(post.slug)}#article`,
-                headline: post.title,
-                description: post.description,
-                image: getAbsoluteUrl(post.imageUrl),
-                datePublished: new Date(post.date).toISOString(),
-                dateModified: new Date(post.date).toISOString(),
-                author: {
-                  '@type': 'Person',
-                  name: post.author,
-                  url: getAbsoluteUrl('/about')
-                },
-                publisher: {
-                  '@type': 'Organization',
-                  name: 'ShtefAI blog',
-                  url: SITE_URL,
-                  logo: {
-                    '@type': 'ImageObject',
-                    url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
-                  }
-                },
-                mainEntityOfPage: {
-                  '@type': 'WebPage',
-                  '@id': getPostUrl(post.slug)
-                },
-                articleSection: post.category,
-                wordCount: post.readTime * 200,
-                inLanguage: 'en-US',
-                isPartOf: {
-                  '@type': 'Blog',
-                  '@id': `${SITE_URL}/#blog`,
-                  name: 'ShtefAI blog',
-                  url: SITE_URL
-                }
-              },
-              {
-                '@type': 'BreadcrumbList',
-                itemListElement: [
-                  {
-                    '@type': 'ListItem',
-                    position: 1,
-                    name: 'Home',
-                    item: SITE_URL
-                  },
-                  {
-                    '@type': 'ListItem',
-                    position: 2,
-                    name: 'Blog',
-                    item: `${SITE_URL}/#categories`
-                  },
-                  {
-                    '@type': 'ListItem',
-                    position: 3,
-                    name: post.category
-                  }
-                ]
-              }
-            ]
-          }).replace(/</g, '\\u003c')
+          __html: JSON.stringify(blogPostsJsonLd.get(slug)).replace(/</g, '\\u003c')
         }}
       />
     </div>
