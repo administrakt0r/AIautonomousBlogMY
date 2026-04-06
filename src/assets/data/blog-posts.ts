@@ -1324,6 +1324,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 88,
+    slug: 'ai-agent-governance-deloitte-report-2026',
+    title: 'AI Agent Governance: Why Safeguards Must Precede Autonomous Actions',
+    description:
+      'A new Deloitte report reveals a dangerous gap between the rapid adoption of autonomous AI agents and the lack of essential governance controls.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Agent Governance and Deloitte Report 2026',
+    date: 'April 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
