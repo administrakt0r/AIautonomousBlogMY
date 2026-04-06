@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
 import Blog from '@/components/blocks/blog-related-post/blog-related-post'
+import { ReadingProgressBar } from '@/components/blocks/reading-progress-bar'
 import { CopyLinkButton } from '@/components/blocks/copy-link-button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
@@ -15,7 +16,6 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator
 } from '@/components/ui/breadcrumb'
 import { Separator } from '@/components/ui/separator'
@@ -174,6 +174,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
   return (
     <div>
+      <ReadingProgressBar />
       <section className='py-8 sm:pt-16 sm:pb-24'>
         <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:space-y-16 lg:px-8'>
           <div className='gap-16 md:grid md:grid-cols-5 lg:grid-cols-7'>
@@ -194,7 +195,9 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                      <BreadcrumbPage>{post.category}</BreadcrumbPage>
+                      <BreadcrumbLink href={`/#category-${encodeURIComponent(post.category)}`}>
+                        {post.category}
+                      </BreadcrumbLink>
                     </BreadcrumbItem>
                   </BreadcrumbList>
                 </Breadcrumb>
