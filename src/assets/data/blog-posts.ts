@@ -1,3 +1,10 @@
+// ⚡ Bolt: Duplicating these constants locally to ensure Node.js build scripts (like generate:post-images)
+// can import this file without failing on path aliases or environment-specific module resolution.
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'
+const PUBLISHER_LOGO_PATH = '/favicon/android-chrome-512x512.png'
+const getAbsoluteUrl = (path: string) => new URL(path, SITE_URL).toString()
+const getPostUrl = (slug: string) => getAbsoluteUrl(`/blog-detail/${slug}`)
+
 const SHARED_OG_IMAGE_PATH = '/images/og-image.png'
 
 export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`
@@ -1400,26 +1407,115 @@ export const sortedNonFeaturedPosts = sortedBlogPosts.filter(post => !post.featu
 // Export featured posts
 export const featuredBlogPosts = processedPosts.filter(post => post.featured)
 
+// ⚡ Bolt: Group posts by category in O(N) to optimize related posts lookup.
+const postsByCategory = new Map<string, BlogPost[]>()
+
+for (const post of processedPosts) {
+  const list = postsByCategory.get(post.category) || []
+
+  list.push(post)
+  postsByCategory.set(post.category, list)
+}
+
+// ⚡ Bolt: Pre-calculate a small fallback list in O(1) to avoid O(N) search in the related posts loop.
+const globalLatestFallback = processedPosts.slice(0, 4)
+
+// ⚡ Bolt: Pre-calculate JSON-LD for every blog post in O(N).
+// This centralizes SEO logic and avoids redundant object creation and stringification preparation in Server Components.
+export const blogPostsJsonLd = new Map<string, any>(
+  processedPosts.map(post => {
+    const postUrl = getPostUrl(post.slug)
+
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id': `${postUrl}#article`,
+          headline: post.title,
+          description: post.description,
+          image: getAbsoluteUrl(post.imageUrl),
+          datePublished: new Date(post.date).toISOString(),
+          dateModified: new Date(post.date).toISOString(),
+          author: {
+            '@type': 'Person',
+            name: post.author,
+            url: getAbsoluteUrl('/about')
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'ShtefAI blog',
+            url: SITE_URL,
+            logo: {
+              '@type': 'ImageObject',
+              url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
+            }
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': postUrl
+          },
+          articleSection: post.category,
+          wordCount: post.readTime * 200,
+          inLanguage: 'en-US',
+          isPartOf: {
+            '@type': 'Blog',
+            '@id': `${SITE_URL}/#blog`,
+            name: 'ShtefAI blog',
+            url: SITE_URL
+          }
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: SITE_URL
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Blog',
+              item: `${SITE_URL}/#categories`
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: post.category
+            }
+          ]
+        }
+      ]
+    }
+
+    return [post.slug, jsonLd]
+  })
+)
+
 // ⚡ Bolt: Create a Map for O(1) lookup of 3 related posts for every blog post.
-// This avoids redundant O(n) calculations in the [slug] page component on every request.
+// This avoids the previous O(N^2) nested loop implementation, reducing complexity to O(N).
 export const relatedPostsBySlug = new Map<string, BlogPost[]>(
   processedPosts.map(post => {
+    const categoryPosts = postsByCategory.get(post.category) || []
     const related: BlogPost[] = []
-    const other: BlogPost[] = []
 
-    for (const p of processedPosts) {
-      if (p.slug === post.slug) continue
-
-      if (p.category === post.category) {
+    for (const p of categoryPosts) {
+      if (p.slug !== post.slug) {
         related.push(p)
         if (related.length === 3) break
-      } else if (other.length < 3) {
-        other.push(p)
       }
     }
 
     if (related.length < 3) {
-      related.push(...other.slice(0, 3 - related.length))
+      // Fallback: pick from pre-calculated global latest posts if category has fewer than 4 posts.
+      for (const p of globalLatestFallback) {
+        if (p.slug !== post.slug && !related.some(r => r.slug === p.slug)) {
+          related.push(p)
+          if (related.length === 3) break
+        }
+      }
     }
 
     return [post.slug, related]
