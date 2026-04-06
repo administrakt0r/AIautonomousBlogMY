@@ -1361,6 +1361,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 90,
+    slug: 'openai-intelligence-age-economic-vision',
+    title: 'OpenAI Unveils Vision for the Intelligence Age and AI Economy',
+    description:
+      "OpenAI's Intelligence Age policy proposals explore public wealth funds, robot taxes, and a fundamental shift in the global social contract.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Intelligence Age Economic Policy Proposals',
+    date: 'April 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
