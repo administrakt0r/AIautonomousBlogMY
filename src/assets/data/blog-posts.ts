@@ -1339,6 +1339,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 89,
+    slug: 'the-zero-marginal-value-intelligence',
+    title: 'The Zero-Marginal-Value Intelligence: Why Your IQ is Now a Commodity',
+    description:
+      'As AI makes high-level reasoning accessible to everyone, the premium on human intellect is collapsing, leaving us with a crisis of value.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Zero marginal value intelligence concept by Shtef',
+    date: 'April 06, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
