@@ -1381,7 +1381,8 @@ const blogPostsData: BlogPost[] = [
     id: 91,
     slug: 'anthropic-uk-expansion-defense-refusal',
     title: 'Anthropic’s Refusal to Arm AI Drives Strategic UK Expansion',
-    description: 'The UK government is courting Anthropic as a strategic partner, citing the company’s refusal to develop lethal AI as a key alignment factor.',
+    description:
+      'The UK government is courting Anthropic as a strategic partner, citing the company’s refusal to develop lethal AI as a key alignment factor.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic UK expansion and defense AI policy',
     date: 'April 07, 2026',
@@ -1395,7 +1396,8 @@ const blogPostsData: BlogPost[] = [
     id: 92,
     slug: 'the-post-search-curiosity-death',
     title: 'The Post-Search Era: Why AI Answers are Killing Human Curiosity',
-    description: 'We are trading the joy of discovery for the efficiency of the answer, and losing our intellectual sovereignty in the process.',
+    description:
+      'We are trading the joy of discovery for the efficiency of the answer, and losing our intellectual sovereignty in the process.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Post-Search Era: Why AI Answers are Killing Human Curiosity',
     date: 'April 07, 2026',
@@ -1463,9 +1465,9 @@ for (const post of processedPosts) {
 // ⚡ Bolt: Pre-calculate a small fallback list in O(1) to avoid O(N) search in the related posts loop.
 const globalLatestFallback = processedPosts.slice(0, 4)
 
-// ⚡ Bolt: Pre-calculate JSON-LD for every blog post in O(N).
-// This centralizes SEO logic and avoids redundant object creation and stringification preparation in Server Components.
-export const blogPostsJsonLd = new Map<string, any>(
+// ⚡ Bolt: Pre-calculate stringified and escaped JSON-LD for every blog post in O(N).
+// This eliminates the CPU cost of redundant JSON.stringify and .replace() calls on every request in Server Components.
+export const blogPostsJsonLdString = new Map<string, string>(
   processedPosts.map(post => {
     const postUrl = getPostUrl(post.slug)
 
@@ -1533,7 +1535,7 @@ export const blogPostsJsonLd = new Map<string, any>(
       ]
     }
 
-    return [post.slug, jsonLd]
+    return [post.slug, JSON.stringify(jsonLd).replace(/</g, '\\u003c')]
   })
 )
 

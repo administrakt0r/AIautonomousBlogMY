@@ -6,6 +6,8 @@ export const ReadingProgressBar = () => {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
+    let ticking = false
+
     const updateProgress = () => {
       const scrollHeight = document.documentElement.scrollHeight
       const scrollTop = window.scrollY
@@ -15,6 +17,7 @@ export const ReadingProgressBar = () => {
 
       if (totalScrollable <= 0) {
         setProgress(100)
+        ticking = false
 
         return
       }
@@ -22,15 +25,25 @@ export const ReadingProgressBar = () => {
       const currentProgress = (scrollTop / totalScrollable) * 100
 
       setProgress(currentProgress)
+      ticking = false
     }
 
-    window.addEventListener('scroll', updateProgress, { passive: true })
-    window.addEventListener('resize', updateProgress)
+    const onScroll = () => {
+      if (!ticking) {
+        // ⚡ Bolt: Use requestAnimationFrame to throttle updates and batch DOM reads/writes,
+        // improving scroll performance and reducing layout thrashing.
+        window.requestAnimationFrame(updateProgress)
+        ticking = true
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
     updateProgress()
 
     return () => {
-      window.removeEventListener('scroll', updateProgress)
-      window.removeEventListener('resize', updateProgress)
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
     }
   }, [])
 
@@ -43,10 +56,7 @@ export const ReadingProgressBar = () => {
       aria-valuenow={progress}
       aria-label='Reading progress'
     >
-      <div
-        className='bg-primary h-full transition-all duration-150 ease-out'
-        style={{ width: `${progress}%` }}
-      />
+      <div className='bg-primary h-full transition-all duration-150 ease-out' style={{ width: `${progress}%` }} />
     </div>
   )
 }
