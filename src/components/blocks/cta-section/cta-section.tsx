@@ -1,13 +1,31 @@
 'use client'
 
 // Component Imports
+import { useState } from 'react'
+
 import Image from 'next/image'
+import { Loader2Icon, CheckCircleIcon } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 
 const CTA = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubscribed, setIsSubscribed] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1500))
+
+    setIsSubmitting(false)
+    setIsSubscribed(true)
+  }
+
   return (
     <section className='bg-muted py-8 sm:py-16 lg:py-24' id='get-in-touch'>
       <div className='container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8'>
@@ -37,12 +55,38 @@ const CTA = () => {
                       better, all in our free newsletter.
                     </p>
                     {/* Email Form */}
-                    <form className='gap-3 py-1 max-sm:space-y-2 sm:flex sm:flex-row'>
-                      <Input type='email' placeholder='Your email' className='bg-background h-10 flex-1 text-base' />
-                      <Button size='lg' className='text-base max-sm:w-full' type='submit'>
-                        Subscribe
-                      </Button>
-                    </form>
+                    <div aria-live='polite' role='status'>
+                      {isSubscribed ? (
+                        <div className='flex items-center gap-2 py-3 text-green-600 dark:text-green-400'>
+                          <CheckCircleIcon className='size-5' />
+                          <span className='font-medium'>Thanks for subscribing! Check your inbox soon.</span>
+                        </div>
+                      ) : (
+                        <form className='gap-3 py-1 max-sm:space-y-2 sm:flex sm:flex-row' onSubmit={handleSubmit}>
+                          <Label htmlFor='cta-email' className='sr-only'>
+                            Email Address
+                          </Label>
+                          <Input
+                            id='cta-email'
+                            type='email'
+                            placeholder='Your email'
+                            className='bg-background h-10 flex-1 text-base'
+                            required
+                            disabled={isSubmitting}
+                          />
+                          <Button size='lg' className='text-base max-sm:w-full' type='submit' disabled={isSubmitting}>
+                            {isSubmitting ? (
+                              <>
+                                <Loader2Icon className='mr-2 size-4 animate-spin' />
+                                Subscribing...
+                              </>
+                            ) : (
+                              'Subscribe'
+                            )}
+                          </Button>
+                        </form>
+                      )}
+                    </div>
                   </div>
                 </CardContent>
               </Card>

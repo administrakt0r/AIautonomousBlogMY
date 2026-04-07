@@ -187,16 +187,20 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                 <Breadcrumb>
                   <BreadcrumbList>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href='/'>Home</BreadcrumbLink>
+                      <BreadcrumbLink asChild>
+                        <Link href='/'>Home</Link>
+                      </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                      <BreadcrumbLink href='/#categories'>Blog</BreadcrumbLink>
+                      <BreadcrumbLink asChild>
+                        <Link href='/#categories'>Blog</Link>
+                      </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                      <BreadcrumbLink href={`/#category-${encodeURIComponent(post.category)}`}>
-                        {post.category}
+                      <BreadcrumbLink asChild>
+                        <Link href={`/#category-${encodeURIComponent(post.category)}`}>{post.category}</Link>
                       </BreadcrumbLink>
                     </BreadcrumbItem>
                   </BreadcrumbList>
