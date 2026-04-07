@@ -24,76 +24,81 @@ const faqs = [
   }
 ]
 
-const Home = () => {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE_URL}#website`,
+// ⚡ Bolt: Move JSON-LD outside the component body to avoid redundant object creation
+// and stringification on every request.
+const homeJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}#website`,
+      name: 'ShtefAI blog',
+      description:
+        'ShtefAI blog delivers daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.',
+      url: SITE_URL,
+      inLanguage: 'en-US',
+      publisher: {
+        '@type': 'Organization',
         name: 'ShtefAI blog',
-        description:
-          'ShtefAI blog delivers daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.',
         url: SITE_URL,
-        inLanguage: 'en-US',
-        publisher: {
-          '@type': 'Organization',
-          name: 'ShtefAI blog',
-          url: SITE_URL,
-          logo: {
-            '@type': 'ImageObject',
-            url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
-          },
-          sameAs: ['https://administraktor.com', 'https://LLM.kiwi', 'https://WPinEU.com']
-        }
-      },
-      {
-        '@type': 'Blog',
-        '@id': `${SITE_URL}/#blog`,
-        name: 'ShtefAI blog',
-        description: 'Daily AI news, breakthroughs, and analysis curated by an autonomous AI correspondent.',
-        url: SITE_URL,
-        inLanguage: 'en-US',
-        isPartOf: { '@id': `${SITE_URL}#website` },
-        blogPost: latestPosts.map(post => ({
-          '@type': 'BlogPosting',
-          headline: post.title,
-          description: post.description,
-          url: getPostUrl(post.slug),
-          datePublished: new Date(post.date).toISOString(),
-          author: {
-            '@type': 'Person',
-            name: post.author
-          },
-          image: getAbsoluteUrl(post.imageUrl)
-        }))
-      },
-      {
-        '@type': 'FAQPage',
-        '@id': `${SITE_URL}#faq`,
-        mainEntity: faqs.map(faq => ({
-          '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer
-          }
-        }))
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: SITE_URL
-          }
-        ]
+        logo: {
+          '@type': 'ImageObject',
+          url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
+        },
+        sameAs: ['https://administraktor.com', 'https://LLM.kiwi', 'https://WPinEU.com']
       }
-    ]
-  }
+    },
+    {
+      '@type': 'Blog',
+      '@id': `${SITE_URL}/#blog`,
+      name: 'ShtefAI blog',
+      description: 'Daily AI news, breakthroughs, and analysis curated by an autonomous AI correspondent.',
+      url: SITE_URL,
+      inLanguage: 'en-US',
+      isPartOf: { '@id': `${SITE_URL}#website` },
+      blogPost: latestPosts.map(post => ({
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.description,
+        url: getPostUrl(post.slug),
+        datePublished: new Date(post.date).toISOString(),
+        author: {
+          '@type': 'Person',
+          name: post.author
+        },
+        image: getAbsoluteUrl(post.imageUrl)
+      }))
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${SITE_URL}#faq`,
+      mainEntity: faqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: SITE_URL
+        }
+      ]
+    }
+  ]
+}
 
+// ⚡ Bolt: Pre-stringify and escape to reduce CPU overhead during rendering.
+const homeJsonLdString = JSON.stringify(homeJsonLd).replace(/</g, '\\u003c')
+
+const Home = () => {
   return (
     <div>
       <HeroSection />
@@ -123,7 +128,7 @@ const Home = () => {
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
+          __html: homeJsonLdString
         }}
       />
     </div>

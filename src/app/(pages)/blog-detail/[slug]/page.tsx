@@ -27,7 +27,7 @@ import {
   blogPostsBySlugWithIndex,
   blogPostsAscWithIndex,
   relatedPostsBySlug,
-  blogPostsJsonLd
+  blogPostsJsonLdString
 } from '@/assets/data/blog-posts'
 import { getPostUrl } from '@/lib/site'
 
@@ -268,7 +268,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(blogPostsJsonLd.get(slug)).replace(/</g, '\\u003c')
+          __html: blogPostsJsonLdString.get(slug) ?? ''
         }}
       />
     </div>

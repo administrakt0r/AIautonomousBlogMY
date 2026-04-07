@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 
 interface TocItem {
   id: string
@@ -104,31 +104,38 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
     }
   }
 
+  // ⚡ Bolt: Memoize grouping logic to avoid re-calculating the TOC structure on every re-render.
+  const groupedItems = useMemo(() => {
+    if (tocItems.length === 0) return []
+
+    // Group items: create structure where h2 items have their following h3 items
+    const groups: Array<{ main: TocItem; subs: TocItem[] }> = []
+    let currentGroup: { main: TocItem; subs: TocItem[] } | null = null
+
+    tocItems.forEach(item => {
+      if (item.level === 2) {
+        // This is a main title, start a new group
+        if (currentGroup) {
+          groups.push(currentGroup)
+        }
+
+        currentGroup = { main: item, subs: [] }
+      } else if (item.level === 3 && currentGroup) {
+        // This is a subtitle, add to current group
+        currentGroup.subs.push(item)
+      }
+    })
+
+    // Don't forget the last group
+    if (currentGroup) {
+      groups.push(currentGroup)
+    }
+
+    return groups
+  }, [tocItems])
+
   if (tocItems.length === 0) {
     return null
-  }
-
-  // Group items: create structure where h2 items have their following h3 items
-  const groupedItems: Array<{ main: TocItem; subs: TocItem[] }> = []
-  let currentGroup: { main: TocItem; subs: TocItem[] } | null = null
-
-  tocItems.forEach(item => {
-    if (item.level === 2) {
-      // This is a main title, start a new group
-      if (currentGroup) {
-        groupedItems.push(currentGroup)
-      }
-
-      currentGroup = { main: item, subs: [] }
-    } else if (item.level === 3 && currentGroup) {
-      // This is a subtitle, add to current group
-      currentGroup.subs.push(item)
-    }
-  })
-
-  // Don't forget the last group
-  if (currentGroup) {
-    groupedItems.push(currentGroup)
   }
 
   return (
