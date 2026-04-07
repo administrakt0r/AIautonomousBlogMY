@@ -29,3 +29,7 @@
 ## 2026-04-05 - Inline Action Feedback
 **Learning:** Simple utility actions like "Copy Link" provide a high ROI for user sharing but require immediate, unambiguous feedback. Combining icon state changes (e.g., Link to Check) with a persistent "Copied!" tooltip ensures users feel confident the action was successful without intrusive alerts.
 **Action:** Provide dual visual feedback (icon + tooltip/toast) for non-obvious background actions like clipboard copying.
+
+## 2026-04-07 - Accessible Async Form Feedback
+**Learning:** Newsletter or contact forms often lack semantic clarity and visual confirmation. Providing a hidden `Label` (`sr-only`) for all inputs, a clear loading state (e.g., `Loader2Icon`), and a success message within an `aria-live="polite"` container ensures both sighted and screen-reader users understand the form's status.
+**Action:** Always pair interactive forms with accessible labels, visual loading indicators, and ARIA-announced success states to eliminate user uncertainty during async operations.

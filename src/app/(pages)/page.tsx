@@ -3,6 +3,7 @@ import { PUBLISHER_LOGO_PATH, SITE_URL, getAbsoluteUrl, getPostUrl } from '@/lib
 
 import HeroSection from '@/components/blocks/hero-section/hero-section'
 import Blog from '@/components/blocks/blog-component/blog-component'
+import CTA from '@/components/blocks/cta-section/cta-section'
 
 const latestPosts = latestThreePosts
 
@@ -103,6 +104,7 @@ const Home = () => {
     <div>
       <HeroSection />
       <Blog />
+      <CTA />
       <section className='border-t py-12 sm:py-16' aria-labelledby='home-faq-heading'>
         <div className='mx-auto max-w-4xl space-y-8 px-4 sm:px-6 lg:px-8'>
           <div className='space-y-3'>
