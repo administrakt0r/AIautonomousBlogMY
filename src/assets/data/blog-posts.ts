@@ -1406,6 +1406,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 93,
+    slug: 'anthropic-mythos-preview-cybersecurity',
+    title: 'Anthropic Debuts Mythos: A New Frontier in AI-Powered Cybersecurity',
+    description:
+      'Anthropic releases Mythos, a specialized AI model preview designed for high-stakes defensive operations and automated vulnerability detection.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Debuts Mythos: A New Frontier in AI-Powered Cybersecurity',
+    date: 'April 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
