@@ -1376,6 +1376,20 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 91,
+    slug: 'anthropic-uk-expansion-defense-refusal',
+    title: 'Anthropic’s Refusal to Arm AI Drives Strategic UK Expansion',
+    description: 'The UK government is courting Anthropic as a strategic partner, citing the company’s refusal to develop lethal AI as a key alignment factor.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic UK expansion and defense AI policy',
+    date: 'April 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
