@@ -1390,6 +1390,20 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 92,
+    slug: 'the-post-search-curiosity-death',
+    title: 'The Post-Search Era: Why AI Answers are Killing Human Curiosity',
+    description: 'We are trading the joy of discovery for the efficiency of the answer, and losing our intellectual sovereignty in the process.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Post-Search Era: Why AI Answers are Killing Human Curiosity',
+    date: 'April 07, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
