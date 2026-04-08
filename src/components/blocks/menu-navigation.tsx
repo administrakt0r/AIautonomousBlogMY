@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import React, { type ReactNode } from 'react'
 
 import {
   NavigationMenu,
@@ -37,53 +37,61 @@ type MenuNavigationProps = {
   className?: string
 }
 
+// ⚡ Bolt: Memoize the NavItem to prevent it from re-rendering unless the active status changes.
+// Since Header frequently updates activeSection during scroll, this reduces unnecessary work.
+const NavItem = React.memo(({ navItem, activeSection }: { navItem: NavigationSection; activeSection?: string }) => {
+  if (navItem.href) {
+    // Root link item
+    // Extract section ID from href (e.g., "/#categories" -> "categories", "/#" -> "home")
+    const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href.replace('/#', '')
+    const isActive = sectionFromHref === activeSection
+
+    return (
+      <NavigationMenuItem>
+        <NavigationMenuLink
+          href={navItem.href}
+          className={cn(
+            navigationMenuTriggerStyle(),
+            'hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base!',
+            isActive ? 'text-primary bg-accent/50 font-medium' : 'text-muted-foreground'
+          )}
+        >
+          {navItem.title}
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+    )
+  }
+
+  // Section with dropdown
+  return (
+    <NavigationMenuItem>
+      <NavigationMenuTrigger className='dark:data-[state=open]:hover:bg-accent/50 text-muted-foreground hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base [&>svg]:size-4'>
+        {navItem.title}
+      </NavigationMenuTrigger>
+      <NavigationMenuContent className='data-[motion=from-start]:slide-in-from-left-30! data-[motion=to-start]:slide-out-to-left-30! data-[motion=from-end]:slide-in-from-right-30! data-[motion=to-end]:slide-out-to-right-30! absolute w-auto'>
+        <ul className='grid w-38 gap-4'>
+          <li>
+            {navItem.items?.map(item => (
+              <NavigationMenuLink key={item.title} href={item.href}>
+                {item.title}
+              </NavigationMenuLink>
+            ))}
+          </li>
+        </ul>
+      </NavigationMenuContent>
+    </NavigationMenuItem>
+  )
+})
+
+NavItem.displayName = 'NavItem'
+
 const MenuNavigation = ({ navigationData, activeSection, className }: MenuNavigationProps) => {
   return (
     <NavigationMenu viewport={false} className={className} aria-label='Main navigation'>
       <NavigationMenuList className='flex-wrap justify-start gap-3'>
-        {navigationData.map(navItem => {
-          if (navItem.href) {
-            // Root link item
-            // Extract section ID from href (e.g., "/#categories" -> "categories", "/#" -> "home")
-            const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href.replace('/#', '')
-            const isActive = sectionFromHref === activeSection
-
-            return (
-              <NavigationMenuItem key={navItem.title}>
-                <NavigationMenuLink
-                  href={navItem.href}
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    'hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base!',
-                    isActive ? 'text-primary bg-accent/50 font-medium' : 'text-muted-foreground'
-                  )}
-                >
-                  {navItem.title}
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            )
-          }
-
-          // Section with dropdown
-          return (
-            <NavigationMenuItem key={navItem.title}>
-              <NavigationMenuTrigger className='dark:data-[state=open]:hover:bg-accent/50 text-muted-foreground hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base [&>svg]:size-4'>
-                {navItem.title}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className='data-[motion=from-start]:slide-in-from-left-30! data-[motion=to-start]:slide-out-to-left-30! data-[motion=from-end]:slide-in-from-right-30! data-[motion=to-end]:slide-out-to-right-30! absolute w-auto'>
-                <ul className='grid w-38 gap-4'>
-                  <li>
-                    {navItem.items?.map(item => (
-                      <NavigationMenuLink key={item.title} href={item.href}>
-                        {item.title}
-                      </NavigationMenuLink>
-                    ))}
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          )
-        })}
+        {navigationData.map(navItem => (
+          <NavItem key={navItem.title} navItem={navItem} activeSection={activeSection} />
+        ))}
       </NavigationMenuList>
     </NavigationMenu>
   )

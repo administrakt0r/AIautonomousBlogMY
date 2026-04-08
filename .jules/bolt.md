@@ -11,3 +11,7 @@
 ## 2026-04-07 - Throttling Layout-Sensitive UI
 **Learning:** High-frequency events like 'scroll' that trigger DOM state changes (like progress bars) can cause layout thrashing and high CPU usage.
 **Action:** Use requestAnimationFrame to throttle state updates and ensure they align with the browser's paint cycle.
+
+## 2026-04-08 - Redundant Layout Reads
+**Learning:** Reading properties like `scrollHeight` or `clientHeight` in every scroll frame causes the browser to perform synchronous reflows if the layout is dirty.
+**Action:** Cache these layout-dependent values and only re-calculate them on window `resize` or component mount.

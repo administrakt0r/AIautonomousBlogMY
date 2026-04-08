@@ -8,12 +8,19 @@ export const ReadingProgressBar = () => {
   useEffect(() => {
     let ticking = false
 
-    const updateProgress = () => {
+    // ⚡ Bolt: Cache totalScrollable to avoid expensive DOM layout reads (scrollHeight, clientHeight)
+    // on every scroll frame. Only update on resize or initial mount.
+    let totalScrollable = 0
+
+    const updateTotalScrollable = () => {
       const scrollHeight = document.documentElement.scrollHeight
-      const scrollTop = window.scrollY
       const clientHeight = document.documentElement.clientHeight
 
-      const totalScrollable = scrollHeight - clientHeight
+      totalScrollable = scrollHeight - clientHeight
+    }
+
+    const updateProgress = () => {
+      const scrollTop = window.scrollY
 
       if (totalScrollable <= 0) {
         setProgress(100)
@@ -37,13 +44,21 @@ export const ReadingProgressBar = () => {
       }
     }
 
+    const onResize = () => {
+      updateTotalScrollable()
+      onScroll()
+    }
+
     window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
+    window.addEventListener('resize', onResize, { passive: true })
+
+    // Initialize values
+    updateTotalScrollable()
     updateProgress()
 
     return () => {
       window.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onScroll)
+      window.removeEventListener('resize', onResize)
     }
   }, [])
 
