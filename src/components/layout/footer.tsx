@@ -44,7 +44,7 @@ const Footer = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   className='text-muted-foreground hover:text-foreground transition-colors'
-                  aria-label='GitHub'
+                  aria-label='GitHub (opens in a new tab)'
                 >
                   <GithubIcon className='size-5' />
                 </a>
@@ -76,7 +76,13 @@ const Footer = () => {
               Administrakt0r Network
             </h3>
 
-            <a href='https://WPinEU.com' target='_blank' rel='noopener noreferrer' className='group block'>
+            <a
+              href='https://WPinEU.com'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='group block'
+              aria-label='WPinEU.com (opens in a new tab)'
+            >
               <div className='relative overflow-hidden rounded-xl border border-blue-100 bg-blue-50/50 p-4 transition-all duration-300 hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 dark:border-blue-900/50 dark:bg-blue-950/20 dark:hover:border-blue-700/50'>
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-blue-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-blue-700 dark:text-blue-400'>
@@ -88,7 +94,13 @@ const Footer = () => {
               </div>
             </a>
 
-            <a href='https://LLM.kiwi' target='_blank' rel='noopener noreferrer' className='group block'>
+            <a
+              href='https://LLM.kiwi'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='group block'
+              aria-label='LLM.kiwi (opens in a new tab)'
+            >
               <div className='relative overflow-hidden rounded-xl border border-purple-100 bg-purple-50/50 p-4 transition-all duration-300 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 dark:border-purple-900/50 dark:bg-purple-950/20 dark:hover:border-purple-700/50'>
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-purple-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-purple-700 dark:text-purple-400'>
@@ -137,6 +149,7 @@ const Footer = () => {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='hover:text-primary underline underline-offset-2'
+                aria-label='administraktor.com (opens in a new tab)'
               >
                 administraktor.com
               </a>
