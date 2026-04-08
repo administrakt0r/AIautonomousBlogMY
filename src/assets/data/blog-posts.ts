@@ -1451,6 +1451,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 96,
+    slug: 'meta-launches-muse-spark-superintelligence-model',
+    title: 'Meta Launches Muse Spark: Personal Superintelligence at Scale',
+    description:
+      'Meta Superintelligence Labs debuts Muse Spark, a multimodal reasoning model designed for deep integration across the Meta app ecosystem.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta Launches Muse Spark Superintelligence Model',
+    date: 'April 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
