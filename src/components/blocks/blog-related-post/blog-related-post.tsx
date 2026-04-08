@@ -27,7 +27,9 @@ const Blog = React.memo(({ blogPosts = latestThreePosts }: BlogProps) => {
         <div className='space-y-4'>
           <Badge variant='outline'>Trending</Badge>
 
-          <h2 className='text-2xl font-semibold md:text-3xl lg:text-4xl'>Related Post</h2>
+          <h2 className='text-2xl font-semibold md:text-3xl lg:text-4xl'>
+            Related Post{blogPosts.length !== 1 ? 's' : ''}
+          </h2>
 
           <p className='text-muted-foreground text-lg md:text-xl'>
             Expand your knowledge with these hand-picked posts.
@@ -51,10 +53,16 @@ const Blog = React.memo(({ blogPosts = latestThreePosts }: BlogProps) => {
                     className='object-cover object-center transition-transform duration-300 group-hover:scale-105'
                   />
                 </div>
-                <div className='flex items-center justify-between gap-1.5'>
-                  <div className='text-muted-foreground flex items-center gap-1.5'>
-                    <CalendarDaysIcon className='size-5' />
-                    <span>{post.date}</span>
+                <div className='flex items-center justify-between gap-2'>
+                  <div className='text-muted-foreground flex flex-wrap items-center gap-x-2 gap-y-1 text-sm'>
+                    <div className='flex items-center gap-1.5'>
+                      <CalendarDaysIcon className='size-4 shrink-0' />
+                      <span>{post.date}</span>
+                    </div>
+                    <span className='text-muted-foreground/50' aria-hidden='true'>
+                      •
+                    </span>
+                    <span>{post.readTime} min read</span>
                   </div>
                   <Badge
                     asChild
@@ -62,6 +70,7 @@ const Blog = React.memo(({ blogPosts = latestThreePosts }: BlogProps) => {
                   >
                     <button
                       type='button'
+                      aria-label={`Filter by ${post.category}`}
                       onClick={e => {
                         e.preventDefault()
                         e.stopPropagation()

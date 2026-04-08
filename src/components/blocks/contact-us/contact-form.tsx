@@ -89,7 +89,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {/* Subject Input */}
+      {/* Phone Number Input */}
       <div className='space-y-2'>
         <Label htmlFor='phone'>Phone Number</Label>
         <div className='relative'>
