@@ -1436,6 +1436,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 95,
+    slug: 'the-small-model-lie',
+    title: 'The Small Model Lie: Why Local AI is Just a Corporate Convenience',
+    description:
+      'Small Language Models are not a win for user privacy—they are a desperate move by Big Tech to offload trillions in compute costs onto your hardware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Small Model Lie: Why Local AI is Just a Corporate Convenience',
+    date: 'April 08, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
