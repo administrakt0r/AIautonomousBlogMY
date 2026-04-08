@@ -1421,6 +1421,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 94,
+    slug: 'google-offline-ai-dictation-app',
+    title: 'Google Quietly Launches Offline AI Dictation App Powered by Gemma',
+    description:
+      "Google's new offline-first dictation app uses Gemma AI models to deliver high-accuracy transcription without an internet connection.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google offline AI dictation app powered by Gemma',
+    date: 'April 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
