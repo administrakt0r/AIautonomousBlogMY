@@ -62,8 +62,7 @@ const ContactForm = () => {
             aria-required='true'
           />
           <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
-            <UserIcon className='size-4' />
-            <span className='sr-only'>Name</span>
+            <UserIcon className='size-4' aria-hidden='true' />
           </div>
         </div>
       </div>
@@ -83,8 +82,7 @@ const ContactForm = () => {
             aria-required='true'
           />
           <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
-            <MailIcon className='size-4' />
-            <span className='sr-only'>Email</span>
+            <MailIcon className='size-4' aria-hidden='true' />
           </div>
         </div>
       </div>
@@ -95,8 +93,7 @@ const ContactForm = () => {
         <div className='relative'>
           <Input id='phone' type='tel' placeholder='Enter your phone number here...' className='peer h-10 pr-9' />
           <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
-            <PhoneIcon className='size-4' />
-            <span className='sr-only'>Phone</span>
+            <PhoneIcon className='size-4' aria-hidden='true' />
           </div>
         </div>
       </div>

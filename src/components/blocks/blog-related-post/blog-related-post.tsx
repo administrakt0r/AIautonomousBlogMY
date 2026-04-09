@@ -11,6 +11,7 @@ import Image from 'next/image'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { latestThreePosts, type BlogPost } from '@/assets/data/blog-posts'
 
 interface BlogProps {
@@ -25,7 +26,7 @@ const Blog = React.memo(({ blogPosts = latestThreePosts }: BlogProps) => {
       <div className='mx-auto max-w-7xl space-y-16 px-4 py-8 sm:px-6 lg:px-8'>
         {/* Header */}
         <div className='space-y-4'>
-          <Badge variant='outline'>Trending</Badge>
+          <Badge variant='outline'>Recommended</Badge>
 
           <h2 className='text-2xl font-semibold md:text-3xl lg:text-4xl'>
             Related Post{blogPosts.length !== 1 ? 's' : ''}
@@ -92,17 +93,22 @@ const Blog = React.memo(({ blogPosts = latestThreePosts }: BlogProps) => {
                 <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
                 <div className='flex items-center justify-between'>
                   <span className='text-sm font-medium'>{post.author}</span>
-                  <Button
-                    size='icon'
-                    variant='outline'
-                    className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground relative z-10 border group-hover:border-transparent hover:border-transparent'
-                    asChild
-                  >
-                    <Link href={`/blog-detail/${post.slug}`}>
-                      <ArrowRightIcon className='size-4 -rotate-45' />
-                      <span className='sr-only'>Read more about: {post.title}</span>
-                    </Link>
-                  </Button>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button
+                        size='icon'
+                        variant='outline'
+                        className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground relative z-10 border group-hover:border-transparent hover:border-transparent'
+                        asChild
+                      >
+                        <Link href={`/blog-detail/${post.slug}`}>
+                          <ArrowRightIcon className='size-4 -rotate-45' />
+                          <span className='sr-only'>Read more about: {post.title}</span>
+                        </Link>
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>Read Article</TooltipContent>
+                  </Tooltip>
                 </div>
               </CardContent>
             </Card>

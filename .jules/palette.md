@@ -33,3 +33,7 @@
 ## 2026-04-07 - Accessible Async Form Feedback
 **Learning:** Newsletter or contact forms often lack semantic clarity and visual confirmation. Providing a hidden `Label` (`sr-only`) for all inputs, a clear loading state (e.g., `Loader2Icon`), and a success message within an `aria-live="polite"` container ensures both sighted and screen-reader users understand the form's status.
 **Action:** Always pair interactive forms with accessible labels, visual loading indicators, and ARIA-announced success states to eliminate user uncertainty during async operations.
+
+## 2026-04-10 - Streamlining Input Accessibility
+**Learning:** Adding `sr-only` labels to inputs that already have semantic, visible `<Label>` elements creates redundant announcements for screen reader users. Similarly, decorative icons inside input containers (like search or user icons) add unnecessary auditory noise unless explicitly hidden.
+**Action:** Remove redundant `sr-only` labels when a visible label is correctly linked via `htmlFor`. Always apply `aria-hidden="true"` to decorative icons within interactive fields to ensure a cleaner, focused accessibility tree.
