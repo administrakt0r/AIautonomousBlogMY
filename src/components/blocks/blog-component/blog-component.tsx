@@ -101,17 +101,22 @@ const BlogGrid = React.memo(
               <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
               <div className='flex items-center justify-between'>
                 <span className='text-sm font-medium'>{post.author}</span>
-                <Button
-                  size='icon'
-                  variant='outline'
-                  className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground relative z-10 border group-hover:border-transparent hover:border-transparent'
-                  asChild
-                >
-                  <Link href={`/blog-detail/${post.slug}`}>
-                    <ArrowRightIcon className='size-4 -rotate-45' />
-                    <span className='sr-only'>Read more about: {post.title}</span>
-                  </Link>
-                </Button>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      size='icon'
+                      variant='outline'
+                      className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground relative z-10 border group-hover:border-transparent hover:border-transparent'
+                      asChild
+                    >
+                      <Link href={`/blog-detail/${post.slug}`}>
+                        <ArrowRightIcon className='size-4 -rotate-45' />
+                        <span className='sr-only'>Read more about: {post.title}</span>
+                      </Link>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>Read Article</TooltipContent>
+                </Tooltip>
               </div>
             </CardContent>
           </Card>
@@ -313,8 +318,7 @@ const Blog = () => {
                 Search articles
               </Label>
               <div className='text-muted-foreground pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 peer-disabled:opacity-50'>
-                <SearchIcon className='size-4' />
-                <span className='sr-only'>Search</span>
+                <SearchIcon className='size-4' aria-hidden='true' />
               </div>
               <Input
                 id='blog-search'
@@ -340,8 +344,7 @@ const Blog = () => {
                       }}
                       className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-3'
                     >
-                      <XIcon className='size-4' />
-                      <span className='sr-only'>Clear search</span>
+                      <XIcon className='size-4' aria-hidden='true' />
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>Clear search</TooltipContent>
