@@ -1,6 +1,6 @@
 'use client'
 
-import type { ReactNode } from 'react'
+import React, { type ReactNode } from 'react'
 
 import { ChevronRightIcon, CircleSmallIcon } from 'lucide-react'
 
@@ -43,6 +43,46 @@ type Props = {
   align?: 'center' | 'end' | 'start'
 }
 
+// ⚡ Bolt: Extract and memoize the dropdown navigation item to prevent unnecessary re-renders when scrolling.
+const DropdownNavItem = React.memo(({ navItem, isActive }: { navItem: NavigationSection; isActive: boolean }) => {
+  if (navItem.href) {
+    return (
+      <DropdownMenuItem asChild>
+        <Link href={navItem.href} className={cn(isActive && 'bg-accent text-accent-foreground font-medium')}>
+          {navItem.icon}
+          {navItem.title}
+        </Link>
+      </DropdownMenuItem>
+    )
+  }
+
+  return (
+    <Collapsible asChild>
+      <DropdownMenuGroup>
+        <CollapsibleTrigger asChild>
+          <DropdownMenuItem onSelect={event => event.preventDefault()} className='justify-between'>
+            {navItem.icon}
+            <span className='flex-1'>{navItem.title}</span>
+            <ChevronRightIcon className='shrink-0 transition-transform [[data-state=open]>&]:rotate-90' />
+          </DropdownMenuItem>
+        </CollapsibleTrigger>
+        <CollapsibleContent className='pl-2'>
+          {navItem.items?.map(item => (
+            <DropdownMenuItem key={item.title} asChild>
+              <Link href={item.href}>
+                <CircleSmallIcon />
+                <span>{item.title}</span>
+              </Link>
+            </DropdownMenuItem>
+          ))}
+        </CollapsibleContent>
+      </DropdownMenuGroup>
+    </Collapsible>
+  )
+})
+
+DropdownNavItem.displayName = 'DropdownNavItem'
+
 const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' }: Props) => {
   return (
     <DropdownMenu>
@@ -52,44 +92,11 @@ const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' 
         align={align}
       >
         {navigationData.map(navItem => {
-          if (navItem.href) {
-            // Extract section ID from href (e.g., "/#categories" -> "categories", "/#" -> "home")
-            const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href.replace('/#', '')
-            const isActive = sectionFromHref === activeSection
+          // ⚡ Bolt: Move isActive comparison logic to the parent loop.
+          const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', '')
+          const isActive = !!sectionFromHref && sectionFromHref === activeSection
 
-            return (
-              <DropdownMenuItem key={navItem.title} asChild>
-                <Link href={navItem.href} className={cn(isActive && 'bg-accent text-accent-foreground font-medium')}>
-                  {navItem.icon}
-                  {navItem.title}
-                </Link>
-              </DropdownMenuItem>
-            )
-          }
-
-          return (
-            <Collapsible key={navItem.title} asChild>
-              <DropdownMenuGroup>
-                <CollapsibleTrigger asChild>
-                  <DropdownMenuItem onSelect={event => event.preventDefault()} className='justify-between'>
-                    {navItem.icon}
-                    <span className='flex-1'>{navItem.title}</span>
-                    <ChevronRightIcon className='shrink-0 transition-transform [[data-state=open]>&]:rotate-90' />
-                  </DropdownMenuItem>
-                </CollapsibleTrigger>
-                <CollapsibleContent className='pl-2'>
-                  {navItem.items?.map(item => (
-                    <DropdownMenuItem key={item.title} asChild>
-                      <Link href={item.href}>
-                        <CircleSmallIcon />
-                        <span>{item.title}</span>
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </CollapsibleContent>
-              </DropdownMenuGroup>
-            </Collapsible>
-          )
+          return <DropdownNavItem key={navItem.title} navItem={navItem} isActive={isActive} />
         })}
       </DropdownMenuContent>
     </DropdownMenu>
