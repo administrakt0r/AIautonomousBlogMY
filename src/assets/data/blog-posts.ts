@@ -1466,6 +1466,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 97,
+    slug: 'youtube-shorts-ai-avatars',
+    title: 'YouTube Shorts Now Lets Creators Use Photorealistic AI Avatars',
+    description:
+      'Google Veo-powered avatars bring photorealistic digital doubles to mobile content creation, enabling new levels of scale for creators.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'YouTube Shorts AI Avatars',
+    date: 'April 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
