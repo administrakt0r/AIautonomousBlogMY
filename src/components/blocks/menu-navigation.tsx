@@ -39,13 +39,9 @@ type MenuNavigationProps = {
 
 // ⚡ Bolt: Memoize the NavItem to prevent it from re-rendering unless the active status changes.
 // Since Header frequently updates activeSection during scroll, this reduces unnecessary work.
-const NavItem = React.memo(({ navItem, activeSection }: { navItem: NavigationSection; activeSection?: string }) => {
+const NavItem = React.memo(({ navItem, isActive }: { navItem: NavigationSection; isActive: boolean }) => {
   if (navItem.href) {
     // Root link item
-    // Extract section ID from href (e.g., "/#categories" -> "categories", "/#" -> "home")
-    const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href.replace('/#', '')
-    const isActive = sectionFromHref === activeSection
-
     return (
       <NavigationMenuItem>
         <NavigationMenuLink
@@ -89,9 +85,15 @@ const MenuNavigation = ({ navigationData, activeSection, className }: MenuNaviga
   return (
     <NavigationMenu viewport={false} className={className} aria-label='Main navigation'>
       <NavigationMenuList className='flex-wrap justify-start gap-3'>
-        {navigationData.map(navItem => (
-          <NavItem key={navItem.title} navItem={navItem} activeSection={activeSection} />
-        ))}
+        {navigationData.map(navItem => {
+          // ⚡ Bolt: Move isActive comparison logic to the parent loop.
+          // This ensures that NavItem only re-renders if its specific isActive state changes,
+          // instead of re-rendering every time activeSection updates.
+          const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', '')
+          const isActive = !!sectionFromHref && sectionFromHref === activeSection
+
+          return <NavItem key={navItem.title} navItem={navItem} isActive={isActive} />
+        })}
       </NavigationMenuList>
     </NavigationMenu>
   )

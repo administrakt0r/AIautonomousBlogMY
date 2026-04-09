@@ -1539,6 +1539,16 @@ export const categoriesWithAll = ['All', ...uniqueCategories]
 // Export non-featured posts sorted descending
 export const sortedNonFeaturedPosts = sortedBlogPosts.filter(post => !post.featured)
 
+// ⚡ Bolt: Group non-featured posts by category in O(N) to optimize category switching in the Blog component.
+export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
+
+for (const post of sortedNonFeaturedPosts) {
+  const list = nonFeaturedPostsByCategory.get(post.category) || []
+
+  list.push(post)
+  nonFeaturedPostsByCategory.set(post.category, list)
+}
+
 // Export featured posts
 export const featuredBlogPosts = processedPosts.filter(post => post.featured)
 

@@ -25,7 +25,12 @@ import {
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
 // Import the blog posts data from centralized location
-import { sortedNonFeaturedPosts, categoriesWithAll, type BlogPost } from '@/assets/data/blog-posts'
+import {
+  sortedNonFeaturedPosts,
+  nonFeaturedPostsByCategory,
+  categoriesWithAll,
+  type BlogPost
+} from '@/assets/data/blog-posts'
 
 // ⚡ Bolt: Use pre-sorted non-featured posts from the centralized data store.
 const nonFeaturedPosts = sortedNonFeaturedPosts
@@ -118,6 +123,34 @@ const BlogGrid = React.memo(
 
 BlogGrid.displayName = 'BlogGrid'
 
+// ⚡ Bolt: Extract and memoize the category button to prevent all buttons from re-rendering when the active tab changes.
+// Only the button that was selected and the one being newly selected will re-render.
+const CategoryButton = React.memo(
+  ({
+    category,
+    isSelected,
+    onClick
+  }: {
+    category: string
+    isSelected: boolean
+    onClick: (category: string) => void
+  }) => {
+    return (
+      <Button
+        type='button'
+        variant={isSelected ? 'secondary' : 'ghost'}
+        size='sm'
+        onClick={() => onClick(category)}
+        className={`h-9 px-4 text-base ${isSelected ? 'bg-background shadow-sm' : ''}`}
+      >
+        {category}
+      </Button>
+    )
+  }
+)
+
+CategoryButton.displayName = 'CategoryButton'
+
 const Blog = () => {
   const [selectedTab, setSelectedTab] = useState('All')
   const [searchQuery, setSearchQuery] = useState('')
@@ -163,18 +196,20 @@ const Blog = () => {
 
   const router = useRouter()
 
-  // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query
+  // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query.
+  // We use the pre-calculated nonFeaturedPostsByCategory Map for O(1) category retrieval when no search is active.
   const filteredPosts = useMemo(() => {
     const lowerQuery = debouncedSearchQuery.toLowerCase()
 
-    return nonFeaturedPosts.filter(post => {
-      const matchesCategory = selectedTab === 'All' || post.category === selectedTab
+    if (!lowerQuery) {
+      return selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
+    }
 
-      const matchesSearch =
-        post.title.toLowerCase().includes(lowerQuery) || post.description.toLowerCase().includes(lowerQuery)
+    const basePosts = selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
 
-      return matchesCategory && matchesSearch
-    })
+    return basePosts.filter(
+      post => post.title.toLowerCase().includes(lowerQuery) || post.description.toLowerCase().includes(lowerQuery)
+    )
   }, [selectedTab, debouncedSearchQuery])
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])
@@ -262,16 +297,12 @@ const Blog = () => {
             <ScrollArea className='bg-muted w-full rounded-lg sm:w-auto'>
               <div className='flex p-1'>
                 {categories.map(category => (
-                  <Button
+                  <CategoryButton
                     key={category}
-                    type='button'
-                    variant={selectedTab === category ? 'secondary' : 'ghost'}
-                    size='sm'
-                    onClick={() => handleTabChange(category)}
-                    className={`h-9 px-4 text-base ${selectedTab === category ? 'bg-background shadow-sm' : ''}`}
-                  >
-                    {category}
-                  </Button>
+                    category={category}
+                    isSelected={selectedTab === category}
+                    onClick={handleTabChange}
+                  />
                 ))}
               </div>
               <ScrollBar orientation='horizontal' />
