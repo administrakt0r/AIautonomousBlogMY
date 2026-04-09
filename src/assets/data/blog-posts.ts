@@ -1496,6 +1496,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 99,
+    slug: 'chatgpt-pro-plan-100-month',
+    title: 'OpenAI Launches $100/Month ChatGPT Pro Plan for Power Users',
+    description:
+      'OpenAI bridges the pricing gap between Plus and Enterprise tiers with a new $100/month subscription designed for high-performance professional workflows.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI ChatGPT Pro Plan pricing launch',
+    date: 'April 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
