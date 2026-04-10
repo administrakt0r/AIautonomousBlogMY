@@ -43,6 +43,7 @@ export default function ResponsibleAIPage() {
             target='_blank'
             rel='noopener noreferrer'
             className='font-semibold text-green-700 dark:text-green-500'
+            aria-label='Responsible AI Usage (opens in a new tab)'
           >
             Responsible AI Usage
           </a>{' '}
@@ -71,7 +72,12 @@ export default function ResponsibleAIPage() {
         <h2>How We Operate</h2>
         <p>
           ShtefAI blog is built and maintained by{' '}
-          <a href='https://administraktor.com' target='_blank' rel='noopener noreferrer'>
+          <a
+            href='https://administraktor.com'
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='administraktor.com (opens in a new tab)'
+          >
             administraktor.com
           </a>
           . The blog uses carefully crafted prompts and automated pipelines to scan, select, and rewrite AI news daily.
@@ -81,8 +87,11 @@ export default function ResponsibleAIPage() {
         <h2>Report Concerns</h2>
         <p>
           If you encounter any content that is misleading, inaccurate, or potentially harmful, please reach out
-          immediately at <a href='mailto:m@administraktor.com'>m@administraktor.com</a>. We take all reports seriously
-          and will act promptly.
+          immediately at{' '}
+          <a href='mailto:m@administraktor.com' aria-label='Email m@administraktor.com'>
+            m@administraktor.com
+          </a>
+          . We take all reports seriously and will act promptly.
         </p>
 
         <h2>Learn More</h2>
@@ -95,6 +104,7 @@ export default function ResponsibleAIPage() {
             target='_blank'
             rel='noopener noreferrer'
             className='font-bold text-green-700 hover:underline'
+            aria-label='responsible-ai-usage.vercel.app (opens in a new tab)'
           >
             responsible-ai-usage.vercel.app
           </a>

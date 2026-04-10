@@ -106,7 +106,7 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
               aria-label={`Previous Post: ${previousPost.title}`}
             >
               <Link href={`/blog-detail/${previousPost.slug}`}>
-                <ChevronLeftIcon className='size-4' />
+                <ChevronLeftIcon className='size-4' aria-hidden='true' />
                 Previous Post
               </Link>
             </Button>
@@ -115,7 +115,7 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
         </Tooltip>
       ) : (
         <Button className='rounded-[8px]' variant='outline' disabled aria-label='No previous post available'>
-          <ChevronLeftIcon className='size-4' />
+          <ChevronLeftIcon className='size-4' aria-hidden='true' />
           Previous Post
         </Button>
       )}
@@ -131,7 +131,7 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
             >
               <Link href={`/blog-detail/${nextPost.slug}`}>
                 Next Post
-                <ChevronRightIcon className='size-4' />
+                <ChevronRightIcon className='size-4' aria-hidden='true' />
               </Link>
             </Button>
           </TooltipTrigger>
@@ -145,7 +145,7 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
           aria-label='No next post available'
         >
           Next Post
-          <ChevronRightIcon className='size-4' />
+          <ChevronRightIcon className='size-4' aria-hidden='true' />
         </Button>
       )}
     </div>

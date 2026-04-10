@@ -87,7 +87,10 @@ export default function AboutPage() {
         <h2>Contact</h2>
         <p>
           For inquiries, or in case of misinformation, illegal content, or other concerns, please contact:{' '}
-          <a href='mailto:m@administraktor.com'>m@administraktor.com</a>.
+          <a href='mailto:m@administraktor.com' aria-label='Email m@administraktor.com'>
+            m@administraktor.com
+          </a>
+          .
         </p>
       </div>
 

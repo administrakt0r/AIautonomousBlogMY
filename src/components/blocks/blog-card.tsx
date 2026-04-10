@@ -41,7 +41,7 @@ export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) =>
         <div className='flex items-center justify-between gap-2'>
           <div className='text-muted-foreground flex flex-wrap items-center gap-x-2 gap-y-1 text-sm'>
             <div className='flex items-center gap-1.5'>
-              <CalendarDaysIcon className='size-4 shrink-0' />
+              <CalendarDaysIcon className='size-4 shrink-0' aria-hidden='true' />
               <span>{post.date}</span>
             </div>
             <span className='text-muted-foreground/50' aria-hidden='true'>
@@ -91,7 +91,7 @@ export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) =>
                 asChild
               >
                 <Link href={`/blog-detail/${post.slug}`}>
-                  <ArrowRightIcon className='size-4 -rotate-45' />
+                  <ArrowRightIcon className='size-4 -rotate-45' aria-hidden='true' />
                   <span className='sr-only'>Read more about: {post.title}</span>
                 </Link>
               </Button>

@@ -95,7 +95,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
               <TooltipTrigger asChild>
                 <Button variant='outline' size='icon' className='sm:hidden' asChild>
                   <Link href='/contact-us'>
-                    <MailIcon />
+                    <MailIcon aria-hidden='true' />
                     <span className='sr-only'>Get in Touch</span>
                   </Link>
                 </Button>
@@ -111,7 +111,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
                   activeSection={activeSection}
                   trigger={
                     <Button type='button' variant='outline' size='icon' className='lg:hidden'>
-                      <MenuIcon />
+                      <MenuIcon aria-hidden='true' />
                       <span className='sr-only'>Menu</span>
                     </Button>
                   }

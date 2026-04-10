@@ -296,7 +296,7 @@ const Blog = () => {
                         onClick={() => handlePageChange(currentPage - 1)}
                         disabled={currentPage === 1}
                       >
-                        <ChevronLeftIcon className='size-4' />
+                        <ChevronLeftIcon className='size-4' aria-hidden='true' />
                         <span className='sr-only'>Previous page</span>
                       </Button>
                     </TooltipTrigger>
@@ -332,7 +332,7 @@ const Blog = () => {
                         onClick={() => handlePageChange(currentPage + 1)}
                         disabled={currentPage === totalPages}
                       >
-                        <ChevronRightIcon className='size-4' />
+                        <ChevronRightIcon className='size-4' aria-hidden='true' />
                         <span className='sr-only'>Next page</span>
                       </Button>
                     </TooltipTrigger>
@@ -344,7 +344,7 @@ const Blog = () => {
           ) : (
             <div className='flex flex-col items-center justify-center py-20 text-center'>
               <div className='bg-muted mb-4 flex size-16 items-center justify-center rounded-full'>
-                <SearchIcon className='text-muted-foreground size-8' />
+                <SearchIcon className='text-muted-foreground size-8' aria-hidden='true' />
               </div>
               <h3 className='text-xl font-medium'>No stories found</h3>
 

@@ -31,7 +31,7 @@ const Footer = () => {
                   className='text-muted-foreground hover:text-foreground transition-colors'
                   aria-label='Twitter'
                 >
-                  <TwitterIcon className='size-5' />
+                  <TwitterIcon className='size-5' aria-hidden='true' />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>Twitter</TooltipContent>
@@ -46,7 +46,7 @@ const Footer = () => {
                   className='text-muted-foreground hover:text-foreground transition-colors'
                   aria-label='GitHub (opens in a new tab)'
                 >
-                  <GithubIcon className='size-5' />
+                  <GithubIcon className='size-5' aria-hidden='true' />
                 </a>
               </TooltipTrigger>
               <TooltipContent>GitHub</TooltipContent>
@@ -59,7 +59,7 @@ const Footer = () => {
                   className='text-muted-foreground hover:text-foreground transition-colors'
                   aria-label='RSS Feed'
                 >
-                  <RssIcon className='size-5' />
+                  <RssIcon className='size-5' aria-hidden='true' />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>RSS Feed</TooltipContent>
