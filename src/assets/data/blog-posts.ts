@@ -1526,6 +1526,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 101,
+    slug: 'the-agi-mirage-scaling-laws-plateau',
+    title: 'The AGI Mirage: Why Scaling Laws Are Finally Hitting a Wall',
+    description:
+      'The industry is intoxicated by the elegance of scaling laws, but we are sprinting toward a diminishing return curve that silicon alone cannot fix.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AGI Mirage: Why Scaling Laws Are Finally Hitting a Wall',
+    date: 'April 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
