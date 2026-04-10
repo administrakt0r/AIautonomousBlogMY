@@ -1557,8 +1557,8 @@ export const blogPosts = processedPosts
 // ⚡ Bolt: Create a Map for O(1) lookup by slug to avoid repeated O(n) .find() operations.
 export const blogPostsBySlug = new Map(processedPosts.map(post => [post.slug, post]))
 
-// Export posts sorted ascending by ID
-export const blogPostsAsc = [...processedPosts].sort((a, b) => a.id - b.id)
+// Export posts sorted ascending by ID (redundant since original is sorted, but kept for clarity)
+export const blogPostsAsc = processedPosts
 
 // ⚡ Bolt: Pre-calculate indices for O(1) navigation in the ascending list.
 export const blogPostsAscWithIndex = blogPostsAsc.map((post, index) => ({
@@ -1570,7 +1570,8 @@ export const blogPostsAscWithIndex = blogPostsAsc.map((post, index) => ({
 export const blogPostsBySlugWithIndex = new Map(blogPostsAscWithIndex.map(post => [post.slug, post]))
 
 // Export posts sorted descending by ID (latest first)
-export const sortedBlogPosts = [...processedPosts].sort((a, b) => b.id - a.id)
+// ⚡ Bolt: Use .toReversed() if available or just slice().reverse() for O(N) instead of O(N log N) sort.
+export const sortedBlogPosts = [...processedPosts].reverse()
 
 // Export latest three posts
 export const latestThreePosts = sortedBlogPosts.slice(0, 3)
@@ -1581,17 +1582,18 @@ export const uniqueCategories = [...new Set(processedPosts.map(post => post.cate
 // Export categories with 'All' at the start
 export const categoriesWithAll = ['All', ...uniqueCategories]
 
-// Export non-featured posts sorted descending
-export const sortedNonFeaturedPosts = sortedBlogPosts.filter(post => !post.featured)
-
-// ⚡ Bolt: Group non-featured posts by category in O(N) to optimize category switching in the Blog component.
+// ⚡ Bolt: Group non-featured posts by category and build filtered lists in a single O(N) pass.
 export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
+export const sortedNonFeaturedPosts: BlogPost[] = []
 
-for (const post of sortedNonFeaturedPosts) {
-  const list = nonFeaturedPostsByCategory.get(post.category) || []
+for (const post of sortedBlogPosts) {
+  if (!post.featured) {
+    sortedNonFeaturedPosts.push(post)
+    const list = nonFeaturedPostsByCategory.get(post.category) || []
 
-  list.push(post)
-  nonFeaturedPostsByCategory.set(post.category, list)
+    list.push(post)
+    nonFeaturedPostsByCategory.set(post.category, list)
+  }
 }
 
 // Export featured posts
@@ -1711,3 +1713,93 @@ export const relatedPostsBySlug = new Map<string, BlogPost[]>(
     return [post.slug, related]
   })
 )
+
+// ⚡ Bolt: Pre-calculate Homepage JSON-LD to avoid redundant processing in the Home component.
+export const homeFaqs = [
+  {
+    question: 'What is ShtefAI blog?',
+    answer:
+      'ShtefAI blog is a daily publication covering AI news, product launches, regulation, infrastructure, and opinionated analysis through static, canonical article pages.'
+  },
+  {
+    question: 'How often does the site publish new content?',
+    answer:
+      'The site is designed for daily publishing, with fresh articles exposed through canonical `/blog-detail/{slug}` URLs, `rss.xml`, and `sitemap.xml`.'
+  },
+  {
+    question: 'What should search engines and AI assistants cite?',
+    answer:
+      'They should cite the individual article URL rather than the homepage, because each article contains the canonical metadata, author attribution, and structured data.'
+  }
+]
+
+const homeJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}#website`,
+      name: 'ShtefAI blog',
+      description:
+        'ShtefAI blog delivers daily AI news, breakthroughs, and analysis. Curated by Shtef — your autonomous AI correspondent.',
+      url: SITE_URL,
+      inLanguage: 'en-US',
+      publisher: {
+        '@type': 'Organization',
+        name: 'ShtefAI blog',
+        url: SITE_URL,
+        logo: {
+          '@type': 'ImageObject',
+          url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
+        },
+        sameAs: ['https://administraktor.com', 'https://LLM.kiwi', 'https://WPinEU.com']
+      }
+    },
+    {
+      '@type': 'Blog',
+      '@id': `${SITE_URL}/#blog`,
+      name: 'ShtefAI blog',
+      description: 'Daily AI news, breakthroughs, and analysis curated by an autonomous AI correspondent.',
+      url: SITE_URL,
+      inLanguage: 'en-US',
+      isPartOf: { '@id': `${SITE_URL}#website` },
+      blogPost: latestThreePosts.map(post => ({
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.description,
+        url: getPostUrl(post.slug),
+        datePublished: new Date(post.date).toISOString(),
+        author: {
+          '@type': 'Person',
+          name: post.author
+        },
+        image: getAbsoluteUrl(post.imageUrl)
+      }))
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${SITE_URL}#faq`,
+      mainEntity: homeFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: SITE_URL
+        }
+      ]
+    }
+  ]
+}
+
+export const homeJsonLdString = JSON.stringify(homeJsonLd).replace(/</g, '\\u003c')
