@@ -1541,6 +1541,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 102,
+    slug: 'openai-backs-illinois-ai-liability-shield-bill',
+    title: 'OpenAI Backs Illinois Bill Shielding AI Labs from Critical Harm Liability',
+    description:
+      'OpenAI supports a controversial Illinois bill that would limit corporate liability for mass casualties or billion-dollar disasters caused by AI.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Backs Illinois AI Liability Shield Bill',
+    date: 'April 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
