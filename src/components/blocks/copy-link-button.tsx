@@ -31,9 +31,9 @@ export const CopyLinkButton = () => {
           aria-label={copied ? 'Link copied' : 'Copy link to this article'}
         >
           {copied ? (
-            <CheckIcon className='size-3.5 text-green-500' />
+            <CheckIcon className='size-3.5 text-green-500' aria-hidden='true' />
           ) : (
-            <LinkIcon className='text-muted-foreground size-3.5' />
+            <LinkIcon className='text-muted-foreground size-3.5' aria-hidden='true' />
           )}
           <span className='text-xs font-medium'>{copied ? 'Copied!' : 'Copy Link'}</span>
         </Button>

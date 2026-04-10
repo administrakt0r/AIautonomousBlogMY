@@ -37,3 +37,7 @@
 ## 2026-04-10 - Streamlining Input Accessibility
 **Learning:** Adding `sr-only` labels to inputs that already have semantic, visible `<Label>` elements creates redundant announcements for screen reader users. Similarly, decorative icons inside input containers (like search or user icons) add unnecessary auditory noise unless explicitly hidden.
 **Action:** Remove redundant `sr-only` labels when a visible label is correctly linked via `htmlFor`. Always apply `aria-hidden="true"` to decorative icons within interactive fields to ensure a cleaner, focused accessibility tree.
+
+## 2026-04-11 - Contextualizing Actionable Links
+**Learning:** Raw email addresses or ambiguous external links can be confusing when encountered by screen readers without additional context. Appending "(opens in a new tab)" to external links and using "Email [address]" for mailto links provides immediate clarity on the link's behavior and intent.
+**Action:** Always provide descriptive `aria-label` attributes for external links and contact methods to ensure users understand exactly what will happen when they interact with them.

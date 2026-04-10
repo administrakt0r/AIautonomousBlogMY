@@ -32,7 +32,7 @@ const ContactForm = () => {
         className='flex flex-col items-center justify-center space-y-4 py-8 text-center'
       >
         <div className='bg-primary/10 rounded-full p-3'>
-          <CheckCircleIcon className='text-primary size-10' />
+          <CheckCircleIcon className='text-primary size-10' aria-hidden='true' />
         </div>
         <h3 className='text-2xl font-bold'>Message Sent!</h3>
         <p className='text-muted-foreground'>
@@ -116,7 +116,7 @@ const ContactForm = () => {
       <Button type='submit' size='lg' className='w-full text-base' disabled={isSubmitting}>
         {isSubmitting ? (
           <>
-            <Loader2Icon className='mr-2 size-4 animate-spin' />
+            <Loader2Icon className='mr-2 size-4 animate-spin' aria-hidden='true' />
             Sending...
           </>
         ) : (
