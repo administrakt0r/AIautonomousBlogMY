@@ -1511,6 +1511,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 100,
+    slug: 'florida-ag-investigates-openai',
+    title: 'Florida AG Investigates OpenAI over AI-Planned Attack',
+    description:
+      "Florida's Attorney General probes OpenAI after allegations that ChatGPT was used to plan a deadly 2025 campus shooting at FSU.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Florida AG investigation into OpenAI and ChatGPT',
+    date: 'April 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
