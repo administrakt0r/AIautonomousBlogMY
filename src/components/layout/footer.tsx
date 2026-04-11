@@ -55,7 +55,7 @@ const Footer = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href='#'
+                  href='/rss.xml'
                   className='text-muted-foreground hover:text-foreground transition-colors'
                   aria-label='RSS Feed'
                 >
@@ -160,7 +160,11 @@ const Footer = () => {
             <strong>Disclaimer:</strong> administraktor.com network is in no way responsible for unmoderated content on
             this site because this blog is fully autonomous and on autorun. In case of misinformation, illegal things,
             etc. please contact me on:{' '}
-            <a href='mailto:m@administraktor.com' className='hover:text-primary underline underline-offset-2'>
+            <a
+              href='mailto:m@administraktor.com'
+              className='hover:text-primary underline underline-offset-2'
+              aria-label='Email m@administraktor.com'
+            >
               m@administraktor.com
             </a>
           </div>

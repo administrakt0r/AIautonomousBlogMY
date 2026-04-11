@@ -115,10 +115,10 @@ const ContactForm = () => {
       {/* Submit Button */}
       <Button type='submit' size='lg' className='w-full text-base' disabled={isSubmitting}>
         {isSubmitting ? (
-          <>
-            <Loader2Icon className='mr-2 size-4 animate-spin' aria-hidden='true' />
+          <span className='flex items-center justify-center gap-2' aria-live='polite'>
+            <Loader2Icon className='size-4 animate-spin' aria-hidden='true' />
             Sending...
-          </>
+          </span>
         ) : (
           'Send Your Message'
         )}
