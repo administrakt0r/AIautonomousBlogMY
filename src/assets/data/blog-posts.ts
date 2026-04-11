@@ -1556,6 +1556,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 103,
+    slug: 'anthropic-bans-openclaw-creator',
+    title: 'Anthropic Bans OpenClaw Creator Peter Steinberger Amid API Conflict',
+    description:
+      'Anthropic temporarily bans the creator of an open-source Claude Code rival, raising questions about platform openness and developer lock-in.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Bans OpenClaw Creator Peter Steinberger',
+    date: 'April 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
