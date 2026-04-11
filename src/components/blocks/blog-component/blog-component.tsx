@@ -23,14 +23,11 @@ import { BlogCard } from '@/components/blocks/blog-card'
 
 // Import the blog posts data from centralized location
 import {
-  sortedNonFeaturedPosts,
+  nonFeaturedPosts,
   nonFeaturedPostsByCategory,
   categoriesWithAll,
   type BlogPost
 } from '@/assets/data/blog-posts'
-
-// ⚡ Bolt: Use pre-sorted non-featured posts from the centralized data store.
-const nonFeaturedPosts = sortedNonFeaturedPosts
 
 // ⚡ Bolt: Use pre-calculated categories from the centralized data store.
 const categories = categoriesWithAll
@@ -126,6 +123,7 @@ const Blog = () => {
 
   // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query.
   // We use the pre-calculated nonFeaturedPostsByCategory Map for O(1) category retrieval when no search is active.
+  // ⚡ Bolt: Use pre-calculated searchStr to avoid redundant .toLowerCase() calls during filtering.
   const filteredPosts = useMemo(() => {
     const lowerQuery = debouncedSearchQuery.toLowerCase()
 
@@ -135,9 +133,7 @@ const Blog = () => {
 
     const basePosts = selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
 
-    return basePosts.filter(
-      post => post.title.toLowerCase().includes(lowerQuery) || post.description.toLowerCase().includes(lowerQuery)
-    )
+    return basePosts.filter(post => post.searchStr.includes(lowerQuery))
   }, [selectedTab, debouncedSearchQuery])
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])

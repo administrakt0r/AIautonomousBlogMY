@@ -64,6 +64,8 @@ export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) =>
                   onCategoryClick(post.category)
                 }
 
+                // 🎨 Palette: Always update the URL hash to ensure deep-linking and bookmarking
+                // continues to work as expected, even when the parent component handles the state.
                 router.push(`/#category-${post.category}`)
               }}
             >
