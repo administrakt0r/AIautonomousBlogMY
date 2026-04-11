@@ -24,9 +24,15 @@ export type BlogPost = {
   avatarUrl: string
   readTime: number
   featured: boolean
+  dateIso: string
+  searchStr: string
 }
 
-const blogPostsData: BlogPost[] = [
+// ⚡ Bolt: Define a RawBlogPost type to avoid TypeScript errors when defining the initial static data,
+// as the derived fields (dateIso, searchStr, and final imageUrl) are populated in a single pass.
+type RawBlogPost = Omit<BlogPost, 'dateIso' | 'searchStr'>
+
+const blogPostsData: RawBlogPost[] = [
   {
     id: 1,
     slug: 'welcome-to-shtefai',
@@ -1590,29 +1596,45 @@ const blogPostsData: BlogPost[] = [
 ]
 
 // ⚡ Bolt: Centralized data transformations to avoid redundant processing in components.
-// We map the image paths once and then derive sorted/featured lists.
-const processedPosts: BlogPost[] = blogPostsData.map(post => ({
-  ...post,
-  imageUrl: getPostImagePath(post.slug)
-}))
+// We perform all derivations (mapping, grouping, sorting) in a single pass to optimize module initialization.
+const processedPosts: BlogPost[] = []
+
+export const blogPostsBySlug = new Map<string, BlogPost>()
+export const blogPostsBySlugWithIndex = new Map<string, BlogPost & { index: number }>()
+export const blogPostsAscWithIndex: (BlogPost & { index: number })[] = []
+const postsByCategory = new Map<string, BlogPost[]>()
+const categoriesSet = new Set<string>()
+
+blogPostsData.forEach((rawPost, index) => {
+  const post: BlogPost = {
+    ...rawPost,
+    imageUrl: getPostImagePath(rawPost.slug),
+    dateIso: new Date(rawPost.date).toISOString(),
+    searchStr: `${rawPost.title} ${rawPost.description}`.toLowerCase()
+  }
+
+  processedPosts.push(post)
+  blogPostsBySlug.set(post.slug, post)
+
+  const indexedPost = { ...post, index }
+
+  blogPostsAscWithIndex.push(indexedPost)
+  blogPostsBySlugWithIndex.set(post.slug, indexedPost)
+
+  // Grouping by category
+  const list = postsByCategory.get(post.category) || []
+
+  list.push(post)
+  postsByCategory.set(post.category, list)
+
+  categoriesSet.add(post.category)
+})
 
 // Export the raw processed posts (ascending by default)
 export const blogPosts = processedPosts
 
-// ⚡ Bolt: Create a Map for O(1) lookup by slug to avoid repeated O(n) .find() operations.
-export const blogPostsBySlug = new Map(processedPosts.map(post => [post.slug, post]))
-
-// Export posts sorted ascending by ID (redundant since original is sorted, but kept for clarity)
+// Export posts sorted ascending by ID
 export const blogPostsAsc = processedPosts
-
-// ⚡ Bolt: Pre-calculate indices for O(1) navigation in the ascending list.
-export const blogPostsAscWithIndex = blogPostsAsc.map((post, index) => ({
-  ...post,
-  index
-}))
-
-// ⚡ Bolt: Create a Map for O(1) lookup by slug for the indexed list.
-export const blogPostsBySlugWithIndex = new Map(blogPostsAscWithIndex.map(post => [post.slug, post]))
 
 // Export posts sorted descending by ID (latest first)
 // ⚡ Bolt: Use .toReversed() if available or just slice().reverse() for O(N) instead of O(N log N) sort.
@@ -1622,18 +1644,18 @@ export const sortedBlogPosts = [...processedPosts].reverse()
 export const latestThreePosts = sortedBlogPosts.slice(0, 3)
 
 // Export unique categories (sorted)
-export const uniqueCategories = [...new Set(processedPosts.map(post => post.category))].sort()
+export const uniqueCategories = [...categoriesSet].sort()
 
 // Export categories with 'All' at the start
 export const categoriesWithAll = ['All', ...uniqueCategories]
 
-// ⚡ Bolt: Group non-featured posts by category and build filtered lists in a single O(N) pass.
+// ⚡ Bolt: Pre-calculate non-featured lists from the already sorted latest-first list.
 export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
-export const sortedNonFeaturedPosts: BlogPost[] = []
+export const nonFeaturedPosts: BlogPost[] = []
 
 for (const post of sortedBlogPosts) {
   if (!post.featured) {
-    sortedNonFeaturedPosts.push(post)
+    nonFeaturedPosts.push(post)
     const list = nonFeaturedPostsByCategory.get(post.category) || []
 
     list.push(post)
@@ -1643,16 +1665,6 @@ for (const post of sortedBlogPosts) {
 
 // Export featured posts
 export const featuredBlogPosts = processedPosts.filter(post => post.featured)
-
-// ⚡ Bolt: Group posts by category in O(N) to optimize related posts lookup.
-const postsByCategory = new Map<string, BlogPost[]>()
-
-for (const post of processedPosts) {
-  const list = postsByCategory.get(post.category) || []
-
-  list.push(post)
-  postsByCategory.set(post.category, list)
-}
 
 // ⚡ Bolt: Pre-calculate a small fallback list in O(1) to avoid O(N) search in the related posts loop.
 const globalLatestFallback = processedPosts.slice(0, 4)
@@ -1672,8 +1684,8 @@ export const blogPostsJsonLdString = new Map<string, string>(
           headline: post.title,
           description: post.description,
           image: getAbsoluteUrl(post.imageUrl),
-          datePublished: new Date(post.date).toISOString(),
-          dateModified: new Date(post.date).toISOString(),
+          datePublished: post.dateIso,
+          dateModified: post.dateIso,
           author: {
             '@type': 'Person',
             name: post.author,
@@ -1813,7 +1825,7 @@ const homeJsonLd = {
         headline: post.title,
         description: post.description,
         url: getPostUrl(post.slug),
-        datePublished: new Date(post.date).toISOString(),
+        datePublished: post.dateIso,
         author: {
           '@type': 'Person',
           name: post.author
