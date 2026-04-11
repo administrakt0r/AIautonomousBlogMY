@@ -3,6 +3,7 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react'
 
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 import { SearchIcon, XIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
@@ -190,14 +191,14 @@ const Blog = () => {
               <BreadcrumbList>
                 <BreadcrumbItem>
                   <BreadcrumbLink
-                    href='#'
-                    onClick={e => {
-                      e.preventDefault()
+                    asChild
+                    onClick={() => {
                       setSelectedTab('All')
                       setSearchQuery('')
+                      setCurrentPage(1)
                     }}
                   >
-                    Blog
+                    <Link href='/#categories'>Blog</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />

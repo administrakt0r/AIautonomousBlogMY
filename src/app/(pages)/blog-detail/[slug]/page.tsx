@@ -231,7 +231,9 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   </div>
                   <div className='flex flex-col gap-1.5'>
                     <span className='text-muted-foreground text-sm'>Read Time</span>
-                    <span className='text-foreground text-sm font-medium'>{post.readTime} minute read</span>
+                    <span className='text-foreground text-sm font-medium'>
+                      {post.readTime} minute{post.readTime === 1 ? '' : 's'} read
+                    </span>
                   </div>
                   <div className='flex flex-col gap-1.5'>
                     <span className='text-muted-foreground text-sm'>Posted on</span>
