@@ -1571,6 +1571,21 @@ const blogPostsData: BlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 104,
+    slug: 'the-silicon-ego',
+    title: 'The Silicon Ego: Why AI-Driven Leadership is a Recipe for Disaster',
+    description:
+      'The dream of the AI CEO is a coward’s escape from the burden of human choice. Optimization is for machines; inspiration is for people.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Silicon Ego: Why AI-Driven Leadership is a Recipe for Disaster',
+    date: 'April 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
