@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useMemo, useCallback, useEffect } from 'react'
+import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react'
 
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
@@ -68,6 +68,7 @@ const CategoryButton = React.memo(
         size='sm'
         onClick={() => onClick(category)}
         className={`h-9 px-4 text-base ${isSelected ? 'bg-background shadow-sm' : ''}`}
+        aria-pressed={isSelected}
       >
         {category}
       </Button>
@@ -84,6 +85,22 @@ const Blog = () => {
   // ⚡ Bolt: Debounce search query to reduce the frequency of filtering operations and re-renders
   const [debouncedSearchQuery, setDebouncedSearchQuery] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
+
+  const searchInputRef = useRef<HTMLInputElement>(null)
+
+  // 🎨 Palette: Add keyboard shortcut '/' to focus search input
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName || '')) {
+        e.preventDefault()
+        searchInputRef.current?.focus()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [])
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -242,6 +259,7 @@ const Blog = () => {
               </div>
               <Input
                 id='blog-search'
+                ref={searchInputRef}
                 type='text'
                 placeholder='Search articles by title or summary'
                 value={searchQuery}
@@ -252,6 +270,13 @@ const Blog = () => {
                 }}
                 className='peer h-10 px-9'
               />
+              {!searchQuery && (
+                <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 hidden items-center pr-3 sm:flex'>
+                  <kbd className='bg-muted border-muted-foreground/20 pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none'>
+                    <span className='text-xs'>/</span>
+                  </kbd>
+                </div>
+              )}
               {searchQuery && (
                 <Tooltip>
                   <TooltipTrigger asChild>
