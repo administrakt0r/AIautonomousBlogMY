@@ -1607,6 +1607,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 106,
+    slug: 'the-ai-memory-hole',
+    title: 'The AI Memory Hole: Why LLMs are Rewriting Our Collective History',
+    description:
+      'As we outsource our record-keeping to machines, we are losing the ability to distinguish between what happened and what the model says happened.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI and digital records illustration',
+    date: 'April 12, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
