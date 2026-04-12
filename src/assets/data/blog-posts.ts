@@ -1622,6 +1622,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 107,
+    slug: 'trump-admin-banks-anthropic-mythos',
+    title: "White House Urges Wall Street Banks to Test Anthropic's Mythos Model",
+    description:
+      "Treasury and Fed officials are reportedly encouraging top banks to use Anthropic's new Mythos model for cybersecurity, despite ongoing DoD supply-chain risk disputes.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Wall Street and AI concept',
+    date: 'April 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
