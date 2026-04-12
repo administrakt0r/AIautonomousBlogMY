@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, useMemo } from 'react'
+import React, { useEffect, useState, useMemo, useCallback } from 'react'
 
 interface TocItem {
   id: string
@@ -12,6 +12,44 @@ interface TocItem {
 interface DynamicTocProps {
   contentContainerId?: string
 }
+
+// ⚡ Bolt: Extract and memoize the TOC link to prevent re-renders unless the active state or title changes.
+// This ensures that during scroll, only the items whose active status actually changes will re-render.
+const TocLink = React.memo(
+  ({
+    id,
+    title,
+    isActive,
+    onClick,
+    isSubtitle = false
+  }: {
+    id: string
+    title: string
+    isActive: boolean
+    onClick: (id: string) => void
+    isSubtitle?: boolean
+  }) => {
+    return (
+      <button
+        type='button'
+        onClick={() => onClick(id)}
+        aria-label={`${isSubtitle ? 'Scroll to subsection' : 'Scroll to section'}: ${title}`}
+        aria-current={isActive ? 'location' : undefined}
+        className={`flex items-start gap-2 text-left transition-colors ${
+          isActive ? 'text-foreground font-medium' : 'text-muted-foreground hover:text-foreground'
+        }`}
+      >
+        <span
+          aria-hidden='true'
+          className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${isActive ? 'bg-primary' : 'bg-primary/40'}`}
+        ></span>
+        <span>{title}</span>
+      </button>
+    )
+  }
+)
+
+TocLink.displayName = 'TocLink'
 
 export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) => {
   const [tocItems, setTocItems] = useState<TocItem[]>([])
@@ -95,14 +133,15 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
     return () => observer.disconnect()
   }, [contentContainerId, tocItems])
 
-  const handleClick = (id: string) => {
+  // ⚡ Bolt: Wrap handleClick in useCallback to ensure TocLink component memoization works correctly.
+  const handleClick = useCallback((id: string) => {
     const element = document.getElementById(id)
 
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
       setActiveId(id)
     }
-  }
+  }, [])
 
   // ⚡ Bolt: Memoize grouping logic to avoid re-calculating the TOC structure on every re-render.
   const groupedItems = useMemo(() => {
@@ -145,50 +184,25 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
         <ul className='space-y-3'>
           {groupedItems.map((group, groupIndex) => (
             <li key={`toc-group-${group.main.id}-${groupIndex}`}>
-              <button
-                type='button'
-                onClick={() => handleClick(group.main.id)}
-                aria-label={`Scroll to section: ${group.main.title}`}
-                aria-current={activeId === group.main.id ? 'location' : undefined}
-                className={`flex items-start gap-2 text-left transition-colors ${
-                  activeId === group.main.id
-                    ? 'text-foreground font-medium'
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                <span
-                  aria-hidden='true'
-                  className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
-                    activeId === group.main.id ? 'bg-primary' : 'bg-primary/40'
-                  }`}
-                ></span>
-                <span>{group.main.title}</span>
-              </button>
+              <TocLink
+                id={group.main.id}
+                title={group.main.title}
+                isActive={activeId === group.main.id}
+                onClick={handleClick}
+              />
 
               {/* Nested subtitles */}
               {group.subs.length > 0 && (
                 <ul className='mt-3 ml-5 space-y-3'>
                   {group.subs.map((subtitle, subIndex) => (
                     <li key={`toc-sub-${subtitle.id}-${groupIndex}-${subIndex}`}>
-                      <button
-                        type='button'
-                        onClick={() => handleClick(subtitle.id)}
-                        aria-label={`Scroll to subsection: ${subtitle.title}`}
-                        aria-current={activeId === subtitle.id ? 'location' : undefined}
-                        className={`flex items-start gap-2 text-left transition-colors ${
-                          activeId === subtitle.id
-                            ? 'text-foreground font-medium'
-                            : 'text-muted-foreground hover:text-foreground'
-                        }`}
-                      >
-                        <span
-                        aria-hidden='true'
-                          className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
-                            activeId === subtitle.id ? 'bg-primary' : 'bg-primary/40'
-                          }`}
-                        ></span>
-                        <span>{subtitle.title}</span>
-                      </button>
+                      <TocLink
+                        id={subtitle.id}
+                        title={subtitle.title}
+                        isActive={activeId === subtitle.id}
+                        onClick={handleClick}
+                        isSubtitle
+                      />
                     </li>
                   ))}
                 </ul>

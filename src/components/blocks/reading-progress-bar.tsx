@@ -1,9 +1,15 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
+/**
+ * ⚡ Bolt: Ref-based ReadingProgressBar to eliminate React re-renders during scroll.
+ * Instead of updating state on every scroll frame, we use refs to modify the DOM directly.
+ * This significantly reduces CPU overhead and keeps the main thread free for other tasks.
+ */
 export const ReadingProgressBar = () => {
-  const [progress, setProgress] = useState(0)
+  const progressRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     let ticking = false
@@ -22,23 +28,25 @@ export const ReadingProgressBar = () => {
     const updateProgress = () => {
       const scrollTop = window.scrollY
 
-      if (totalScrollable <= 0) {
-        setProgress(100)
-        ticking = false
+      // Calculate progress and ensure it stays between 0 and 100
+      const currentProgress =
+        totalScrollable <= 0 ? 100 : Math.min(100, Math.max(0, (scrollTop / totalScrollable) * 100))
 
-        return
+      // ⚡ Bolt: Update DOM directly via refs to bypass React's reconciliation cycle.
+      if (progressRef.current) {
+        progressRef.current.style.width = `${currentProgress}%`
       }
 
-      const currentProgress = (scrollTop / totalScrollable) * 100
+      if (containerRef.current) {
+        containerRef.current.setAttribute('aria-valuenow', Math.round(currentProgress).toString())
+      }
 
-      setProgress(currentProgress)
       ticking = false
     }
 
     const onScroll = () => {
       if (!ticking) {
-        // ⚡ Bolt: Use requestAnimationFrame to throttle updates and batch DOM reads/writes,
-        // improving scroll performance and reducing layout thrashing.
+        // ⚡ Bolt: Use requestAnimationFrame to throttle updates and align with the browser's paint cycle.
         window.requestAnimationFrame(updateProgress)
         ticking = true
       }
@@ -64,14 +72,19 @@ export const ReadingProgressBar = () => {
 
   return (
     <div
+      ref={containerRef}
       className='bg-primary/20 fixed top-0 left-0 z-[60] h-1 w-full'
       role='progressbar'
       aria-valuemin={0}
       aria-valuemax={100}
-      aria-valuenow={progress}
+      aria-valuenow={0}
       aria-label='Reading progress'
     >
-      <div className='bg-primary h-full transition-all duration-150 ease-out' style={{ width: `${progress}%` }} />
+      <div
+        ref={progressRef}
+        className='bg-primary h-full transition-all duration-150 ease-out'
+        style={{ width: '0%' }}
+      />
     </div>
   )
 }
