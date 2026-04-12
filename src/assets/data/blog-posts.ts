@@ -1592,6 +1592,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 105,
+    slug: 'open-weights-models-enterprise-spotlight',
+    title: 'Enterprise AI: Open Weights Models Step Into the Frontier Spotlight',
+    description:
+      'The latest wave of open weights models from Google, Microsoft, and Alibaba marks a turning point for business AI.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Enterprise AI: Open Weights Models Step Into the Frontier Spotlight',
+    date: 'April 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
