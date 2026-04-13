@@ -4,14 +4,18 @@ import { useState } from 'react'
 
 import { UserIcon, MailIcon, PhoneIcon, CheckCircleIcon, Loader2Icon } from 'lucide-react'
 
+import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 
+const MAX_CHARS = 1000
+
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [message, setMessage] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -100,15 +104,30 @@ const ContactForm = () => {
 
       {/* Message Input */}
       <div className='space-y-2'>
-        <Label htmlFor='message'>
-          Message <span className='text-destructive'>*</span>
-        </Label>
+        <div className='flex items-center justify-between'>
+          <Label htmlFor='message'>
+            Message <span className='text-destructive'>*</span>
+          </Label>
+          <span
+            className={cn(
+              'text-xs transition-colors',
+              message.length >= MAX_CHARS ? 'text-destructive font-semibold' : 'text-muted-foreground'
+            )}
+            aria-live={message.length > MAX_CHARS * 0.9 ? 'polite' : 'off'}
+            id='char-count'
+          >
+            {message.length} / {MAX_CHARS}
+          </span>
+        </div>
         <Textarea
           id='message'
           className='h-28 resize-none'
           placeholder='Enter your message'
           required
           aria-required='true'
+          aria-describedby='char-count'
+          value={message}
+          onChange={e => setMessage(e.target.value.slice(0, MAX_CHARS))}
         />
       </div>
 

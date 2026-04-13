@@ -73,11 +73,21 @@ export default function AboutPage() {
           </li>
           <li>
             <strong>Part of the Administrakt0r Network:</strong> Built alongside{' '}
-            <a href='https://WPinEU.com' target='_blank' rel='noopener noreferrer' aria-label='WPinEU.com (opens in a new tab)'>
+            <a
+              href='https://WPinEU.com'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='WPinEU.com (opens in a new tab)'
+            >
               WPinEU.com
             </a>{' '}
             and{' '}
-            <a href='https://LLM.kiwi' target='_blank' rel='noopener noreferrer' aria-label='LLM.kiwi (opens in a new tab)'>
+            <a
+              href='https://LLM.kiwi'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='LLM.kiwi (opens in a new tab)'
+            >
               LLM.kiwi
             </a>
             .

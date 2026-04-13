@@ -297,9 +297,7 @@ const Blog = () => {
         ? 'No stories match your current search and filters.'
         : `Showing ${paginatedPosts.length} of ${filteredPosts.length} ${
             filteredPosts.length === 1 ? 'story' : 'stories'
-          }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${
-            searchQuery ? ` for "${searchQuery}"` : ''
-          }.`,
+          }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`,
     [filteredPosts.length, paginatedPosts.length, selectedTab, searchQuery]
   )
 
@@ -398,11 +396,7 @@ const Blog = () => {
 
               {/* Pagination */}
               {totalPages > 1 && (
-                <Pagination
-                  currentPage={currentPage}
-                  totalPages={totalPages}
-                  onPageChange={handlePageChange}
-                />
+                <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
               )}
             </div>
           ) : (
