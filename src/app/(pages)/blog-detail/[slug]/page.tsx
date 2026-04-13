@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 
 import Blog from '@/components/blocks/blog-related-post/blog-related-post'
 import { ReadingProgressBar } from '@/components/blocks/reading-progress-bar'
+import { BackToTop } from '@/components/blocks/back-to-top'
 import { CopyLinkButton } from '@/components/blocks/copy-link-button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
@@ -175,6 +176,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
   return (
     <div>
       <ReadingProgressBar />
+      <BackToTop />
       <section className='py-8 sm:pt-16 sm:pb-24'>
         <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:space-y-16 lg:px-8'>
           <div className='gap-16 md:grid md:grid-cols-5 lg:grid-cols-7'>
