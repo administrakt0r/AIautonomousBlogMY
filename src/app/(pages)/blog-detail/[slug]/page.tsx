@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post.title,
       description: post.description,
       type: 'article',
-      publishedTime: new Date(post.date).toISOString(),
+      publishedTime: post.dateIso,
       authors: [post.author],
       section: post.category,
       url: postUrl,
@@ -237,7 +237,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   </div>
                   <div className='flex flex-col gap-1.5'>
                     <span className='text-muted-foreground text-sm'>Posted on</span>
-                    <time dateTime={new Date(post.date).toISOString()} className='text-foreground text-sm font-medium'>
+                    <time dateTime={post.dateIso} className='text-foreground text-sm font-medium'>
                       {post.date}
                     </time>
                   </div>

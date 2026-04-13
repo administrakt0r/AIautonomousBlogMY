@@ -42,7 +42,8 @@ const HeroSection = () => {
                   <div className='flex min-w-0 flex-1 flex-col gap-1'>
                     <div className='text-muted-foreground flex items-center gap-1.5 text-xs'>
                       <CalendarDaysIcon className='size-3.5 shrink-0' aria-hidden='true' />
-                      <time dateTime={new Date(item.date).toISOString()}>{item.date}</time>
+                      {/* ⚡ Bolt: Use pre-calculated dateIso to avoid redundant Date object creation and toISOString() calls on every render. */}
+                      <time dateTime={item.dateIso}>{item.date}</time>
                     </div>
                     <h2 className='group-hover:text-primary line-clamp-2 text-sm leading-snug font-medium transition-colors'>
                       {item.title}
