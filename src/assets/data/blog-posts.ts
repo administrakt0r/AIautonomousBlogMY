@@ -1667,6 +1667,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 110,
+    slug: 'vercel-ceo-signals-ipo-readiness-ai-agents',
+    title: 'Vercel CEO Signals IPO Readiness as AI Agents Fuel Revenue Surge',
+    description:
+      'Vercel CEO Guillermo Rauch highlights the Web of Agents as the primary driver for the company’s exponential revenue growth.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Vercel CEO Guillermo Rauch AI Agents IPO',
+    date: 'April 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
