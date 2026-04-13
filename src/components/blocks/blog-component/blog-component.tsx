@@ -78,39 +78,169 @@ const CategoryButton = React.memo(
 
 CategoryButton.displayName = 'CategoryButton'
 
+// ⚡ Bolt: Extract and memoize the search input logic to prevent the entire Blog component from re-rendering on every keystroke.
+// This component manages its own local state and notifies the parent only after a debounce period.
+const SearchInput = React.memo(
+  ({ onSearchChange, initialValue = '' }: { onSearchChange: (value: string) => void; initialValue?: string }) => {
+    const [value, setValue] = useState(initialValue)
+    const searchInputRef = useRef<HTMLInputElement>(null)
+
+    // Sync with prop if changed from outside (e.g. "Clear all filters" button)
+    useEffect(() => {
+      setValue(initialValue)
+    }, [initialValue])
+
+    // ⚡ Bolt: Local debounce effect to minimize parent re-renders
+    useEffect(() => {
+      const handler = setTimeout(() => {
+        onSearchChange(value)
+      }, 300)
+
+      return () => clearTimeout(handler)
+    }, [value, onSearchChange])
+
+    // 🎨 Palette: Add keyboard shortcut '/' to focus search input
+    useEffect(() => {
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName || '')) {
+          e.preventDefault()
+          searchInputRef.current?.focus()
+        }
+      }
+
+      window.addEventListener('keydown', handleKeyDown)
+
+      return () => window.removeEventListener('keydown', handleKeyDown)
+    }, [])
+
+    return (
+      <div className='relative max-md:w-full'>
+        <Label htmlFor='blog-search' className='sr-only'>
+          Search articles
+        </Label>
+        <div className='text-muted-foreground pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 peer-disabled:opacity-50'>
+          <SearchIcon className='size-4' aria-hidden='true' />
+        </div>
+        <Input
+          id='blog-search'
+          ref={searchInputRef}
+          type='text'
+          placeholder='Search articles by title or summary'
+          value={value}
+          aria-describedby='blog-results-summary'
+          onChange={e => setValue(e.target.value)}
+          className='peer h-10 px-9'
+        />
+        {!value && (
+          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 hidden items-center pr-3 sm:flex'>
+            <kbd className='bg-muted border-muted-foreground/20 pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none'>
+              <span className='text-xs'>/</span>
+            </kbd>
+          </div>
+        )}
+        {value && (
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <button
+                type='button'
+                aria-label='Clear search'
+                onClick={() => setValue('')}
+                className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-3'
+              >
+                <XIcon className='size-4' aria-hidden='true' />
+              </button>
+            </TooltipTrigger>
+            <TooltipContent>Clear search</TooltipContent>
+          </Tooltip>
+        )}
+      </div>
+    )
+  }
+)
+
+SearchInput.displayName = 'SearchInput'
+
+// ⚡ Bolt: Extract and memoize the pagination controls into a sub-component.
+const Pagination = React.memo(
+  ({
+    currentPage,
+    totalPages,
+    onPageChange
+  }: {
+    currentPage: number
+    totalPages: number
+    onPageChange: (page: number) => void
+  }) => {
+    // ⚡ Bolt: Memoize the page numbers array to avoid redundant allocations on every render.
+    const pages = useMemo(() => Array.from({ length: totalPages }, (_, i) => i + 1), [totalPages])
+
+    return (
+      <div className='flex items-center justify-center gap-2 pt-8'>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              type='button'
+              variant='outline'
+              size='icon'
+              onClick={() => onPageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              <ChevronLeftIcon className='size-4' aria-hidden='true' />
+              <span className='sr-only'>Previous page</span>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>Previous page</TooltipContent>
+        </Tooltip>
+
+        <div className='flex items-center gap-1'>
+          {pages.map(page => (
+            <Button
+              key={page}
+              type='button'
+              variant={currentPage === page ? 'default' : 'outline'}
+              size='icon'
+              onClick={() => onPageChange(page)}
+              className='hidden sm:flex'
+              aria-label={`Go to page ${page}`}
+              aria-current={currentPage === page ? 'page' : undefined}
+            >
+              {page}
+            </Button>
+          ))}
+          <span className='text-muted-foreground mx-2 text-sm sm:hidden'>
+            Page {currentPage} of {totalPages}
+          </span>
+        </div>
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              type='button'
+              variant='outline'
+              size='icon'
+              onClick={() => onPageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              <ChevronRightIcon className='size-4' aria-hidden='true' />
+              <span className='sr-only'>Next page</span>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>Next page</TooltipContent>
+        </Tooltip>
+      </div>
+    )
+  }
+)
+
+Pagination.displayName = 'Pagination'
+
 const Blog = () => {
   const [selectedTab, setSelectedTab] = useState('All')
+
+  // ⚡ Bolt: Use a single state for the search query in the parent component.
+  // The SearchInput component will handle the real-time typing state and notify us after debouncing.
   const [searchQuery, setSearchQuery] = useState('')
-
-  // ⚡ Bolt: Debounce search query to reduce the frequency of filtering operations and re-renders
-  const [debouncedSearchQuery, setDebouncedSearchQuery] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
-
-  const searchInputRef = useRef<HTMLInputElement>(null)
-
-  // 🎨 Palette: Add keyboard shortcut '/' to focus search input
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName || '')) {
-        e.preventDefault()
-        searchInputRef.current?.focus()
-      }
-    }
-
-    window.addEventListener('keydown', handleKeyDown)
-
-    return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [])
-
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      setDebouncedSearchQuery(searchQuery)
-    }, 300)
-
-    return () => {
-      clearTimeout(handler)
-    }
-  }, [searchQuery])
 
   // 🎨 Palette: Sync selectedTab with URL hash for shareable filtered views
   useEffect(() => {
@@ -143,7 +273,7 @@ const Blog = () => {
   // We use the pre-calculated nonFeaturedPostsByCategory Map for O(1) category retrieval when no search is active.
   // ⚡ Bolt: Use pre-calculated searchStr to avoid redundant .toLowerCase() calls during filtering.
   const filteredPosts = useMemo(() => {
-    const lowerQuery = debouncedSearchQuery.toLowerCase()
+    const lowerQuery = searchQuery.toLowerCase()
 
     if (!lowerQuery) {
       return selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
@@ -152,7 +282,7 @@ const Blog = () => {
     const basePosts = selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
 
     return basePosts.filter(post => post.searchStr.includes(lowerQuery))
-  }, [selectedTab, debouncedSearchQuery])
+  }, [selectedTab, searchQuery])
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])
 
@@ -168,9 +298,9 @@ const Blog = () => {
         : `Showing ${paginatedPosts.length} of ${filteredPosts.length} ${
             filteredPosts.length === 1 ? 'story' : 'stories'
           }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${
-            debouncedSearchQuery ? ` for "${debouncedSearchQuery}"` : ''
+            searchQuery ? ` for "${searchQuery}"` : ''
           }.`,
-    [filteredPosts.length, paginatedPosts.length, selectedTab, debouncedSearchQuery]
+    [filteredPosts.length, paginatedPosts.length, selectedTab, searchQuery]
   )
 
   const handleTabChange = useCallback(
@@ -195,6 +325,11 @@ const Blog = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
+  }, [])
+
+  const handleSearchChange = useCallback((value: string) => {
+    setSearchQuery(value)
+    setCurrentPage(1)
   }, [])
 
   return (
@@ -250,52 +385,7 @@ const Blog = () => {
               <ScrollBar orientation='horizontal' />
             </ScrollArea>
 
-            <div className='relative max-md:w-full'>
-              <Label htmlFor='blog-search' className='sr-only'>
-                Search articles
-              </Label>
-              <div className='text-muted-foreground pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 peer-disabled:opacity-50'>
-                <SearchIcon className='size-4' aria-hidden='true' />
-              </div>
-              <Input
-                id='blog-search'
-                ref={searchInputRef}
-                type='text'
-                placeholder='Search articles by title or summary'
-                value={searchQuery}
-                aria-describedby='blog-results-summary'
-                onChange={e => {
-                  setSearchQuery(e.target.value)
-                  setCurrentPage(1)
-                }}
-                className='peer h-10 px-9'
-              />
-              {!searchQuery && (
-                <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 hidden items-center pr-3 sm:flex'>
-                  <kbd className='bg-muted border-muted-foreground/20 pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none'>
-                    <span className='text-xs'>/</span>
-                  </kbd>
-                </div>
-              )}
-              {searchQuery && (
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <button
-                      type='button'
-                      aria-label='Clear search'
-                      onClick={() => {
-                        setSearchQuery('')
-                        setCurrentPage(1)
-                      }}
-                      className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-3'
-                    >
-                      <XIcon className='size-4' aria-hidden='true' />
-                    </button>
-                  </TooltipTrigger>
-                  <TooltipContent>Clear search</TooltipContent>
-                </Tooltip>
-              )}
-            </div>
+            <SearchInput initialValue={searchQuery} onSearchChange={handleSearchChange} />
           </div>
           <p id='blog-results-summary' className='text-muted-foreground text-sm' aria-live='polite'>
             {resultsSummary}
@@ -308,59 +398,11 @@ const Blog = () => {
 
               {/* Pagination */}
               {totalPages > 1 && (
-                <div className='flex items-center justify-center gap-2 pt-8'>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Button
-                        type='button'
-                        variant='outline'
-                        size='icon'
-                        onClick={() => handlePageChange(currentPage - 1)}
-                        disabled={currentPage === 1}
-                      >
-                        <ChevronLeftIcon className='size-4' aria-hidden='true' />
-                        <span className='sr-only'>Previous page</span>
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent>Previous page</TooltipContent>
-                  </Tooltip>
-
-                  <div className='flex items-center gap-1'>
-                    {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
-                      <Button
-                        key={page}
-                        type='button'
-                        variant={currentPage === page ? 'default' : 'outline'}
-                        size='icon'
-                        onClick={() => handlePageChange(page)}
-                        className='hidden sm:flex'
-                        aria-label={`Go to page ${page}`}
-                        aria-current={currentPage === page ? 'page' : undefined}
-                      >
-                        {page}
-                      </Button>
-                    ))}
-                    <span className='text-muted-foreground mx-2 text-sm sm:hidden'>
-                      Page {currentPage} of {totalPages}
-                    </span>
-                  </div>
-
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Button
-                        type='button'
-                        variant='outline'
-                        size='icon'
-                        onClick={() => handlePageChange(currentPage + 1)}
-                        disabled={currentPage === totalPages}
-                      >
-                        <ChevronRightIcon className='size-4' aria-hidden='true' />
-                        <span className='sr-only'>Next page</span>
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent>Next page</TooltipContent>
-                  </Tooltip>
-                </div>
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={handlePageChange}
+                />
               )}
             </div>
           ) : (

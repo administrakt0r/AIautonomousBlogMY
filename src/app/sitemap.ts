@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Dynamic blog post routes
   const blogRoutes: MetadataRoute.Sitemap = blogPosts.map(post => ({
     url: getPostUrl(post.slug),
-    lastModified: new Date(post.date),
+    lastModified: post.dateIso,
     changeFrequency: 'weekly' as const,
     priority: 0.8
   }))
