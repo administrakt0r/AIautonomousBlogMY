@@ -1637,6 +1637,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 108,
+    slug: 'kepler-orbital-compute-cluster',
+    title: 'Kepler Launches Largest Orbital AI Compute Cluster',
+    description:
+      'Kepler Communications opens the world’s largest orbital compute cluster, featuring 10 satellites and 40 Nvidia GPUs connected by laser links.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Satellites in orbit with AI compute concept',
+    date: 'April 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
