@@ -1652,6 +1652,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 109,
+    slug: 'the-ai-inversion-why-humans-are-becoming-the-new-robots',
+    title: 'The AI Inversion: Why Humans are Becoming the New Robots',
+    description:
+      'As we automate creative expression, humans are being relegated to robotic tasks of verification and algorithmic compliance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Inversion Opinion Piece by Shtef',
+    date: 'April 13, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
