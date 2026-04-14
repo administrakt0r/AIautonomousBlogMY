@@ -1697,6 +1697,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 112,
+    slug: 'the-corporate-panopticon-ai-as-micromanagement',
+    title: 'The Corporate Panopticon: Why AI Agents are the Ultimate Micromanagement Tool',
+    description:
+      'AI agents in the workplace are being marketed as productivity boosters, but they are evolving into invasive micromanagement tools that destroy trust.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI agents and corporate surveillance',
+    date: 'April 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
