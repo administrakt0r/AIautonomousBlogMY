@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-import { blogPosts } from '@/assets/data/blog-posts'
+import { blogPosts, latestPostDateIso } from '@/assets/data/blog-posts'
 import { SITE_URL, getPostUrl } from '@/lib/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -8,19 +8,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: SITE_URL,
-      lastModified: new Date(),
+      lastModified: latestPostDateIso,
       changeFrequency: 'daily',
       priority: 1.0
     },
     {
       url: `${SITE_URL}/about`,
-      lastModified: new Date(),
+      lastModified: latestPostDateIso,
       changeFrequency: 'monthly',
       priority: 0.6
     },
     {
       url: `${SITE_URL}/responsible-ai-usage`,
-      lastModified: new Date(),
+      lastModified: latestPostDateIso,
       changeFrequency: 'monthly',
       priority: 0.5
     }

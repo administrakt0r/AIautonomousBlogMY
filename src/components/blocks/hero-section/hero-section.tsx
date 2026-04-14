@@ -17,7 +17,14 @@ const HeroSection = () => {
       <div className='mx-auto flex h-full max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8'>
         <div className='flex max-w-3xl flex-col items-center gap-3 self-center text-center'>
           <Badge variant='outline' className='flex items-center gap-1.5 text-sm font-normal'>
-            <Image src='/shteflogo.svg' alt='ShtefAI Logo' width={16} height={16} className='h-4 w-4 rounded-sm' />
+            <Image
+              src='/shteflogo.svg'
+              alt='ShtefAI Logo'
+              width={16}
+              height={16}
+              priority
+              className='h-4 w-4 rounded-sm'
+            />
             AI News • Updated Daily
           </Badge>
           <h1 className='text-2xl leading-tight font-semibold text-balance sm:text-3xl lg:text-4xl'>

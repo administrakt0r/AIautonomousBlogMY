@@ -28,9 +28,17 @@ const Header = ({ navigationData, className }: HeaderProps) => {
   const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
-    // ⚡ Bolt: Optimize isScrolled with a passive scroll listener
+    let ticking = false
+
+    // ⚡ Bolt: Optimize isScrolled with a passive scroll listener and requestAnimationFrame throttling
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0)
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 0)
+          ticking = false
+        })
+        ticking = true
+      }
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })

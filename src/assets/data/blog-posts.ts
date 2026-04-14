@@ -1763,6 +1763,9 @@ export const sortedBlogPosts = [...processedPosts].reverse()
 // Export latest three posts
 export const latestThreePosts = sortedBlogPosts.slice(0, 3)
 
+// ⚡ Bolt: Export the latest post date for use in sitemaps and other metadata.
+export const latestPostDateIso = latestThreePosts[0]?.dateIso ?? new Date().toISOString()
+
 // Export unique categories (sorted)
 export const uniqueCategories = [...categoriesSet].sort()
 
