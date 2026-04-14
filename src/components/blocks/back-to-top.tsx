@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState } from 'react'
 
 import { ArrowUpIcon } from 'lucide-react'
 
@@ -11,14 +11,6 @@ import { cn } from '@/lib/utils'
 export const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
 
-  const toggleVisibility = useCallback(() => {
-    if (window.scrollY > 300) {
-      setIsVisible(true)
-    } else {
-      setIsVisible(false)
-    }
-  }, [])
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -27,10 +19,27 @@ export const BackToTop = () => {
   }
 
   useEffect(() => {
+    let ticking = false
+
+    const toggleVisibility = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > 300) {
+            setIsVisible(true)
+          } else {
+            setIsVisible(false)
+          }
+
+          ticking = false
+        })
+        ticking = true
+      }
+    }
+
     window.addEventListener('scroll', toggleVisibility, { passive: true })
 
     return () => window.removeEventListener('scroll', toggleVisibility)
-  }, [toggleVisibility])
+  }, [])
 
   return (
     <div
