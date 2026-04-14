@@ -69,6 +69,7 @@ const CategoryButton = React.memo(
         onClick={() => onClick(category)}
         className={`h-9 px-4 text-base ${isSelected ? 'bg-background shadow-sm' : ''}`}
         aria-pressed={isSelected}
+        aria-label={`Filter by ${category}`}
       >
         {category}
       </Button>
@@ -116,7 +117,7 @@ const SearchInput = React.memo(
     return (
       <div className='relative max-md:w-full'>
         <Label htmlFor='blog-search' className='sr-only'>
-          Search articles
+          Search articles (Press / to focus)
         </Label>
         <div className='text-muted-foreground pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 peer-disabled:opacity-50'>
           <SearchIcon className='size-4' aria-hidden='true' />
@@ -340,16 +341,21 @@ const Blog = () => {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink
-                    asChild
-                    onClick={() => {
-                      setSelectedTab('All')
-                      setSearchQuery('')
-                      setCurrentPage(1)
-                    }}
-                  >
-                    <Link href='/#categories'>Blog</Link>
-                  </BreadcrumbLink>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <BreadcrumbLink
+                        asChild
+                        onClick={() => {
+                          setSelectedTab('All')
+                          setSearchQuery('')
+                          setCurrentPage(1)
+                        }}
+                      >
+                        <Link href='/#categories'>Blog</Link>
+                      </BreadcrumbLink>
+                    </TooltipTrigger>
+                    <TooltipContent side='bottom'>Clear all filters and view all stories</TooltipContent>
+                  </Tooltip>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>

@@ -189,21 +189,36 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                 <Breadcrumb>
                   <BreadcrumbList>
                     <BreadcrumbItem>
-                      <BreadcrumbLink asChild>
-                        <Link href='/'>Home</Link>
-                      </BreadcrumbLink>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <BreadcrumbLink asChild>
+                            <Link href='/'>Home</Link>
+                          </BreadcrumbLink>
+                        </TooltipTrigger>
+                        <TooltipContent side='bottom'>Back to home</TooltipContent>
+                      </Tooltip>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                      <BreadcrumbLink asChild>
-                        <Link href='/#categories'>Blog</Link>
-                      </BreadcrumbLink>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <BreadcrumbLink asChild>
+                            <Link href='/#categories'>Blog</Link>
+                          </BreadcrumbLink>
+                        </TooltipTrigger>
+                        <TooltipContent side='bottom'>View all stories</TooltipContent>
+                      </Tooltip>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                      <BreadcrumbLink asChild>
-                        <Link href={`/#category-${encodeURIComponent(post.category)}`}>{post.category}</Link>
-                      </BreadcrumbLink>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <BreadcrumbLink asChild>
+                            <Link href={`/#category-${encodeURIComponent(post.category)}`}>{post.category}</Link>
+                          </BreadcrumbLink>
+                        </TooltipTrigger>
+                        <TooltipContent side='bottom'>View more in {post.category}</TooltipContent>
+                      </Tooltip>
                     </BreadcrumbItem>
                   </BreadcrumbList>
                 </Breadcrumb>

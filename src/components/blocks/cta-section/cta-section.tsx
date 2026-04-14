@@ -76,10 +76,10 @@ const CTA = () => {
                           />
                           <Button size='lg' className='text-base max-sm:w-full' type='submit' disabled={isSubmitting}>
                             {isSubmitting ? (
-                              <>
-                                <Loader2Icon className='mr-2 size-4 animate-spin' />
+                              <span className='flex items-center justify-center' aria-live='polite'>
+                                <Loader2Icon className='mr-2 size-4 animate-spin' aria-hidden='true' />
                                 Subscribing...
-                              </>
+                              </span>
                             ) : (
                               'Subscribe'
                             )}
