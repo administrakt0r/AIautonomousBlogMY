@@ -1682,6 +1682,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 111,
+    slug: 'openai-acquires-hiro-ai-personal-finance',
+    title: 'OpenAI Acquires Hiro to Bolster AI Personal Finance Capabilities',
+    description:
+      'OpenAI acquires AI personal finance startup Hiro to integrate high-trust financial planning and mathematical verification into ChatGPT.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Hiro Acquisition AI Personal Finance',
+    date: 'April 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
