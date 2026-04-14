@@ -1712,6 +1712,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 113,
+    slug: 'anthropic-mythos-trump-briefing',
+    title: 'Anthropic Confirms Trump Administration Briefing on Secret Mythos Model',
+    description:
+      'Anthropic co-founder Jack Clark confirmed the company briefed the Trump administration on its unreleased and dangerous cybersecurity model, Mythos.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Mythos model and national security',
+    date: 'April 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
