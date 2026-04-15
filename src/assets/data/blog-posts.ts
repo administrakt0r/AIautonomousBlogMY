@@ -26,11 +26,12 @@ export type BlogPost = {
   featured: boolean
   dateIso: string
   searchStr: string
+  index: number
 }
 
 // ⚡ Bolt: Define a RawBlogPost type to avoid TypeScript errors when defining the initial static data,
-// as the derived fields (dateIso, searchStr, and final imageUrl) are populated in a single pass.
-type RawBlogPost = Omit<BlogPost, 'dateIso' | 'searchStr'>
+// as the derived fields (dateIso, searchStr, index and final imageUrl) are populated in a single pass.
+type RawBlogPost = Omit<BlogPost, 'dateIso' | 'searchStr' | 'index'>
 
 const blogPostsData: RawBlogPost[] = [
   {
@@ -1765,8 +1766,6 @@ const blogPostsData: RawBlogPost[] = [
 const processedPosts: BlogPost[] = []
 
 export const blogPostsBySlug = new Map<string, BlogPost>()
-export const blogPostsBySlugWithIndex = new Map<string, BlogPost & { index: number }>()
-export const blogPostsAscWithIndex: (BlogPost & { index: number })[] = []
 const postsByCategory = new Map<string, BlogPost[]>()
 const categoriesSet = new Set<string>()
 
@@ -1775,16 +1774,12 @@ blogPostsData.forEach((rawPost, index) => {
     ...rawPost,
     imageUrl: getPostImagePath(rawPost.slug),
     dateIso: new Date(rawPost.date).toISOString(),
-    searchStr: `${rawPost.title} ${rawPost.description}`.toLowerCase()
+    searchStr: `${rawPost.title} ${rawPost.description}`.toLowerCase(),
+    index
   }
 
   processedPosts.push(post)
   blogPostsBySlug.set(post.slug, post)
-
-  const indexedPost = { ...post, index }
-
-  blogPostsAscWithIndex.push(indexedPost)
-  blogPostsBySlugWithIndex.set(post.slug, indexedPost)
 
   // Grouping by category
   const list = postsByCategory.get(post.category) || []
@@ -1817,127 +1812,125 @@ export const uniqueCategories = [...categoriesSet].sort()
 // Export categories with 'All' at the start
 export const categoriesWithAll = ['All', ...uniqueCategories]
 
-// ⚡ Bolt: Pre-calculate non-featured lists from the already sorted latest-first list.
+// ⚡ Bolt: Pre-calculate non-featured lists, featured posts, JSON-LD, and related posts in a second consolidated pass.
 export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
 export const nonFeaturedPosts: BlogPost[] = []
+export const featuredBlogPosts: BlogPost[] = []
+export const blogPostsJsonLdString = new Map<string, string>()
+export const relatedPostsBySlug = new Map<string, BlogPost[]>()
+
+// Fallback: pick from latest posts if category has fewer than 4 posts.
+const globalLatestFallback = sortedBlogPosts.slice(0, 4)
 
 for (const post of sortedBlogPosts) {
-  if (!post.featured) {
+  // 1. Featured/Non-featured
+  if (post.featured) {
+    featuredBlogPosts.push(post)
+  } else {
     nonFeaturedPosts.push(post)
     const list = nonFeaturedPostsByCategory.get(post.category) || []
 
     list.push(post)
     nonFeaturedPostsByCategory.set(post.category, list)
   }
-}
 
-// Export featured posts
-export const featuredBlogPosts = processedPosts.filter(post => post.featured)
+  // 2. JSON-LD
+  const postUrl = getPostUrl(post.slug)
 
-// ⚡ Bolt: Pre-calculate a small fallback list in O(1) to avoid O(N) search in the related posts loop.
-const globalLatestFallback = processedPosts.slice(0, 4)
-
-// ⚡ Bolt: Pre-calculate stringified and escaped JSON-LD for every blog post in O(N).
-// This eliminates the CPU cost of redundant JSON.stringify and .replace() calls on every request in Server Components.
-export const blogPostsJsonLdString = new Map<string, string>(
-  processedPosts.map(post => {
-    const postUrl = getPostUrl(post.slug)
-
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'BlogPosting',
-          '@id': `${postUrl}#article`,
-          headline: post.title,
-          description: post.description,
-          image: getAbsoluteUrl(post.imageUrl),
-          datePublished: post.dateIso,
-          dateModified: post.dateIso,
-          author: {
-            '@type': 'Person',
-            name: post.author,
-            url: getAbsoluteUrl('/about')
-          },
-          publisher: {
-            '@type': 'Organization',
-            name: 'ShtefAI blog',
-            url: SITE_URL,
-            logo: {
-              '@type': 'ImageObject',
-              url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
-            }
-          },
-          mainEntityOfPage: {
-            '@type': 'WebPage',
-            '@id': postUrl
-          },
-          articleSection: post.category,
-          wordCount: post.readTime * 200,
-          inLanguage: 'en-US',
-          isPartOf: {
-            '@type': 'Blog',
-            '@id': `${SITE_URL}/#blog`,
-            name: 'ShtefAI blog',
-            url: SITE_URL
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': `${postUrl}#article`,
+        headline: post.title,
+        description: post.description,
+        image: getAbsoluteUrl(post.imageUrl),
+        datePublished: post.dateIso,
+        dateModified: post.dateIso,
+        author: {
+          '@type': 'Person',
+          name: post.author,
+          url: getAbsoluteUrl('/about')
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'ShtefAI blog',
+          url: SITE_URL,
+          logo: {
+            '@type': 'ImageObject',
+            url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
           }
         },
-        {
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            {
-              '@type': 'ListItem',
-              position: 1,
-              name: 'Home',
-              item: SITE_URL
-            },
-            {
-              '@type': 'ListItem',
-              position: 2,
-              name: 'Blog',
-              item: `${SITE_URL}/#categories`
-            },
-            {
-              '@type': 'ListItem',
-              position: 3,
-              name: post.category
-            }
-          ]
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': postUrl
+        },
+        articleSection: post.category,
+        wordCount: post.readTime * 200,
+        inLanguage: 'en-US',
+        isPartOf: {
+          '@type': 'Blog',
+          '@id': `${SITE_URL}/#blog`,
+          name: 'ShtefAI blog',
+          url: SITE_URL
         }
-      ]
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: SITE_URL
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: `${SITE_URL}/#categories`
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: post.category
+          }
+        ]
+      }
+    ]
+  }
+
+  blogPostsJsonLdString.set(post.slug, JSON.stringify(jsonLd).replace(/</g, '\\u003c'))
+
+  // 3. Related Posts
+  // ⚡ Bolt: Related posts are now picked from latest-first posts in the same category (postsByCategory is ascending, so we might want to reverse it if we want latest)
+  // Actually, nonFeaturedPostsByCategory is already sorted latest-first because we are iterating over sortedBlogPosts.
+  // But we want to include all posts in category for related, not just non-featured.
+  const categoryPosts = postsByCategory.get(post.category) || []
+  const related: BlogPost[] = []
+
+  // Use latest from category first. We'll iterate categoryPosts backwards since it's ascending.
+  for (let i = categoryPosts.length - 1; i >= 0; i--) {
+    const p = categoryPosts[i]
+
+    if (p.slug !== post.slug) {
+      related.push(p)
+      if (related.length === 3) break
     }
+  }
 
-    return [post.slug, JSON.stringify(jsonLd).replace(/</g, '\\u003c')]
-  })
-)
-
-// ⚡ Bolt: Create a Map for O(1) lookup of 3 related posts for every blog post.
-// This avoids the previous O(N^2) nested loop implementation, reducing complexity to O(N).
-export const relatedPostsBySlug = new Map<string, BlogPost[]>(
-  processedPosts.map(post => {
-    const categoryPosts = postsByCategory.get(post.category) || []
-    const related: BlogPost[] = []
-
-    for (const p of categoryPosts) {
-      if (p.slug !== post.slug) {
+  if (related.length < 3) {
+    for (const p of globalLatestFallback) {
+      if (p.slug !== post.slug && !related.some(r => r.slug === p.slug)) {
         related.push(p)
         if (related.length === 3) break
       }
     }
+  }
 
-    if (related.length < 3) {
-      // Fallback: pick from pre-calculated global latest posts if category has fewer than 4 posts.
-      for (const p of globalLatestFallback) {
-        if (p.slug !== post.slug && !related.some(r => r.slug === p.slug)) {
-          related.push(p)
-          if (related.length === 3) break
-        }
-      }
-    }
-
-    return [post.slug, related]
-  })
-)
+  relatedPostsBySlug.set(post.slug, related)
+}
 
 // ⚡ Bolt: Pre-calculate Homepage JSON-LD to avoid redundant processing in the Home component.
 export const homeFaqs = [

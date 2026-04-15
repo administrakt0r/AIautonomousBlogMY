@@ -20,6 +20,7 @@ export type NavigationItem = {
 export type NavigationSection = {
   title: string
   icon?: ReactNode
+  sectionId?: string
 } & (
   | {
       items: NavigationItem[]
@@ -89,8 +90,9 @@ const MenuNavigation = ({ navigationData, activeSection, className }: MenuNaviga
           // ⚡ Bolt: Move isActive comparison logic to the parent loop.
           // This ensures that NavItem only re-renders if its specific isActive state changes,
           // instead of re-rendering every time activeSection updates.
-          const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', '')
-          const isActive = !!sectionFromHref && sectionFromHref === activeSection
+          // ⚡ Bolt: Use pre-calculated sectionId if available to avoid string manipulations during scroll.
+          const sectionId = navItem.sectionId || (navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', ''))
+          const isActive = !!sectionId && sectionId === activeSection
 
           return <NavItem key={navItem.title} navItem={navItem} isActive={isActive} />
         })}

@@ -22,14 +22,7 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
 
-import {
-  blogPosts,
-  blogPostsBySlug,
-  blogPostsBySlugWithIndex,
-  blogPostsAscWithIndex,
-  relatedPostsBySlug,
-  blogPostsJsonLdString
-} from '@/assets/data/blog-posts'
+import { blogPosts, blogPostsBySlug, relatedPostsBySlug, blogPostsJsonLdString } from '@/assets/data/blog-posts'
 import { getPostUrl } from '@/lib/site'
 
 // Dynamic metadata for each blog post — critical for per-post SEO
@@ -86,14 +79,14 @@ export async function generateStaticParams() {
 
 // Navigation component for previous/next posts
 const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
-  // ⚡ Bolt: Use the indexed Map for O(1) index retrieval.
-  const currentPostWithIndex = blogPostsBySlugWithIndex.get(currentPostSlug)
+  // ⚡ Bolt: Use the pre-calculated Map for O(1) slug lookup.
+  const currentPost = blogPostsBySlug.get(currentPostSlug)
 
-  if (!currentPostWithIndex) return null
+  if (!currentPost) return null
 
-  const currentIndex = currentPostWithIndex.index
-  const previousPost = currentIndex > 0 ? blogPostsAscWithIndex[currentIndex - 1] : null
-  const nextPost = currentIndex < blogPostsAscWithIndex.length - 1 ? blogPostsAscWithIndex[currentIndex + 1] : null
+  const currentIndex = currentPost.index
+  const previousPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null
+  const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null
 
   return (
     <div className='flex w-full justify-between'>

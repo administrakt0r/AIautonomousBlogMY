@@ -25,6 +25,7 @@ export type NavigationItem = {
 export type NavigationSection = {
   title: string
   icon?: ReactNode
+  sectionId?: string
 } & (
   | {
       items: NavigationItem[]
@@ -93,8 +94,9 @@ const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' 
       >
         {navigationData.map(navItem => {
           // ⚡ Bolt: Move isActive comparison logic to the parent loop.
-          const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', '')
-          const isActive = !!sectionFromHref && sectionFromHref === activeSection
+          // ⚡ Bolt: Use pre-calculated sectionId if available to avoid string manipulations during scroll.
+          const sectionId = navItem.sectionId || (navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', ''))
+          const isActive = !!sectionId && sectionId === activeSection
 
           return <DropdownNavItem key={navItem.title} navItem={navItem} isActive={isActive} />
         })}
