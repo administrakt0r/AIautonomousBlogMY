@@ -1727,6 +1727,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 114,
+    slug: 'stanford-ai-index-2026-report',
+    title: 'Stanford AI Index 2026: Benchmarks Saturated as Performance Converges',
+    description:
+      'The 2026 AI Index Report reveals that frontier models are outstripping human-designed benchmarks, while a massive gap remains between expert optimism and public anxiety.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Stanford AI Index 2026 Report findings',
+    date: 'April 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
