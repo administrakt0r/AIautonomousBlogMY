@@ -1758,6 +1758,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 116,
+    slug: 'openai-agents-sdk-sandbox-update',
+    title: 'OpenAI Updates Agents SDK with Native Sandbox Support',
+    description:
+      'OpenAI releases a major update to its Agents SDK, introducing isolated execution environments and durable execution for safer enterprise AI agents.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Updates Agents SDK with Native Sandbox Support',
+    date: 'April 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
