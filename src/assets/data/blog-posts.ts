@@ -1742,6 +1742,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 115,
+    slug: 'the-benchmarking-crisis-why-llms-fail-in-production',
+    title: 'The Benchmarking Crisis: Why Your LLM Fails in Production',
+    description:
+      'AI benchmarks are increasingly decoupled from real-world utility. We are measuring "laboratory intelligence" while ignoring the brittle reality of production deployments.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Benchmarking Crisis: Why Your LLM Fails in Production',
+    date: 'April 15, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
