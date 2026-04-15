@@ -90,7 +90,9 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
       return items
     }
 
-    // Extract headings after a short delay to ensure content is rendered
+    // ⚡ Bolt: Removed 100ms artificial delay.
+    // In this Next.js app, MDX content is already rendered and present in the DOM when this component mounts,
+    // so we can extract headings immediately for faster visual feedback.
     const timer = setTimeout(() => {
       const items = extractHeadings()
 
@@ -100,7 +102,7 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
       if (items.length > 0) {
         setActiveId(items[0].id)
       }
-    }, 100)
+    }, 0)
 
     return () => clearTimeout(timer)
   }, [contentContainerId])
