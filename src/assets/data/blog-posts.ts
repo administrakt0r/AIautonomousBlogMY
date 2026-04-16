@@ -1788,6 +1788,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 118,
+    slug: 'the-fine-tuning-fallacy',
+    title: 'The Fine-Tuning Fallacy: Why Your Data Moat is a Mirage',
+    description:
+      'Proprietary data is not a moat; it is legacy debt. Discover why the push for custom fine-tuned models is a strategic error in a world of hyper-dynamic AI.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Fine-Tuning Fallacy Opinion Piece by Shtef',
+    date: 'April 16, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
