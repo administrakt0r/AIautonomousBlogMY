@@ -58,7 +58,7 @@ const CTA = () => {
                     <div aria-live='polite' role='status'>
                       {isSubscribed ? (
                         <div className='flex items-center gap-2 py-3 text-green-600 dark:text-green-400'>
-                          <CheckCircleIcon className='size-5' />
+                          <CheckCircleIcon className='size-5' aria-hidden='true' />
                           <span className='font-medium'>Thanks for subscribing! Check your inbox soon.</span>
                         </div>
                       ) : (
@@ -76,7 +76,7 @@ const CTA = () => {
                           />
                           <Button size='lg' className='text-base max-sm:w-full' type='submit' disabled={isSubmitting}>
                             {isSubmitting ? (
-                              <span className='flex items-center justify-center' aria-live='polite'>
+                              <span className='flex items-center justify-center'>
                                 <Loader2Icon className='mr-2 size-4 animate-spin' aria-hidden='true' />
                                 Subscribing...
                               </span>

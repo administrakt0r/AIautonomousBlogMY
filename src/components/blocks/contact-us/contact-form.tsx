@@ -113,7 +113,7 @@ const ContactForm = () => {
               'text-xs transition-colors',
               message.length >= MAX_CHARS ? 'text-destructive font-semibold' : 'text-muted-foreground'
             )}
-            aria-live={message.length > MAX_CHARS * 0.9 ? 'polite' : 'off'}
+            aria-label={`${message.length} of ${MAX_CHARS} characters used`}
             id='char-count'
           >
             {message.length} / {MAX_CHARS}
@@ -129,6 +129,11 @@ const ContactForm = () => {
           value={message}
           onChange={e => setMessage(e.target.value.slice(0, MAX_CHARS))}
         />
+        {/* 🎨 Palette: Visually hidden aria-live region to announce milestones */}
+        <div className='sr-only' aria-live='polite'>
+          {message.length >= MAX_CHARS && 'Character limit reached'}
+          {message.length >= MAX_CHARS * 0.9 && message.length < MAX_CHARS && 'Approaching character limit'}
+        </div>
       </div>
 
       {/* Submit Button */}
