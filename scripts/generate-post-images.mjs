@@ -181,6 +181,16 @@ const removeStaleImages = async () => {
   )
 }
 
+const fileExists = async (filePath) => {
+  try {
+    await fs.access(filePath)
+
+    return true
+  } catch {
+    return false
+  }
+}
+
 const generatePostImages = async () => {
   await ensureOutputDirectory()
 
@@ -189,6 +199,16 @@ const generatePostImages = async () => {
 
   await Promise.all(
     blogPosts.map(async (post) => {
+      const outputPath = path.join(outputDir, `${post.slug}.png`)
+
+      // ⚡ Bolt: Check if image already exists to skip redundant processing.
+      // This makes the build significantly faster as the number of posts grows.
+      if (await fileExists(outputPath)) {
+        console.log(`⚡ Skipping existing image: ${post.slug}.png`)
+
+        return
+      }
+
       const preset = presets[hashString(post.title) % presets.length]
 
       const svg = getOgSvg({
@@ -199,7 +219,9 @@ const generatePostImages = async () => {
 
       await sharp(Buffer.from(svg))
         .png()
-        .toFile(path.join(outputDir, `${post.slug}.png`))
+        .toFile(outputPath)
+
+      console.log(`🎨 Generated image: ${post.slug}.png`)
     })
   )
 
