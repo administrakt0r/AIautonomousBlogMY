@@ -1773,6 +1773,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 117,
+    slug: 'deepl-launches-real-time-voice-translation',
+    title: 'DeepL Debuts DeepL Voice: Real-Time Translation for Global Meetings',
+    description:
+      'DeepL enters the voice space with DeepL Voice, a real-time translation tool for virtual meetings and face-to-face conversations.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'DeepL Voice real-time translation launch',
+    date: 'April 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
