@@ -1803,6 +1803,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 119,
+    slug: 'openai-codex-desktop-control',
+    title: 'OpenAI Releases Beefed-up Codex with Desktop Control',
+    description:
+      'OpenAI brings agentic power directly to the desktop with a new version of Codex that can navigate files, execute commands, and manage environments.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Codex Desktop Control Update',
+    date: 'April 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
