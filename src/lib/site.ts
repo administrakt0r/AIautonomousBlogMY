@@ -1,5 +1,9 @@
 export const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'
 
+// ⚡ Bolt: Pre-calculate the current year once at module initialization to avoid
+// redundant Date object creation on every render of components like the Footer.
+export const CURRENT_YEAR = new Date().getFullYear().toString()
+
 export const SHARED_OG_IMAGE_PATH = '/images/og-image.png'
 export const PUBLISHER_LOGO_PATH = '/favicon/android-chrome-512x512.png'
 export const FAVICON_PATH = '/favicon/favicon.ico'

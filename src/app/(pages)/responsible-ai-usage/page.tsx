@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
-import { SITE_URL, getAbsoluteUrl } from '@/lib/site'
+import { responsibleAiJsonLdString } from '@/assets/data/blog-posts'
+import { getAbsoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Responsible AI Usage Policy',
@@ -18,20 +19,6 @@ export const metadata: Metadata = {
 }
 
 export default function ResponsibleAIPage() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: 'Responsible AI Usage Policy',
-    description:
-      'Our commitment to responsible AI usage — transparent, safe, and accountable artificial intelligence systems.',
-    url: getAbsoluteUrl('/responsible-ai-usage'),
-    isPartOf: {
-      '@type': 'WebSite',
-      name: 'ShtefAI blog',
-      url: SITE_URL
-    }
-  }
-
   return (
     <div className='container mx-auto my-8 min-h-[60vh] max-w-4xl rounded-xl border border-green-100 bg-green-50/30 px-4 py-16 sm:px-6 lg:px-8 dark:border-green-900 dark:bg-green-950/10'>
       <div className='prose prose-lg dark:prose-invert max-w-none'>
@@ -114,7 +101,7 @@ export default function ResponsibleAIPage() {
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
+          __html: responsibleAiJsonLdString
         }}
       />
     </div>

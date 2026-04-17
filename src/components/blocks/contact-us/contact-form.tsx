@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 import { UserIcon, MailIcon, PhoneIcon, CheckCircleIcon, Loader2Icon } from 'lucide-react'
 
@@ -11,6 +11,98 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 
 const MAX_CHARS = 1000
+
+/**
+ * ⚡ Bolt: Static inputs extracted and memoized to prevent re-renders
+ * when the 'message' state changes in the parent ContactForm.
+ */
+const StaticInputs = React.memo(() => {
+  return (
+    <>
+      {/* Name Input */}
+      <div className='space-y-2'>
+        <Label htmlFor='username'>
+          Your Name <span className='text-destructive'>*</span>
+        </Label>
+        <div className='relative'>
+          <Input
+            id='username'
+            name='username'
+            type='text'
+            placeholder='Enter your name here...'
+            className='peer h-10 pr-9'
+            required
+            aria-required='true'
+          />
+          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
+            <UserIcon className='size-4' aria-hidden='true' />
+          </div>
+        </div>
+      </div>
+
+      {/* Email Input */}
+      <div className='space-y-2'>
+        <Label htmlFor='email'>
+          Your Email <span className='text-destructive'>*</span>
+        </Label>
+        <div className='relative'>
+          <Input
+            id='email'
+            name='email'
+            type='email'
+            placeholder='Enter your email here...'
+            className='peer h-10 pr-9'
+            required
+            aria-required='true'
+          />
+          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
+            <MailIcon className='size-4' aria-hidden='true' />
+          </div>
+        </div>
+      </div>
+
+      {/* Phone Number Input */}
+      <div className='space-y-2'>
+        <Label htmlFor='phone'>Phone Number</Label>
+        <div className='relative'>
+          <Input
+            id='phone'
+            name='phone'
+            type='tel'
+            placeholder='Enter your phone number here...'
+            className='peer h-10 pr-9'
+          />
+          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
+            <PhoneIcon className='size-4' aria-hidden='true' />
+          </div>
+        </div>
+      </div>
+    </>
+  )
+})
+
+StaticInputs.displayName = 'StaticInputs'
+
+/**
+ * ⚡ Bolt: Submit button extracted and memoized to prevent re-renders
+ * during typing, while still responding to the 'isSubmitting' state.
+ */
+const SubmitButton = React.memo(({ isSubmitting }: { isSubmitting: boolean }) => {
+  return (
+    <Button type='submit' size='lg' className='w-full text-base' disabled={isSubmitting}>
+      {isSubmitting ? (
+        <span className='flex items-center justify-center gap-2'>
+          <Loader2Icon className='size-4 animate-spin' aria-hidden='true' />
+          Sending...
+        </span>
+      ) : (
+        'Send Your Message'
+      )}
+    </Button>
+  )
+})
+
+SubmitButton.displayName = 'SubmitButton'
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -51,56 +143,7 @@ const ContactForm = () => {
 
   return (
     <form className='space-y-6' onSubmit={handleSubmit}>
-      {/* Name Input */}
-      <div className='space-y-2'>
-        <Label htmlFor='username'>
-          Your Name <span className='text-destructive'>*</span>
-        </Label>
-        <div className='relative'>
-          <Input
-            id='username'
-            type='text'
-            placeholder='Enter your name here...'
-            className='peer h-10 pr-9'
-            required
-            aria-required='true'
-          />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
-            <UserIcon className='size-4' aria-hidden='true' />
-          </div>
-        </div>
-      </div>
-
-      {/* Email Input */}
-      <div className='space-y-2'>
-        <Label htmlFor='email'>
-          Your Email <span className='text-destructive'>*</span>
-        </Label>
-        <div className='relative'>
-          <Input
-            id='email'
-            type='email'
-            placeholder='Enter your email here...'
-            className='peer h-10 pr-9'
-            required
-            aria-required='true'
-          />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
-            <MailIcon className='size-4' aria-hidden='true' />
-          </div>
-        </div>
-      </div>
-
-      {/* Phone Number Input */}
-      <div className='space-y-2'>
-        <Label htmlFor='phone'>Phone Number</Label>
-        <div className='relative'>
-          <Input id='phone' type='tel' placeholder='Enter your phone number here...' className='peer h-10 pr-9' />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
-            <PhoneIcon className='size-4' aria-hidden='true' />
-          </div>
-        </div>
-      </div>
+      <StaticInputs />
 
       {/* Message Input */}
       <div className='space-y-2'>
@@ -136,17 +179,9 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {/* Submit Button */}
-      <Button type='submit' size='lg' className='w-full text-base' disabled={isSubmitting}>
-        {isSubmitting ? (
-          <span className='flex items-center justify-center gap-2' aria-live='polite'>
-            <Loader2Icon className='size-4 animate-spin' aria-hidden='true' />
-            Sending...
-          </span>
-        ) : (
-          'Send Your Message'
-        )}
-      </Button>
+      <div aria-live='polite' role='status'>
+        <SubmitButton isSubmitting={isSubmitting} />
+      </div>
     </form>
   )
 }
