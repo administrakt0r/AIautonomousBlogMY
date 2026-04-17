@@ -61,6 +61,8 @@ const CategoryButton = React.memo(
     isSelected: boolean
     onClick: (category: string) => void
   }) => {
+    const ariaLabel = category === 'All' ? 'Show all stories' : `Filter by ${category}`
+
     return (
       <Button
         type='button'
@@ -69,7 +71,7 @@ const CategoryButton = React.memo(
         onClick={() => onClick(category)}
         className={`h-9 px-4 text-base ${isSelected ? 'bg-background shadow-sm' : ''}`}
         aria-pressed={isSelected}
-        aria-label={`Filter by ${category}`}
+        aria-label={ariaLabel}
       >
         {category}
       </Button>
