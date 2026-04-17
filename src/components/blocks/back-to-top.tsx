@@ -16,6 +16,11 @@ export const BackToTop = () => {
       top: 0,
       behavior: 'smooth'
     })
+
+    // 🎨 Palette: Focus the site logo after scrolling to the top to provide context for keyboard users
+    setTimeout(() => {
+      document.getElementById('site-logo')?.focus()
+    }, 500) // Small delay to allow scroll to complete
   }
 
   useEffect(() => {
@@ -57,6 +62,7 @@ export const BackToTop = () => {
             className='size-12 rounded-full shadow-lg hover:shadow-xl'
             onClick={scrollToTop}
             aria-label='Back to top'
+            tabIndex={isVisible ? 0 : -1}
           >
             <ArrowUpIcon className='size-6' aria-hidden='true' />
           </Button>
