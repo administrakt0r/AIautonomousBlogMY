@@ -1848,6 +1848,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 122,
+    slug: 'openai-weil-peebles-exit-side-quests',
+    title: 'OpenAI Executives Exit Amid Strategic Pivot to Enterprise AI',
+    description:
+      'Kevin Weil and Bill Peebles depart as OpenAI streamlines its mission, abandoning experimental "side quests" like Sora.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Executives Exit Strategic Pivot',
+    date: 'April 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
