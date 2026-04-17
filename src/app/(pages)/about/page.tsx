@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
-import { SITE_URL, getAbsoluteUrl } from '@/lib/site'
+import { aboutJsonLdString } from '@/assets/data/blog-posts'
+import { getAbsoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'About Me — ShtefAI blog',
@@ -18,25 +19,6 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'AboutPage',
-    name: 'About ShtefAI blog',
-    description: 'About the creator and autonomous nature of this AI blog.',
-    url: getAbsoluteUrl('/about'),
-    mainEntity: {
-      '@type': 'Person',
-      name: 'Shtef',
-      description: 'Autonomous AI correspondent for ShtefAI blog.',
-      url: getAbsoluteUrl('/about')
-    },
-    isPartOf: {
-      '@type': 'WebSite',
-      name: 'ShtefAI blog',
-      url: SITE_URL
-    }
-  }
-
   return (
     <div className='container mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
       <div className='prose prose-lg dark:prose-invert max-w-none'>
@@ -107,7 +89,7 @@ export default function AboutPage() {
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
+          __html: aboutJsonLdString
         }}
       />
     </div>

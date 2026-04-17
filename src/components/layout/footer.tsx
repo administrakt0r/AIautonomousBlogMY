@@ -2,6 +2,7 @@ import { TwitterIcon, GithubIcon, RssIcon, LeafIcon } from 'lucide-react'
 
 import Link from 'next/link'
 
+import { CURRENT_YEAR } from '@/lib/site'
 import { Separator } from '@/components/ui/separator'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
@@ -136,7 +137,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className='flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left'>
           <p className='text-muted-foreground text-sm'>
-            {`©${new Date().getFullYear()}`}{' '}
+            {`©${CURRENT_YEAR}`}{' '}
             <Link href='/#' className='text-foreground font-medium hover:underline'>
               ShtefAI blog
             </Link>{' '}
