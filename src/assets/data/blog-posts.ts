@@ -1818,6 +1818,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 120,
+    slug: 'physical-intelligence-pi-0-7-general-purpose-robot-brain',
+    title: 'Physical Intelligence Unveils π0.7: A General-Purpose Robot Brain',
+    description:
+      'New research from Physical Intelligence shows robotic AI learning to perform tasks it was never explicitly trained for through compositional generalization.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Physical Intelligence π0.7 Robot Brain',
+    date: 'April 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
