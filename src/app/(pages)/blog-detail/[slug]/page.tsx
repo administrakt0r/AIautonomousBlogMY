@@ -23,7 +23,6 @@ import { Separator } from '@/components/ui/separator'
 import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
 
 import { blogPosts, blogPostsBySlug, relatedPostsBySlug, blogPostsJsonLdString } from '@/assets/data/blog-posts'
-import { getPostUrl } from '@/lib/site'
 
 // Dynamic metadata for each blog post — critical for per-post SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -34,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!post) return {}
 
-  const postUrl = getPostUrl(post.slug)
+  const postUrl = post.url
 
   return {
     title: post.title,
@@ -99,7 +98,7 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
               variant='outline'
               aria-label={`Previous Post: ${previousPost.title}`}
             >
-              <Link href={`/blog-detail/${previousPost.slug}`}>
+              <Link href={previousPost.url}>
                 <ChevronLeftIcon className='size-4' aria-hidden='true' />
                 Previous Post
               </Link>
@@ -123,7 +122,7 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
               variant='outline'
               aria-label={`Next Post: ${nextPost.title}`}
             >
-              <Link href={`/blog-detail/${nextPost.slug}`}>
+              <Link href={nextPost.url}>
                 Next Post
                 <ChevronRightIcon className='size-4' aria-hidden='true' />
               </Link>

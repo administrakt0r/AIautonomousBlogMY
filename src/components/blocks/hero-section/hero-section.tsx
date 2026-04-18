@@ -43,7 +43,7 @@ const HeroSection = () => {
 
         <div className='grid grid-cols-1 gap-3 sm:grid-cols-3'>
           {latestPosts.map(item => (
-            <Link key={item.id} href={`/blog-detail/${item.slug}`} className='block'>
+            <Link key={item.id} href={item.url} className='block'>
               <Card className='group hover:border-primary/40 cursor-pointer border py-0 shadow-none transition-colors'>
                 <CardContent className='flex items-center gap-3 px-4 py-3'>
                   <div className='flex min-w-0 flex-1 flex-col gap-1'>

@@ -26,12 +26,13 @@ export type BlogPost = {
   featured: boolean
   dateIso: string
   searchStr: string
+  url: string
   index: number
 }
 
 // ⚡ Bolt: Define a RawBlogPost type to avoid TypeScript errors when defining the initial static data,
-// as the derived fields (dateIso, searchStr, index and final imageUrl) are populated in a single pass.
-type RawBlogPost = Omit<BlogPost, 'dateIso' | 'searchStr' | 'index'>
+// as the derived fields (dateIso, searchStr, index, url and final imageUrl) are populated in a single pass.
+type RawBlogPost = Omit<BlogPost, 'dateIso' | 'searchStr' | 'index' | 'url'>
 
 const blogPostsData: RawBlogPost[] = [
   {
@@ -1910,6 +1911,7 @@ blogPostsData.forEach((rawPost, index) => {
     imageUrl: getPostImagePath(rawPost.slug),
     dateIso: new Date(rawPost.date).toISOString(),
     searchStr: `${rawPost.title} ${rawPost.description}`.toLowerCase(),
+    url: getPostUrl(rawPost.slug),
     index
   }
 
@@ -2017,7 +2019,7 @@ for (const post of sortedBlogPosts) {
   }
 
   // 2. JSON-LD
-  const postUrl = getPostUrl(post.slug)
+  const postUrl = post.url
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -2167,7 +2169,7 @@ const homeJsonLd = {
         '@type': 'BlogPosting',
         headline: post.title,
         description: post.description,
-        url: getPostUrl(post.slug),
+        url: post.url,
         datePublished: post.dateIso,
         author: {
           '@type': 'Person',
