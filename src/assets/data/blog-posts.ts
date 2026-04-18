@@ -1863,6 +1863,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 123,
+    slug: 'cursor-valuation-soars-50-billion',
+    title: 'Cursor AI Eyes $50 Billion Valuation as Enterprise Demand Surges',
+    description:
+      'The breakout AI code editor is reportedly in talks to raise $2 billion, signaling a massive shift in how the industry values developer productivity tools.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Cursor AI $50 Billion Valuation',
+    date: 'April 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
