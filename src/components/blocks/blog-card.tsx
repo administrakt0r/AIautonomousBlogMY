@@ -2,7 +2,6 @@
 
 import React from 'react'
 
-import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -24,8 +23,6 @@ interface BlogCardProps {
  * Uses the stretched link pattern for accessibility and SEO.
  */
 export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) => {
-  const router = useRouter()
-
   return (
     <Card className='group focus-within:ring-primary relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-offset-2'>
       <CardContent className='space-y-3.5'>
@@ -53,29 +50,26 @@ export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) =>
             asChild
             className='bg-primary/10 text-primary hover:bg-primary/20 relative z-10 rounded-full border-0 text-sm transition-colors'
           >
-            <button
-              type='button'
+            {/* ⚡ Bolt: Use Link instead of useRouter for the category filter to reduce hook overhead. */}
+            <Link
+              href={`/#category-${encodeURIComponent(post.category)}`}
               aria-label={`Filter by ${post.category}`}
-              onClick={e => {
-                e.preventDefault()
-                e.stopPropagation()
-
+              onClick={() => {
+                // If onCategoryClick is provided (e.g. in the Blog component), call it to update local state immediately.
                 if (onCategoryClick) {
                   onCategoryClick(post.category)
                 }
 
-                // 🎨 Palette: Always update the URL hash to ensure deep-linking and bookmarking
-                // continues to work as expected, even when the parent component handles the state.
-                router.push(`/#category-${post.category}`)
+                // We don't preventDefault here to allow the hash update in the URL.
               }}
             >
               {post.category}
-            </button>
+            </Link>
           </Badge>
         </div>
         <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>
           <Link
-            href={`/blog-detail/${post.slug}`}
+            href={post.url}
             className='after:absolute after:inset-0 after:z-0 hover:underline focus:outline-none'
           >
             {post.title}
@@ -92,7 +86,7 @@ export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) =>
                 className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground relative z-10 border group-hover:border-transparent hover:border-transparent'
                 asChild
               >
-                <Link href={`/blog-detail/${post.slug}`}>
+                <Link href={post.url}>
                   <ArrowRightIcon className='size-4 -rotate-45' aria-hidden='true' />
                   <span className='sr-only'>Read more about: {post.title}</span>
                 </Link>
