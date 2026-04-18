@@ -1878,6 +1878,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 124,
+    slug: 'the-silicon-savior-complex',
+    title: 'The Silicon Savior Complex: Why AI Cannot Fix Broken Institutions',
+    description:
+      'AI is being treated as a panacea for systemic human failures, but applying it to broken systems only scales the rot without fixing the foundation.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Silicon Savior Complex',
+    date: 'April 18, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
