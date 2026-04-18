@@ -1894,6 +1894,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 125,
+    slug: 'cerebras-systems-files-ipo-wafer-scale-ai',
+    title: 'Cerebras Files for IPO: Wafer-Scale AI Giant Challenges Nvidia',
+    description:
+      'AI chip startup Cerebras Systems officially files for its IPO, positioning its unique wafer-scale technology as a multi-billion dollar challenger to Nvidia.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Cerebras Systems Wafer-Scale AI Chip',
+    date: 'April 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
