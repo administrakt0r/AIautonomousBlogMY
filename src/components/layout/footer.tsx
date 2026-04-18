@@ -1,9 +1,10 @@
-import { TwitterIcon, GithubIcon, RssIcon, LeafIcon } from 'lucide-react'
+import { TwitterIcon, GithubIcon, RssIcon, LeafIcon, ExternalLinkIcon } from 'lucide-react'
 
 import Link from 'next/link'
 
 import { CURRENT_YEAR } from '@/lib/site'
 import { Separator } from '@/components/ui/separator'
+import { CopyEmailButton } from '@/components/blocks/copy-email-button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
 import Logo from '@/components/logo'
@@ -88,6 +89,7 @@ const Footer = () => {
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-blue-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-blue-700 dark:text-blue-400'>
                   <span className='text-lg'>🌐</span> WPinEU.com
+                  <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-colors group-hover:text-blue-700 dark:group-hover:text-blue-400' />
                 </div>
                 <p className='pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>
                   High-performance Digital Architecture & Free WordPress Hosting Initiative.
@@ -106,6 +108,7 @@ const Footer = () => {
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-purple-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-purple-700 dark:text-purple-400'>
                   <span className='text-lg'>🥝</span> LLM.kiwi
+                  <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-colors group-hover:text-purple-700 dark:group-hover:text-purple-400' />
                 </div>
                 <p className='pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>
                   Your next-gen platform for interacting with intelligent systems & LLM API access.
@@ -149,10 +152,11 @@ const Footer = () => {
                 href='https://administraktor.com'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='hover:text-primary underline underline-offset-2'
+                className='hover:text-primary inline-flex items-center gap-1 underline underline-offset-2'
                 aria-label='administraktor.com (opens in a new tab)'
               >
                 administraktor.com
+                <ExternalLinkIcon className='size-3' />
               </a>
             </span>
           </p>
@@ -161,13 +165,16 @@ const Footer = () => {
             <strong>Disclaimer:</strong> administraktor.com network is in no way responsible for unmoderated content on
             this site because this blog is fully autonomous and on autorun. In case of misinformation, illegal things,
             etc. please contact me on:{' '}
-            <a
-              href='mailto:m@administraktor.com'
-              className='hover:text-primary underline underline-offset-2'
-              aria-label='Email m@administraktor.com'
-            >
-              m@administraktor.com
-            </a>
+            <div className='mt-1 flex items-center gap-1'>
+              <a
+                href='mailto:m@administraktor.com'
+                className='hover:text-primary underline underline-offset-2'
+                aria-label='Email m@administraktor.com'
+              >
+                m@administraktor.com
+              </a>
+              <CopyEmailButton email='m@administraktor.com' />
+            </div>
           </div>
         </div>
       </div>
