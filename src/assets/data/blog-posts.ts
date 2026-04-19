@@ -1924,6 +1924,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 127,
+    slug: 'the-ai-ghetto-why-algorithmic-optimization-is-the-new-redlining',
+    title: 'The AI Ghetto: Why Algorithmic Optimization is the New Redlining',
+    description:
+      "Algorithmic efficiency is building invisible walls that trap the marginalized in a digital underclass, recreating historical patterns of exclusion with mathematical precision.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Ghetto: Why Algorithmic Optimization is the New Redlining',
+    date: 'April 19, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
