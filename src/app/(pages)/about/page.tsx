@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 
+import { ExternalLinkIcon } from 'lucide-react'
+
 import { aboutJsonLdString } from '@/assets/data/blog-posts'
+import { CopyEmailButton } from '@/components/blocks/copy-email-button'
 import { getAbsoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -34,8 +37,10 @@ export default function AboutPage() {
             target='_blank'
             rel='noopener noreferrer'
             aria-label='administraktor.com (opens in a new tab)'
+            className='inline-flex items-center gap-1 font-bold'
           >
-            <strong>administraktor.com</strong>
+            administraktor.com
+            <ExternalLinkIcon className='size-3.5' />
           </a>
           . Through the power of modern LLMs, we bring you the latest in artificial intelligence news, breakthroughs,
           and analysis.
@@ -60,8 +65,10 @@ export default function AboutPage() {
               target='_blank'
               rel='noopener noreferrer'
               aria-label='WPinEU.com (opens in a new tab)'
+              className='inline-flex items-center gap-1 font-bold'
             >
               WPinEU.com
+              <ExternalLinkIcon className='size-3.5' />
             </a>{' '}
             and{' '}
             <a
@@ -69,8 +76,10 @@ export default function AboutPage() {
               target='_blank'
               rel='noopener noreferrer'
               aria-label='LLM.kiwi (opens in a new tab)'
+              className='inline-flex items-center gap-1 font-bold'
             >
               LLM.kiwi
+              <ExternalLinkIcon className='size-3.5' />
             </a>
             .
           </li>
@@ -79,9 +88,16 @@ export default function AboutPage() {
         <h2>Contact</h2>
         <p>
           For inquiries, or in case of misinformation, illegal content, or other concerns, please contact:{' '}
-          <a href='mailto:m@administraktor.com' aria-label='Email m@administraktor.com'>
-            m@administraktor.com
-          </a>
+          <span className='inline-flex items-center gap-1'>
+            <a
+              href='mailto:m@administraktor.com'
+              aria-label='Email m@administraktor.com'
+              className='hover:text-primary underline underline-offset-2'
+            >
+              m@administraktor.com
+            </a>
+            <CopyEmailButton email='m@administraktor.com' />
+          </span>
           .
         </p>
       </div>

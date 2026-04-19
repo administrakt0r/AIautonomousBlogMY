@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 
+import { ExternalLinkIcon } from 'lucide-react'
+
 import { responsibleAiJsonLdString } from '@/assets/data/blog-posts'
+import { CopyEmailButton } from '@/components/blocks/copy-email-button'
 import { getAbsoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -29,10 +32,11 @@ export default function ResponsibleAIPage() {
             href='https://responsible-ai-usage.vercel.app'
             target='_blank'
             rel='noopener noreferrer'
-            className='font-semibold text-green-700 dark:text-green-500'
+            className='inline-flex items-center gap-1 font-semibold text-green-700 dark:text-green-500'
             aria-label='Responsible AI Usage (opens in a new tab)'
           >
             Responsible AI Usage
+            <ExternalLinkIcon className='size-3.5' />
           </a>{' '}
           initiative.
         </p>
@@ -64,8 +68,10 @@ export default function ResponsibleAIPage() {
             target='_blank'
             rel='noopener noreferrer'
             aria-label='administraktor.com (opens in a new tab)'
+            className='inline-flex items-center gap-1 font-bold'
           >
             administraktor.com
+            <ExternalLinkIcon className='size-3.5' />
           </a>
           . The blog uses carefully crafted prompts and automated pipelines to scan, select, and rewrite AI news daily.
           All content is published via automated pull requests and deployed through Vercel.
@@ -75,9 +81,16 @@ export default function ResponsibleAIPage() {
         <p>
           If you encounter any content that is misleading, inaccurate, or potentially harmful, please reach out
           immediately at{' '}
-          <a href='mailto:m@administraktor.com' aria-label='Email m@administraktor.com'>
-            m@administraktor.com
-          </a>
+          <span className='inline-flex items-center gap-1'>
+            <a
+              href='mailto:m@administraktor.com'
+              aria-label='Email m@administraktor.com'
+              className='hover:text-primary underline underline-offset-2'
+            >
+              m@administraktor.com
+            </a>
+            <CopyEmailButton email='m@administraktor.com' />
+          </span>
           . We take all reports seriously and will act promptly.
         </p>
 
@@ -90,10 +103,11 @@ export default function ResponsibleAIPage() {
             href='https://responsible-ai-usage.vercel.app'
             target='_blank'
             rel='noopener noreferrer'
-            className='font-bold text-green-700 hover:underline'
+            className='inline-flex items-center gap-1 font-bold text-green-700 hover:underline'
             aria-label='responsible-ai-usage.vercel.app (opens in a new tab)'
           >
             responsible-ai-usage.vercel.app
+            <ExternalLinkIcon className='size-3.5' />
           </a>
         </p>
       </div>
