@@ -1909,6 +1909,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 126,
+    slug: 'tesla-robotaxi-dallas-houston',
+    title: 'Tesla Expands Unsupervised Robotaxi Service to Dallas and Houston',
+    description:
+      'Tesla triples its Texas autonomous footprint by launching unsupervised Robotaxi service in Dallas and Houston, skipping the safety monitor phase.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Tesla Robotaxi in Dallas and Houston',
+    date: 'April 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
