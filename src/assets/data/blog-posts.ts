@@ -1939,6 +1939,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 128,
+    slug: 'anthropic-launches-claude-design',
+    title: 'Anthropic Launches Claude Design: The AI Challenger to Figma and Canva',
+    description: 'Anthropic moves into the design space with a new AI-powered tool for creating prototypes, slides, and design systems.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude Design Interface Preview',
+    date: 'April 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
