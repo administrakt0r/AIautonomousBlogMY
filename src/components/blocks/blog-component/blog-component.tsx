@@ -102,12 +102,17 @@ const SearchInput = React.memo(
       return () => clearTimeout(handler)
     }, [value, onSearchChange])
 
-    // 🎨 Palette: Add keyboard shortcut '/' to focus search input
+    // 🎨 Palette: Add keyboard shortcut '/' to focus search input and 'Escape' to clear/blur
     useEffect(() => {
       const handleKeyDown = (e: KeyboardEvent) => {
         if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName || '')) {
           e.preventDefault()
           searchInputRef.current?.focus()
+        }
+
+        if (e.key === 'Escape' && document.activeElement === searchInputRef.current) {
+          setValue('')
+          searchInputRef.current?.blur()
         }
       }
 
