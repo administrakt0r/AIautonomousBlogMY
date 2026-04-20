@@ -1982,6 +1982,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 131,
+    slug: 'nsa-using-anthropic-mythos-pentagon-feud',
+    title: 'NSA Spies Adopt Anthropic’s Mythos AI Model Amid Pentagon Feud',
+    description:
+      'The NSA bypasses Department of Defense friction to leverage Anthropic’s advanced Mythos model for signal intelligence and network defense.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'NSA Spies Adopt Anthropic’s Mythos AI Model Amid Pentagon Feud',
+    date: 'April 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
