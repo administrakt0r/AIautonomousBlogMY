@@ -1967,6 +1967,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 130,
+    slug: 'the-human-moat-the-value-of-friction',
+    title: 'The Human Moat: Why Being Difficult is Your Only Career Defense',
+    description:
+      'As AI commoditizes ease, discover why embracing friction and hard-won expertise is the only way to remain indispensable.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Human Moat: Why Being Difficult is Your Only Career Defense',
+    date: 'April 20, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
