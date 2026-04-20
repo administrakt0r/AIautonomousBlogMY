@@ -1953,6 +1953,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 129,
+    slug: 'anthropic-mythos-white-house-cybersecurity',
+    title: "Anthropic's Mythos Model Drives White House Cybersecurity Talks",
+    description: "How a model 'too dangerous for public release' turned a political adversary into a strategic partner.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Mythos White House Cybersecurity',
+    date: 'April 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
