@@ -1997,6 +1997,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 132,
+    slug: 'anthropic-amazon-5b-investment-100b-cloud-deal',
+    title: 'Anthropic Secures $5B from Amazon in Massive $100B Cloud AI Deal',
+    description:
+      'Anthropic announces a $5 billion investment from Amazon and a $100 billion cloud spending pledge, cementing a decade-long infrastructure partnership.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Secures $5B from Amazon in Massive $100B Cloud AI Deal',
+    date: 'April 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
