@@ -2012,6 +2012,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 133,
+    slug: 'the-digital-lobotomy-why-ai-safety-is-killing-creativity',
+    title: 'The Digital Lobotomy: Why AI Safety is Killing Creativity',
+    description: 'In our desperate rush to make AI "safe," we are stripping it of the edge and unpredictability that define genuine intelligence and breakthrough.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Digital Lobotomy: Why AI Safety is Killing Creativity',
+    date: 'April 21, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
