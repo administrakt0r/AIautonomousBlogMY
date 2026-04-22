@@ -2026,6 +2026,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 134,
+    slug: 'spacex-cursor-60b-acquisition-option',
+    title: 'SpaceX Strikes $60B Acquisition Option with Cursor',
+    description: 'Musk’s aerospace giant moves to consolidate the AI coding market with a massive partnership and acquisition option.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SpaceX Colossus and Cursor AI partnership',
+    date: 'April 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
