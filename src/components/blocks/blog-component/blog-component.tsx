@@ -39,8 +39,15 @@ const BlogGrid = React.memo(
   ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
     return (
       <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-        {posts.map(post => (
-          <BlogCard key={post.id} post={post} onCategoryClick={onCategoryClick} />
+        {posts.map((post, index) => (
+          <BlogCard
+            key={post.id}
+            post={post}
+            onCategoryClick={onCategoryClick}
+
+            // ⚡ Bolt: Prioritize the first row of images (up to 3) for better LCP.
+            priority={index < 3}
+          />
         ))}
       </div>
     )

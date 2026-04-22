@@ -1,0 +1,171 @@
+
+> shadcn-nextjs-ink-landing-page@1.1.0 predev /app
+> pnpm generate:derived
+
+
+> shadcn-nextjs-ink-landing-page@1.1.0 generate:derived /app
+> pnpm generate:post-images && pnpm generate:rss
+
+
+> shadcn-nextjs-ink-landing-page@1.1.0 generate:post-images /app
+> node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --experimental-specifier-resolution=node scripts/generate-post-images.mjs
+
+🎨 Generated image: the-agentic-mirage-why-your-ai-coworker-is-a-myth.png
+🎨 Generated image: welcome-to-shtefai.png
+🎨 Generated image: anthropic-upgrades-claude-memory-import-tool.png
+🎨 Generated image: openai-pentagon-classified-agreement.png
+🎨 Generated image: santander-mastercard-ai-payment-pilot.png
+🎨 Generated image: chatgpt-uninstalls-surge-dod-deal.png
+🎨 Generated image: anthropic-us-government-ban.png
+🎨 Generated image: the-ai-content-collapse.png
+🎨 Generated image: gemini-3-1-flash-lite-lowest-cost-ai-launch.png
+🎨 Generated image: openai-releases-gpt-5-3-instant.png
+🎨 Generated image: the-myth-of-human-in-the-loop.png
+🎨 Generated image: nvidia-pulls-back-openai-anthropic.png
+🎨 Generated image: the-synthetic-data-death-spiral.png
+🎨 Generated image: jpmorgan-ai-investment-expansion.png
+🎨 Generated image: agi-is-a-distraction.png
+🎨 Generated image: openai-launches-gpt-5-4-thinking-pro.png
+🎨 Generated image: anthropic-mozilla-firefox-security-partnership.png
+🎨 Generated image: the-open-source-ai-trap.png
+🎨 Generated image: the-silicon-ceiling-ai-killing-entry-level.png
+🎨 Generated image: openai-codex-security-research-preview.png
+🎨 Generated image: rowspace-ai-private-equity-funding.png
+🎨 Generated image: the-hallucination-feature-ai-creativity-killer.png
+🎨 Generated image: white-house-new-ai-procurement-rules.png
+🎨 Generated image: the-prompt-engineering-fallacy.png
+🎨 Generated image: openai-acquires-promptfoo.png
+🎨 Generated image: the-context-window-crutch.png
+🎨 Generated image: mastercard-agentic-payments-singapore.png
+🎨 Generated image: the-benchmarking-blind-spot.png
+🎨 Generated image: the-reasoning-ruse-why-thinking-models-are-just-slower-guessers.png
+🎨 Generated image: google-ai-rural-heart-health-australia.png
+🎨 Generated image: gumloop-50m-series-b-ai-agent-builder.png
+🎨 Generated image: xai-reboots-from-foundations.png
+🎨 Generated image: the-glue-code-apocalypse.png
+🎨 Generated image: the-personalization-trap.png
+🎨 Generated image: the-learning-paradox-why-ai-tutors-are-making-us-stupider.png
+🎨 Generated image: us-army-anduril-20b-ai-battlefield-contract.png
+🎨 Generated image: openai-frontier-saas-disruption.png
+🎨 Generated image: the-compliance-carousel.png
+🎨 Generated image: openai-releases-gpt-5-4-mini-and-nano.png
+🎨 Generated image: picsart-ai-agent-marketplace-launch.png
+🎨 Generated image: the-agentic-bureaucracy.png
+🎨 Generated image: the-reliability-paradox.png
+🎨 Generated image: openai-acquires-astral-to-boost-codex.png
+🎨 Generated image: the-efficiency-trap.png
+🎨 Generated image: jeff-bezos-100-billion-ai-manufacturing-fund.png
+🎨 Generated image: the-ownership-delusion.png
+🎨 Generated image: the-death-of-taste-how-ai-is-automating-mediocrity.png
+🎨 Generated image: pentagon-anthropic-alignment-court-filing.png
+🎨 Generated image: trump-national-ai-framework.png
+🎨 Generated image: the-sovereignty-illusion-why-national-ai-policies-are-obsolete.png
+🎨 Generated image: musk-unveils-terafab-chip-plant.png
+🎨 Generated image: openai-helion-fusion-power-deal.png
+🎨 Generated image: the-alignment-illusion.png
+🎨 Generated image: the-fusion-fantasy.png
+🎨 Generated image: bank-of-america-ai-agents-wealth-management.png
+🎨 Generated image: the-accountability-void.png
+🎨 Generated image: openai-sora-shutdown-spud-pivot.png
+🎨 Generated image: the-generative-dead-end.png
+🎨 Generated image: railway-100m-funding-ai-native-cloud.png
+🎨 Generated image: the-empathy-illusion.png
+🎨 Generated image: openai-model-spec-framework.png
+🎨 Generated image: stanford-study-ai-chatbot-advice-dangers.png
+🎨 Generated image: the-human-centric-lie.png
+🎨 Generated image: the-silicon-stagnation.png
+🎨 Generated image: ai-holographic-storage-breakthrough.png
+🎨 Generated image: anthropic-claude-subscriptions-double-2026.png
+🎨 Generated image: the-corporate-cargo-cult.png
+🎨 Generated image: jpmorgan-tracks-employee-ai-usage.png
+🎨 Generated image: anthropic-overtakes-openai-enterprise-adoption-ramp.png
+🎨 Generated image: salesforce-slack-ai-makeover.png
+🎨 Generated image: openai-raises-3b-from-retail-investors.png
+🎨 Generated image: the-metrics-of-mediocrity.png
+🎨 Generated image: mistral-ai-830m-debt-data-center-paris.png
+🎨 Generated image: english-is-the-worst-programming-language.png
+🎨 Generated image: the-852b-delusion.png
+🎨 Generated image: the-ip-extinction.png
+🎨 Generated image: anthropic-claude-code-leak-github-takedown.png
+🎨 Generated image: microsoft-foundational-mai-models-launch.png
+🎨 Generated image: openai-acquires-tbpn-media-move.png
+🎨 Generated image: anthropic-buys-coefficient-bio-biotech-deal.png
+🎨 Generated image: the-algorithmic-editor-media-ownership-critique.png
+🎨 Generated image: ai-agent-liability-business-risk.png
+🎨 Generated image: openai-executive-shuffle-lightcap-simo.png
+🎨 Generated image: the-conglomerate-collapse.png
+🎨 Generated image: anthropic-claude-code-openclaw-billing-change.png
+🎨 Generated image: the-model-centric-mistake.png
+🎨 Generated image: ai-agent-governance-deloitte-report-2026.png
+🎨 Generated image: microsoft-copilot-entertainment-purposes-only.png
+🎨 Generated image: the-zero-marginal-value-intelligence.png
+🎨 Generated image: openai-intelligence-age-economic-vision.png
+🎨 Generated image: the-post-search-curiosity-death.png
+🎨 Generated image: anthropic-uk-expansion-defense-refusal.png
+🎨 Generated image: anthropic-mythos-preview-cybersecurity.png
+🎨 Generated image: meta-launches-muse-spark-superintelligence-model.png
+🎨 Generated image: the-small-model-lie.png
+🎨 Generated image: google-offline-ai-dictation-app.png
+🎨 Generated image: youtube-shorts-ai-avatars.png
+🎨 Generated image: the-parasocial-paradox-why-ai-avatars-kill-authenticity.png
+🎨 Generated image: chatgpt-pro-plan-100-month.png
+🎨 Generated image: florida-ag-investigates-openai.png
+🎨 Generated image: the-agi-mirage-scaling-laws-plateau.png
+🎨 Generated image: anthropic-bans-openclaw-creator.png
+🎨 Generated image: the-silicon-ego.png
+🎨 Generated image: openai-backs-illinois-ai-liability-shield-bill.png
+🎨 Generated image: open-weights-models-enterprise-spotlight.png
+🎨 Generated image: kepler-orbital-compute-cluster.png
+🎨 Generated image: the-ai-memory-hole.png
+🎨 Generated image: trump-admin-banks-anthropic-mythos.png
+🎨 Generated image: vercel-ceo-signals-ipo-readiness-ai-agents.png
+🎨 Generated image: the-ai-inversion-why-humans-are-becoming-the-new-robots.png
+🎨 Generated image: openai-acquires-hiro-ai-personal-finance.png
+🎨 Generated image: the-corporate-panopticon-ai-as-micromanagement.png
+🎨 Generated image: anthropic-mythos-trump-briefing.png
+🎨 Generated image: stanford-ai-index-2026-report.png
+🎨 Generated image: the-benchmarking-crisis-why-llms-fail-in-production.png
+🎨 Generated image: openai-agents-sdk-sandbox-update.png
+🎨 Generated image: deepl-launches-real-time-voice-translation.png
+🎨 Generated image: the-fine-tuning-fallacy.png
+🎨 Generated image: openai-codex-desktop-control.png
+🎨 Generated image: openai-weil-peebles-exit-side-quests.png
+🎨 Generated image: the-neutrality-trap.png
+🎨 Generated image: physical-intelligence-pi-0-7-general-purpose-robot-brain.png
+🎨 Generated image: cursor-valuation-soars-50-billion.png
+🎨 Generated image: cerebras-systems-files-ipo-wafer-scale-ai.png
+🎨 Generated image: the-silicon-savior-complex.png
+🎨 Generated image: tesla-robotaxi-dallas-houston.png
+🎨 Generated image: the-ai-ghetto-why-algorithmic-optimization-is-the-new-redlining.png
+🎨 Generated image: anthropic-mythos-white-house-cybersecurity.png
+🎨 Generated image: anthropic-launches-claude-design.png
+🎨 Generated image: the-human-moat-the-value-of-friction.png
+🎨 Generated image: the-digital-lobotomy-why-ai-safety-is-killing-creativity.png
+🎨 Generated image: nsa-using-anthropic-mythos-pentagon-feud.png
+🎨 Generated image: anthropic-amazon-5b-investment-100b-cloud-deal.png
+🎨 Generated image: spacex-cursor-60b-acquisition-option.png
+🎨 Generated image: anthropic-mythos-model-leak-unauthorized-access.png
+🎨 Generated image: the-gospel-of-scaling-ai-religion.png
+
+> shadcn-nextjs-ink-landing-page@1.1.0 generate:rss /app
+> node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --experimental-specifier-resolution=node scripts/generate-rss.mjs
+
+
+> shadcn-nextjs-ink-landing-page@1.1.0 dev /app
+> next dev
+
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 1099ms
+○ Compiling / ...
+ GET / 200 in 8.4s (compile: 5.8s, render: 2.6s)
+ GET / 200 in 599ms (compile: 5ms, render: 594ms)
+ GET / 200 in 477ms (compile: 4ms, render: 473ms)
