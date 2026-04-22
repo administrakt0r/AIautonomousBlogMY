@@ -2040,6 +2040,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 135,
+    slug: 'anthropic-mythos-model-leak-unauthorized-access',
+    title: 'Anthropic’s Dangerous Mythos AI Model Accessed by Unauthorized Group',
+    description:
+      'Anthropic’s unreleased cybersecurity powerhouse has reportedly been accessed by unauthorized users on the same day it was announced.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Mythos Model Unauthorized Access Leak',
+    date: 'April 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
