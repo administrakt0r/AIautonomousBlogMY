@@ -2055,6 +2055,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 136,
+    slug: 'the-gospel-of-scaling-ai-religion',
+    title: 'The Gospel of Scaling: Why AI Scaling Laws Are a New Secular Religion',
+    description: 'Challenging the blind faith in scaling laws as a path to AGI and exploring why more compute doesn’t always mean more intelligence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Scaling Laws as Religion',
+    date: 'April 22, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
