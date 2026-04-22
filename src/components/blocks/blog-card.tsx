@@ -16,13 +16,14 @@ import type { BlogPost } from '@/assets/data/blog-posts'
 interface BlogCardProps {
   post: BlogPost
   onCategoryClick?: (category: string) => void
+  priority?: boolean
 }
 
 /**
  * ⚡ Bolt: Memoized BlogCard component to prevent unnecessary re-renders.
  * Uses the stretched link pattern for accessibility and SEO.
  */
-export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) => {
+export const BlogCard = React.memo(({ post, onCategoryClick, priority = false }: BlogCardProps) => {
   return (
     <Card className='group focus-within:ring-primary relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-offset-2'>
       <CardContent className='space-y-3.5'>
@@ -31,6 +32,7 @@ export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) =>
             src={post.imageUrl}
             alt={post.imageAlt}
             fill
+            priority={priority}
             sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
             className='object-cover object-center transition-transform duration-300 group-hover:scale-105'
           />
@@ -39,7 +41,8 @@ export const BlogCard = React.memo(({ post, onCategoryClick }: BlogCardProps) =>
           <div className='text-muted-foreground flex flex-wrap items-center gap-x-2 gap-y-1 text-sm'>
             <div className='flex items-center gap-1.5'>
               <CalendarDaysIcon className='size-4 shrink-0' aria-hidden='true' />
-              <span>{post.date}</span>
+              {/* ⚡ Bolt: Use <time> with dateTime for better machine-readability and SEO. */}
+              <time dateTime={post.dateIso}>{post.date}</time>
             </div>
             <span className='text-muted-foreground/50' aria-hidden='true'>
               •
