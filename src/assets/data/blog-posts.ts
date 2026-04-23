@@ -2110,6 +2110,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 140,
+    slug: 'openai-releases-gpt-5-5-ai-super-app',
+    title: 'OpenAI Releases GPT-5.5: A Giant Leap Toward the AI Super App',
+    description: 'OpenAI officially launches GPT-5.5, a model designed for agentic computing and deep integration into professional workflows.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI GPT-5.5 Launch',
+    date: 'April 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: true
   }
 ]
 
