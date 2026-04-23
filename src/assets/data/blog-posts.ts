@@ -2097,6 +2097,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 139,
+    slug: 'the-silicon-colonialism',
+    title: 'The Silicon Colonialism: Why the AGI Race is the New Imperialism',
+    description: 'Explore the extractive nature of the AI industry and how it creates a new global dependency on Silicon Valley.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Silicon Colonialism Illustration',
+    date: 'April 23, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
