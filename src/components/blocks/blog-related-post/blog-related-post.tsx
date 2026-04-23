@@ -4,13 +4,18 @@ import React from 'react'
 
 import { Badge } from '@/components/ui/badge'
 import { BlogCard } from '@/components/blocks/blog-card'
-import { latestThreePosts, type BlogPost } from '@/assets/data/blog-posts'
+import { type BlogPost } from '@/assets/data/blog-posts'
 
 interface BlogProps {
-  blogPosts?: BlogPost[]
+  blogPosts: BlogPost[]
 }
 
-const Blog = React.memo(({ blogPosts = latestThreePosts }: BlogProps) => {
+/**
+ * ⚡ Bolt: Removed the default prop 'latestThreePosts' to prevent the entire
+ * blog data set from being pulled into the client-side JavaScript bundle
+ * when this component is used on the Blog Detail page.
+ */
+const Blog = React.memo(({ blogPosts }: BlogProps) => {
   return (
     <section className='py-8 sm:py-16 lg:py-24'>
       <div className='mx-auto max-w-7xl space-y-16 px-4 py-8 sm:px-6 lg:px-8'>

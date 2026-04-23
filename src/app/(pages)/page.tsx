@@ -1,4 +1,4 @@
-import { homeFaqs, homeJsonLdString } from '@/assets/data/blog-posts'
+import { homeFaqs, homeJsonLdString } from '@/assets/data/blog-posts-server'
 
 import HeroSection from '@/components/blocks/hero-section/hero-section'
 import Blog from '@/components/blocks/blog-component/blog-component'

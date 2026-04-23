@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { ExternalLinkIcon } from 'lucide-react'
 
-import { responsibleAiJsonLdString } from '@/assets/data/blog-posts'
+import { responsibleAiJsonLdString } from '@/assets/data/blog-posts-server'
 import { CopyEmailButton } from '@/components/blocks/copy-email-button'
 import { getAbsoluteUrl } from '@/lib/site'
 

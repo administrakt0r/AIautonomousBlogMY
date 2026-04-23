@@ -22,7 +22,8 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
 
-import { blogPosts, blogPostsBySlug, relatedPostsBySlug, blogPostsJsonLdString } from '@/assets/data/blog-posts'
+import { blogPosts, blogPostsBySlug } from '@/assets/data/blog-posts'
+import { relatedPostsBySlug, blogPostsJsonLdString } from '@/assets/data/blog-posts-server'
 
 // Dynamic metadata for each blog post — critical for per-post SEO
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
