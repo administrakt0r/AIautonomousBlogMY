@@ -2083,6 +2083,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 138,
+    slug: 'openai-workspace-agents-chatgpt',
+    title: 'OpenAI Launches Workspace Agents to Automate Business Workflows',
+    description: 'ChatGPT evolves with Codex-powered agents capable of handling complex, long-running tasks in the cloud.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Workspace Agents in ChatGPT',
+    date: 'April 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
