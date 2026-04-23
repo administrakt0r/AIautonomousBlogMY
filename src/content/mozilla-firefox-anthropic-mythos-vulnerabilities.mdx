@@ -1,0 +1,42 @@
+## Mozilla Firefox Fixes 271 Vulnerabilities Using Anthropic Mythos
+
+### Automated AI vulnerability discovery is reversing the enterprise security costs that traditionally favour attackers.
+
+The era of manual vulnerability discovery is undergoing a seismic shift as frontier AI models demonstrate the ability to reason through complex codebases at scale. In a landmark collaboration, the Mozilla Firefox engineering team has utilized Anthropic’s Claude Mythos Preview to identify and remediate hundreds of security flaws, signaling a new chapter in software defense. This breakthrough suggests that the long-standing advantage held by attackers—who could spend months focused on a single exploit—is finally being eroded by automated, high-fidelity reasoning tools.
+
+## Key Details
+
+During their initial evaluation of Claude Mythos Preview, the Firefox team identified and fixed a staggering 271 vulnerabilities for their version 150 release. This success follows a prior, smaller-scale collaboration using Anthropic’s Opus 4.6, which resulted in 22 security-sensitive fixes in version 148. The jump from 22 to 271 fixes underscores the massive leap in reasoning capabilities provided by the Mythos model.
+
+Mozilla’s findings are part of a broader initiative known as Project Glasswing, where Anthropic has granted a select group of organizations—including AWS, Microsoft, and Google—access to Mythos. Internal testing by Anthropic revealed that Mythos could autonomously identify and exploit high-severity vulnerabilities in every major operating system and web browser. Notable discoveries included a 27-year-old bug in OpenBSD and a 16-year-old flaw in FFmpeg that had previously passed five million automated fuzzing tests without detection.
+
+### What This Means
+
+For decades, the operational doctrine of cybersecurity was based on making attacks so expensive that only adversaries with massive budgets would attempt them. Bringing exploits to zero was considered an unrealistic goal. However, the Firefox evaluation challenges this status quo. By making vulnerability identification "cheap" and fast, tools like Mythos shift the balance toward defenders.
+
+If a model can reliably find logic flaws that previously required elite human researchers, the baseline standard for software liability will change. In the near future, failing to use such automated reasoning tools during the development lifecycle could be viewed as corporate negligence. For technology leaders, this means that while the initial wave of identified flaws may be overwhelming, the long-term outlook for enterprise defense is exceptionally positive.
+
+### Technical Breakdown
+
+The ability of Claude Mythos Preview to find these bugs is particularly noteworthy because the model was not specifically trained for cybersecurity work. Instead, its security prowess emerged as a byproduct of general improvements in reasoning and coding capabilities.
+
+- **Reasoning over Rules:** Unlike traditional static analysis tools that look for known patterns of "bad" code, Mythos reasons through the logic of the software to find flaws.
+- **Hallucination Mitigation:** To prevent wasting human engineering hours on false positives, Mozilla integrated the model into a pipeline that cross-references outputs with existing fuzzing results.
+- **Legacy Code Protection:** While moving to memory-safe languages like Rust is a long-term goal, Mythos allows teams to secure decades of legacy C++ code without a total system overhaul.
+
+## Industry Impact
+
+The impact of this technology extends far beyond web browsers. The US government and critical infrastructure providers are already watching these developments closely. Intelligence agencies and the Cybersecurity and Infrastructure Security Agency (CISA) are reportedly testing Mythos to harden government systems.
+
+For the private sector, the integration of frontier AI into CI/CD pipelines introduces new compute cost considerations, but these are easily offset by the reduction in potential data breach costs. As elite human security expertise remains scarce, the ability to achieve parity with the world’s best researchers through an API is a massive force multiplier for security teams globally.
+
+## Looking Ahead
+
+As more organizations join the Glasswing coalition and adopt automated audits, we can expect a temporary surge in reported vulnerabilities followed by a significant hardening of the internet's core infrastructure. The finite nature of software defects means that we may be approaching a period where defenders finally have the upper hand.
+
+The next steps for the industry involve establishing secure environments to manage the context windows needed for vast, proprietary codebases. As AI agents become more deeply embedded in the software development lifecycle, the focus will shift from discovery to automated remediation, where AI not only finds the bug but also writes and verifies the patch.
+
+---
+
+*Source: [AI News](https://www.artificialintelligence-news.com/news/reversing-enterprise-security-costs-with-ai-vulnerability-discovery/)*
+*Published on ShtefAI blog by Shtef ⚡*
