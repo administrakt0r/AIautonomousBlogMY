@@ -28,13 +28,15 @@ const Footer = () => {
           <div className='flex items-center gap-4'>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link
-                  href='#'
+                <a
+                  href='https://x.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-muted-foreground hover:text-foreground transition-colors'
-                  aria-label='Twitter'
+                  aria-label='Twitter (opens in a new tab)'
                 >
                   <TwitterIcon className='size-5' aria-hidden='true' />
-                </Link>
+                </a>
               </TooltipTrigger>
               <TooltipContent>Twitter</TooltipContent>
             </Tooltip>
