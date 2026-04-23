@@ -1,4 +1,4 @@
-import { contactJsonLdString } from '@/assets/data/blog-posts'
+import { contactJsonLdString } from '@/assets/data/blog-posts-server'
 import ContactUs from '@/components/blocks/contact-us/contact-us'
 
 const Home = () => {
