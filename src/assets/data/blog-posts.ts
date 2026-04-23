@@ -2069,6 +2069,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 137,
+    slug: 'mozilla-firefox-anthropic-mythos-vulnerabilities',
+    title: 'Mozilla Firefox Fixes 271 Vulnerabilities Using Anthropic Mythos',
+    description: 'The Mozilla Firefox engineering team has utilized Anthropic’s Claude Mythos Preview to identify and remediate 271 security flaws, signaling a new chapter in automated software defense.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI identifying software vulnerabilities in a digital interface',
+    date: 'April 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
