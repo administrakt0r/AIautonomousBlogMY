@@ -159,7 +159,10 @@ const SearchInput = React.memo(
               <button
                 type='button'
                 aria-label='Clear search'
-                onClick={() => setValue('')}
+                onClick={() => {
+                  setValue('')
+                  searchInputRef.current?.focus()
+                }}
                 className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-3'
               >
                 <XIcon className='size-4' aria-hidden='true' />
@@ -326,6 +329,13 @@ const Blog = () => {
         router.push('#categories')
       } else {
         router.push(`#category-${encodeURIComponent(tab)}`)
+      }
+
+      // 🎨 Palette: Scroll to categories section when a tab is changed (especially useful when clicking from a BlogCard)
+      const element = document.getElementById('categories')
+
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
       }
     },
     [router]
