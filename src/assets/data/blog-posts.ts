@@ -2152,6 +2152,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 143,
+    slug: 'google-invests-40-billion-anthropic',
+    title: 'Google Bets $40 Billion on Anthropic to Rival OpenAI’s Dominance',
+    description: 'Alphabet commits $10 billion upfront in a landmark $40 billion deal with Anthropic, securing its place in the AI arms race.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google and Anthropic AI Partnership',
+    date: 'April 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
