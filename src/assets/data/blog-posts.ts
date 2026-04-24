@@ -2124,6 +2124,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: true
+  },
+  {
+    id: 141,
+    slug: 'nvidia-google-ai-inference-infrastructure',
+    title: 'NVIDIA and Google Infrastructure Slash AI Inference Costs',
+    description: 'A new hardware and software codesign breakthrough from NVIDIA and Google promises 10x lower costs for at-scale AI inference.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'NVIDIA and Google AI Infrastructure',
+    date: 'April 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
