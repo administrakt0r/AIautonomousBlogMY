@@ -2166,6 +2166,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 144,
+    slug: 'thinking-machines-google-deal-meta-talent-shift',
+    title: 'Thinking Machines Lab Secures Billions in Google Compute Deal',
+    description: 'Mira Murati’s startup gains access to Nvidia GB300 chips through a multibillion-dollar Google Cloud deal while poaching top talent from Meta.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Thinking Machines Lab Google Compute Deal',
+    date: 'April 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
