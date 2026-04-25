@@ -170,10 +170,11 @@ const Footer = () => {
             <div className='mt-1 flex items-center gap-1'>
               <a
                 href='mailto:m@administraktor.com'
-                className='hover:text-primary underline underline-offset-2'
+                className='hover:text-primary inline-flex items-center gap-1 underline underline-offset-2'
                 aria-label='Email m@administraktor.com'
               >
                 m@administraktor.com
+                <ExternalLinkIcon className='size-3' />
               </a>
               <CopyEmailButton email='m@administraktor.com' />
             </div>
