@@ -16,7 +16,7 @@ const MAX_CHARS = 1000
  * ⚡ Bolt: Static inputs extracted and memoized to prevent re-renders
  * when the 'message' state changes in the parent ContactForm.
  */
-const StaticInputs = React.memo(() => {
+const StaticInputs = React.memo(({ nameRef }: { nameRef: React.RefObject<HTMLInputElement | null> }) => {
   return (
     <>
       {/* Name Input */}
@@ -27,6 +27,7 @@ const StaticInputs = React.memo(() => {
         <div className='relative'>
           <Input
             id='username'
+            ref={nameRef}
             name='username'
             type='text'
             placeholder='Enter your name here...'
@@ -109,6 +110,18 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [message, setMessage] = useState('')
 
+  const nameInputRef = React.useRef<HTMLInputElement>(null)
+
+  const handleReset = () => {
+    setIsSubmitted(false)
+    setMessage('')
+
+    // 🎨 Palette: Programmatically refocus the first input field for better UX on re-entry
+    setTimeout(() => {
+      nameInputRef.current?.focus()
+    }, 0)
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
@@ -134,7 +147,7 @@ const ContactForm = () => {
         <p className='text-muted-foreground'>
           Thank you for reaching out. We&apos;ve received your message and will get back to you soon.
         </p>
-        <Button onClick={() => setIsSubmitted(false)} variant='outline' className='mt-4'>
+        <Button onClick={handleReset} variant='outline' className='mt-4'>
           Send another message
         </Button>
       </div>
@@ -143,7 +156,7 @@ const ContactForm = () => {
 
   return (
     <form className='space-y-6' onSubmit={handleSubmit}>
-      <StaticInputs />
+      <StaticInputs nameRef={nameInputRef} />
 
       {/* Message Input */}
       <div className='space-y-2'>
