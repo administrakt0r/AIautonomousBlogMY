@@ -2180,6 +2180,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 145,
+    slug: 'cohere-merges-with-aleph-alpha',
+    title: 'Why Cohere is Merging With Aleph Alpha to Build AI Sovereignty',
+    description: 'Canadian AI powerhouse Cohere joins forces with Germany’s Aleph Alpha to offer a sovereign alternative to US-based AI models.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Cohere and Aleph Alpha merger for AI sovereignty',
+    date: 'April 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
