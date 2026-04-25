@@ -252,6 +252,39 @@ const Pagination = React.memo(
 
 Pagination.displayName = 'Pagination'
 
+// ⚡ Bolt: Extract and memoize the results summary to prevent re-rendering the entire grid when it updates.
+const ResultsSummary = React.memo(
+  ({
+    filteredCount,
+    paginatedCount,
+    selectedTab,
+    searchQuery
+  }: {
+    filteredCount: number
+    paginatedCount: number
+    selectedTab: string
+    searchQuery: string
+  }) => {
+    const summary = useMemo(
+      () =>
+        filteredCount === 0
+          ? 'No stories match your current search and filters.'
+          : `Showing ${paginatedCount} of ${filteredCount} ${
+              filteredCount === 1 ? 'story' : 'stories'
+            }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`,
+      [filteredCount, paginatedCount, selectedTab, searchQuery]
+    )
+
+    return (
+      <p id='blog-results-summary' className='text-muted-foreground text-sm' aria-live='polite'>
+        {summary}
+      </p>
+    )
+  }
+)
+
+ResultsSummary.displayName = 'ResultsSummary'
+
 const Blog = () => {
   const [selectedTab, setSelectedTab] = useState('All')
 
@@ -309,15 +342,6 @@ const Blog = () => {
     [filteredPosts, currentPage]
   )
 
-  const resultsSummary = useMemo(
-    () =>
-      filteredPosts.length === 0
-        ? 'No stories match your current search and filters.'
-        : `Showing ${paginatedPosts.length} of ${filteredPosts.length} ${
-            filteredPosts.length === 1 ? 'story' : 'stories'
-          }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`,
-    [filteredPosts.length, paginatedPosts.length, selectedTab, searchQuery]
-  )
 
   const handleTabChange = useCallback(
     (tab: string) => {
@@ -415,9 +439,12 @@ const Blog = () => {
 
             <SearchInput initialValue={searchQuery} onSearchChange={handleSearchChange} />
           </div>
-          <p id='blog-results-summary' className='text-muted-foreground text-sm' aria-live='polite'>
-            {resultsSummary}
-          </p>
+          <ResultsSummary
+            filteredCount={filteredPosts.length}
+            paginatedCount={paginatedPosts.length}
+            selectedTab={selectedTab}
+            searchQuery={searchQuery}
+          />
 
           {/* Posts Grid */}
           {paginatedPosts.length > 0 ? (
