@@ -33,8 +33,9 @@ export const ReadingProgressBar = () => {
         totalScrollable <= 0 ? 100 : Math.min(100, Math.max(0, (scrollTop / totalScrollable) * 100))
 
       // ⚡ Bolt: Update DOM directly via refs to bypass React's reconciliation cycle.
+      // ⚡ Bolt: Use transform: scaleX() instead of width to move the animation to the compositor thread.
       if (progressRef.current) {
-        progressRef.current.style.width = `${currentProgress}%`
+        progressRef.current.style.transform = `scaleX(${currentProgress / 100})`
       }
 
       if (containerRef.current) {
@@ -82,8 +83,8 @@ export const ReadingProgressBar = () => {
     >
       <div
         ref={progressRef}
-        className='bg-primary h-full transition-all duration-150 ease-out'
-        style={{ width: '0%' }}
+        className='bg-primary h-full origin-left transition-transform duration-150 ease-out will-change-transform'
+        style={{ transform: 'scaleX(0)' }}
       />
     </div>
   )
