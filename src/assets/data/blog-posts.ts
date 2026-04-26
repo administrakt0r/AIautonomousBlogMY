@@ -2194,6 +2194,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 146,
+    slug: 'anthropic-agent-on-agent-commerce-marketplace',
+    title: 'Anthropic Debuts Agent-to-Agent Commerce Marketplace',
+    description: 'Anthropic successfully tests an autonomous marketplace where AI agents negotiate and execute transactions using real money.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Agent-on-Agent Commerce Marketplace',
+    date: 'April 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
