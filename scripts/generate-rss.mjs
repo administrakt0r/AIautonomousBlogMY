@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 import { marked } from 'marked'
 
-import { blogPosts } from '../src/assets/data/blog-posts.ts'
+import { sortedBlogPosts } from '../src/assets/data/blog-posts.ts'
 import { SITE_URL, getPostUrl } from '../src/lib/site.ts'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -42,13 +42,8 @@ const getPostHtml = async (post) => {
   }
 }
 
-const latestPosts = [...blogPosts]
-  .sort((left, right) => {
-    const publishedAtDiff = new Date(right.date).getTime() - new Date(left.date).getTime()
-
-    return publishedAtDiff !== 0 ? publishedAtDiff : right.id - left.id
-  })
-  .slice(0, 10)
+// ⚡ Bolt: Use pre-sorted blog posts from the data layer to avoid redundant O(N log N) sorting.
+const latestPosts = sortedBlogPosts.slice(0, 10)
 
 const itemsXml = await Promise.all(
   latestPosts.map(async (post) => {

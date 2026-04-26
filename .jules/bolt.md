@@ -20,6 +20,10 @@
 **Learning:** Passing high-frequency state (like `activeSection` from a scroll listener) directly to list items negates memoization if every item re-compares the value internally.
 **Action:** Lift the comparison logic to the parent loop and pass a primitive `isActive` boolean to memoized sub-components. This ensures only items whose active status actually changes will re-render.
 
+## 2026-04-26 - Data Layer Pass Consolidation
+**Learning:** In data-heavy repositories, performing multiple sequential transformations (mapping, grouping, filtering) on the same large array during module initialization adds measurable CPU overhead and increases client-side execution time.
+**Action:** Consolidate multiple O(N) operations into a single loop pass. Additionally, reduce the size of the source data array by removing redundant fields (like repeating author data or predictable image paths) and injecting them during the single transformation pass to minimize both bundle size and processing time.
+
 ## 2026-04-09 - Avoid Committing Build Artifacts and Logs
 **Learning:** Running generation scripts (like `pnpm generate:derived`) can produce massive diffs in build artifacts (like `public/rss.xml`) or temporary logs (like `dev_server.log`) that shouldn't be committed.
 **Action:** Always verify `git status` before submission and revert changes to artifacts unless they are specifically part of the task.
