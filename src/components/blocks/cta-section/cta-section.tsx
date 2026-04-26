@@ -36,7 +36,7 @@ const CTA = () => {
               <div className='relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-auto'>
                 <Image
                   src='/images/cta.webp'
-                  alt='Workspace with laptop'
+                  alt='A modern workspace with a laptop and creative tools, illustrating the professional insights provided by ShtefAI'
                   fill
                   sizes='(max-width: 1024px) 100vw, 50vw'
                   className='object-cover'
@@ -68,11 +68,13 @@ const CTA = () => {
                           </Label>
                           <Input
                             id='cta-email'
+                            name='email'
                             type='email'
                             placeholder='Your email'
                             className='bg-background h-10 flex-1 text-base'
                             required
                             disabled={isSubmitting}
+                            autoComplete='email'
                           />
                           <Button size='lg' className='text-base max-sm:w-full' type='submit' disabled={isSubmitting}>
                             {isSubmitting ? (
