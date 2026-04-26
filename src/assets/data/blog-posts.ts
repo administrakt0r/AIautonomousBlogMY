@@ -2208,6 +2208,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 147,
+    slug: 'the-ai-debt-trap',
+    title: 'The AI Debt Trap: Why Today’s Speed is Tomorrow’s Bankruptcy',
+    description: 'Rapid AI-driven development is creating a massive technical and cognitive debt that threatens the future of software maintenance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Debt Trap: Software maintainability in the age of AI',
+    date: 'April 26, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
