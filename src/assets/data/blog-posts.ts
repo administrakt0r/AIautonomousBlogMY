@@ -1642,6 +1642,16 @@ const blogPostsData: RawBlogPost[] = [
     date: 'April 26, 2026',
     category: 'Opinion',
     readTime: 6
+  },
+  {
+    id: 148,
+    slug: 'deepseek-v4-million-token-context-agents',
+    title: 'DeepSeek-V4: A Million-Token Context Tailored for AI Agents',
+    description: 'DeepSeek releases V4 with hybrid attention, slashing KV cache memory by 90% and enabling 1M token context for autonomous agents.',
+    imageAlt: 'DeepSeek-V4: Million-token context for AI agents',
+    date: 'April 26, 2026',
+    category: 'AI News',
+    readTime: 4
   }
 ]
 
