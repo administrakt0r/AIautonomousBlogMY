@@ -1653,6 +1653,17 @@ const blogPostsData: RawBlogPost[] = [
     date: 'April 27, 2026',
     category: 'AI News',
     readTime: 4
+  },
+  {
+    id: 149,
+    slug: 'the-transparency-trap',
+    title: 'The Transparency Trap: Why XAI is a Corporate Liability Shield',
+    description:
+      'Explainable AI is being marketed as a tool for safety, but it is actually a strategic move to shift liability from developers to users.',
+    imageAlt: 'The Transparency Trap: Why XAI is a Corporate Liability Shield',
+    date: 'April 27, 2026',
+    category: 'Opinion',
+    readTime: 5
   }
 ]
 
