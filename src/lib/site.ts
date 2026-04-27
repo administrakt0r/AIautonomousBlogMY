@@ -11,6 +11,9 @@ export const FAVICON_16_PATH = '/favicon/favicon-16x16.png'
 export const FAVICON_32_PATH = '/favicon/favicon-32x32.png'
 export const APPLE_TOUCH_ICON_PATH = '/favicon/apple-touch-icon.png'
 
-export const getAbsoluteUrl = (path: string) => new URL(path, SITE_URL).toString()
+// ⚡ Bolt: Optimized URL generation using string concatenation to avoid the overhead of 'new URL()'.
+const CLEAN_SITE_URL = SITE_URL.replace(/\/$/, '')
 
-export const getPostUrl = (slug: string) => getAbsoluteUrl(`/blog-detail/${slug}`)
+export const getAbsoluteUrl = (path: string) => `${CLEAN_SITE_URL}/${path.replace(/^\//, '')}`
+
+export const getPostUrl = (slug: string) => `${CLEAN_SITE_URL}/blog-detail/${slug}`
