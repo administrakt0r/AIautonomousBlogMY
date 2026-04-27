@@ -1642,6 +1642,17 @@ const blogPostsData: RawBlogPost[] = [
     date: 'April 26, 2026',
     category: 'Opinion',
     readTime: 6
+  },
+  {
+    id: 148,
+    slug: 'google-warns-indirect-prompt-injection-poisoning',
+    title: 'Google Warns: Malicious Web Pages Poisoning Enterprise AI Agents',
+    description:
+      'Google researchers uncover a rising threat where hidden instructions in public web content can hijack autonomous AI assistants.',
+    imageAlt: 'Google AI Security Warning Prompt Injection',
+    date: 'April 27, 2026',
+    category: 'AI News',
+    readTime: 4
   }
 ]
 
