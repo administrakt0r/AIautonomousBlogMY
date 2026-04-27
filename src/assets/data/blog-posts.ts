@@ -1,8 +1,8 @@
 // ⚡ Bolt: Duplicating these constants locally to ensure Node.js build scripts (like generate:post-images)
 // can import this file without failing on path aliases or environment-specific module resolution.
-const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app'
-const getAbsoluteUrl = (path: string) => new URL(path, SITE_URL).toString()
-const getPostUrl = (slug: string) => getAbsoluteUrl(`/blog-detail/${slug}`)
+// ⚡ Bolt: Optimized URL generation using string concatenation to avoid the overhead of 'new URL()'.
+const SITE_URL = (process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefai.vercel.app').replace(/\/$/, '')
+const getPostUrl = (slug: string) => `${SITE_URL}/blog-detail/${slug}`
 
 export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`
 
@@ -1669,16 +1669,27 @@ const blogPostsData: RawBlogPost[] = [
 
 /**
  * ⚡ Bolt: Optimized Data Layer.
- * We consolidate all data transformations (mapping, grouping, indexing) into a single pass
- * to minimize CPU overhead during module initialization.
+ * We consolidate all data transformations (mapping, grouping, indexing, and filtering)
+ * into a single backward pass over the raw data.
+ * This populates both the original and sorted (latest-first) arrays simultaneously,
+ * eliminating extra O(N) loops and reducing temporary array allocations.
  */
-const processedPosts: BlogPost[] = []
+const dataLen = blogPostsData.length
+
+const processedPosts: BlogPost[] = new Array(dataLen)
+const sortedPosts: BlogPost[] = []
+const nonFeatured: BlogPost[] = []
+
 const categoriesSet = new Set<string>()
 
 export const blogPostsBySlug = new Map<string, BlogPost>()
 export const postsByCategory = new Map<string, BlogPost[]>()
+export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
 
-blogPostsData.forEach((rawPost, index) => {
+for (let i = dataLen - 1; i >= 0; i--) {
+
+  const rawPost = blogPostsData[i]
+
   const post: BlogPost = {
     ...rawPost,
     author: 'Shtef',
@@ -1688,38 +1699,36 @@ blogPostsData.forEach((rawPost, index) => {
     dateIso: new Date(rawPost.date).toISOString(),
     searchStr: `${rawPost.title} ${rawPost.description}`.toLowerCase(),
     url: getPostUrl(rawPost.slug),
-    index
+    index: i
   }
 
-  processedPosts.push(post)
-  categoriesSet.add(post.category)
+  // Populate maps and original-order array
+  processedPosts[i] = post
   blogPostsBySlug.set(post.slug, post)
+  categoriesSet.add(post.category)
 
+  // Populate sorted (latest-first) array
+  sortedPosts.push(post)
+
+  // Categorize for both all and non-featured lists
   const catList = postsByCategory.get(post.category) || []
 
   catList.push(post)
   postsByCategory.set(post.category, catList)
-})
+
+  if (!post.featured) {
+    nonFeatured.push(post)
+    const nfCatList = nonFeaturedPostsByCategory.get(post.category) || []
+
+    nfCatList.push(post)
+    nonFeaturedPostsByCategory.set(post.category, nfCatList)
+  }
+}
 
 export const blogPosts = processedPosts
-export const sortedBlogPosts = [...processedPosts].reverse()
+export const sortedBlogPosts = sortedPosts
+export const nonFeaturedPosts = nonFeatured
 export const latestThreePosts = sortedBlogPosts.slice(0, 3)
 export const latestPostDateIso = latestThreePosts[0]?.dateIso ?? new Date().toISOString()
 export const uniqueCategories = [...categoriesSet].sort()
 export const categoriesWithAll = ['All', ...uniqueCategories]
-
-/**
- * ⚡ Bolt: Pre-calculate filtered lists in a single pass over sorted posts.
- */
-export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
-export const nonFeaturedPosts: BlogPost[] = []
-
-for (const post of sortedBlogPosts) {
-  if (!post.featured) {
-    nonFeaturedPosts.push(post)
-    const list = nonFeaturedPostsByCategory.get(post.category) || []
-
-    list.push(post)
-    nonFeaturedPostsByCategory.set(post.category, list)
-  }
-}

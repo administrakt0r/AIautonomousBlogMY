@@ -100,8 +100,8 @@ sortedBlogPosts.forEach((post) => {
   const categoryPosts = postsByCategory.get(post.category) || []
   const related: BlogPost[] = []
 
-  // Use latest from category first. categoryPosts is ascending, so we iterate backwards.
-  for (let i = categoryPosts.length - 1; i >= 0; i--) {
+  // ⚡ Bolt: Iterate forward as categoryPosts is now pre-sorted (latest first).
+  for (let i = 0; i < categoryPosts.length; i++) {
     const p = categoryPosts[i]
 
     if (p.slug !== post.slug) {
