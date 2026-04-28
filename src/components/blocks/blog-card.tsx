@@ -5,25 +5,27 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { ArrowRightIcon, CalendarDaysIcon } from 'lucide-react'
+import { ArrowRightIcon, CalendarDaysIcon, ClockIcon } from 'lucide-react'
 
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
+import { Highlight } from '@/components/ui/highlight'
 import type { BlogPost } from '@/assets/data/blog-posts'
 
 interface BlogCardProps {
   post: BlogPost
   onCategoryClick?: (category: string) => void
   priority?: boolean
+  searchQuery?: string
 }
 
 /**
  * ⚡ Bolt: Memoized BlogCard component to prevent unnecessary re-renders.
  * Uses the stretched link pattern for accessibility and SEO.
  */
-export const BlogCard = React.memo(({ post, onCategoryClick, priority = false }: BlogCardProps) => {
+export const BlogCard = React.memo(({ post, onCategoryClick, priority = false, searchQuery }: BlogCardProps) => {
   return (
     <Card className='group focus-within:ring-primary relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-offset-2'>
       <CardContent className='space-y-3.5'>
@@ -47,7 +49,10 @@ export const BlogCard = React.memo(({ post, onCategoryClick, priority = false }:
             <span className='text-muted-foreground/50' aria-hidden='true'>
               •
             </span>
-            <span>{post.readTime} min read</span>
+            <div className='flex items-center gap-1'>
+              <ClockIcon className='size-4' aria-hidden='true' />
+              <span>{post.readTime} min read</span>
+            </div>
           </div>
           <Badge
             asChild
@@ -75,10 +80,12 @@ export const BlogCard = React.memo(({ post, onCategoryClick, priority = false }:
             href={post.url}
             className='after:absolute after:inset-0 after:z-0 hover:underline focus:outline-none'
           >
-            {post.title}
+            <Highlight text={post.title} query={searchQuery} />
           </Link>
         </h3>
-        <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
+        <p className='text-muted-foreground line-clamp-2'>
+          <Highlight text={post.description} query={searchQuery} />
+        </p>
         <div className='flex items-center justify-between'>
           <span className='text-sm font-medium'>{post.author}</span>
           <Tooltip>

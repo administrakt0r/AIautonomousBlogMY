@@ -27,7 +27,7 @@ const CTA = () => {
   }
 
   return (
-    <section className='bg-muted py-8 sm:py-16 lg:py-24' id='get-in-touch'>
+    <section className='bg-muted scroll-mt-20 py-8 sm:py-16 lg:py-24' id='get-in-touch'>
       <div className='container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8'>
         <Card className='shadow-none'>
           <CardContent>
