@@ -6,6 +6,8 @@ const getPostUrl = (slug: string) => `${SITE_URL}/blog-detail/${slug}`
 
 export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`
 
+const SHARED_OG_IMAGE_PATH = '/images/og-image.png'
+
 // The exported data always points to the generated static PNG for each slug.
 
 export type BlogPost = {
@@ -37,6 +39,9 @@ type RawBlogPost = Omit<
   'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'searchStr' | 'index' | 'url' | 'featured'
 > & {
   featured?: boolean
+  author?: string
+  avatarUrl?: string
+  imageUrl?: string
 }
 
 const blogPostsData: RawBlogPost[] = [
@@ -1664,6 +1669,20 @@ const blogPostsData: RawBlogPost[] = [
     date: 'April 27, 2026',
     category: 'Opinion',
     readTime: 5
+  },
+  {
+    id: 150,
+    slug: 'the-attention-economy-apocalypse',
+    title: 'The Attention Economy Apocalypse: Why AI Will Break Our Focus',
+    description: 'AI is transforming from a productivity tool into an inescapable engine for cognitive capture, threatening our ability to think deeply.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Attention Economy Apocalypse: Why AI Will Break Our Focus',
+    date: 'April 28, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
@@ -1692,9 +1711,9 @@ for (let i = dataLen - 1; i >= 0; i--) {
 
   const post: BlogPost = {
     ...rawPost,
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    imageUrl: getPostImagePath(rawPost.slug),
+    author: rawPost.author ?? 'Shtef',
+    avatarUrl: rawPost.avatarUrl ?? '/images/avatars/1.webp',
+    imageUrl: rawPost.imageUrl ?? getPostImagePath(rawPost.slug),
     featured: rawPost.featured ?? false,
     dateIso: new Date(rawPost.date).toISOString(),
     searchStr: `${rawPost.title} ${rawPost.description}`.toLowerCase(),
