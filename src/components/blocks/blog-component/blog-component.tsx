@@ -36,7 +36,15 @@ const categories = categoriesWithAll
 const POSTS_PER_PAGE = 9
 
 const BlogGrid = React.memo(
-  ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
+  ({
+    posts,
+    onCategoryClick,
+    searchQuery
+  }: {
+    posts: BlogPost[]
+    onCategoryClick: (category: string) => void
+    searchQuery?: string
+  }) => {
     return (
       <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
         {posts.map((post, index) => (
@@ -44,6 +52,7 @@ const BlogGrid = React.memo(
             key={post.id}
             post={post}
             onCategoryClick={onCategoryClick}
+            searchQuery={searchQuery}
 
             // ⚡ Bolt: Prioritize the first row of images (up to 3) for better LCP.
             priority={index < 3}
@@ -307,6 +316,8 @@ const Blog = () => {
         }
       } else if (hash === '#categories' || hash === '#home') {
         setSelectedTab('All')
+        setSearchQuery('')
+        setCurrentPage(1)
       }
     }
 
@@ -380,7 +391,7 @@ const Blog = () => {
   }, [])
 
   return (
-    <section className='py-8 sm:py-16 lg:py-24' id='categories'>
+    <section className='scroll-mt-20 py-8 sm:py-16 lg:py-24' id='categories'>
       <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:space-y-16 lg:px-8'>
         {/* Header */}
         <div className='space-y-4'>
@@ -449,7 +460,7 @@ const Blog = () => {
           {/* Posts Grid */}
           {paginatedPosts.length > 0 ? (
             <div className='space-y-12'>
-              <BlogGrid posts={paginatedPosts} onCategoryClick={handleTabChange} />
+              <BlogGrid posts={paginatedPosts} onCategoryClick={handleTabChange} searchQuery={searchQuery} />
 
               {/* Pagination */}
               {totalPages > 1 && (
