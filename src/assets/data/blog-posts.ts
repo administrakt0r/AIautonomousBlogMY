@@ -1683,6 +1683,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 151,
+    slug: 'google-pentagon-ai-deal-anthropic-refusal',
+    title: 'Google Expands Pentagon AI Access Following Anthropic Refusal',
+    description: 'Google signs a major defense contract with the Pentagon after Anthropic refuses to allow its models to be used for military surveillance and autonomous weapons.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google Expands Pentagon AI Access Following Anthropic Refusal',
+    date: 'April 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
