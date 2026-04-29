@@ -100,89 +100,95 @@ CategoryButton.displayName = 'CategoryButton'
 // ⚡ Bolt: Extract and memoize the search input logic to prevent the entire Blog component from re-rendering on every keystroke.
 // This component manages its own local state and notifies the parent only after a debounce period.
 const SearchInput = React.memo(
-  ({ onSearchChange, initialValue = '' }: { onSearchChange: (value: string) => void; initialValue?: string }) => {
-    const [value, setValue] = useState(initialValue)
-    const searchInputRef = useRef<HTMLInputElement>(null)
+  React.forwardRef<HTMLInputElement, { onSearchChange: (value: string) => void; initialValue?: string }>(
+    ({ onSearchChange, initialValue = '' }, ref) => {
+      const [value, setValue] = useState(initialValue)
+      const internalRef = useRef<HTMLInputElement>(null)
 
-    // Sync with prop if changed from outside (e.g. "Clear all filters" button)
-    useEffect(() => {
-      setValue(initialValue)
-    }, [initialValue])
+      // 🎨 Palette: Use useImperativeHandle to expose the focus/blur methods to the parent via the forwarded ref,
+      // while keeping a local ref for internal keyboard shortcut logic.
+      React.useImperativeHandle(ref, () => internalRef.current!)
 
-    // ⚡ Bolt: Local debounce effect to minimize parent re-renders
-    useEffect(() => {
-      const handler = setTimeout(() => {
-        onSearchChange(value)
-      }, 300)
+      // Sync with prop if changed from outside (e.g. "Clear all filters" button)
+      useEffect(() => {
+        setValue(initialValue)
+      }, [initialValue])
 
-      return () => clearTimeout(handler)
-    }, [value, onSearchChange])
+      // ⚡ Bolt: Local debounce effect to minimize parent re-renders
+      useEffect(() => {
+        const handler = setTimeout(() => {
+          onSearchChange(value)
+        }, 300)
 
-    // 🎨 Palette: Add keyboard shortcut '/' to focus search input and 'Escape' to clear/blur
-    useEffect(() => {
-      const handleKeyDown = (e: KeyboardEvent) => {
-        if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName || '')) {
-          e.preventDefault()
-          searchInputRef.current?.focus()
+        return () => clearTimeout(handler)
+      }, [value, onSearchChange])
+
+      // 🎨 Palette: Add keyboard shortcut '/' to focus search input and 'Escape' to clear/blur
+      useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+          if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName || '')) {
+            e.preventDefault()
+            internalRef.current?.focus()
+          }
+
+          if (e.key === 'Escape' && document.activeElement === internalRef.current) {
+            setValue('')
+            internalRef.current?.blur()
+          }
         }
 
-        if (e.key === 'Escape' && document.activeElement === searchInputRef.current) {
-          setValue('')
-          searchInputRef.current?.blur()
-        }
-      }
+        window.addEventListener('keydown', handleKeyDown)
 
-      window.addEventListener('keydown', handleKeyDown)
+        return () => window.removeEventListener('keydown', handleKeyDown)
+      }, [])
 
-      return () => window.removeEventListener('keydown', handleKeyDown)
-    }, [])
-
-    return (
-      <div className='relative max-md:w-full'>
-        <Label htmlFor='blog-search' className='sr-only'>
-          Search articles (Press / to focus)
-        </Label>
-        <div className='text-muted-foreground pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 peer-disabled:opacity-50'>
-          <SearchIcon className='size-4' aria-hidden='true' />
-        </div>
-        <Input
-          id='blog-search'
-          ref={searchInputRef}
-          type='text'
-          placeholder='Search articles by title or summary'
-          value={value}
-          aria-describedby='blog-results-summary'
-          onChange={e => setValue(e.target.value)}
-          className='peer h-10 px-9'
-        />
-        {!value && (
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 hidden items-center pr-3 sm:flex'>
-            <kbd className='bg-muted border-muted-foreground/20 pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none'>
-              <span className='text-xs'>/</span>
-            </kbd>
+      return (
+        <div className='relative max-md:w-full'>
+          <Label htmlFor='blog-search' className='sr-only'>
+            Search articles (Press / to focus)
+          </Label>
+          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 peer-disabled:opacity-50'>
+            <SearchIcon className='size-4' aria-hidden='true' />
           </div>
-        )}
-        {value && (
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <button
-                type='button'
-                aria-label='Clear search'
-                onClick={() => {
-                  setValue('')
-                  searchInputRef.current?.focus()
-                }}
-                className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-3'
-              >
-                <XIcon className='size-4' aria-hidden='true' />
-              </button>
-            </TooltipTrigger>
-            <TooltipContent>Clear search</TooltipContent>
-          </Tooltip>
-        )}
-      </div>
-    )
-  }
+          <Input
+            id='blog-search'
+            ref={internalRef}
+            type='text'
+            placeholder='Search articles by title or summary'
+            value={value}
+            aria-describedby='blog-results-summary'
+            onChange={e => setValue(e.target.value)}
+            className='peer h-10 px-9'
+          />
+          {!value && (
+            <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 hidden items-center pr-3 sm:flex'>
+              <kbd className='bg-muted border-muted-foreground/20 pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none'>
+                <span className='text-xs'>/</span>
+              </kbd>
+            </div>
+          )}
+          {value && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button
+                  type='button'
+                  aria-label='Clear search'
+                  onClick={() => {
+                    setValue('')
+                    internalRef.current?.focus()
+                  }}
+                  className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-3'
+                >
+                  <XIcon className='size-4' aria-hidden='true' />
+                </button>
+              </TooltipTrigger>
+              <TooltipContent>Clear search</TooltipContent>
+            </Tooltip>
+          )}
+        </div>
+      )
+    }
+  )
 )
 
 SearchInput.displayName = 'SearchInput'
@@ -205,16 +211,18 @@ const Pagination = React.memo(
       <div className='flex items-center justify-center gap-2 pt-8'>
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button
-              type='button'
-              variant='outline'
-              size='icon'
-              onClick={() => onPageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-            >
-              <ChevronLeftIcon className='size-4' aria-hidden='true' />
-              <span className='sr-only'>Previous page</span>
-            </Button>
+            <span className='inline-block'>
+              <Button
+                type='button'
+                variant='outline'
+                size='icon'
+                onClick={() => onPageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+              >
+                <ChevronLeftIcon className='size-4' aria-hidden='true' />
+                <span className='sr-only'>Previous page</span>
+              </Button>
+            </span>
           </TooltipTrigger>
           <TooltipContent>Previous page</TooltipContent>
         </Tooltip>
@@ -241,16 +249,18 @@ const Pagination = React.memo(
 
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button
-              type='button'
-              variant='outline'
-              size='icon'
-              onClick={() => onPageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-            >
-              <ChevronRightIcon className='size-4' aria-hidden='true' />
-              <span className='sr-only'>Next page</span>
-            </Button>
+            <span className='inline-block'>
+              <Button
+                type='button'
+                variant='outline'
+                size='icon'
+                onClick={() => onPageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+              >
+                <ChevronRightIcon className='size-4' aria-hidden='true' />
+                <span className='sr-only'>Next page</span>
+              </Button>
+            </span>
           </TooltipTrigger>
           <TooltipContent>Next page</TooltipContent>
         </Tooltip>
@@ -302,6 +312,8 @@ const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
 
+  const searchInputRef = useRef<HTMLInputElement>(null)
+
   // 🎨 Palette: Sync selectedTab with URL hash for shareable filtered views
   useEffect(() => {
     const handleHashChange = () => {
@@ -313,6 +325,14 @@ const Blog = () => {
         if (categories.includes(category)) {
           setSelectedTab(category)
           setCurrentPage(1)
+
+          // 🎨 Palette: Scroll to categories section when a category hash is detected
+          // browsers only do this automatically if the ID exactly matches the hash.
+          const element = document.getElementById('categories')
+
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+          }
         }
       } else if (hash === '#categories' || hash === '#home') {
         setSelectedTab('All')
@@ -398,7 +418,7 @@ const Blog = () => {
       <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:space-y-16 lg:px-8'>
         {/* Header */}
         <div className='space-y-4'>
-          {selectedTab === 'All' && !searchQuery && <p className='text-sm'>Blogs</p>}
+          {selectedTab === 'All' && !searchQuery && <p className='text-sm font-medium'>Blogs</p>}
           {(selectedTab !== 'All' || searchQuery) && (
             <Breadcrumb>
               <BreadcrumbList>
@@ -411,6 +431,9 @@ const Blog = () => {
                           setSelectedTab('All')
                           setSearchQuery('')
                           setCurrentPage(1)
+
+                          // 🎨 Palette: Refocus search input after clearing all filters
+                          searchInputRef.current?.focus()
                         }}
                       >
                         <Link href='/#categories'>Blog</Link>
@@ -420,9 +443,39 @@ const Blog = () => {
                   </Tooltip>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>{searchQuery ? `Search: ${searchQuery}` : selectedTab}</BreadcrumbPage>
-                </BreadcrumbItem>
+                {selectedTab !== 'All' && (
+                  <>
+                    <BreadcrumbItem>
+                      {searchQuery ? (
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <BreadcrumbLink
+                              asChild
+                              onClick={() => {
+                                setSearchQuery('')
+                                setCurrentPage(1)
+
+                                // 🎨 Palette: Refocus search input after clearing search query
+                                searchInputRef.current?.focus()
+                              }}
+                            >
+                              <Link href={`/#category-${encodeURIComponent(selectedTab)}`}>{selectedTab}</Link>
+                            </BreadcrumbLink>
+                          </TooltipTrigger>
+                          <TooltipContent side='bottom'>Clear search and view all in {selectedTab}</TooltipContent>
+                        </Tooltip>
+                      ) : (
+                        <BreadcrumbPage>{selectedTab}</BreadcrumbPage>
+                      )}
+                    </BreadcrumbItem>
+                    {searchQuery && <BreadcrumbSeparator />}
+                  </>
+                )}
+                {searchQuery && (
+                  <BreadcrumbItem>
+                    <BreadcrumbPage>Search: {searchQuery}</BreadcrumbPage>
+                  </BreadcrumbItem>
+                )}
               </BreadcrumbList>
             </Breadcrumb>
           )}
@@ -451,7 +504,7 @@ const Blog = () => {
               <ScrollBar orientation='horizontal' />
             </ScrollArea>
 
-            <SearchInput initialValue={searchQuery} onSearchChange={handleSearchChange} />
+            <SearchInput ref={searchInputRef} initialValue={searchQuery} onSearchChange={handleSearchChange} />
           </div>
           <ResultsSummary
             filteredCount={filteredPosts.length}
@@ -486,6 +539,9 @@ const Blog = () => {
                 onClick={() => {
                   setSelectedTab('All')
                   setSearchQuery('')
+
+                  // 🎨 Palette: Refocus search input after clearing all filters
+                  searchInputRef.current?.focus()
                 }}
               >
                 Clear all filters
