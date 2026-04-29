@@ -1697,6 +1697,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 152,
+    slug: 'scout-ai-100m-funding-war-models-bootcamp',
+    title: 'Scout AI Raises $100M to Train Frontier Models for the Battlefield',
+    description: 'Scout AI, a "frontier lab for defense," raises $100M Series A to build autonomous AI agents for the US military.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Scout AI Raises $100M to Train Frontier Models for the Battlefield',
+    date: 'April 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
