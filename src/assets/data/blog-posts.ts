@@ -24,7 +24,6 @@ export type BlogPost = {
   readTime: number
   featured: boolean
   dateIso: string
-  searchStr: string
   url: string
   index: number
 }
@@ -36,7 +35,7 @@ export type BlogPost = {
  */
 type RawBlogPost = Omit<
   BlogPost,
-  'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'searchStr' | 'index' | 'url' | 'featured'
+  'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'index' | 'url' | 'featured'
 > & {
   featured?: boolean
   author?: string
@@ -1758,7 +1757,6 @@ for (let i = dataLen - 1; i >= 0; i--) {
     imageUrl: rawPost.imageUrl ?? getPostImagePath(rawPost.slug),
     featured: rawPost.featured ?? false,
     dateIso: new Date(rawPost.date).toISOString(),
-    searchStr: `${rawPost.title} ${rawPost.description}`.toLowerCase(),
     url: getPostUrl(rawPost.slug),
     index: i
   }

@@ -80,11 +80,11 @@ export const BlogCard = React.memo(({ post, onCategoryClick, priority = false, s
             href={post.url}
             className='after:absolute after:inset-0 after:z-0 hover:underline focus:outline-none'
           >
-            <Highlight text={post.title} query={searchQuery} />
+            <Highlight text={post.title} query={searchQuery ?? ''} />
           </Link>
         </h3>
         <p className='text-muted-foreground line-clamp-2'>
-          <Highlight text={post.description} query={searchQuery} />
+          <Highlight text={post.description} query={searchQuery ?? ''} />
         </p>
         <div className='flex items-center justify-between'>
           <span className='text-sm font-medium'>{post.author}</span>

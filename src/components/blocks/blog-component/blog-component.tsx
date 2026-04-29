@@ -333,7 +333,8 @@ const Blog = () => {
 
   // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query.
   // We use the pre-calculated nonFeaturedPostsByCategory Map for O(1) category retrieval when no search is active.
-  // ⚡ Bolt: Use pre-calculated searchStr to avoid redundant .toLowerCase() calls during filtering.
+  // ⚡ Bolt: Perform dynamic search matching on title and description to avoid the overhead
+  // of storing a pre-calculated search string for every post in the bundle.
   const filteredPosts = useMemo(() => {
     const lowerQuery = searchQuery.toLowerCase()
 
@@ -343,7 +344,9 @@ const Blog = () => {
 
     const basePosts = selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
 
-    return basePosts.filter(post => post.searchStr.includes(lowerQuery))
+    return basePosts.filter(
+      post => post.title.toLowerCase().includes(lowerQuery) || post.description.toLowerCase().includes(lowerQuery)
+    )
   }, [selectedTab, searchQuery])
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])
