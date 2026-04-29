@@ -1724,6 +1724,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 154,
+    slug: 'parallel-web-systems-hits-2b-valuation',
+    title: 'Parallel Web Systems Hits $2B Valuation for Agentic AI Platform',
+    description:
+      'Former Twitter CEO Parag Agrawal’s AI agent startup doubles its valuation to $2 billion with a fresh $100M investment from Sequoia.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Parallel Web Systems Hits $2B Valuation for Agentic AI Platform',
+    date: 'April 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
