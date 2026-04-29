@@ -1711,6 +1711,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 153,
+    slug: 'the-truth-paywall',
+    title: 'The Truth Paywall: Why Human-Verified Reality is the Next Luxury Good',
+    description: 'As AI-generated content floods the internet, objective truth is becoming a premium service available only to the wealthy elite.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Truth Paywall: Why Human-Verified Reality is the Next Luxury Good',
+    date: 'April 29, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
