@@ -1739,6 +1739,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 155,
+    slug: 'where-the-goblins-came-from',
+    title: 'Where the Goblins Came From: OpenAI Solves Model Behavior Mystery',
+    description:
+      'OpenAI investigates how subtle RL rewards for a "Nerdy" personality led to emergent "goblin" lexical tics in GPT-5 models.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Where the Goblins Came From: How OpenAI Solved a Model Personality Mystery',
+    date: 'April 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
