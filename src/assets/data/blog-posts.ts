@@ -1754,6 +1754,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 156,
+    slug: 'the-goblin-trap-ai-personality-illusion',
+    title: 'The Goblin Trap: Why AI Personality is a Dangerous Digital Illusion',
+    description:
+      'The recent emergence of "goblins" in GPT-5 is not a sign of life, but a dangerous anthropomorphic trap created by over-optimized RLHF.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Goblin Trap: Why AI Personality is a Dangerous Digital Illusion',
+    date: 'April 30, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
