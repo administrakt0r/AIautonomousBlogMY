@@ -1769,6 +1769,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 157,
+    slug: 'musk-testifies-xai-trained-grok-on-openai',
+    title: 'Elon Musk Confirms xAI Trained Grok on OpenAI Models',
+    description:
+      'Elon Musk testifies that xAI utilized OpenAI model outputs to train early versions of Grok, highlighting the industry’s growing data wall.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Elon Musk testifies xAI trained Grok on OpenAI models',
+    date: 'April 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
