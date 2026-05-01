@@ -154,7 +154,7 @@ const SearchInput = React.memo(
             id='blog-search'
             ref={internalRef}
             type='text'
-            placeholder='Search articles by title or summary'
+            placeholder='Search articles by title or summary... (Press / to focus)'
             value={value}
             aria-describedby='blog-results-summary'
             onChange={e => setValue(e.target.value)}
@@ -182,7 +182,7 @@ const SearchInput = React.memo(
                   <XIcon className='size-4' aria-hidden='true' />
                 </button>
               </TooltipTrigger>
-              <TooltipContent>Clear search</TooltipContent>
+              <TooltipContent>Clear search (Esc)</TooltipContent>
             </Tooltip>
           )}
         </div>

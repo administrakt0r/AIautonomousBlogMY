@@ -97,7 +97,10 @@ export const BlogCard = React.memo(({ post, onCategoryClick, priority = false, s
                 asChild
               >
                 <Link href={post.url}>
-                  <ArrowRightIcon className='size-4 -rotate-45' aria-hidden='true' />
+                  <ArrowRightIcon
+                    className='size-4 -rotate-45 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                    aria-hidden='true'
+                  />
                   <span className='sr-only'>Read more about: {post.title}</span>
                 </Link>
               </Button>
