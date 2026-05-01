@@ -1814,6 +1814,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 160,
+    slug: 'pentagon-ai-deals-nvidia-microsoft-aws',
+    title: 'Pentagon Inks Deals with Nvidia, Microsoft, and AWS for Classified AI',
+    description:
+      'The Department of Defense signs landmark agreements to deploy frontier AI on classified networks, signaling a new era of military compute.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Pentagon Inks Deals with Nvidia, Microsoft, and AWS for Classified AI',
+    date: 'May 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
