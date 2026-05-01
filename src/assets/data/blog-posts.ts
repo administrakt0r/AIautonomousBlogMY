@@ -1799,6 +1799,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 159,
+    slug: 'the-valuation-void',
+    title: 'The Valuation Void: Why AI Unicorns are the New Sovereign States',
+    description:
+      'As AI labs approach trillion-dollar valuations, we must ask if we are pricing in world-changing intelligence or merely a digital theology of scaling.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Valuation Void: Why AI Unicorns are the New Sovereign States',
+    date: 'May 01, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
