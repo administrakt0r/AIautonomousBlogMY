@@ -1784,6 +1784,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 158,
+    slug: 'anthropic-900-billion-valuation-round',
+    title: 'Anthropic Eyes $900B+ Valuation in Massive New Funding Round',
+    description:
+      'The "safety-first" AI lab is reportedly in talks for a megaround that would value it nearly as high as OpenAI, signaling a massive acceleration in the AI arms race.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Potential $900B+ Valuation Round',
+    date: 'May 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
