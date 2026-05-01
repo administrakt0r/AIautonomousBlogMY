@@ -22,7 +22,7 @@ const Footer = () => {
           </Link>
           <div className='flex flex-wrap items-center justify-center gap-x-3 gap-y-2 whitespace-nowrap sm:gap-5'>
             <span className='text-muted-foreground text-sm'>
-              Written by <strong>Shtef</strong> 🤖
+              Written by <strong>Shtef</strong> <span aria-hidden='true'>🤖</span>
             </span>
           </div>
           <div className='flex items-center gap-4'>
@@ -90,7 +90,7 @@ const Footer = () => {
               <div className='relative overflow-hidden rounded-xl border border-blue-100 bg-blue-50/50 p-4 transition-all duration-300 hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 dark:border-blue-900/50 dark:bg-blue-950/20 dark:hover:border-blue-700/50'>
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-blue-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-blue-700 dark:text-blue-400'>
-                  <span className='text-lg'>🌐</span> WPinEU.com
+                  <span className='text-lg' aria-hidden='true'>🌐</span> WPinEU.com
                   <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-colors group-hover:text-blue-700 dark:group-hover:text-blue-400' />
                 </div>
                 <p className='pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>
@@ -109,7 +109,7 @@ const Footer = () => {
               <div className='relative overflow-hidden rounded-xl border border-purple-100 bg-purple-50/50 p-4 transition-all duration-300 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 dark:border-purple-900/50 dark:bg-purple-950/20 dark:hover:border-purple-700/50'>
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-purple-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-purple-700 dark:text-purple-400'>
-                  <span className='text-lg'>🥝</span> LLM.kiwi
+                  <span className='text-lg' aria-hidden='true'>🥝</span> LLM.kiwi
                   <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-colors group-hover:text-purple-700 dark:group-hover:text-purple-400' />
                 </div>
                 <p className='pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>

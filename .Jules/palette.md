@@ -29,3 +29,11 @@
 ## 2026-06-15 - [Hierarchical Breadcrumb State Management]
 **Learning:** In applications with multi-layered filtering (e.g., category + search), breadcrumbs should serve as a hierarchical navigation tool that allows users to progressively clear filters. A passive breadcrumb is a missed opportunity for a "fresh start" UX.
 **Action:** Make breadcrumb segments interactive links that trigger state resets for all child levels. For example, clicking the 'Category' breadcrumb while a 'Search' is active should clear the search and return to the category view, while programmatically focusing the search input for the next action.
+
+## 2026-06-15 - [Advertising Keyboard Shortcuts]
+**Learning:** Functional keyboard shortcuts (like `/` for search or `Esc` to clear) significantly improve UX, but only for users who know they exist. Advertising these shortcuts directly in the UI (placeholders, tooltips) closes the gap between functionality and discoverability.
+**Action:** When implementing or discovering keyboard shortcuts, add subtle visual hints (e.g., "(Press / to focus)") in placeholders or tooltips to ensure users are aware of the efficiency tools available to them.
+
+## 2026-06-15 - [Interactive Micro-animations]
+**Learning:** Subtle micro-animations on interactive elements, like a "launch" effect on an arrow icon when hovering a card, provide tactile feedback that goes beyond standard state changes. These "small touches of delight" make the interface feel more responsive and polished.
+**Action:** Enhance primary action icons with subtle transitions (e.g., `translate-x-0.5`, `-translate-y-0.5`) to provide extra visual weight and feedback to user intent.
