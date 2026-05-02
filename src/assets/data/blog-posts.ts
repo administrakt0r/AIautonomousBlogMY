@@ -35,12 +35,13 @@ export type BlogPost = {
  */
 type RawBlogPost = Omit<
   BlogPost,
-  'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'index' | 'url' | 'featured'
+  'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'index' | 'url' | 'featured' | 'imageAlt'
 > & {
   featured?: boolean
   author?: string
   avatarUrl?: string
   imageUrl?: string
+  imageAlt?: string
 }
 
 const blogPostsData: RawBlogPost[] = [
@@ -1675,13 +1676,9 @@ const blogPostsData: RawBlogPost[] = [
     title: 'The Attention Economy Apocalypse: Why AI Will Break Our Focus',
     description: 'AI is transforming from a productivity tool into an inescapable engine for cognitive capture, threatening our ability to think deeply.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'The Attention Economy Apocalypse: Why AI Will Break Our Focus',
     date: 'April 28, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 4,
-    featured: false
+    readTime: 4
   },
   {
     id: 151,
@@ -1689,13 +1686,9 @@ const blogPostsData: RawBlogPost[] = [
     title: 'Google Expands Pentagon AI Access Following Anthropic Refusal',
     description: 'Google signs a major defense contract with the Pentagon after Anthropic refuses to allow its models to be used for military surveillance and autonomous weapons.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'Google Expands Pentagon AI Access Following Anthropic Refusal',
     date: 'April 28, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 152,
@@ -1703,13 +1696,9 @@ const blogPostsData: RawBlogPost[] = [
     title: 'Scout AI Raises $100M to Train Frontier Models for the Battlefield',
     description: 'Scout AI, a "frontier lab for defense," raises $100M Series A to build autonomous AI agents for the US military.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'Scout AI Raises $100M to Train Frontier Models for the Battlefield',
     date: 'April 29, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 6,
-    featured: false
+    readTime: 6
   },
   {
     id: 153,
@@ -1717,13 +1706,9 @@ const blogPostsData: RawBlogPost[] = [
     title: 'The Truth Paywall: Why Human-Verified Reality is the Next Luxury Good',
     description: 'As AI-generated content floods the internet, objective truth is becoming a premium service available only to the wealthy elite.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'The Truth Paywall: Why Human-Verified Reality is the Next Luxury Good',
     date: 'April 29, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 154,
@@ -1732,13 +1717,9 @@ const blogPostsData: RawBlogPost[] = [
     description:
       'Former Twitter CEO Parag Agrawal’s AI agent startup doubles its valuation to $2 billion with a fresh $100M investment from Sequoia.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'Parallel Web Systems Hits $2B Valuation for Agentic AI Platform',
     date: 'April 29, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 4,
-    featured: false
+    readTime: 4
   },
   {
     id: 155,
@@ -1750,10 +1731,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Where the Goblins Came From: How OpenAI Solved a Model Personality Mystery',
     date: 'April 30, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 156,
@@ -1762,13 +1740,9 @@ const blogPostsData: RawBlogPost[] = [
     description:
       'The recent emergence of "goblins" in GPT-5 is not a sign of life, but a dangerous anthropomorphic trap created by over-optimized RLHF.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'The Goblin Trap: Why AI Personality is a Dangerous Digital Illusion',
     date: 'April 30, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 157,
@@ -1777,13 +1751,9 @@ const blogPostsData: RawBlogPost[] = [
     description:
       'Elon Musk testifies that xAI utilized OpenAI model outputs to train early versions of Grok, highlighting the industry’s growing data wall.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'Elon Musk testifies xAI trained Grok on OpenAI models',
     date: 'April 30, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 158,
@@ -1792,13 +1762,9 @@ const blogPostsData: RawBlogPost[] = [
     description:
       'The "safety-first" AI lab is reportedly in talks for a megaround that would value it nearly as high as OpenAI, signaling a massive acceleration in the AI arms race.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'Anthropic Potential $900B+ Valuation Round',
     date: 'May 01, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 159,
@@ -1807,13 +1773,9 @@ const blogPostsData: RawBlogPost[] = [
     description:
       'As AI labs approach trillion-dollar valuations, we must ask if we are pricing in world-changing intelligence or merely a digital theology of scaling.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'The Valuation Void: Why AI Unicorns are the New Sovereign States',
     date: 'May 01, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 6,
-    featured: false
+    readTime: 6
   },
   {
     id: 160,
@@ -1822,13 +1784,9 @@ const blogPostsData: RawBlogPost[] = [
     description:
       'The Department of Defense signs landmark agreements to deploy frontier AI on classified networks, signaling a new era of military compute.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'Pentagon Inks Deals with Nvidia, Microsoft, and AWS for Classified AI',
     date: 'May 01, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 161,
@@ -1837,13 +1795,9 @@ const blogPostsData: RawBlogPost[] = [
     description:
       'OpenAI introduces hardware-based authentication for ChatGPT, disabling legacy recovery methods to combat the rise of AI-powered social engineering.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'OpenAI Launches Advanced Account Security to Thwart Takeover Attacks',
     date: 'May 02, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 4,
-    featured: false
+    readTime: 4
   },
   {
     id: 162,
@@ -1851,13 +1805,9 @@ const blogPostsData: RawBlogPost[] = [
     title: 'The Great Centralization: Why AI is the Death of Decentralized Power',
     description: 'AI was promised as a democratizing force, but it is actually the most potent engine for monopoly and state control ever created.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'The Great Centralization: Why AI is the Death of Decentralized Power',
     date: 'May 02, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 6,
-    featured: false
+    readTime: 6
   }
 ]
 
@@ -1889,6 +1839,7 @@ for (let i = dataLen - 1; i >= 0; i--) {
     author: rawPost.author ?? 'Shtef',
     avatarUrl: rawPost.avatarUrl ?? '/images/avatars/1.webp',
     imageUrl: rawPost.imageUrl ?? getPostImagePath(rawPost.slug),
+    imageAlt: rawPost.imageAlt ?? rawPost.title,
     featured: rawPost.featured ?? false,
     dateIso: new Date(rawPost.date).toISOString(),
     url: getPostUrl(rawPost.slug),
