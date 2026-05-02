@@ -82,7 +82,8 @@ const NavItem = React.memo(({ navItem, isActive }: { navItem: NavigationSection;
 
 NavItem.displayName = 'NavItem'
 
-const MenuNavigation = ({ navigationData, activeSection, className }: MenuNavigationProps) => {
+// ⚡ Bolt: Memoize the MenuNavigation component to prevent redundant re-renders when Header state changes.
+const MenuNavigation = React.memo(({ navigationData, activeSection, className }: MenuNavigationProps) => {
   return (
     <NavigationMenu viewport={false} className={className} aria-label='Main navigation'>
       <NavigationMenuList className='flex-wrap justify-start gap-3'>
@@ -99,6 +100,8 @@ const MenuNavigation = ({ navigationData, activeSection, className }: MenuNaviga
       </NavigationMenuList>
     </NavigationMenu>
   )
-}
+})
+
+MenuNavigation.displayName = 'MenuNavigation'
 
 export default MenuNavigation

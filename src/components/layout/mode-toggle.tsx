@@ -1,12 +1,15 @@
 'use client'
 
+import React from 'react'
+
 import { MoonStarIcon, SunIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
-const ModeToggle = () => {
+// ⚡ Bolt: Memoize the ModeToggle component to prevent redundant re-renders when Header state changes.
+const ModeToggle = React.memo(() => {
   const { resolvedTheme, setTheme } = useTheme()
 
   const isLight = resolvedTheme === 'light'
@@ -30,6 +33,8 @@ const ModeToggle = () => {
       <TooltipContent>{tooltipText}</TooltipContent>
     </Tooltip>
   )
-}
+})
+
+ModeToggle.displayName = 'ModeToggle'
 
 export { ModeToggle }

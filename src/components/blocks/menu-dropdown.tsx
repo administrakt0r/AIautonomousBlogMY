@@ -84,7 +84,8 @@ const DropdownNavItem = React.memo(({ navItem, isActive }: { navItem: Navigation
 
 DropdownNavItem.displayName = 'DropdownNavItem'
 
-const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' }: Props) => {
+// ⚡ Bolt: Memoize the MenuDropdown component to prevent redundant re-renders when Header state changes.
+const MenuDropdown = React.memo(({ trigger, navigationData, activeSection, align = 'start' }: Props) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>{trigger}</DropdownMenuTrigger>
@@ -103,6 +104,8 @@ const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' 
       </DropdownMenuContent>
     </DropdownMenu>
   )
-}
+})
+
+MenuDropdown.displayName = 'MenuDropdown'
 
 export default MenuDropdown
