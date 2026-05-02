@@ -1844,6 +1844,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 162,
+    slug: 'the-great-centralization',
+    title: 'The Great Centralization: Why AI is the Death of Decentralized Power',
+    description: 'AI was promised as a democratizing force, but it is actually the most potent engine for monopoly and state control ever created.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Great Centralization: Why AI is the Death of Decentralized Power',
+    date: 'May 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
