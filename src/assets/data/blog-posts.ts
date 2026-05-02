@@ -1829,6 +1829,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 161,
+    slug: 'openai-advanced-account-security',
+    title: 'OpenAI Launches Advanced Account Security to Thwart Takeover Attacks',
+    description:
+      'OpenAI introduces hardware-based authentication for ChatGPT, disabling legacy recovery methods to combat the rise of AI-powered social engineering.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches Advanced Account Security to Thwart Takeover Attacks',
+    date: 'May 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
