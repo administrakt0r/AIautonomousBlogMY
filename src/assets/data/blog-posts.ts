@@ -1808,6 +1808,20 @@ const blogPostsData: RawBlogPost[] = [
     date: 'May 02, 2026',
     category: 'Opinion',
     readTime: 6
+  },
+  {
+    id: 163,
+    slug: 'oscars-ban-ai-actors-and-scripts',
+    title: 'Academy Awards Ban AI-Generated Actors and Scripts from Oscars',
+    description: 'The Academy has released new rules stating that AI-generated actors and scripts are ineligible for the Oscars.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Academy Awards logo',
+    date: 'May 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
