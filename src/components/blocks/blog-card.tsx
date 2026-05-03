@@ -95,8 +95,9 @@ export const BlogCard = React.memo(({ post, onCategoryClick, priority = false, s
                 variant='outline'
                 className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground relative z-10 border group-hover:border-transparent hover:border-transparent'
                 asChild
+                tabIndex={-1}
               >
-                <Link href={post.url}>
+                <Link href={post.url} tabIndex={-1}>
                   <ArrowRightIcon
                     className='size-4 -rotate-45 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
                     aria-hidden='true'

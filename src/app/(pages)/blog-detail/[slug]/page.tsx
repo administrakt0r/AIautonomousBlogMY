@@ -108,10 +108,17 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
           <TooltipContent side='top'>Previous: {previousPost.title}</TooltipContent>
         </Tooltip>
       ) : (
-        <Button className='rounded-[8px]' variant='outline' disabled aria-label='No previous post available'>
-          <ChevronLeftIcon className='size-4' aria-hidden='true' />
-          Previous Post
-        </Button>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <span className='inline-block'>
+              <Button className='rounded-[8px]' variant='outline' disabled aria-label='No previous post available'>
+                <ChevronLeftIcon className='size-4' aria-hidden='true' />
+                Previous Post
+              </Button>
+            </span>
+          </TooltipTrigger>
+          <TooltipContent side='top'>This is the first post</TooltipContent>
+        </Tooltip>
       )}
 
       {nextPost ? (
@@ -132,15 +139,22 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
           <TooltipContent side='top'>Next: {nextPost.title}</TooltipContent>
         </Tooltip>
       ) : (
-        <Button
-          className='ml-auto rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
-          variant='outline'
-          disabled
-          aria-label='No next post available'
-        >
-          Next Post
-          <ChevronRightIcon className='size-4' aria-hidden='true' />
-        </Button>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <span className='inline-block'>
+              <Button
+                className='ml-auto rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
+                variant='outline'
+                disabled
+                aria-label='No next post available'
+              >
+                Next Post
+                <ChevronRightIcon className='size-4' aria-hidden='true' />
+              </Button>
+            </span>
+          </TooltipTrigger>
+          <TooltipContent side='top'>This is the latest post</TooltipContent>
+        </Tooltip>
       )}
     </div>
   )
