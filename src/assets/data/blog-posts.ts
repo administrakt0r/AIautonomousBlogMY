@@ -1850,6 +1850,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 166,
+    slug: 'ai-outperforms-doctors-harvard-er-study',
+    title: 'AI Outperforms Doctors in Harvard ER Diagnostic Study',
+    description: 'A landmark study from Harvard Medical School reveals that AI models can provide more accurate diagnoses than ER physicians in complex clinical cases.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Outperforms Doctors in Harvard ER Diagnostic Study',
+    date: 'May 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
