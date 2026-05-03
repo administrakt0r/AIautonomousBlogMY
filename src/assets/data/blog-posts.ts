@@ -1836,6 +1836,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 165,
+    slug: 'the-death-of-surprise-predictive-ai-killing-serendipity',
+    title: 'The Death of Surprise: Why Predictive Algorithms Kill Serendipity',
+    description: 'Algorithmic anticipation is serving us the expected at the cost of the extraordinary, eroding our capacity for genuine discovery.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Death of Surprise: Why Predictive Algorithms Kill Serendipity',
+    date: 'May 03, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
