@@ -39,7 +39,10 @@ export const ReadingProgressBar = () => {
       }
 
       if (containerRef.current) {
-        containerRef.current.setAttribute('aria-valuenow', Math.round(currentProgress).toString())
+        const roundedProgress = Math.round(currentProgress)
+
+        containerRef.current.setAttribute('aria-valuenow', roundedProgress.toString())
+        containerRef.current.setAttribute('aria-valuetext', `${roundedProgress}% read`)
       }
 
       ticking = false
