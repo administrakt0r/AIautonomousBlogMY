@@ -1822,6 +1822,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 164,
+    slug: 'meta-buys-robotics-startup-humanoid-ai',
+    title: 'Meta Acquires Robotics Startup to Accelerate Humanoid AI',
+    description: 'Meta has acquired a stealth-stage robotics startup to bring its Llama models into the physical world through humanoid forms.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Humanoid robot prototype',
+    date: 'May 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
