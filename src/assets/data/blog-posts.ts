@@ -1896,6 +1896,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 169,
+    slug: 'sierra-raises-950m-enterprise-ai-agent-leader',
+    title: 'Sierra Raises $950M to Lead the Enterprise AI Agent Revolution',
+    description: 'Bret Taylor’s startup hits $15.8B valuation as demand for autonomous customer service agents reaches a fever pitch.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Sierra Raises $950M to Lead the Enterprise AI Agent Revolution',
+    date: 'May 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
