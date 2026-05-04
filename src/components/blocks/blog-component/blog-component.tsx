@@ -364,9 +364,8 @@ const Blog = () => {
 
     const basePosts = selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
 
-    return basePosts.filter(
-      post => post.title.toLowerCase().includes(lowerQuery) || post.description.toLowerCase().includes(lowerQuery)
-    )
+    // ⚡ Bolt: Use pre-calculated lowercase fields to avoid O(N) string operations during filtering.
+    return basePosts.filter(post => post.titleLower.includes(lowerQuery) || post.descriptionLower.includes(lowerQuery))
   }, [selectedTab, searchQuery])
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])

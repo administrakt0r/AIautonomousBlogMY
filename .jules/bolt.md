@@ -27,3 +27,7 @@
 ## 2026-04-09 - Avoid Committing Build Artifacts and Logs
 **Learning:** Running generation scripts (like `pnpm generate:derived`) can produce massive diffs in build artifacts (like `public/rss.xml`) or temporary logs (like `dev_server.log`) that shouldn't be committed.
 **Action:** Always verify `git status` before submission and revert changes to artifacts unless they are specifically part of the task.
+
+## 2026-05-04 - Search Filter and Regex Optimization
+**Learning:** Performing $O(N \cdot L)$ string operations (like `.toLowerCase()`) inside a `useMemo` filter that triggers on every keystroke can cause noticeable input lag as the dataset grows. Additionally, re-compiling the same `RegExp` in every instance of a list item's sub-component adds unnecessary CPU overhead.
+**Action:** Pre-calculate lowercase search fields in the data layer during the initial data pass. Implement a module-level cache for `RegExp` objects in shared UI components (like `Highlight`) to avoid redundant compilation and use early returns to skip processing for non-matching strings.
