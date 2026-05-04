@@ -5,6 +5,9 @@ interface HighlightProps {
   query: string
 }
 
+// ⚡ Bolt: Module-level cache for RegExp objects to avoid redundant regex creation across components.
+const regexCache = new Map<string, RegExp>()
+
 /**
  * ⚡ Bolt: Memoized Highlight component to prevent unnecessary re-renders.
  * Also memoizes the regex creation and string split operation to avoid redundant work.
@@ -17,14 +20,21 @@ export const Highlight = React.memo(({ text, query }: HighlightProps) => {
   const parts = useMemo(() => {
     if (!trimmedQuery) return [text]
 
-    // ⚡ Bolt: Escape regex special characters and use 'gi' for case-insensitive global matching.
-    const escapedQuery = trimmedQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    const regex = new RegExp(`(${escapedQuery})`, 'gi')
+    // ⚡ Bolt: Use cached regex if available to avoid expensive RegExp instantiation.
+    let regex = regexCache.get(trimmedQuery)
+
+    if (!regex) {
+      // ⚡ Bolt: Escape regex special characters and use 'gi' for case-insensitive global matching.
+      const escapedQuery = trimmedQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+      regex = new RegExp(`(${escapedQuery})`, 'gi')
+      regexCache.set(trimmedQuery, regex)
+    }
 
     return text.split(regex)
   }, [text, trimmedQuery])
 
-  if (!trimmedQuery) {
+  if (!trimmedQuery || parts.length <= 1) {
     return <>{text}</>
   }
 

@@ -26,6 +26,10 @@ export type BlogPost = {
   dateIso: string
   url: string
   index: number
+
+  // ⚡ Bolt: Pre-calculated lowercase fields for O(1) case-insensitive search matching.
+  titleLower: string
+  descriptionLower: string
 }
 
 /**
@@ -35,7 +39,7 @@ export type BlogPost = {
  */
 type RawBlogPost = Omit<
   BlogPost,
-  'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'index' | 'url' | 'featured' | 'imageAlt'
+  'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'index' | 'url' | 'featured' | 'imageAlt' | 'titleLower' | 'descriptionLower'
 > & {
   featured?: boolean
   author?: string
@@ -1927,7 +1931,9 @@ for (let i = dataLen - 1; i >= 0; i--) {
     featured: rawPost.featured ?? false,
     dateIso: new Date(rawPost.date).toISOString(),
     url: getPostUrl(rawPost.slug),
-    index: i
+    index: i,
+    titleLower: rawPost.title.toLowerCase(),
+    descriptionLower: rawPost.description.toLowerCase()
   }
 
   // Populate maps and original-order array
