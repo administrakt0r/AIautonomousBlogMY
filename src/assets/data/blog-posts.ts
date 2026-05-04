@@ -1878,6 +1878,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 168,
+    slug: 'the-fluency-fallacy-why-chatbots-arent-thinking',
+    title: 'The Fluency Fallacy: Why Your Chatbot Isn’t Actually Thinking',
+    description: 'We are mistaking linguistic competence for cognitive capacity, granting proto-AGI status to what is essentially a sophisticated parrot.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Fluency Fallacy: Why Your Chatbot Isn’t Actually Thinking',
+    date: 'May 04, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
