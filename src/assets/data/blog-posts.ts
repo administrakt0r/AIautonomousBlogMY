@@ -1910,6 +1910,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 170,
+    slug: 'openai-pwc-finance-ai-agents',
+    title: 'OpenAI and PwC Partner to Revolutionize Finance with AI Agents',
+    description: 'A strategic collaboration aims to automate CFO workflows and modernize corporate finance through specialized agentic AI systems.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI and PwC Partner to Revolutionize Finance with AI Agents',
+    date: 'May 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
