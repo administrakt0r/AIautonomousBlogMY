@@ -31,3 +31,7 @@
 ## 2026-05-04 - Search Filter and Regex Optimization
 **Learning:** Performing $O(N \cdot L)$ string operations (like `.toLowerCase()`) inside a `useMemo` filter that triggers on every keystroke can cause noticeable input lag as the dataset grows. Additionally, re-compiling the same `RegExp` in every instance of a list item's sub-component adds unnecessary CPU overhead.
 **Action:** Pre-calculate lowercase search fields in the data layer during the initial data pass. Implement a module-level cache for `RegExp` objects in shared UI components (like `Highlight`) to avoid redundant compilation and use early returns to skip processing for non-matching strings.
+
+## 2026-05-05 - Constant Hoisting and URI Pre-calculation
+**Learning:** Performing redundant string manipulations or URI encoding (like `encodeURIComponent`) inside loops during module initialization or within React render paths adds measurable overhead as the dataset grows.
+**Action:** Hoist constant URL calculations outside of generation loops in server-side modules and pre-calculate complex URI strings (like category-specific anchor links) in the data layer to minimize runtime processing in both Server and Client Components.

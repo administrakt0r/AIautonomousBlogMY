@@ -25,6 +25,7 @@ export type BlogPost = {
   featured: boolean
   dateIso: string
   url: string
+  categoryUrl: string
   index: number
 
   // ⚡ Bolt: Pre-calculated lowercase fields for O(1) case-insensitive search matching.
@@ -39,7 +40,7 @@ export type BlogPost = {
  */
 type RawBlogPost = Omit<
   BlogPost,
-  'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'index' | 'url' | 'featured' | 'imageAlt' | 'titleLower' | 'descriptionLower'
+  'author' | 'avatarUrl' | 'imageUrl' | 'dateIso' | 'index' | 'url' | 'categoryUrl' | 'featured' | 'imageAlt' | 'titleLower' | 'descriptionLower'
 > & {
   featured?: boolean
   author?: string
@@ -1822,10 +1823,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Academy Awards logo',
     date: 'May 02, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 4,
-    featured: false
+    readTime: 4
   },
   {
     id: 164,
@@ -1836,10 +1834,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Humanoid robot prototype',
     date: 'May 03, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 165,
@@ -1850,10 +1845,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Death of Surprise: Why Predictive Algorithms Kill Serendipity',
     date: 'May 03, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 166,
@@ -1864,10 +1856,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'AI Outperforms Doctors in Harvard ER Diagnostic Study',
     date: 'May 03, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 6,
-    featured: false
+    readTime: 6
   },
   {
     id: 167,
@@ -1878,10 +1867,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Physical AI Governance: Managing Risks in Autonomous Systems',
     date: 'May 04, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 168,
@@ -1892,10 +1878,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Fluency Fallacy: Why Your Chatbot Isn’t Actually Thinking',
     date: 'May 04, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 6,
-    featured: false
+    readTime: 6
   },
   {
     id: 169,
@@ -1906,10 +1889,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Sierra Raises $950M to Lead the Enterprise AI Agent Revolution',
     date: 'May 04, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 170,
@@ -1920,10 +1900,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'OpenAI and PwC Partner to Revolutionize Finance with AI Agents',
     date: 'May 05, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   },
   {
     id: 171,
@@ -1934,10 +1911,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Illusion of Choice: How Agentic Commerce Kills the Marketplace',
     date: 'May 05, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false
+    readTime: 5
   }
 ]
 
@@ -1973,6 +1947,7 @@ for (let i = dataLen - 1; i >= 0; i--) {
     featured: rawPost.featured ?? false,
     dateIso: new Date(rawPost.date).toISOString(),
     url: getPostUrl(rawPost.slug),
+    categoryUrl: `/#category-${encodeURIComponent(rawPost.category)}`,
     index: i,
     titleLower: rawPost.title.toLowerCase(),
     descriptionLower: rawPost.description.toLowerCase()
