@@ -158,7 +158,7 @@ const Footer = () => {
                 aria-label='administraktor.com (opens in a new tab)'
               >
                 administraktor.com
-                <ExternalLinkIcon className='size-3' />
+              <ExternalLinkIcon className='size-3' aria-hidden='true' />
               </a>
             </span>
           </p>
@@ -174,7 +174,7 @@ const Footer = () => {
                 aria-label='Email m@administraktor.com'
               >
                 m@administraktor.com
-                <ExternalLinkIcon className='size-3' />
+                <ExternalLinkIcon className='size-3' aria-hidden='true' />
               </a>
               <CopyEmailButton email='m@administraktor.com' />
             </div>

@@ -41,3 +41,7 @@
 ## 2026-04-11 - Contextualizing Actionable Links
 **Learning:** Raw email addresses or ambiguous external links can be confusing when encountered by screen readers without additional context. Appending "(opens in a new tab)" to external links and using "Email [address]" for mailto links provides immediate clarity on the link's behavior and intent.
 **Action:** Always provide descriptive `aria-label` attributes for external links and contact methods to ensure users understand exactly what will happen when they interact with them.
+
+## 2026-05-10 - [Accessible Feedback for Clipboard Actions]
+**Learning:** "Copy to clipboard" actions are often purely visual (icon change or tooltip). Adding a visually hidden `aria-live="polite"` region that announces success ensures that screen reader users receive immediate confirmation of the background action.
+**Action:** Always pair clipboard copy buttons with a hidden aria-live region to announce success milestones.

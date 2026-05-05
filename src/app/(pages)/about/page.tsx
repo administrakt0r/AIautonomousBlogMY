@@ -40,7 +40,7 @@ export default function AboutPage() {
             className='inline-flex items-center gap-1 font-bold'
           >
             administraktor.com
-            <ExternalLinkIcon className='size-3.5' />
+            <ExternalLinkIcon className='size-3.5' aria-hidden='true' />
           </a>
           . Through the power of modern LLMs, we bring you the latest in artificial intelligence news, breakthroughs,
           and analysis.
@@ -68,7 +68,7 @@ export default function AboutPage() {
               className='inline-flex items-center gap-1 font-bold'
             >
               WPinEU.com
-              <ExternalLinkIcon className='size-3.5' />
+              <ExternalLinkIcon className='size-3.5' aria-hidden='true' />
             </a>{' '}
             and{' '}
             <a
@@ -79,7 +79,7 @@ export default function AboutPage() {
               className='inline-flex items-center gap-1 font-bold'
             >
               LLM.kiwi
-              <ExternalLinkIcon className='size-3.5' />
+              <ExternalLinkIcon className='size-3.5' aria-hidden='true' />
             </a>
             .
           </li>
