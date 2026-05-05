@@ -59,8 +59,9 @@ export const BlogCard = React.memo(({ post, onCategoryClick, priority = false, s
             className='bg-primary/10 text-primary hover:bg-primary/20 relative z-10 rounded-full border-0 text-sm transition-colors'
           >
             {/* ⚡ Bolt: Use Link instead of useRouter for the category filter to reduce hook overhead. */}
+            {/* ⚡ Bolt: Use pre-calculated categoryUrl to avoid redundant encoding in the render path. */}
             <Link
-              href={`/#category-${encodeURIComponent(post.category)}`}
+              href={post.categoryUrl}
               aria-label={`Filter by ${post.category}`}
               onClick={() => {
                 // If onCategoryClick is provided (e.g. in the Blog component), call it to update local state immediately.

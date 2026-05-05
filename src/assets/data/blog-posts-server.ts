@@ -9,8 +9,7 @@ import {
 import {
   SITE_URL,
   PUBLISHER_LOGO_PATH,
-  getAbsoluteUrl,
-  getPostUrl
+  getAbsoluteUrl
 } from '../../lib/site'
 
 /**
@@ -25,10 +24,16 @@ export const blogPostsJsonLdString = new Map<string, string>()
 // Fallback: pick from latest posts if category has fewer than 4 posts.
 const globalLatestFallback = sortedBlogPosts.slice(0, 4)
 
+// ⚡ Bolt: Hoist constant URL calculations outside the generation loop.
+const ABOUT_URL = getAbsoluteUrl('/about')
+const PUBLISHER_LOGO_URL = getAbsoluteUrl(PUBLISHER_LOGO_PATH)
+const BLOG_HOME_ANCHOR = `${SITE_URL}/#blog`
+const CATEGORIES_HOME_ANCHOR = `${SITE_URL}/#categories`
+
 // ⚡ Bolt: Pre-calculate JSON-LD and Related Posts for all blog posts.
 sortedBlogPosts.forEach((post) => {
   // 1. JSON-LD
-  const postUrl = getPostUrl(post.slug)
+  const postUrl = post.url
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -44,7 +49,7 @@ sortedBlogPosts.forEach((post) => {
         author: {
           '@type': 'Person',
           name: post.author,
-          url: getAbsoluteUrl('/about')
+          url: ABOUT_URL
         },
         publisher: {
           '@type': 'Organization',
@@ -52,7 +57,7 @@ sortedBlogPosts.forEach((post) => {
           url: SITE_URL,
           logo: {
             '@type': 'ImageObject',
-            url: getAbsoluteUrl(PUBLISHER_LOGO_PATH)
+            url: PUBLISHER_LOGO_URL
           }
         },
         mainEntityOfPage: {
@@ -64,7 +69,7 @@ sortedBlogPosts.forEach((post) => {
         inLanguage: 'en-US',
         isPartOf: {
           '@type': 'Blog',
-          '@id': `${SITE_URL}/#blog`,
+          '@id': BLOG_HOME_ANCHOR,
           name: 'ShtefAI blog',
           url: SITE_URL
         }
@@ -82,7 +87,7 @@ sortedBlogPosts.forEach((post) => {
             '@type': 'ListItem',
             position: 2,
             name: 'Blog',
-            item: `${SITE_URL}/#categories`
+            item: CATEGORIES_HOME_ANCHOR
           },
           {
             '@type': 'ListItem',
