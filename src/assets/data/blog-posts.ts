@@ -1924,6 +1924,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 171,
+    slug: 'the-illusion-of-choice-agentic-commerce',
+    title: 'The Illusion of Choice: How Agentic Commerce Kills the Marketplace',
+    description: 'As AI agents begin to handle transactions and negotiations, the concept of a free marketplace dissolves into an algorithmic closed loop.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Illusion of Choice: How Agentic Commerce Kills the Marketplace',
+    date: 'May 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
