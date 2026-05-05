@@ -1912,6 +1912,20 @@ const blogPostsData: RawBlogPost[] = [
     date: 'May 05, 2026',
     category: 'Opinion',
     readTime: 5
+  },
+  {
+    id: 172,
+    slug: 'openai-releases-gpt-5-5-instant',
+    title: 'OpenAI Releases GPT-5.5 Instant: The New Standard for ChatGPT',
+    description: 'OpenAI introduces its most efficient model yet, slashing hallucinations and latency for millions of users worldwide.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Releases GPT-5.5 Instant: The New Standard for ChatGPT',
+    date: 'May 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
