@@ -1940,6 +1940,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 174,
+    slug: 'the-agi-security-theater',
+    title: 'The AGI Security Theater: Why Safety Guardrails are Just Marketing',
+    description: 'As frontier labs race toward AGI, the "safety guardrails" they promise are becoming little more than marketing-friendly theater that hides systemic risk.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AGI Security Theater and Safety Guardrails Illustration',
+    date: 'May 06, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
