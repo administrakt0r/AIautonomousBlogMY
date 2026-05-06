@@ -91,7 +91,7 @@ const Footer = () => {
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-blue-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-blue-700 dark:text-blue-400'>
                   <span className='text-lg' aria-hidden='true'>🌐</span> WPinEU.com
-                  <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-colors group-hover:text-blue-700 dark:group-hover:text-blue-400' />
+                  <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-blue-700 dark:group-hover:text-blue-400' />
                 </div>
                 <p className='pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>
                   High-performance Digital Architecture & Free WordPress Hosting Initiative.
@@ -110,7 +110,7 @@ const Footer = () => {
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-purple-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-purple-700 dark:text-purple-400'>
                   <span className='text-lg' aria-hidden='true'>🥝</span> LLM.kiwi
-                  <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-colors group-hover:text-purple-700 dark:group-hover:text-purple-400' />
+                  <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-purple-700 dark:group-hover:text-purple-400' />
                 </div>
                 <p className='pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>
                   Your next-gen platform for interacting with intelligent systems & LLM API access.
@@ -158,7 +158,10 @@ const Footer = () => {
                 aria-label='administraktor.com (opens in a new tab)'
               >
                 administraktor.com
-              <ExternalLinkIcon className='size-3' aria-hidden='true' />
+                <ExternalLinkIcon
+                  className='ml-1 size-3 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                  aria-hidden='true'
+                />
               </a>
             </span>
           </p>
@@ -170,11 +173,14 @@ const Footer = () => {
             <div className='mt-1 flex items-center gap-1'>
               <a
                 href='mailto:m@administraktor.com'
-                className='hover:text-primary inline-flex items-center gap-1 underline underline-offset-2'
+                className='hover:text-primary group inline-flex items-center gap-1 underline underline-offset-2'
                 aria-label='Email m@administraktor.com'
               >
                 m@administraktor.com
-                <ExternalLinkIcon className='size-3' aria-hidden='true' />
+                <ExternalLinkIcon
+                  className='size-3 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                  aria-hidden='true'
+                />
               </a>
               <CopyEmailButton email='m@administraktor.com' />
             </div>

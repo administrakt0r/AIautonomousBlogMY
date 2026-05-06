@@ -20,14 +20,17 @@ const components = {
     return (
       <a
         href={href}
-        className='text-primary underline underline-offset-4 transition-colors hover:text-primary/80'
+        className='text-primary group underline underline-offset-4 transition-colors hover:text-primary/80'
         {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         {...props}
       >
         {children}
         {isExternal && (
           <span className='ml-1 inline-flex items-center gap-1'>
-            <ExternalLinkIcon className='size-3.5' aria-hidden='true' />
+            <ExternalLinkIcon
+              className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+              aria-hidden='true'
+            />
             <span className='sr-only'>(opens in a new tab)</span>
           </span>
         )}

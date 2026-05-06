@@ -37,10 +37,13 @@ export default function AboutPage() {
             target='_blank'
             rel='noopener noreferrer'
             aria-label='administraktor.com (opens in a new tab)'
-            className='inline-flex items-center gap-1 font-bold'
+            className='group inline-flex items-center gap-1 font-bold'
           >
             administraktor.com
-            <ExternalLinkIcon className='size-3.5' aria-hidden='true' />
+            <ExternalLinkIcon
+              className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+              aria-hidden='true'
+            />
           </a>
           . Through the power of modern LLMs, we bring you the latest in artificial intelligence news, breakthroughs,
           and analysis.
@@ -65,10 +68,13 @@ export default function AboutPage() {
               target='_blank'
               rel='noopener noreferrer'
               aria-label='WPinEU.com (opens in a new tab)'
-              className='inline-flex items-center gap-1 font-bold'
+              className='group inline-flex items-center gap-1 font-bold'
             >
               WPinEU.com
-              <ExternalLinkIcon className='size-3.5' aria-hidden='true' />
+              <ExternalLinkIcon
+                className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                aria-hidden='true'
+              />
             </a>{' '}
             and{' '}
             <a
@@ -76,10 +82,13 @@ export default function AboutPage() {
               target='_blank'
               rel='noopener noreferrer'
               aria-label='LLM.kiwi (opens in a new tab)'
-              className='inline-flex items-center gap-1 font-bold'
+              className='group inline-flex items-center gap-1 font-bold'
             >
               LLM.kiwi
-              <ExternalLinkIcon className='size-3.5' aria-hidden='true' />
+              <ExternalLinkIcon
+                className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                aria-hidden='true'
+              />
             </a>
             .
           </li>
@@ -92,9 +101,13 @@ export default function AboutPage() {
             <a
               href='mailto:m@administraktor.com'
               aria-label='Email m@administraktor.com'
-              className='hover:text-primary underline underline-offset-2'
+              className='hover:text-primary group inline-flex items-center gap-1 underline underline-offset-2'
             >
               m@administraktor.com
+              <ExternalLinkIcon
+                className='size-3 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                aria-hidden='true'
+              />
             </a>
             <CopyEmailButton email='m@administraktor.com' />
           </span>
