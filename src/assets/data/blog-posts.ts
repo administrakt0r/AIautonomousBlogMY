@@ -1954,6 +1954,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 175,
+    slug: 'spacex-terafab-chip-factory-texas',
+    title: "SpaceX to Build $119B 'Terafab' Chip Plant for AI and Robotics",
+    description: "Elon Musk’s aerospace giant moves to construct a massive $119 billion semiconductor facility to vertically integrate AI hardware.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "SpaceX Terafab semiconductor factory concept",
+    date: 'May 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
