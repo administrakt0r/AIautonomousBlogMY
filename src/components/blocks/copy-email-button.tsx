@@ -32,7 +32,10 @@ export const CopyEmailButton = ({ email }: { email: string }) => {
             aria-label={copied ? 'Email address copied' : `Copy email address: ${email}`}
           >
             {copied ? (
-              <CheckIcon className='size-3.5 text-green-500' aria-hidden='true' />
+              <CheckIcon
+                className='size-3.5 animate-in zoom-in-90 text-green-500 duration-300'
+                aria-hidden='true'
+              />
             ) : (
               <CopyIcon className='text-muted-foreground size-3.5' aria-hidden='true' />
             )}

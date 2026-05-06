@@ -41,7 +41,9 @@ const TocLink = React.memo(
       >
         <span
           aria-hidden='true'
-          className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${isActive ? 'bg-primary' : 'bg-primary/40'}`}
+          className={`mt-2.5 inline-block h-0.5 shrink-0 transition-all duration-300 ${
+            isActive ? 'bg-primary w-5' : 'bg-primary/40 w-3'
+          }`}
         ></span>
         <span>{title}</span>
       </button>
