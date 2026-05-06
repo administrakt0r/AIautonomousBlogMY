@@ -1926,6 +1926,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 173,
+    slug: 'sap-acquires-prior-labs-for-enterprise-ai',
+    title: 'SAP Inks $1.16B Deal for Prior Labs to Accelerate Enterprise AI',
+    description: 'SAP acquires Munich-based Prior Labs to integrate advanced agentic AI and specialized tabular data models into its enterprise ecosystem.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SAP Logo and AI brain representing enterprise intelligence',
+    date: 'May 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
