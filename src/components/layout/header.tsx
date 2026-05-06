@@ -65,9 +65,11 @@ const Header = ({ navigationData, className }: HeaderProps) => {
     // ⚡ Bolt: Only observe sections that are actually in the navigation data.
     // This avoids redundant tracking of sections that don't have a corresponding navigation link.
     navigationData.forEach(navItem => {
-      const sectionId = navItem.sectionId || (navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', ''))
+      // ⚡ Bolt: Use pre-calculated sectionId to avoid string manipulations during effect setup.
+      // ⚡ Bolt: Only observe hash-based sections that exist on the current page.
+      const sectionId = navItem.sectionId
 
-      if (sectionId && sectionId.startsWith('/') === false) {
+      if (sectionId && (navItem.href?.includes('#') || navItem.href === '/')) {
         const element = document.getElementById(sectionId)
 
         if (element) {

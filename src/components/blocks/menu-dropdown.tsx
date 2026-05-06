@@ -95,8 +95,11 @@ const MenuDropdown = React.memo(({ trigger, navigationData, activeSection, align
       >
         {navigationData.map(navItem => {
           // ⚡ Bolt: Move isActive comparison logic to the parent loop.
-          // ⚡ Bolt: Use pre-calculated sectionId if available to avoid string manipulations during scroll.
-          const sectionId = navItem.sectionId || (navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', ''))
+          // ⚡ Bolt: Use pre-calculated sectionId to avoid string manipulations during scroll,
+          // with a safe fallback for items that don't have it explicitly defined.
+          const sectionId =
+            navItem.sectionId || (navItem.href === '/#' ? 'home' : navItem.href?.split('#')[1] || '')
+
           const isActive = !!sectionId && sectionId === activeSection
 
           return <DropdownNavItem key={navItem.title} navItem={navItem} isActive={isActive} />
