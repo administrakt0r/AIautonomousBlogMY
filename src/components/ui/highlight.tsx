@@ -3,6 +3,7 @@ import React, { useMemo } from 'react'
 interface HighlightProps {
   text: string
   query: string
+  lowerText?: string
 }
 
 // ⚡ Bolt: Module-level cache for RegExp objects to avoid redundant regex creation across components.
@@ -14,11 +15,20 @@ const regexCache = new Map<string, RegExp>()
  * This is particularly effective in large grids where multiple items might otherwise
  * re-run regex logic when unrelated state updates.
  */
-export const Highlight = React.memo(({ text, query }: HighlightProps) => {
+export const Highlight = React.memo(({ text, query, lowerText }: HighlightProps) => {
   const trimmedQuery = query.trim()
+  const lowerQuery = useMemo(() => trimmedQuery.toLowerCase(), [trimmedQuery])
 
   const parts = useMemo(() => {
     if (!trimmedQuery) return [text]
+
+    // ⚡ Bolt: Use pre-calculated lowercase text (if available) for a fast O(N) check
+    // before performing the more expensive regex split operation.
+    const searchTarget = lowerText ?? text.toLowerCase()
+
+    if (!searchTarget.includes(lowerQuery)) {
+      return [text]
+    }
 
     // ⚡ Bolt: Use cached regex if available to avoid expensive RegExp instantiation.
     let regex = regexCache.get(trimmedQuery)
@@ -32,7 +42,7 @@ export const Highlight = React.memo(({ text, query }: HighlightProps) => {
     }
 
     return text.split(regex)
-  }, [text, trimmedQuery])
+  }, [text, trimmedQuery, lowerText, lowerQuery])
 
   if (!trimmedQuery || parts.length <= 1) {
     return <>{text}</>
@@ -41,7 +51,7 @@ export const Highlight = React.memo(({ text, query }: HighlightProps) => {
   return (
     <>
       {parts.map((part, i) =>
-        part.toLowerCase() === trimmedQuery.toLowerCase() ? (
+        part.toLowerCase() === lowerQuery ? (
           <mark key={i} className='bg-primary/20 text-foreground rounded-sm px-0.5'>
             {part}
           </mark>

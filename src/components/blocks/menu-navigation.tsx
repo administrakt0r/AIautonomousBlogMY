@@ -91,8 +91,11 @@ const MenuNavigation = React.memo(({ navigationData, activeSection, className }:
           // ⚡ Bolt: Move isActive comparison logic to the parent loop.
           // This ensures that NavItem only re-renders if its specific isActive state changes,
           // instead of re-rendering every time activeSection updates.
-          // ⚡ Bolt: Use pre-calculated sectionId if available to avoid string manipulations during scroll.
-          const sectionId = navItem.sectionId || (navItem.href === '/#' ? 'home' : navItem.href?.replace('/#', ''))
+          // ⚡ Bolt: Use pre-calculated sectionId to avoid string manipulations during scroll,
+          // with a safe fallback for items that don't have it explicitly defined.
+          const sectionId =
+            navItem.sectionId || (navItem.href === '/#' ? 'home' : navItem.href?.split('#')[1] || '')
+
           const isActive = !!sectionId && sectionId === activeSection
 
           return <NavItem key={navItem.title} navItem={navItem} isActive={isActive} />

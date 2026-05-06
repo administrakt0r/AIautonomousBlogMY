@@ -1976,9 +1976,20 @@ export const blogPostsBySlug = new Map<string, BlogPost>()
 export const postsByCategory = new Map<string, BlogPost[]>()
 export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
 
+// ⚡ Bolt: Use a module-level cache for category URLs to avoid redundant encodeURIComponent calls.
+const categoryUrlCache = new Map<string, string>()
+
 for (let i = dataLen - 1; i >= 0; i--) {
 
   const rawPost = blogPostsData[i]
+
+
+  let categoryUrl = categoryUrlCache.get(rawPost.category)
+
+  if (!categoryUrl) {
+    categoryUrl = `/#category-${encodeURIComponent(rawPost.category)}`
+    categoryUrlCache.set(rawPost.category, categoryUrl)
+  }
 
   const post: BlogPost = {
     ...rawPost,
@@ -1989,7 +2000,7 @@ for (let i = dataLen - 1; i >= 0; i--) {
     featured: rawPost.featured ?? false,
     dateIso: new Date(rawPost.date).toISOString(),
     url: getPostUrl(rawPost.slug),
-    categoryUrl: `/#category-${encodeURIComponent(rawPost.category)}`,
+    categoryUrl,
     index: i,
     titleLower: rawPost.title.toLowerCase(),
     descriptionLower: rawPost.description.toLowerCase()
