@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 
-import { Inter, Source_Serif_4, IBM_Plex_Mono } from 'next/font/google'
+// ⚡ Bolt: Removed unused 'Source_Serif_4' font to reduce the number of font requests and total payload.
+import { Inter, IBM_Plex_Mono } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import { ThemeProvider } from '@/components/theme-provider'
@@ -24,16 +25,12 @@ const inter = Inter({
   display: 'swap'
 })
 
-const sourceSerif4 = Source_Serif_4({
-  variable: '--font-source-serif-4',
-  subsets: ['latin'],
-  display: 'swap'
-})
-
+// ⚡ Bolt: Reduced font weight loading for IBM Plex Mono to '400' and '500' only.
+// This minimizes the font payload as it's only used for small UI elements like <kbd> tags.
 const ibmPlexMono = IBM_Plex_Mono({
   variable: '--font-ibm-plex-mono',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500'],
   display: 'swap'
 })
 
@@ -141,7 +138,6 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       lang='en'
       className={cn(
         inter.variable,
-        sourceSerif4.variable,
         ibmPlexMono.variable,
         'flex min-h-full w-full scroll-smooth'
       )}

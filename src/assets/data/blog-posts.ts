@@ -37,6 +37,9 @@ export type BlogPost = {
  * ⚡ Bolt: Optimized RawBlogPost type.
  * By removing redundant fields (author, avatarUrl, imageUrl) and making 'featured' optional,
  * we significantly reduce the size of the source data array and the initial bundle.
+ * ⚡ Bolt: Further optimized by removing explicit default values (author: 'Shtef',
+ * avatarUrl: '/images/avatars/1.webp', featured: false) from the data entries below,
+ * as they are now injected during the single-pass module initialization.
  */
 type RawBlogPost = Omit<
   BlogPost,
@@ -1922,10 +1925,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'OpenAI Releases GPT-5.5 Instant: The New Standard for ChatGPT',
     date: 'May 05, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 173,
@@ -1936,10 +1936,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'SAP Logo and AI brain representing enterprise intelligence',
     date: 'May 06, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 174,
@@ -1950,10 +1947,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'AGI Security Theater and Safety Guardrails Illustration',
     date: 'May 06, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 175,
@@ -1964,10 +1958,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: "SpaceX Terafab semiconductor factory concept",
     date: 'May 06, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 176,
@@ -1978,10 +1969,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'SpaceX Colossus cluster and AI compute visualization',
     date: 'May 07, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
-    featured: false
   },
   {
     id: 177,
@@ -1992,10 +1980,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'AI chatbot interface illustration',
     date: 'May 07, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   }
 ]
 
