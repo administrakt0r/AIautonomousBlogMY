@@ -1981,6 +1981,20 @@ const blogPostsData: RawBlogPost[] = [
     date: 'May 07, 2026',
     category: 'Opinion',
     readTime: 6,
+  },
+  {
+    id: 178,
+    slug: 'perplexity-personal-computer-mac-launch',
+    title: 'Perplexity Launches Personal Computer for Mac: Local AI Agent Era',
+    description: 'Perplexity releases Personal Computer for Mac, allowing autonomous AI agents to access local files and applications to automate complex professional workflows.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Perplexity Personal Computer for Mac illustration',
+    date: 'May 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
