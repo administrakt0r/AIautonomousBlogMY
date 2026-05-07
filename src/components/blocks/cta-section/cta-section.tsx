@@ -1,7 +1,7 @@
 'use client'
 
 // Component Imports
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 import Image from 'next/image'
 import { Loader2Icon, CheckCircleIcon } from 'lucide-react'
@@ -14,6 +14,15 @@ import { Label } from '@/components/ui/label'
 const CTA = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubscribed, setIsSubscribed] = useState(false)
+
+  const emailInputRef = useRef<HTMLInputElement>(null)
+
+  const handleReset = () => {
+    setIsSubscribed(false)
+    setTimeout(() => {
+      emailInputRef.current?.focus()
+    }, 0)
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -57,9 +66,14 @@ const CTA = () => {
                     {/* Email Form */}
                     <div aria-live='polite' role='status'>
                       {isSubscribed ? (
-                        <div className='flex items-center gap-2 py-3 text-green-600 dark:text-green-400'>
-                          <CheckCircleIcon className='size-5' aria-hidden='true' />
-                          <span className='font-medium'>Thanks for subscribing! Check your inbox soon.</span>
+                        <div className='flex flex-col items-start gap-2 py-3'>
+                          <div className='flex items-center gap-2 text-green-600 dark:text-green-400'>
+                            <CheckCircleIcon className='size-5' aria-hidden='true' />
+                            <span className='font-medium'>Thanks for subscribing! Check your inbox soon.</span>
+                          </div>
+                          <Button onClick={handleReset} variant='link' className='h-auto p-0 text-sm'>
+                            Subscribe with another email
+                          </Button>
                         </div>
                       ) : (
                         <form className='gap-3 py-1 max-sm:space-y-2 sm:flex sm:flex-row' onSubmit={handleSubmit}>
@@ -68,6 +82,7 @@ const CTA = () => {
                           </Label>
                           <Input
                             id='cta-email'
+                            ref={emailInputRef}
                             name='email'
                             type='email'
                             placeholder='Your email'
