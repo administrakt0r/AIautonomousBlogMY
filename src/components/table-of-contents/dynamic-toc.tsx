@@ -35,7 +35,7 @@ const TocLink = React.memo(
         onClick={() => onClick(id)}
         aria-label={`${isSubtitle ? 'Scroll to subsection' : 'Scroll to section'}: ${title}`}
         aria-current={isActive ? 'location' : undefined}
-        className={`flex items-start gap-2 text-left transition-colors ${
+        className={`focus-visible:border-ring focus-visible:ring-ring/50 flex items-start gap-2 rounded-sm text-left transition-colors outline-none focus-visible:ring-[3px] ${
           isActive ? 'text-foreground font-medium' : 'text-muted-foreground hover:text-foreground'
         }`}
       >
