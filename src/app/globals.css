@@ -122,7 +122,6 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-source-serif-4);
   --font-mono: var(--font-ibm-plex-mono);
 
   --radius-sm: calc(var(--radius) - 4px);
