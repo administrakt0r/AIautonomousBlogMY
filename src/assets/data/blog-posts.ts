@@ -1968,6 +1968,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 176,
+    slug: 'anthropic-spacex-compute-deal',
+    title: 'Anthropic Partners With SpaceX for AI Compute Boost',
+    description: 'Anthropic secures a massive compute deal with SpaceX’s Colossus cluster to accelerate Claude 4 development.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SpaceX Colossus cluster and AI compute visualization',
+    date: 'May 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
