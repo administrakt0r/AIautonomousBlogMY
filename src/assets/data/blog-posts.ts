@@ -1995,6 +1995,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 179,
+    slug: 'openai-launches-new-voice-intelligence-features-in-its-api',
+    title: 'OpenAI Launches New Voice Intelligence Features in Realtime API',
+    description: 'OpenAI unveils GPT-Realtime-2, Translate, and Whisper models, enabling agentic voice interfaces with GPT-5 reasoning.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Realtime API Voice Intelligence features illustration',
+    date: 'May 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
