@@ -2009,6 +2009,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 180,
+    slug: 'the-digital-feudalism-ai-labs-as-the-new-landlords-of-thought',
+    title: 'The Digital Feudalism: Why AI Labs are the New Landlords of Thought',
+    description:
+      'The era of personal computing is being replaced by cognitive rental. Discover why outsourcing your intelligence is a dangerous deal.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Digital Feudalism: Why AI Labs are the New Landlords of Thought',
+    date: 'May 08, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
