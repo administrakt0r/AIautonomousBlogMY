@@ -2024,6 +2024,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 181,
+    slug: 'cloudflare-ai-efficiency-layoffs',
+    title: 'Cloudflare Cuts 1,100 Jobs as AI Efficiency Hits Record Highs',
+    description: 'The internet infrastructure giant reports record revenue while slashing 20% of its workforce, citing massive productivity gains from autonomous AI agents.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Cloudflare AI efficiency layoffs visualization',
+    date: 'May 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
