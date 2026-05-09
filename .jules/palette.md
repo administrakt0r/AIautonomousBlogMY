@@ -45,3 +45,11 @@
 ## 2026-05-10 - [Accessible Feedback for Clipboard Actions]
 **Learning:** "Copy to clipboard" actions are often purely visual (icon change or tooltip). Adding a visually hidden `aria-live="polite"` region that announces success ensures that screen reader users receive immediate confirmation of the background action.
 **Action:** Always pair clipboard copy buttons with a hidden aria-live region to announce success milestones.
+
+## 2026-05-10 - [Focus Management for Form Success States]
+**Learning:** Screen reader users need immediate feedback when an asynchronous form is successfully submitted. Programmatically focusing the success heading or container ensures the achievement is announced and prevents users from being left in a 'dead' form state.
+**Action:** Always pair form success states with a programmatic focus move to a heading or live-region-backed container using a `ref` and `useEffect`.
+
+## 2026-05-10 - [Clarifying Optional Form Fields]
+**Learning:** Explicitly marking optional fields reduces cognitive load and prevents users from guessing which fields are required, especially when using an asterisk (*) for required ones.
+**Action:** Append '(optional)' to the `<Label>` of non-mandatory inputs to provide clear guidance at a glance.

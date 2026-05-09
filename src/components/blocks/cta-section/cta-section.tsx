@@ -1,7 +1,7 @@
 'use client'
 
 // Component Imports
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 import Image from 'next/image'
 import { Loader2Icon, CheckCircleIcon } from 'lucide-react'
@@ -16,6 +16,14 @@ const CTA = () => {
   const [isSubscribed, setIsSubscribed] = useState(false)
 
   const emailInputRef = useRef<HTMLInputElement>(null)
+  const successMessageRef = useRef<HTMLDivElement>(null)
+
+  // 🎨 Palette: Focus the success message when the user subscribes to provide immediate feedback
+  useEffect(() => {
+    if (isSubscribed) {
+      successMessageRef.current?.focus()
+    }
+  }, [isSubscribed])
 
   const handleReset = () => {
     setIsSubscribed(false)
@@ -66,7 +74,11 @@ const CTA = () => {
                     {/* Email Form */}
                     <div aria-live='polite' role='status'>
                       {isSubscribed ? (
-                        <div className='flex flex-col items-start gap-2 py-3'>
+                        <div
+                          ref={successMessageRef}
+                          tabIndex={-1}
+                          className='flex flex-col items-start gap-2 py-3 outline-none'
+                        >
                           <div className='flex items-center gap-2 text-green-600 dark:text-green-400'>
                             <CheckCircleIcon className='size-5' aria-hidden='true' />
                             <span className='font-medium'>Thanks for subscribing! Check your inbox soon.</span>
