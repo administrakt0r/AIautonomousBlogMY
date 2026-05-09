@@ -2067,6 +2067,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 184,
+    slug: 'nvidia-commits-40b-ai-deals-2026',
+    title: 'Nvidia Commits $40B to AI Deals in 2026: The Strategic Moat',
+    description:
+      'Nvidia has already committed $40 billion to AI investments in early 2026, constructing a financial moat that secures its market dominance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia GPU and financial growth concept',
+    date: 'May 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
