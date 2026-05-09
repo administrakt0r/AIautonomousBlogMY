@@ -2052,6 +2052,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 183,
+    slug: 'the-llm-productivity-trap-why-more-code-means-less-software',
+    title: 'The LLM Productivity Trap: Why More Code Means Less Software',
+    description:
+      'By lowering the cost of code to near zero, we are creating a mountain of technical debt. Discover why infinite velocity is a trap.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The LLM Productivity Trap: Why More Code Means Less Software',
+    date: 'May 09, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
