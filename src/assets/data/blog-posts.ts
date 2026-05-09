@@ -2038,6 +2038,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 182,
+    slug: 'microsoft-openai-amazon-azure-drama',
+    title: 'Microsoft Feared OpenAI Would Defect to Amazon and Blast Azure',
+    description: 'Internal emails reveal high-stakes paranoia at Microsoft, fearing OpenAI would move to AWS and criticize Azure performance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Visualizing the high-stakes partnership between Microsoft and OpenAI',
+    date: 'May 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
