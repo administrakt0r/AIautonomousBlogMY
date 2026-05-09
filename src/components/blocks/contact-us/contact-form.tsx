@@ -66,7 +66,9 @@ const StaticInputs = React.memo(({ nameRef }: { nameRef: React.RefObject<HTMLInp
 
       {/* Phone Number Input */}
       <div className='space-y-2'>
-        <Label htmlFor='phone'>Phone Number</Label>
+        <Label htmlFor='phone'>
+          Phone Number <span className='text-muted-foreground font-normal'>(optional)</span>
+        </Label>
         <div className='relative'>
           <Input
             id='phone'
@@ -114,6 +116,14 @@ const ContactForm = () => {
   const [message, setMessage] = useState('')
 
   const nameInputRef = React.useRef<HTMLInputElement>(null)
+  const successHeadingRef = React.useRef<HTMLHeadingElement>(null)
+
+  // 🎨 Palette: Focus the success heading when the form is submitted to provide immediate feedback to screen readers
+  React.useEffect(() => {
+    if (isSubmitted) {
+      successHeadingRef.current?.focus()
+    }
+  }, [isSubmitted])
 
   const handleReset = () => {
     setIsSubmitted(false)
@@ -146,7 +156,9 @@ const ContactForm = () => {
         <div className='bg-primary/10 rounded-full p-3'>
           <CheckCircleIcon className='text-primary size-10' aria-hidden='true' />
         </div>
-        <h3 className='text-2xl font-bold'>Message Sent!</h3>
+        <h3 ref={successHeadingRef} tabIndex={-1} className='text-2xl font-bold outline-none'>
+          Message Sent!
+        </h3>
         <p className='text-muted-foreground'>
           Thank you for reaching out. We&apos;ve received your message and will get back to you soon.
         </p>
