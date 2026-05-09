@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react'
 
+import React from 'react'
+
 import Link from 'next/link'
 
 import { MailIcon, MenuIcon } from 'lucide-react'
@@ -18,10 +20,38 @@ import type { NavigationSection } from '@/components/blocks/menu-navigation'
 import { cn } from '@/lib/utils'
 import Logo from '@/components/logo'
 
+
 type HeaderProps = {
   navigationData: NavigationSection[]
   className?: string
 }
+
+// ⚡ Bolt: Extract and memoize the semi-static action buttons to prevent them from re-rendering
+// when the Header parent re-renders due to scroll-tracking or active-section updates.
+const HeaderActions = React.memo(() => {
+  return (
+    <>
+      <ModeToggle />
+      <Button variant='outline' className='max-sm:hidden' asChild>
+        <Link href='/contact-us'>Get in Touch</Link>
+      </Button>
+
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button variant='outline' size='icon' className='sm:hidden' asChild>
+            <Link href='/contact-us'>
+              <MailIcon aria-hidden='true' />
+              <span className='sr-only'>Get in Touch</span>
+            </Link>
+          </Button>
+        </TooltipTrigger>
+        <TooltipContent>Get in Touch</TooltipContent>
+      </Tooltip>
+    </>
+  )
+})
+
+HeaderActions.displayName = 'HeaderActions'
 
 const Header = ({ navigationData, className }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -108,42 +138,24 @@ const Header = ({ navigationData, className }: HeaderProps) => {
 
           {/* Actions */}
           <div className='flex gap-3'>
-            <ModeToggle />
-            <Button variant='outline' className='max-sm:hidden' asChild>
-              <Link href='/contact-us'>Get in Touch</Link>
-            </Button>
+            <HeaderActions />
 
-            {/* Navigation for small screens */}
-            <div className='flex gap-3'>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button variant='outline' size='icon' className='sm:hidden' asChild>
-                    <Link href='/contact-us'>
-                      <MailIcon aria-hidden='true' />
-                      <span className='sr-only'>Get in Touch</span>
-                    </Link>
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>Get in Touch</TooltipContent>
-              </Tooltip>
-
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <MenuDropdown
-                    align='end'
-                    navigationData={navigationData}
-                    activeSection={activeSection}
-                    trigger={
-                      <Button type='button' variant='outline' size='icon' className='lg:hidden'>
-                        <MenuIcon aria-hidden='true' />
-                        <span className='sr-only'>Menu</span>
-                      </Button>
-                    }
-                  />
-                </TooltipTrigger>
-                <TooltipContent>Menu</TooltipContent>
-              </Tooltip>
-            </div>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <MenuDropdown
+                  align='end'
+                  navigationData={navigationData}
+                  activeSection={activeSection}
+                  trigger={
+                    <Button type='button' variant='outline' size='icon' className='lg:hidden'>
+                      <MenuIcon aria-hidden='true' />
+                      <span className='sr-only'>Menu</span>
+                    </Button>
+                  }
+                />
+              </TooltipTrigger>
+              <TooltipContent>Menu</TooltipContent>
+            </Tooltip>
           </div>
         </div>
       </header>
