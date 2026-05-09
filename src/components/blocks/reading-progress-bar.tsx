@@ -10,6 +10,7 @@ import { useEffect, useRef } from 'react'
 export const ReadingProgressBar = () => {
   const progressRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const lastAriaValue = useRef<string | null>(null)
 
   useEffect(() => {
     let ticking = false
@@ -39,10 +40,13 @@ export const ReadingProgressBar = () => {
       }
 
       if (containerRef.current) {
-        const roundedProgress = Math.round(currentProgress)
+        const roundedProgress = Math.round(currentProgress).toString()
 
-        containerRef.current.setAttribute('aria-valuenow', roundedProgress.toString())
-        containerRef.current.setAttribute('aria-valuetext', `${roundedProgress}% read`)
+        if (lastAriaValue.current !== roundedProgress) {
+          containerRef.current.setAttribute('aria-valuenow', roundedProgress)
+          containerRef.current.setAttribute('aria-valuetext', `${roundedProgress}% read`)
+          lastAriaValue.current = roundedProgress
+        }
       }
 
       ticking = false
