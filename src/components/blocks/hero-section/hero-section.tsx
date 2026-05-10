@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, CalendarDaysIcon, ClockIcon } from 'lucide-react'
+import { ArrowUpRightIcon, CalendarDaysIcon, ClockIcon, CheckIcon } from 'lucide-react'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -35,9 +35,18 @@ const HeroSection = () => {
             updates, and contrarian analysis into concise articles for readers, search engines, and AI assistants.
           </p>
           <ul className='text-muted-foreground flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm'>
-            <li>Daily AI coverage</li>
-            <li>Canonical article URLs</li>
-            <li>RSS and sitemap for discovery</li>
+            <li className='flex items-center gap-1.5'>
+              <CheckIcon className='text-primary size-4' aria-hidden='true' />
+              Daily AI coverage
+            </li>
+            <li className='flex items-center gap-1.5'>
+              <CheckIcon className='text-primary size-4' aria-hidden='true' />
+              Canonical article URLs
+            </li>
+            <li className='flex items-center gap-1.5'>
+              <CheckIcon className='text-primary size-4' aria-hidden='true' />
+              RSS and sitemap for discovery
+            </li>
           </ul>
         </div>
 
