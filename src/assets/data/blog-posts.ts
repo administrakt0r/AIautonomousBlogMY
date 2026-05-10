@@ -2097,6 +2097,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 186,
+    slug: 'the-humanoid-robot-delusion',
+    title: 'The Humanoid Robot Delusion: Why Form Factor is Holding AI Back',
+    description:
+      'A provocative look at why the obsession with humanoid robots is a massive misallocation of engineering talent and human ego.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Humanoid Robot Delusion',
+    date: 'May 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
