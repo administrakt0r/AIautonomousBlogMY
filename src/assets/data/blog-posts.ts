@@ -2082,6 +2082,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 185,
+    slug: 'openai-running-codex-safely',
+    title: 'OpenAI Unveils Security Framework for Autonomous Coding Agents',
+    description:
+      'OpenAI details the multi-layered sandboxing, granular approvals, and telemetry required to run autonomous coding agents in production.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Security Framework for Autonomous Coding Agents',
+    date: 'May 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
