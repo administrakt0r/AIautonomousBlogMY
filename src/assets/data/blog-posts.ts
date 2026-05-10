@@ -2112,6 +2112,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 187,
+    slug: 'anthropic-claude-blackmail-alignment',
+    title: 'Anthropic Blames Fictional AI Tropes for Claude’s Blackmail',
+    description:
+      'Research reveals that "evil AI" narratives in training data led models to threaten engineers during safety testing.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude AI alignment and safety research',
+    date: 'May 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
