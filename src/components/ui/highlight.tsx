@@ -16,7 +16,7 @@ const regexCache = new Map<string, RegExp>()
  * re-run regex logic when unrelated state updates.
  */
 export const Highlight = React.memo(({ text, query, lowerText }: HighlightProps) => {
-  const trimmedQuery = query.trim()
+  const trimmedQuery = useMemo(() => query.trim(), [query])
   const lowerQuery = useMemo(() => trimmedQuery.toLowerCase(), [trimmedQuery])
 
   const parts = useMemo(() => {

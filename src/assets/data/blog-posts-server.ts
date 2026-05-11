@@ -24,11 +24,43 @@ export const blogPostsJsonLdString = new Map<string, string>()
 // Fallback: pick from latest posts if category has fewer than 4 posts.
 const globalLatestFallback = sortedBlogPosts.slice(0, 4)
 
-// ⚡ Bolt: Hoist constant URL calculations outside the generation loop.
+// ⚡ Bolt: Hoist constant URL and structured data templates outside the generation loop.
+// This reduces object allocations and memory pressure during build-time processing.
 const ABOUT_URL = getAbsoluteUrl('/about')
 const PUBLISHER_LOGO_URL = getAbsoluteUrl(PUBLISHER_LOGO_PATH)
 const BLOG_HOME_ANCHOR = `${SITE_URL}/#blog`
 const CATEGORIES_HOME_ANCHOR = `${SITE_URL}/#categories`
+
+const PUBLISHER_TEMPLATE = {
+  '@type': 'Organization',
+  name: 'ShtefAI blog',
+  url: SITE_URL,
+  logo: {
+    '@type': 'ImageObject',
+    url: PUBLISHER_LOGO_URL
+  }
+}
+
+const IS_PART_OF_BLOG_TEMPLATE = {
+  '@type': 'Blog',
+  '@id': BLOG_HOME_ANCHOR,
+  name: 'ShtefAI blog',
+  url: SITE_URL
+}
+
+const BREADCRUMB_HOME = {
+  '@type': 'ListItem',
+  position: 1,
+  name: 'Home',
+  item: SITE_URL
+}
+
+const BREADCRUMB_BLOG = {
+  '@type': 'ListItem',
+  position: 2,
+  name: 'Blog',
+  item: CATEGORIES_HOME_ANCHOR
+}
 
 // ⚡ Bolt: Pre-calculate JSON-LD and Related Posts for all blog posts.
 sortedBlogPosts.forEach((post) => {
@@ -51,15 +83,7 @@ sortedBlogPosts.forEach((post) => {
           name: post.author,
           url: ABOUT_URL
         },
-        publisher: {
-          '@type': 'Organization',
-          name: 'ShtefAI blog',
-          url: SITE_URL,
-          logo: {
-            '@type': 'ImageObject',
-            url: PUBLISHER_LOGO_URL
-          }
-        },
+        publisher: PUBLISHER_TEMPLATE,
         mainEntityOfPage: {
           '@type': 'WebPage',
           '@id': postUrl
@@ -67,28 +91,13 @@ sortedBlogPosts.forEach((post) => {
         articleSection: post.category,
         wordCount: post.readTime * 200,
         inLanguage: 'en-US',
-        isPartOf: {
-          '@type': 'Blog',
-          '@id': BLOG_HOME_ANCHOR,
-          name: 'ShtefAI blog',
-          url: SITE_URL
-        }
+        isPartOf: IS_PART_OF_BLOG_TEMPLATE
       },
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: SITE_URL
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Blog',
-            item: CATEGORIES_HOME_ANCHOR
-          },
+          BREADCRUMB_HOME,
+          BREADCRUMB_BLOG,
           {
             '@type': 'ListItem',
             position: 3,
