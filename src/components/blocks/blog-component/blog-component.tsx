@@ -114,10 +114,11 @@ const SearchInput = React.memo(
         setValue(initialValue)
       }, [initialValue])
 
-      // ⚡ Bolt: Local debounce effect to minimize parent re-renders
+      // ⚡ Bolt: Local debounce effect to minimize parent re-renders.
+      // ⚡ Bolt: Trim the value before calling the parent to avoid redundant filtering on whitespace changes.
       useEffect(() => {
         const handler = setTimeout(() => {
-          onSearchChange(value)
+          onSearchChange(value.trim())
         }, 300)
 
         return () => clearTimeout(handler)

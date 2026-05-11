@@ -2182,6 +2182,9 @@ export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
 // ⚡ Bolt: Use a module-level cache for category URLs to avoid redundant encodeURIComponent calls.
 const categoryUrlCache = new Map<string, string>()
 
+// ⚡ Bolt: Use a module-level cache for ISO date strings to avoid redundant Date instantiation.
+const dateIsoCache = new Map<string, string>()
+
 for (let i = dataLen - 1; i >= 0; i--) {
 
   const rawPost = blogPostsData[i]
@@ -2194,6 +2197,13 @@ for (let i = dataLen - 1; i >= 0; i--) {
     categoryUrlCache.set(rawPost.category, categoryUrl)
   }
 
+  let dateIso = dateIsoCache.get(rawPost.date)
+
+  if (!dateIso) {
+    dateIso = new Date(rawPost.date).toISOString()
+    dateIsoCache.set(rawPost.date, dateIso)
+  }
+
   const post: BlogPost = {
     ...rawPost,
     author: rawPost.author ?? 'Shtef',
@@ -2201,7 +2211,7 @@ for (let i = dataLen - 1; i >= 0; i--) {
     imageUrl: rawPost.imageUrl ?? getPostImagePath(rawPost.slug),
     imageAlt: rawPost.imageAlt ?? rawPost.title,
     featured: rawPost.featured ?? false,
-    dateIso: new Date(rawPost.date).toISOString(),
+    dateIso,
     url: getPostUrl(rawPost.slug),
     categoryUrl,
     index: i,
