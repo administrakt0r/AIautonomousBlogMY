@@ -2142,6 +2142,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 189,
+    slug: 'the-ai-alliance-mirage',
+    title: 'The AI Alliance Mirage: Why Big Tech Partnerships are Built on Sand',
+    description:
+      'The current partnerships between AI labs and cloud giants are fragile, defensive, and destined for a "Great Divorce" that will leave developers stranded.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Alliance Mirage: Why Big Tech Partnerships are Built on Sand',
+    date: 'May 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
