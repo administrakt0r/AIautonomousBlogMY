@@ -49,9 +49,12 @@ export const BlogCard = React.memo(({ post, onCategoryClick, priority = false, s
             <span className='text-muted-foreground/50' aria-hidden='true'>
               •
             </span>
-            <div className='flex items-center gap-1'>
+            <div
+              className='flex items-center gap-1'
+              aria-label={`Estimated reading time: ${post.readTime} minutes`}
+            >
               <ClockIcon className='size-4' aria-hidden='true' />
-              <span>{post.readTime} min read</span>
+              <span aria-hidden='true'>{post.readTime} min read</span>
             </div>
           </div>
           <Badge

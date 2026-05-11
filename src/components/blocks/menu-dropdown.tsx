@@ -71,7 +71,7 @@ const DropdownNavItem = React.memo(({ navItem, isActive }: { navItem: Navigation
           {navItem.items?.map(item => (
             <DropdownMenuItem key={item.title} asChild>
               <Link href={item.href}>
-                <CircleSmallIcon />
+                <CircleSmallIcon aria-hidden='true' />
                 <span>{item.title}</span>
               </Link>
             </DropdownMenuItem>
