@@ -2157,6 +2157,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 190,
+    slug: 'cowboy-space-275m-orbital-ai-data-centers',
+    title: 'Cowboy Space Raises $275M to Launch AI Data Centers Into Orbit',
+    description:
+      'Robinhood co-founder Baiju Bhatt secures massive funding to build purpose-built rockets and orbital GPU clusters.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Cowboy Space orbital AI data center concept',
+    date: 'May 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
