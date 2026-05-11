@@ -2127,6 +2127,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 188,
+    slug: 'bain-100b-agentic-ai-saas-market-forecast',
+    title: 'Bain Forecasts $100 Billion Market for Agentic AI in SaaS',
+    description:
+      'A new report identifies a massive untapped opportunity in autonomous enterprise coordination and the shift away from seat-based pricing.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Bain & Company Agentic AI SaaS Market Forecast',
+    date: 'May 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
