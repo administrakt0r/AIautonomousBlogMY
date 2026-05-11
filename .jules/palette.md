@@ -53,3 +53,7 @@
 ## 2026-05-10 - [Clarifying Optional Form Fields]
 **Learning:** Explicitly marking optional fields reduces cognitive load and prevents users from guessing which fields are required, especially when using an asterisk (*) for required ones.
 **Action:** Append '(optional)' to the `<Label>` of non-mandatory inputs to provide clear guidance at a glance.
+
+## 2026-05-11 - [Accessible Reading Time and Tactile Feedback]
+**Learning:** Generic reading time indicators like "5 min read" are abbreviated and can be unclear for screen readers. Using a descriptive aria-label provides better context. Additionally, adding subtle scale-down effects on button press provides a more tactile and satisfying interaction.
+**Action:** Always provide descriptive aria-labels for abbreviated metrics and use active:scale-[0.98] on buttons for subtle tactile feedback.

@@ -69,9 +69,12 @@ const HeroSection = () => {
                       <span className='text-muted-foreground/50' aria-hidden='true'>
                         •
                       </span>
-                      <div className='flex items-center gap-1'>
+                      <div
+                        className='flex items-center gap-1'
+                        aria-label={`Estimated reading time: ${item.readTime} minutes`}
+                      >
                         <ClockIcon className='size-3.5' aria-hidden='true' />
-                        <span>{item.readTime} min read</span>
+                        <span aria-hidden='true'>{item.readTime} min read</span>
                       </div>
                     </div>
                     <h2 className='group-hover:text-primary line-clamp-2 text-sm leading-snug font-medium transition-colors'>

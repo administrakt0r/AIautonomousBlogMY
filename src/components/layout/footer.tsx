@@ -120,11 +120,15 @@ const Footer = () => {
           </div>
 
           <div className='flex md:col-span-1 lg:col-span-2'>
-            <Link href='/responsible-ai-usage' className='mt-7 block h-full w-full lg:mt-0'>
+            <Link
+              href='/responsible-ai-usage'
+              className='mt-7 block h-full w-full lg:mt-0'
+              aria-label='Learn more about our Responsible AI Usage Initiative'
+            >
               <div className='group relative flex h-full flex-col justify-center overflow-hidden rounded-xl border border-green-100 bg-green-50/50 p-6 transition-all duration-300 hover:border-green-300 hover:shadow-lg hover:shadow-green-500/10 dark:border-green-900/50 dark:bg-green-950/20 dark:hover:border-green-700/50'>
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-green-500'></div>
                 <div className='mb-3 flex items-center gap-2 pl-2 text-lg font-bold text-green-700 dark:text-green-400'>
-                  <LeafIcon className='h-6 w-6' />
+                  <LeafIcon className='h-6 w-6' aria-hidden='true' />
                   Responsible AI Usage Initiative
                 </div>
                 <p className='max-w-2xl pl-2 text-sm leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>
