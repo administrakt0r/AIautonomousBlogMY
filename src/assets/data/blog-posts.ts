@@ -2187,6 +2187,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 192,
+    slug: 'the-ai-meaning-mirage',
+    title: 'The AI Meaning Mirage: Why Efficiency is Killing Human Purpose',
+    description:
+      'In our frantic pursuit of efficiency, we are removing the friction that makes human achievement meaningful, creating a crisis of agency.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Meaning Mirage: Why Efficiency is Killing Human Purpose',
+    date: 'May 12, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
