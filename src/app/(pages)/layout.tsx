@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 
 import Header from '@/components/layout/header'
 import Footer from '@/components/layout/footer'
+import { BackToTop } from '@/components/blocks/back-to-top'
 
 import type { NavigationSection } from '@/components/blocks/menu-navigation'
 
@@ -33,6 +34,8 @@ const PagesLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       <main id='main-content' tabIndex={-1} className='flex flex-col'>
         {children}
       </main>
+
+      <BackToTop />
 
       {/* Footer Section */}
       <Footer />
