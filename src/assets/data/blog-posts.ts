@@ -2172,6 +2172,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 191,
+    slug: 'thinking-machines-native-interactivity-full-duplex-ai',
+    title: "Thinking Machines Unveils 'Interaction Models' for Full Duplex AI",
+    description:
+      'Mira Murati’s new startup introduces TML-Interaction-Small, an AI model that processes input and generates output simultaneously at human speed.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Thinking Machines Unveils 'Interaction Models' for Full Duplex AI",
+    date: 'May 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
