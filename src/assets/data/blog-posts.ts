@@ -2202,6 +2202,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 193,
+    slug: 'google-spacex-orbital-data-centers',
+    title: 'Google and SpaceX in Talks to Launch Orbital AI Data Centers',
+    description: 'Silicon Valley giants eye the final frontier to solve the AI energy crisis by launching GPU clusters into orbit.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google and SpaceX orbital data center concept',
+    date: 'May 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
