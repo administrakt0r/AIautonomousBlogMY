@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import { ExternalLinkIcon } from 'lucide-react'
+import { ExternalLinkIcon, LeafIcon } from 'lucide-react'
 
 import { responsibleAiJsonLdString } from '@/assets/data/blog-posts-server'
 import { CopyEmailButton } from '@/components/blocks/copy-email-button'
@@ -25,18 +25,24 @@ export default function ResponsibleAIPage() {
   return (
     <div className='container mx-auto my-8 min-h-[60vh] max-w-4xl rounded-xl border border-green-100 bg-green-50/30 px-4 py-16 sm:px-6 lg:px-8 dark:border-green-900 dark:bg-green-950/10'>
       <div className='prose prose-lg dark:prose-invert max-w-none'>
-        <h1 className='flex items-center gap-3 text-green-800 dark:text-green-400'>Responsible AI Usage Policy</h1>
+        <h1 className='flex items-center gap-3 text-green-800 dark:text-green-400'>
+          <LeafIcon className='size-8' aria-hidden='true' />
+          Responsible AI Usage Policy
+        </h1>
         <p>
           This blog is a proud participant in the{' '}
           <a
             href='https://responsible-ai-usage.vercel.app'
             target='_blank'
             rel='noopener noreferrer'
-            className='inline-flex items-center gap-1 font-semibold text-green-700 dark:text-green-500'
+            className='group inline-flex items-center gap-1 font-semibold text-green-700 dark:text-green-500'
             aria-label='Responsible AI Usage (opens in a new tab)'
           >
             Responsible AI Usage
-            <ExternalLinkIcon className='size-3.5' />
+            <ExternalLinkIcon
+              className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+              aria-hidden='true'
+            />
           </a>{' '}
           initiative.
         </p>
@@ -68,10 +74,13 @@ export default function ResponsibleAIPage() {
             target='_blank'
             rel='noopener noreferrer'
             aria-label='administraktor.com (opens in a new tab)'
-            className='inline-flex items-center gap-1 font-bold'
+            className='group inline-flex items-center gap-1 font-bold'
           >
             administraktor.com
-            <ExternalLinkIcon className='size-3.5' />
+            <ExternalLinkIcon
+              className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+              aria-hidden='true'
+            />
           </a>
           . The blog uses carefully crafted prompts and automated pipelines to scan, select, and rewrite AI news daily.
           All content is published via automated pull requests and deployed through Vercel.
@@ -85,9 +94,13 @@ export default function ResponsibleAIPage() {
             <a
               href='mailto:m@administraktor.com'
               aria-label='Email m@administraktor.com'
-              className='hover:text-primary underline underline-offset-2'
+              className='hover:text-primary group inline-flex items-center gap-1 underline underline-offset-2'
             >
               m@administraktor.com
+              <ExternalLinkIcon
+                className='size-3 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                aria-hidden='true'
+              />
             </a>
             <CopyEmailButton email='m@administraktor.com' />
           </span>
@@ -103,11 +116,14 @@ export default function ResponsibleAIPage() {
             href='https://responsible-ai-usage.vercel.app'
             target='_blank'
             rel='noopener noreferrer'
-            className='inline-flex items-center gap-1 font-bold text-green-700 hover:underline'
+            className='group inline-flex items-center gap-1 font-bold text-green-700 hover:underline'
             aria-label='responsible-ai-usage.vercel.app (opens in a new tab)'
           >
             responsible-ai-usage.vercel.app
-            <ExternalLinkIcon className='size-3.5' />
+            <ExternalLinkIcon
+              className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+              aria-hidden='true'
+            />
           </a>
         </p>
       </div>
