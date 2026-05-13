@@ -39,11 +39,13 @@ const BlogGrid = React.memo(
   ({
     posts,
     onCategoryClick,
-    searchQuery
+    trimmedQuery,
+    lowerQuery
   }: {
     posts: BlogPost[]
     onCategoryClick: (category: string) => void
-    searchQuery?: string
+    trimmedQuery?: string
+    lowerQuery?: string
   }) => {
     return (
       <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
@@ -52,7 +54,8 @@ const BlogGrid = React.memo(
             key={post.id}
             post={post}
             onCategoryClick={onCategoryClick}
-            searchQuery={searchQuery}
+            trimmedQuery={trimmedQuery}
+            lowerQuery={lowerQuery}
 
             // ⚡ Bolt: Prioritize the first row of images (up to 3) for better LCP.
             priority={index < 3}
@@ -352,22 +355,26 @@ const Blog = () => {
 
   const router = useRouter()
 
+  // ⚡ Bolt: Pre-normalize the search query once in the parent to avoid redundant operations in children.
+  const trimmedQuery = useMemo(() => searchQuery.trim(), [searchQuery])
+  const lowerQuery = useMemo(() => trimmedQuery.toLowerCase(), [trimmedQuery])
+
   // ⚡ Bolt: Memoize filteredPosts based on tab and debounced search query.
   // We use the pre-calculated nonFeaturedPostsByCategory Map for O(1) category retrieval when no search is active.
   // ⚡ Bolt: Perform dynamic search matching on title and description to avoid the overhead
-  // of storing a pre-calculated search string for every post in the bundle.
+  // of storing pre-calculated lowercase fields for every post in the bundle.
   const filteredPosts = useMemo(() => {
-    const lowerQuery = searchQuery.toLowerCase()
-
     if (!lowerQuery) {
       return selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
     }
 
     const basePosts = selectedTab === 'All' ? nonFeaturedPosts : (nonFeaturedPostsByCategory.get(selectedTab) ?? [])
 
-    // ⚡ Bolt: Use pre-calculated lowercase fields to avoid O(N) string operations during filtering.
-    return basePosts.filter(post => post.titleLower.includes(lowerQuery) || post.descriptionLower.includes(lowerQuery))
-  }, [selectedTab, searchQuery])
+    // ⚡ Bolt: Perform toLowerCase() on-the-fly to keep the initial data payload small.
+    return basePosts.filter(
+      post => post.title.toLowerCase().includes(lowerQuery) || post.description.toLowerCase().includes(lowerQuery)
+    )
+  }, [selectedTab, lowerQuery])
 
   const totalPages = useMemo(() => Math.ceil(filteredPosts.length / POSTS_PER_PAGE), [filteredPosts.length])
 
@@ -516,7 +523,12 @@ const Blog = () => {
           {/* Posts Grid */}
           {paginatedPosts.length > 0 ? (
             <div className='space-y-12'>
-              <BlogGrid posts={paginatedPosts} onCategoryClick={handleTabChange} searchQuery={searchQuery} />
+              <BlogGrid
+                posts={paginatedPosts}
+                onCategoryClick={handleTabChange}
+                trimmedQuery={trimmedQuery}
+                lowerQuery={lowerQuery}
+              />
 
               {/* Pagination */}
               {totalPages > 1 && (
