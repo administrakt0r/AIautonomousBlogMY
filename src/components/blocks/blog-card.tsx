@@ -18,14 +18,16 @@ interface BlogCardProps {
   post: BlogPost
   onCategoryClick?: (category: string) => void
   priority?: boolean
-  searchQuery?: string
+  trimmedQuery?: string
+  lowerQuery?: string
 }
 
 /**
  * ⚡ Bolt: Memoized BlogCard component to prevent unnecessary re-renders.
  * Uses the stretched link pattern for accessibility and SEO.
  */
-export const BlogCard = React.memo(({ post, onCategoryClick, priority = false, searchQuery }: BlogCardProps) => {
+export const BlogCard = React.memo(
+  ({ post, onCategoryClick, priority = false, trimmedQuery = '', lowerQuery = '' }: BlogCardProps) => {
   return (
     <Card className='group focus-within:ring-primary relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-offset-2'>
       <CardContent className='space-y-3.5'>
@@ -84,11 +86,19 @@ export const BlogCard = React.memo(({ post, onCategoryClick, priority = false, s
             href={post.url}
             className='after:absolute after:inset-0 after:z-0 hover:underline focus:outline-none'
           >
-            <Highlight text={post.title} lowerText={post.titleLower} query={searchQuery ?? ''} />
+            {trimmedQuery ? (
+              <Highlight text={post.title} trimmedQuery={trimmedQuery} lowerQuery={lowerQuery} />
+            ) : (
+              post.title
+            )}
           </Link>
         </h3>
         <p className='text-muted-foreground line-clamp-2'>
-          <Highlight text={post.description} lowerText={post.descriptionLower} query={searchQuery ?? ''} />
+          {trimmedQuery ? (
+            <Highlight text={post.description} trimmedQuery={trimmedQuery} lowerQuery={lowerQuery} />
+          ) : (
+            post.description
+          )}
         </p>
         <div className='flex items-center justify-between'>
           <span className='text-sm font-medium'>{post.author}</span>
