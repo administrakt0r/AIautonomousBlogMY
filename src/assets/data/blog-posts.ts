@@ -2216,6 +2216,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 194,
+    slug: 'medicare-ai-payment-model-paradigm-shift',
+    title: 'Medicare’s New AI Payment Model: A Federal Paradigm Shift',
+    description: 'CMS unveils a new payment model that rewards health outcomes, finally creating a path for AI agents in federal healthcare.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI in healthcare illustration',
+    date: 'May 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
