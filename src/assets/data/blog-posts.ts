@@ -2240,6 +2240,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 196,
+    slug: 'meta-ai-incognito-chat-encryption',
+    title: 'Meta AI Launches Encrypted Incognito Chat for Ultimate Privacy',
+    description: 'Meta CEO Mark Zuckerberg unveils a breakthrough in AI privacy with end-to-end encrypted conversations.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta AI Incognito Chat Encryption illustration',
+    date: 'May 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
