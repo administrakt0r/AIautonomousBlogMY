@@ -2230,6 +2230,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 195,
+    slug: 'the-ai-empathy-gap',
+    title: 'The AI Empathy Gap: Why Constant Validation is Killing Our Humanity',
+    description: 'We are trading messy human relationships for synthetic validation. Is Emotional AI making us more alone than ever?',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Emotional AI and human connection',
+    date: 'May 13, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
