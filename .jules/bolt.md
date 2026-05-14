@@ -35,3 +35,7 @@
 ## 2026-05-05 - Constant Hoisting and URI Pre-calculation
 **Learning:** Performing redundant string manipulations or URI encoding (like `encodeURIComponent`) inside loops during module initialization or within React render paths adds measurable overhead as the dataset grows.
 **Action:** Hoist constant URL calculations outside of generation loops in server-side modules and pre-calculate complex URI strings (like category-specific anchor links) in the data layer to minimize runtime processing in both Server and Client Components.
+
+## 2026-05-14 - Stateless Regex for Shared Utilities
+**Learning:** When using a shared RegExp instance with `.test()` across multiple calls, the global (`g`) flag causes the regex to track `lastIndex`. This leads to incorrect results (alternating true/false) on subsequent matches of the same string.
+**Action:** Omit the global (`g`) flag in shared search utilities to ensure stateless and predictable matching. Use the case-insensitive (`i`) flag instead.

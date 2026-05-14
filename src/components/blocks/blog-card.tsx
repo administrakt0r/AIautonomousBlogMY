@@ -19,7 +19,6 @@ interface BlogCardProps {
   onCategoryClick?: (category: string) => void
   priority?: boolean
   trimmedQuery?: string
-  lowerQuery?: string
 }
 
 /**
@@ -27,7 +26,7 @@ interface BlogCardProps {
  * Uses the stretched link pattern for accessibility and SEO.
  */
 export const BlogCard = React.memo(
-  ({ post, onCategoryClick, priority = false, trimmedQuery = '', lowerQuery = '' }: BlogCardProps) => {
+  ({ post, onCategoryClick, priority = false, trimmedQuery = '' }: BlogCardProps) => {
   return (
     <Card className='group focus-within:ring-primary relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-offset-2'>
       <CardContent className='space-y-3.5'>
@@ -87,7 +86,7 @@ export const BlogCard = React.memo(
             className='after:absolute after:inset-0 after:z-0 hover:underline focus:outline-none'
           >
             {trimmedQuery ? (
-              <Highlight text={post.title} trimmedQuery={trimmedQuery} lowerQuery={lowerQuery} />
+              <Highlight text={post.title} trimmedQuery={trimmedQuery} />
             ) : (
               post.title
             )}
@@ -95,7 +94,7 @@ export const BlogCard = React.memo(
         </h3>
         <p className='text-muted-foreground line-clamp-2'>
           {trimmedQuery ? (
-            <Highlight text={post.description} trimmedQuery={trimmedQuery} lowerQuery={lowerQuery} />
+            <Highlight text={post.description} trimmedQuery={trimmedQuery} />
           ) : (
             post.description
           )}
