@@ -2254,6 +2254,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 197,
+    slug: 'notion-ai-agent-hub',
+    title: 'Notion Transforms Workspace into Orchestration Hub for AI Agents',
+    description: 'New developer platform introduces "Workers" and deeper agent integration to automate complex workflows.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Notion AI Agent Hub illustration',
+    date: 'May 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
