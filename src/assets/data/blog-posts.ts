@@ -2268,6 +2268,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 198,
+    slug: 'the-synthetic-wisdom-fallacy-why-ai-lacks-judgment',
+    title: 'The Synthetic Wisdom Fallacy: Why AI Lacks Real-World Judgment',
+    description: 'AI reasoning is a consequence-free simulation. Discover why outsourcing judgment to machines is a dangerous category error.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Synthetic Wisdom Fallacy: Why AI Lacks Real-World Judgment',
+    date: 'May 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
