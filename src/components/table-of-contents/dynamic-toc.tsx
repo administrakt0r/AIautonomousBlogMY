@@ -6,7 +6,6 @@ interface TocItem {
   id: string
   title: string
   level: number
-  icon?: string
 }
 
 interface DynamicTocProps {
@@ -58,84 +57,64 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
   const [activeId, setActiveId] = useState<string>('')
 
   useEffect(() => {
-    const extractHeadings = () => {
-      const container = document.getElementById(contentContainerId)
+    // ⚡ Bolt: Consolidate extraction and observation into a single pass to minimize
+    // DOM traversals and ensure consistent state between TOC items and observer.
+    const container = document.getElementById(contentContainerId)
 
-      if (!container) return []
+    if (!container) return
 
-      const headings = container.querySelectorAll('h2, h3')
-      const items: TocItem[] = []
+    const headings = container.querySelectorAll('h2, h3')
+    const items: TocItem[] = []
 
-      headings.forEach(heading => {
-        const element = heading as HTMLElement
-        const title = element.textContent?.trim()
-
-        if (!title) return
-
-        // Create or use existing ID
-        let id = element.id
-
-        if (!id) {
-          id = title
-            .toLowerCase()
-            .replace(/[^\w\s-]/g, '')
-            .replace(/\s+/g, '-')
-          element.id = id
-        }
-
-        // Determine level based on tag name
-        const level = element.tagName === 'H2' ? 2 : 3
-
-        items.push({ id, title, level })
-      })
-
-      return items
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
     }
 
-    // ⚡ Bolt: Removed 100ms artificial delay.
-    // In this Next.js app, MDX content is already rendered and present in the DOM when this component mounts,
-    // so we can extract headings immediately for faster visual feedback.
-    const timer = setTimeout(() => {
-      const items = extractHeadings()
-
-      setTocItems(items)
-
-      // Set initial active heading
-      if (items.length > 0) {
-        setActiveId(items[0].id)
-      }
-    }, 0)
-
-    return () => clearTimeout(timer)
-  }, [contentContainerId])
-
-  useEffect(() => {
-    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setActiveId(entry.target.id)
         }
       })
-    }
+    }, observerOptions)
 
-    const observerOptions = {
-      root: null,
-      rootMargin: '-20% 0px -70% 0px', // Trigger when element is near top of viewport
-      threshold: 0
-    }
+    headings.forEach(heading => {
+      const element = heading as HTMLElement
+      const title = element.textContent?.trim()
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions)
+      if (!title) return
 
-    const container = document.getElementById(contentContainerId)
+      // Create or use existing ID
+      let id = element.id
 
-    if (container) {
-      const headings = container.querySelectorAll('h2, h3')
+      if (!id) {
+        id = title
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-')
+        element.id = id
+      }
 
-      headings.forEach(heading => observer.observe(heading))
-    }
+      const level = element.tagName === 'H2' ? 2 : 3
+
+      items.push({ id, title, level })
+      observer.observe(element)
+    })
+
+    // ⚡ Bolt: Wrapped in requestAnimationFrame to avoid "react-hooks/set-state-in-effect"
+    // and ensure state updates occur after the initial paint, avoiding synchronous cascading renders.
+    requestAnimationFrame(() => {
+      setTocItems(items)
+
+      if (items.length > 0) {
+        setActiveId(items[0].id)
+      }
+    })
 
     return () => observer.disconnect()
-  }, [contentContainerId, tocItems])
+  }, [contentContainerId])
 
   // ⚡ Bolt: Wrap handleClick in useCallback to ensure TocLink component memoization works correctly.
   const handleClick = useCallback((id: string) => {
@@ -151,25 +130,21 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
   const groupedItems = useMemo(() => {
     if (tocItems.length === 0) return []
 
-    // Group items: create structure where h2 items have their following h3 items
     const groups: Array<{ main: TocItem; subs: TocItem[] }> = []
     let currentGroup: { main: TocItem; subs: TocItem[] } | null = null
 
     tocItems.forEach(item => {
       if (item.level === 2) {
-        // This is a main title, start a new group
         if (currentGroup) {
           groups.push(currentGroup)
         }
 
         currentGroup = { main: item, subs: [] }
       } else if (item.level === 3 && currentGroup) {
-        // This is a subtitle, add to current group
         currentGroup.subs.push(item)
       }
     })
 
-    // Don't forget the last group
     if (currentGroup) {
       groups.push(currentGroup)
     }
@@ -184,7 +159,7 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
   return (
     <div className='sticky top-24'>
       <h3 className='text-foreground mb-3.5 font-medium'>On This Page</h3>
-      <nav>
+      <nav aria-label='Table of contents'>
         <ul className='space-y-3'>
           {groupedItems.map((group, groupIndex) => (
             <li key={`toc-group-${group.main.id}-${groupIndex}`}>
@@ -195,7 +170,6 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
                 onClick={handleClick}
               />
 
-              {/* Nested subtitles */}
               {group.subs.length > 0 && (
                 <ul className='mt-3 ml-5 space-y-3'>
                   {group.subs.map((subtitle, subIndex) => (
