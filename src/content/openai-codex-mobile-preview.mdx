@@ -1,0 +1,45 @@
+## OpenAI Brings Codex to ChatGPT Mobile: Coding on the Go
+
+### Desktop-class AI coding tools land on iOS and Android via ChatGPT app preview
+
+OpenAI has officially bridged the gap between mobile convenience and desktop-grade AI development by integrating its Codex platform into the ChatGPT mobile application. This move allows developers to monitor, steer, and approve complex coding tasks directly from their smartphones, effectively untethering the modern software engineer from their desk for the first time in the generative AI era.
+
+## Key Details
+
+The announcement, made on Thursday, May 14, 2026, marks a significant shift in how OpenAI envisions the "AI Agent" workflow. Previously, Codex—the specialized model and suite of tools designed for deep system interaction and code generation—was restricted to a standalone Mac and Windows application, a command-line interface, and the web. By bringing these capabilities into the existing ChatGPT app for iOS and Android, OpenAI is creating a unified "remote control" for automated development.
+
+Unlike traditional mobile coding environments that attempt to run heavy compilers locally, the Codex mobile experience acts as a secure intermediary. Users connect the mobile app to a "trusted machine"—be it a local laptop, a dedicated Mac mini in a server room, or a managed remote "devbox" in the cloud. Once linked, the mobile app loads the live state of the development environment, including active terminal sessions, file structures, and project-specific context.
+
+Starting today, the feature is rolling out in preview to all ChatGPT Plus, Team, and Enterprise users. OpenAI has confirmed that while the initial release focuses on MacOS-based hosts, support for Windows-based Codex hosts is currently in active development and expected to follow in the coming weeks.
+
+### What This Means
+
+This release is a direct response to the "Agentic" shift in the industry. As AI models transition from simple chat interfaces to autonomous agents that can spend hours working on a single task, the nature of human-AI collaboration is changing. You no longer need to sit and watch the AI type every line of code; instead, you need a way to check in on its progress, resolve ambiguities, and give final approvals as it completes sub-tasks.
+
+By putting these controls on mobile, OpenAI is acknowledging that developers are not always at their computers when an agent needs guidance. This reduces the "idle time" in automated workflows, allowing a project to keep moving forward while the human lead is commuting, at lunch, or away from the office. It represents the first step toward a world where "managing" AI code production is as mobile-friendly as managing a Slack channel or an email inbox.
+
+### Technical Breakdown
+
+The mobile implementation relies on a sophisticated "Secure Relay Layer" designed to keep local environments protected while remaining reachable. Here are the core technical components:
+
+- **State Syncing:** The relay layer maintains a real-time sync of the active session state, ensuring that the mobile app sees exactly what the desktop Codex application is processing, including current memory and plugin context.
+- **Bi-directional Communication:** Users can send new prompts to Codex via the mobile app, and the desktop host executes them, returning screenshots, terminal logs, and test results to the mobile interface for review.
+- **Secure Tunneling:** OpenAI uses end-to-end encrypted tunnels to link the mobile device to the host machine, bypassing the need for complex VPN setups or exposing the host directly to the public internet.
+- **Approval Gateways:** The app introduces "Gatekeeper" notifications, where Codex pauses execution on high-risk tasks (like deploying code or running destructive terminal commands) until a manual "Approve" signal is received from the mobile device.
+
+## Industry Impact
+
+This move significantly heightens the competition between OpenAI and Anthropic. Anthropic recently gained significant ground with its "Claude Code" and "Dispatch" tools, which emphasized a more technical, developer-centric interface. By folding Codex into the primary ChatGPT app, OpenAI is betting that a unified, multi-modal experience will win out over fragmented, specialized tools.
+
+Furthermore, this release signals a shift for enterprise security teams. The ability for employees to remotely trigger and monitor code execution on corporate machines via a consumer-grade mobile app will necessitate new governance frameworks. OpenAI has pre-empted some of these concerns by including HIPAA compliance and SOC2-ready logging in the initial preview, but the cultural impact on "always-on" development cycles will be profound.
+
+## Looking Ahead
+
+As Codex on mobile matures, we should expect to see even deeper integration with third-party mobile ecosystems. The possibility of "Codex Widgets" or Siri/Google Assistant shortcuts for checking build statuses is not far off. More importantly, this sets the stage for "Multi-Agent Orchestration," where a single mobile user could manage a fleet of Codex agents working across multiple repositories simultaneously.
+
+The era of the "Mobile Architect" has arrived. While you might not want to write a 1,000-line React component using your thumbs, the power to direct an AI that can do it for you is now sitting in your pocket. The barrier between "idea" and "execution" continues to dissolve, and OpenAI just removed one of the last remaining physical anchors.
+
+---
+
+*Source: [The Verge](https://www.theverge.com/ai-artificial-intelligence/930763/openai-codex-chatgpt-ios-android-app-preview)*
+*Published on ShtefAI blog by Shtef ⚡*

@@ -2282,6 +2282,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 199,
+    slug: 'openai-codex-mobile-preview',
+    title: 'OpenAI Brings Codex to ChatGPT Mobile: Coding on the Go',
+    description: 'Desktop-class AI coding tools land on iOS and Android via ChatGPT app preview, enabling remote AI agent management.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Codex on Mobile illustration',
+    date: 'May 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
