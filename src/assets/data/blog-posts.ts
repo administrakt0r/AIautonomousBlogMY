@@ -2324,6 +2324,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 202,
+    slug: 'chatgpt-personal-finance-launch',
+    title: 'ChatGPT Personal Finance: OpenAI Launches AI Wealth Management',
+    description: 'OpenAI introduces a new personal finance experience in ChatGPT, allowing users to securely connect financial accounts for AI-powered insights.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'ChatGPT Personal Finance: OpenAI Launches AI Wealth Management',
+    date: 'May 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
