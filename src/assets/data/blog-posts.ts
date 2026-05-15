@@ -2337,7 +2337,7 @@ const blogPostsData: RawBlogPost[] = [
 const dataLen = blogPostsData.length
 
 const processedPosts: BlogPost[] = new Array(dataLen)
-const sortedPosts: BlogPost[] = []
+const sortedPosts: BlogPost[] = new Array(dataLen)
 const nonFeatured: BlogPost[] = []
 
 const categoriesSet = new Set<string>()
@@ -2390,7 +2390,8 @@ for (let i = dataLen - 1; i >= 0; i--) {
   categoriesSet.add(post.category)
 
   // Populate sorted (latest-first) array
-  sortedPosts.push(post)
+  // ⚡ Bolt: Use index-based assignment instead of .push() to avoid array resizing overhead.
+  sortedPosts[dataLen - 1 - i] = post
 
   // Categorize for both all and non-featured lists
   const catList = postsByCategory.get(post.category) || []
