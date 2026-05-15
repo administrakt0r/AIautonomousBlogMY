@@ -94,12 +94,15 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
           <TooltipTrigger asChild>
             <Button
               asChild
-              className='rounded-[8px]'
+              className='group rounded-[8px]'
               variant='outline'
               aria-label={`Previous Post: ${previousPost.title}`}
             >
               <Link href={previousPost.url}>
-                <ChevronLeftIcon className='size-4' aria-hidden='true' />
+                <ChevronLeftIcon
+                  className='size-4 transition-transform duration-300 group-hover:-translate-x-0.5'
+                  aria-hidden='true'
+                />
                 Previous Post
               </Link>
             </Button>
@@ -125,13 +128,16 @@ const PostNavigation = ({ currentPostSlug }: { currentPostSlug: string }) => {
           <TooltipTrigger asChild>
             <Button
               asChild
-              className='ml-auto rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
+              className='group ml-auto rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
               variant='outline'
               aria-label={`Next Post: ${nextPost.title}`}
             >
               <Link href={nextPost.url}>
                 Next Post
-                <ChevronRightIcon className='size-4' aria-hidden='true' />
+                <ChevronRightIcon
+                  className='size-4 transition-transform duration-300 group-hover:translate-x-0.5'
+                  aria-hidden='true'
+                />
               </Link>
             </Button>
           </TooltipTrigger>

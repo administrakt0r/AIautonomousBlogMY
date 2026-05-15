@@ -25,8 +25,11 @@ const NotFound = () => {
         <div className='flex flex-wrap justify-center gap-4'>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button className='rounded-full' variant='outline' onClick={() => router.back()}>
-                <ChevronLeftIcon className='mr-2 size-4' aria-hidden='true' />
+              <Button className='group rounded-full' variant='outline' onClick={() => router.back()}>
+                <ChevronLeftIcon
+                  className='mr-2 size-4 transition-transform duration-300 group-hover:-translate-x-0.5'
+                  aria-hidden='true'
+                />
                 Go back
               </Button>
             </TooltipTrigger>
@@ -35,10 +38,13 @@ const NotFound = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button className='rounded-full' asChild>
+              <Button className='group rounded-full' asChild>
                 <Link href='/'>
                   Back to Home
-                  <ArrowRightIcon className='ml-2 size-4' aria-hidden='true' />
+                  <ArrowRightIcon
+                    className='ml-2 size-4 transition-transform duration-300 group-hover:translate-x-0.5'
+                    aria-hidden='true'
+                  />
                 </Link>
               </Button>
             </TooltipTrigger>
@@ -47,9 +53,12 @@ const NotFound = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button className='rounded-full' variant='secondary' asChild>
+              <Button className='group rounded-full' variant='secondary' asChild>
                 <Link href='/#categories'>
-                  <SearchIcon className='mr-2 size-4' aria-hidden='true' />
+                  <SearchIcon
+                    className='mr-2 size-4 transition-transform duration-300 group-hover:scale-110'
+                    aria-hidden='true'
+                  />
                   Explore Blog
                 </Link>
               </Button>
