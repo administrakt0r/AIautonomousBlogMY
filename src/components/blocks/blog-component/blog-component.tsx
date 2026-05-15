@@ -315,6 +315,7 @@ const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1)
 
   const searchInputRef = useRef<HTMLInputElement>(null)
+  const sectionRef = useRef<HTMLElement>(null)
 
   // 🎨 Palette: Sync selectedTab with URL hash for shareable filtered views
   useEffect(() => {
@@ -329,12 +330,8 @@ const Blog = () => {
           setCurrentPage(1)
 
           // 🎨 Palette: Scroll to categories section when a category hash is detected
-          // browsers only do this automatically if the ID exactly matches the hash.
-          const element = document.getElementById('categories')
-
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
-          }
+          // ⚡ Bolt: Use ref instead of document.getElementById for better performance and idiomatic React.
+          sectionRef.current?.scrollIntoView({ behavior: 'smooth' })
         }
       } else if (hash === '#categories' || hash === '#home') {
         setSelectedTab('All')
@@ -397,22 +394,17 @@ const Blog = () => {
       }
 
       // 🎨 Palette: Scroll to categories section when a tab is changed (especially useful when clicking from a BlogCard)
-      const element = document.getElementById('categories')
-
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      }
+      // ⚡ Bolt: Use ref instead of document.getElementById for better performance and idiomatic React.
+      sectionRef.current?.scrollIntoView({ behavior: 'smooth' })
     },
     [router]
   )
 
   const handlePageChange = useCallback((page: number) => {
     setCurrentPage(page)
-    const element = document.getElementById('categories')
 
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
+    // ⚡ Bolt: Use ref instead of document.getElementById for better performance and idiomatic React.
+    sectionRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [])
 
   const handleSearchChange = useCallback((value: string) => {
@@ -421,7 +413,7 @@ const Blog = () => {
   }, [])
 
   return (
-    <section className='scroll-mt-20 py-8 sm:py-16 lg:py-24' id='categories'>
+    <section ref={sectionRef} className='scroll-mt-20 py-8 sm:py-16 lg:py-24' id='categories'>
       <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:space-y-16 lg:px-8'>
         {/* Header */}
         <div className='space-y-4'>

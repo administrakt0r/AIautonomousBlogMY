@@ -32,12 +32,13 @@ export const Highlight = React.memo(({ text, trimmedQuery }: HighlightProps) => 
     return <>{text}</>
   }
 
-  const lowerQuery = trimmedQuery.toLowerCase()
-
   return (
     <>
       {parts.map((part, i) =>
-        part.toLowerCase() === lowerQuery ? (
+
+        // ⚡ Bolt: Since the regex uses a capturing group, matches are at odd indices.
+        // This avoids redundant .toLowerCase() and string comparisons in the render path.
+        i % 2 === 1 ? (
           <mark key={i} className='bg-primary/20 text-foreground rounded-sm px-0.5'>
             {part}
           </mark>
