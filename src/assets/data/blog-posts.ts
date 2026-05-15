@@ -2296,6 +2296,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 200,
+    slug: 'physical-ai-humanoid-robots-factories',
+    title: 'Physical AI Hits Factory Floors with Humanoid Robot Deployments',
+    description: 'British tech firm Humanoid and industrial giant Schaeffler announce a massive rollout of humanoid robots for factory automation.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Humanoid robots in a factory setting',
+    date: 'May 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
