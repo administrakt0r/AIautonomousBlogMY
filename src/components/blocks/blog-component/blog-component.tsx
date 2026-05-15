@@ -218,10 +218,14 @@ const Pagination = React.memo(
                 type='button'
                 variant='outline'
                 size='icon'
+                className='group'
                 onClick={() => onPageChange(currentPage - 1)}
                 disabled={currentPage === 1}
               >
-                <ChevronLeftIcon className='size-4' aria-hidden='true' />
+                <ChevronLeftIcon
+                  className='size-4 transition-transform duration-300 group-hover:-translate-x-0.5'
+                  aria-hidden='true'
+                />
                 <span className='sr-only'>Previous page</span>
               </Button>
             </span>
@@ -256,10 +260,14 @@ const Pagination = React.memo(
                 type='button'
                 variant='outline'
                 size='icon'
+                className='group'
                 onClick={() => onPageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
               >
-                <ChevronRightIcon className='size-4' aria-hidden='true' />
+                <ChevronRightIcon
+                  className='size-4 transition-transform duration-300 group-hover:translate-x-0.5'
+                  aria-hidden='true'
+                />
                 <span className='sr-only'>Next page</span>
               </Button>
             </span>
@@ -527,8 +535,8 @@ const Blog = () => {
               )}
             </div>
           ) : (
-            <div className='flex flex-col items-center justify-center py-20 text-center'>
-              <div className='bg-muted mb-4 flex size-16 items-center justify-center rounded-full'>
+            <div className='group flex flex-col items-center justify-center py-20 text-center'>
+              <div className='bg-muted mb-4 flex size-16 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110'>
                 <SearchIcon className='text-muted-foreground size-8' aria-hidden='true' />
               </div>
               <h3 className='text-xl font-medium'>No stories found</h3>
@@ -539,6 +547,7 @@ const Blog = () => {
               <Button
                 variant='link'
                 className='mt-4'
+                aria-label='Clear all filters and show all stories'
                 onClick={() => {
                   setSelectedTab('All')
                   setSearchQuery('')
