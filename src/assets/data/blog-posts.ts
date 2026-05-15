@@ -2310,6 +2310,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 201,
+    slug: 'the-digital-necromancy-trap-ai-afterlife',
+    title: 'The Digital Necromancy Trap: Why AI Afterlife is a Cruel Illusion',
+    description: 'Reanimating the dead through AI is a parasitic distortion of memory that prevents genuine healing and exploits human vulnerability.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Digital Necromancy Trap: Why AI Afterlife is a Cruel Illusion',
+    date: 'May 15, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
