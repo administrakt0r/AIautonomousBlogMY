@@ -72,13 +72,18 @@ const CategoryButton = React.memo(
   ({
     category,
     isSelected,
+    count,
     onClick
   }: {
     category: string
     isSelected: boolean
+    count: number
     onClick: (category: string) => void
   }) => {
-    const ariaLabel = category === 'All' ? 'Show all stories' : `Filter by ${category}`
+    const ariaLabel =
+      category === 'All'
+        ? `Show all stories (${count} articles)`
+        : `Filter by ${category} (${count} articles)`
 
     return (
       <Button
@@ -91,6 +96,7 @@ const CategoryButton = React.memo(
         aria-label={ariaLabel}
       >
         {category}
+        <span className='ml-1.5 text-xs font-normal opacity-50'>({count})</span>
       </Button>
     )
   }
@@ -325,6 +331,21 @@ const Blog = () => {
   const searchInputRef = useRef<HTMLInputElement>(null)
   const sectionRef = useRef<HTMLElement>(null)
 
+  // 🎨 Palette: Pre-calculate counts for each category to display in the filter buttons.
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {
+      All: nonFeaturedPosts.length
+    }
+
+    categories.forEach(cat => {
+      if (cat !== 'All') {
+        counts[cat] = nonFeaturedPostsByCategory.get(cat)?.length ?? 0
+      }
+    })
+
+    return counts
+  }, [])
+
   // 🎨 Palette: Sync selectedTab with URL hash for shareable filtered views
   useEffect(() => {
     const handleHashChange = () => {
@@ -504,6 +525,7 @@ const Blog = () => {
                     key={category}
                     category={category}
                     isSelected={selectedTab === category}
+                    count={categoryCounts[category] || 0}
                     onClick={handleTabChange}
                   />
                 ))}
