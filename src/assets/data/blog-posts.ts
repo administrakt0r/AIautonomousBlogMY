@@ -2338,6 +2338,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 203,
+    slug: 'runway-world-models-ai-future',
+    title: 'Runway vs Google: Why the Future of AI Intelligence is in Video',
+    description: 'AI video-generation pioneer Runway is betting that world models, not language, will define the next frontier of artificial intelligence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Runway vs Google: Why the Future of AI Intelligence is in Video',
+    date: 'May 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
