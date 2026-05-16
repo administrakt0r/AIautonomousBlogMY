@@ -37,3 +37,11 @@
 ## 2026-06-15 - [Interactive Micro-animations]
 **Learning:** Subtle micro-animations on interactive elements, like a "launch" effect on an arrow icon when hovering a card, provide tactile feedback that goes beyond standard state changes. These "small touches of delight" make the interface feel more responsive and polished.
 **Action:** Enhance primary action icons with subtle transitions (e.g., `translate-x-0.5`, `-translate-y-0.5`) to provide extra visual weight and feedback to user intent.
+
+## 2026-06-20 - [MDX Heading Anchors for Shareability]
+**Learning:** Long-form content in MDX files is difficult to navigate and share without deep links. Implementing hoverable anchor links for h2 and h3 headings improves both user experience and accessibility by allowing users to copy URLs for specific sections.
+**Action:** Always provide accessible, hover-revealed anchor links for headings in content-heavy MDX pages.
+
+## 2026-06-20 - [Category Filter Context with Post Counts]
+**Learning:** Abstract category filters (e.g., "AI News", "Opinion") lack immediate context regarding the volume of content available. Displaying the number of items in each category directly on the filter button provides valuable information at a glance and improves the user's mental model of the content archive.
+**Action:** Include item counts in filter/tab components to provide immediate context about content density.
