@@ -30,6 +30,10 @@ const PagesLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       {/* Header Section */}
       <Header navigationData={navigationData} />
 
+      {/* ⚡ Bolt: Sentinel element for BackToTop component.
+          Positioned 300px from the top to trigger the visibility of the "Back to Top" button. */}
+      <div id='back-to-top-sentinel' className='pointer-events-none absolute top-[300px] h-px w-full' aria-hidden='true' />
+
       {/* Main Content */}
       <main id='main-content' tabIndex={-1} className='flex flex-col'>
         {children}

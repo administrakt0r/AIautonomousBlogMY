@@ -39,3 +39,7 @@
 ## 2026-05-14 - Stateless Regex for Shared Utilities
 **Learning:** When using a shared RegExp instance with `.test()` across multiple calls, the global (`g`) flag causes the regex to track `lastIndex`. This leads to incorrect results (alternating true/false) on subsequent matches of the same string.
 **Action:** Omit the global (`g`) flag in shared search utilities to ensure stateless and predictable matching. Use the case-insensitive (`i`) flag instead.
+
+## 2026-05-16 - Scroll Listener Elimination & Data Normalization
+**Learning:** High-frequency event listeners (like 'scroll') for simple visibility toggles can be completely replaced by IntersectionObserver with sentinels, which are more performant as they don't block the main thread on every scroll frame. Additionally, even small redundant fields in large data arrays accumulate; removing defaults that can be injected at runtime reduces both source size and initial JS payload.
+**Action:** Prefer IntersectionObserver for any UI element that reacts to scroll position (like Back to Top buttons or Sticky headers). Always audit large data arrays for repeated default values and move them to the data processing pass.

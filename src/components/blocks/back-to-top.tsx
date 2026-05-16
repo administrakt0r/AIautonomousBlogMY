@@ -8,6 +8,12 @@ import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
 
+/**
+ * ⚡ Bolt: Optimized BackToTop component using IntersectionObserver.
+ * This replaces the window scroll event listener, eliminating JS execution on every scroll frame.
+ * It observes a sentinel element at 300px; when the sentinel is out of view (scrolled past),
+ * the button becomes visible.
+ */
 export const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
 
@@ -24,26 +30,22 @@ export const BackToTop = () => {
   }
 
   useEffect(() => {
-    let ticking = false
+    const sentinel = document.getElementById('back-to-top-sentinel')
 
-    const toggleVisibility = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          if (window.scrollY > 300) {
-            setIsVisible(true)
-          } else {
-            setIsVisible(false)
-          }
+    if (!sentinel) return
 
-          ticking = false
-        })
-        ticking = true
-      }
-    }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // If the sentinel is NOT intersecting and its top is less than 0, it means we've scrolled past 300px.
+        // This check prevents the button from appearing on page load in very short viewports.
+        setIsVisible(!entry.isIntersecting && entry.boundingClientRect.top < 0)
+      },
+      { threshold: [0, 1] }
+    )
 
-    window.addEventListener('scroll', toggleVisibility, { passive: true })
+    observer.observe(sentinel)
 
-    return () => window.removeEventListener('scroll', toggleVisibility)
+    return () => observer.disconnect()
   }, [])
 
   return (

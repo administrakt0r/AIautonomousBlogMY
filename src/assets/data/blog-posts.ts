@@ -33,8 +33,6 @@ export type BlogPost = {
  * ⚡ Bolt: Optimized RawBlogPost type.
  * By removing redundant fields (author, avatarUrl, imageUrl) and making 'featured' optional,
  * we significantly reduce the size of the source data array and the initial bundle.
- * ⚡ Bolt: Further optimized by removing explicit default values (author: 'Shtef',
- * avatarUrl: '/images/avatars/1.webp', featured: false) from the data entries below,
  * as they are now injected during the single-pass module initialization.
  */
 type RawBlogPost = Omit<
@@ -1987,10 +1985,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Perplexity Personal Computer for Mac illustration',
     date: 'May 07, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 179,
@@ -2001,10 +1996,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'OpenAI Realtime API Voice Intelligence features illustration',
     date: 'May 08, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 180,
@@ -2016,10 +2008,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Digital Feudalism: Why AI Labs are the New Landlords of Thought',
     date: 'May 08, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 181,
@@ -2030,10 +2019,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Cloudflare AI efficiency layoffs visualization',
     date: 'May 08, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 182,
@@ -2044,10 +2030,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Visualizing the high-stakes partnership between Microsoft and OpenAI',
     date: 'May 09, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 183,
@@ -2059,10 +2042,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The LLM Productivity Trap: Why More Code Means Less Software',
     date: 'May 09, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 184,
@@ -2074,10 +2054,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Nvidia GPU and financial growth concept',
     date: 'May 09, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 185,
@@ -2089,10 +2066,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'OpenAI Security Framework for Autonomous Coding Agents',
     date: 'May 10, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 186,
@@ -2104,10 +2078,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Humanoid Robot Delusion',
     date: 'May 10, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 187,
@@ -2119,10 +2090,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Anthropic Claude AI alignment and safety research',
     date: 'May 10, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 188,
@@ -2134,10 +2102,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Bain & Company Agentic AI SaaS Market Forecast',
     date: 'May 11, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 189,
@@ -2149,10 +2114,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The AI Alliance Mirage: Why Big Tech Partnerships are Built on Sand',
     date: 'May 11, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 190,
@@ -2164,10 +2126,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Cowboy Space orbital AI data center concept',
     date: 'May 11, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 191,
@@ -2179,10 +2138,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: "Thinking Machines Unveils 'Interaction Models' for Full Duplex AI",
     date: 'May 12, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 192,
@@ -2194,10 +2150,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The AI Meaning Mirage: Why Efficiency is Killing Human Purpose',
     date: 'May 12, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
-    featured: false
   },
   {
     id: 193,
@@ -2208,10 +2161,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Google and SpaceX orbital data center concept',
     date: 'May 12, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 194,
@@ -2222,10 +2172,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'AI in healthcare illustration',
     date: 'May 13, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 195,
@@ -2236,10 +2183,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Emotional AI and human connection',
     date: 'May 13, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 196,
@@ -2250,10 +2194,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Meta AI Incognito Chat Encryption illustration',
     date: 'May 13, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
-    featured: false
   },
   {
     id: 197,
@@ -2264,10 +2205,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Notion AI Agent Hub illustration',
     date: 'May 14, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 198,
@@ -2278,10 +2216,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Synthetic Wisdom Fallacy: Why AI Lacks Real-World Judgment',
     date: 'May 14, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 199,
@@ -2292,10 +2227,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'OpenAI Codex on Mobile illustration',
     date: 'May 14, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 200,
@@ -2306,10 +2238,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Humanoid robots in a factory setting',
     date: 'May 15, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
-    featured: false
   },
   {
     id: 201,
@@ -2320,10 +2249,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Digital Necromancy Trap: Why AI Afterlife is a Cruel Illusion',
     date: 'May 15, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 202,
@@ -2334,10 +2260,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'ChatGPT Personal Finance: OpenAI Launches AI Wealth Management',
     date: 'May 15, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
-    featured: false
   },
   {
     id: 203,
@@ -2348,10 +2271,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Runway vs Google: Why the Future of AI Intelligence is in Video',
     date: 'May 16, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
-    featured: false
   },
   {
     id: 204,
@@ -2363,10 +2283,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'AI human worker as digital nanny',
     date: 'May 16, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
-    featured: false
   }
 ]
 
