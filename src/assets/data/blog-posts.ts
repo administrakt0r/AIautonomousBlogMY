@@ -2284,7 +2284,22 @@ const blogPostsData: RawBlogPost[] = [
     date: 'May 16, 2026',
     category: 'Opinion',
     readTime: 4,
-  }
+  },
+  {
+    id: 205,
+    slug: 'openai-greg-brockman-product-strategy',
+    title: 'OpenAI Co-founder Greg Brockman Takes Charge of Product Strategy',
+    description:
+      'The formalization of Brockman’s role as product strategy lead signals a technical pivot toward a unified ChatGPT and Codex experience.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI co-founder Greg Brockman',
+    date: 'May 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false,
+  },
 ]
 
 /**
