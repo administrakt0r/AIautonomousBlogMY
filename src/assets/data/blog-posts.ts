@@ -2352,6 +2352,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 204,
+    slug: 'the-prompting-proletariat-ai-gig-work-reality',
+    title: 'The Prompting Proletariat: Why AI is Turning Us Into Digital Nannies',
+    description:
+      'The AI revolution promised we would be orchestrators, but instead we are becoming high-stakes proofreaders for unreliable models.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI human worker as digital nanny',
+    date: 'May 16, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
