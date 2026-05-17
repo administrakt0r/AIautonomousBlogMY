@@ -130,7 +130,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
         <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8'>
           {/* Logo */}
           <Link href='/#home'>
-            <Logo />
+            <Logo id='site-logo' />
           </Link>
 
           {/* Navigation */}

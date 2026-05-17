@@ -170,7 +170,7 @@ const SearchInput = React.memo(
             className='peer h-10 px-9'
           />
           {!value && (
-            <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 hidden items-center pr-3 sm:flex'>
+            <div className='text-muted-foreground peer-focus:hidden pointer-events-none absolute inset-y-0 right-0 hidden items-center pr-3 sm:flex'>
               <kbd className='bg-muted border-muted-foreground/20 pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none'>
                 <span className='text-xs'>/</span>
               </kbd>
