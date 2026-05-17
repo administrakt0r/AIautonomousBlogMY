@@ -2329,6 +2329,20 @@ const blogPostsData: RawBlogPost[] = [
     readTime: 5,
     featured: false,
   },
+  {
+    id: 208,
+    slug: 'apple-siri-revamp-auto-deleting-chats-privacy',
+    title: "Apple's Siri Revamp: New Auto-Deleting Chats Feature for Privacy",
+    description: "Apple is reportedly doubling down on its 'Privacy First' mantra with a new suite of features designed to give users control over their AI interactions.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Apple Siri AI privacy and auto-deleting chats illustration",
+    date: 'May 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false,
+  },
 ]
 
 /**
