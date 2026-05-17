@@ -2350,6 +2350,14 @@ export const blogPostsBySlug = new Map<string, BlogPost>()
 export const postsByCategory = new Map<string, BlogPost[]>()
 export const nonFeaturedPostsByCategory = new Map<string, BlogPost[]>()
 
+/**
+ * ⚡ Bolt: Pre-calculate counts for each category during the single-pass data transformation loop.
+ * This avoids redundant O(N) counts in client components on every mount.
+ */
+export const nonFeaturedCategoryCounts: Record<string, number> = {
+  All: 0
+}
+
 // ⚡ Bolt: Use a module-level cache for category URLs to avoid redundant encodeURIComponent calls.
 const categoryUrlCache = new Map<string, string>()
 
@@ -2398,17 +2406,31 @@ for (let i = dataLen - 1; i >= 0; i--) {
   sortedPosts[dataLen - 1 - i] = post
 
   // Categorize for both all and non-featured lists
-  const catList = postsByCategory.get(post.category) || []
+  // ⚡ Bolt: Optimize Map operations to avoid redundant .set() calls when the list already exists.
+  let catList = postsByCategory.get(post.category)
+
+  if (!catList) {
+    catList = []
+    postsByCategory.set(post.category, catList)
+  }
 
   catList.push(post)
-  postsByCategory.set(post.category, catList)
 
   if (!post.featured) {
     nonFeatured.push(post)
-    const nfCatList = nonFeaturedPostsByCategory.get(post.category) || []
+
+    // ⚡ Bolt: Increment pre-calculated counts
+    nonFeaturedCategoryCounts.All++
+    nonFeaturedCategoryCounts[post.category] = (nonFeaturedCategoryCounts[post.category] || 0) + 1
+
+    let nfCatList = nonFeaturedPostsByCategory.get(post.category)
+
+    if (!nfCatList) {
+      nfCatList = []
+      nonFeaturedPostsByCategory.set(post.category, nfCatList)
+    }
 
     nfCatList.push(post)
-    nonFeaturedPostsByCategory.set(post.category, nfCatList)
   }
 }
 

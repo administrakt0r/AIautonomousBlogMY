@@ -26,6 +26,7 @@ import { BlogCard } from '@/components/blocks/blog-card'
 import {
   nonFeaturedPosts,
   nonFeaturedPostsByCategory,
+  nonFeaturedCategoryCounts,
   categoriesWithAll,
   type BlogPost
 } from '@/assets/data/blog-posts'
@@ -331,21 +332,6 @@ const Blog = () => {
   const searchInputRef = useRef<HTMLInputElement>(null)
   const sectionRef = useRef<HTMLElement>(null)
 
-  // 🎨 Palette: Pre-calculate counts for each category to display in the filter buttons.
-  const categoryCounts = useMemo(() => {
-    const counts: Record<string, number> = {
-      All: nonFeaturedPosts.length
-    }
-
-    categories.forEach(cat => {
-      if (cat !== 'All') {
-        counts[cat] = nonFeaturedPostsByCategory.get(cat)?.length ?? 0
-      }
-    })
-
-    return counts
-  }, [])
-
   // 🎨 Palette: Sync selectedTab with URL hash for shareable filtered views
   useEffect(() => {
     const handleHashChange = () => {
@@ -525,7 +511,7 @@ const Blog = () => {
                     key={category}
                     category={category}
                     isSelected={selectedTab === category}
-                    count={categoryCounts[category] || 0}
+                    count={nonFeaturedCategoryCounts[category] || 0}
                     onClick={handleTabChange}
                   />
                 ))}
