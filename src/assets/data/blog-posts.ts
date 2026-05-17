@@ -2315,6 +2315,20 @@ const blogPostsData: RawBlogPost[] = [
     readTime: 7,
     featured: false,
   },
+  {
+    id: 207,
+    slug: 'the-algorithmic-accent-why-we-are-learning-to-speak-like-ai',
+    title: 'The Algorithmic Accent: Why We Are Learning to Speak Like AI',
+    description: 'We are subconsciously training ourselves to be understood by machines, at the cost of our own expressive richness and creativity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Algorithmic Accent: Human and AI communication illustration',
+    date: 'May 17, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false,
+  },
 ]
 
 /**
