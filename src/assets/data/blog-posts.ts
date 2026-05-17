@@ -2300,6 +2300,21 @@ const blogPostsData: RawBlogPost[] = [
     readTime: 6,
     featured: false,
   },
+  {
+    id: 206,
+    slug: 'arxiv-bans-ai-slop-in-research',
+    title: 'ArXiv Implements One-Year Ban on Unverified AI Content',
+    description:
+      'The scientific preprint giant cracks down on "AI slop" with a one-strike rule for hallucinated references and unverified LLM artifacts.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'ArXiv scientific research repository',
+    date: 'May 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false,
+  },
 ]
 
 /**
