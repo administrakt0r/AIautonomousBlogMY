@@ -2357,6 +2357,20 @@ const blogPostsData: RawBlogPost[] = [
     readTime: 6,
     featured: false,
   },
+  {
+    id: 210,
+    slug: 'the-reality-deficit-ai-generated-evidence-legal-system',
+    title: 'The Reality Deficit: Why AI-Generated Evidence Will Kill the Law',
+    description: 'The foundational pillars of justice are crumbling as AI-generated deepfakes become indistinguishable from reality, threatening the future of the legal system.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'A conceptual representation of the collapse of justice in the face of AI-generated evidence.',
+    date: 'May 18, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false,
+  },
 ]
 
 /**
