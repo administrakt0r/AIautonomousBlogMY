@@ -80,7 +80,10 @@ const CTA = () => {
                           className='flex flex-col items-start gap-2 py-3 outline-none'
                         >
                           <div className='flex items-center gap-2 text-green-600 dark:text-green-400'>
-                            <CheckCircleIcon className='size-5' aria-hidden='true' />
+                            <CheckCircleIcon
+                              className='size-5 animate-in zoom-in-90 duration-300'
+                              aria-hidden='true'
+                            />
                             <span className='font-medium'>Thanks for subscribing! Check your inbox soon.</span>
                           </div>
                           <Button onClick={handleReset} variant='link' className='h-auto p-0 text-sm'>
