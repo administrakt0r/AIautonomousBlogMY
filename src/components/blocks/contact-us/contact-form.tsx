@@ -36,7 +36,7 @@ const StaticInputs = React.memo(({ nameRef }: { nameRef: React.RefObject<HTMLInp
             aria-required='true'
             autoComplete='name'
           />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
+          <div className='text-muted-foreground peer-focus:text-primary pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 transition-colors peer-disabled:opacity-50'>
             <UserIcon className='size-4' aria-hidden='true' />
           </div>
         </div>
@@ -58,7 +58,7 @@ const StaticInputs = React.memo(({ nameRef }: { nameRef: React.RefObject<HTMLInp
             aria-required='true'
             autoComplete='email'
           />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
+          <div className='text-muted-foreground peer-focus:text-primary pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 transition-colors peer-disabled:opacity-50'>
             <MailIcon className='size-4' aria-hidden='true' />
           </div>
         </div>
@@ -78,7 +78,7 @@ const StaticInputs = React.memo(({ nameRef }: { nameRef: React.RefObject<HTMLInp
             className='peer h-10 pr-9'
             autoComplete='tel'
           />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
+          <div className='text-muted-foreground peer-focus:text-primary pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 transition-colors peer-disabled:opacity-50'>
             <PhoneIcon className='size-4' aria-hidden='true' />
           </div>
         </div>

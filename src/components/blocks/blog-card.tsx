@@ -28,7 +28,7 @@ interface BlogCardProps {
 export const BlogCard = React.memo(
   ({ post, onCategoryClick, priority = false, trimmedQuery = '' }: BlogCardProps) => {
   return (
-    <Card className='group focus-within:ring-primary relative h-full overflow-hidden shadow-none transition-all duration-300 focus-within:ring-2 focus-within:ring-offset-2'>
+    <Card className='group focus-within:ring-primary hover:border-primary/50 relative h-full overflow-hidden shadow-none transition-all duration-300 hover:shadow-md focus-within:ring-2 focus-within:ring-offset-2'>
       <CardContent className='space-y-3.5'>
         <div className='relative mb-6 aspect-[1200/630] overflow-hidden rounded-lg sm:mb-12'>
           <Image

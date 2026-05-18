@@ -49,7 +49,11 @@ const DropdownNavItem = React.memo(({ navItem, isActive }: { navItem: Navigation
   if (navItem.href) {
     return (
       <DropdownMenuItem asChild>
-        <Link href={navItem.href} className={cn(isActive && 'bg-accent text-accent-foreground font-medium')}>
+        <Link
+          href={navItem.href}
+          aria-current={isActive ? 'page' : undefined}
+          className={cn(isActive && 'bg-accent text-accent-foreground font-medium')}
+        >
           {navItem.icon}
           {navItem.title}
         </Link>

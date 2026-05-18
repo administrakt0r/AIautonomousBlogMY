@@ -47,6 +47,7 @@ const NavItem = React.memo(({ navItem, isActive }: { navItem: NavigationSection;
       <NavigationMenuItem>
         <NavigationMenuLink
           href={navItem.href}
+          aria-current={isActive ? 'page' : undefined}
           className={cn(
             navigationMenuTriggerStyle(),
             'hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base!',
