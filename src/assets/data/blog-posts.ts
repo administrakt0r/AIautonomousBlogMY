@@ -2343,6 +2343,20 @@ const blogPostsData: RawBlogPost[] = [
     readTime: 6,
     featured: false,
   },
+  {
+    id: 209,
+    slug: 'musk-openai-trial-trust-closing-arguments',
+    title: 'Elon Musk vs. OpenAI Trial: The Battle Over AI Trust and Transparency',
+    description: 'Jurors weigh closing arguments as the fundamental question of executive integrity takes center stage in the future of artificial intelligence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'A conceptual image representing the legal battle between Elon Musk and OpenAI over trust and transparency.',
+    date: 'May 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false,
+  },
 ]
 
 /**
