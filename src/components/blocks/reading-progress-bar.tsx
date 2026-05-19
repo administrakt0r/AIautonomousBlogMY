@@ -60,13 +60,17 @@ export const ReadingProgressBar = () => {
       }
     }
 
-    const onResize = () => {
+    window.addEventListener('scroll', onScroll, { passive: true })
+
+    // ⚡ Bolt: Use ResizeObserver to track layout changes that affect scrollable height.
+    // This is more efficient and accurate than window 'resize' event, as it captures
+    // dynamic content injections and DOM shifts.
+    const resizeObserver = new ResizeObserver(() => {
       updateTotalScrollable()
       onScroll()
-    }
+    })
 
-    window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onResize, { passive: true })
+    resizeObserver.observe(document.documentElement)
 
     // Initialize values
     updateTotalScrollable()
@@ -74,7 +78,7 @@ export const ReadingProgressBar = () => {
 
     return () => {
       window.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onResize)
+      resizeObserver.disconnect()
     }
   }, [])
 
