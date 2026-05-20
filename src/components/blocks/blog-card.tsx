@@ -5,7 +5,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { ArrowRightIcon, CalendarDaysIcon, ClockIcon } from 'lucide-react'
+import { ArrowUpRightIcon, CalendarDaysIcon, ClockIcon } from 'lucide-react'
 
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -111,8 +111,8 @@ export const BlogCard = React.memo(
                 tabIndex={-1}
               >
                 <Link href={post.url} tabIndex={-1}>
-                  <ArrowRightIcon
-                    className='size-4 -rotate-45 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                  <ArrowUpRightIcon
+                    className='size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
                     aria-hidden='true'
                   />
                   <span className='sr-only'>Read more about: {post.title}</span>

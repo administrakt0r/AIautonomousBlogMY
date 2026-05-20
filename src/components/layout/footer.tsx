@@ -158,7 +158,7 @@ const Footer = () => {
                 href='https://administraktor.com'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='hover:text-primary inline-flex items-center gap-1 underline underline-offset-2'
+                className='hover:text-primary group inline-flex items-center gap-1 underline underline-offset-2'
                 aria-label='administraktor.com (opens in a new tab)'
               >
                 administraktor.com
