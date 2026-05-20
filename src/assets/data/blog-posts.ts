@@ -2295,10 +2295,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'OpenAI co-founder Greg Brockman',
     date: 'May 16, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 6,
-    featured: false,
+    readTime: 6
   },
   {
     id: 206,
@@ -2310,10 +2307,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'ArXiv scientific research repository',
     date: 'May 17, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 7,
-    featured: false,
+    readTime: 7
   },
   {
     id: 207,
@@ -2324,10 +2318,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Algorithmic Accent: Human and AI communication illustration',
     date: 'May 17, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 5,
-    featured: false,
+    readTime: 5
   },
   {
     id: 208,
@@ -2338,10 +2329,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: "Apple Siri AI privacy and auto-deleting chats illustration",
     date: 'May 17, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 6,
-    featured: false,
+    readTime: 6
   },
   {
     id: 209,
@@ -2352,10 +2340,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'A conceptual image representing the legal battle between Elon Musk and OpenAI over trust and transparency.',
     date: 'May 18, 2026',
     category: 'AI News',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 6,
-    featured: false,
+    readTime: 6
   },
   {
     id: 210,
@@ -2366,10 +2351,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'A conceptual representation of the collapse of justice in the face of AI-generated evidence.',
     date: 'May 18, 2026',
     category: 'Opinion',
-    author: 'Shtef',
-    avatarUrl: '/images/avatars/1.webp',
-    readTime: 7,
-    featured: false,
+    readTime: 7
   },
 ]
 
