@@ -154,7 +154,10 @@ const ContactForm = () => {
         className='flex flex-col items-center justify-center space-y-4 py-8 text-center'
       >
         <div className='bg-primary/10 rounded-full p-3'>
-          <CheckCircleIcon className='text-primary size-10' aria-hidden='true' />
+          <CheckCircleIcon
+            className='text-primary size-10 animate-in zoom-in-90 duration-300'
+            aria-hidden='true'
+          />
         </div>
         <h3 ref={successHeadingRef} tabIndex={-1} className='text-2xl font-bold outline-none'>
           Message Sent!
@@ -182,7 +185,11 @@ const ContactForm = () => {
           <span
             className={cn(
               'text-xs transition-colors',
-              message.length >= MAX_CHARS ? 'text-destructive font-semibold' : 'text-muted-foreground'
+              message.length >= MAX_CHARS
+                ? 'text-destructive font-semibold'
+                : message.length >= MAX_CHARS * 0.9
+                  ? 'text-amber-500 font-medium'
+                  : 'text-muted-foreground'
             )}
             aria-label={`${message.length} of ${MAX_CHARS} characters used`}
             id='char-count'
