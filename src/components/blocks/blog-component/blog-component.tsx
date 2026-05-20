@@ -202,6 +202,26 @@ const SearchInput = React.memo(
 
 SearchInput.displayName = 'SearchInput'
 
+// ⚡ Bolt: Extract and memoize the individual page button to prevent all buttons from re-rendering
+// when the currentPage changes. Only the old and new active buttons will re-render.
+const PageButton = React.memo(
+  ({ page, isActive, onClick }: { page: number; isActive: boolean; onClick: (page: number) => void }) => (
+    <Button
+      type='button'
+      variant={isActive ? 'default' : 'outline'}
+      size='icon'
+      onClick={() => onClick(page)}
+      className='hidden sm:flex'
+      aria-label={`Go to page ${page}`}
+      aria-current={isActive ? 'page' : undefined}
+    >
+      {page}
+    </Button>
+  )
+)
+
+PageButton.displayName = 'PageButton'
+
 // ⚡ Bolt: Extract and memoize the pagination controls into a sub-component.
 const Pagination = React.memo(
   ({
@@ -242,18 +262,12 @@ const Pagination = React.memo(
 
         <div className='flex items-center gap-1'>
           {pages.map(page => (
-            <Button
+            <PageButton
               key={page}
-              type='button'
-              variant={currentPage === page ? 'default' : 'outline'}
-              size='icon'
-              onClick={() => onPageChange(page)}
-              className='hidden sm:flex'
-              aria-label={`Go to page ${page}`}
-              aria-current={currentPage === page ? 'page' : undefined}
-            >
-              {page}
-            </Button>
+              page={page}
+              isActive={currentPage === page}
+              onClick={onPageChange}
+            />
           ))}
           <span className='text-muted-foreground mx-2 text-sm sm:hidden'>
             Page {currentPage} of {totalPages}
