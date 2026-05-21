@@ -3,22 +3,32 @@ import React from 'react'
 import type { MDXComponents } from 'mdx/types'
 
 import { ExternalLinkIcon, LinkIcon } from 'lucide-react'
+import Link from 'next/link'
 
 // This file allows you to provide custom React components
 // to be used in MDX files. You can import and use any
 // React component you want, including inline styles,
 // components from other libraries, and more.
 
+// ⚡ Bolt: Hoist regex patterns to module scope to avoid redundant compilation during MDX rendering.
+const SLUGIFY_STRIP_REGEX = /[^\w\s-]/g
+const SLUGIFY_WHITESPACE_REGEX = /\s+/g
+const SLUGIFY_TRIM_REGEX = /^-+|-+$/g
+
 const slugify = (text: string) =>
   text
     .toLowerCase()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/^-+|-+$/g, '')
+    .replace(SLUGIFY_STRIP_REGEX, '')
+    .replace(SLUGIFY_WHITESPACE_REGEX, '-')
+    .replace(SLUGIFY_TRIM_REGEX, '')
 
 const HeadingAnchor = ({ id, children, level }: { id?: string; children: React.ReactNode; level: 2 | 3 }) => {
   const generatedId = React.useMemo(() => {
     if (id) return id
+
+    // ⚡ Bolt: Fast-path for the common case where heading children is a simple string.
+    // This avoids the overhead of React.Children.toArray for most headings.
+    if (typeof children === 'string') return slugify(children)
 
     const text = React.Children.toArray(children)
       .map(child => (typeof child === 'string' ? child : ''))
@@ -57,25 +67,39 @@ const components = {
   li: ({ children }) => <li className='text-muted-foreground'>{children}</li>,
   a: ({ href, children, ...props }) => {
     const isExternal = href?.startsWith('http')
+    const isSpecial = href?.startsWith('mailto:') || href?.startsWith('tel:')
 
+    if (isExternal || isSpecial) {
+      return (
+        <a
+          href={href}
+          className='text-primary group underline underline-offset-4 transition-colors hover:text-primary/80'
+          {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+          {...props}
+        >
+          {children}
+          {isExternal && (
+            <span className='ml-1 inline-flex items-center gap-1'>
+              <ExternalLinkIcon
+                className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
+                aria-hidden='true'
+              />
+              <span className='sr-only'>(opens in a new tab)</span>
+            </span>
+          )}
+        </a>
+      )
+    }
+
+    // ⚡ Bolt: Use Next.js Link for internal navigation to enable prefetching and client-side transitions.
     return (
-      <a
-        href={href}
+      <Link
+        href={href || ''}
         className='text-primary group underline underline-offset-4 transition-colors hover:text-primary/80'
-        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         {...props}
       >
         {children}
-        {isExternal && (
-          <span className='ml-1 inline-flex items-center gap-1'>
-            <ExternalLinkIcon
-              className='size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
-              aria-hidden='true'
-            />
-            <span className='sr-only'>(opens in a new tab)</span>
-          </span>
-        )}
-      </a>
+      </Link>
     )
   }
 } satisfies MDXComponents
