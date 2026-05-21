@@ -306,24 +306,28 @@ Pagination.displayName = 'Pagination'
 const ResultsSummary = React.memo(
   ({
     filteredCount,
-    paginatedCount,
+    currentPage,
     selectedTab,
     searchQuery
   }: {
     filteredCount: number
-    paginatedCount: number
+    currentPage: number
     selectedTab: string
     searchQuery: string
   }) => {
-    const summary = useMemo(
-      () =>
-        filteredCount === 0
-          ? 'No stories match your current search and filters.'
-          : `Showing ${paginatedCount} of ${filteredCount} ${
-              filteredCount === 1 ? 'story' : 'stories'
-            }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`,
-      [filteredCount, paginatedCount, selectedTab, searchQuery]
-    )
+    const summary = useMemo(() => {
+      if (filteredCount === 0) {
+        return 'No stories match your current search and filters.'
+      }
+
+      const start = (currentPage - 1) * POSTS_PER_PAGE + 1
+      const end = Math.min(currentPage * POSTS_PER_PAGE, filteredCount)
+      const rangeText = start === end ? `${start}` : `${start}–${end}`
+
+      return `Showing ${rangeText} of ${filteredCount} ${
+        filteredCount === 1 ? 'story' : 'stories'
+      }${selectedTab !== 'All' ? ` in ${selectedTab}` : ''}${searchQuery ? ` for "${searchQuery}"` : ''}.`
+    }, [filteredCount, currentPage, selectedTab, searchQuery])
 
     return (
       <p id='blog-results-summary' className='text-muted-foreground text-sm' aria-live='polite'>
@@ -537,7 +541,7 @@ const Blog = () => {
           </div>
           <ResultsSummary
             filteredCount={filteredPosts.length}
-            paginatedCount={paginatedPosts.length}
+            currentPage={currentPage}
             selectedTab={selectedTab}
             searchQuery={searchQuery}
           />
