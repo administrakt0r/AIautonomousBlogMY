@@ -65,6 +65,18 @@ const components = {
   p: ({ children }) => <p className='text-muted-foreground mb-4'>{children}</p>,
   ul: ({ children }) => <ul className='mb-4 list-inside list-disc space-y-2 pl-2'>{children}</ul>,
   li: ({ children }) => <li className='text-muted-foreground'>{children}</li>,
+  strong: ({ children }) => <strong className='text-foreground font-semibold'>{children}</strong>,
+  blockquote: ({ children }) => (
+    <blockquote className='border-primary/20 bg-muted/30 my-6 border-l-4 py-2 pl-4 italic text-muted-foreground'>
+      {children}
+    </blockquote>
+  ),
+  code: ({ children }) => (
+    <code className='bg-muted text-foreground relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-medium'>
+      {children}
+    </code>
+  ),
+  hr: () => <hr className='border-border my-8' />,
   a: ({ href, children, ...props }) => {
     const isExternal = href?.startsWith('http')
     const isSpecial = href?.startsWith('mailto:') || href?.startsWith('tel:')
