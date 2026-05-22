@@ -36,7 +36,14 @@ function BreadcrumbLink({
   const Comp = asChild ? SlotPrimitive.Slot : 'a'
 
   return (
-    <Comp data-slot='breadcrumb-link' className={cn('hover:text-foreground transition-colors', className)} {...props} />
+    <Comp
+      data-slot='breadcrumb-link'
+      className={cn(
+        'hover:text-foreground focus-visible:ring-ring/50 rounded-sm transition-all outline-none focus-visible:ring-[3px]',
+        className
+      )}
+      {...props}
+    />
   )
 }
 

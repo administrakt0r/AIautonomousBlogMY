@@ -15,7 +15,10 @@ const Footer = () => {
       <div className='mx-auto flex max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 md:py-12 lg:px-8'>
         {/* Top Section */}
         <div className='flex items-center justify-between gap-4 max-md:flex-col'>
-          <Link href='/#'>
+          <Link
+            href='/#'
+            className='focus-visible:ring-ring/50 rounded-md outline-none focus-visible:ring-[3px]'
+          >
             <div className='flex items-center gap-3'>
               <Logo className='gap-3' />
             </div>
@@ -32,10 +35,13 @@ const Footer = () => {
                   href='https://x.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-muted-foreground hover:text-foreground transition-colors'
+                  className='text-muted-foreground hover:text-foreground focus-visible:ring-ring/50 rounded-sm transition-all focus-visible:ring-[3px] outline-none active:scale-95'
                   aria-label='Twitter (opens in a new tab)'
                 >
-                  <TwitterIcon className='size-5' aria-hidden='true' />
+                  <TwitterIcon
+                    className='size-5 transition-transform duration-300 hover:scale-110'
+                    aria-hidden='true'
+                  />
                 </a>
               </TooltipTrigger>
               <TooltipContent>Twitter</TooltipContent>
@@ -47,10 +53,13 @@ const Footer = () => {
                   href='https://github.com/wpine-sh/shtefai'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-muted-foreground hover:text-foreground transition-colors'
+                  className='text-muted-foreground hover:text-foreground focus-visible:ring-ring/50 rounded-sm transition-all focus-visible:ring-[3px] outline-none active:scale-95'
                   aria-label='GitHub (opens in a new tab)'
                 >
-                  <GithubIcon className='size-5' aria-hidden='true' />
+                  <GithubIcon
+                    className='size-5 transition-transform duration-300 hover:scale-110'
+                    aria-hidden='true'
+                  />
                 </a>
               </TooltipTrigger>
               <TooltipContent>GitHub</TooltipContent>
@@ -60,10 +69,13 @@ const Footer = () => {
               <TooltipTrigger asChild>
                 <Link
                   href='/rss.xml'
-                  className='text-muted-foreground hover:text-foreground transition-colors'
+                  className='text-muted-foreground hover:text-foreground focus-visible:ring-ring/50 rounded-sm transition-all focus-visible:ring-[3px] outline-none active:scale-95'
                   aria-label='RSS Feed'
                 >
-                  <RssIcon className='size-5' aria-hidden='true' />
+                  <RssIcon
+                    className='size-5 transition-transform duration-300 hover:scale-110'
+                    aria-hidden='true'
+                  />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>RSS Feed</TooltipContent>
@@ -84,14 +96,20 @@ const Footer = () => {
               href='https://WPinEU.com'
               target='_blank'
               rel='noopener noreferrer'
-              className='group block'
+              className='focus-visible:ring-ring/50 group block rounded-xl outline-none focus-visible:ring-[3px]'
               aria-label='WPinEU.com (opens in a new tab)'
             >
               <div className='relative overflow-hidden rounded-xl border border-blue-100 bg-blue-50/50 p-4 transition-all duration-300 hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 dark:border-blue-900/50 dark:bg-blue-950/20 dark:hover:border-blue-700/50'>
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-blue-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-blue-700 dark:text-blue-400'>
-                  <span className='text-lg' aria-hidden='true'>🌐</span> WPinEU.com
-                  <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-blue-700 dark:group-hover:text-blue-400' />
+                  <span className='text-lg' aria-hidden='true'>
+                    🌐
+                  </span>{' '}
+                  WPinEU.com
+                  <ExternalLinkIcon
+                    className='text-muted-foreground/50 ml-1 size-3.5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-blue-700 dark:group-hover:text-blue-400'
+                    aria-hidden='true'
+                  />
                 </div>
                 <p className='pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>
                   High-performance Digital Architecture & Free WordPress Hosting Initiative.
@@ -103,14 +121,20 @@ const Footer = () => {
               href='https://LLM.kiwi'
               target='_blank'
               rel='noopener noreferrer'
-              className='group block'
+              className='focus-visible:ring-ring/50 group block rounded-xl outline-none focus-visible:ring-[3px]'
               aria-label='LLM.kiwi (opens in a new tab)'
             >
               <div className='relative overflow-hidden rounded-xl border border-purple-100 bg-purple-50/50 p-4 transition-all duration-300 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 dark:border-purple-900/50 dark:bg-purple-950/20 dark:hover:border-purple-700/50'>
                 <div className='absolute top-0 left-0 h-full w-1 rounded-l-xl bg-purple-500'></div>
                 <div className='mb-1.5 flex items-center gap-2 pl-2 font-bold text-purple-700 dark:text-purple-400'>
-                  <span className='text-lg' aria-hidden='true'>🥝</span> LLM.kiwi
-                  <ExternalLinkIcon className='text-muted-foreground/50 ml-1 size-3.5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-purple-700 dark:group-hover:text-purple-400' />
+                  <span className='text-lg' aria-hidden='true'>
+                    🥝
+                  </span>{' '}
+                  LLM.kiwi
+                  <ExternalLinkIcon
+                    className='text-muted-foreground/50 ml-1 size-3.5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-purple-700 dark:group-hover:text-purple-400'
+                    aria-hidden='true'
+                  />
                 </div>
                 <p className='pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300'>
                   Your next-gen platform for interacting with intelligent systems & LLM API access.
@@ -122,7 +146,7 @@ const Footer = () => {
           <div className='flex md:col-span-1 lg:col-span-2'>
             <Link
               href='/responsible-ai-usage'
-              className='mt-7 block h-full w-full lg:mt-0'
+              className='focus-visible:ring-ring/50 mt-7 block h-full w-full rounded-xl outline-none focus-visible:ring-[3px] lg:mt-0'
               aria-label='Learn more about our Responsible AI Usage Initiative'
             >
               <div className='group relative flex h-full flex-col justify-center overflow-hidden rounded-xl border border-green-100 bg-green-50/50 p-6 transition-all duration-300 hover:border-green-300 hover:shadow-lg hover:shadow-green-500/10 dark:border-green-900/50 dark:bg-green-950/20 dark:hover:border-green-700/50'>
@@ -145,9 +169,12 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className='flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left'>
-          <p className='text-muted-foreground text-sm'>
+          <div className='text-muted-foreground text-sm'>
             {`©${CURRENT_YEAR}`}{' '}
-            <Link href='/#' className='text-foreground font-medium hover:underline'>
+            <Link
+              href='/#'
+              className='text-foreground focus-visible:ring-ring/50 rounded-sm font-medium outline-none hover:underline focus-visible:ring-[3px]'
+            >
               ShtefAI blog
             </Link>{' '}
             — Where machines learn and humans discover.
@@ -158,7 +185,7 @@ const Footer = () => {
                 href='https://administraktor.com'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='hover:text-primary group inline-flex items-center gap-1 underline underline-offset-2'
+                className='hover:text-primary focus-visible:ring-ring/50 group inline-flex items-center gap-1 rounded-sm underline underline-offset-2 outline-none focus-visible:ring-[3px]'
                 aria-label='administraktor.com (opens in a new tab)'
               >
                 administraktor.com
@@ -168,7 +195,7 @@ const Footer = () => {
                 />
               </a>
             </span>
-          </p>
+          </div>
 
           <div className='text-muted-foreground max-w-xl text-left text-xs'>
             <strong>Disclaimer:</strong> administraktor.com network is in no way responsible for unmoderated content on
@@ -177,7 +204,7 @@ const Footer = () => {
             <div className='mt-1 flex items-center gap-1'>
               <a
                 href='mailto:m@administraktor.com'
-                className='hover:text-primary group inline-flex items-center gap-1 underline underline-offset-2'
+                className='hover:text-primary focus-visible:ring-ring/50 group inline-flex items-center gap-1 rounded-sm underline underline-offset-2 outline-none focus-visible:ring-[3px]'
                 aria-label='Email m@administraktor.com'
               >
                 m@administraktor.com
