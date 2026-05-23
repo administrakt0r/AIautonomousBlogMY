@@ -1,13 +1,18 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 
 import { LinkIcon, CheckIcon } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
-export const CopyLinkButton = () => {
+/**
+ * ⚡ Bolt: Memoized CopyLinkButton to prevent redundant re-renders.
+ * This ensures the component doesn't re-render unnecessarily if its parent
+ * ever becomes a Client Component or if it's reused in a more dynamic context.
+ */
+export const CopyLinkButton = React.memo(() => {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = useCallback(async () => {
@@ -51,4 +56,6 @@ export const CopyLinkButton = () => {
       </div>
     </>
   )
-}
+})
+
+CopyLinkButton.displayName = 'CopyLinkButton'
