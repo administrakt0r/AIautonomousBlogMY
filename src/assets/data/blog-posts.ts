@@ -2353,6 +2353,21 @@ const blogPostsData: RawBlogPost[] = [
     category: 'Opinion',
     readTime: 7
   },
+  {
+    id: 211,
+    slug: 'trump-scraps-ai-executive-order-musk-zuckerberg',
+    title: 'Trump Scraps AI Executive Order After Musk and Zuckerberg Lobbying',
+    description:
+      'Tech titans successfully lobby the White House to halt voluntary AI safety standards in favor of accelerationist competition with China.',
+    imageUrl: getPostImagePath('trump-scraps-ai-executive-order-musk-zuckerberg'),
+    imageAlt: 'Trump Scraps AI Executive Order Musk Zuckerberg Lobbying',
+    date: 'May 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  }
 ]
 
 /**
