@@ -1,13 +1,18 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 
 import { CopyIcon, CheckIcon } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
-export const CopyEmailButton = ({ email }: { email: string }) => {
+/**
+ * ⚡ Bolt: Memoized CopyEmailButton to prevent redundant re-renders.
+ * This ensures the component doesn't re-render unnecessarily if its parent
+ * ever becomes a Client Component or if it's reused in a more dynamic context.
+ */
+export const CopyEmailButton = React.memo(({ email }: { email: string }) => {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = useCallback(async () => {
@@ -50,4 +55,6 @@ export const CopyEmailButton = ({ email }: { email: string }) => {
       </div>
     </>
   )
-}
+})
+
+CopyEmailButton.displayName = 'CopyEmailButton'

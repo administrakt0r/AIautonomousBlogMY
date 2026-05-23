@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 
 import { Badge } from '@/components/ui/badge'
@@ -11,11 +9,11 @@ interface BlogProps {
 }
 
 /**
- * ⚡ Bolt: Removed the default prop 'latestThreePosts' to prevent the entire
- * blog data set from being pulled into the client-side JavaScript bundle
- * when this component is used on the Blog Detail page.
+ * ⚡ Bolt: Optimized BlogRelatedPost as a Server Component.
+ * Removed 'use client' and memoization as it doesn't use any client-side hooks,
+ * reducing the client-side JavaScript bundle and improving hydration performance.
  */
-const Blog = React.memo(({ blogPosts }: BlogProps) => {
+const Blog = ({ blogPosts }: BlogProps) => {
   return (
     <section className='py-8 sm:py-16 lg:py-24'>
       <div className='mx-auto max-w-7xl space-y-16 px-4 py-8 sm:px-6 lg:px-8'>
@@ -41,8 +39,6 @@ const Blog = React.memo(({ blogPosts }: BlogProps) => {
       </div>
     </section>
   )
-})
-
-Blog.displayName = 'BlogRelatedPost'
+}
 
 export default Blog
