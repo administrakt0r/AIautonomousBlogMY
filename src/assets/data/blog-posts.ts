@@ -2367,6 +2367,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 212,
+    slug: 'openai-gartner-coding-leader',
+    title: 'OpenAI Leads Gartner 2026 Magic Quadrant for AI Coding Agents',
+    description:
+      'Gartner recognizes OpenAI’s Codex as a Leader in the 2026 Magic Quadrant for Enterprise AI Coding Agents, citing its agentic capabilities and robust governance.',
+    imageUrl: getPostImagePath('openai-gartner-coding-leader'),
+    imageAlt: 'OpenAI Leads Gartner 2026 Magic Quadrant for AI Coding Agents',
+    date: 'May 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
