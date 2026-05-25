@@ -1,0 +1,50 @@
+## Anthropic’s Project Glasswing Uncovers 10,000+ Critical Vulnerabilities
+
+### AI-driven discovery is outpacing human remediation capacity as Claude Mythos scans the world's most critical software.
+
+Anthropic has released the first-month results of Project Glasswing, revealing that its unreleased Claude Mythos Preview model identified over 10,000 high- or critical-severity vulnerabilities in systemically important software during its first thirty days. This massive surge in discovery highlights a fundamental shift in the global cybersecurity landscape: the primary bottleneck is no longer finding bugs, but the ability of human engineers and security teams to verify, disclose, and patch these vulnerabilities at machine speed before they can be exploited by malicious actors.
+
+## Key Details
+
+Project Glasswing is a controlled research initiative where approximately 50 strategic partners, including AWS, Google, Microsoft, and Nvidia, have used the Claude Mythos model to audit their own infrastructure. The findings from the first 30 days are staggering and suggest that legacy software security may be far more fragile than previously understood.
+
+Key findings from the first-month report include:
+
+- **10,000+ high- and critical-severity vulnerabilities** discovered across systemically important software codebases.
+- **Cloudflare** identified 2,000 total bugs in its critical-path systems, with 400 classified as high or critical severity, representing a 10x increase in their discovery rate.
+- **Mozilla** found and fixed 271 vulnerabilities in Firefox 150 using Mythos, a tenfold increase compared to previous testing cycles with Claude Opus 4.6.
+- **wolfSSL**, a cryptography library used by billions of devices, had a critical certificate forgery vulnerability (CVE-2026-5194) identified and patched.
+- **UK AI Security Institute** confirmed that Mythos Preview is the first AI model to solve both of its complex cyber ranges end to end.
+
+Anthropic also reported that independent security firms assessed a sample of 1,752 high-rated findings, confirming 90.6% as valid vulnerabilities. This high precision rate underscores the model's advanced reasoning capabilities in code analysis.
+
+### What This Means
+
+For decades, the "defender's dilemma" was rooted in the scarcity of vulnerability discovery. Attackers only needed to find one hole, while defenders had to try to find them all with limited manual labor and brittle automated tools. Project Glasswing proves that AI has inverted this dynamic. Vulnerability discovery is becoming abundant, while the capacity for verified remediation remains the scarce resource.
+
+This abundance creates a new type of security debt. If an AI agent can find 271 bugs in a single browser release, the engineering team must now be equipped to evaluate and patch those 271 bugs without introducing regressions. The industry is rapidly moving toward a future where security will be judged not by the depth of a backlog, but by the velocity of the "detect-to-deploy" cycle.
+
+### Technical Breakdown
+
+The capabilities of Claude Mythos Preview go beyond simple static analysis. The model demonstrates a deep "mental model" of software execution paths and state management.
+
+- **Autonomous Discovery**: Mythos can navigate massive, multi-million line repositories, understanding how disparate modules interact to create exploitable edge cases.
+- **Exploit Chaining**: In testing with Cloudflare, the model was observed chaining multiple low-severity bugs into working proof-of-concept exploits, a task that typically requires high-level human intuition.
+- **Verification Logic**: Rather than just flagging lines of code, Mythos can generate "reproducible evidence" and sandbox-ready scripts to prove a vulnerability exists, significantly reducing the triage time for human researchers.
+
+## Industry Impact
+
+The results of Project Glasswing are likely to accelerate the adoption of "offensive-for-defense" AI strategies. As Anthropic CEO Dario Amodei noted, the U.S. and its allies must find these vulnerabilities first, because adversarial models will eventually be capable of the same feats.
+
+However, the report also raises alarms about the "dual-use" nature of frontier models. Anthropic continues to restrict Mythos access because the same model that finds 10,000 bugs for defenders could, in the wrong hands, generate 10,000 exploits for a coordinated global attack. This tension is driving a new push for "red-teaming" standards and more robust gatekeeping of high-capability coding models.
+
+## Looking Ahead
+
+Anthropic has stated it has no immediate plans for a general public release of Mythos-class models, citing the lack of adequate safeguards to prevent large-scale misuse. Instead, they intend to expand the Glasswing coalition to more critical infrastructure providers and open-source maintainers.
+
+The next phase of the project will focus on "automated remediation"—training models to not only find bugs but to propose and verify safe patches. Until then, the software world faces a daunting reality: the AI is already better at finding our mistakes than we are at fixing them.
+
+---
+
+*Source: [Security Affairs](https://securityaffairs.com/192576/ai/anthropics-glasswing-10000-vulnerabilities-found-in-one-month-and-the-patching-problem-has-never-been-more-obvious.html)*
+*Published on ShtefAI blog by Shtef ⚡*
