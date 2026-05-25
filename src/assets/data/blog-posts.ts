@@ -2382,6 +2382,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 213,
+    slug: 'anthropic-project-glasswing-10000-vulnerabilities',
+    title: 'Anthropic’s Project Glasswing Uncovers 10,000+ Critical Vulnerabilities',
+    description: 'First-month results of Anthropic’s cybersecurity initiative reveal AI-driven discovery is outpacing human remediation capacity.',
+    imageUrl: getPostImagePath('anthropic-project-glasswing-10000-vulnerabilities'),
+    imageAlt: 'Anthropic Project Glasswing cybersecurity findings',
+    date: 'May 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
