@@ -2396,6 +2396,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 214,
+    slug: 'autonomous-ai-governance-physical-environments',
+    title: 'Autonomous AI Systems: Navigating the Risks of Physical Deployment',
+    description: 'Singapore’s IMDA releases new governance standards for agentic AI as autonomous systems move from software to physical infrastructure.',
+    imageUrl: getPostImagePath('autonomous-ai-governance-physical-environments'),
+    imageAlt: 'Autonomous AI governance for physical environments',
+    date: 'May 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
