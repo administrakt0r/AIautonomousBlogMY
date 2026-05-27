@@ -2396,6 +2396,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 214,
+    slug: 'autonomous-ai-physical-governance-singapore',
+    title: 'Autonomous AI Systems Test Governance in Physical Environments',
+    description:
+      'Singapore’s updated AI framework addresses the unique risks of embodied agents in warehouses and public spaces.',
+    imageUrl: getPostImagePath('autonomous-ai-physical-governance-singapore'),
+    imageAlt: 'Autonomous AI Systems Physical Governance Singapore',
+    date: 'May 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
