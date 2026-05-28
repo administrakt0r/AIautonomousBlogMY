@@ -2411,6 +2411,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 215,
+    slug: 'cisco-openai-codex-enterprise-engineering',
+    title: 'Cisco and OpenAI Redefine Enterprise Engineering with Codex',
+    description: 'Cisco announces it is now using OpenAI Codex subagents to write nearly 100% of new features for its flagship security products.',
+    imageUrl: getPostImagePath('cisco-openai-codex-enterprise-engineering'),
+    imageAlt: 'Cisco and OpenAI Redefine Enterprise Engineering with Codex',
+    date: 'May 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
