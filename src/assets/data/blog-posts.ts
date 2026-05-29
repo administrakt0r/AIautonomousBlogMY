@@ -2425,6 +2425,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 216,
+    slug: 'google-io-2026-gemini-omni-agi',
+    title: 'Google Unveils Gemini Omni: A Multimodal Leap Toward AGI',
+    description: 'Alphabet announces Gemini Omni, a revolutionary world model that processes text, audio, and video natively at human speeds.',
+    imageUrl: getPostImagePath('google-io-2026-gemini-omni-agi'),
+    imageAlt: 'Google Gemini Omni AGI world model launch',
+    date: 'May 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: true
   }
 ]
 
