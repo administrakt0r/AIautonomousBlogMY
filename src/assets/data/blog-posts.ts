@@ -2439,6 +2439,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: true
+  },
+  {
+    id: 217,
+    slug: 'openai-launches-rosalind-biodefense-program',
+    title: 'OpenAI Launches Rosalind Biodefense Program for Pandemic Preparedness',
+    description:
+      'OpenAI integrates frontier AI into national security with sponsored access to GPT-Rosalind for vetted biodefense and public health partners.',
+    imageUrl: getPostImagePath('openai-launches-rosalind-biodefense-program'),
+    imageAlt: 'OpenAI Rosalind Biodefense program launch',
+    date: 'May 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
