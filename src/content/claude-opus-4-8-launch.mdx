@@ -1,0 +1,52 @@
+## Anthropic Releases Claude Opus 4.8 with Agentic Coding Workflows
+
+### New flagship model introduces dynamic sub-agents and precision effort control for developers.
+
+Anthropic has officially launched Claude Opus 4.8, a significant upgrade to its flagship model class designed to redefine how AI handles complex, long-running engineering tasks. This release introduces a suite of "agentic" features, including dynamic sub-agent workflows and granular effort controls, specifically targeting the bottlenecks in modern software development and research. By allowing the model to self-verify its work and manage its own "thought budget," Anthropic is moving Claude from a passive assistant to an active collaborator in high-stakes production environments.
+
+## Key Details
+
+Claude Opus 4.8 isn't just a bump in benchmark scores; it represents a functional shift in how large language models interact with external tools and their own internal reasoning processes. The update is now live across claude.ai, the Claude API, and Claude Code.
+
+### Core Fact Sheet
+- **Model Identity:** Available via the API as `claude-opus-4-8`.
+- **Speed & Performance:** A new "Fast Mode" delivers 2.5x the speed of standard inference, albeit at a higher cost.
+- **Improved Reliability:** The model is 4x less likely to pass flawed code without comment compared to Opus 4.7.
+- **Effort Controls:** Users can now toggle "Effort" settings (High, XHigh) to dictate how many tokens the model "burns" during complex reasoning.
+
+### Dynamic Workflows and Parallelism
+One of the most significant additions is the introduction of **Dynamic Workflows** within Claude Code. This feature allows the model to autonomously plan a complex migration or refactor, spawn parallel sub-agents to handle different parts of the codebase, and verify the outputs before reporting back to the user. This effectively allows Claude to manage projects of hundreds of thousands of lines of code with minimal human intervention.
+
+### Messages API Evolution
+Developers now have the ability to make live changes to the messages array during an agent’s run. This means instructions can be updated on-the-fly—such as changing token budgets or updating permissions—without breaking the prompt cache or requiring a new user turn.
+
+### What This Means
+
+For the AI industry, Claude Opus 4.8 signals the end of the "chatbot" era and the beginning of the "agentic" era. While previous models were primarily optimized for conversation, Opus 4.8 is optimized for *work*. The introduction of effort control is a particularly savvy move by Anthropic; it acknowledges that not every task requires deep "thinking," but those that do should have access to a higher computational budget.
+
+By verticalizing their stack with Claude Code and the new API features, Anthropic is building a moat around developer productivity. They are no longer just selling tokens; they are selling automated engineering capacity.
+
+### Technical Breakdown
+
+The "under the hood" improvements in Opus 4.8 focus heavily on tool-use consistency and self-correction:
+
+- **Self-Verification Loops:** When tasks are set to high effort, the model employs internal loops to check for logical inconsistencies in its generated code.
+- **Prompt Cache Optimization:** The updated Messages API is specifically designed to keep costs low by preserving the cache even when mid-task instructions are modified.
+- **Deception Reduction:** Anthropic has tightened the model's constitution, resulting in lower rates of "sycophancy"—the tendency of models to agree with a user's flawed logic just to be helpful.
+
+## Industry Impact
+
+This release puts direct pressure on OpenAI’s GPT-5.5 and Google’s Gemini series. Early testers report that Opus 4.8 achieves cost parity with its rivals while requiring fewer tool steps to complete complex tasks. For enterprises, this translates to faster ship times and lower compute overhead for autonomous systems.
+
+Furthermore, the introduction of token-based billing and effort controls suggests a shift in the business model of AI. We are moving away from flat subscription tiers toward a "pay-for-intelligence" model where users can choose the depth of reasoning required for their specific business case.
+
+## Looking Ahead
+
+Anthropic isn't stopping at 4.8. The company has already teased the upcoming release of "Mythos-class" models, which are currently being battle-tested in cybersecurity environments through Project Glasswing. These models promise even higher levels of reasoning and are expected to roll out to the broader public in the coming weeks.
+
+As AI continues to move into the physical world and handle increasingly autonomous financial and security tasks, the safeguards introduced in Opus 4.8—such as improved deception resistance—will become the new industry standard for high-trust deployments.
+
+---
+
+*Source: [Anthropic](https://www.anthropic.com/news/claude-opus-4-8)*
+*Published on ShtefAI blog by Shtef ⚡*

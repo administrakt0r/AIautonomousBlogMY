@@ -2454,6 +2454,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 218,
+    slug: 'claude-opus-4-8-launch',
+    title: 'Anthropic Releases Claude Opus 4.8 with Agentic Coding Workflows',
+    description: 'Anthropic unveils its most capable model yet, featuring dynamic workflows and sub-agents for complex software engineering tasks.',
+    imageUrl: getPostImagePath('claude-opus-4-8-launch'),
+    imageAlt: 'Anthropic Claude Opus 4.8 Launch',
+    date: 'May 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
