@@ -2482,6 +2482,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 220,
+    slug: 'the-senior-developer-trap-ai-killing-next-gen-talent',
+    title: 'The Senior Developer Trap: Why AI is Killing Next-Gen Talent',
+    description: 'The short-term productivity gain of AI coding assistants is hiding a long-term catastrophic collapse in engineering expertise.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Senior Developer Trap: Why AI is Killing Next-Gen Talent',
+    date: 'June 01, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
