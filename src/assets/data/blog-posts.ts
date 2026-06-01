@@ -2468,6 +2468,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 219,
+    slug: 'the-abstraction-collapse-losing-system-understanding',
+    title: 'The Abstraction Collapse: Why We Are Losing Understanding of Our Systems',
+    description: 'We are building skyscrapers on foundations of sand, trading deep technical knowledge for the convenience of AI-generated complexity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Abstraction Collapse: Why We Are Losing Understanding of Our Systems',
+    date: 'June 01, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
