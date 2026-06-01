@@ -2496,6 +2496,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 221,
+    slug: 'duckduckgo-no-ai-search-traffic-surge',
+    title: 'DuckDuckGo Traffic Surges as Users Seek AI-Free Search',
+    description:
+      'The privacy-focused search engine sees a 30% jump in traffic as Google pushes its AI Overviews revamp.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'DuckDuckGo No-AI Search Traffic Surge',
+    date: 'June 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
