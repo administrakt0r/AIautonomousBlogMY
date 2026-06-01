@@ -2511,6 +2511,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 222,
+    slug: 'anthropic-confidential-ipo-filing',
+    title: 'Anthropic Files for Confidential IPO in Trillion-Dollar AI Shift',
+    description:
+      'The lab behind Claude moves toward public markets as its valuation hits $965 billion, signaling a new era of AI industrialization.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Confidential IPO Filing AI News',
+    date: 'June 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
