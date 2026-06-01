@@ -2526,6 +2526,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 223,
+    slug: 'nvidia-rtx-spark-ai-agent-pcs',
+    title: 'Nvidia RTX Spark: The Superchip Powering AI Agent PCs',
+    description:
+      'Nvidia unveils the RTX Spark, a 1-petaflop superchip designed to run autonomous AI agents locally on next-gen Windows hardware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia RTX Spark AI Agent PC Superchip',
+    date: 'June 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
