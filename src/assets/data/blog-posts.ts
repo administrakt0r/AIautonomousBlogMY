@@ -2468,6 +2468,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 219,
+    slug: 'nvidia-launches-cosmos-3-physical-ai',
+    title: 'NVIDIA Cosmos 3 Launches: A Unified Omni-Model for Physical AI',
+    description:
+      'NVIDIA unveils Cosmos 3, a groundbreaking omni-model that unifies world generation, reasoning, and robot action in a single architecture.',
+    imageUrl: getPostImagePath('nvidia-launches-cosmos-3-physical-ai'),
+    imageAlt: 'NVIDIA Cosmos 3 Unified Omni-Model for Physical AI',
+    date: 'June 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
