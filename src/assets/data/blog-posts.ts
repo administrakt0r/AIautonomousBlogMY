@@ -2570,6 +2570,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 226,
+    slug: 'the-synthetic-satiety-ai-as-cognitive-junk-food',
+    title: 'The Synthetic Satiety: Why AI is the Fast Food of Intelligence',
+    description: 'We are trading the slow labor of deep thought for a low-quality cognitive diet that is making our culture intellectually obese.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI as processed cognitive junk food illustration',
+    date: 'June 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
