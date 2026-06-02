@@ -2584,6 +2584,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 227,
+    slug: 'microsoft-launches-scout-ai-assistant',
+    title: 'Microsoft Launches Scout: An OpenClaw-Inspired Personal Assistant',
+    description: 'Microsoft integrates agentic AI into Microsoft 365, signaling a new era of persistent digital companions.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Microsoft Scout AI assistant integration',
+    date: 'June 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
