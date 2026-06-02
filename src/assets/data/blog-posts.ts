@@ -2556,6 +2556,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 225,
+    slug: 'alphabet-plans-to-raise-80-billion-ai-buildout',
+    title: 'Alphabet to Raise $80B for Massive AI Infrastructure Buildout',
+    description: "Google's parent company signals an unprecedented acceleration in the global AI arms race with an $80 billion capital raise for infrastructure.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Alphabet plans to raise $80B for AI buildout',
+    date: 'June 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
