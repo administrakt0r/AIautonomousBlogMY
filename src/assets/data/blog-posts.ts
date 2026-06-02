@@ -2541,6 +2541,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 224,
+    slug: 'openai-breaks-ground-on-1gw-stargate-data-center-in-michigan',
+    title: 'OpenAI Breaks Ground on 1GW Stargate Data Center in Michigan',
+    description:
+      'OpenAI officially begins construction on its massive 1GW Michigan facility, the first major milestone for the $100B+ Project Stargate.',
+    imageUrl: getPostImagePath('openai-breaks-ground-on-1gw-stargate-data-center-in-michigan'),
+    imageAlt: 'OpenAI Stargate Michigan 1GW Data Center Groundbreaking',
+    date: 'June 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
