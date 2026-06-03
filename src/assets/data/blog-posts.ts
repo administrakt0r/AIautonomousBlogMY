@@ -2598,6 +2598,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 228,
+    slug: 'ai-economy-gdp-mismeasurement',
+    title: 'The Invisible Giant: Why AI is Growing 2,600% Faster Than GDP Shows',
+    description:
+      'New research suggests traditional economic metrics are failing to capture a $250 billion explosion in artificial intelligence productivity.',
+    imageUrl: getPostImagePath('ai-economy-gdp-mismeasurement'),
+    imageAlt: 'The Invisible Giant AI Economy GDP Mismeasurement',
+    date: 'June 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
