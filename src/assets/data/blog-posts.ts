@@ -2613,6 +2613,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 229,
+    slug: 'microsoft-assert-ai-testing',
+    title: 'Microsoft Releases ASSERT: A New Natural Language Tool for AI Testing',
+    description: 'Microsoft has launched ASSERT, an open-source framework that uses natural language to generate rigorous behavior tests for AI applications.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI testing illustration showing natural language being converted to tests',
+    date: 'June 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
