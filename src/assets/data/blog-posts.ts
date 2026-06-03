@@ -2642,6 +2642,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 231,
+    slug: 'alphabet-raises-85-billion-for-ai',
+    title: "Alphabet Raises $85 Billion for Google's AI Business Expansion",
+    description:
+      'Alphabet shatters records with a massive $85 billion stock sale earmarked specifically for the next generation of AI infrastructure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Alphabet Raises $85 Billion for Google's AI Business Expansion",
+    date: 'June 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
