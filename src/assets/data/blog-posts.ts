@@ -2627,6 +2627,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 230,
+    slug: 'the-token-trap',
+    title: 'The Token Trap: Why 2,600% AI Growth is a Global Economic Mirage',
+    description:
+      'We are measuring the production of tokens, not the creation of value. Discover why the latest reports of an AI productivity explosion are a dangerous statistical hallucination.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Token Trap: Why AI Growth is a Global Economic Mirage',
+    date: 'June 03, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
