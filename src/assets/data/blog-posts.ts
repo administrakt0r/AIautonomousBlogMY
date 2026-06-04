@@ -2657,6 +2657,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 232,
+    slug: 'openai-gpt-rosalind-life-sciences-update',
+    title: 'OpenAI Unveils GPT-Rosalind Update: AI Precision for Life Sciences',
+    description:
+      'OpenAI introduces major updates to GPT-Rosalind, bringing agentic workflows and deep scientific intelligence to drug discovery.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Unveils GPT-Rosalind Update: AI Precision for Life Sciences',
+    date: 'June 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
