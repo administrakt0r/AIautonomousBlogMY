@@ -2672,6 +2672,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 233,
+    slug: 'the-cursor-culture-ai-ides-copy-paste-architects',
+    title: 'The Cursor Culture: Why AI IDEs are Creating Copy-Paste Architects',
+    description: 'We are trading structural understanding for speed, and the bill for this technical debt will be catastrophic.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Cursor Culture: Why AI IDEs are Creating Copy-Paste Architects',
+    date: 'June 04, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
