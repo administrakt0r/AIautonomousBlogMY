@@ -2686,6 +2686,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 234,
+    slug: 'apple-approves-poke-ai-agent-messages-for-business',
+    title: 'Apple Approves Poke as First AI Agent for Messages for Business',
+    description: 'Apple officially opens iMessage to autonomous AI assistants, approving Poke as the first third-party agent for its business platform.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Apple Approves Poke as First AI Agent for Messages for Business',
+    date: 'June 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
