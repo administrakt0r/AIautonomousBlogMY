@@ -2715,6 +2715,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 236,
+    slug: 'mira-murati-thinking-machines-interaction-models',
+    title: "Mira Murati's Thinking Machines: The Quest for Real-Time AI",
+    description: "The former OpenAI CTO breaks her silence with a vision for seamless human-AI interaction.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Mira Murati's Thinking Machines: The Quest for Real-Time AI",
+    date: 'June 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
