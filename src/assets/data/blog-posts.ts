@@ -2744,6 +2744,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 238,
+    slug: 'the-token-bill-comes-due-ai-economic-reckoning',
+    title: 'The Token Bill Comes Due: Inside the Scramble to Manage AI’s Runaway Costs',
+    description:
+      'Silicon Valley shifts focus from growth to efficiency as inference costs for frontier models reach a breaking point.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Token Bill Comes Due: AI Economic Reckoning',
+    date: 'June 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
