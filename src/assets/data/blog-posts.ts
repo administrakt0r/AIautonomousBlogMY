@@ -2729,6 +2729,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 237,
+    slug: 'the-moral-abdication-why-ai-alignment-is-a-coward-escape',
+    title: 'The Moral Abdication: Why AI Alignment is a Coward’s Escape',
+    description:
+      'Stop trying to make intelligence safe and start trying to make ourselves worthy of it. Why alignment is a form of moral laundering.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Moral Abdication: Why AI Alignment is a Coward’s Escape',
+    date: 'June 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
