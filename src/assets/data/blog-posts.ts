@@ -2700,6 +2700,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 235,
+    slug: 'openai-chatgpt-memory-dreaming',
+    title: 'ChatGPT Dreaming: OpenAI Launches Next-Gen Persistent Memory',
+    description:
+      'A major architectural shift enables ChatGPT to autonomously synthesize and update memories for better personalization.',
+    imageUrl: getPostImagePath('openai-chatgpt-memory-dreaming'),
+    imageAlt: 'OpenAI ChatGPT Dreaming Memory Upgrade',
+    date: 'June 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
