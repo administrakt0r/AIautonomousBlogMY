@@ -2788,6 +2788,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 241,
+    slug: 'the-intelligence-tax',
+    title: 'The Intelligence Tax: Why Every AI Efficiency Gain is a Future Debt',
+    description:
+      'We are trading immediate productivity for a catastrophic maintenance crisis that will bankrupt the digital future. Discover the hidden cost of the AI boom.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Intelligence Tax: Why Every AI Efficiency Gain is a Future Debt',
+    date: 'June 06, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
