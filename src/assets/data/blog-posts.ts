@@ -2774,6 +2774,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 240,
+    slug: 'google-spacex-compute-deal-colossus',
+    title: 'Google Strikes $920M Monthly Deal for SpaceX AI Compute',
+    description: 'Tech giant secures 110,000 GPUs at Colossus 1 to meet surging Gemini Enterprise demand.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google Strikes $920M Monthly Deal for SpaceX AI Compute',
+    date: 'June 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
