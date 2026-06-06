@@ -2759,6 +2759,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 239,
+    slug: 'thousand-token-wood-agentic-economy',
+    title: 'Thousand Token Wood: Small Models Drive Emergent Agentic Economies',
+    description:
+      'A multi-agent simulation powered by 3B models proves that complex market behaviors can emerge from efficient, low-cost AI agents.',
+    imageUrl: getPostImagePath('thousand-token-wood-agentic-economy'),
+    imageAlt: 'Thousand Token Wood Agentic Economy Simulation',
+    date: 'June 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
