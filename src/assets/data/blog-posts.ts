@@ -2803,6 +2803,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 242,
+    slug: 'openai-lockdown-mode-prompt-injection',
+    title: 'OpenAI Launches Lockdown Mode to Combat Prompt Injection Attacks',
+    description:
+      'OpenAI introduces a specialized security tier for ChatGPT, disabling risky features to protect sensitive data from malicious exfiltration.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Lockdown Mode Security Feature',
+    date: 'June 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
