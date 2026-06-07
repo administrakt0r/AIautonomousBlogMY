@@ -2833,6 +2833,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 244,
+    slug: 'trump-administration-openai-equity-stake',
+    title: 'Trump Administration Weighs Strategic Equity Stake in OpenAI',
+    description: 'The White House explores direct ownership in OpenAI to secure national interest and ensure public benefit from AI success.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Trump Administration Weighs Strategic Equity Stake in OpenAI',
+    date: 'June 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
