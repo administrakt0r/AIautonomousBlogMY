@@ -2818,6 +2818,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 243,
+    slug: 'hugging-face-her-claude-code-forensics',
+    title: 'Hugging Face Launches Her: The Forensics Tool for Claude Code',
+    description:
+      'Hugging Face releases an open-source forensic tool to analyze and decode autonomous agent sessions in plain English.',
+    imageUrl: getPostImagePath('hugging-face-her-claude-code-forensics'),
+    imageAlt: 'Hugging Face Her Claude Code session forensics tool',
+    date: 'June 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
