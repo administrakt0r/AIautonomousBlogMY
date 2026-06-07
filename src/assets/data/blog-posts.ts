@@ -2861,6 +2861,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 246,
+    slug: 'dawn-of-the-tokenpocalypse-ai-pricing-shift',
+    title: 'Is This the Dawn of the Tokenpocalypse? AI Pricing Models Shift',
+    description: 'As GitHub Copilot pivots to usage-based billing, the era of subsidized AI compute is coming to an end.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Is This the Dawn of the Tokenpocalypse? AI Pricing Models Shift',
+    date: 'June 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
