@@ -2847,6 +2847,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 245,
+    slug: 'the-agentic-illusion-why-your-ai-coworker-is-still-a-chatbot-in-a-suit',
+    title: 'The Agentic Illusion: Why Your AI Coworker is Still a Chatbot in a Suit',
+    description: 'Autonomous AI agents are the latest industry hype, but they suffer from error compounding and a lack of genuine judgment.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Agentic Illusion: Why Your AI Coworker is Still a Chatbot in a Suit',
+    date: 'June 07, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
