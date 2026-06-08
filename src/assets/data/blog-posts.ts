@@ -2889,6 +2889,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 248,
+    slug: 'the-cult-of-the-amateur-why-ai-is-killing-mastery',
+    title: 'The Cult of the Amateur: Why AI is Killing the Value of Mastery',
+    description: 'As AI lowers the barrier to entry for every craft, we are trading deep expertise and genuine taste for a sea of mass-produced mediocrity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Cult of the Amateur: Why AI is Killing the Value of Mastery',
+    date: 'June 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
