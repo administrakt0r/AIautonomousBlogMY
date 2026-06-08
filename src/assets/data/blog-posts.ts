@@ -2903,6 +2903,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 249,
+    slug: 'openai-confidential-ipo-filing',
+    title: 'OpenAI Files Confidentially for IPO in Landmark AI Market Shift',
+    description: 'ChatGPT-maker signals a blockbuster year for public markets as valuation hits $852 billion.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Confidential IPO Filing AI Market Shift',
+    date: 'June 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
