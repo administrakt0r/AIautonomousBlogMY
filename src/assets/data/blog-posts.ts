@@ -2875,6 +2875,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 247,
+    slug: 'openai-declares-chat-is-dead-in-super-app-pivot',
+    title: 'OpenAI Declares Chat is Dead in Massive Shift to AI Super App',
+    description: 'The startup aims to turn ChatGPT into a comprehensive platform for agents and coding tools.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI AI Super App and Agent Pivot',
+    date: 'June 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
