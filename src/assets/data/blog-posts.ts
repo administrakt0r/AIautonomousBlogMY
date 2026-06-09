@@ -2917,6 +2917,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 250,
+    slug: 'miasma-worm-targets-ai-coding-agents',
+    title: 'Miasma Worm Targets AI Coding Agents in Microsoft Breach',
+    description: 'Attackers compromise 73 Microsoft repositories to steal developer credentials via AI-assisted tools like Claude Code and Cursor.',
+    imageUrl: getPostImagePath('miasma-worm-targets-ai-coding-agents'),
+    imageAlt: 'Miasma Worm Targets AI Coding Agents in Microsoft Breach',
+    date: 'June 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 

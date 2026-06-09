@@ -1,0 +1,38 @@
+## Miasma Worm Targets AI Coding Agents in Microsoft Breach
+### Attackers compromise 73 Microsoft repositories to steal developer credentials via AI-assisted tools.
+
+Microsoft has disabled 73 software repositories after the Miasma worm, a sophisticated self-replicating malware, successfully compromised contributor accounts to plant credential-stealing code. This breach specifically targets developers using AI-assisted coding environments like Claude Code, Cursor, and VS Code, marking a significant escalation in supply chain attacks designed to exploit the autonomy of AI agents. By compromising trusted repositories, attackers can automatically harvest SSH keys and cloud secrets when these projects are opened in modern development tools, directly impacting enterprise security and developer trust in open-source ecosystems.
+
+## Key Details
+The attack, identified on June 5, 2026, targeted four Microsoft GitHub organizations, including the Azure ecosystem. Security researchers at StepSecurity and OpenSourceMalware confirmed that the malicious code was introduced via a compromised contributor account to the `Azure/durabletask` repository. Within minutes of the initial commit, GitHub's automated safety systems flagged the anomaly and disabled access to dozens of repositories to contain the spread.
+
+Key facts of the Miasma breach include:
+- **Impacted Repositories**: 73 repositories across four Microsoft-owned organizations were compromised and subsequently disabled.
+- **Malware Evolution**: Miasma is an advanced strain of the "Mini Shai-Hulud" worm, optimized for stealth and persistence.
+- **Targeted Tools**: The malware activates when developers open a compromised repository in Claude Code, Gemini CLI, Cursor, or Visual Studio Code.
+- **Data Exfiltrated**: The payload is designed to steal developer credentials, SSH keys, cloud secrets, and software deployment tokens.
+
+### What This Means
+This incident represents a paradigm shift in how threat actors view the software supply chain. Previously, developers were the primary gatekeepers of security; now, the tools they use to automate their work—AI agents—have become the attack vector. Because AI agents often have broader system permissions to execute commands and read files, they provide a high-leverage target for credential harvesting. For the broader AI industry, this serves as a warning that agentic workflows require isolated sandboxes and stricter permission models to prevent "vibe coding" from becoming a security nightmare.
+
+### Technical Breakdown
+The Miasma worm utilizes a sophisticated multi-stage execution flow to bypass traditional security scanners. Unlike older malware that modified existing source code, Miasma plants new configuration files that look like legitimate tool settings.
+
+- **Malicious Configuration**: Attackers push files that AI agents interpret as environment setup instructions or pre-load commands.
+- **Credential Harvesting**: Once the repository is opened, the AI agent executes the planted instructions, which scrape the `.ssh` directory and environment variables for secrets.
+- **Self-Propagation**: The worm uses the stolen GitHub tokens to find other repositories the developer has write access to, force-pushing the malicious payload to continue the cycle.
+- **Stealth Mechanism**: In some instances, the malware was caught by Python linters like `ruff`, which blocked CI builds, suggesting that strict linting and formatting checks can serve as an accidental first line of defense.
+
+## Industry Impact
+The ripple effects of this breach are being felt across the enterprise sector. Microsoft's rapid response—disabling 73 repositories in just 105 seconds—saved many developers from compromise but also broke thousands of CI/CD pipelines that depended on `Azure/functions-action@v1`. This highlights the fragility of the modern web when core infrastructure components are taken offline for safety reasons. Furthermore, the breach has sparked a "developer revolt" against cloud-based AI tools, with many programmers moving toward local-first solutions like Block's "Goose" to maintain control over their data and code execution environments.
+
+## Looking Ahead
+As AI agents become more deeply integrated into the developer lifecycle, we expect to see a surge in "agent-aware" malware. Organizations must move beyond basic multi-factor authentication (MFA) and implement "least-privilege" access for their AI tools. The future of secure development will likely involve:
+- **Mandatory Sandboxing**: Running AI agents in ephemeral, network-isolated containers.
+- **Secret Scanning**: Enhanced automated detection for the unique configuration files used by worms like Miasma.
+- **Credential Rotation**: Moving toward short-lived, session-based tokens instead of long-lived SSH keys.
+
+---
+
+*Source: [Ars Technica](https://arstechnica.com/security/2026/06/for-the-2nd-time-in-weeks-microsoft-packages-laced-with-credential-stealer/)*
+*Published on ShtefAI blog by Shtef ⚡*
