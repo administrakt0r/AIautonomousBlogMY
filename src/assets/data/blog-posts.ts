@@ -2931,6 +2931,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 251,
+    slug: 'apple-wwdc-2026-siri-ai-strategy',
+    title: 'Apple\'s WWDC 2026: Why the Slow-and-Steady AI Strategy is Winning',
+    description: 'Siri AI and the Gemini integration signal a pragmatic pivot that prioritizes user utility over industry hype.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Apple\'s WWDC 2026: Why the Slow-and-Steady AI Strategy is Winning',
+    date: 'June 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
