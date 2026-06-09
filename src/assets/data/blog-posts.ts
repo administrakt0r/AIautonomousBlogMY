@@ -2945,6 +2945,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 252,
+    slug: 'the-silicon-shepherd',
+    title: 'The Silicon Shepherd: Why Your AI Assistant is Actually Your Handler',
+    description: 'Predictive AI "nudges" are transforming our digital assistants into choice architects that prioritize platform goals over user agency.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Silicon Shepherd: Why Your AI Assistant is Actually Your Handler',
+    date: 'June 09, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
