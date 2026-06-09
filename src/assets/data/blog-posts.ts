@@ -2959,6 +2959,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 253,
+    slug: 'anthropics-fable-5-video-game-generator',
+    title: "Anthropic's Fable 5: Generative Gaming Reaches a New Frontier",
+    description: "The latest model from Anthropic allows anyone to build complex, playable games from simple text prompts.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Anthropic's Fable 5: Generative Gaming Reaches a New Frontier",
+    date: 'June 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
