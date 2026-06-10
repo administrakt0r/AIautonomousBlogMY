@@ -2988,6 +2988,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: true
+  },
+  {
+    id: 255,
+    slug: 'meta-reliance-ai-data-center-india',
+    title: 'Meta and Reliance Partner for First AI Data Center in India',
+    description: 'Meta Platforms and Reliance Industries team up to build a 168-megawatt AI data center in Jamnagar, Gujarat.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta and Reliance Partner for First AI Data Center in India',
+    date: 'June 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
