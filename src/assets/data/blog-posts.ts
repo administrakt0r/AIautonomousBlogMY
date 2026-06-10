@@ -3016,6 +3016,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 257,
+    slug: 'anthropic-launches-claude-fable-5-mythos-5',
+    title: 'Anthropic Unveils Claude Fable 5: The New Frontier of AI Intelligence',
+    description: 'Anthropic launches its first Mythos-class model, Fable 5, promising a massive leap in reasoning and autonomous coding.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude Fable 5 Mythos-class AI release',
+    date: 'June 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
