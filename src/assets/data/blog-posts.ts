@@ -2973,6 +2973,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 254,
+    slug: 'google-redesigns-search-box-gemini-3-5',
+    title: 'Google Redesigns Search Box for First Time in 25 Years with AI',
+    description:
+      'Google unveils a conversational AI overhaul for search, powered by Gemini 3.5 Flash and new Generative UI capabilities.',
+    imageUrl: getPostImagePath('google-redesigns-search-box-gemini-3-5'),
+    imageAlt: 'Google search box redesign AI Gemini 3.5 Flash',
+    date: 'June 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: true
   }
 ]
 
