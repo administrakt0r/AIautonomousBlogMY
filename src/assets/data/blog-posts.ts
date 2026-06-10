@@ -3002,6 +3002,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 256,
+    slug: 'the-silicon-narcissus-ai-personalization-prison',
+    title: 'The Silicon Narcissus: AI Personalization as a Cognitive Prison',
+    description: 'How hyper-personalization in AI creates a cognitive feedback loop that traps users in their own biases.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Personalization Cognitive Prison',
+    date: 'June 15, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
