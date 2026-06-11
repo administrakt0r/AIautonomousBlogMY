@@ -3058,6 +3058,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 260,
+    slug: 'the-agent-illusion-autonomous-ai-is-still-just-a-glorified-macro',
+    title: 'The Agent Illusion: Why Autonomous AI is Still Just a Glorified Macro',
+    description: 'We are confusing recursive prompting with actual agency, and the cost of this delusion is systemic fragility.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Agent Illusion: Why Autonomous AI is Still Just a Glorified Macro',
+    date: 'June 18, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
