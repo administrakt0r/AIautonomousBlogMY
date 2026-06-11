@@ -3072,6 +3072,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 261,
+    slug: 'spacex-confirms-largest-ipo-in-history',
+    title: 'SpaceX Confirms Largest IPO in History: AI and Space Conglomerate',
+    description: 'SpaceX officially prices its shares at $135, confirming a massive $75 billion raise and rebranding as an orbital AI powerhouse.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SpaceX Confirms Largest IPO in History: AI and Space Conglomerate',
+    date: 'June 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
