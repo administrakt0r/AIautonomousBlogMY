@@ -3044,6 +3044,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 259,
+    slug: 'codex-simulates-black-holes',
+    title: 'AI-Powered Simulations: How Codex is Mapping Black Holes',
+    description: 'Astrophysicist Chi-kwan Chan leverages OpenAI Codex to simulate extreme physics and test general relativity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI-Powered Simulations: How Codex is Mapping Black Holes',
+    date: 'June 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
