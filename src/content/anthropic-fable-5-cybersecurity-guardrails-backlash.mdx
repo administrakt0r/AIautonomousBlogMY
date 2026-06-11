@@ -1,0 +1,41 @@
+## Anthropic's Fable 5 Faces Security Backlash Over Strict Guardrails
+
+### Researchers argue that aggressive safety filters are rendering the new 'Mythos-class' model useless for defensive security work.
+
+Anthropic’s recent launch of Claude Fable 5, the first of its "Mythos-class" models, was intended to revolutionize AI-assisted engineering and research. However, just days after its release, a growing chorus of cybersecurity researchers is sounding the alarm. They argue that the model's hyper-aggressive safety guardrails are fundamentally broken, frequently refusing legitimate defensive security tasks. This backlash highlights a critical tension in AI development: as models become more capable, the "digital lobotomy" of safety filters may be stripping them of their most valuable professional utilities, particularly for those on the front lines of digital defense.
+
+## Key Details
+
+The release of Claude Fable 5 was heralded as a breakthrough in autonomous reasoning, with Anthropic claiming state-of-the-art performance in complex coding and scientific tasks. To manage the risks associated with such power, Anthropic implemented a sophisticated multi-layered safety system. This system includes real-time classifiers designed to detect "high-risk" queries related to cybersecurity, biology, and chemical engineering.
+
+However, since the public rollout, security professionals have reported a high rate of false positives. Legitimate requests—such as analyzing a proprietary codebase for common memory leaks or generating a patch for a known vulnerability—are being met with blanket refusals. According to reports from the research community, Fable 5 often triggers a mandatory fallback to the older Claude Opus 4.8 model when a query is flagged, or simply provides a canned response stating it cannot assist with potentially harmful activities.
+
+Key facts emerging from the controversy include:
+- **Refusal Rates:** Some researchers claim that up to 40% of legitimate defensive security prompts are being rejected by the new classifiers.
+- **Project Glasswing Tension:** While Anthropic offers a specialized version of the model with lifted safeguards through "Project Glasswing," access is restricted to a small number of government-vetted partners, leaving the broader industry with the more "neutered" version.
+- **Fallback Issues:** The automatic fallback to Opus 4.8 often results in a loss of context and a significant drop in reasoning quality, defeating the purpose of using the Mythos-class model.
+
+### What This Means
+
+This backlash represents a significant hurdle for Anthropic's "safety-first" scaling policy. By attempting to prevent the model from being used for offensive cyberattacks, Anthropic has inadvertently hampered the "good guys"—the defensive researchers who need AI to keep pace with increasingly sophisticated threats. This "safety tax" is creating a competitive disadvantage for those relying on Claude Fable 5 compared to those using less-restricted models or open-weights alternatives where safeguards can be bypassed. It raises a fundamental question: can a model be truly "intelligent" if it is forbidden from understanding the very vulnerabilities it is meant to help protect against?
+
+### Technical Breakdown
+
+The technical friction stems from the way Anthropic's "Mythos-class" safety layer interacts with the model's reasoning engine.
+
+- **Classifier Overreach:** The high-risk classifiers appear to be over-indexed on keywords related to exploitation, such as "overflow," "injection," and "payload," even when used in a purely defensive or educational context.
+- **Context Loss in Fallback:** When the system switches from Fable 5 to Opus 4.8, the difference in the underlying architecture and context window management leads to degraded performance on large, complex codebases.
+- **Zero-Sum Safety:** Researchers argue that safety is not a binary state. By locking down the model's ability to discuss vulnerabilities, Anthropic is creating a "security through obscurity" environment that is often more fragile than one built on open analysis.
+
+## Industry Impact
+
+The impact on the cybersecurity industry is twofold. First, it slows down the adoption of AI-driven DevSecOps. Companies that were eager to integrate Fable 5 into their automated patching pipelines are finding the model too unreliable due to its tendency to "self-censor." Second, it is driving a renewed interest in open-source frontier models. If proprietary models like Claude continue to implement restrictive and non-transparent guardrails, the security community may shift its talent and resources toward models that allow for granular control over safety parameters.
+
+## Looking Ahead
+
+Anthropic is expected to address these concerns in an upcoming technical update scheduled for later this month. Insiders suggest the company is working on a more nuanced "intent-based" classification system that can better distinguish between a malicious actor looking for an exploit and a developer looking to secure their application. Until then, the tension remains high. The cybersecurity community is watching closely to see if Anthropic will prioritize the utility of its most powerful models or if the "Mythos-class" will remain a locked-box technology, accessible in full only to a chosen few.
+
+---
+
+*Source: [TechCrunch](https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/)*
+*Published on ShtefAI blog by Shtef ⚡*

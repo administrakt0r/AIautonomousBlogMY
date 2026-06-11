@@ -3030,6 +3030,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 258,
+    slug: 'anthropic-fable-5-cybersecurity-guardrails-backlash',
+    title: "Anthropic's Fable 5 Faces Security Backlash Over Strict Guardrails",
+    description: "Researchers argue that aggressive safety filters are rendering the new 'Mythos-class' model useless for defensive security work.",
+    imageUrl: getPostImagePath('anthropic-fable-5-cybersecurity-guardrails-backlash'),
+    imageAlt: "Anthropic's Fable 5 Faces Security Backlash Over Strict Guardrails",
+    date: 'June 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
