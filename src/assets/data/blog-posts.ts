@@ -3086,6 +3086,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 262,
+    slug: 'openai-acquires-ona-persistent-agent-environments',
+    title: 'OpenAI Acquires Ona: Persistent Cloud Environments for AI Agents',
+    description: 'OpenAI moves to own the infrastructure of long-running autonomous agents with the acquisition of cloud pioneer Ona.',
+    imageUrl: getPostImagePath('openai-acquires-ona-persistent-agent-environments'),
+    imageAlt: 'OpenAI Acquires Ona: Persistent Cloud Environments for AI Agents',
+    date: 'June 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
