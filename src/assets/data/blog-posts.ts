@@ -3114,6 +3114,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 264,
+    slug: 'the-great-benchmarking-lie',
+    title: 'The Great Benchmarking Lie: Why Your AI is Worse Than the Score',
+    description: 'Why the gap between AI benchmark scores and real-world utility is widening, and what it means for the future of the industry.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Benchmarking vs Real World Utility',
+    date: 'June 20, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
