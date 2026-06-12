@@ -3128,6 +3128,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 265,
+    slug: 'coinbase-agents-automated-trading',
+    title: 'Coinbase for Agents: The Next Frontier in AI-Driven Financial Execution',
+    description: 'Coinbase launches a comprehensive suite of tools designed to give AI entities the power to execute financial transactions autonomously.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Agent Financial Execution',
+    date: 'June 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
