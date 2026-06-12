@@ -3100,6 +3100,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 263,
+    slug: 'bezos-prometheus-physical-ai-12b-raise',
+    title: "Bezos's Prometheus Raises $12B to Build Physical AI Engine",
+    description: "Jeff Bezos's physical AI startup Prometheus raises $12B at a $41B valuation to build an 'artificial general engineer'.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Bezos's Prometheus Raises $12B to Build Physical AI Engine",
+    date: 'June 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
