@@ -3184,6 +3184,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 269,
+    slug: 'openai-state-attorneys-general-investigation',
+    title: 'OpenAI Faces Multi-State Probe Over Safety and Advertising Practices',
+    description: 'A coalition of state attorneys general has launched a broad investigation into OpenAI, focusing on consumer protection and safety protocols.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Faces Multi-State Probe Over Safety and Advertising Practices',
+    date: 'June 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
