@@ -3142,6 +3142,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 266,
+    slug: 'anthropic-safety-warnings-backfire-government-recall',
+    title: 'Anthropic Safety Warnings Backfire: US Orders AI Model Recall',
+    description: 'The U.S. government mandates an immediate global shutdown of Claude Fable 5 and Mythos 5 citing national security risks.',
+    imageUrl: getPostImagePath('anthropic-safety-warnings-backfire-government-recall'),
+    imageAlt: 'Anthropic Safety Warnings Backfire: US Orders AI Model Recall',
+    date: 'June 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
