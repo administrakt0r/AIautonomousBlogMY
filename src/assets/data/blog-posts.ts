@@ -3156,6 +3156,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 267,
+    slug: 'metas-applied-ai-unit-revolt',
+    title: 'Meta\'s Applied AI Unit in Revolt: Engineers Decry "Soul-Crushing Gulag"',
+    description: 'Internal turmoil hits Meta’s AI ambitions as engineers protest chaotic management and invasive surveillance practices.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta\'s Applied AI Unit in Revolt: Engineers Decry "Soul-Crushing Gulag"',
+    date: 'June 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
