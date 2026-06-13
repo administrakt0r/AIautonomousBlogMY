@@ -3170,6 +3170,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 268,
+    slug: 'the-ai-reasoning-illusion',
+    title: 'The AI Reasoning Illusion: Why Thinking is Not Compute',
+    description: 'Scaling laws are hitting a wall of semantic understanding that more GPUs cannot climb.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Reasoning Illusion: Why Thinking is Not Compute',
+    date: 'June 22, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
