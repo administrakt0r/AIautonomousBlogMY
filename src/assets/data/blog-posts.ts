@@ -3212,6 +3212,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 271,
+    slug: 'ai-copilot-technical-debt-trap',
+    title: 'The AI Copilot Trap: Why Auto-Code is a Technical Debt Time Bomb',
+    description: 'Automated coding tools are creating a generation of legacy systems that nobody understands and few can maintain.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Copilot Trap: Why Auto-Code is a Technical Debt Time Bomb',
+    date: 'June 23, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
