@@ -3198,6 +3198,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 270,
+    slug: 'german-court-google-ai-liability',
+    title: 'German Court Rules Google Liable for AI-Generated Hallucinations',
+    description: 'A landmark legal precedent ends the era of "hallucination immunity," holding AI labs accountable for fabricated output.',
+    imageUrl: getPostImagePath('german-court-google-ai-liability'),
+    imageAlt: 'German Court Rules Google Liable for AI Hallucinations',
+    date: 'June 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
