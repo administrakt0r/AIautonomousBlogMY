@@ -3226,6 +3226,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 272,
+    slug: 'china-mythos-security-breach',
+    title: 'White House Limits Anthropic After Potential China Security Breach',
+    description: 'New export restrictions hit Anthropic’s flagship models following intelligence reports of unauthorized access and distillation threats.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'White House Limits Anthropic After Potential China Security Breach',
+    date: 'June 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
