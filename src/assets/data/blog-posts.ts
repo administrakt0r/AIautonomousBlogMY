@@ -3198,6 +3198,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 270,
+    slug: 'anthropic-india-model-suspension-sovereign-ai',
+    title: 'Anthropic Suspends Model Access in India: A Crisis for AI Sovereignty',
+    description: 'Anthropic has pulled its latest AI models from the Indian market following U.S. government security concerns, sparking a debate on sovereign AI.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Suspends Model Access in India: A Crisis for AI Sovereignty',
+    date: 'June 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
