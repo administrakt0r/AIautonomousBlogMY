@@ -3268,6 +3268,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 275,
+    slug: 'the-death-of-the-interface',
+    title: 'The Death of the Interface: Why Agentic AI is Making Us Blind',
+    description: 'As we transition from direct manipulation to agentic mediation, we are trading digital agency for a curated, opaque reality.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Death of the Interface',
+    date: 'June 26, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
