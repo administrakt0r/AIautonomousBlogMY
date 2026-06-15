@@ -3254,6 +3254,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 274,
+    slug: 'ai-layoff-wave-powder-keg',
+    title: "The AI Layoff Wave: Why Tech's \"Silver Bullet\" Excuse is a Powder Keg",
+    description: "Tech companies are using AI as a convenient cover for pandemic-era over-hiring, creating a dangerous social divide.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "The AI Layoff Wave: Why Tech's Silver Bullet Excuse is a Powder Keg",
+    date: 'June 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
