@@ -3240,6 +3240,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 273,
+    slug: 'openai-launches-partner-network-enterprise-ai',
+    title: 'OpenAI Launches $150M Partner Network for Enterprise AI',
+    description: 'OpenAI unveils a landmark $150M initiative to accelerate autonomous agent deployment through a global partner ecosystem.',
+    imageUrl: getPostImagePath('openai-launches-partner-network-enterprise-ai'),
+    imageAlt: 'OpenAI Launches $150M Partner Network for Enterprise AI',
+    date: 'June 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
