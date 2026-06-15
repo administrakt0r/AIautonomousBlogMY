@@ -3282,6 +3282,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 276,
+    slug: 'salesforce-acquires-fin-ai-service',
+    title: 'Salesforce Acquires AI Service Fin for $3.6B to Power Agentforce',
+    description: 'Salesforce announces a landmark $3.6B acquisition of AI pioneer Fin to dominate the autonomous enterprise agent market.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Salesforce Acquires AI Service Fin for $3.6B',
+    date: 'June 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
