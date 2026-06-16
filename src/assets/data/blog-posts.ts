@@ -3296,6 +3296,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 277,
+    slug: 'anthropic-model-ban-export-controls',
+    title: 'Anthropic Model Ban: Why Export Controls are the New AI Battleground',
+    description: 'Sudden government intervention forces Anthropic to pull flagship models offline, signaling a new era of state control.',
+    imageUrl: getPostImagePath('anthropic-model-ban-export-controls'),
+    imageAlt: 'U.S. government Anthropic AI model ban export controls',
+    date: 'June 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
