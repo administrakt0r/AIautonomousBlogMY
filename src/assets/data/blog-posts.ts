@@ -3324,6 +3324,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 279,
+    slug: 'the-intelligence-inflation',
+    title: 'The Intelligence Inflation: Why Experience is the New Technical Debt',
+    description: 'In the age of agentic AI, specialized expertise is becoming a bottleneck. Learn why unlearning is the ultimate skill.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Intelligence Inflation: Why Experience is the New Technical Debt',
+    date: 'June 29, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
