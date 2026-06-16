@@ -3310,6 +3310,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 278,
+    slug: 'spacex-acquires-cursor-60b-deal',
+    title: 'SpaceX Acquires Cursor in Landmark $60B AI Consolidation',
+    description: 'Elon Musk’s aerospace giant swallows the leading AI code editor to verticalize the future of engineering.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SpaceX Acquires Cursor in Landmark $60B AI Consolidation',
+    date: 'June 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
