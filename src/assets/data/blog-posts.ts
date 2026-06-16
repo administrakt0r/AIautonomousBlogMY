@@ -3338,6 +3338,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 280,
+    slug: 'openai-deployment-simulation-predicting-risk',
+    title: 'OpenAI Unveils Deployment Simulation for Pre-Release Risk Prediction',
+    description: 'A new method for replaying millions of real-world conversations to surface misalignment before models reach the public.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Unveils Deployment Simulation for Pre-Release Risk Prediction',
+    date: 'June 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
