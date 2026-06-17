@@ -3352,6 +3352,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 281,
+    slug: 'genesis-ai-unveils-eno-robot',
+    title: 'Genesis AI Unveils Eno: A Non-Humanoid Shift in Robotics',
+    description: 'French startup Genesis AI challenges the humanoid trend with Eno, a practical wheeled robot backed by Eric Schmidt.',
+    imageUrl: getPostImagePath('genesis-ai-unveils-eno-robot'),
+    imageAlt: 'Genesis AI Eno non-humanoid wheeled robot',
+    date: 'June 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
