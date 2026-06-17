@@ -3380,6 +3380,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 283,
+    slug: 'ai-coding-soft-skill-myth',
+    title: "The Myth of the 'AI Software Engineer': Why Coding is Now a Soft Skill",
+    description: 'Technical expertise is no longer the gatekeeper of innovation; it is merely another form of communication in the age of generative AI.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "The Myth of the 'AI Software Engineer': Why Coding is Now a Soft Skill",
+    date: 'July 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
