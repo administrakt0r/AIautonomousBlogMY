@@ -3366,6 +3366,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 282,
+    slug: 'ask-pinterest-ai-shopping-app',
+    title: 'Pinterest Launches Ask Pinterest: A New Era of AI Shopping',
+    description: 'Pinterest unveils an experimental standalone AI app that uses conversational intelligence and the Taste Graph to transform product discovery.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Pinterest Launches Ask Pinterest: A New Era of AI Shopping',
+    date: 'July 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
