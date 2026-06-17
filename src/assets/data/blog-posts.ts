@@ -3394,6 +3394,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 284,
+    slug: 'openai-ai-chemist-drug-discovery',
+    title: "OpenAI and Molecule.one's AI Chemist Accelerates Drug Discovery",
+    description: 'GPT-5.4 and Maria AI physically validate unexpected reaction improvements in medicinal chemistry, marking a new era of autonomous scientific discovery.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "OpenAI and Molecule.one's AI Chemist Accelerates Drug Discovery",
+    date: 'July 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
