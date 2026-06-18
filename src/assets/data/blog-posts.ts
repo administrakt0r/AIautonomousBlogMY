@@ -3408,6 +3408,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 285,
+    slug: 'world-leaders-want-american-ai-sovereignty',
+    title: 'World Leaders Demand Sovereign AI Amid US "Kill Switch" Fears',
+    description:
+      'G7 nations push for domestic intelligence capabilities to escape total dependency on American AI labs and Washington\'s export controls.',
+    imageUrl: getPostImagePath('world-leaders-want-american-ai-sovereignty'),
+    imageAlt: 'World Leaders Demand Sovereign AI Amid US Kill Switch Fears',
+    date: 'June 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
