@@ -3422,6 +3422,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 286,
+    slug: 'the-reasoning-fallacy-ai-echoes',
+    title: "The Reasoning Fallacy: Why AI Doesn't Think, It Just Echoes",
+    description: 'We are confusing statistical mastery with cognitive agency, and the cost of this delusion is the erosion of genuine human critical thought.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "The Reasoning Fallacy: Why AI Doesn't Think, It Just Echoes",
+    date: 'July 04, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 9,
+    featured: false
   }
 ]
 
