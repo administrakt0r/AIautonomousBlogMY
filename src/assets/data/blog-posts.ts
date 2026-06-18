@@ -3436,6 +3436,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 9,
     featured: false
+  },
+  {
+    id: 287,
+    slug: 'microsoft-openai-models-china',
+    title: 'Microsoft Emerges as Primary OpenAI Model Supplier in China',
+    description:
+      'While OpenAI and Anthropic avoid direct operations in China, Microsoft leverages Azure to become the dominant provider of frontier AI models to Chinese tech giants.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Microsoft Emerges as Primary OpenAI Model Supplier in China',
+    date: 'July 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
