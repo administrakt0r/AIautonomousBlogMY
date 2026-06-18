@@ -3408,6 +3408,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 285,
+    slug: 'odyssey-world-models-funding-1-45b',
+    title: 'Odyssey Secures $1.45B Valuation to Build AI World Models',
+    description: 'A $310 million Series B round, backed by Amazon and GV, propels the startup\'s vision of AI that understands the physical world.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Odyssey Secures $1.45B Valuation to Build AI World Models',
+    date: 'June 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
