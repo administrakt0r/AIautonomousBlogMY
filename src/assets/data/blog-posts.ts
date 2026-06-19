@@ -3451,6 +3451,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 288,
+    slug: 'amazon-selling-ai-chips-directly-nvidia-challenge',
+    title: 'Amazon to Sell Trainium AI Chips Directly to Challenge Nvidia',
+    description: 'AWS expands hardware strategy by offering custom silicon to third-party data centers, signaling a major challenge to Nvidia’s dominance.',
+    imageUrl: getPostImagePath('amazon-selling-ai-chips-directly-nvidia-challenge'),
+    imageAlt: 'Amazon Trainium AI chip hardware sales',
+    date: 'June 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
