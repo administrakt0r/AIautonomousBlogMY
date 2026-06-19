@@ -3451,6 +3451,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 288,
+    slug: 'white-house-ai-regulations-anthropic',
+    title: 'White House AI Regulations and the Anthropic Mythos Impasse',
+    description:
+      'The Trump administration’s real-time regulatory decisions regarding Anthropic’s Mythos model are creating a new era of "advance access" oversight for the AI industry.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'White House AI Regulations and the Anthropic Mythos Impasse',
+    date: 'July 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
