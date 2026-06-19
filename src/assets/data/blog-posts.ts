@@ -3480,6 +3480,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 290,
+    slug: 'ambani-ai-every-call-app-home',
+    title: 'Billionaire Ambani Wants AI in Every Call, App, and Home',
+    description:
+      'Reliance Jio is integrating AI directly into its telecom network and digital services for over 500 million users.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Billionaire Ambani Wants AI in Every Call, App, and Home',
+    date: 'July 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
