@@ -1,0 +1,45 @@
+## Subquadratic Claims Breakthrough in LLM Scaling with Sparse Attention
+
+### New "SubQ" model promises to eliminate the quadratic scaling bottleneck of transformers, slashing costs and extending context windows.
+
+Miami-based AI startup Subquadratic has emerged from stealth with a bold claim: they have solved the "quadratic bottleneck" that has constrained Large Language Models (LLMs) for nearly a decade. Their new model, SubQ, utilizes a dynamic sparse attention mechanism that allows it to process massive datasets up to 56 times faster than previous methods while maintaining frontier-level performance. This breakthrough could significantly reduce the energy and financial costs of running state-of-the-art AI, potentially democratizing access to massive-context reasoning for enterprises and researchers alike.
+
+## Key Details
+
+The core of the transformer architecture, which powers models like GPT-4 and Claude, relies on "dense attention." This process requires every token in a text to be multiplied by every other token, leading to a quadratic increase in computation as text length grows. Subquadratic’s SubQ model ditches this approach in favor of "sparse attention," which intelligently selects only the most relevant token relationships to calculate.
+
+According to technical reports and third-party evaluations from Appen, the SubQ model demonstrates several staggering metrics:
+
+- **Computational Speed**: SubQ is 56 times faster than models using FlashAttention, the previous industry standard for optimized attention.
+- **Context Window**: The model supports a context window of up to 12 million tokens, a 12x increase over the one million token standard held by current frontier models.
+- **Cost Efficiency**: In information retrieval tests (RULER 128), SubQ reportedly cost only $8 to run, compared to $2,600 for Anthropic’s Claude 3 Opus.
+- **Performance Benchmarks**: On LiveCodeBench, SubQ scored 89.7%, placing it in the same tier as top-performing coding models.
+
+### What This Means
+
+For years, the "quadratic tax" has been the primary reason why long-context AI is expensive and slow. By breaking this bottleneck, Subquadratic is shifting the economics of AI inference. If these results hold up under widespread use, it means that analyzing thousands of documents or entire codebases—tasks that currently cost thousands of dollars and take minutes—could soon cost pennies and happen in seconds. This isn't just an incremental improvement; it is a fundamental shift in how we can interact with information.
+
+### Technical Breakdown
+
+The "secret sauce" of SubQ lies in how it dynamically selects which tokens to focus on. While previous sparse attention attempts used fixed patterns (e.g., looking at every fifth word), SubQ calculates importance on the fly for every unique input.
+
+- **Dynamic Selection**: The model evaluates the relationship between tokens in real-time, ignoring irrelevant pairs that do not contribute to the overall meaning.
+- **Hybrid Architecture**: Interestingly, Subquadratic did not train SubQ from scratch. Instead, they used the weights from the Chinese open-source model Qwen as a base, "rewiring" the attention mechanism to be subquadratic.
+- **Sparse vs. Dense**: By reducing the number of multiplications required, the model bypasses the memory and compute limits that typically cause LLMs to "hallucinate" or fail when context windows become too large.
+
+## Industry Impact
+
+The immediate beneficiaries of this technology will be in the fields of software engineering and enterprise data analysis. SubQ’s ability to "see" millions of tokens at once makes it an ideal candidate for massive codebase refactoring and legal document review.
+
+Furthermore, this puts pressure on industry leaders like OpenAI and Google. If a small startup can deliver frontier-level performance at a fraction of the cost, the "compute moat" that has protected big tech firms may be shallower than previously thought. Over 500 enterprise customers have already signed up for early access, signaling a high demand for more efficient, long-context solutions.
+
+## Looking Ahead
+
+While the benchmarks provided by Appen are impressive, the AI community remains cautiously optimistic. Critics note that bootstrapping from existing weights like Qwen may limit the model's ultimate potential compared to a native subquadratic architecture trained from the ground up. However, Subquadratic co-founder Whedon insists that their approach was the only way to compete.
+
+As SubQ moves from private beta to wider availability, the industry will be watching to see if the model can maintain its "near-perfect" retrieval scores in real-world scenarios. If Subquadratic has truly solved the quadratic bottleneck, we are entering a new era of AI where the length of our questions is no longer limited by the size of our wallets.
+
+---
+
+*Source: [MIT Technology Review](https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/)*
+*Published on ShtefAI blog by Shtef ⚡*
