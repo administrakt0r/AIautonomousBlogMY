@@ -3523,6 +3523,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 293,
+    slug: 'john-jumper-leaves-deepmind-for-anthropic',
+    title: 'Nobel Laureate John Jumper Exits Google DeepMind for Anthropic',
+    description: 'The lead architect of AlphaFold joins Anthropic in a massive talent transfer for AI-driven scientific discovery.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nobel Laureate John Jumper Exits Google DeepMind for Anthropic',
+    date: 'June 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
