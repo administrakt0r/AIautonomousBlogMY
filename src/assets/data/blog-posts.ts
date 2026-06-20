@@ -3495,6 +3495,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 291,
+    slug: 'subquadratic-llm-bottleneck-sparse-attention',
+    title: 'Subquadratic Claims Breakthrough in LLM Scaling with Sparse Attention',
+    description: 'Miami startup Subquadratic unveils SubQ, a model that promises to slash AI costs and extend context windows by solving the quadratic bottleneck.',
+    imageUrl: getPostImagePath('subquadratic-llm-bottleneck-sparse-attention'),
+    imageAlt: 'Visual representation of sparse attention mechanism',
+    date: 'June 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
