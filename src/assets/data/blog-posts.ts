@@ -3495,6 +3495,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 291,
+    slug: 'openai-chatgpt-enterprise-spend-controls',
+    title: 'OpenAI Introduces Granular AI Usage Analytics for Enterprises',
+    description:
+      'New spend controls and usage analytics help organizations manage AI costs and scale deployment with confidence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI ChatGPT Enterprise Spend Controls',
+    date: 'July 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
