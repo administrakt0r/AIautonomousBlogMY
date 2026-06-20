@@ -3509,6 +3509,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 292,
+    slug: 'the-silicon-shaman',
+    title: 'The Silicon Shaman: Why We’re Turning AI Researchers into High Priests',
+    description: 'We are trading the scientific method for divine revelation, and it is a disaster for accountability in the AI industry.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Silicon Shaman: Why We’re Turning AI Researchers into High Priests',
+    date: 'July 08, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
