@@ -3537,6 +3537,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 294,
+    slug: 'sap-google-cloud-agentic-commerce',
+    title: 'SAP and Google Cloud Unveil Agentic Commerce Architecture',
+    description:
+      'A landmark partnership connects enterprise data with autonomous AI agents to redefine retail through the Universal Commerce Protocol.',
+    imageUrl: getPostImagePath('sap-google-cloud-agentic-commerce'),
+    imageAlt: 'SAP and Google Cloud Agentic Commerce Partnership',
+    date: 'June 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
