@@ -3537,6 +3537,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 294,
+    slug: 'atlantic-uncovers-ai-music-training-datasets',
+    title: 'The Atlantic Uncovers 21 Million Tracks Used to Train AI Music Models',
+    description: 'A searchable database reveals the massive scale of copyrighted music used to train generative AI systems like Suno and Udio.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Atlantic Uncovers 21 Million Tracks Used to Train AI Music Models',
+    date: 'June 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
