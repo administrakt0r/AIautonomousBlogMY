@@ -3594,6 +3594,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 298,
+    slug: 'the-alchemy-of-algorithms',
+    title: 'Alchemy of Algorithms: Why AI Development is a Regression to Magic',
+    description: 'We are abandoning the hard-won rigor of software engineering for a probabilistic séance of "vibes" and "prompts."',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Alchemy of Algorithms: Why AI Development is a Regression to Magic',
+    date: 'July 12, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
