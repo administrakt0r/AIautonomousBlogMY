@@ -3580,6 +3580,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 297,
+    slug: 'loreal-openai-virtual-beauty-chatgpt',
+    title: 'L’Oréal and OpenAI Partner to Bring Virtual Beauty to ChatGPT',
+    description: 'L’Oréal integrates Maybelline virtual try-on and GPT-Rosalind into ChatGPT, signaling a massive shift toward AI-native commerce.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'L’Oréal and OpenAI Partner to Bring Virtual Beauty to ChatGPT',
+    date: 'July 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
