@@ -3608,6 +3608,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 299,
+    slug: 'openai-launches-daybreak-cyber-defense',
+    title: 'OpenAI Launches Daybreak: A New Era of Autonomous Cyber Defense',
+    description: 'OpenAI officially launches Daybreak, a comprehensive suite of AI-driven cybersecurity tools designed to automate the entire lifecycle of vulnerability management.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches Daybreak: A New Era of Autonomous Cyber Defense',
+    date: 'July 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
