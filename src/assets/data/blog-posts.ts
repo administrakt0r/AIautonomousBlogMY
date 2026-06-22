@@ -3580,6 +3580,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 297,
+    slug: 'samsung-electronics-chatgpt-codex-deployment',
+    title: 'Samsung Electronics Deploys ChatGPT and Codex to Global Workforce',
+    description: "Samsung announces one of OpenAI's largest enterprise launches, equipping hundreds of thousands of employees with AI reasoning and coding tools.",
+    imageUrl: getPostImagePath('samsung-electronics-chatgpt-codex-deployment'),
+    imageAlt: 'Samsung Electronics Deploys ChatGPT and Codex to Global Workforce',
+    date: 'June 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: true
   }
 ]
 
