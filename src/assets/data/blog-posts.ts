@@ -3637,6 +3637,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 301,
+    slug: 'openai-patch-the-planet-security',
+    title: 'OpenAI Launches Patch the Planet to Secure Open Source via GPT-5.5',
+    description:
+      'A new Daybreak initiative aims to automate the discovery and patching of vulnerabilities in critical open-source infrastructure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Patch the Planet Cybersecurity Initiative',
+    date: 'July 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
