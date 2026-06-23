@@ -3622,6 +3622,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 300,
+    slug: 'nvidia-rubin-liquid-cooled-data-centers',
+    title: 'Nvidia Unveils Rubin: Liquid-Cooled AI Data Centers to Slash Water Use',
+    description:
+      'Nvidia’s new Rubin architecture promises to virtually eliminate water consumption in AI data centers while boosting power efficiency.',
+    imageUrl: getPostImagePath('nvidia-rubin-liquid-cooled-data-centers'),
+    imageAlt: 'Nvidia Rubin Liquid-Cooled AI Data Center',
+    date: 'June 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
