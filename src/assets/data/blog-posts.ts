@@ -3667,6 +3667,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 303,
+    slug: 'gpt-5-immunology-breakthrough-derya-unutmaz',
+    title: 'GPT-5 Pro Solves 3-Year Immunology Mystery: A Leap for AI in Science',
+    description:
+      'OpenAI’s GPT-5 Pro identifies mechanistic insights in T cell development that eluded human researchers for years, accelerating immunology research.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'GPT-5 Pro Solves 3-Year Immunology Mystery',
+    date: 'July 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
