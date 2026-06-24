@@ -3652,6 +3652,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 302,
+    slug: 'nouscoder-14b-competitive-programming-master',
+    title: 'NousCoder-14B: Open-Source AI Achieves Master Rank in Programming',
+    description:
+      'Nous Research releases the first open-source AI to achieve "Master" rank on Codeforces, reaching a 2100+ rating in just 96 hours of training.',
+    imageUrl: getPostImagePath('nouscoder-14b-competitive-programming-master'),
+    imageAlt: 'NousCoder-14B Competitive Programming Master',
+    date: 'June 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
