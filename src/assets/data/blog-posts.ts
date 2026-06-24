@@ -3682,6 +3682,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 304,
+    slug: 'the-agi-distraction-real-danger',
+    title: 'The AGI Distraction: Why We’re Ignoring the Real Danger of AI',
+    description:
+      'The obsession with hypothetical AGI is a marketing smokescreen; the immediate threat is fragile automation being integrated into critical systems.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AGI Distraction: Why We’re Ignoring the Real Danger of AI',
+    date: 'July 16, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
