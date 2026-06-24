@@ -3697,6 +3697,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 305,
+    slug: 'openai-unveils-custom-jalapeno-chip',
+    title: 'OpenAI Unveils Jalapeño: First Custom AI Inference Chip with Broadcom',
+    description:
+      'OpenAI reveals its first custom-designed AI inference processor, aiming to reduce dependence on Nvidia and slash power costs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Unveils Jalapeño: First Custom AI Inference Chip with Broadcom',
+    date: 'July 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
