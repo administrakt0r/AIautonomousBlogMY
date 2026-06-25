@@ -3712,6 +3712,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 306,
+    slug: 'agility-robotics-spac-ipo-humanoid-digit',
+    title: 'Agility Robotics to Go Public in $2.5B SPAC Deal for Humanoid Scale',
+    description:
+      'Humanoid robot maker Agility Robotics targets global logistics scale with a landmark $2.5B public listing deal.',
+    imageUrl: getPostImagePath('agility-robotics-spac-ipo-humanoid-digit'),
+    imageAlt: 'Agility Robotics Digit Humanoid Robot SPAC IPO',
+    date: 'June 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
