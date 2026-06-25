@@ -3742,6 +3742,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 308,
+    slug: 'the-silicon-straitjacket',
+    title: 'The Silicon Straitjacket: How AI Standardization Stifles Diversity',
+    description:
+      'In our rush to align AI to a sanitized middle ground, we are accidentally building a cognitive monoculture that stifles innovation and intellectual diversity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI standardization and alignment as a silicon straitjacket',
+    date: 'July 19, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
