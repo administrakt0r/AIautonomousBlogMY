@@ -3787,6 +3787,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 311,
+    slug: 'openai-previews-gpt-5-6-sol',
+    title: 'OpenAI Previews GPT-5.6 Sol: A Leap in AI Reasoning and Safety',
+    description:
+      'The next-generation "Sol" model promises massive gains in coding, scientific research, and autonomous cybersecurity defense.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Previews GPT-5.6 Sol: A Leap in AI Reasoning and Safety',
+    date: 'July 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: true
   }
 ]
 
