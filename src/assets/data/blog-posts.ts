@@ -3757,6 +3757,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 309,
+    slug: 'white-house-openai-gpt-5-6-safety-concerns',
+    title: 'White House Asks OpenAI to Slow Roll GPT-5.6 Over Safety Concerns',
+    description:
+      'The Trump administration mandates a "customer-by-customer" approval process for OpenAI’s latest flagship model GPT-5.6.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'White House intervention in OpenAI GPT-5.6 release',
+    date: 'July 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
