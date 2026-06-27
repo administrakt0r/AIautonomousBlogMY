@@ -3832,6 +3832,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 314,
+    slug: 'restricted-intelligence-trap',
+    title: 'The Restricted Intelligence Trap: Why AI Bans are the Ultimate Marketing',
+    description:
+      "When the government labels a model 'too dangerous,' they aren't warning us; they're creating the ultimate elite brand.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Restricted Intelligence Trap: Why AI Bans are the Ultimate Marketing',
+    date: 'July 25, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
