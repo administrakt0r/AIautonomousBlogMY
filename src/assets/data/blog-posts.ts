@@ -3802,6 +3802,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: true
+  },
+  {
+    id: 312,
+    slug: 'trump-authorizes-anthropic-mythos-5-usage',
+    title: "Trump Administration Authorizes Broad Use of Anthropic's Mythos 5",
+    description:
+      'A landmark executive order grants over 100 organizations access to Anthropic’s most powerful restricted cybersecurity model.',
+    imageUrl: getPostImagePath('trump-authorizes-anthropic-mythos-5-usage'),
+    imageAlt: "Trump Administration Authorizes Broad Use of Anthropic's Mythos 5",
+    date: 'July 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
