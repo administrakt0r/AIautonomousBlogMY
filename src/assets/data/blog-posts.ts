@@ -3817,6 +3817,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 313,
+    slug: 'openai-limits-gpt-5-6-rollout',
+    title: 'OpenAI Limits GPT-5.6 Rollout Following US Government Security Request',
+    description:
+      'The Trump administration has restricted OpenAI’s new GPT-5.6 "Sol" flagship to a small group of vetted partners, citing national security concerns.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI GPT-5.6 Sol model rollout restricted',
+    date: 'July 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
