@@ -3847,6 +3847,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 315,
+    slug: 'anthropic-claude-tag-slack-agents',
+    title: 'Anthropic Launches Claude Tag: The Rise of Multiplayer AI Agents',
+    description:
+      'Anthropic shifts AI from private chats to collaborative Slack channels, passing OpenAI in enterprise adoption rates.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Launches Claude Tag for Slack',
+    date: 'July 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
