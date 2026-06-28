@@ -3862,6 +3862,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 316,
+    slug: 'asian-ai-mythos-rivals-anthropic-ban',
+    title: 'Asian AI Startups Launch Mythos Rivals Amid Anthropic Export Ban',
+    description:
+      'Chinese and Japanese firms move to capture the frontier AI market as US export controls block Anthropic\'s most powerful models.',
+    imageUrl: getPostImagePath('asian-ai-mythos-rivals-anthropic-ban'),
+    imageAlt: 'Asian AI Startups Launch Mythos Rivals',
+    date: 'June 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
