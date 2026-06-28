@@ -3892,6 +3892,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 318,
+    slug: 'ford-rehires-veteran-engineers-ai-limitations',
+    title: 'Ford Rehires Veteran Engineers as AI Quality Systems Fall Short',
+    description:
+      'Ford brings back 350 veteran engineers after discovering that AI-driven quality systems failed to meet rigorous production standards.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Ford Rehires Veteran Engineers as AI Quality Systems Fall Short',
+    date: 'July 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
