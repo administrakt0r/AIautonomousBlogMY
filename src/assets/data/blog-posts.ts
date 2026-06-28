@@ -3877,6 +3877,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 317,
+    slug: 'tragedy-of-ai-commons-multiplayer-agents',
+    title: 'The Tragedy of AI Commons: Why Multiplayer Agents Will Break Your Work',
+    description:
+      'Collaborative AI agents in Slack and Teams promise productivity but threaten to drown teams in automated noise and collective cognitive decline.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Tragedy of the AI Commons: Why Multiplayer Agents Will Break Your Workflow',
+    date: 'July 27, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
