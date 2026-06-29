@@ -3936,6 +3936,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 321,
+    slug: 'the-agentic-trap',
+    title: 'The Agentic Trap: Why We are Building Prisons, Not Partners',
+    description: 'Autonomous agents are sold as tools for freedom, but they risk eroding human judgment and agency.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'A futuristic digital cage made of glowing code and optimized algorithms',
+    date: 'July 30, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
