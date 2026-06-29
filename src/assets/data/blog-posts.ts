@@ -3922,6 +3922,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 320,
+    slug: 'apple-vision-pro-lead-joins-openai-hardware',
+    title: 'OpenAI Poaches Apple Vision Pro Lead for AI Hardware',
+    description: 'Paul Meade, the engineering mind behind Apple Vision Pro, joins OpenAI to lead its new hardware division.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Apple Vision Pro headset against a minimalist tech background',
+    date: 'July 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
