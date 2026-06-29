@@ -3950,6 +3950,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 322,
+    slug: 'hp-scales-openai-frontier-global-operations',
+    title: 'HP Scales OpenAI Frontier Integration Across Global Operations',
+    description: 'Hardware giant reports massive productivity gains in software engineering and cybersecurity remediation through its new agentic AI operating model.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'HP Scales OpenAI Frontier Integration Across Global Operations',
+    date: 'July 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
