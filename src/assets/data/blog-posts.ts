@@ -3907,6 +3907,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 319,
+    slug: 'sakana-ai-fugu-multi-agent-orchestration',
+    title: 'Sakana AI Launches Fugu: Multi-Agent Orchestration to End Vendor Lock-In',
+    description:
+      'The Tokyo-based lab introduces a learned routing engine that optimizes performance while diversifying infrastructure risk across multiple frontier models.',
+    imageUrl: getPostImagePath('sakana-ai-fugu-multi-agent-orchestration'),
+    imageAlt: 'Sakana AI Fugu Multi-Agent Orchestration System',
+    date: 'June 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
