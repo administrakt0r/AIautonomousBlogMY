@@ -4006,6 +4006,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 326,
+    slug: 'anthropic-launches-claude-sonnet-5',
+    title: 'Anthropic Launches Claude Sonnet 5: The New Baseline for AI Agents',
+    description: 'Anthropic releases Claude Sonnet 5, bringing high-tier agentic capabilities and competitive pricing to its mid-range model.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Launches Claude Sonnet 5: The New Baseline for AI Agents',
+    date: 'August 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
