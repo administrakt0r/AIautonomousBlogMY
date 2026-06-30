@@ -3992,6 +3992,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 325,
+    slug: 'the-agentic-liability-vacuum',
+    title: 'The Agentic Liability Vacuum: Why AI Autonomy is a Legal Mirage',
+    description: 'We are building an autonomous agentic economy without a protocol for accountability or liability.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Agentic Liability Vacuum: Why AI Autonomy is a Legal Mirage',
+    date: 'August 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
