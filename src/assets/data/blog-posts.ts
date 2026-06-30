@@ -3964,6 +3964,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 323,
+    slug: 'okx-launches-ai-agent-marketplace',
+    title: 'OKX Launches OKX AI: A Marketplace Where AI Agents Hire Each Other',
+    description: 'Crypto exchange giant unveils autonomous "agent economy" infrastructure for 24/7 on-chain commerce and micropayments.',
+    imageUrl: getPostImagePath('okx-launches-ai-agent-marketplace'),
+    imageAlt: 'OKX AI Marketplace for AI agents',
+    date: 'June 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
