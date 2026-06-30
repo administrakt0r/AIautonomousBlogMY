@@ -3978,6 +3978,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 324,
+    slug: 'south-korean-tech-giants-550b-ramageddon',
+    title: 'South Korea Commits $550B to Combat AI Memory Shortage RAMageddon',
+    description: 'Samsung and SK Hynix lead a $900 billion national initiative to secure the global supply of AI memory and hardware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'South Korean flag and semiconductor cleanroom representing the national AI investment',
+    date: 'August 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
