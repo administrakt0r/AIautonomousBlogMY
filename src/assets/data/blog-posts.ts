@@ -4020,6 +4020,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 327,
+    slug: 'trump-drops-anthropic-model-restrictions',
+    title: 'Trump Drops Restrictions on Anthropic’s Mythos and Fable Models',
+    description: 'The White House has lifted deployment limits on Anthropic’s sensitive AI security models as the lab unveils its faster Claude Sonnet 5.',
+    imageUrl: getPostImagePath('trump-drops-anthropic-model-restrictions'),
+    imageAlt: 'A futuristic digital interface showing AI model security clearance and national defense symbols.',
+    date: 'July 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
