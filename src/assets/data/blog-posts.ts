@@ -4034,6 +4034,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 328,
+    slug: 'anthropic-launches-claude-science',
+    title: 'Anthropic Launches Claude Science for AI-Driven Research',
+    description: 'Anthropic unveils Claude Science, a specialized agentic platform designed to autonomously accelerate research in drug discovery and computational biology.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Launches Claude Science for AI-Driven Research',
+    date: 'July 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
