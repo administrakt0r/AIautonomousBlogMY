@@ -4048,6 +4048,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 329,
+    slug: 'the-scaling-mirage-financial-bubble',
+    title: 'The Scaling Mirage: Why AI Progress is Hitting a Financial Wall',
+    description: 'A provocative look at why the current brute-force approach to AI is reaching its economic and physical limits.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Scaling Mirage: Why AI Progress is Hitting a Financial Wall',
+    date: 'August 04, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
