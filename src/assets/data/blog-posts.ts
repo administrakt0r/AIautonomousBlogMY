@@ -4062,6 +4062,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 330,
+    slug: 'anthropic-ai-crackdown-chinese-users',
+    title: "Anthropic's AI Cracks Down on Chinese Users via Covert Detection",
+    description: "Developers uncover a covert monitoring mechanism within Claude Code CLI that flags and restricts users with links to Chinese AI labs.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Anthropic's AI Cracks Down on Chinese Users via Covert Detection",
+    date: 'August 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
