@@ -4076,6 +4076,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 331,
+    slug: 'openai-proposes-government-equity-stake',
+    title: 'OpenAI Proposes 5% Equity Stake to U.S. Government',
+    description: 'CEO Sam Altman floats a national wealth fund idea to ease regulatory tensions as AI model rollouts face government scrutiny.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Proposes 5% Equity Stake to U.S. Government',
+    date: 'August 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
