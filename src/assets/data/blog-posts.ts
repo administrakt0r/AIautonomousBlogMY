@@ -4118,6 +4118,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 334,
+    slug: 'anthropic-claude-science-drug-discovery',
+    title: 'Anthropic Launches Claude Science to Accelerate Drug Discovery',
+    description: 'Anthropic unveils a unified AI workbench for researchers and announces plans to develop proprietary drugs using its advanced models.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude Science Platform',
+    date: 'August 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
