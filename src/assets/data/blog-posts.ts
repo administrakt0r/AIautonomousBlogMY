@@ -4090,6 +4090,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 332,
+    slug: 'anthropic-samsung-ai-chip-collaboration',
+    title: 'Anthropic and Samsung Explore Custom AI Chip Partnership',
+    description: 'Anthropic reportedly in talks with Samsung to develop custom AI silicon, aiming for hardware independence and optimized Claude performance.',
+    imageUrl: getPostImagePath('anthropic-samsung-ai-chip-collaboration'),
+    imageAlt: 'Anthropic and Samsung AI Chip Partnership',
+    date: 'July 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
