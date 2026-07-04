@@ -4174,6 +4174,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 338,
+    slug: 'midjourney-hollywood-ai-usage',
+    title: 'Midjourney Strikes Back: Demands Hollywood Reveal AI Usage',
+    description: 'Midjourney demands Hollywood studios reveal internal AI usage in a high-stakes legal counter-offensive over copyright.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Midjourney vs Hollywood AI Legal Battle',
+    date: 'August 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
