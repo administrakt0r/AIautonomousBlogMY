@@ -4146,6 +4146,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 336,
+    slug: 'zuckerberg-meta-ai-agent-progress-lagging',
+    title: 'Zuckerberg Admits Meta AI Agent Progress Is Lagging Targets',
+    description: 'Meta CEO Mark Zuckerberg acknowledges that AI agent development has stalled despite massive infrastructure spending and restructuring.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Mark Zuckerberg Meta AI Agent Progress Lagging',
+    date: 'August 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
