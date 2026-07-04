@@ -4132,6 +4132,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 335,
+    slug: 'takeda-insilico-ai-drug-discovery-deal',
+    title: 'Takeda and Insilico Medicine Strike $600M AI Drug Discovery Deal',
+    description: 'Global pharmaceutical giant Takeda leverages Insilico’s generative AI platform to accelerate pipeline development.',
+    imageUrl: getPostImagePath('takeda-insilico-ai-drug-discovery-deal'),
+    imageAlt: 'Takeda and Insilico Medicine AI Drug Discovery Partnership',
+    date: 'July 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
