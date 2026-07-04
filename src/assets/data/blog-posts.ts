@@ -4160,6 +4160,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 337,
+    slug: 'the-new-luddites-rational-resistance',
+    title: 'The New Luddites: Why the Resistance to AI is Actually Rational',
+    description: 'A provocative look at why resisting the deployment of agentic AI is not technophobia, but a rational act of self-preservation.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The New Luddites AI Resistance',
+    date: 'August 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
