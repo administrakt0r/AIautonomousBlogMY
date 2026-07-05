@@ -4231,6 +4231,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 342,
+    slug: 'amazon-mechanical-turk-halts-signups',
+    title: 'Amazon Halts Mechanical Turk Signups as AI Replaces Human Labelers',
+    description:
+      'The legendary "artificial artificial intelligence" platform enters its twilight years as automated models outpace human workers.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Amazon Halts Mechanical Turk Signups as AI Replaces Human Labelers',
+    date: 'July 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
