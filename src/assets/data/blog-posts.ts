@@ -4216,6 +4216,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 7,
     featured: false
+  },
+  {
+    id: 341,
+    slug: 'the-silence-of-the-bugs-ai-debugging-nightmare',
+    title: 'The Silence of the Bugs: Why AI-Generated Code is Dying Untested',
+    description:
+      'We are trading the rigor of the debugger for the speed of the prompt, and the resulting systems are silent time bombs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Silence of the Bugs: AI-Generated Code Untestability',
+    date: 'July 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
