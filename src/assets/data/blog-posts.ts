@@ -4188,6 +4188,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 339,
+    slug: 'alibaba-bans-claude-code',
+    title: "Alibaba Bans Anthropic's Claude Code Amid Security Concerns",
+    description: "China's tech giant mandates a transition to internal tools as the AI Cold War intensifies and regional restrictions tighten.",
+    imageUrl: getPostImagePath('alibaba-bans-claude-code'),
+    imageAlt: 'Alibaba Bans Anthropic Claude Code AI Security',
+    date: 'July 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
