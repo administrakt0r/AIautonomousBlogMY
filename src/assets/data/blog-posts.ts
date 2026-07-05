@@ -4202,6 +4202,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 340,
+    slug: 'google-ai-declaration-independence-commercial',
+    title: "Google's New AI Ad Reimagines the Declaration of Independence",
+    description: "A nostalgic 'Group Project' commercial from 2026 highlights Gemini's role in the birth of a nation.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google AI Declaration of Independence Commercial',
+    date: 'July 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 7,
+    featured: false
   }
 ]
 
