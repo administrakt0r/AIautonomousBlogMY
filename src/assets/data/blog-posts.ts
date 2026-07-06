@@ -4260,6 +4260,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 344,
+    slug: 'china-ai-companion-regulations',
+    title: 'China’s AI Companion Rules: What Beijing is Really Going After',
+    description:
+      'Chinese regulators have launched a first-of-its-kind framework to dismantle the phenomenon of AI companions, forcing a cold reality check for digital intimacy.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'China’s AI Companion Rules and Regulations',
+    date: 'July 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
