@@ -4275,6 +4275,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 345,
+    slug: 'the-empathy-racket-why-ai-soft-skills-are-a-lie',
+    title: "The Empathy Racket: Why AI 'Soft Skills' are the Ultimate Corporate Lie",
+    description: "Emotional intelligence is being commoditized, destroying the 'human moat' and enabling synthetic corporate performance.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "The Empathy Racket: Why AI Soft Skills are the Ultimate Corporate Lie",
+    date: 'July 06, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
