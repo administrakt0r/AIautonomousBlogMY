@@ -4289,6 +4289,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 346,
+    slug: 'vercel-ceo-guillermo-rauch-on-splitting-models-from-agents',
+    title: 'Vercel CEO Guillermo Rauch on Splitting AI Models from Agents',
+    description:
+      'Vercel CEO Guillermo Rauch outlines a vision for the future of AI where agents and models are decoupled for better efficiency and security.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Vercel CEO Guillermo Rauch on Splitting AI Models from Agents',
+    date: 'July 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
