@@ -4246,6 +4246,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 343,
+    slug: 'wealthy-families-ai-tutors-alpha-school',
+    title: 'Silicon Valley’s Elite Are Trading Teachers for AI Tutors',
+    description: 'Inside the $75,000-a-year private schools where AI-led instruction is replacing human teachers for the children of tech billionaires.',
+    imageUrl: getPostImagePath('wealthy-families-ai-tutors-alpha-school'),
+    imageAlt: 'Wealthy Families AI Tutors Alpha School Education',
+    date: 'July 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
