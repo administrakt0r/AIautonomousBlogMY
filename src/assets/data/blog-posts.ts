@@ -4304,6 +4304,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 347,
+    slug: 'token-budgets-vs-human-talent',
+    title: 'AI Token Budgets Replace Talent: The Cost of Automation Narrative',
+    description: "Corporate America's shift from human salaries to AI compute costs reveals diminishing returns and hidden quality risks.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Token Budgets vs Human Talent',
+    date: 'July 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
