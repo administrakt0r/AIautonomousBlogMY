@@ -4304,6 +4304,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 347,
+    slug: 'american-autonomous-ground-vehicles-ukraine-combat',
+    title: 'US Autonomous Combat Vehicles Deployed in Ukraine War',
+    description:
+      'Forterra reveals the largest deployment of American autonomous ground vehicles in combat, with over 100 self-driving Lancers active in Ukraine.',
+    imageUrl: getPostImagePath('american-autonomous-ground-vehicles-ukraine-combat'),
+    imageAlt: 'American autonomous ground vehicle in combat',
+    date: 'July 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
