@@ -4334,6 +4334,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 349,
+    slug: 'meta-launches-muse-agentic-ai-image-generator',
+    title: 'Meta Launches Muse: The First Agentic AI Image Model from MSL',
+    description:
+      'Meta retires the Llama brand for its flagship models, launching Muse Image—a new reasoning-capable architecture from Superintelligence Labs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta Launches Muse: The First Agentic AI Image Model from Superintelligence Labs',
+    date: 'July 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
