@@ -4319,6 +4319,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 348,
+    slug: 'the-intelligence-illusion',
+    title: "The Intelligence Illusion: Why More Tokens Don't Mean More Wisdom",
+    description:
+      'We are confusing massive token generation with genuine cognitive breakthrough, leading to a shallowing of human intellect.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Intelligence Illusion: Why More Tokens Don\'t Mean More Wisdom',
+    date: 'August 13, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
