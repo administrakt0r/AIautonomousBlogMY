@@ -4364,6 +4364,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 351,
+    slug: 'sambanova-series-f-funding-11b-valuation',
+    title: 'SambaNova Raises $1 Billion at $11 Billion Valuation for AI Inference',
+    description: 'SambaNova Systems completes a massive $1 billion Series F round, signaling a major shift toward enterprise-grade AI inference infrastructure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SambaNova Raises $1 Billion at $11 Billion Valuation for AI Inference',
+    date: 'July 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
