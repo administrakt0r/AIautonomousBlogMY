@@ -4349,6 +4349,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 350,
+    slug: 'zml-releases-inference-server-for-cross-chip-ai',
+    title: 'French Startup ZML Releases Free Cross-Chip AI Inference Server',
+    description:
+      'ZML launches ZML/LLMD, a high-performance inference server that enables peak AI performance across Nvidia, AMD, Google, Apple, and Intel hardware.',
+    imageUrl: getPostImagePath('zml-releases-inference-server-for-cross-chip-ai'),
+    imageAlt: 'French Startup ZML Releases Free Cross-Chip AI Inference Server',
+    date: 'July 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
