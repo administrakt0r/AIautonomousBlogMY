@@ -4392,6 +4392,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 353,
+    slug: 'spacexai-releases-grok-4-5',
+    title: 'SpaceXAI Releases Grok 4.5: The New Opus-Class AI Contender',
+    description: 'Elon Musk’s AI firm claims its latest model matches Anthropic’s flagship while doubling token efficiency.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SpaceXAI Grok 4.5 release announcement',
+    date: 'July 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
