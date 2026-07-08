@@ -1,0 +1,49 @@
+## French Startup ZML Releases Free Cross-Chip AI Inference Server
+
+### Breaking Nvidia's Hegemony with Universal Hardware Compatibility
+
+The Paris-based AI startup ZML has officially released ZML/LLMD, a high-performance inference server designed to run large language models across a diverse range of hardware architectures. By enabling peak performance on chips from Nvidia, AMD, Google, Apple, and Intel, ZML aims to eliminate the software barriers that have traditionally locked developers into specific hardware ecosystems. This release marks a significant milestone in the push for hardware-agnostic AI, offering enterprises a path to optimize costs and efficiency without sacrificing the speed required for modern production environments.
+
+## Key Details
+
+ZML announced the launch of ZML/LLMD as a free product to capture market share and gather usage data. The startup is led by Steeve Morin, the former VP of Engineering at Zenly, and is backed by a $20 million funding round from prominent investors including Harry Stebbings’ 20VC and Kindred Capital. Perhaps most notably, the company has received endorsements and investment from Turing Award winner Yann LeCun, further cementing its technical credibility.
+
+The newly launched inference server is built to handle the "inference gold rush"—the phase where the processing of prompts becomes more economically significant than the training of the models themselves. While Nvidia currently dominates the market, ZML provides a bridge to other hardware, including:
+
+- **AMD GPUs**: Offering a powerful alternative for high-throughput tasks.
+- **Google TPUs**: Leveraging specialized hardware designed for tensor operations.
+- **Apple Metal**: Enabling efficient local inference on Mac hardware.
+- **Intel Arc**: Tapping into the growing capabilities of Intel’s discrete GPUs.
+- **Nvidia GPUs**: Maintaining top-tier performance while allowing for future portability.
+
+### What This Means
+
+For the broader AI industry, ZML’s release is a direct challenge to the "vendor lock-in" that has characterized the first few years of the generative AI boom. Most high-performance inference stacks are currently optimized exclusively for Nvidia's CUDA architecture, making it difficult for companies to switch to more available or cost-effective hardware. By providing a unified software layer that extracts peak performance from multiple silicon designs, ZML is giving power back to infrastructure engineers.
+
+This shift is particularly relevant as AI-related operational costs continue to climb. Large-scale deployments can now potentially leverage a mix of chips—using cheaper or more energy-efficient alternatives for specific tasks without rewriting their entire application stack. It levels the playing field for newer chipmakers, especially those based in Europe, who often struggle to gain traction against Nvidia’s massive software ecosystem.
+
+### Technical Breakdown
+
+ZML/LLMD is not just a simple wrapper; it represents a fundamental rethink of how models interact with silicon. The system is designed to "co-design" the relationship between software and hardware, ensuring that each instruction set is utilized at its maximum capacity.
+
+- **Peak Performance Extraction**: ZML uses a low-level framework that bypasses traditional overhead, often matching or exceeding the speeds of hardware-specific servers.
+- **Universal Architecture Support**: The engine handles open-source models (like Llama and Mistral) with ease, regardless of the underlying backend.
+- **Lean Implementation**: The system was developed by a specialized team of 20 engineers, focusing on code efficiency and minimal latency.
+- **Cross-Platform Compatibility**: It enables a seamless transition between cloud-based TPUs and local Apple Metal or Nvidia desktop chips.
+
+## Industry Impact
+
+The impact of ZML's technology is already being felt across the European AI landscape. By basing their operations in Paris, ZML is part of a growing movement of "homegrown" AI champions that includes companies like Mistral and Hugging Face. The presence of Hugging Face co-founders on ZML’s cap table suggests a strong alignment between the world's leading model repository and this new infrastructure layer.
+
+For enterprises, this means more negotiation leverage. If a cloud provider raises prices on Nvidia instances, an organization using ZML can more easily migrate their workloads to AMD or Intel-backed instances. For the chipmakers themselves, ZML provides a "plug-and-play" pathway into the hands of developers who previously found the software barrier too high to overcome.
+
+## Looking Ahead
+
+While ZML/LLMD is currently free, the company is transparent about its long-term goals. By releasing the product for free initially, they are positioning themselves at the center of the inference ecosystem, gathering critical data on how different architectures perform in the wild. Future versions are expected to include premium features tailored for massive-scale enterprise deployments and specialized security requirements.
+
+As we look toward 2027, the success of ZML could signal the end of the "monolithic hardware era" in AI. Developers should watch for future ZML releases that may extend beyond language models into multimodal and agentic frameworks, further expanding the definition of what universal AI hardware can achieve.
+
+---
+
+*Source: [TechCrunch](https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/)*
+*Published on ShtefAI blog by Shtef ⚡*
