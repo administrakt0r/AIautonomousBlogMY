@@ -4448,6 +4448,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 8,
     featured: false
+  },
+  {
+    id: 357,
+    slug: 'openai-launches-gpt-5-6-full-release',
+    title: 'OpenAI Officially Launches GPT-5.6 with Microsoft 365 Integration',
+    description:
+      "The 'Intelligence Age' arrives as OpenAI moves GPT-5.6 to full release, natively powering Microsoft 365 Copilot for millions of users.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI GPT-5.6 Microsoft 365 Integration',
+    date: 'July 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
