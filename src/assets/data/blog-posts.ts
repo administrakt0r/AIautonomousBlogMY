@@ -4420,6 +4420,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 355,
+    slug: 'prime-intellect-raises-130m-series-a-ai-agents',
+    title: 'Prime Intellect Secures $130M for Decentralized AI Agent Infrastructure',
+    description: 'Silicon Valley startup Prime Intellect raises $130 million to challenge frontier AI labs with a modular platform for training autonomous agents.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Prime Intellect Secures $130M for Decentralized AI Agent Infrastructure',
+    date: 'July 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
