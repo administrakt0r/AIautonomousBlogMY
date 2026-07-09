@@ -4406,6 +4406,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 354,
+    slug: 'openai-launches-gpt-live-voice-mode',
+    title: 'OpenAI Launches GPT-Live-1: A New Era for Real-Time AI Voice',
+    description: 'OpenAI’s new multimodal model enables full-duplex conversations, allowing users to speak and listen simultaneously with human-like latency.',
+    imageUrl: getPostImagePath('openai-launches-gpt-live-voice-mode'),
+    imageAlt: 'OpenAI GPT-Live-1 Voice Model Launch',
+    date: 'July 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
