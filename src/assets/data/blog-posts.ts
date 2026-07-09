@@ -4434,6 +4434,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 356,
+    slug: 'the-death-of-tacit-knowledge',
+    title: 'The Death of Tacit Knowledge: Why AI is Killing Engineering Intuition',
+    description: 'We are trading the "gut feeling" of experienced engineering for the superficial speed of statistical approximation.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Death of Tacit Knowledge: Why AI is Killing Engineering Intuition',
+    date: 'July 09, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 8,
+    featured: false
   }
 ]
 
