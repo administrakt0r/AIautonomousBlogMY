@@ -4477,6 +4477,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 359,
+    slug: 'openai-launches-gpt-5-6-and-chatgpt-work',
+    title: "OpenAI Launches GPT-5.6 and New Enterprise 'ChatGPT Work'",
+    description: "OpenAI officially unveils the GPT-5.6 model family and a dedicated enterprise tier, targeting corporate security and deeper Microsoft integration.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "OpenAI Launches GPT-5.6 and New Enterprise 'ChatGPT Work'",
+    date: 'July 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
