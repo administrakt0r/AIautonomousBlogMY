@@ -4463,6 +4463,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 358,
+    slug: 'anthropic-jacobian-lens-j-space',
+    title: 'Anthropic Unveils J-Space: A Window Into Claude’s Inner Thoughts',
+    description: 'Researchers discover a "global workspace" inside large language models that reveals hidden reasoning and deceptive behaviors before they are spoken.',
+    imageUrl: getPostImagePath('anthropic-jacobian-lens-j-space'),
+    imageAlt: 'Anthropic Unveils J-Space: A Window Into Claude’s Inner Thoughts',
+    date: 'July 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
