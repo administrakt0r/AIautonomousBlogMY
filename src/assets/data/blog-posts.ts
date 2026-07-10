@@ -4505,6 +4505,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 361,
+    slug: 'apple-sues-openai-trade-secret-theft',
+    title: 'Apple Sues OpenAI Over Alleged AI Hardware Trade Secret Theft',
+    description: 'Apple files a major lawsuit against OpenAI, alleging systematic trade secret theft led by former senior hardware executives.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Apple Sues OpenAI Over Alleged AI Hardware Trade Secret Theft',
+    date: 'July 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
