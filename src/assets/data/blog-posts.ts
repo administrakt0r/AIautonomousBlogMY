@@ -4491,6 +4491,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 360,
+    slug: 'the-leisure-lie-why-ai-is-actually-killing-the-40-hour-work-week',
+    title: "The Leisure Lie: Why AI is Actually Killing the 40-Hour Work Week",
+    description: "AI was supposed to usher in an age of leisure. Instead, it's dismantling the boundaries of the work week and creating an algorithmic treadmill that never stops.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "The Leisure Lie: Why AI is Actually Killing the 40-Hour Work Week",
+    date: 'July 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
