@@ -4519,6 +4519,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 362,
+    slug: 'sk-hynix-ipo-ai-memory-boom',
+    title: 'SK Hynix Sets $26.5B Record IPO Amid AI Memory Demand',
+    description: "The South Korean chip giant shatters records on Nasdaq as Nvidia's hunger for HBM chips fuels a historic market debut.",
+    imageUrl: getPostImagePath('sk-hynix-ipo-ai-memory-boom'),
+    imageAlt: 'SK Hynix Sets $26.5B Record IPO Amid AI Memory Demand',
+    date: 'July 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
