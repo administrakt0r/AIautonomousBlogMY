@@ -4547,6 +4547,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 364,
+    slug: 'openai-families-chatgpt-households',
+    title: 'OpenAI Bets on Families as ChatGPT Goes Deeper Into Households',
+    description: 'Meeting the parents: OpenAI hires family-focused product leads as ChatGPT adoption among parents and older adults surges.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Bets on Families as ChatGPT Goes Deeper Into Households',
+    date: 'July 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
