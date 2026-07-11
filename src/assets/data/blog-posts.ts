@@ -4519,6 +4519,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 362,
+    slug: 'sk-hynix-record-breaking-ipo-ai-chip-demand',
+    title: 'SK Hynix $26.5B IPO: Fueling the Global AI Chip Infrastructure',
+    description: 'South Korean memory giant SK Hynix shatters records with a $26.5B U.S. IPO driven by insatiable demand for AI hardware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SK Hynix $26.5B IPO: Fueling the Global AI Chip Infrastructure',
+    date: 'July 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
