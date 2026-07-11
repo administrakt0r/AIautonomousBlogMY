@@ -4533,6 +4533,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 363,
+    slug: 'the-reasoning-illusion-ai-search',
+    title: "The Reasoning Illusion: Why AI Search Still Can't Think",
+    description: "LLM-based search engines don't 'reason' through your queries; they just predict the most statistically probable path to an answer.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "The Reasoning Illusion: Why AI Search Still Can't Think",
+    date: 'August 12, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
