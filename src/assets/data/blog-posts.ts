@@ -4575,6 +4575,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 366,
+    slug: 'ai-quantum-peptide-discovery',
+    title: 'AI and Quantum Computing Team Up for Breakthrough Peptide Discovery',
+    description: 'Researchers at DTU and ORCA Computing demonstrate how hybrid quantum-classical AI can accelerate drug discovery and vaccine design.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI and Quantum Computing Peptide Discovery',
+    date: 'July 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
