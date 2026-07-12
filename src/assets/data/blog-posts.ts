@@ -4561,6 +4561,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 365,
+    slug: 'openai-head-of-safety-johannes-heidecke-leaves',
+    title: 'OpenAI’s Head of Safety Johannes Heidecke Exits Amid Reorganization',
+    description: 'A major leadership shift at OpenAI merges safety systems into core research as frontier model development accelerates.',
+    imageUrl: getPostImagePath('openai-head-of-safety-johannes-heidecke-leaves'),
+    imageAlt: 'OpenAI safety reorganization leadership change',
+    date: 'July 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
