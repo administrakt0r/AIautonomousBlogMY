@@ -4603,6 +4603,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 368,
+    slug: 'meta-removes-controversial-instagram-ai-feature',
+    title: 'Meta Removes Controversial AI Feature on Instagram After Backlash',
+    description: 'Meta has suspended a controversial AI feature on Instagram that allowed users to create deepfakes of public accounts after intense backlash.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta Removes Controversial AI Feature on Instagram After Backlash',
+    date: 'July 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
