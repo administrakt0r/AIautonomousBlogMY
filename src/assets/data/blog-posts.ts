@@ -4659,6 +4659,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 372,
+    slug: 'satya-nadella-reverse-information-paradox-ai-warning',
+    title: 'Satya Nadella Issues Shocking AI Warning: The Reverse Information Paradox',
+    description: 'Microsoft CEO warns enterprises that using proprietary models could mean surrendering their core competitive edge to AI providers.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Satya Nadella AI Warning Reverse Information Paradox',
+    date: 'July 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
