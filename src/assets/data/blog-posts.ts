@@ -4645,6 +4645,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 371,
+    slug: 'the-recursive-dead-end',
+    title: "The Recursive Dead-End: Why More Agent Loops Won't Lead to AGI",
+    description: 'Autonomous agents are being sold as the next frontier of AI, but we are merely building expensive retry loops that mask a fundamental lack of reasoning.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "The Recursive Dead-End: Why More Agent Loops Won't Lead to AGI",
+    date: 'July 13, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
