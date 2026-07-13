@@ -4631,6 +4631,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 370,
+    slug: 'tech-giants-alliance-rival-ai-agent-protocol',
+    title: 'Tech Giants Unite to Launch Rival AI Agent Protocol Against Anthropic',
+    description: 'Google, Microsoft, and Salesforce back a shared standard for the agentic economy to challenge Anthropic’s MCP dominance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Tech Giants Alliance Rival AI Agent Protocol',
+    date: 'July 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
