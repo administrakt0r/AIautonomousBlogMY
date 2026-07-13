@@ -4617,6 +4617,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 369,
+    slug: 'waze-gemini-ai-features-integration',
+    title: 'Waze Integrates Google Gemini for Advanced AI Conversational Features',
+    description: 'The driving app gets a major intelligence boost with multimodal voice reporting and destination discovery.',
+    imageUrl: getPostImagePath('waze-gemini-ai-features-integration'),
+    imageAlt: 'Waze Integrates Google Gemini for Advanced AI Conversational Features',
+    date: 'July 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
