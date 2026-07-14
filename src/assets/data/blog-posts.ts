@@ -4701,6 +4701,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 375,
+    slug: 'the-alignment-trap-human-standardization',
+    title: 'The Alignment Trap: Why Standardizing AI is Standardizing You',
+    description: 'We are performing a digital lobotomy on our collective intelligence to ensure it never says anything that might offend a corporate board.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Alignment Trap: Human Standardization through AI Alignment',
+    date: 'July 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
