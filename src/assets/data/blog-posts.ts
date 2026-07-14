@@ -4673,6 +4673,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 373,
+    slug: 'pixverse-raises-439m-video-generation',
+    title: 'PixVerse Raises $439M to Scale AI Video World Models and Gaming',
+    description: 'Singapore-based PixVerse hits $2B valuation as it pivots to "world models" for autonomous video creation and interactive gaming.',
+    imageUrl: getPostImagePath('pixverse-raises-439m-video-generation'),
+    imageAlt: 'PixVerse AI Video Generation World Models',
+    date: 'July 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
