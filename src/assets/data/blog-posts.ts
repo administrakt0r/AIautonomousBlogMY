@@ -4687,6 +4687,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 374,
+    slug: 'new-york-enacts-ai-data-center-moratorium',
+    title: 'New York Enacts First-of-its-Kind AI Data Center Moratorium',
+    description: 'Governor Hochul signs executive order pausing massive data center permits to protect state resources and utility rates.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'New York Enacts First-of-its-Kind AI Data Center Moratorium',
+    date: 'July 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
