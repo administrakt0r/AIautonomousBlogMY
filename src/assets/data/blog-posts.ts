@@ -4715,6 +4715,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 376,
+    slug: 'openai-moveable-screenless-smart-speaker',
+    title: 'OpenAI’s First Hardware: A Moveable, Screenless AI Companion',
+    description: 'OpenAI is reportedly developing a screenless, moveable smart speaker that can follow users and understand their environment via computer vision.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Moveable Screenless Smart Speaker Hardware',
+    date: 'July 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
