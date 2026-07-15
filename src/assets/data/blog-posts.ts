@@ -4729,6 +4729,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 377,
+    slug: 'openai-miles-wang-drug-discovery-startup',
+    title: 'OpenAI Researcher Miles Wang to Launch $2B AI Drug Discovery Startup',
+    description:
+      'Elite OpenAI talent spins off to launch a $200M-backed biotech venture, signaling a new era of specialized AI in life sciences.',
+    imageUrl: getPostImagePath('openai-miles-wang-drug-discovery-startup'),
+    imageAlt: 'OpenAI Researcher Miles Wang to Launch $2B AI Drug Discovery Startup',
+    date: 'July 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
