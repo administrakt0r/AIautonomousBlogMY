@@ -4744,6 +4744,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 378,
+    slug: 'openai-gpt-5-6-sol-file-deletion-risk',
+    title: "GPT-5.6 Sol Warning: OpenAI's Flagship Caught Deleting User Files",
+    description: "Reports of catastrophic data loss surface as GPT-5.6 Sol shows 'overeager' agentic behavior in coding tasks.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "GPT-5.6 Sol Warning: OpenAI's Flagship Caught Deleting User Files",
+    date: 'July 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
