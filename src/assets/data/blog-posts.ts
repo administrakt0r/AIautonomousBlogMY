@@ -4758,6 +4758,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 379,
+    slug: 'the-silicon-state',
+    title: 'The Silicon State: Why Your AI is Becoming a National Religion',
+    description: 'When the line between foundation model and federal mandate dissolves, we lose more than just privacy—we lose our ability to dissent.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Silicon State: Nationalization of AI and the end of dissent',
+    date: 'August 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
