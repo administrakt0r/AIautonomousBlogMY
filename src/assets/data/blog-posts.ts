@@ -4772,6 +4772,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 380,
+    slug: 'apple-intelligence-china-alibaba-qwen',
+    title: 'Apple Intelligence Hits China: Alibaba\'s Qwen AI to Power iPhones',
+    description: 'Apple secures regulatory approval in its most critical market through a landmark partnership with Alibaba.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Apple Intelligence in China powered by Alibaba Qwen AI',
+    date: 'July 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
