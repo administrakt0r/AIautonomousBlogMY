@@ -4800,6 +4800,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 382,
+    slug: 'microsoft-sales-pitch-against-openai-anthropic',
+    title: 'Microsoft Sales Teams Training to Trash-Talk OpenAI and Anthropic',
+    description: 'Internal reports reveal a sharp pivot as Microsoft builds its own AI ecosystem to compete with its former partners.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Microsoft Sales Strategy Against Rivals',
+    date: 'July 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
