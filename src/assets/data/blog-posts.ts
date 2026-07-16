@@ -4786,6 +4786,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 381,
+    slug: 'openai-gpt-red-security',
+    title: 'OpenAI Unveils GPT-Red: The AI "Super-Hacker" Securing the Future',
+    description: 'OpenAI introduces GPT-Red, an automated red-teaming system that uses self-play to discover and patch critical AI vulnerabilities.',
+    imageUrl: getPostImagePath('openai-gpt-red-security'),
+    imageAlt: 'OpenAI GPT-Red automated security testing',
+    date: 'July 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
