@@ -4829,6 +4829,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 384,
+    slug: 'neko-health-700m-ai-body-scans-us',
+    title: 'Neko Health Raises $700M to Expand AI Body Scans in US',
+    description:
+      'Preventive healthcare pioneer Neko Health closes a monumental $700 million Series B round to bring its advanced AI-powered body scanning technology to the United States.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Neko Health AI full body scanning cabin clinic',
+    date: 'July 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
