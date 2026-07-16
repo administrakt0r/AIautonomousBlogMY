@@ -4814,6 +4814,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 383,
+    slug: 'the-verification-trap-ai-productivity-illusion',
+    title: 'The Verification Trap: Why AI Productivity is a Costly Illusion',
+    description:
+      'The speed of AI generation is offset by the increasing cognitive burden of verification, leading to a hidden mountain of technical debt.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Verification Trap: Why AI Productivity is a Costly Illusion',
+    date: 'August 15, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
