@@ -222,6 +222,12 @@ const PageButton = React.memo(
 
 PageButton.displayName = 'PageButton'
 
+const Ellipsis = () => (
+  <span className='hidden sm:flex px-2 text-sm text-muted-foreground select-none'>&hellip;</span>
+)
+
+Ellipsis.displayName = 'Ellipsis'
+
 // ⚡ Bolt: Extract and memoize the pagination controls into a sub-component.
 const Pagination = React.memo(
   ({
@@ -233,8 +239,35 @@ const Pagination = React.memo(
     totalPages: number
     onPageChange: (page: number) => void
   }) => {
-    // ⚡ Bolt: Memoize the page numbers array to avoid redundant allocations on every render.
-    const pages = useMemo(() => Array.from({ length: totalPages }, (_, i) => i + 1), [totalPages])
+    const pageNumbers = useMemo(() => {
+      const delta = 2
+      const pages: (number | 'ellipsis-start' | 'ellipsis-end')[] = []
+
+      if (totalPages <= 7) {
+        return Array.from({ length: totalPages }, (_, i) => i + 1)
+      }
+
+      pages.push(1)
+
+      if (currentPage - delta > 2) {
+        pages.push('ellipsis-start')
+      }
+
+      const start = Math.max(2, currentPage - delta)
+      const end = Math.min(totalPages - 1, currentPage + delta)
+
+      for (let i = start; i <= end; i++) {
+        pages.push(i)
+      }
+
+      if (currentPage + delta < totalPages - 1) {
+        pages.push('ellipsis-end')
+      }
+
+      pages.push(totalPages)
+
+      return pages
+    }, [currentPage, totalPages])
 
     return (
       <div className='flex items-center justify-center gap-2 pt-8'>
@@ -261,14 +294,19 @@ const Pagination = React.memo(
         </Tooltip>
 
         <div className='flex items-center gap-1'>
-          {pages.map(page => (
-            <PageButton
-              key={page}
-              page={page}
-              isActive={currentPage === page}
-              onClick={onPageChange}
-            />
-          ))}
+          {pageNumbers.map(page => {
+            if (typeof page === 'string') {
+              return <Ellipsis key={page} />
+            }
+            return (
+              <PageButton
+                key={page}
+                page={page}
+                isActive={currentPage === page}
+                onClick={onPageChange}
+              />
+            )
+          })}
           <span className='text-muted-foreground mx-2 text-sm sm:hidden'>
             Page {currentPage} of {totalPages}
           </span>
