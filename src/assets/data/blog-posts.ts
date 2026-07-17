@@ -4872,6 +4872,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 387,
+    slug: 'scorecard-for-the-ai-age',
+    title: 'OpenAI Introduces "Useful Intelligence per Dollar" AI Scorecard',
+    description: 'OpenAI proposes a new strategic framework to measure AI value based on successful work accomplished rather than raw token costs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Introduces "Useful Intelligence per Dollar" AI Scorecard',
+    date: 'July 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
