@@ -4844,6 +4844,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 385,
+    slug: 'google-vids-custom-ai-avatars-gemini-omni',
+    title: 'Google Vids Launches Custom AI Avatars and Gemini Omni',
+    description: 'Google merges personalized video generation with real-time editing and enterprise workflow automation via Gemini Omni.',
+    imageUrl: getPostImagePath('google-vids-custom-ai-avatars-gemini-omni'),
+    imageAlt: 'Google Vids Launches Custom AI Avatars and Gemini Omni',
+    date: 'July 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
