@@ -4844,6 +4844,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 385,
+    slug: 'thinking-machines-launches-inkling-open-moe',
+    title: 'Thinking Machines Launches Inkling: A 975B Open MoE AI Model',
+    description: 'Mira Murati’s startup rolls out an ultra-efficient open-weight Mixture-of-Experts architecture featuring controllable thinking.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Thinking Machines Inkling Open MoE AI model launch',
+    date: 'July 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
