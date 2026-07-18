@@ -4900,6 +4900,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 389,
+    slug: 'the-zero-exposure-security-illusion',
+    title: 'The Zero-Exposure Illusion: Why Agentic AI Security is a Myth',
+    description: 'Giving autonomous models the keys to our digital vaults under the guise of zero-exposure is a catastrophic gamble.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Zero-Exposure Illusion: Why Agentic AI Security is a Myth',
+    date: 'July 18, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
