@@ -4886,6 +4886,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 388,
+    slug: '1password-anthropic-claude-integration',
+    title: 'Claude Can Now Securely Use Your 1Password Credentials',
+    description: '1Password and Anthropic launch Agentic Mode, a zero-exposure security framework for secure, password-less credential access.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Claude Can Now Securely Use Your 1Password Credentials',
+    date: 'July 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
