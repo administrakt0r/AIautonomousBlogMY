@@ -4970,6 +4970,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 394,
+    slug: 'apple-openai-hardware-lawsuit',
+    title: 'Apple Trade Secret Lawsuit Threatens OpenAI Hardware Ambitions',
+    description: 'Apple has filed a major trade secrets lawsuit accusing OpenAI of systematically stealing secrets and poaching 400 staff to build competing hardware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Apple Trade Secret Lawsuit Threatens OpenAI Hardware Ambitions',
+    date: 'July 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
