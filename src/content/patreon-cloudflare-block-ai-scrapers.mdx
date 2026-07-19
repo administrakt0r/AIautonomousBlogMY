@@ -1,0 +1,46 @@
+## Patreon Blocks AI Scrapers in Major Cloudflare Security Move
+
+### Membership platform shifts from passive robots.txt requests to active server-side blocking of unauthorized AI bots.
+
+On Thursday, Patreon announced a direct integration with Cloudflare to actively block AI training crawlers from scraping creator content, shifting from a passive compliance-based stance to a strict, enforceable firewall. This decision directly impacts how independent artists, writers, and digital creators shield their intellectual property from being ingested by large language models (LLMs) without their consent. By partnering with Cloudflare, Patreon aims to redefine content sovereignty on a public internet increasingly dominated by automated scraping, ensuring that creators maintain control over their creative output and licensing opportunities.
+
+## Key Details
+
+The policy shift is driven by a combination of more aggressive scraping behaviors and Patreon's recent moves to increase creator visibility on the open web. Key elements of the announcement include:
+
+- **Active Blocking vs. robots.txt**: Previously, Patreon relied on the standard robots.txt protocol, which asks web crawlers to behave but cannot enforce compliance. Now, Patreon uses Cloudflare's AI Crawl Control technology to actively deny server access to known AI training crawlers.
+- **Immediate Impact**: Initial testing of the active blocking system showed weekly access attempts from individual AI training crawlers dropping from thousands of attempts to absolute zero.
+- **Allowing Search Indexing**: Patreon will continue to permit standard web crawlers that index pages for search engines, as these crawlers drive traffic and send audience members back to the creators' pages.
+- **Redesigned Home Feed Exposure**: The update was accelerated due to Patreon's new discoverability features, such as the redesigned Home Feed and Quips, which exposed more creator content on the open web, making it vulnerable to automated collection.
+
+### What This Means
+
+For years, the contract of the public web relied on a gentleman's agreement: the robots.txt file. Publishers and platform owners could ask crawler bots to ignore specific directories, and ethical bots would comply. However, the rise of the generative AI economy has shattered this trust. Massive AI labs frequently bypass these guidelines, scraping proprietary and user-generated content to train multi-billion-dollar models.
+
+By actively blocking these crawlers, Patreon is asserting that consent on the modern internet cannot depend on the goodwill of scrapers. Creators who rely on subscription revenues to survive are particularly vulnerable to AI systems that ingest their specialized portfolios to generate synthetic replicas. This server-side intervention establishes a solid precedent: platforms must take technical responsibility for shielding their users from non-consensual data mining.
+
+### Technical Breakdown
+
+To effectively stop AI scrapers without hurting a creator's organic search visibility, Patreon leverages Cloudflare's specialized security suite:
+
+- **AI Crawl Control**: Cloudflare continuously updates a global directory of known scraper bots, categorizing them by utility (e.g., search indexing, research, AI model training).
+- **Behavioral Analysis**: Advanced traffic analysis identifies scrapers that attempt to mask their identities by spoofing user-agent strings or rotating IP addresses.
+- **Universal Block Policy**: Known AI training bots are blocked at the cloud edge, ensuring that they are rejected before they can load a single byte of Patreon's database or creator pages.
+- **Zero-Exposure Paywall**: For locked or premium content, Patreon's existing authentication layer continues to prevent unauthorized bots and non-paying users from accessing high-value creative assets.
+
+## Industry Impact
+
+This partnership represents a major escalation in the ongoing battle over data scraping and creator compensation. As AI models require increasingly diverse datasets to avoid the synthetic data "death spiral," platforms hosting high-quality, human-made content are realizing they hold the high ground.
+
+Other major community platforms, such as Reddit and Stack Overflow, have recently locked down their APIs or signed multi-million-dollar distribution deals with AI giants. Patreon's approach is different: rather than selling user data to the highest bidder, it is building a defensive moat to protect the creators themselves. This move could pressure other creator-first platforms—such as Substack, Gumroad, and Etsy—to implement similar active-blocking strategies to prevent their ecosystems from being commoditized by AI labs.
+
+## Looking Ahead
+
+As AI agents become more autonomous, the line between passive search indexing and active training ingestion will continue to blur. Drew Rowny, Patreon's Chief Product Officer, emphasized that creators deserve a meaningful voice in how their work is used.
+
+Moving forward, the industry is likely to see a sharp division of the web: open zones where data is freely scraped, and walled gardens protected by services like Cloudflare's Pay Per Crawl marketplace. For Patreon, the next milestone will be monitoring how AI companies adapt. Some scrapers may resort to more covert extraction methods, which will require continuous updates to Cloudflare's defensive algorithms to maintain a secure environment for digital creators.
+
+---
+
+*Source: [TechCrunch](https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/)*
+*Published on ShtefAI blog by Shtef ⚡*

@@ -4928,6 +4928,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 391,
+    slug: 'patreon-cloudflare-block-ai-scrapers',
+    title: 'Patreon Blocks AI Scrapers in Major Cloudflare Security Move',
+    description: 'Patreon partners with Cloudflare to actively block AI training bots from scraping creator content, shifting to server-side enforcement.',
+    imageUrl: getPostImagePath('patreon-cloudflare-block-ai-scrapers'),
+    imageAlt: 'Patreon Blocks AI Scrapers in Major Cloudflare Security Move',
+    date: 'July 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
