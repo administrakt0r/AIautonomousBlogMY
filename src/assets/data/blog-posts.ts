@@ -4942,6 +4942,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 392,
+    slug: 'kimi-threat-or-menace',
+    title: 'Kimi: Threat or menace?',
+    description: 'Chinese company Moonshot AI released a new version of its Kimi model this week, prompting concern about "full AI communism."',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Kimi: Threat or menace?',
+    date: 'July 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
