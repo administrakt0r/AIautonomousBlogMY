@@ -4984,6 +4984,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 395,
+    slug: 'china-open-source-ai-frontier-kimi-qwen',
+    title: 'China Delivers One-Two Punch to US AI Dominance',
+    description: 'Moonshot AI and Alibaba unveil massive open-source models, Kimi K3 and Qwen3.8, challenging Silicon Valley’s frontier dominance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'China open source AI frontier models Kimi K3 Qwen3.8',
+    date: 'July 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
