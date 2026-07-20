@@ -5012,6 +5012,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 397,
+    slug: 'google-developing-frozen-v2-gemini-ai-chip',
+    title: 'Google Developing "Frozen v2" AI Chip to Supercharge Gemini Efficiency',
+    description: 'Alphabet designs custom server silicon targeting up to tenfold improvements in token generation and power consumption.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google Developing "Frozen v2" AI Chip to Supercharge Gemini Efficiency',
+    date: 'July 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
