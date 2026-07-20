@@ -4984,6 +4984,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 395,
+    slug: 'nonprofit-current-ai-world-wide-web-of-ai',
+    title: 'Current AI Races to Build an Open World Wide Web of AI',
+    description: 'Under the leadership of Ayah Bdeir, Current AI secures $400 million to build a public, multilingual alternative to Silicon Valley\'s proprietary models.',
+    imageUrl: getPostImagePath('nonprofit-current-ai-world-wide-web-of-ai'),
+    imageAlt: 'Current AI non-profit public World Wide Web of AI',
+    date: 'July 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
