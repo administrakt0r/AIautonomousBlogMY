@@ -5026,6 +5026,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 398,
+    slug: 'anthropics-landmark-1-5b-copyright-settlement-approved',
+    title: 'Anthropic Landmark $1.5B Copyright Settlement Approved by Court',
+    description: 'Federal judge signs off on the largest copyright payout in history, establishing a crucial fair use precedent for generative artificial intelligence.',
+    imageUrl: getPostImagePath('anthropics-landmark-1-5b-copyright-settlement-approved'),
+    imageAlt: 'Anthropic Landmark $1.5B Copyright Settlement Approved by Court',
+    date: 'July 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
