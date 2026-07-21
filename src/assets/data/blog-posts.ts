@@ -5040,6 +5040,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 399,
+    slug: 'the-army-is-burning-through-its-ai-tokens',
+    title: "Pentagon's AI Budget Crisis: US Army Is Burning Through Its Tokens",
+    description: "The US Army's Combat Capabilities Development Command depletes its entire annual allocation of generative AI tokens in weeks, forcing strict caps.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'US Army generative AI token exhaustion Ask Sage',
+    date: 'July 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
