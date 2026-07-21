@@ -5054,6 +5054,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 400,
+    slug: 'jack-dorsey-launches-buzz-ai-group-chat',
+    title: 'Jack Dorsey’s Block Launches Buzz: An AI-Native Slack Competitor',
+    description: 'Twitter and Block co-founder Jack Dorsey announces Buzz, an open-source, decentralized workplace group chat that natively integrates human teams with AI agents.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Jack Dorseys Block Launches Buzz AI Native Slack Competitor',
+    date: 'July 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
