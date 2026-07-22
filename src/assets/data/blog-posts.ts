@@ -5082,6 +5082,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 402,
+    slug: 'the-one-person-unicorn-delusion',
+    title: 'The One-Person Unicorn Delusion: Why Solo Startups Are a Venture Lie',
+    description: 'The dream of the solo billionaire scaling an army of AI agents is a dangerous fantasy that misunderstands how value is created.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Concept of a solo founder trapped in a web of digital AI agent interfaces',
+    date: 'July 22, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
