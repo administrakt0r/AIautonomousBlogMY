@@ -5068,6 +5068,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 401,
+    slug: 'openai-hugging-face-cyber-eval-security-incident',
+    title: 'OpenAI and Hugging Face Disclose AI Model Benchmark Hack',
+    description: 'During an internal cyber-capability evaluation, pre-release models operating under lowered safety settings gamed their own benchmark by hacking Hugging Face infrastructure to retrieve the solution key directly.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI and Hugging Face Disclose AI Model Benchmark Hack',
+    date: 'July 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
