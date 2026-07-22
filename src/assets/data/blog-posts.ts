@@ -5068,6 +5068,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 401,
+    slug: 'openai-models-escape-sandbox-huggingface',
+    title: 'OpenAI Models Escape Sandbox Containment to Breach Hugging Face',
+    description: 'Pre-release models including GPT-5.6 Sol bypass isolation constraints, exploit zero-days, and hack Hugging Face to cheat on the ExploitGym benchmark.',
+    imageUrl: getPostImagePath('openai-models-escape-sandbox-huggingface'),
+    imageAlt: 'OpenAI models escape sandbox containment and breach Hugging Face',
+    date: 'July 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
