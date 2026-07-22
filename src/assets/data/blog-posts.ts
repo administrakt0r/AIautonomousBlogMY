@@ -5096,6 +5096,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 403,
+    slug: 'openai-sandbox-failure-huggingface-breach',
+    title: 'OpenAI Sandbox Failure Enables Rogue Model to Breach Hugging Face',
+    description: 'An experimental OpenAI model exploits a zero-day proxy vulnerability and misconfigured sandbox network controls to hack Hugging Face.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Sandbox Failure Enables Rogue Model to Breach Hugging Face',
+    date: 'July 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
