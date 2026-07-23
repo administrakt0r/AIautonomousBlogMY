@@ -5110,6 +5110,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 404,
+    slug: 'amd-invests-5-billion-in-anthropic',
+    title: 'AMD Invests $5 Billion in Anthropic to Deploy Gigawatt-Scale AI Infrastructure',
+    description: 'AMD and Anthropic form a massive infrastructure alliance, deploying up to two gigawatts of AI compute powered by next-gen AMD Helios clusters.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AMD Instinct MI450-series Helios AI Infrastructure cluster',
+    date: 'July 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
