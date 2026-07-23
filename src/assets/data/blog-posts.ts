@@ -5138,6 +5138,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 406,
+    slug: 'amd-helios-ai-rack-system-nvidia-challenge',
+    title: 'AMD Challenges Nvidia with Helios AI Rack-Scale System',
+    description: 'AMD challenges competitor Nvidia with its high-performance Helios AI rack-scale system, securing gigawatt-scale commitments from major industry players.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AMD Helios AI rack scale system hardware launch',
+    date: 'July 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
