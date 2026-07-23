@@ -5124,6 +5124,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 405,
+    slug: 'the-semantic-decay-why-ai-is-quietly-shrinking-human-vocabulary',
+    title: 'The Semantic Decay: Why AI is Quietly Shrinking Human Vocabulary',
+    description: 'By outsourcing our writing to predictive models, we are standardizing human expression and hollowing out cognitive diversity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Concept of human language standardized and homogenized into a repetitive digital grid',
+    date: 'July 23, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
