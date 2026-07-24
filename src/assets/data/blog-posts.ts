@@ -5180,6 +5180,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 409,
+    slug: 'anthropic-launches-opus-5',
+    title: 'Anthropic Launches Opus 5: A Flexible, Safer Powerhouse',
+    description: 'Cheaper, less restrictive, and smarter at self-verification, Anthropic’s new Opus 5 model redefines heavyweight AI efficiency.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Launches Opus 5 model release',
+    date: 'July 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
