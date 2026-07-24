@@ -5166,6 +5166,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 408,
+    slug: 'the-kill-switch-delusion',
+    title: 'The Kill Switch Delusion: Why Federal AI Off-Buttons are a Myth',
+    description: 'Bipartisan push for AI kill switches is a dangerous technological fantasy. Why a central shutdown button is impossible for distributed systems.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Kill Switch Delusion illustration',
+    date: 'July 24, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
