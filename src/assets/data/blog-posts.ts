@@ -5152,6 +5152,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 407,
+    slug: 'openai-launches-chatgpt-health',
+    title: 'OpenAI Launches ChatGPT Health Nationwide to All US Users',
+    description: 'OpenAI has officially rolled out ChatGPT Health, integrating personal medical histories and fitness trackers directly with its latest GPT-5.6 Sol model.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'ChatGPT Health medical record integration interface',
+    date: 'July 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
