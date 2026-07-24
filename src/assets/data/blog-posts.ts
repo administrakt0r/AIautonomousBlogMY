@@ -5152,6 +5152,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 407,
+    slug: 'us-lawmakers-introduce-ai-kill-switch-act',
+    title: "US Lawmakers Introduce Bi-partisan 'AI Kill Switch Act'",
+    description: 'Bipartisan legislation would require tech companies to build emergency shut-down or throttle controls for high-risk frontier AI systems.',
+    imageUrl: getPostImagePath('us-lawmakers-introduce-ai-kill-switch-act'),
+    imageAlt: 'US Lawmakers Introduce AI Kill Switch Act',
+    date: 'July 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
