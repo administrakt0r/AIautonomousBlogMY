@@ -5194,6 +5194,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 410,
+    slug: 'cognition-acquires-poke-ai-personality',
+    title: 'Cognition Acquires Poke to Bring AI Personality to Software Agents',
+    description: 'Cognition acquires conversational AI assistant Poke in a low-nine-figure deal to integrate personality and proactive orchestration into Devin.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Cognition acquires Poke AI assistant',
+    date: 'July 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
