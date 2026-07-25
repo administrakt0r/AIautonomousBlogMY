@@ -5222,6 +5222,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 412,
+    slug: 'one-fallen-power-line-exposes-ai-data-center-grid-risk',
+    title: 'Downed Power Line Exposes Massive Grid Vulnerability of AI Data Centers',
+    description: 'A single line failure outside Washington, D.C., triggers a synchronized three-gigawatt drop in power demand, highlighting the fragile physics of scaling artificial intelligence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Downed Power Line Exposes Massive Grid Vulnerability of AI Data Centers',
+    date: 'July 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
