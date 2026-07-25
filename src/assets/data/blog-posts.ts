@@ -5194,6 +5194,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 410,
+    slug: 'cognition-acquires-poke-ai-personality',
+    title: 'Cognition Acquires Poke to Embed AI Personality into Devin',
+    description: 'Cognition buys messaging assistant Poke in a low-nine-figures deal to bring conversational vibes and persistent memory to Devin.',
+    imageUrl: getPostImagePath('cognition-acquires-poke-ai-personality'),
+    imageAlt: 'Cognition Acquires Poke Messaging Assistant Devin AI Personality',
+    date: 'July 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
