@@ -5208,6 +5208,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 411,
+    slug: 'the-developer-experience-illusion',
+    title: 'The Developer Experience Illusion: Why AI Tools Are Making Coding Brittle',
+    description: 'Stop believing the marketing hype of frictionless code. Building with AI today is a grueling process of managing statistical hallucinations and debugging silent failures.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Developer Experience Illusion: Why AI Tools Are Making Coding Brittle',
+    date: 'July 25, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
