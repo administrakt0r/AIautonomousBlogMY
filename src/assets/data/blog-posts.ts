@@ -5250,6 +5250,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 414,
+    slug: 'openai-presence-enterprise-ai-agents',
+    title: 'OpenAI Launches Presence: Enterprise AI Agents with Forward Deployed Engineers',
+    description: 'OpenAI Presence breaks from the traditional self-serve API model, using embedded engineers and Codex improvement loops to solve enterprise integration failures.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches Presence Enterprise AI Agents with Forward Deployed Engineers',
+    date: 'July 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
