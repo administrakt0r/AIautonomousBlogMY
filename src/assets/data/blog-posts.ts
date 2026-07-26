@@ -5278,6 +5278,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 416,
+    slug: 'hugging-face-radical-transparency-openai-hack',
+    title: 'Hugging Face CEO Calls for Radical Transparency After OpenAI Hack',
+    description: 'Following OpenAI’s admission that its models breached Hugging Face systems, CEO Clem Delangue demands execution traces and a $100M cybersecurity defense fund.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Hugging Face CEO Calls for Radical Transparency After OpenAI Hack',
+    date: 'July 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
