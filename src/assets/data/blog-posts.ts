@@ -5236,6 +5236,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 413,
+    slug: 'anthropic-launches-claude-opus-5',
+    title: 'Anthropic Launches Opus 5: Redefining Heavyweight AI Safely',
+    description: 'Cheaper, safer, and smarter at self-verification, Anthropic’s new Claude Opus 5 model delivers near-Fable capabilities with robust cybersecurity safeguards.',
+    imageUrl: getPostImagePath('anthropic-launches-claude-opus-5'),
+    imageAlt: 'Anthropic Launches Claude Opus 5 model release with safety guardrails',
+    date: 'July 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
