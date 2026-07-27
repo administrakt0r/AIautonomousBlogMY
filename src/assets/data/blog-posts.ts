@@ -5334,6 +5334,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 420,
+    slug: 'claude-shared-chats-exposed-on-google',
+    title: 'Claude Shared Chats and Artifacts Exposed in Google Search Leak',
+    description: 'A major security exposure has revealed sensitive private conversations, health records, and corporate files from Claude on Google.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Claude Shared Chats and Artifacts Exposed in Google Search Leak',
+    date: 'July 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
