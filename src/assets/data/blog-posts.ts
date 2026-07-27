@@ -5306,6 +5306,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 418,
+    slug: 'making-sense-of-panic-over-chinese-ai',
+    title: 'Making Sense of the Growing Panic Over Chinese AI Models',
+    description: 'How Moonshot AI’s Kimi model reignited Silicon Valley and Washington panic over open-weight vs. proprietary AI competitiveness.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Moonshot AI’s Kimi chatbot debate on American competitiveness',
+    date: 'July 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
