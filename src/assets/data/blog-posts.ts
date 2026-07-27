@@ -5292,6 +5292,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 417,
+    slug: 'are-brain-waves-the-next-unlock-for-physical-ai',
+    title: 'Are Brain Waves the Next Critical Unlock for Physical AI?',
+    description: 'Startups are trialing brain-wave-monitored data collection to capture human intent and solve the robotics data bottleneck.',
+    imageUrl: getPostImagePath('are-brain-waves-the-next-unlock-for-physical-ai'),
+    imageAlt: 'Brain waves training physical AI and humanoid robots',
+    date: 'July 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
