@@ -5362,6 +5362,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 422,
+    slug: 'nvidia-microsoft-launch-open-secure-ai-alliance',
+    title: 'Nvidia and Microsoft Launch Open Secure AI Alliance Without Frontier Labs',
+    description: 'Nvidia and Microsoft form a massive tech coalition to build open-source AI security tools, with OpenAI, Google, and Anthropic notably absent.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia and Microsoft Launch Open Secure AI Alliance',
+    date: 'July 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
