@@ -5348,6 +5348,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 421,
+    slug: 'microsoft-launches-mai-cyber-1-flash-perception',
+    title: 'Microsoft Launches MAI-Cyber-1-Flash and Perception Platform',
+    description: 'Microsoft enters the AI cybersecurity race with its first specialized foundational model and an agentic defense ecosystem.',
+    imageUrl: getPostImagePath('microsoft-launches-mai-cyber-1-flash-perception'),
+    imageAlt: 'Microsoft Launches MAI-Cyber-1-Flash and Perception Platform',
+    date: 'July 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
