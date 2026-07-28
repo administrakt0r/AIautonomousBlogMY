@@ -5376,6 +5376,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 423,
+    slug: 'the-rag-delusion-why-retrieval-augmented-ai-is-a-costly-illusion',
+    title: 'The RAG Delusion: Why Retrieval-Augmented AI is a Costly Illusion',
+    description: 'Hooking a large language model up to a vector database does not grant it understanding; it merely papers over an architectural void with a fragile layer of cognitive noise.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The RAG Delusion: Why Retrieval-Augmented AI is a Costly Illusion',
+    date: 'July 28, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
