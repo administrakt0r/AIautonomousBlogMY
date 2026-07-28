@@ -5390,6 +5390,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 424,
+    slug: 'sam-altman-ready-to-decelerate-ai',
+    title: 'Sam Altman Signals Surprising Pivot Toward AI Deceleration',
+    description: 'In an unexpected shift, OpenAI CEO Sam Altman warns of the need to pace frontier models following a visceral security breach.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Sam Altman Signals Surprising Pivot Toward AI Deceleration',
+    date: 'July 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
