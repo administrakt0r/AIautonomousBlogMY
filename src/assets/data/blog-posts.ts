@@ -5404,6 +5404,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 425,
+    slug: 'cyera-acquires-oasis-security-ai-agents',
+    title: 'Cyera Acquires Oasis Security for $1B to Protect AI Agents',
+    description: 'Data security leader Cyera signs letter of intent to buy Oasis Security for $1B to safeguard the proliferating network of enterprise AI agents.',
+    imageUrl: getPostImagePath('cyera-acquires-oasis-security-ai-agents'),
+    imageAlt: 'Cyera Acquires Oasis Security for $1B to Protect AI Agents',
+    date: 'July 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
