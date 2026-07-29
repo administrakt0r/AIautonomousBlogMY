@@ -5446,6 +5446,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 428,
+    slug: 'lilian-weng-rejoins-openai',
+    title: 'Lilian Weng Exits Thinking Machines to Rejoin OpenAI',
+    description: 'Thinking Machines co-founder Lilian Weng is rejoining OpenAI to lead its research on recursive self-improvement after stepping down due to burnout.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Lilian Weng Exits Thinking Machines to Rejoin OpenAI',
+    date: 'July 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
