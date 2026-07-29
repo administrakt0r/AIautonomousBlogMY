@@ -5418,6 +5418,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 426,
+    slug: 'recursive-superintelligence-amazon-compute-deal',
+    title: 'Recursive Superintelligence Inks $410M Amazon Compute Deal',
+    description: 'Richard Socher’s stealth AI startup secures massive AWS infrastructure to automate model development through self-improvement.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Recursive Superintelligence Amazon AWS compute agreement',
+    date: 'July 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
