@@ -5474,6 +5474,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 430,
+    slug: 'the-ai-creativity-illusion-why-generative-ai-kills-the-soul',
+    title: 'The AI Creativity Illusion: Why Generative AI Kills the Soul',
+    description: 'Stop believing the marketing hype of creative liberation. Generative AI is automating the joyful process of creation while leaving humans with the tedious chore of verification.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Creativity Illusion: Why Generative AI Kills the Soul',
+    date: 'July 30, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
