@@ -5460,6 +5460,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 429,
+    slug: 'openai-family-of-devices-hardware-plans',
+    title: 'OpenAI Confirms Family of Chatbot Hardware Devices Coming Soon',
+    description: "OpenAI President Greg Brockman confirms the development of a diverse 'family of devices' built around its models, aiming to integrate AI into daily consumer workflows.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Confirms Family of Chatbot Hardware Devices Coming Soon',
+    date: 'July 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
