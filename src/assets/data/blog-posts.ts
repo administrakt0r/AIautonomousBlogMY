@@ -5488,6 +5488,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 431,
+    slug: 'judge-lacks-evidence-anthropic-risk',
+    title: 'Judge Says Trump Admin Lacks Evidence for Anthropic Risk Label',
+    description: 'A federal judge rules the Trump administration lacks sufficient evidence to label Anthropic a supply-chain risk or block its AI models.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Judge Says Trump Admin Lacks Evidence for Anthropic Risk Label',
+    date: 'July 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
