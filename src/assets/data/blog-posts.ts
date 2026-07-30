@@ -5460,6 +5460,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 429,
+    slug: 'microsoft-openly-competes-with-openai-anthropic',
+    title: 'Microsoft Clashes with OpenAI and Anthropic in Big Tech AI Rift',
+    description: 'Microsoft CEO Satya Nadella warns enterprises against relying on frontier AI labs, pitching homegrown MAI models and Maya silicon as swappable alternatives.',
+    imageUrl: getPostImagePath('microsoft-openly-competes-with-openai-anthropic'),
+    imageAlt: 'Microsoft Clashes with OpenAI and Anthropic in Big Tech AI Rift',
+    date: 'July 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
