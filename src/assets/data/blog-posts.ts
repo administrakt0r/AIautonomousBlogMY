@@ -5502,6 +5502,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 432,
+    slug: 'openai-launches-chatgpt-academic-researchers',
+    title: 'OpenAI Launches ChatGPT for Academic Researchers Program',
+    description: 'A $250 million initiative granting 100,000 scientists free access to GPT-5.6 Sol Pro and advanced workspace capabilities.',
+    imageUrl: getPostImagePath('openai-launches-chatgpt-academic-researchers'),
+    imageAlt: 'OpenAI Launches ChatGPT for Academic Researchers Program',
+    date: 'July 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
