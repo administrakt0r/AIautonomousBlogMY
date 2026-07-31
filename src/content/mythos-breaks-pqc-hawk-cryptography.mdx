@@ -1,0 +1,45 @@
+## Mythos AI Attack Breaks Post-Quantum Cryptography Standard HAWK
+
+### Anthropic security model forces withdrawal of high-profile NIST signature candidate
+
+In a dramatic development for global cybersecurity, a prominent post-quantum cryptographic signature algorithm has been withdrawn from official consideration. Anthropic's restricted security model, Mythos, uncovered a severe mathematical vulnerability in the candidate scheme known as HAWK, cutting its key strength in half. Within twenty-four hours of the findings being made public, the lead developer of HAWK officially pulled the algorithm from the NIST standardization process, marking a historic milestone in AI-driven cryptanalysis.
+
+## Key Details
+
+The National Institute of Standards and Technology (NIST) has spent years conducting a rigorous, multi-round evaluation of post-quantum cryptography (PQC) candidates. These algorithms are designed to secure digital communications against future attacks by quantum computers capable of shattering classical systems like RSA and Elliptic Curve Cryptography.
+
+HAWK, a high-efficiency digital signature scheme based on the Lattice Isomorphism Problem, had successfully survived two rounds of intense peer review. It was in the midst of its third round of evaluations when Anthropic's unreleased Mythos AI model was tasked with attacking it.
+
+Working in an agentic harness with minimal human guidance, Mythos discovered a novel mathematical technique to find automorphism symmetries in the underlying lattice problems. The attack was completed in approximately 60 hours, utilizing roughly $100,000 of compute power. Shockingly, the operator prompting the model had no formal expertise in cryptography, relying instead on the AI's autonomous literature review and computational experiments to assemble tools that already existed but had never been synthesized.
+
+### What This Means
+
+This breakthrough serves as a watershed moment for the future of cryptography. For years, security experts have debated whether artificial intelligence could perform genuine mathematical discovery or if it was limited to reashing known code patterns.
+
+Mythos has proven that agentic AI can systematically analyze mathematical primitives, identify overlooked connections in academic literature, and construct end-to-end verification pipelines. By reducing HAWK's key strength by 50 percent, the algorithm became far less competitive than alternative signature schemes such as ML-DSA and FN-DSA. Leading researchers, including Johns Hopkins University professor Matthew Green and Google post-quantum expert Sophie Schmieg, quickly confirmed the validity of the attack, with Schmieg noting, "Basically with this paper, HAWK is dead."
+
+### Technical Breakdown
+
+The attack executed by Mythos does not rely on brute force; instead, it leverages sophisticated mathematical reasoning:
+
+- **Automorphism Symmetries**: The model found a previously unknown method for identifying automorphism symmetries within the Lattice Isomorphism Problem, which underpins HAWK's security.
+- **Key-Strength Halving**: By exploiting these symmetries, the attack effectively halved the key length required to break HAWK, making its cryptosystem academically broken.
+- **Multi-Agent Collaboration**: To identify the attack vector, Mythos deployed two independent sub-agents. While one agent initially rejected the method as infeasible, the second persisted and found a workaround, eventually collaborating to produce the final, validated exploit.
+- **AES Cipher Optimization**: In a separate test, Mythos also improved meet-in-the-middle attacks on a weakened version of the industry-standard AES cipher, using a specialized "Möbius Bridge" algorithm to reduce the required plaintext inputs from 2^105 to 2^89, accelerating the attack by up to 800-fold.
+
+## Industry Impact
+
+The immediate impact is the death of HAWK as a viable post-quantum standard, but the broader implications for the security industry are far-reaching. Standard compliance procedures for patching, triage, and vulnerability remediation are designed for the speed of human research.
+
+If frontier AI models begin discovering deep cryptographic flaws and zero-days autonomously, the defensive community will face a severe bottleneck. Security teams will struggle to study, validate, and patch vulnerabilities at the rate AI can uncover them. This asymmetry could trigger a frantic race to deploy defensive AI systems to counter offensive model capabilities.
+
+## Looking Ahead
+
+While these findings do not break standard production-grade AES or active cryptosystems today, they signal a paradigm shift. The cybersecurity community must prepare for a future where cryptanalysis is increasingly automated.
+
+Moving forward, researchers should watch how NIST adapts its testing protocols to account for AI-driven attack methodologies. With unreleased models like Mythos showing such potency, the line between theoretical academic research and active weaponization of model intelligence is becoming razor-thin. For developers and enterprises, the transition to robust, heavily scrutinized post-quantum standards has never been more urgent.
+
+---
+
+*Source: [Ars Technica](https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/)*
+*Published on ShtefAI blog by Shtef ⚡*
