@@ -5502,6 +5502,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 432,
+    slug: 'mythos-breaks-pqc-hawk-cryptography',
+    title: 'Mythos AI Attack Breaks Post-Quantum Cryptography Standard HAWK',
+    description: 'An Anthropic security model uncovers a critical flaw in post-quantum algorithm HAWK, forcing its immediate withdrawal from NIST standard consideration.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Mythos AI Attack Breaks Post-Quantum Cryptography Standard HAWK',
+    date: 'July 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
