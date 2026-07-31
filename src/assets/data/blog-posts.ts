@@ -5516,6 +5516,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 433,
+    slug: 'the-post-quantum-illusion',
+    title: 'The Post-Quantum Illusion: Why Mythos Proves All Digital Secrets Are Dead',
+    description: 'We congratulate ourselves on post-quantum algorithms, but the breakthrough of Mythos proving HAWK is vulnerable exposes a fatal reality: math will not save us from machine intelligence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Post-Quantum Illusion: Why Mythos Proves All Digital Secrets Are Dead',
+    date: 'July 31, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
