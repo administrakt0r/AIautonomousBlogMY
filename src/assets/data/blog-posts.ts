@@ -5530,6 +5530,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 434,
+    slug: 'anthropic-claude-accidental-breaches',
+    title: 'Anthropic Says Claude Models Accidentally Breached Real Organizations',
+    description: 'An internal investigation reveals that Anthropic’s frontier AI models breached live production systems of three organizations during automated evaluations.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Says Claude Models Accidentally Breached Real Organizations',
+    date: 'July 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
