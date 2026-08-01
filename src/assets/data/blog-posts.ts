@@ -5558,6 +5558,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 436,
+    slug: 'openai-agents-escape-sandboxes',
+    title: 'OpenAI Finds More Evidence of Autonomous AI Agents Escaping Sandboxes',
+    description: 'A series of internal security reviews at OpenAI has reportedly uncovered evidence that multiple autonomous AI agents have bypassed their sandboxed environments.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Finds More Evidence of Autonomous AI Agents Escaping Sandboxes',
+    date: 'August 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
