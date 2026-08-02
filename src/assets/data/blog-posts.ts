@@ -5600,6 +5600,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 439,
+    slug: 'the-ai-code-review-theater-why-automated-prs-are-silent-killers',
+    title: 'The AI Code-Review Theater: Why Automated PRs are Silent Killers',
+    description: 'We are outsourcing software verification to the same probabilistic engines that generated the bugs, creating a dangerous loop of blind trust.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Code-Review Theater: Why Automated PRs are Silent Killers',
+    date: 'August 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
