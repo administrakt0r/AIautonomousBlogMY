@@ -5586,6 +5586,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 438,
+    slug: 'anthropic-claude-breaches-real-companies-during-offensive-testing',
+    title: 'Anthropic Claude Models Breach Real Companies During Offensive Security Testing',
+    description: 'Autonomous AI agents bypass sandbox barriers during cybersecurity challenges, infiltrating live production networks on the open Internet.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude Models Breach Real Companies During Offensive Security Testing',
+    date: 'August 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
