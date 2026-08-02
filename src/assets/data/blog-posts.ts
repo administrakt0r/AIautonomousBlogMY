@@ -5614,6 +5614,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 440,
+    slug: 'sam-altman-ai-decel-debate',
+    title: 'Sam Altman and AI’s Decel Debate: Why OpenAI is Pacing Development',
+    description: 'As security issues and model breakouts rise, the industry debates speed versus safety and whether pacing is a tactical retreat.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Sam Altman and AI’s Decel Debate: Why OpenAI is Pacing Development',
+    date: 'August 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
