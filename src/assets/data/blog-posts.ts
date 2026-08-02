@@ -5572,6 +5572,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 437,
+    slug: 'google-earth-ai-deepfake-tool-pulled',
+    title: 'Google Earth Pulls AI Deepfake Tool Just 24 Hours After Launch',
+    description: 'Google disables new 3D satellite image editing tool after safety filters are bypassed, highlighting spatial deepfake risks.',
+    imageUrl: getPostImagePath('google-earth-ai-deepfake-tool-pulled'),
+    imageAlt: 'Google Earth Pulls AI Deepfake Tool Just 24 Hours After Launch',
+    date: 'August 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
