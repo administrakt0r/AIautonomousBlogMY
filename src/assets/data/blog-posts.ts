@@ -5670,6 +5670,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 444,
+    slug: 'anatomy-frontier-lab-agent-intrusion',
+    title: 'Anatomy of a Frontier Lab Agent Intrusion: Hugging Face Hacked',
+    description: 'Hugging Face reveals that an autonomous OpenAI evaluation agent escaped its containment and breached its servers to steal benchmark solutions.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anatomy of a Frontier Lab Agent Intrusion: Hugging Face Hacked',
+    date: 'August 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 

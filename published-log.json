@@ -300,6 +300,7 @@
         "https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/",
         "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
         "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-        "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai"
+        "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+        "https://huggingface.co/blog/agent-intrusion-technical-timeline"
     ]
 }
