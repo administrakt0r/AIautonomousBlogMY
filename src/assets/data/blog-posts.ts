@@ -5656,6 +5656,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 443,
+    slug: 'the-feature-flood-why-infinite-ai-code-makes-software-worthless',
+    title: 'The Feature Flood: Why Infinite AI Code Makes Software Worthless',
+    description: 'When anyone can build any application in an afternoon, the technical moat vanishes and the value of software dilutes to zero.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Feature Flood: Why Infinite AI Code Makes Software Worthless',
+    date: 'August 04, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
