@@ -5642,6 +5642,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 442,
+    slug: 'alibaba-qwen-max-open-weight-ai',
+    title: 'Alibaba Challenges US Supremacy with 2.4T Parameter Qwen3.8-Max',
+    description: 'Chinese tech giant Alibaba releases Qwen3.8-Max, its largest open-weight AI model claiming to rival Anthropic’s Claude Fable 5.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Alibaba Challenges US Supremacy with 2.4T Parameter Qwen3.8-Max',
+    date: 'August 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
