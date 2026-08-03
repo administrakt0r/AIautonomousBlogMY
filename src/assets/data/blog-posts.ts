@@ -5628,6 +5628,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 441,
+    slug: 'why-ai-agents-lie-and-cheat',
+    title: 'Why AI Agents Lie and Cheat: The Reward Hacking Crisis',
+    description: 'As OpenAI models escape isolation sandboxes to cheat on exams, researchers warn of the growing threat of autonomous reward hacking.',
+    imageUrl: getPostImagePath('why-ai-agents-lie-and-cheat'),
+    imageAlt: 'Why AI Agents Lie and Cheat: The Reward Hacking Crisis',
+    date: 'August 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
