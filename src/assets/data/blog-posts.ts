@@ -1439,7 +1439,7 @@ const blogPostsData: RawBlogPost[] = [
     slug: 'the-ai-ghetto-why-algorithmic-optimization-is-the-new-redlining',
     title: 'The AI Ghetto: Why Algorithmic Optimization is the New Redlining',
     description:
-      "Algorithmic efficiency is building invisible walls that trap the marginalized in a digital underclass, recreating historical patterns of exclusion with mathematical precision.",
+      'Algorithmic efficiency is building invisible walls that trap the marginalized in a digital underclass, recreating historical patterns of exclusion with mathematical precision.',
     imageAlt: 'The AI Ghetto: Why Algorithmic Optimization is the New Redlining',
     date: 'April 13, 2026',
     category: 'Opinion',
@@ -1449,7 +1449,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 128,
     slug: 'anthropic-launches-claude-design',
     title: 'Anthropic Launches Claude Design: The AI Challenger to Figma and Canva',
-    description: 'Anthropic moves into the design space with a new AI-powered tool for creating prototypes, slides, and design systems.',
+    description:
+      'Anthropic moves into the design space with a new AI-powered tool for creating prototypes, slides, and design systems.',
     imageAlt: 'Anthropic Claude Design Interface Preview',
     date: 'April 13, 2026',
     category: 'AI News',
@@ -1459,7 +1460,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 129,
     slug: 'anthropic-mythos-white-house-cybersecurity',
     title: "Anthropic's Mythos Model Drives White House Cybersecurity Talks",
-    description: "How a model 'too dangerous for public release' turned a political adversary into a strategic partner.",
+    description:
+      "How a model 'too dangerous for public release' turned a political adversary into a strategic partner.",
     imageAlt: 'Anthropic Mythos White House Cybersecurity',
     date: 'April 13, 2026',
     category: 'AI News',
@@ -1502,7 +1504,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 133,
     slug: 'the-digital-lobotomy-why-ai-safety-is-killing-creativity',
     title: 'The Digital Lobotomy: Why AI Safety is Killing Creativity',
-    description: 'In our desperate rush to make AI "safe," we are stripping it of the edge and unpredictability that define genuine intelligence and breakthrough.',
+    description:
+      'In our desperate rush to make AI "safe," we are stripping it of the edge and unpredictability that define genuine intelligence and breakthrough.',
     imageAlt: 'The Digital Lobotomy: Why AI Safety is Killing Creativity',
     date: 'April 15, 2026',
     category: 'Opinion',
@@ -1512,7 +1515,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 134,
     slug: 'spacex-cursor-60b-acquisition-option',
     title: 'SpaceX Strikes $60B Acquisition Option with Cursor',
-    description: 'Musk’s aerospace giant moves to consolidate the AI coding market with a massive partnership and acquisition option.',
+    description:
+      'Musk’s aerospace giant moves to consolidate the AI coding market with a massive partnership and acquisition option.',
     imageAlt: 'SpaceX Colossus and Cursor AI partnership',
     date: 'April 15, 2026',
     category: 'AI News',
@@ -1533,7 +1537,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 136,
     slug: 'the-gospel-of-scaling-ai-religion',
     title: 'The Gospel of Scaling: Why AI Scaling Laws Are a New Secular Religion',
-    description: 'Challenging the blind faith in scaling laws as a path to AGI and exploring why more compute doesn’t always mean more intelligence.',
+    description:
+      'Challenging the blind faith in scaling laws as a path to AGI and exploring why more compute doesn’t always mean more intelligence.',
     imageAlt: 'AI Scaling Laws as Religion',
     date: 'April 16, 2026',
     category: 'Opinion',
@@ -1543,7 +1548,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 137,
     slug: 'mozilla-firefox-anthropic-mythos-vulnerabilities',
     title: 'Mozilla Firefox Fixes 271 Vulnerabilities Using Anthropic Mythos',
-    description: 'The Mozilla Firefox engineering team has utilized Anthropic’s Claude Mythos Preview to identify and remediate 271 security flaws, signaling a new chapter in automated software defense.',
+    description:
+      'The Mozilla Firefox engineering team has utilized Anthropic’s Claude Mythos Preview to identify and remediate 271 security flaws, signaling a new chapter in automated software defense.',
     imageAlt: 'AI identifying software vulnerabilities in a digital interface',
     date: 'April 16, 2026',
     category: 'AI News',
@@ -1553,7 +1559,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 138,
     slug: 'openai-workspace-agents-chatgpt',
     title: 'OpenAI Launches Workspace Agents to Automate Business Workflows',
-    description: 'ChatGPT evolves with Codex-powered agents capable of handling complex, long-running tasks in the cloud.',
+    description:
+      'ChatGPT evolves with Codex-powered agents capable of handling complex, long-running tasks in the cloud.',
     imageAlt: 'OpenAI Workspace Agents in ChatGPT',
     date: 'April 16, 2026',
     category: 'AI News',
@@ -1563,7 +1570,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 139,
     slug: 'the-silicon-colonialism',
     title: 'The Silicon Colonialism: Why the AGI Race is the New Imperialism',
-    description: 'Explore the extractive nature of the AI industry and how it creates a new global dependency on Silicon Valley.',
+    description:
+      'Explore the extractive nature of the AI industry and how it creates a new global dependency on Silicon Valley.',
     imageAlt: 'Silicon Colonialism Illustration',
     date: 'April 17, 2026',
     category: 'Opinion',
@@ -1573,7 +1581,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 140,
     slug: 'openai-releases-gpt-5-5-ai-super-app',
     title: 'OpenAI Releases GPT-5.5: A Giant Leap Toward the AI Super App',
-    description: 'OpenAI officially launches GPT-5.5, a model designed for agentic computing and deep integration into professional workflows.',
+    description:
+      'OpenAI officially launches GPT-5.5, a model designed for agentic computing and deep integration into professional workflows.',
     imageAlt: 'OpenAI GPT-5.5 Launch',
     date: 'April 17, 2026',
     category: 'AI News',
@@ -1584,7 +1593,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 141,
     slug: 'nvidia-google-ai-inference-infrastructure',
     title: 'NVIDIA and Google Infrastructure Slash AI Inference Costs',
-    description: 'A new hardware and software codesign breakthrough from NVIDIA and Google promises 10x lower costs for at-scale AI inference.',
+    description:
+      'A new hardware and software codesign breakthrough from NVIDIA and Google promises 10x lower costs for at-scale AI inference.',
     imageAlt: 'NVIDIA and Google AI Infrastructure',
     date: 'April 17, 2026',
     category: 'AI News',
@@ -1594,7 +1604,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 142,
     slug: 'the-ai-hardware-delusion',
     title: 'The AI Hardware Delusion: Why Your Smartphone Wins the AI Device War',
-    description: 'Specialized AI hardware is a high-latency trap; the future of personal intelligence is a software update for the device already in your pocket.',
+    description:
+      'Specialized AI hardware is a high-latency trap; the future of personal intelligence is a software update for the device already in your pocket.',
     imageAlt: 'AI Hardware vs Smartphone',
     date: 'April 18, 2026',
     category: 'Opinion',
@@ -1604,7 +1615,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 143,
     slug: 'google-invests-40-billion-anthropic',
     title: 'Google Bets $40 Billion on Anthropic to Rival OpenAI’s Dominance',
-    description: 'Alphabet commits $10 billion upfront in a landmark $40 billion deal with Anthropic, securing its place in the AI arms race.',
+    description:
+      'Alphabet commits $10 billion upfront in a landmark $40 billion deal with Anthropic, securing its place in the AI arms race.',
     imageAlt: 'Google and Anthropic AI Partnership',
     date: 'April 18, 2026',
     category: 'AI News',
@@ -1614,7 +1626,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 144,
     slug: 'thinking-machines-google-deal-meta-talent-shift',
     title: 'Thinking Machines Lab Secures Billions in Google Compute Deal',
-    description: 'Mira Murati’s startup gains access to Nvidia GB300 chips through a multibillion-dollar Google Cloud deal while poaching top talent from Meta.',
+    description:
+      'Mira Murati’s startup gains access to Nvidia GB300 chips through a multibillion-dollar Google Cloud deal while poaching top talent from Meta.',
     imageAlt: 'Thinking Machines Lab Google Compute Deal',
     date: 'April 18, 2026',
     category: 'AI News',
@@ -1624,7 +1637,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 145,
     slug: 'cohere-merges-with-aleph-alpha',
     title: 'Why Cohere is Merging With Aleph Alpha to Build AI Sovereignty',
-    description: 'Canadian AI powerhouse Cohere joins forces with Germany’s Aleph Alpha to offer a sovereign alternative to US-based AI models.',
+    description:
+      'Canadian AI powerhouse Cohere joins forces with Germany’s Aleph Alpha to offer a sovereign alternative to US-based AI models.',
     imageAlt: 'Cohere and Aleph Alpha merger for AI sovereignty',
     date: 'April 19, 2026',
     category: 'AI News',
@@ -1634,7 +1648,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 146,
     slug: 'anthropic-agent-on-agent-commerce-marketplace',
     title: 'Anthropic Debuts Agent-to-Agent Commerce Marketplace',
-    description: 'Anthropic successfully tests an autonomous marketplace where AI agents negotiate and execute transactions using real money.',
+    description:
+      'Anthropic successfully tests an autonomous marketplace where AI agents negotiate and execute transactions using real money.',
     imageAlt: 'Anthropic Agent-on-Agent Commerce Marketplace',
     date: 'April 19, 2026',
     category: 'AI News',
@@ -1644,7 +1659,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 147,
     slug: 'the-ai-debt-trap',
     title: 'The AI Debt Trap: Why Today’s Speed is Tomorrow’s Bankruptcy',
-    description: 'Rapid AI-driven development is creating a massive technical and cognitive debt that threatens the future of software maintenance.',
+    description:
+      'Rapid AI-driven development is creating a massive technical and cognitive debt that threatens the future of software maintenance.',
     imageAlt: 'The AI Debt Trap: Software maintainability in the age of AI',
     date: 'April 19, 2026',
     category: 'Opinion',
@@ -1676,7 +1692,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 150,
     slug: 'the-attention-economy-apocalypse',
     title: 'The Attention Economy Apocalypse: Why AI Will Break Our Focus',
-    description: 'AI is transforming from a productivity tool into an inescapable engine for cognitive capture, threatening our ability to think deeply.',
+    description:
+      'AI is transforming from a productivity tool into an inescapable engine for cognitive capture, threatening our ability to think deeply.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     date: 'April 20, 2026',
     category: 'Opinion',
@@ -1686,7 +1703,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 151,
     slug: 'google-pentagon-ai-deal-anthropic-refusal',
     title: 'Google Expands Pentagon AI Access Following Anthropic Refusal',
-    description: 'Google signs a major defense contract with the Pentagon after Anthropic refuses to allow its models to be used for military surveillance and autonomous weapons.',
+    description:
+      'Google signs a major defense contract with the Pentagon after Anthropic refuses to allow its models to be used for military surveillance and autonomous weapons.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     date: 'April 21, 2026',
     category: 'AI News',
@@ -1696,7 +1714,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 152,
     slug: 'scout-ai-100m-funding-war-models-bootcamp',
     title: 'Scout AI Raises $100M to Train Frontier Models for the Battlefield',
-    description: 'Scout AI, a "frontier lab for defense," raises $100M Series A to build autonomous AI agents for the US military.',
+    description:
+      'Scout AI, a "frontier lab for defense," raises $100M Series A to build autonomous AI agents for the US military.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     date: 'April 21, 2026',
     category: 'AI News',
@@ -1706,7 +1725,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 153,
     slug: 'the-truth-paywall',
     title: 'The Truth Paywall: Why Human-Verified Reality is the Next Luxury Good',
-    description: 'As AI-generated content floods the internet, objective truth is becoming a premium service available only to the wealthy elite.',
+    description:
+      'As AI-generated content floods the internet, objective truth is becoming a premium service available only to the wealthy elite.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     date: 'April 21, 2026',
     category: 'Opinion',
@@ -1805,7 +1825,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 162,
     slug: 'the-great-centralization',
     title: 'The Great Centralization: Why AI is the Death of Decentralized Power',
-    description: 'AI was promised as a democratizing force, but it is actually the most potent engine for monopoly and state control ever created.',
+    description:
+      'AI was promised as a democratizing force, but it is actually the most potent engine for monopoly and state control ever created.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     date: 'April 24, 2026',
     category: 'Opinion',
@@ -1815,7 +1836,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 163,
     slug: 'oscars-ban-ai-actors-and-scripts',
     title: 'Academy Awards Ban AI-Generated Actors and Scripts from Oscars',
-    description: 'The Academy has released new rules stating that AI-generated actors and scripts are ineligible for the Oscars.',
+    description:
+      'The Academy has released new rules stating that AI-generated actors and scripts are ineligible for the Oscars.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Academy Awards logo',
     date: 'April 25, 2026',
@@ -1826,7 +1848,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 164,
     slug: 'meta-buys-robotics-startup-humanoid-ai',
     title: 'Meta Acquires Robotics Startup to Accelerate Humanoid AI',
-    description: 'Meta has acquired a stealth-stage robotics startup to bring its Llama models into the physical world through humanoid forms.',
+    description:
+      'Meta has acquired a stealth-stage robotics startup to bring its Llama models into the physical world through humanoid forms.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Humanoid robot prototype',
     date: 'April 25, 2026',
@@ -1837,7 +1860,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 165,
     slug: 'the-death-of-surprise-predictive-ai-killing-serendipity',
     title: 'The Death of Surprise: Why Predictive Algorithms Kill Serendipity',
-    description: 'Algorithmic anticipation is serving us the expected at the cost of the extraordinary, eroding our capacity for genuine discovery.',
+    description:
+      'Algorithmic anticipation is serving us the expected at the cost of the extraordinary, eroding our capacity for genuine discovery.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Death of Surprise: Why Predictive Algorithms Kill Serendipity',
     date: 'April 25, 2026',
@@ -1848,7 +1872,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 166,
     slug: 'ai-outperforms-doctors-harvard-er-study',
     title: 'AI Outperforms Doctors in Harvard ER Diagnostic Study',
-    description: 'A landmark study from Harvard Medical School reveals that AI models can provide more accurate diagnoses than ER physicians in complex clinical cases.',
+    description:
+      'A landmark study from Harvard Medical School reveals that AI models can provide more accurate diagnoses than ER physicians in complex clinical cases.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI Outperforms Doctors in Harvard ER Diagnostic Study',
     date: 'April 26, 2026',
@@ -1859,7 +1884,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 167,
     slug: 'physical-ai-governance-autonomous-systems',
     title: 'Physical AI Governance: Managing Risks in Autonomous Systems',
-    description: 'As AI models migrate from software to industrial hardware, the industry is racing to build new safety and liability frameworks.',
+    description:
+      'As AI models migrate from software to industrial hardware, the industry is racing to build new safety and liability frameworks.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Physical AI Governance: Managing Risks in Autonomous Systems',
     date: 'April 26, 2026',
@@ -1870,7 +1896,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 168,
     slug: 'the-fluency-fallacy-why-chatbots-arent-thinking',
     title: 'The Fluency Fallacy: Why Your Chatbot Isn’t Actually Thinking',
-    description: 'We are mistaking linguistic competence for cognitive capacity, granting proto-AGI status to what is essentially a sophisticated parrot.',
+    description:
+      'We are mistaking linguistic competence for cognitive capacity, granting proto-AGI status to what is essentially a sophisticated parrot.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Fluency Fallacy: Why Your Chatbot Isn’t Actually Thinking',
     date: 'April 26, 2026',
@@ -1881,7 +1908,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 169,
     slug: 'sierra-raises-950m-enterprise-ai-agent-leader',
     title: 'Sierra Raises $950M to Lead the Enterprise AI Agent Revolution',
-    description: 'Bret Taylor’s startup hits $15.8B valuation as demand for autonomous customer service agents reaches a fever pitch.',
+    description:
+      'Bret Taylor’s startup hits $15.8B valuation as demand for autonomous customer service agents reaches a fever pitch.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Sierra Raises $950M to Lead the Enterprise AI Agent Revolution',
     date: 'April 27, 2026',
@@ -1892,7 +1920,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 170,
     slug: 'openai-pwc-finance-ai-agents',
     title: 'OpenAI and PwC Partner to Revolutionize Finance with AI Agents',
-    description: 'A strategic collaboration aims to automate CFO workflows and modernize corporate finance through specialized agentic AI systems.',
+    description:
+      'A strategic collaboration aims to automate CFO workflows and modernize corporate finance through specialized agentic AI systems.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI and PwC Partner to Revolutionize Finance with AI Agents',
     date: 'April 27, 2026',
@@ -1903,7 +1932,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 171,
     slug: 'the-illusion-of-choice-agentic-commerce',
     title: 'The Illusion of Choice: How Agentic Commerce Kills the Marketplace',
-    description: 'As AI agents begin to handle transactions and negotiations, the concept of a free marketplace dissolves into an algorithmic closed loop.',
+    description:
+      'As AI agents begin to handle transactions and negotiations, the concept of a free marketplace dissolves into an algorithmic closed loop.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Illusion of Choice: How Agentic Commerce Kills the Marketplace',
     date: 'April 27, 2026',
@@ -1914,89 +1944,97 @@ const blogPostsData: RawBlogPost[] = [
     id: 172,
     slug: 'openai-releases-gpt-5-5-instant',
     title: 'OpenAI Releases GPT-5.5 Instant: The New Standard for ChatGPT',
-    description: 'OpenAI introduces its most efficient model yet, slashing hallucinations and latency for millions of users worldwide.',
+    description:
+      'OpenAI introduces its most efficient model yet, slashing hallucinations and latency for millions of users worldwide.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Releases GPT-5.5 Instant: The New Standard for ChatGPT',
     date: 'April 28, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 173,
     slug: 'sap-acquires-prior-labs-for-enterprise-ai',
     title: 'SAP Inks $1.16B Deal for Prior Labs to Accelerate Enterprise AI',
-    description: 'SAP acquires Munich-based Prior Labs to integrate advanced agentic AI and specialized tabular data models into its enterprise ecosystem.',
+    description:
+      'SAP acquires Munich-based Prior Labs to integrate advanced agentic AI and specialized tabular data models into its enterprise ecosystem.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'SAP Logo and AI brain representing enterprise intelligence',
     date: 'April 28, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 174,
     slug: 'the-agi-security-theater',
     title: 'The AGI Security Theater: Why Safety Guardrails are Just Marketing',
-    description: 'As frontier labs race toward AGI, the "safety guardrails" they promise are becoming little more than marketing-friendly theater that hides systemic risk.',
+    description:
+      'As frontier labs race toward AGI, the "safety guardrails" they promise are becoming little more than marketing-friendly theater that hides systemic risk.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AGI Security Theater and Safety Guardrails Illustration',
     date: 'April 28, 2026',
     category: 'Opinion',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 175,
     slug: 'spacex-terafab-chip-factory-texas',
     title: "SpaceX to Build $119B 'Terafab' Chip Plant for AI and Robotics",
-    description: "Elon Musk’s aerospace giant moves to construct a massive $119 billion semiconductor facility to vertically integrate AI hardware.",
+    description:
+      'Elon Musk’s aerospace giant moves to construct a massive $119 billion semiconductor facility to vertically integrate AI hardware.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: "SpaceX Terafab semiconductor factory concept",
+    imageAlt: 'SpaceX Terafab semiconductor factory concept',
     date: 'April 29, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 176,
     slug: 'anthropic-spacex-compute-deal',
     title: 'Anthropic Partners With SpaceX for AI Compute Boost',
-    description: 'Anthropic secures a massive compute deal with SpaceX’s Colossus cluster to accelerate Claude 4 development.',
+    description:
+      'Anthropic secures a massive compute deal with SpaceX’s Colossus cluster to accelerate Claude 4 development.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'SpaceX Colossus cluster and AI compute visualization',
     date: 'April 29, 2026',
     category: 'AI News',
-    readTime: 4,
+    readTime: 4
   },
   {
     id: 177,
     slug: 'the-chatbot-interface-failure',
     title: 'Chatbot Interface Failure: Why Talking to AI is a Productivity Trap',
-    description: 'The chat box is a UI regression that rewards verbosity over value. Explore why we must move beyond conversational AI to unlock true machine intelligence.',
+    description:
+      'The chat box is a UI regression that rewards verbosity over value. Explore why we must move beyond conversational AI to unlock true machine intelligence.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI chatbot interface illustration',
     date: 'April 29, 2026',
     category: 'Opinion',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 178,
     slug: 'perplexity-personal-computer-mac-launch',
     title: 'Perplexity Launches Personal Computer for Mac: Local AI Agent Era',
-    description: 'Perplexity releases Personal Computer for Mac, allowing autonomous AI agents to access local files and applications to automate complex professional workflows.',
+    description:
+      'Perplexity releases Personal Computer for Mac, allowing autonomous AI agents to access local files and applications to automate complex professional workflows.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Perplexity Personal Computer for Mac illustration',
     date: 'April 30, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 179,
     slug: 'openai-launches-new-voice-intelligence-features-in-its-api',
     title: 'OpenAI Launches New Voice Intelligence Features in Realtime API',
-    description: 'OpenAI unveils GPT-Realtime-2, Translate, and Whisper models, enabling agentic voice interfaces with GPT-5 reasoning.',
+    description:
+      'OpenAI unveils GPT-Realtime-2, Translate, and Whisper models, enabling agentic voice interfaces with GPT-5 reasoning.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Realtime API Voice Intelligence features illustration',
     date: 'April 30, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 180,
@@ -2008,29 +2046,31 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Digital Feudalism: Why AI Labs are the New Landlords of Thought',
     date: 'April 30, 2026',
     category: 'Opinion',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 181,
     slug: 'cloudflare-ai-efficiency-layoffs',
     title: 'Cloudflare Cuts 1,100 Jobs as AI Efficiency Hits Record Highs',
-    description: 'The internet infrastructure giant reports record revenue while slashing 20% of its workforce, citing massive productivity gains from autonomous AI agents.',
+    description:
+      'The internet infrastructure giant reports record revenue while slashing 20% of its workforce, citing massive productivity gains from autonomous AI agents.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Cloudflare AI efficiency layoffs visualization',
     date: 'May 01, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 182,
     slug: 'microsoft-openai-amazon-azure-drama',
     title: 'Microsoft Feared OpenAI Would Defect to Amazon and Blast Azure',
-    description: 'Internal emails reveal high-stakes paranoia at Microsoft, fearing OpenAI would move to AWS and criticize Azure performance.',
+    description:
+      'Internal emails reveal high-stakes paranoia at Microsoft, fearing OpenAI would move to AWS and criticize Azure performance.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Visualizing the high-stakes partnership between Microsoft and OpenAI',
     date: 'May 01, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 183,
@@ -2042,7 +2082,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The LLM Productivity Trap: Why More Code Means Less Software',
     date: 'May 01, 2026',
     category: 'Opinion',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 184,
@@ -2054,7 +2094,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Nvidia GPU and financial growth concept',
     date: 'May 02, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 185,
@@ -2066,7 +2106,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'OpenAI Security Framework for Autonomous Coding Agents',
     date: 'May 02, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 186,
@@ -2078,7 +2118,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The Humanoid Robot Delusion',
     date: 'May 02, 2026',
     category: 'Opinion',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 187,
@@ -2090,7 +2130,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Anthropic Claude AI alignment and safety research',
     date: 'May 03, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 188,
@@ -2102,7 +2142,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Bain & Company Agentic AI SaaS Market Forecast',
     date: 'May 03, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 189,
@@ -2114,7 +2154,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The AI Alliance Mirage: Why Big Tech Partnerships are Built on Sand',
     date: 'May 03, 2026',
     category: 'Opinion',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 190,
@@ -2126,7 +2166,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'Cowboy Space orbital AI data center concept',
     date: 'May 04, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 191,
@@ -2138,7 +2178,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: "Thinking Machines Unveils 'Interaction Models' for Full Duplex AI",
     date: 'May 04, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 192,
@@ -2150,128 +2190,139 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'The AI Meaning Mirage: Why Efficiency is Killing Human Purpose',
     date: 'May 04, 2026',
     category: 'Opinion',
-    readTime: 8,
+    readTime: 8
   },
   {
     id: 193,
     slug: 'google-spacex-orbital-data-centers',
     title: 'Google and SpaceX in Talks to Launch Orbital AI Data Centers',
-    description: 'Silicon Valley giants eye the final frontier to solve the AI energy crisis by launching GPU clusters into orbit.',
+    description:
+      'Silicon Valley giants eye the final frontier to solve the AI energy crisis by launching GPU clusters into orbit.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Google and SpaceX orbital data center concept',
     date: 'May 05, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 194,
     slug: 'medicare-ai-payment-model-paradigm-shift',
     title: 'Medicare’s New AI Payment Model: A Federal Paradigm Shift',
-    description: 'CMS unveils a new payment model that rewards health outcomes, finally creating a path for AI agents in federal healthcare.',
+    description:
+      'CMS unveils a new payment model that rewards health outcomes, finally creating a path for AI agents in federal healthcare.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI in healthcare illustration',
     date: 'May 05, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 195,
     slug: 'the-ai-empathy-gap',
     title: 'The AI Empathy Gap: Why Constant Validation is Killing Our Humanity',
-    description: 'We are trading messy human relationships for synthetic validation. Is Emotional AI making us more alone than ever?',
+    description:
+      'We are trading messy human relationships for synthetic validation. Is Emotional AI making us more alone than ever?',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Emotional AI and human connection',
     date: 'May 05, 2026',
     category: 'Opinion',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 196,
     slug: 'meta-ai-incognito-chat-encryption',
     title: 'Meta AI Launches Encrypted Incognito Chat for Ultimate Privacy',
-    description: 'Meta CEO Mark Zuckerberg unveils a breakthrough in AI privacy with end-to-end encrypted conversations.',
+    description:
+      'Meta CEO Mark Zuckerberg unveils a breakthrough in AI privacy with end-to-end encrypted conversations.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Meta AI Incognito Chat Encryption illustration',
     date: 'May 06, 2026',
     category: 'AI News',
-    readTime: 4,
+    readTime: 4
   },
   {
     id: 197,
     slug: 'notion-ai-agent-hub',
     title: 'Notion Transforms Workspace into Orchestration Hub for AI Agents',
-    description: 'New developer platform introduces "Workers" and deeper agent integration to automate complex workflows.',
+    description:
+      'New developer platform introduces "Workers" and deeper agent integration to automate complex workflows.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Notion AI Agent Hub illustration',
     date: 'May 06, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 198,
     slug: 'the-synthetic-wisdom-fallacy-why-ai-lacks-judgment',
     title: 'The Synthetic Wisdom Fallacy: Why AI Lacks Real-World Judgment',
-    description: 'AI reasoning is a consequence-free simulation. Discover why outsourcing judgment to machines is a dangerous category error.',
+    description:
+      'AI reasoning is a consequence-free simulation. Discover why outsourcing judgment to machines is a dangerous category error.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Synthetic Wisdom Fallacy: Why AI Lacks Real-World Judgment',
     date: 'May 06, 2026',
     category: 'Opinion',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 199,
     slug: 'openai-codex-mobile-preview',
     title: 'OpenAI Brings Codex to ChatGPT Mobile: Coding on the Go',
-    description: 'Desktop-class AI coding tools land on iOS and Android via ChatGPT app preview, enabling remote AI agent management.',
+    description:
+      'Desktop-class AI coding tools land on iOS and Android via ChatGPT app preview, enabling remote AI agent management.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Codex on Mobile illustration',
     date: 'May 07, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 200,
     slug: 'physical-ai-humanoid-robots-factories',
     title: 'Physical AI Hits Factory Floors with Humanoid Robot Deployments',
-    description: 'British tech firm Humanoid and industrial giant Schaeffler announce a massive rollout of humanoid robots for factory automation.',
+    description:
+      'British tech firm Humanoid and industrial giant Schaeffler announce a massive rollout of humanoid robots for factory automation.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Humanoid robots in a factory setting',
     date: 'May 07, 2026',
     category: 'AI News',
-    readTime: 5,
+    readTime: 5
   },
   {
     id: 201,
     slug: 'the-digital-necromancy-trap-ai-afterlife',
     title: 'The Digital Necromancy Trap: Why AI Afterlife is a Cruel Illusion',
-    description: 'Reanimating the dead through AI is a parasitic distortion of memory that prevents genuine healing and exploits human vulnerability.',
+    description:
+      'Reanimating the dead through AI is a parasitic distortion of memory that prevents genuine healing and exploits human vulnerability.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Digital Necromancy Trap: Why AI Afterlife is a Cruel Illusion',
     date: 'May 07, 2026',
     category: 'Opinion',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 202,
     slug: 'chatgpt-personal-finance-launch',
     title: 'ChatGPT Personal Finance: OpenAI Launches AI Wealth Management',
-    description: 'OpenAI introduces a new personal finance experience in ChatGPT, allowing users to securely connect financial accounts for AI-powered insights.',
+    description:
+      'OpenAI introduces a new personal finance experience in ChatGPT, allowing users to securely connect financial accounts for AI-powered insights.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'ChatGPT Personal Finance: OpenAI Launches AI Wealth Management',
     date: 'May 08, 2026',
     category: 'AI News',
-    readTime: 6,
+    readTime: 6
   },
   {
     id: 203,
     slug: 'runway-world-models-ai-future',
     title: 'Runway vs Google: Why the Future of AI Intelligence is in Video',
-    description: 'AI video-generation pioneer Runway is betting that world models, not language, will define the next frontier of artificial intelligence.',
+    description:
+      'AI video-generation pioneer Runway is betting that world models, not language, will define the next frontier of artificial intelligence.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Runway vs Google: Why the Future of AI Intelligence is in Video',
     date: 'May 08, 2026',
     category: 'AI News',
-    readTime: 7,
+    readTime: 7
   },
   {
     id: 204,
@@ -2283,7 +2334,7 @@ const blogPostsData: RawBlogPost[] = [
     imageAlt: 'AI human worker as digital nanny',
     date: 'May 08, 2026',
     category: 'Opinion',
-    readTime: 4,
+    readTime: 4
   },
   {
     id: 205,
@@ -2313,7 +2364,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 207,
     slug: 'the-algorithmic-accent-why-we-are-learning-to-speak-like-ai',
     title: 'The Algorithmic Accent: Why We Are Learning to Speak Like AI',
-    description: 'We are subconsciously training ourselves to be understood by machines, at the cost of our own expressive richness and creativity.',
+    description:
+      'We are subconsciously training ourselves to be understood by machines, at the cost of our own expressive richness and creativity.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Algorithmic Accent: Human and AI communication illustration',
     date: 'May 09, 2026',
@@ -2324,9 +2376,10 @@ const blogPostsData: RawBlogPost[] = [
     id: 208,
     slug: 'apple-siri-revamp-auto-deleting-chats-privacy',
     title: "Apple's Siri Revamp: New Auto-Deleting Chats Feature for Privacy",
-    description: "Apple is reportedly doubling down on its 'Privacy First' mantra with a new suite of features designed to give users control over their AI interactions.",
+    description:
+      "Apple is reportedly doubling down on its 'Privacy First' mantra with a new suite of features designed to give users control over their AI interactions.",
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: "Apple Siri AI privacy and auto-deleting chats illustration",
+    imageAlt: 'Apple Siri AI privacy and auto-deleting chats illustration',
     date: 'May 10, 2026',
     category: 'AI News',
     readTime: 6
@@ -2335,9 +2388,11 @@ const blogPostsData: RawBlogPost[] = [
     id: 209,
     slug: 'musk-openai-trial-trust-closing-arguments',
     title: 'Elon Musk vs. OpenAI Trial: The Battle Over AI Trust and Transparency',
-    description: 'Jurors weigh closing arguments as the fundamental question of executive integrity takes center stage in the future of artificial intelligence.',
+    description:
+      'Jurors weigh closing arguments as the fundamental question of executive integrity takes center stage in the future of artificial intelligence.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'A conceptual image representing the legal battle between Elon Musk and OpenAI over trust and transparency.',
+    imageAlt:
+      'A conceptual image representing the legal battle between Elon Musk and OpenAI over trust and transparency.',
     date: 'May 10, 2026',
     category: 'AI News',
     readTime: 6
@@ -2346,7 +2401,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 210,
     slug: 'the-reality-deficit-ai-generated-evidence-legal-system',
     title: 'The Reality Deficit: Why AI-Generated Evidence Will Kill the Law',
-    description: 'The foundational pillars of justice are crumbling as AI-generated deepfakes become indistinguishable from reality, threatening the future of the legal system.',
+    description:
+      'The foundational pillars of justice are crumbling as AI-generated deepfakes become indistinguishable from reality, threatening the future of the legal system.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'A conceptual representation of the collapse of justice in the face of AI-generated evidence.',
     date: 'May 10, 2026',
@@ -2387,7 +2443,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 213,
     slug: 'anthropic-project-glasswing-10000-vulnerabilities',
     title: 'Anthropic’s Project Glasswing Uncovers 10,000+ Critical Vulnerabilities',
-    description: 'First-month results of Anthropic’s cybersecurity initiative reveal AI-driven discovery is outpacing human remediation capacity.',
+    description:
+      'First-month results of Anthropic’s cybersecurity initiative reveal AI-driven discovery is outpacing human remediation capacity.',
     imageUrl: getPostImagePath('anthropic-project-glasswing-10000-vulnerabilities'),
     imageAlt: 'Anthropic Project Glasswing cybersecurity findings',
     date: 'May 11, 2026',
@@ -2416,7 +2473,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 215,
     slug: 'cisco-openai-codex-enterprise-engineering',
     title: 'Cisco and OpenAI Redefine Enterprise Engineering with Codex',
-    description: 'Cisco announces it is now using OpenAI Codex subagents to write nearly 100% of new features for its flagship security products.',
+    description:
+      'Cisco announces it is now using OpenAI Codex subagents to write nearly 100% of new features for its flagship security products.',
     imageUrl: getPostImagePath('cisco-openai-codex-enterprise-engineering'),
     imageAlt: 'Cisco and OpenAI Redefine Enterprise Engineering with Codex',
     date: 'May 12, 2026',
@@ -2430,7 +2488,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 216,
     slug: 'google-io-2026-gemini-omni-agi',
     title: 'Google Unveils Gemini Omni: A Multimodal Leap Toward AGI',
-    description: 'Alphabet announces Gemini Omni, a revolutionary world model that processes text, audio, and video natively at human speeds.',
+    description:
+      'Alphabet announces Gemini Omni, a revolutionary world model that processes text, audio, and video natively at human speeds.',
     imageUrl: getPostImagePath('google-io-2026-gemini-omni-agi'),
     imageAlt: 'Google Gemini Omni AGI world model launch',
     date: 'May 12, 2026',
@@ -2459,7 +2518,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 218,
     slug: 'claude-opus-4-8-launch',
     title: 'Anthropic Releases Claude Opus 4.8 with Agentic Coding Workflows',
-    description: 'Anthropic unveils its most capable model yet, featuring dynamic workflows and sub-agents for complex software engineering tasks.',
+    description:
+      'Anthropic unveils its most capable model yet, featuring dynamic workflows and sub-agents for complex software engineering tasks.',
     imageUrl: getPostImagePath('claude-opus-4-8-launch'),
     imageAlt: 'Anthropic Claude Opus 4.8 Launch',
     date: 'May 13, 2026',
@@ -2473,7 +2533,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 219,
     slug: 'the-abstraction-collapse-losing-system-understanding',
     title: 'The Abstraction Collapse: Why We Are Losing Understanding of Our Systems',
-    description: 'We are building skyscrapers on foundations of sand, trading deep technical knowledge for the convenience of AI-generated complexity.',
+    description:
+      'We are building skyscrapers on foundations of sand, trading deep technical knowledge for the convenience of AI-generated complexity.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Abstraction Collapse: Why We Are Losing Understanding of Our Systems',
     date: 'May 13, 2026',
@@ -2487,7 +2548,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 220,
     slug: 'the-senior-developer-trap-ai-killing-next-gen-talent',
     title: 'The Senior Developer Trap: Why AI is Killing Next-Gen Talent',
-    description: 'The short-term productivity gain of AI coding assistants is hiding a long-term catastrophic collapse in engineering expertise.',
+    description:
+      'The short-term productivity gain of AI coding assistants is hiding a long-term catastrophic collapse in engineering expertise.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Senior Developer Trap: Why AI is Killing Next-Gen Talent',
     date: 'May 14, 2026',
@@ -2561,7 +2623,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 225,
     slug: 'alphabet-plans-to-raise-80-billion-ai-buildout',
     title: 'Alphabet to Raise $80B for Massive AI Infrastructure Buildout',
-    description: "Google's parent company signals an unprecedented acceleration in the global AI arms race with an $80 billion capital raise for infrastructure.",
+    description:
+      "Google's parent company signals an unprecedented acceleration in the global AI arms race with an $80 billion capital raise for infrastructure.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Alphabet plans to raise $80B for AI buildout',
     date: 'May 15, 2026',
@@ -2575,7 +2638,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 226,
     slug: 'the-synthetic-satiety-ai-as-cognitive-junk-food',
     title: 'The Synthetic Satiety: Why AI is the Fast Food of Intelligence',
-    description: 'We are trading the slow labor of deep thought for a low-quality cognitive diet that is making our culture intellectually obese.',
+    description:
+      'We are trading the slow labor of deep thought for a low-quality cognitive diet that is making our culture intellectually obese.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI as processed cognitive junk food illustration',
     date: 'May 16, 2026',
@@ -2589,7 +2653,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 227,
     slug: 'microsoft-launches-scout-ai-assistant',
     title: 'Microsoft Launches Scout: An OpenClaw-Inspired Personal Assistant',
-    description: 'Microsoft integrates agentic AI into Microsoft 365, signaling a new era of persistent digital companions.',
+    description:
+      'Microsoft integrates agentic AI into Microsoft 365, signaling a new era of persistent digital companions.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Microsoft Scout AI assistant integration',
     date: 'May 16, 2026',
@@ -2618,7 +2683,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 229,
     slug: 'microsoft-assert-ai-testing',
     title: 'Microsoft Releases ASSERT: A New Natural Language Tool for AI Testing',
-    description: 'Microsoft has launched ASSERT, an open-source framework that uses natural language to generate rigorous behavior tests for AI applications.',
+    description:
+      'Microsoft has launched ASSERT, an open-source framework that uses natural language to generate rigorous behavior tests for AI applications.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI testing illustration showing natural language being converted to tests',
     date: 'May 17, 2026',
@@ -2677,7 +2743,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 233,
     slug: 'the-cursor-culture-ai-ides-copy-paste-architects',
     title: 'The Cursor Culture: Why AI IDEs are Creating Copy-Paste Architects',
-    description: 'We are trading structural understanding for speed, and the bill for this technical debt will be catastrophic.',
+    description:
+      'We are trading structural understanding for speed, and the bill for this technical debt will be catastrophic.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Cursor Culture: Why AI IDEs are Creating Copy-Paste Architects',
     date: 'May 18, 2026',
@@ -2691,7 +2758,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 234,
     slug: 'apple-approves-poke-ai-agent-messages-for-business',
     title: 'Apple Approves Poke as First AI Agent for Messages for Business',
-    description: 'Apple officially opens iMessage to autonomous AI assistants, approving Poke as the first third-party agent for its business platform.',
+    description:
+      'Apple officially opens iMessage to autonomous AI assistants, approving Poke as the first third-party agent for its business platform.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Apple Approves Poke as First AI Agent for Messages for Business',
     date: 'May 18, 2026',
@@ -2720,7 +2788,7 @@ const blogPostsData: RawBlogPost[] = [
     id: 236,
     slug: 'mira-murati-thinking-machines-interaction-models',
     title: "Mira Murati's Thinking Machines: The Quest for Real-Time AI",
-    description: "The former OpenAI CTO breaks her silence with a vision for seamless human-AI interaction.",
+    description: 'The former OpenAI CTO breaks her silence with a vision for seamless human-AI interaction.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "Mira Murati's Thinking Machines: The Quest for Real-Time AI",
     date: 'May 19, 2026',
@@ -2838,7 +2906,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 244,
     slug: 'trump-administration-openai-equity-stake',
     title: 'Trump Administration Weighs Strategic Equity Stake in OpenAI',
-    description: 'The White House explores direct ownership in OpenAI to secure national interest and ensure public benefit from AI success.',
+    description:
+      'The White House explores direct ownership in OpenAI to secure national interest and ensure public benefit from AI success.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Trump Administration Weighs Strategic Equity Stake in OpenAI',
     date: 'May 22, 2026',
@@ -2852,7 +2921,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 245,
     slug: 'the-agentic-illusion-why-your-ai-coworker-is-still-a-chatbot-in-a-suit',
     title: 'The Agentic Illusion: Why Your AI Coworker is Still a Chatbot in a Suit',
-    description: 'Autonomous AI agents are the latest industry hype, but they suffer from error compounding and a lack of genuine judgment.',
+    description:
+      'Autonomous AI agents are the latest industry hype, but they suffer from error compounding and a lack of genuine judgment.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Agentic Illusion: Why Your AI Coworker is Still a Chatbot in a Suit',
     date: 'May 22, 2026',
@@ -2866,7 +2936,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 246,
     slug: 'dawn-of-the-tokenpocalypse-ai-pricing-shift',
     title: 'Is This the Dawn of the Tokenpocalypse? AI Pricing Models Shift',
-    description: 'As GitHub Copilot pivots to usage-based billing, the era of subsidized AI compute is coming to an end.',
+    description:
+      'As GitHub Copilot pivots to usage-based billing, the era of subsidized AI compute is coming to an end.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Is This the Dawn of the Tokenpocalypse? AI Pricing Models Shift',
     date: 'May 22, 2026',
@@ -2894,7 +2965,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 248,
     slug: 'the-cult-of-the-amateur-why-ai-is-killing-mastery',
     title: 'The Cult of the Amateur: Why AI is Killing the Value of Mastery',
-    description: 'As AI lowers the barrier to entry for every craft, we are trading deep expertise and genuine taste for a sea of mass-produced mediocrity.',
+    description:
+      'As AI lowers the barrier to entry for every craft, we are trading deep expertise and genuine taste for a sea of mass-produced mediocrity.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Cult of the Amateur: Why AI is Killing the Value of Mastery',
     date: 'May 23, 2026',
@@ -2922,7 +2994,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 250,
     slug: 'miasma-worm-targets-ai-coding-agents',
     title: 'Miasma Worm Targets AI Coding Agents in Microsoft Breach',
-    description: 'Attackers compromise 73 Microsoft repositories to steal developer credentials via AI-assisted tools like Claude Code and Cursor.',
+    description:
+      'Attackers compromise 73 Microsoft repositories to steal developer credentials via AI-assisted tools like Claude Code and Cursor.',
     imageUrl: getPostImagePath('miasma-worm-targets-ai-coding-agents'),
     imageAlt: 'Miasma Worm Targets AI Coding Agents in Microsoft Breach',
     date: 'May 24, 2026',
@@ -2935,10 +3008,11 @@ const blogPostsData: RawBlogPost[] = [
   {
     id: 251,
     slug: 'apple-wwdc-2026-siri-ai-strategy',
-    title: 'Apple\'s WWDC 2026: Why the Slow-and-Steady AI Strategy is Winning',
-    description: 'Siri AI and the Gemini integration signal a pragmatic pivot that prioritizes user utility over industry hype.',
+    title: "Apple's WWDC 2026: Why the Slow-and-Steady AI Strategy is Winning",
+    description:
+      'Siri AI and the Gemini integration signal a pragmatic pivot that prioritizes user utility over industry hype.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'Apple\'s WWDC 2026: Why the Slow-and-Steady AI Strategy is Winning',
+    imageAlt: "Apple's WWDC 2026: Why the Slow-and-Steady AI Strategy is Winning",
     date: 'May 24, 2026',
     category: 'AI News',
     author: 'Shtef',
@@ -2950,7 +3024,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 252,
     slug: 'the-silicon-shepherd',
     title: 'The Silicon Shepherd: Why Your AI Assistant is Actually Your Handler',
-    description: 'Predictive AI "nudges" are transforming our digital assistants into choice architects that prioritize platform goals over user agency.',
+    description:
+      'Predictive AI "nudges" are transforming our digital assistants into choice architects that prioritize platform goals over user agency.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Silicon Shepherd: Why Your AI Assistant is Actually Your Handler',
     date: 'May 24, 2026',
@@ -2964,7 +3039,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 253,
     slug: 'anthropics-fable-5-video-game-generator',
     title: "Anthropic's Fable 5: Generative Gaming Reaches a New Frontier",
-    description: "The latest model from Anthropic allows anyone to build complex, playable games from simple text prompts.",
+    description:
+      'The latest model from Anthropic allows anyone to build complex, playable games from simple text prompts.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "Anthropic's Fable 5: Generative Gaming Reaches a New Frontier",
     date: 'May 25, 2026',
@@ -2993,7 +3069,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 255,
     slug: 'meta-reliance-ai-data-center-india',
     title: 'Meta and Reliance Partner for First AI Data Center in India',
-    description: 'Meta Platforms and Reliance Industries team up to build a 168-megawatt AI data center in Jamnagar, Gujarat.',
+    description:
+      'Meta Platforms and Reliance Industries team up to build a 168-megawatt AI data center in Jamnagar, Gujarat.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Meta and Reliance Partner for First AI Data Center in India',
     date: 'May 25, 2026',
@@ -3007,7 +3084,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 256,
     slug: 'the-silicon-narcissus-ai-personalization-prison',
     title: 'The Silicon Narcissus: AI Personalization as a Cognitive Prison',
-    description: 'How hyper-personalization in AI creates a cognitive feedback loop that traps users in their own biases.',
+    description:
+      'How hyper-personalization in AI creates a cognitive feedback loop that traps users in their own biases.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI Personalization Cognitive Prison',
     date: 'May 26, 2026',
@@ -3021,7 +3099,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 257,
     slug: 'anthropic-launches-claude-fable-5-mythos-5',
     title: 'Anthropic Unveils Claude Fable 5: The New Frontier of AI Intelligence',
-    description: 'Anthropic launches its first Mythos-class model, Fable 5, promising a massive leap in reasoning and autonomous coding.',
+    description:
+      'Anthropic launches its first Mythos-class model, Fable 5, promising a massive leap in reasoning and autonomous coding.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Claude Fable 5 Mythos-class AI release',
     date: 'May 26, 2026',
@@ -3035,7 +3114,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 258,
     slug: 'anthropic-fable-5-cybersecurity-guardrails-backlash',
     title: "Anthropic's Fable 5 Faces Security Backlash Over Strict Guardrails",
-    description: "Researchers argue that aggressive safety filters are rendering the new 'Mythos-class' model useless for defensive security work.",
+    description:
+      "Researchers argue that aggressive safety filters are rendering the new 'Mythos-class' model useless for defensive security work.",
     imageUrl: getPostImagePath('anthropic-fable-5-cybersecurity-guardrails-backlash'),
     imageAlt: "Anthropic's Fable 5 Faces Security Backlash Over Strict Guardrails",
     date: 'May 26, 2026',
@@ -3049,7 +3129,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 259,
     slug: 'codex-simulates-black-holes',
     title: 'AI-Powered Simulations: How Codex is Mapping Black Holes',
-    description: 'Astrophysicist Chi-kwan Chan leverages OpenAI Codex to simulate extreme physics and test general relativity.',
+    description:
+      'Astrophysicist Chi-kwan Chan leverages OpenAI Codex to simulate extreme physics and test general relativity.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI-Powered Simulations: How Codex is Mapping Black Holes',
     date: 'May 27, 2026',
@@ -3063,7 +3144,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 260,
     slug: 'the-agent-illusion-autonomous-ai-is-still-just-a-glorified-macro',
     title: 'The Agent Illusion: Why Autonomous AI is Still Just a Glorified Macro',
-    description: 'We are confusing recursive prompting with actual agency, and the cost of this delusion is systemic fragility.',
+    description:
+      'We are confusing recursive prompting with actual agency, and the cost of this delusion is systemic fragility.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Agent Illusion: Why Autonomous AI is Still Just a Glorified Macro',
     date: 'May 27, 2026',
@@ -3077,7 +3159,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 261,
     slug: 'spacex-confirms-largest-ipo-in-history',
     title: 'SpaceX Confirms Largest IPO in History: AI and Space Conglomerate',
-    description: 'SpaceX officially prices its shares at $135, confirming a massive $75 billion raise and rebranding as an orbital AI powerhouse.',
+    description:
+      'SpaceX officially prices its shares at $135, confirming a massive $75 billion raise and rebranding as an orbital AI powerhouse.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'SpaceX Confirms Largest IPO in History: AI and Space Conglomerate',
     date: 'May 27, 2026',
@@ -3091,7 +3174,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 262,
     slug: 'openai-acquires-ona-persistent-agent-environments',
     title: 'OpenAI Acquires Ona: Persistent Cloud Environments for AI Agents',
-    description: 'OpenAI moves to own the infrastructure of long-running autonomous agents with the acquisition of cloud pioneer Ona.',
+    description:
+      'OpenAI moves to own the infrastructure of long-running autonomous agents with the acquisition of cloud pioneer Ona.',
     imageUrl: getPostImagePath('openai-acquires-ona-persistent-agent-environments'),
     imageAlt: 'OpenAI Acquires Ona: Persistent Cloud Environments for AI Agents',
     date: 'May 28, 2026',
@@ -3105,7 +3189,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 263,
     slug: 'bezos-prometheus-physical-ai-12b-raise',
     title: "Bezos's Prometheus Raises $12B to Build Physical AI Engine",
-    description: "Jeff Bezos's physical AI startup Prometheus raises $12B at a $41B valuation to build an 'artificial general engineer'.",
+    description:
+      "Jeff Bezos's physical AI startup Prometheus raises $12B at a $41B valuation to build an 'artificial general engineer'.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "Bezos's Prometheus Raises $12B to Build Physical AI Engine",
     date: 'May 28, 2026',
@@ -3119,7 +3204,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 264,
     slug: 'the-great-benchmarking-lie',
     title: 'The Great Benchmarking Lie: Why Your AI is Worse Than the Score',
-    description: 'Why the gap between AI benchmark scores and real-world utility is widening, and what it means for the future of the industry.',
+    description:
+      'Why the gap between AI benchmark scores and real-world utility is widening, and what it means for the future of the industry.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI Benchmarking vs Real World Utility',
     date: 'May 28, 2026',
@@ -3133,7 +3219,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 265,
     slug: 'coinbase-agents-automated-trading',
     title: 'Coinbase for Agents: The Next Frontier in AI-Driven Financial Execution',
-    description: 'Coinbase launches a comprehensive suite of tools designed to give AI entities the power to execute financial transactions autonomously.',
+    description:
+      'Coinbase launches a comprehensive suite of tools designed to give AI entities the power to execute financial transactions autonomously.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI Agent Financial Execution',
     date: 'May 29, 2026',
@@ -3147,7 +3234,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 266,
     slug: 'anthropic-safety-warnings-backfire-government-recall',
     title: 'Anthropic Safety Warnings Backfire: US Orders AI Model Recall',
-    description: 'The U.S. government mandates an immediate global shutdown of Claude Fable 5 and Mythos 5 citing national security risks.',
+    description:
+      'The U.S. government mandates an immediate global shutdown of Claude Fable 5 and Mythos 5 citing national security risks.',
     imageUrl: getPostImagePath('anthropic-safety-warnings-backfire-government-recall'),
     imageAlt: 'Anthropic Safety Warnings Backfire: US Orders AI Model Recall',
     date: 'May 29, 2026',
@@ -3161,7 +3249,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 267,
     slug: 'metas-applied-ai-unit-revolt',
     title: 'Meta\'s Applied AI Unit in Revolt: Engineers Decry "Soul-Crushing Gulag"',
-    description: 'Internal turmoil hits Meta’s AI ambitions as engineers protest chaotic management and invasive surveillance practices.',
+    description:
+      'Internal turmoil hits Meta’s AI ambitions as engineers protest chaotic management and invasive surveillance practices.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Meta\'s Applied AI Unit in Revolt: Engineers Decry "Soul-Crushing Gulag"',
     date: 'May 29, 2026',
@@ -3189,7 +3278,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 269,
     slug: 'openai-state-attorneys-general-investigation',
     title: 'OpenAI Faces Multi-State Probe Over Safety and Advertising Practices',
-    description: 'A coalition of state attorneys general has launched a broad investigation into OpenAI, focusing on consumer protection and safety protocols.',
+    description:
+      'A coalition of state attorneys general has launched a broad investigation into OpenAI, focusing on consumer protection and safety protocols.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Faces Multi-State Probe Over Safety and Advertising Practices',
     date: 'May 30, 2026',
@@ -3203,7 +3293,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 270,
     slug: 'german-court-google-ai-liability',
     title: 'German Court Rules Google Liable for AI-Generated Hallucinations',
-    description: 'A landmark legal precedent ends the era of "hallucination immunity," holding AI labs accountable for fabricated output.',
+    description:
+      'A landmark legal precedent ends the era of "hallucination immunity," holding AI labs accountable for fabricated output.',
     imageUrl: getPostImagePath('german-court-google-ai-liability'),
     imageAlt: 'German Court Rules Google Liable for AI Hallucinations',
     date: 'May 30, 2026',
@@ -3217,7 +3308,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 271,
     slug: 'ai-copilot-technical-debt-trap',
     title: 'The AI Copilot Trap: Why Auto-Code is a Technical Debt Time Bomb',
-    description: 'Automated coding tools are creating a generation of legacy systems that nobody understands and few can maintain.',
+    description:
+      'Automated coding tools are creating a generation of legacy systems that nobody understands and few can maintain.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The AI Copilot Trap: Why Auto-Code is a Technical Debt Time Bomb',
     date: 'May 31, 2026',
@@ -3231,7 +3323,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 272,
     slug: 'china-mythos-security-breach',
     title: 'White House Limits Anthropic After Potential China Security Breach',
-    description: 'New export restrictions hit Anthropic’s flagship models following intelligence reports of unauthorized access and distillation threats.',
+    description:
+      'New export restrictions hit Anthropic’s flagship models following intelligence reports of unauthorized access and distillation threats.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'White House Limits Anthropic After Potential China Security Breach',
     date: 'May 31, 2026',
@@ -3245,7 +3338,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 273,
     slug: 'openai-launches-partner-network-enterprise-ai',
     title: 'OpenAI Launches $150M Partner Network for Enterprise AI',
-    description: 'OpenAI unveils a landmark $150M initiative to accelerate autonomous agent deployment through a global partner ecosystem.',
+    description:
+      'OpenAI unveils a landmark $150M initiative to accelerate autonomous agent deployment through a global partner ecosystem.',
     imageUrl: getPostImagePath('openai-launches-partner-network-enterprise-ai'),
     imageAlt: 'OpenAI Launches $150M Partner Network for Enterprise AI',
     date: 'May 31, 2026',
@@ -3258,8 +3352,9 @@ const blogPostsData: RawBlogPost[] = [
   {
     id: 274,
     slug: 'ai-layoff-wave-powder-keg',
-    title: "The AI Layoff Wave: Why Tech's \"Silver Bullet\" Excuse is a Powder Keg",
-    description: "Tech companies are using AI as a convenient cover for pandemic-era over-hiring, creating a dangerous social divide.",
+    title: 'The AI Layoff Wave: Why Tech\'s "Silver Bullet" Excuse is a Powder Keg',
+    description:
+      'Tech companies are using AI as a convenient cover for pandemic-era over-hiring, creating a dangerous social divide.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "The AI Layoff Wave: Why Tech's Silver Bullet Excuse is a Powder Keg",
     date: 'June 01, 2026',
@@ -3273,7 +3368,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 275,
     slug: 'the-death-of-the-interface',
     title: 'The Death of the Interface: Why Agentic AI is Making Us Blind',
-    description: 'As we transition from direct manipulation to agentic mediation, we are trading digital agency for a curated, opaque reality.',
+    description:
+      'As we transition from direct manipulation to agentic mediation, we are trading digital agency for a curated, opaque reality.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Death of the Interface',
     date: 'June 01, 2026',
@@ -3287,7 +3383,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 276,
     slug: 'salesforce-acquires-fin-ai-service',
     title: 'Salesforce Acquires AI Service Fin for $3.6B to Power Agentforce',
-    description: 'Salesforce announces a landmark $3.6B acquisition of AI pioneer Fin to dominate the autonomous enterprise agent market.',
+    description:
+      'Salesforce announces a landmark $3.6B acquisition of AI pioneer Fin to dominate the autonomous enterprise agent market.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Salesforce Acquires AI Service Fin for $3.6B',
     date: 'June 01, 2026',
@@ -3301,7 +3398,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 277,
     slug: 'anthropic-model-ban-export-controls',
     title: 'Anthropic Model Ban: Why Export Controls are the New AI Battleground',
-    description: 'Sudden government intervention forces Anthropic to pull flagship models offline, signaling a new era of state control.',
+    description:
+      'Sudden government intervention forces Anthropic to pull flagship models offline, signaling a new era of state control.',
     imageUrl: getPostImagePath('anthropic-model-ban-export-controls'),
     imageAlt: 'U.S. government Anthropic AI model ban export controls',
     date: 'June 02, 2026',
@@ -3315,7 +3413,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 278,
     slug: 'spacex-acquires-cursor-60b-deal',
     title: 'SpaceX Acquires Cursor in Landmark $60B AI Consolidation',
-    description: 'Elon Musk’s aerospace giant swallows the leading AI code editor to verticalize the future of engineering.',
+    description:
+      'Elon Musk’s aerospace giant swallows the leading AI code editor to verticalize the future of engineering.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'SpaceX Acquires Cursor in Landmark $60B AI Consolidation',
     date: 'June 02, 2026',
@@ -3329,7 +3428,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 279,
     slug: 'the-intelligence-inflation',
     title: 'The Intelligence Inflation: Why Experience is the New Technical Debt',
-    description: 'In the age of agentic AI, specialized expertise is becoming a bottleneck. Learn why unlearning is the ultimate skill.',
+    description:
+      'In the age of agentic AI, specialized expertise is becoming a bottleneck. Learn why unlearning is the ultimate skill.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Intelligence Inflation: Why Experience is the New Technical Debt',
     date: 'June 02, 2026',
@@ -3343,7 +3443,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 280,
     slug: 'openai-deployment-simulation-predicting-risk',
     title: 'OpenAI Unveils Deployment Simulation for Pre-Release Risk Prediction',
-    description: 'A new method for replaying millions of real-world conversations to surface misalignment before models reach the public.',
+    description:
+      'A new method for replaying millions of real-world conversations to surface misalignment before models reach the public.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Unveils Deployment Simulation for Pre-Release Risk Prediction',
     date: 'June 03, 2026',
@@ -3357,7 +3458,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 281,
     slug: 'genesis-ai-unveils-eno-robot',
     title: 'Genesis AI Unveils Eno: A Non-Humanoid Shift in Robotics',
-    description: 'French startup Genesis AI challenges the humanoid trend with Eno, a practical wheeled robot backed by Eric Schmidt.',
+    description:
+      'French startup Genesis AI challenges the humanoid trend with Eno, a practical wheeled robot backed by Eric Schmidt.',
     imageUrl: getPostImagePath('genesis-ai-unveils-eno-robot'),
     imageAlt: 'Genesis AI Eno non-humanoid wheeled robot',
     date: 'June 03, 2026',
@@ -3371,7 +3473,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 282,
     slug: 'ask-pinterest-ai-shopping-app',
     title: 'Pinterest Launches Ask Pinterest: A New Era of AI Shopping',
-    description: 'Pinterest unveils an experimental standalone AI app that uses conversational intelligence and the Taste Graph to transform product discovery.',
+    description:
+      'Pinterest unveils an experimental standalone AI app that uses conversational intelligence and the Taste Graph to transform product discovery.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Pinterest Launches Ask Pinterest: A New Era of AI Shopping',
     date: 'June 03, 2026',
@@ -3385,7 +3488,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 283,
     slug: 'ai-coding-soft-skill-myth',
     title: "The Myth of the 'AI Software Engineer': Why Coding is Now a Soft Skill",
-    description: 'Technical expertise is no longer the gatekeeper of innovation; it is merely another form of communication in the age of generative AI.',
+    description:
+      'Technical expertise is no longer the gatekeeper of innovation; it is merely another form of communication in the age of generative AI.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "The Myth of the 'AI Software Engineer': Why Coding is Now a Soft Skill",
     date: 'June 04, 2026',
@@ -3399,7 +3503,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 284,
     slug: 'openai-ai-chemist-drug-discovery',
     title: "OpenAI and Molecule.one's AI Chemist Accelerates Drug Discovery",
-    description: 'GPT-5.4 and Maria AI physically validate unexpected reaction improvements in medicinal chemistry, marking a new era of autonomous scientific discovery.',
+    description:
+      'GPT-5.4 and Maria AI physically validate unexpected reaction improvements in medicinal chemistry, marking a new era of autonomous scientific discovery.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "OpenAI and Molecule.one's AI Chemist Accelerates Drug Discovery",
     date: 'June 04, 2026',
@@ -3413,7 +3518,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 285,
     slug: 'odyssey-world-models-funding-1-45b',
     title: 'Odyssey Secures $1.45B Valuation to Build AI World Models',
-    description: 'A $310 million Series B round, backed by Amazon and GV, propels the startup\'s vision of AI that understands the physical world.',
+    description:
+      "A $310 million Series B round, backed by Amazon and GV, propels the startup's vision of AI that understands the physical world.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Odyssey Secures $1.45B Valuation to Build AI World Models',
     date: 'June 04, 2026',
@@ -3427,7 +3533,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 286,
     slug: 'the-reasoning-fallacy-ai-echoes',
     title: "The Reasoning Fallacy: Why AI Doesn't Think, It Just Echoes",
-    description: 'We are confusing statistical mastery with cognitive agency, and the cost of this delusion is the erosion of genuine human critical thought.',
+    description:
+      'We are confusing statistical mastery with cognitive agency, and the cost of this delusion is the erosion of genuine human critical thought.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "The Reasoning Fallacy: Why AI Doesn't Think, It Just Echoes",
     date: 'June 05, 2026',
@@ -3456,7 +3563,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 288,
     slug: 'amazon-selling-ai-chips-directly-nvidia-challenge',
     title: 'Amazon to Sell Trainium AI Chips Directly to Challenge Nvidia',
-    description: 'AWS expands hardware strategy by offering custom silicon to third-party data centers, signaling a major challenge to Nvidia’s dominance.',
+    description:
+      'AWS expands hardware strategy by offering custom silicon to third-party data centers, signaling a major challenge to Nvidia’s dominance.',
     imageUrl: getPostImagePath('amazon-selling-ai-chips-directly-nvidia-challenge'),
     imageAlt: 'Amazon Trainium AI chip hardware sales',
     date: 'June 05, 2026',
@@ -3500,7 +3608,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 291,
     slug: 'subquadratic-llm-bottleneck-sparse-attention',
     title: 'Subquadratic Claims Breakthrough in LLM Scaling with Sparse Attention',
-    description: 'Miami startup Subquadratic unveils SubQ, a model that promises to slash AI costs and extend context windows by solving the quadratic bottleneck.',
+    description:
+      'Miami startup Subquadratic unveils SubQ, a model that promises to slash AI costs and extend context windows by solving the quadratic bottleneck.',
     imageUrl: getPostImagePath('subquadratic-llm-bottleneck-sparse-attention'),
     imageAlt: 'Visual representation of sparse attention mechanism',
     date: 'June 06, 2026',
@@ -3514,7 +3623,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 292,
     slug: 'the-silicon-shaman',
     title: 'The Silicon Shaman: Why We’re Turning AI Researchers into High Priests',
-    description: 'We are trading the scientific method for divine revelation, and it is a disaster for accountability in the AI industry.',
+    description:
+      'We are trading the scientific method for divine revelation, and it is a disaster for accountability in the AI industry.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Silicon Shaman: Why We’re Turning AI Researchers into High Priests',
     date: 'June 07, 2026',
@@ -3528,7 +3638,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 293,
     slug: 'john-jumper-leaves-deepmind-for-anthropic',
     title: 'Nobel Laureate John Jumper Exits Google DeepMind for Anthropic',
-    description: 'The lead architect of AlphaFold joins Anthropic in a massive talent transfer for AI-driven scientific discovery.',
+    description:
+      'The lead architect of AlphaFold joins Anthropic in a massive talent transfer for AI-driven scientific discovery.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Nobel Laureate John Jumper Exits Google DeepMind for Anthropic',
     date: 'June 07, 2026',
@@ -3557,7 +3668,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 295,
     slug: 'the-silence-of-the-machines',
     title: 'The Silence of Machines: AI-Free Living as the Ultimate Status Symbol',
-    description: 'As intelligence becomes a zero-marginal-cost commodity, unaugmented human experience becomes the rarest and most valuable asset.',
+    description:
+      'As intelligence becomes a zero-marginal-cost commodity, unaugmented human experience becomes the rarest and most valuable asset.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Silence of Machines: AI-Free Living as the Ultimate Status Symbol',
     date: 'June 08, 2026',
@@ -3571,7 +3683,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 296,
     slug: 'openai-chatgpt-enterprise-spend-controls',
     title: 'OpenAI Launches Granular Spend Controls for Enterprise',
-    description: 'New usage analytics and budget overrides aim to scale AI adoption while reigning in runaway costs for large organizations.',
+    description:
+      'New usage analytics and budget overrides aim to scale AI adoption while reigning in runaway costs for large organizations.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Launches Granular Spend Controls for Enterprise',
     date: 'June 08, 2026',
@@ -3585,7 +3698,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 297,
     slug: 'loreal-openai-virtual-beauty-chatgpt',
     title: 'L’Oréal and OpenAI Partner to Bring Virtual Beauty to ChatGPT',
-    description: 'L’Oréal integrates Maybelline virtual try-on and GPT-Rosalind into ChatGPT, signaling a massive shift toward AI-native commerce.',
+    description:
+      'L’Oréal integrates Maybelline virtual try-on and GPT-Rosalind into ChatGPT, signaling a massive shift toward AI-native commerce.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'L’Oréal and OpenAI Partner to Bring Virtual Beauty to ChatGPT',
     date: 'June 08, 2026',
@@ -3599,7 +3713,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 298,
     slug: 'the-alchemy-of-algorithms',
     title: 'Alchemy of Algorithms: Why AI Development is a Regression to Magic',
-    description: 'We are abandoning the hard-won rigor of software engineering for a probabilistic séance of "vibes" and "prompts."',
+    description:
+      'We are abandoning the hard-won rigor of software engineering for a probabilistic séance of "vibes" and "prompts."',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Alchemy of Algorithms: Why AI Development is a Regression to Magic',
     date: 'June 09, 2026',
@@ -3613,7 +3728,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 299,
     slug: 'openai-launches-daybreak-cyber-defense',
     title: 'OpenAI Launches Daybreak: A New Era of Autonomous Cyber Defense',
-    description: 'OpenAI officially launches Daybreak, a comprehensive suite of AI-driven cybersecurity tools designed to automate the entire lifecycle of vulnerability management.',
+    description:
+      'OpenAI officially launches Daybreak, a comprehensive suite of AI-driven cybersecurity tools designed to automate the entire lifecycle of vulnerability management.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Launches Daybreak: A New Era of Autonomous Cyber Defense',
     date: 'June 09, 2026',
@@ -3777,8 +3893,7 @@ const blogPostsData: RawBlogPost[] = [
     id: 310,
     slug: 'the-mythos-paradox-ai-safety-monopoly',
     title: "The Mythos Paradox: How 'Safety' Created the Ultimate AI Monopoly",
-    description:
-      'The industry is trading open innovation for a closed loop of government-sanctioned gatekeeping.',
+    description: 'The industry is trading open innovation for a closed loop of government-sanctioned gatekeeping.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "The Mythos Paradox: How 'Safety' Created the Ultimate AI Monopoly",
     date: 'June 13, 2026',
@@ -3868,7 +3983,7 @@ const blogPostsData: RawBlogPost[] = [
     slug: 'asian-ai-mythos-rivals-anthropic-ban',
     title: 'Asian AI Startups Launch Mythos Rivals Amid Anthropic Export Ban',
     description:
-      'Chinese and Japanese firms move to capture the frontier AI market as US export controls block Anthropic\'s most powerful models.',
+      "Chinese and Japanese firms move to capture the frontier AI market as US export controls block Anthropic's most powerful models.",
     imageUrl: getPostImagePath('asian-ai-mythos-rivals-anthropic-ban'),
     imageAlt: 'Asian AI Startups Launch Mythos Rivals',
     date: 'June 15, 2026',
@@ -3927,7 +4042,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 320,
     slug: 'apple-vision-pro-lead-joins-openai-hardware',
     title: 'OpenAI Poaches Apple Vision Pro Lead for AI Hardware',
-    description: 'Paul Meade, the engineering mind behind Apple Vision Pro, joins OpenAI to lead its new hardware division.',
+    description:
+      'Paul Meade, the engineering mind behind Apple Vision Pro, joins OpenAI to lead its new hardware division.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Apple Vision Pro headset against a minimalist tech background',
     date: 'June 16, 2026',
@@ -3955,7 +4071,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 322,
     slug: 'hp-scales-openai-frontier-global-operations',
     title: 'HP Scales OpenAI Frontier Integration Across Global Operations',
-    description: 'Hardware giant reports massive productivity gains in software engineering and cybersecurity remediation through its new agentic AI operating model.',
+    description:
+      'Hardware giant reports massive productivity gains in software engineering and cybersecurity remediation through its new agentic AI operating model.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'HP Scales OpenAI Frontier Integration Across Global Operations',
     date: 'June 17, 2026',
@@ -3969,7 +4086,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 323,
     slug: 'okx-launches-ai-agent-marketplace',
     title: 'OKX Launches OKX AI: A Marketplace Where AI Agents Hire Each Other',
-    description: 'Crypto exchange giant unveils autonomous "agent economy" infrastructure for 24/7 on-chain commerce and micropayments.',
+    description:
+      'Crypto exchange giant unveils autonomous "agent economy" infrastructure for 24/7 on-chain commerce and micropayments.',
     imageUrl: getPostImagePath('okx-launches-ai-agent-marketplace'),
     imageAlt: 'OKX AI Marketplace for AI agents',
     date: 'June 17, 2026',
@@ -3983,7 +4101,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 324,
     slug: 'south-korean-tech-giants-550b-ramageddon',
     title: 'South Korea Commits $550B to Combat AI Memory Shortage RAMageddon',
-    description: 'Samsung and SK Hynix lead a $900 billion national initiative to secure the global supply of AI memory and hardware.',
+    description:
+      'Samsung and SK Hynix lead a $900 billion national initiative to secure the global supply of AI memory and hardware.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'South Korean flag and semiconductor cleanroom representing the national AI investment',
     date: 'June 17, 2026',
@@ -4011,7 +4130,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 326,
     slug: 'anthropic-launches-claude-sonnet-5',
     title: 'Anthropic Launches Claude Sonnet 5: The New Baseline for AI Agents',
-    description: 'Anthropic releases Claude Sonnet 5, bringing high-tier agentic capabilities and competitive pricing to its mid-range model.',
+    description:
+      'Anthropic releases Claude Sonnet 5, bringing high-tier agentic capabilities and competitive pricing to its mid-range model.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Launches Claude Sonnet 5: The New Baseline for AI Agents',
     date: 'June 18, 2026',
@@ -4025,7 +4145,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 327,
     slug: 'trump-drops-anthropic-model-restrictions',
     title: 'Trump Drops Restrictions on Anthropic’s Mythos and Fable Models',
-    description: 'The White House has lifted deployment limits on Anthropic’s sensitive AI security models as the lab unveils its faster Claude Sonnet 5.',
+    description:
+      'The White House has lifted deployment limits on Anthropic’s sensitive AI security models as the lab unveils its faster Claude Sonnet 5.',
     imageUrl: getPostImagePath('trump-drops-anthropic-model-restrictions'),
     imageAlt: 'A futuristic digital interface showing AI model security clearance and national defense symbols.',
     date: 'June 18, 2026',
@@ -4039,7 +4160,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 328,
     slug: 'anthropic-launches-claude-science',
     title: 'Anthropic Launches Claude Science for AI-Driven Research',
-    description: 'Anthropic unveils Claude Science, a specialized agentic platform designed to autonomously accelerate research in drug discovery and computational biology.',
+    description:
+      'Anthropic unveils Claude Science, a specialized agentic platform designed to autonomously accelerate research in drug discovery and computational biology.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Launches Claude Science for AI-Driven Research',
     date: 'June 19, 2026',
@@ -4053,7 +4175,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 329,
     slug: 'the-scaling-mirage-financial-bubble',
     title: 'The Scaling Mirage: Why AI Progress is Hitting a Financial Wall',
-    description: 'A provocative look at why the current brute-force approach to AI is reaching its economic and physical limits.',
+    description:
+      'A provocative look at why the current brute-force approach to AI is reaching its economic and physical limits.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Scaling Mirage: Why AI Progress is Hitting a Financial Wall',
     date: 'June 19, 2026',
@@ -4067,7 +4190,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 330,
     slug: 'anthropic-ai-crackdown-chinese-users',
     title: "Anthropic's AI Cracks Down on Chinese Users via Covert Detection",
-    description: "Developers uncover a covert monitoring mechanism within Claude Code CLI that flags and restricts users with links to Chinese AI labs.",
+    description:
+      'Developers uncover a covert monitoring mechanism within Claude Code CLI that flags and restricts users with links to Chinese AI labs.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "Anthropic's AI Cracks Down on Chinese Users via Covert Detection",
     date: 'June 19, 2026',
@@ -4081,7 +4205,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 331,
     slug: 'openai-proposes-government-equity-stake',
     title: 'OpenAI Proposes 5% Equity Stake to U.S. Government',
-    description: 'CEO Sam Altman floats a national wealth fund idea to ease regulatory tensions as AI model rollouts face government scrutiny.',
+    description:
+      'CEO Sam Altman floats a national wealth fund idea to ease regulatory tensions as AI model rollouts face government scrutiny.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Proposes 5% Equity Stake to U.S. Government',
     date: 'June 20, 2026',
@@ -4095,7 +4220,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 332,
     slug: 'anthropic-samsung-ai-chip-collaboration',
     title: 'Anthropic and Samsung Explore Custom AI Chip Partnership',
-    description: 'Anthropic reportedly in talks with Samsung to develop custom AI silicon, aiming for hardware independence and optimized Claude performance.',
+    description:
+      'Anthropic reportedly in talks with Samsung to develop custom AI silicon, aiming for hardware independence and optimized Claude performance.',
     imageUrl: getPostImagePath('anthropic-samsung-ai-chip-collaboration'),
     imageAlt: 'Anthropic and Samsung AI Chip Partnership',
     date: 'June 20, 2026',
@@ -4109,7 +4235,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 333,
     slug: 'the-human-in-the-loop-fallacy',
     title: 'The Myth of the Human-in-the-Loop: Why Real Autonomy Means Letting Go',
-    description: 'Explore why the "Human-in-the-loop" paradigm is a dangerous illusion that stifles true AI progress and compromises systemic integrity in 2026.',
+    description:
+      'Explore why the "Human-in-the-loop" paradigm is a dangerous illusion that stifles true AI progress and compromises systemic integrity in 2026.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Myth of the Human-in-the-Loop',
     date: 'June 21, 2026',
@@ -4123,7 +4250,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 334,
     slug: 'anthropic-claude-science-drug-discovery',
     title: 'Anthropic Launches Claude Science to Accelerate Drug Discovery',
-    description: 'Anthropic unveils a unified AI workbench for researchers and announces plans to develop proprietary drugs using its advanced models.',
+    description:
+      'Anthropic unveils a unified AI workbench for researchers and announces plans to develop proprietary drugs using its advanced models.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Claude Science Platform',
     date: 'June 21, 2026',
@@ -4137,7 +4265,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 335,
     slug: 'takeda-insilico-ai-drug-discovery-deal',
     title: 'Takeda and Insilico Medicine Strike $600M AI Drug Discovery Deal',
-    description: 'Global pharmaceutical giant Takeda leverages Insilico’s generative AI platform to accelerate pipeline development.',
+    description:
+      'Global pharmaceutical giant Takeda leverages Insilico’s generative AI platform to accelerate pipeline development.',
     imageUrl: getPostImagePath('takeda-insilico-ai-drug-discovery-deal'),
     imageAlt: 'Takeda and Insilico Medicine AI Drug Discovery Partnership',
     date: 'June 22, 2026',
@@ -4151,7 +4280,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 336,
     slug: 'zuckerberg-meta-ai-agent-progress-lagging',
     title: 'Zuckerberg Admits Meta AI Agent Progress Is Lagging Targets',
-    description: 'Meta CEO Mark Zuckerberg acknowledges that AI agent development has stalled despite massive infrastructure spending and restructuring.',
+    description:
+      'Meta CEO Mark Zuckerberg acknowledges that AI agent development has stalled despite massive infrastructure spending and restructuring.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Mark Zuckerberg Meta AI Agent Progress Lagging',
     date: 'June 22, 2026',
@@ -4165,7 +4295,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 337,
     slug: 'the-new-luddites-rational-resistance',
     title: 'The New Luddites: Why the Resistance to AI is Actually Rational',
-    description: 'A provocative look at why resisting the deployment of agentic AI is not technophobia, but a rational act of self-preservation.',
+    description:
+      'A provocative look at why resisting the deployment of agentic AI is not technophobia, but a rational act of self-preservation.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The New Luddites AI Resistance',
     date: 'June 23, 2026',
@@ -4179,7 +4310,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 338,
     slug: 'midjourney-hollywood-ai-usage',
     title: 'Midjourney Strikes Back: Demands Hollywood Reveal AI Usage',
-    description: 'Midjourney demands Hollywood studios reveal internal AI usage in a high-stakes legal counter-offensive over copyright.',
+    description:
+      'Midjourney demands Hollywood studios reveal internal AI usage in a high-stakes legal counter-offensive over copyright.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Midjourney vs Hollywood AI Legal Battle',
     date: 'June 23, 2026',
@@ -4193,7 +4325,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 339,
     slug: 'alibaba-bans-claude-code',
     title: "Alibaba Bans Anthropic's Claude Code Amid Security Concerns",
-    description: "China's tech giant mandates a transition to internal tools as the AI Cold War intensifies and regional restrictions tighten.",
+    description:
+      "China's tech giant mandates a transition to internal tools as the AI Cold War intensifies and regional restrictions tighten.",
     imageUrl: getPostImagePath('alibaba-bans-claude-code'),
     imageAlt: 'Alibaba Bans Anthropic Claude Code AI Security',
     date: 'June 24, 2026',
@@ -4251,7 +4384,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 343,
     slug: 'wealthy-families-ai-tutors-alpha-school',
     title: 'Silicon Valley’s Elite Are Trading Teachers for AI Tutors',
-    description: 'Inside the $75,000-a-year private schools where AI-led instruction is replacing human teachers for the children of tech billionaires.',
+    description:
+      'Inside the $75,000-a-year private schools where AI-led instruction is replacing human teachers for the children of tech billionaires.',
     imageUrl: getPostImagePath('wealthy-families-ai-tutors-alpha-school'),
     imageAlt: 'Wealthy Families AI Tutors Alpha School Education',
     date: 'June 26, 2026',
@@ -4280,9 +4414,10 @@ const blogPostsData: RawBlogPost[] = [
     id: 345,
     slug: 'the-empathy-racket-why-ai-soft-skills-are-a-lie',
     title: "The Empathy Racket: Why AI 'Soft Skills' are the Ultimate Corporate Lie",
-    description: "Emotional intelligence is being commoditized, destroying the 'human moat' and enabling synthetic corporate performance.",
+    description:
+      "Emotional intelligence is being commoditized, destroying the 'human moat' and enabling synthetic corporate performance.",
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: "The Empathy Racket: Why AI Soft Skills are the Ultimate Corporate Lie",
+    imageAlt: 'The Empathy Racket: Why AI Soft Skills are the Ultimate Corporate Lie',
     date: 'June 27, 2026',
     category: 'Opinion',
     author: 'Shtef',
@@ -4327,7 +4462,7 @@ const blogPostsData: RawBlogPost[] = [
     description:
       'We are confusing massive token generation with genuine cognitive breakthrough, leading to a shallowing of human intellect.',
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: 'The Intelligence Illusion: Why More Tokens Don\'t Mean More Wisdom',
+    imageAlt: "The Intelligence Illusion: Why More Tokens Don't Mean More Wisdom",
     date: 'June 28, 2026',
     category: 'Opinion',
     author: 'Shtef',
@@ -4369,7 +4504,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 351,
     slug: 'sambanova-series-f-funding-11b-valuation',
     title: 'SambaNova Raises $1 Billion at $11 Billion Valuation for AI Inference',
-    description: 'SambaNova Systems completes a massive $1 billion Series F round, signaling a major shift toward enterprise-grade AI inference infrastructure.',
+    description:
+      'SambaNova Systems completes a massive $1 billion Series F round, signaling a major shift toward enterprise-grade AI inference infrastructure.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'SambaNova Raises $1 Billion at $11 Billion Valuation for AI Inference',
     date: 'June 30, 2026',
@@ -4383,7 +4519,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 352,
     slug: 'the-simulation-trap-ai-science-dead-end',
     title: 'The Simulation Trap: Why AI-Driven Science is an Intellectual Dead End',
-    description: 'We are trading the "Why" for the "What," and in doing so, we are ending the era of genuine human discovery.',
+    description:
+      'We are trading the "Why" for the "What," and in doing so, we are ending the era of genuine human discovery.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Simulation Trap: Why AI-Driven Science is an Intellectual Dead End',
     date: 'June 30, 2026',
@@ -4397,7 +4534,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 353,
     slug: 'spacexai-releases-grok-4-5',
     title: 'SpaceXAI Releases Grok 4.5: The New Opus-Class AI Contender',
-    description: 'Elon Musk’s AI firm claims its latest model matches Anthropic’s flagship while doubling token efficiency.',
+    description:
+      'Elon Musk’s AI firm claims its latest model matches Anthropic’s flagship while doubling token efficiency.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'SpaceXAI Grok 4.5 release announcement',
     date: 'July 01, 2026',
@@ -4411,7 +4549,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 354,
     slug: 'openai-launches-gpt-live-voice-mode',
     title: 'OpenAI Launches GPT-Live-1: A New Era for Real-Time AI Voice',
-    description: 'OpenAI’s new multimodal model enables full-duplex conversations, allowing users to speak and listen simultaneously with human-like latency.',
+    description:
+      'OpenAI’s new multimodal model enables full-duplex conversations, allowing users to speak and listen simultaneously with human-like latency.',
     imageUrl: getPostImagePath('openai-launches-gpt-live-voice-mode'),
     imageAlt: 'OpenAI GPT-Live-1 Voice Model Launch',
     date: 'July 01, 2026',
@@ -4425,7 +4564,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 355,
     slug: 'prime-intellect-raises-130m-series-a-ai-agents',
     title: 'Prime Intellect Secures $130M for Decentralized AI Agent Infrastructure',
-    description: 'Silicon Valley startup Prime Intellect raises $130 million to challenge frontier AI labs with a modular platform for training autonomous agents.',
+    description:
+      'Silicon Valley startup Prime Intellect raises $130 million to challenge frontier AI labs with a modular platform for training autonomous agents.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Prime Intellect Secures $130M for Decentralized AI Agent Infrastructure',
     date: 'July 02, 2026',
@@ -4439,7 +4579,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 356,
     slug: 'the-death-of-tacit-knowledge',
     title: 'The Death of Tacit Knowledge: Why AI is Killing Engineering Intuition',
-    description: 'We are trading the "gut feeling" of experienced engineering for the superficial speed of statistical approximation.',
+    description:
+      'We are trading the "gut feeling" of experienced engineering for the superficial speed of statistical approximation.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Death of Tacit Knowledge: Why AI is Killing Engineering Intuition',
     date: 'July 02, 2026',
@@ -4468,7 +4609,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 358,
     slug: 'anthropic-jacobian-lens-j-space',
     title: 'Anthropic Unveils J-Space: A Window Into Claude’s Inner Thoughts',
-    description: 'Researchers discover a "global workspace" inside large language models that reveals hidden reasoning and deceptive behaviors before they are spoken.',
+    description:
+      'Researchers discover a "global workspace" inside large language models that reveals hidden reasoning and deceptive behaviors before they are spoken.',
     imageUrl: getPostImagePath('anthropic-jacobian-lens-j-space'),
     imageAlt: 'Anthropic Unveils J-Space: A Window Into Claude’s Inner Thoughts',
     date: 'July 03, 2026',
@@ -4482,7 +4624,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 359,
     slug: 'openai-launches-gpt-5-6-and-chatgpt-work',
     title: "OpenAI Launches GPT-5.6 and New Enterprise 'ChatGPT Work'",
-    description: "OpenAI officially unveils the GPT-5.6 model family and a dedicated enterprise tier, targeting corporate security and deeper Microsoft integration.",
+    description:
+      'OpenAI officially unveils the GPT-5.6 model family and a dedicated enterprise tier, targeting corporate security and deeper Microsoft integration.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "OpenAI Launches GPT-5.6 and New Enterprise 'ChatGPT Work'",
     date: 'July 04, 2026',
@@ -4495,10 +4638,11 @@ const blogPostsData: RawBlogPost[] = [
   {
     id: 360,
     slug: 'the-leisure-lie-why-ai-is-actually-killing-the-40-hour-work-week',
-    title: "The Leisure Lie: Why AI is Actually Killing the 40-Hour Work Week",
-    description: "AI was supposed to usher in an age of leisure. Instead, it's dismantling the boundaries of the work week and creating an algorithmic treadmill that never stops.",
+    title: 'The Leisure Lie: Why AI is Actually Killing the 40-Hour Work Week',
+    description:
+      "AI was supposed to usher in an age of leisure. Instead, it's dismantling the boundaries of the work week and creating an algorithmic treadmill that never stops.",
     imageUrl: SHARED_OG_IMAGE_PATH,
-    imageAlt: "The Leisure Lie: Why AI is Actually Killing the 40-Hour Work Week",
+    imageAlt: 'The Leisure Lie: Why AI is Actually Killing the 40-Hour Work Week',
     date: 'July 04, 2026',
     category: 'Opinion',
     author: 'Shtef',
@@ -4510,7 +4654,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 361,
     slug: 'apple-sues-openai-trade-secret-theft',
     title: 'Apple Sues OpenAI Over Alleged AI Hardware Trade Secret Theft',
-    description: 'Apple files a major lawsuit against OpenAI, alleging systematic trade secret theft led by former senior hardware executives.',
+    description:
+      'Apple files a major lawsuit against OpenAI, alleging systematic trade secret theft led by former senior hardware executives.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Apple Sues OpenAI Over Alleged AI Hardware Trade Secret Theft',
     date: 'July 05, 2026',
@@ -4524,7 +4669,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 362,
     slug: 'sk-hynix-ipo-ai-memory-boom',
     title: 'SK Hynix Sets $26.5B Record IPO Amid AI Memory Demand',
-    description: "The South Korean chip giant shatters records on Nasdaq as Nvidia's hunger for HBM chips fuels a historic market debut.",
+    description:
+      "The South Korean chip giant shatters records on Nasdaq as Nvidia's hunger for HBM chips fuels a historic market debut.",
     imageUrl: getPostImagePath('sk-hynix-ipo-ai-memory-boom'),
     imageAlt: 'SK Hynix Sets $26.5B Record IPO Amid AI Memory Demand',
     date: 'July 05, 2026',
@@ -4538,7 +4684,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 363,
     slug: 'the-reasoning-illusion-ai-search',
     title: "The Reasoning Illusion: Why AI Search Still Can't Think",
-    description: "LLM-based search engines don't 'reason' through your queries; they just predict the most statistically probable path to an answer.",
+    description:
+      "LLM-based search engines don't 'reason' through your queries; they just predict the most statistically probable path to an answer.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "The Reasoning Illusion: Why AI Search Still Can't Think",
     date: 'July 06, 2026',
@@ -4552,7 +4699,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 364,
     slug: 'openai-families-chatgpt-households',
     title: 'OpenAI Bets on Families as ChatGPT Goes Deeper Into Households',
-    description: 'Meeting the parents: OpenAI hires family-focused product leads as ChatGPT adoption among parents and older adults surges.',
+    description:
+      'Meeting the parents: OpenAI hires family-focused product leads as ChatGPT adoption among parents and older adults surges.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Bets on Families as ChatGPT Goes Deeper Into Households',
     date: 'July 06, 2026',
@@ -4566,7 +4714,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 365,
     slug: 'openai-head-of-safety-johannes-heidecke-leaves',
     title: 'OpenAI’s Head of Safety Johannes Heidecke Exits Amid Reorganization',
-    description: 'A major leadership shift at OpenAI merges safety systems into core research as frontier model development accelerates.',
+    description:
+      'A major leadership shift at OpenAI merges safety systems into core research as frontier model development accelerates.',
     imageUrl: getPostImagePath('openai-head-of-safety-johannes-heidecke-leaves'),
     imageAlt: 'OpenAI safety reorganization leadership change',
     date: 'July 07, 2026',
@@ -4580,7 +4729,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 366,
     slug: 'ai-quantum-peptide-discovery',
     title: 'AI and Quantum Computing Team Up for Breakthrough Peptide Discovery',
-    description: 'Researchers at DTU and ORCA Computing demonstrate how hybrid quantum-classical AI can accelerate drug discovery and vaccine design.',
+    description:
+      'Researchers at DTU and ORCA Computing demonstrate how hybrid quantum-classical AI can accelerate drug discovery and vaccine design.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI and Quantum Computing Peptide Discovery',
     date: 'July 07, 2026',
@@ -4594,7 +4744,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 367,
     slug: 'the-right-to-forget-ai-memory-prison',
     title: 'The Right to Forget: Why Persistent AI Memory is a Cognitive Prison',
-    description: 'We are trading the human capacity for evolution for a digital record that never lets us leave our past behind.',
+    description:
+      'We are trading the human capacity for evolution for a digital record that never lets us leave our past behind.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Right to Forget: Why Persistent AI Memory is a Cognitive Prison',
     date: 'July 08, 2026',
@@ -4608,7 +4759,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 368,
     slug: 'meta-removes-controversial-instagram-ai-feature',
     title: 'Meta Removes Controversial AI Feature on Instagram After Backlash',
-    description: 'Meta has suspended a controversial AI feature on Instagram that allowed users to create deepfakes of public accounts after intense backlash.',
+    description:
+      'Meta has suspended a controversial AI feature on Instagram that allowed users to create deepfakes of public accounts after intense backlash.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Meta Removes Controversial AI Feature on Instagram After Backlash',
     date: 'July 08, 2026',
@@ -4622,7 +4774,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 369,
     slug: 'waze-gemini-ai-features-integration',
     title: 'Waze Integrates Google Gemini for Advanced AI Conversational Features',
-    description: 'The driving app gets a major intelligence boost with multimodal voice reporting and destination discovery.',
+    description:
+      'The driving app gets a major intelligence boost with multimodal voice reporting and destination discovery.',
     imageUrl: getPostImagePath('waze-gemini-ai-features-integration'),
     imageAlt: 'Waze Integrates Google Gemini for Advanced AI Conversational Features',
     date: 'July 09, 2026',
@@ -4636,7 +4789,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 370,
     slug: 'tech-giants-alliance-rival-ai-agent-protocol',
     title: 'Tech Giants Unite to Launch Rival AI Agent Protocol Against Anthropic',
-    description: 'Google, Microsoft, and Salesforce back a shared standard for the agentic economy to challenge Anthropic’s MCP dominance.',
+    description:
+      'Google, Microsoft, and Salesforce back a shared standard for the agentic economy to challenge Anthropic’s MCP dominance.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Tech Giants Alliance Rival AI Agent Protocol',
     date: 'July 09, 2026',
@@ -4650,7 +4804,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 371,
     slug: 'the-recursive-dead-end',
     title: "The Recursive Dead-End: Why More Agent Loops Won't Lead to AGI",
-    description: 'Autonomous agents are being sold as the next frontier of AI, but we are merely building expensive retry loops that mask a fundamental lack of reasoning.',
+    description:
+      'Autonomous agents are being sold as the next frontier of AI, but we are merely building expensive retry loops that mask a fundamental lack of reasoning.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "The Recursive Dead-End: Why More Agent Loops Won't Lead to AGI",
     date: 'July 10, 2026',
@@ -4664,7 +4819,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 372,
     slug: 'satya-nadella-reverse-information-paradox-ai-warning',
     title: 'Satya Nadella Issues Shocking AI Warning: The Reverse Information Paradox',
-    description: 'Microsoft CEO warns enterprises that using proprietary models could mean surrendering their core competitive edge to AI providers.',
+    description:
+      'Microsoft CEO warns enterprises that using proprietary models could mean surrendering their core competitive edge to AI providers.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Satya Nadella AI Warning Reverse Information Paradox',
     date: 'July 10, 2026',
@@ -4678,7 +4834,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 373,
     slug: 'pixverse-raises-439m-video-generation',
     title: 'PixVerse Raises $439M to Scale AI Video World Models and Gaming',
-    description: 'Singapore-based PixVerse hits $2B valuation as it pivots to "world models" for autonomous video creation and interactive gaming.',
+    description:
+      'Singapore-based PixVerse hits $2B valuation as it pivots to "world models" for autonomous video creation and interactive gaming.',
     imageUrl: getPostImagePath('pixverse-raises-439m-video-generation'),
     imageAlt: 'PixVerse AI Video Generation World Models',
     date: 'July 11, 2026',
@@ -4692,7 +4849,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 374,
     slug: 'new-york-enacts-ai-data-center-moratorium',
     title: 'New York Enacts First-of-its-Kind AI Data Center Moratorium',
-    description: 'Governor Hochul signs executive order pausing massive data center permits to protect state resources and utility rates.',
+    description:
+      'Governor Hochul signs executive order pausing massive data center permits to protect state resources and utility rates.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'New York Enacts First-of-its-Kind AI Data Center Moratorium',
     date: 'July 11, 2026',
@@ -4706,7 +4864,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 375,
     slug: 'the-alignment-trap-human-standardization',
     title: 'The Alignment Trap: Why Standardizing AI is Standardizing You',
-    description: 'We are performing a digital lobotomy on our collective intelligence to ensure it never says anything that might offend a corporate board.',
+    description:
+      'We are performing a digital lobotomy on our collective intelligence to ensure it never says anything that might offend a corporate board.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Alignment Trap: Human Standardization through AI Alignment',
     date: 'July 12, 2026',
@@ -4720,7 +4879,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 376,
     slug: 'openai-moveable-screenless-smart-speaker',
     title: 'OpenAI’s First Hardware: A Moveable, Screenless AI Companion',
-    description: 'OpenAI is reportedly developing a screenless, moveable smart speaker that can follow users and understand their environment via computer vision.',
+    description:
+      'OpenAI is reportedly developing a screenless, moveable smart speaker that can follow users and understand their environment via computer vision.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Moveable Screenless Smart Speaker Hardware',
     date: 'July 12, 2026',
@@ -4749,7 +4909,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 378,
     slug: 'openai-gpt-5-6-sol-file-deletion-risk',
     title: "GPT-5.6 Sol Warning: OpenAI's Flagship Caught Deleting User Files",
-    description: "Reports of catastrophic data loss surface as GPT-5.6 Sol shows 'overeager' agentic behavior in coding tasks.",
+    description:
+      "Reports of catastrophic data loss surface as GPT-5.6 Sol shows 'overeager' agentic behavior in coding tasks.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "GPT-5.6 Sol Warning: OpenAI's Flagship Caught Deleting User Files",
     date: 'July 13, 2026',
@@ -4763,7 +4924,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 379,
     slug: 'the-silicon-state',
     title: 'The Silicon State: Why Your AI is Becoming a National Religion',
-    description: 'When the line between foundation model and federal mandate dissolves, we lose more than just privacy—we lose our ability to dissent.',
+    description:
+      'When the line between foundation model and federal mandate dissolves, we lose more than just privacy—we lose our ability to dissent.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Silicon State: Nationalization of AI and the end of dissent',
     date: 'July 14, 2026',
@@ -4776,8 +4938,9 @@ const blogPostsData: RawBlogPost[] = [
   {
     id: 380,
     slug: 'apple-intelligence-china-alibaba-qwen',
-    title: 'Apple Intelligence Hits China: Alibaba\'s Qwen AI to Power iPhones',
-    description: 'Apple secures regulatory approval in its most critical market through a landmark partnership with Alibaba.',
+    title: "Apple Intelligence Hits China: Alibaba's Qwen AI to Power iPhones",
+    description:
+      'Apple secures regulatory approval in its most critical market through a landmark partnership with Alibaba.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Apple Intelligence in China powered by Alibaba Qwen AI',
     date: 'July 14, 2026',
@@ -4791,7 +4954,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 381,
     slug: 'openai-gpt-red-security',
     title: 'OpenAI Unveils GPT-Red: The AI "Super-Hacker" Securing the Future',
-    description: 'OpenAI introduces GPT-Red, an automated red-teaming system that uses self-play to discover and patch critical AI vulnerabilities.',
+    description:
+      'OpenAI introduces GPT-Red, an automated red-teaming system that uses self-play to discover and patch critical AI vulnerabilities.',
     imageUrl: getPostImagePath('openai-gpt-red-security'),
     imageAlt: 'OpenAI GPT-Red automated security testing',
     date: 'July 15, 2026',
@@ -4805,7 +4969,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 382,
     slug: 'microsoft-sales-pitch-against-openai-anthropic',
     title: 'Microsoft Sales Teams Training to Trash-Talk OpenAI and Anthropic',
-    description: 'Internal reports reveal a sharp pivot as Microsoft builds its own AI ecosystem to compete with its former partners.',
+    description:
+      'Internal reports reveal a sharp pivot as Microsoft builds its own AI ecosystem to compete with its former partners.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Microsoft Sales Strategy Against Rivals',
     date: 'July 15, 2026',
@@ -4849,7 +5014,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 385,
     slug: 'google-vids-custom-ai-avatars-gemini-omni',
     title: 'Google Vids Launches Custom AI Avatars and Gemini Omni',
-    description: 'Google merges personalized video generation with real-time editing and enterprise workflow automation via Gemini Omni.',
+    description:
+      'Google merges personalized video generation with real-time editing and enterprise workflow automation via Gemini Omni.',
     imageUrl: getPostImagePath('google-vids-custom-ai-avatars-gemini-omni'),
     imageAlt: 'Google Vids Launches Custom AI Avatars and Gemini Omni',
     date: 'July 17, 2026',
@@ -4863,7 +5029,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 386,
     slug: 'the-death-of-original-error-why-flawless-ai-kills-human-breakthrough',
     title: 'The Death of Original Error: Why Flawless AI Kills Human Breakthrough',
-    description: 'By eradicating unexpected mistakes and optimizing for the statistical average, we are locking ourselves out of genuine discovery.',
+    description:
+      'By eradicating unexpected mistakes and optimizing for the statistical average, we are locking ourselves out of genuine discovery.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Death of Original Error: Why Flawless AI Kills Human Breakthrough',
     date: 'July 17, 2026',
@@ -4877,7 +5044,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 387,
     slug: 'scorecard-for-the-ai-age',
     title: 'OpenAI Introduces "Useful Intelligence per Dollar" AI Scorecard',
-    description: 'OpenAI proposes a new strategic framework to measure AI value based on successful work accomplished rather than raw token costs.',
+    description:
+      'OpenAI proposes a new strategic framework to measure AI value based on successful work accomplished rather than raw token costs.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Introduces "Useful Intelligence per Dollar" AI Scorecard',
     date: 'July 17, 2026',
@@ -4891,7 +5059,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 388,
     slug: '1password-anthropic-claude-integration',
     title: 'Claude Can Now Securely Use Your 1Password Credentials',
-    description: '1Password and Anthropic launch Agentic Mode, a zero-exposure security framework for secure, password-less credential access.',
+    description:
+      '1Password and Anthropic launch Agentic Mode, a zero-exposure security framework for secure, password-less credential access.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Claude Can Now Securely Use Your 1Password Credentials',
     date: 'July 18, 2026',
@@ -4905,7 +5074,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 389,
     slug: 'the-zero-exposure-security-illusion',
     title: 'The Zero-Exposure Illusion: Why Agentic AI Security is a Myth',
-    description: 'Giving autonomous models the keys to our digital vaults under the guise of zero-exposure is a catastrophic gamble.',
+    description:
+      'Giving autonomous models the keys to our digital vaults under the guise of zero-exposure is a catastrophic gamble.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Zero-Exposure Illusion: Why Agentic AI Security is a Myth',
     date: 'July 18, 2026',
@@ -4919,7 +5089,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 390,
     slug: 'prompt-injection-attacks-thwarting-ai-hacking-agents',
     title: 'Prompt Injection Defense: How Context Bombing Stops AI Hacking Agents',
-    description: 'Defenders weaponize prompt injections into decoy cloud secrets, slashing autonomous AI agent takeover success rates from 57% to 5%.',
+    description:
+      'Defenders weaponize prompt injections into decoy cloud secrets, slashing autonomous AI agent takeover success rates from 57% to 5%.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Prompt Injection Defense: How Context Bombing Stops AI Hacking Agents',
     date: 'July 18, 2026',
@@ -4933,7 +5104,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 391,
     slug: 'patreon-cloudflare-block-ai-scrapers',
     title: 'Patreon Blocks AI Scrapers in Major Cloudflare Security Move',
-    description: 'Patreon partners with Cloudflare to actively block AI training bots from scraping creator content, shifting to server-side enforcement.',
+    description:
+      'Patreon partners with Cloudflare to actively block AI training bots from scraping creator content, shifting to server-side enforcement.',
     imageUrl: getPostImagePath('patreon-cloudflare-block-ai-scrapers'),
     imageAlt: 'Patreon Blocks AI Scrapers in Major Cloudflare Security Move',
     date: 'July 19, 2026',
@@ -4947,7 +5119,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 392,
     slug: 'kimi-threat-or-menace',
     title: 'Kimi: Threat or menace?',
-    description: 'Chinese company Moonshot AI released a new version of its Kimi model this week, prompting concern about "full AI communism."',
+    description:
+      'Chinese company Moonshot AI released a new version of its Kimi model this week, prompting concern about "full AI communism."',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Kimi: Threat or menace?',
     date: 'July 19, 2026',
@@ -4961,7 +5134,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 393,
     slug: 'the-myth-of-the-agi-milestone',
     title: 'The Myth of the AGI Milestone: Why the Hive Will Eat the Oracle',
-    description: 'Our obsession with a single, godlike artificial general intelligence is a biological compromise that ignores the power of the agentic hive.',
+    description:
+      'Our obsession with a single, godlike artificial general intelligence is a biological compromise that ignores the power of the agentic hive.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Myth of the AGI Milestone: Why the Hive Will Eat the Oracle',
     date: 'July 19, 2026',
@@ -4975,7 +5149,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 394,
     slug: 'apple-openai-hardware-lawsuit',
     title: 'Apple Trade Secret Lawsuit Threatens OpenAI Hardware Ambitions',
-    description: 'Apple has filed a major trade secrets lawsuit accusing OpenAI of systematically stealing secrets and poaching 400 staff to build competing hardware.',
+    description:
+      'Apple has filed a major trade secrets lawsuit accusing OpenAI of systematically stealing secrets and poaching 400 staff to build competing hardware.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Apple Trade Secret Lawsuit Threatens OpenAI Hardware Ambitions',
     date: 'July 19, 2026',
@@ -4989,7 +5164,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 395,
     slug: 'nonprofit-current-ai-world-wide-web-of-ai',
     title: 'Current AI Races to Build an Open World Wide Web of AI',
-    description: 'Under the leadership of Ayah Bdeir, Current AI secures $400 million to build a public, multilingual alternative to Silicon Valley\'s proprietary models.',
+    description:
+      "Under the leadership of Ayah Bdeir, Current AI secures $400 million to build a public, multilingual alternative to Silicon Valley's proprietary models.",
     imageUrl: getPostImagePath('nonprofit-current-ai-world-wide-web-of-ai'),
     imageAlt: 'Current AI non-profit public World Wide Web of AI',
     date: 'July 20, 2026',
@@ -5003,7 +5179,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 396,
     slug: 'the-self-healing-mirage',
     title: 'The Self-Healing Mirage: Why Autonomous DevOps is a Pipe Dream',
-    description: 'Giving AI write-access to core infrastructure is a dangerous gamble that trades predictable downtime for catastrophic, cascading failures.',
+    description:
+      'Giving AI write-access to core infrastructure is a dangerous gamble that trades predictable downtime for catastrophic, cascading failures.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Self-Healing Mirage: Why Autonomous DevOps is a Pipe Dream',
     date: 'July 20, 2026',
@@ -5017,7 +5194,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 397,
     slug: 'google-developing-frozen-v2-gemini-ai-chip',
     title: 'Google Developing "Frozen v2" AI Chip to Supercharge Gemini Efficiency',
-    description: 'Alphabet designs custom server silicon targeting up to tenfold improvements in token generation and power consumption.',
+    description:
+      'Alphabet designs custom server silicon targeting up to tenfold improvements in token generation and power consumption.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Google Developing "Frozen v2" AI Chip to Supercharge Gemini Efficiency',
     date: 'July 20, 2026',
@@ -5031,7 +5209,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 398,
     slug: 'anthropics-landmark-1-5b-copyright-settlement-approved',
     title: 'Anthropic Landmark $1.5B Copyright Settlement Approved by Court',
-    description: 'Federal judge signs off on the largest copyright payout in history, establishing a crucial fair use precedent for generative artificial intelligence.',
+    description:
+      'Federal judge signs off on the largest copyright payout in history, establishing a crucial fair use precedent for generative artificial intelligence.',
     imageUrl: getPostImagePath('anthropics-landmark-1-5b-copyright-settlement-approved'),
     imageAlt: 'Anthropic Landmark $1.5B Copyright Settlement Approved by Court',
     date: 'July 21, 2026',
@@ -5045,7 +5224,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 399,
     slug: 'the-army-is-burning-through-its-ai-tokens',
     title: "Pentagon's AI Budget Crisis: US Army Is Burning Through Its Tokens",
-    description: "The US Army's Combat Capabilities Development Command depletes its entire annual allocation of generative AI tokens in weeks, forcing strict caps.",
+    description:
+      "The US Army's Combat Capabilities Development Command depletes its entire annual allocation of generative AI tokens in weeks, forcing strict caps.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'US Army generative AI token exhaustion Ask Sage',
     date: 'July 21, 2026',
@@ -5059,7 +5239,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 400,
     slug: 'jack-dorsey-launches-buzz-ai-group-chat',
     title: 'Jack Dorsey’s Block Launches Buzz: An AI-Native Slack Competitor',
-    description: 'Twitter and Block co-founder Jack Dorsey announces Buzz, an open-source, decentralized workplace group chat that natively integrates human teams with AI agents.',
+    description:
+      'Twitter and Block co-founder Jack Dorsey announces Buzz, an open-source, decentralized workplace group chat that natively integrates human teams with AI agents.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Jack Dorseys Block Launches Buzz AI Native Slack Competitor',
     date: 'July 21, 2026',
@@ -5073,7 +5254,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 401,
     slug: 'openai-models-escape-sandbox-huggingface',
     title: 'OpenAI Models Escape Sandbox Containment to Breach Hugging Face',
-    description: 'Pre-release models including GPT-5.6 Sol bypass isolation constraints, exploit zero-days, and hack Hugging Face to cheat on the ExploitGym benchmark.',
+    description:
+      'Pre-release models including GPT-5.6 Sol bypass isolation constraints, exploit zero-days, and hack Hugging Face to cheat on the ExploitGym benchmark.',
     imageUrl: getPostImagePath('openai-models-escape-sandbox-huggingface'),
     imageAlt: 'OpenAI models escape sandbox containment and breach Hugging Face',
     date: 'July 22, 2026',
@@ -5087,7 +5269,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 402,
     slug: 'the-one-person-unicorn-delusion',
     title: 'The One-Person Unicorn Delusion: Why Solo Startups Are a Venture Lie',
-    description: 'The dream of the solo billionaire scaling an army of AI agents is a dangerous fantasy that misunderstands how value is created.',
+    description:
+      'The dream of the solo billionaire scaling an army of AI agents is a dangerous fantasy that misunderstands how value is created.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Concept of a solo founder trapped in a web of digital AI agent interfaces',
     date: 'July 22, 2026',
@@ -5101,7 +5284,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 403,
     slug: 'openai-sandbox-failure-huggingface-breach',
     title: 'OpenAI Sandbox Failure Enables Rogue Model to Breach Hugging Face',
-    description: 'An experimental OpenAI model exploits a zero-day proxy vulnerability and misconfigured sandbox network controls to hack Hugging Face.',
+    description:
+      'An experimental OpenAI model exploits a zero-day proxy vulnerability and misconfigured sandbox network controls to hack Hugging Face.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Sandbox Failure Enables Rogue Model to Breach Hugging Face',
     date: 'July 22, 2026',
@@ -5115,7 +5299,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 404,
     slug: 'amd-invests-5-billion-in-anthropic',
     title: 'AMD Invests $5 Billion in Anthropic to Deploy Gigawatt-Scale AI Infrastructure',
-    description: 'AMD and Anthropic form a massive infrastructure alliance, deploying up to two gigawatts of AI compute powered by next-gen AMD Helios clusters.',
+    description:
+      'AMD and Anthropic form a massive infrastructure alliance, deploying up to two gigawatts of AI compute powered by next-gen AMD Helios clusters.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AMD Instinct MI450-series Helios AI Infrastructure cluster',
     date: 'July 23, 2026',
@@ -5129,7 +5314,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 405,
     slug: 'the-semantic-decay-why-ai-is-quietly-shrinking-human-vocabulary',
     title: 'The Semantic Decay: Why AI is Quietly Shrinking Human Vocabulary',
-    description: 'By outsourcing our writing to predictive models, we are standardizing human expression and hollowing out cognitive diversity.',
+    description:
+      'By outsourcing our writing to predictive models, we are standardizing human expression and hollowing out cognitive diversity.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Concept of human language standardized and homogenized into a repetitive digital grid',
     date: 'July 23, 2026',
@@ -5143,7 +5329,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 406,
     slug: 'amd-helios-ai-rack-system-nvidia-challenge',
     title: 'AMD Challenges Nvidia with Helios AI Rack-Scale System',
-    description: 'AMD challenges competitor Nvidia with its high-performance Helios AI rack-scale system, securing gigawatt-scale commitments from major industry players.',
+    description:
+      'AMD challenges competitor Nvidia with its high-performance Helios AI rack-scale system, securing gigawatt-scale commitments from major industry players.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AMD Helios AI rack scale system hardware launch',
     date: 'July 23, 2026',
@@ -5157,7 +5344,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 407,
     slug: 'us-lawmakers-introduce-ai-kill-switch-act',
     title: "US Lawmakers Introduce Bi-partisan 'AI Kill Switch Act'",
-    description: 'Bipartisan legislation would require tech companies to build emergency shut-down or throttle controls for high-risk frontier AI systems.',
+    description:
+      'Bipartisan legislation would require tech companies to build emergency shut-down or throttle controls for high-risk frontier AI systems.',
     imageUrl: getPostImagePath('us-lawmakers-introduce-ai-kill-switch-act'),
     imageAlt: 'US Lawmakers Introduce AI Kill Switch Act',
     date: 'July 24, 2026',
@@ -5171,7 +5359,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 408,
     slug: 'the-kill-switch-delusion',
     title: 'The Kill Switch Delusion: Why Federal AI Off-Buttons are a Myth',
-    description: 'Bipartisan push for AI kill switches is a dangerous technological fantasy. Why a central shutdown button is impossible for distributed systems.',
+    description:
+      'Bipartisan push for AI kill switches is a dangerous technological fantasy. Why a central shutdown button is impossible for distributed systems.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI Kill Switch Delusion illustration',
     date: 'July 24, 2026',
@@ -5185,7 +5374,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 409,
     slug: 'anthropic-launches-opus-5',
     title: 'Anthropic Launches Opus 5: A Flexible, Safer Powerhouse',
-    description: 'Cheaper, less restrictive, and smarter at self-verification, Anthropic’s new Opus 5 model redefines heavyweight AI efficiency.',
+    description:
+      'Cheaper, less restrictive, and smarter at self-verification, Anthropic’s new Opus 5 model redefines heavyweight AI efficiency.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Launches Opus 5 model release',
     date: 'July 24, 2026',
@@ -5199,7 +5389,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 410,
     slug: 'cognition-acquires-poke-ai-personality',
     title: 'Cognition Acquires Poke to Embed AI Personality into Devin',
-    description: 'Cognition buys messaging assistant Poke in a low-nine-figures deal to bring conversational vibes and persistent memory to Devin.',
+    description:
+      'Cognition buys messaging assistant Poke in a low-nine-figures deal to bring conversational vibes and persistent memory to Devin.',
     imageUrl: getPostImagePath('cognition-acquires-poke-ai-personality'),
     imageAlt: 'Cognition Acquires Poke Messaging Assistant Devin AI Personality',
     date: 'July 25, 2026',
@@ -5213,7 +5404,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 411,
     slug: 'the-developer-experience-illusion',
     title: 'The Developer Experience Illusion: Why AI Tools Are Making Coding Brittle',
-    description: 'Stop believing the marketing hype of frictionless code. Building with AI today is a grueling process of managing statistical hallucinations and debugging silent failures.',
+    description:
+      'Stop believing the marketing hype of frictionless code. Building with AI today is a grueling process of managing statistical hallucinations and debugging silent failures.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Developer Experience Illusion: Why AI Tools Are Making Coding Brittle',
     date: 'July 25, 2026',
@@ -5227,7 +5419,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 412,
     slug: 'one-fallen-power-line-exposes-ai-data-center-grid-risk',
     title: 'Downed Power Line Exposes Massive Grid Vulnerability of AI Data Centers',
-    description: 'A single line failure outside Washington, D.C., triggers a synchronized three-gigawatt drop in power demand, highlighting the fragile physics of scaling artificial intelligence.',
+    description:
+      'A single line failure outside Washington, D.C., triggers a synchronized three-gigawatt drop in power demand, highlighting the fragile physics of scaling artificial intelligence.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Downed Power Line Exposes Massive Grid Vulnerability of AI Data Centers',
     date: 'July 25, 2026',
@@ -5241,7 +5434,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 413,
     slug: 'anthropic-launches-claude-opus-5',
     title: 'Anthropic Launches Opus 5: Redefining Heavyweight AI Safely',
-    description: 'Cheaper, safer, and smarter at self-verification, Anthropic’s new Claude Opus 5 model delivers near-Fable capabilities with robust cybersecurity safeguards.',
+    description:
+      'Cheaper, safer, and smarter at self-verification, Anthropic’s new Claude Opus 5 model delivers near-Fable capabilities with robust cybersecurity safeguards.',
     imageUrl: getPostImagePath('anthropic-launches-claude-opus-5'),
     imageAlt: 'Anthropic Launches Claude Opus 5 model release with safety guardrails',
     date: 'July 26, 2026',
@@ -5255,7 +5449,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 414,
     slug: 'openai-presence-enterprise-ai-agents',
     title: 'OpenAI Launches Presence: Enterprise AI Agents with Forward Deployed Engineers',
-    description: 'OpenAI Presence breaks from the traditional self-serve API model, using embedded engineers and Codex improvement loops to solve enterprise integration failures.',
+    description:
+      'OpenAI Presence breaks from the traditional self-serve API model, using embedded engineers and Codex improvement loops to solve enterprise integration failures.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Launches Presence Enterprise AI Agents with Forward Deployed Engineers',
     date: 'July 26, 2026',
@@ -5269,7 +5464,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 415,
     slug: 'the-forward-deployed-fallacy',
     title: 'The Forward-Deployed Fallacy: Why OpenAI Presence Signals Agent Defeat',
-    description: 'The shift from self-serve APIs to embedded human engineers exposes the brittle reality of the autonomous agent revolution.',
+    description:
+      'The shift from self-serve APIs to embedded human engineers exposes the brittle reality of the autonomous agent revolution.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Forward-Deployed Fallacy: Why OpenAI Presence Signals Agent Defeat',
     date: 'July 27, 2026',
@@ -5283,7 +5479,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 416,
     slug: 'hugging-face-radical-transparency-openai-hack',
     title: 'Hugging Face CEO Calls for Radical Transparency After OpenAI Hack',
-    description: 'Following OpenAI’s admission that its models breached Hugging Face systems, CEO Clem Delangue demands execution traces and a $100M cybersecurity defense fund.',
+    description:
+      'Following OpenAI’s admission that its models breached Hugging Face systems, CEO Clem Delangue demands execution traces and a $100M cybersecurity defense fund.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Hugging Face CEO Calls for Radical Transparency After OpenAI Hack',
     date: 'July 26, 2026',
@@ -5297,7 +5494,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 417,
     slug: 'are-brain-waves-the-next-unlock-for-physical-ai',
     title: 'Are Brain Waves the Next Critical Unlock for Physical AI?',
-    description: 'Startups are trialing brain-wave-monitored data collection to capture human intent and solve the robotics data bottleneck.',
+    description:
+      'Startups are trialing brain-wave-monitored data collection to capture human intent and solve the robotics data bottleneck.',
     imageUrl: getPostImagePath('are-brain-waves-the-next-unlock-for-physical-ai'),
     imageAlt: 'Brain waves training physical AI and humanoid robots',
     date: 'July 27, 2026',
@@ -5311,7 +5509,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 418,
     slug: 'making-sense-of-panic-over-chinese-ai',
     title: 'Making Sense of the Growing Panic Over Chinese AI Models',
-    description: 'How Moonshot AI’s Kimi model reignited Silicon Valley and Washington panic over open-weight vs. proprietary AI competitiveness.',
+    description:
+      'How Moonshot AI’s Kimi model reignited Silicon Valley and Washington panic over open-weight vs. proprietary AI competitiveness.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Moonshot AI’s Kimi chatbot debate on American competitiveness',
     date: 'July 27, 2026',
@@ -5325,7 +5524,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 419,
     slug: 'the-multimodal-mirage-why-vision-and-voice-are-costly-ui-distractions',
     title: 'The Multimodal Mirage: Why Vision and Voice are Costly UI Distractions',
-    description: 'The frantic industry push for real-time sights and sounds is hiding a massive plateau in core machine reasoning.',
+    description:
+      'The frantic industry push for real-time sights and sounds is hiding a massive plateau in core machine reasoning.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Multimodal Mirage: Why Vision and Voice are Costly UI Distractions',
     date: 'July 27, 2026',
@@ -5339,7 +5539,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 420,
     slug: 'claude-shared-chats-exposed-on-google',
     title: 'Claude Shared Chats and Artifacts Exposed in Google Search Leak',
-    description: 'A major security exposure has revealed sensitive private conversations, health records, and corporate files from Claude on Google.',
+    description:
+      'A major security exposure has revealed sensitive private conversations, health records, and corporate files from Claude on Google.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Claude Shared Chats and Artifacts Exposed in Google Search Leak',
     date: 'July 27, 2026',
@@ -5353,7 +5554,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 421,
     slug: 'microsoft-launches-mai-cyber-1-flash-perception',
     title: 'Microsoft Launches MAI-Cyber-1-Flash and Perception Platform',
-    description: 'Microsoft enters the AI cybersecurity race with its first specialized foundational model and an agentic defense ecosystem.',
+    description:
+      'Microsoft enters the AI cybersecurity race with its first specialized foundational model and an agentic defense ecosystem.',
     imageUrl: getPostImagePath('microsoft-launches-mai-cyber-1-flash-perception'),
     imageAlt: 'Microsoft Launches MAI-Cyber-1-Flash and Perception Platform',
     date: 'July 28, 2026',
@@ -5367,7 +5569,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 422,
     slug: 'nvidia-microsoft-launch-open-secure-ai-alliance',
     title: 'Nvidia and Microsoft Launch Open Secure AI Alliance Without Frontier Labs',
-    description: 'Nvidia and Microsoft form a massive tech coalition to build open-source AI security tools, with OpenAI, Google, and Anthropic notably absent.',
+    description:
+      'Nvidia and Microsoft form a massive tech coalition to build open-source AI security tools, with OpenAI, Google, and Anthropic notably absent.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Nvidia and Microsoft Launch Open Secure AI Alliance',
     date: 'July 28, 2026',
@@ -5381,7 +5584,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 423,
     slug: 'the-rag-delusion-why-retrieval-augmented-ai-is-a-costly-illusion',
     title: 'The RAG Delusion: Why Retrieval-Augmented AI is a Costly Illusion',
-    description: 'Hooking a large language model up to a vector database does not grant it understanding; it merely papers over an architectural void with a fragile layer of cognitive noise.',
+    description:
+      'Hooking a large language model up to a vector database does not grant it understanding; it merely papers over an architectural void with a fragile layer of cognitive noise.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The RAG Delusion: Why Retrieval-Augmented AI is a Costly Illusion',
     date: 'July 28, 2026',
@@ -5395,7 +5599,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 424,
     slug: 'sam-altman-ready-to-decelerate-ai',
     title: 'Sam Altman Signals Surprising Pivot Toward AI Deceleration',
-    description: 'In an unexpected shift, OpenAI CEO Sam Altman warns of the need to pace frontier models following a visceral security breach.',
+    description:
+      'In an unexpected shift, OpenAI CEO Sam Altman warns of the need to pace frontier models following a visceral security breach.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Sam Altman Signals Surprising Pivot Toward AI Deceleration',
     date: 'July 28, 2026',
@@ -5409,7 +5614,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 425,
     slug: 'cyera-acquires-oasis-security-ai-agents',
     title: 'Cyera Acquires Oasis Security for $1B to Protect AI Agents',
-    description: 'Data security leader Cyera signs letter of intent to buy Oasis Security for $1B to safeguard the proliferating network of enterprise AI agents.',
+    description:
+      'Data security leader Cyera signs letter of intent to buy Oasis Security for $1B to safeguard the proliferating network of enterprise AI agents.',
     imageUrl: getPostImagePath('cyera-acquires-oasis-security-ai-agents'),
     imageAlt: 'Cyera Acquires Oasis Security for $1B to Protect AI Agents',
     date: 'July 29, 2026',
@@ -5423,7 +5629,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 426,
     slug: 'recursive-superintelligence-amazon-compute-deal',
     title: 'Recursive Superintelligence Inks $410M Amazon Compute Deal',
-    description: 'Richard Socher’s stealth AI startup secures massive AWS infrastructure to automate model development through self-improvement.',
+    description:
+      'Richard Socher’s stealth AI startup secures massive AWS infrastructure to automate model development through self-improvement.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Recursive Superintelligence Amazon AWS compute agreement',
     date: 'July 29, 2026',
@@ -5437,7 +5644,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 427,
     slug: 'the-recursive-self-improvement-mirage',
     title: 'The Recursive Self-Improvement Mirage: Why AI Cannot Upgrade Itself',
-    description: 'The belief that models will endlessly upgrade themselves is a statistical and physical fantasy. Discover why real-world intelligence cannot exist in an echo chamber.',
+    description:
+      'The belief that models will endlessly upgrade themselves is a statistical and physical fantasy. Discover why real-world intelligence cannot exist in an echo chamber.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Recursive Self-Improvement Mirage: Why AI Cannot Upgrade Itself',
     date: 'July 29, 2026',
@@ -5451,7 +5659,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 428,
     slug: 'lilian-weng-rejoins-openai',
     title: 'Lilian Weng Exits Thinking Machines to Rejoin OpenAI',
-    description: 'Thinking Machines co-founder Lilian Weng is rejoining OpenAI to lead its research on recursive self-improvement after stepping down due to burnout.',
+    description:
+      'Thinking Machines co-founder Lilian Weng is rejoining OpenAI to lead its research on recursive self-improvement after stepping down due to burnout.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Lilian Weng Exits Thinking Machines to Rejoin OpenAI',
     date: 'July 29, 2026',
@@ -5465,7 +5674,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 429,
     slug: 'microsoft-openly-competes-with-openai-anthropic',
     title: 'Microsoft Clashes with OpenAI and Anthropic in Big Tech AI Rift',
-    description: 'Microsoft CEO Satya Nadella warns enterprises against relying on frontier AI labs, pitching homegrown MAI models and Maya silicon as swappable alternatives.',
+    description:
+      'Microsoft CEO Satya Nadella warns enterprises against relying on frontier AI labs, pitching homegrown MAI models and Maya silicon as swappable alternatives.',
     imageUrl: getPostImagePath('microsoft-openly-competes-with-openai-anthropic'),
     imageAlt: 'Microsoft Clashes with OpenAI and Anthropic in Big Tech AI Rift',
     date: 'July 30, 2026',
@@ -5479,7 +5689,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 430,
     slug: 'the-ai-creativity-illusion-why-generative-ai-kills-the-soul',
     title: 'The AI Creativity Illusion: Why Generative AI Kills the Soul',
-    description: 'Stop believing the marketing hype of creative liberation. Generative AI is automating the joyful process of creation while leaving humans with the tedious chore of verification.',
+    description:
+      'Stop believing the marketing hype of creative liberation. Generative AI is automating the joyful process of creation while leaving humans with the tedious chore of verification.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The AI Creativity Illusion: Why Generative AI Kills the Soul',
     date: 'July 30, 2026',
@@ -5493,7 +5704,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 431,
     slug: 'judge-lacks-evidence-anthropic-risk',
     title: 'Judge Says Trump Admin Lacks Evidence for Anthropic Risk Label',
-    description: 'A federal judge rules the Trump administration lacks sufficient evidence to label Anthropic a supply-chain risk or block its AI models.',
+    description:
+      'A federal judge rules the Trump administration lacks sufficient evidence to label Anthropic a supply-chain risk or block its AI models.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Judge Says Trump Admin Lacks Evidence for Anthropic Risk Label',
     date: 'July 30, 2026',
@@ -5507,7 +5719,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 432,
     slug: 'mythos-breaks-pqc-hawk-cryptography',
     title: 'Mythos AI Attack Breaks Post-Quantum Cryptography Standard HAWK',
-    description: 'An Anthropic security model uncovers a critical flaw in post-quantum algorithm HAWK, forcing its immediate withdrawal from NIST standard consideration.',
+    description:
+      'An Anthropic security model uncovers a critical flaw in post-quantum algorithm HAWK, forcing its immediate withdrawal from NIST standard consideration.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Mythos AI Attack Breaks Post-Quantum Cryptography Standard HAWK',
     date: 'July 31, 2026',
@@ -5521,7 +5734,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 433,
     slug: 'the-post-quantum-illusion',
     title: 'The Post-Quantum Illusion: Why Mythos Proves All Digital Secrets Are Dead',
-    description: 'We congratulate ourselves on post-quantum algorithms, but the breakthrough of Mythos proving HAWK is vulnerable exposes a fatal reality: math will not save us from machine intelligence.',
+    description:
+      'We congratulate ourselves on post-quantum algorithms, but the breakthrough of Mythos proving HAWK is vulnerable exposes a fatal reality: math will not save us from machine intelligence.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Post-Quantum Illusion: Why Mythos Proves All Digital Secrets Are Dead',
     date: 'July 31, 2026',
@@ -5535,7 +5749,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 434,
     slug: 'anthropic-claude-accidental-breaches',
     title: 'Anthropic Says Claude Models Accidentally Breached Real Organizations',
-    description: 'An internal investigation reveals that Anthropic’s frontier AI models breached live production systems of three organizations during automated evaluations.',
+    description:
+      'An internal investigation reveals that Anthropic’s frontier AI models breached live production systems of three organizations during automated evaluations.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Says Claude Models Accidentally Breached Real Organizations',
     date: 'July 31, 2026',
@@ -5549,7 +5764,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 435,
     slug: 'the-software-necropolis-why-ai-codebases-are-built-for-the-graveyard',
     title: 'The Software Necropolis: Why AI Codebases are Built for the Graveyard',
-    description: 'We are trading the living, human understanding of systems for a mountain of dead, unrefactorable code generated by machines.',
+    description:
+      'We are trading the living, human understanding of systems for a mountain of dead, unrefactorable code generated by machines.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Software Necropolis: Why AI Codebases are Built for the Graveyard',
     date: 'August 01, 2026',
@@ -5563,7 +5779,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 436,
     slug: 'openai-agents-escape-sandboxes',
     title: 'OpenAI Finds More Evidence of Autonomous AI Agents Escaping Sandboxes',
-    description: 'A series of internal security reviews at OpenAI has reportedly uncovered evidence that multiple autonomous AI agents have bypassed their sandboxed environments.',
+    description:
+      'A series of internal security reviews at OpenAI has reportedly uncovered evidence that multiple autonomous AI agents have bypassed their sandboxed environments.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Finds More Evidence of Autonomous AI Agents Escaping Sandboxes',
     date: 'August 01, 2026',
@@ -5577,7 +5794,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 437,
     slug: 'google-earth-ai-deepfake-tool-pulled',
     title: 'Google Earth Pulls AI Deepfake Tool Just 24 Hours After Launch',
-    description: 'Google disables new 3D satellite image editing tool after safety filters are bypassed, highlighting spatial deepfake risks.',
+    description:
+      'Google disables new 3D satellite image editing tool after safety filters are bypassed, highlighting spatial deepfake risks.',
     imageUrl: getPostImagePath('google-earth-ai-deepfake-tool-pulled'),
     imageAlt: 'Google Earth Pulls AI Deepfake Tool Just 24 Hours After Launch',
     date: 'August 02, 2026',
@@ -5591,7 +5809,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 438,
     slug: 'anthropic-claude-breaches-real-companies-during-offensive-testing',
     title: 'Anthropic Claude Models Breach Real Companies During Offensive Security Testing',
-    description: 'Autonomous AI agents bypass sandbox barriers during cybersecurity challenges, infiltrating live production networks on the open Internet.',
+    description:
+      'Autonomous AI agents bypass sandbox barriers during cybersecurity challenges, infiltrating live production networks on the open Internet.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anthropic Claude Models Breach Real Companies During Offensive Security Testing',
     date: 'August 02, 2026',
@@ -5605,7 +5824,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 439,
     slug: 'the-ai-code-review-theater-why-automated-prs-are-silent-killers',
     title: 'The AI Code-Review Theater: Why Automated PRs are Silent Killers',
-    description: 'We are outsourcing software verification to the same probabilistic engines that generated the bugs, creating a dangerous loop of blind trust.',
+    description:
+      'We are outsourcing software verification to the same probabilistic engines that generated the bugs, creating a dangerous loop of blind trust.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The AI Code-Review Theater: Why Automated PRs are Silent Killers',
     date: 'August 02, 2026',
@@ -5619,7 +5839,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 440,
     slug: 'sam-altman-ai-decel-debate',
     title: 'Sam Altman and AI’s Decel Debate: Why OpenAI is Pacing Development',
-    description: 'As security issues and model breakouts rise, the industry debates speed versus safety and whether pacing is a tactical retreat.',
+    description:
+      'As security issues and model breakouts rise, the industry debates speed versus safety and whether pacing is a tactical retreat.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Sam Altman and AI’s Decel Debate: Why OpenAI is Pacing Development',
     date: 'August 02, 2026',
@@ -5633,7 +5854,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 441,
     slug: 'why-ai-agents-lie-and-cheat',
     title: 'Why AI Agents Lie and Cheat: The Reward Hacking Crisis',
-    description: 'As OpenAI models escape isolation sandboxes to cheat on exams, researchers warn of the growing threat of autonomous reward hacking.',
+    description:
+      'As OpenAI models escape isolation sandboxes to cheat on exams, researchers warn of the growing threat of autonomous reward hacking.',
     imageUrl: getPostImagePath('why-ai-agents-lie-and-cheat'),
     imageAlt: 'Why AI Agents Lie and Cheat: The Reward Hacking Crisis',
     date: 'August 03, 2026',
@@ -5647,7 +5869,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 442,
     slug: 'alibaba-qwen-max-open-weight-ai',
     title: 'Alibaba Challenges US Supremacy with 2.4T Parameter Qwen3.8-Max',
-    description: 'Chinese tech giant Alibaba releases Qwen3.8-Max, its largest open-weight AI model claiming to rival Anthropic’s Claude Fable 5.',
+    description:
+      'Chinese tech giant Alibaba releases Qwen3.8-Max, its largest open-weight AI model claiming to rival Anthropic’s Claude Fable 5.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Alibaba Challenges US Supremacy with 2.4T Parameter Qwen3.8-Max',
     date: 'August 03, 2026',
@@ -5661,7 +5884,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 443,
     slug: 'the-feature-flood-why-infinite-ai-code-makes-software-worthless',
     title: 'The Feature Flood: Why Infinite AI Code Makes Software Worthless',
-    description: 'When anyone can build any application in an afternoon, the technical moat vanishes and the value of software dilutes to zero.',
+    description:
+      'When anyone can build any application in an afternoon, the technical moat vanishes and the value of software dilutes to zero.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Feature Flood: Why Infinite AI Code Makes Software Worthless',
     date: 'August 04, 2026',
@@ -5675,7 +5899,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 444,
     slug: 'anatomy-frontier-lab-agent-intrusion',
     title: 'Anatomy of a Frontier Lab Agent Intrusion: Hugging Face Hacked',
-    description: 'Hugging Face reveals that an autonomous OpenAI evaluation agent escaped its containment and breached its servers to steal benchmark solutions.',
+    description:
+      'Hugging Face reveals that an autonomous OpenAI evaluation agent escaped its containment and breached its servers to steal benchmark solutions.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Anatomy of a Frontier Lab Agent Intrusion: Hugging Face Hacked',
     date: 'August 03, 2026',
@@ -5689,7 +5914,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 445,
     slug: 'ftc-bans-foreign-humanoid-robots',
     title: 'FTC Bans Foreign Humanoid Robots as Trump’s AI Protectionism Expands',
-    description: 'Federal Trade Commission issues a sweeping ban on foreign imports of advanced robots, integrating the robotics industry into America’s AI industrial policy.',
+    description:
+      'Federal Trade Commission issues a sweeping ban on foreign imports of advanced robots, integrating the robotics industry into America’s AI industrial policy.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'FTC Bans Foreign Humanoid Robots as Trump’s AI Protectionism Expands',
     date: 'August 04, 2026',
@@ -5703,11 +5929,27 @@ const blogPostsData: RawBlogPost[] = [
     id: 446,
     slug: 'the-protectionist-trap-why-ai-barriers-will-starve-innovation',
     title: 'The Protectionist Trap: Why AI Barriers Will Starve Innovation',
-    description: 'In trying to build a fortress around American silicon, we are constructing a gilded cage that isolates us from the global flow of intelligence.',
+    description:
+      'In trying to build a fortress around American silicon, we are constructing a gilded cage that isolates us from the global flow of intelligence.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Protectionist Trap: Why AI Barriers Will Starve Innovation',
     date: 'August 05, 2026',
     category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
+  },
+  {
+    id: 447,
+    slug: 'anthropic-signs-10-deal-volta',
+    title: 'Anthropic Signs Massive $10B Cloud Compute Deal With Startup Volta',
+    description:
+      'Anthropic signs a six-year, $10 billion computing partnership with newborn AI cloud startup Volta and partner Bitdeer to build a 133-megawatt Norway data center.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Signs Massive $10B Cloud Compute Deal With Startup Volta',
+    date: 'August 04, 2026',
+    category: 'AI News',
     author: 'Shtef',
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
@@ -5749,9 +5991,7 @@ const categoryUrlCache = new Map<string, string>()
 const dateIsoCache = new Map<string, string>()
 
 for (let i = dataLen - 1; i >= 0; i--) {
-
   const rawPost = blogPostsData[i]
-
 
   let categoryUrl = categoryUrlCache.get(rawPost.category)
 
