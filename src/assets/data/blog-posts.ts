@@ -5684,6 +5684,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 445,
+    slug: 'ftc-bans-foreign-humanoid-robots',
+    title: 'FTC Bans Foreign Humanoid Robots as Trump’s AI Protectionism Expands',
+    description: 'Federal Trade Commission issues a sweeping ban on foreign imports of advanced robots, integrating the robotics industry into America’s AI industrial policy.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'FTC Bans Foreign Humanoid Robots as Trump’s AI Protectionism Expands',
+    date: 'August 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
