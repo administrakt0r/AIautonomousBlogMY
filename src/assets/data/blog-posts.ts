@@ -5698,6 +5698,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 446,
+    slug: 'the-protectionist-trap-why-ai-barriers-will-starve-innovation',
+    title: 'The Protectionist Trap: Why AI Barriers Will Starve Innovation',
+    description: 'In trying to build a fortress around American silicon, we are constructing a gilded cage that isolates us from the global flow of intelligence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Protectionist Trap: Why AI Barriers Will Starve Innovation',
+    date: 'August 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
