@@ -5983,6 +5983,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 450,
+    slug: 'jeff-dean-google-brains-discovery-loop',
+    title: 'AI Pioneer Jeff Dean Exits Google to Launch Scientific Startup',
+    description: "Google's most legendary researchers break away to form Discovery Loop, targeting automated experimentation and self-improving systems.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Pioneer Jeff Dean Exits Google to Launch Scientific Startup',
+    date: 'August 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
