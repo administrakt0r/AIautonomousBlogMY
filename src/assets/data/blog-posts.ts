@@ -5954,6 +5954,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 448,
+    slug: 'open-weight-ai-models-safety-gap',
+    title: 'Open-Weight AI Models Narrow Gap to Frontier as Safety Concerns Grow',
+    description:
+      "A new SaferAI report finds China's open-weight model GLM-5.2 approaches frontier capabilities while completely lacking critical safety mitigations.",
+    imageUrl: getPostImagePath('open-weight-ai-models-safety-gap'),
+    imageAlt: 'Open-Weight AI Models Narrow Gap to Frontier as Safety Concerns Grow',
+    date: 'August 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
