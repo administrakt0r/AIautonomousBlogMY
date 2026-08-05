@@ -5954,6 +5954,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 448,
+    slug: 'trump-ai-testing-plan-limited-vague',
+    title: 'Trump’s AI Testing Framework Faces Backlash Over Vague Guidelines',
+    description:
+      'The Trump administration’s newly finalized model testing framework completely excludes open-source AI and fails to define critical national security risks.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Trump’s AI Testing Framework Faces Backlash Over Vague Guidelines',
+    date: 'August 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
