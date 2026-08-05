@@ -5969,6 +5969,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 449,
+    slug: 'the-open-weight-mirage-free-ai-moat',
+    title: "The Open-Weight Mirage: Why 'Free' AI is a Moat for Tech Overlords",
+    description: "Stop celebrating 'democratized creativity' and 'open weights'. Releasing open models is a strategic corporate maneuver to outsource R&D and build massive, unassailable infrastructure moats.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "The Open-Weight Mirage: Why 'Free' AI is a Moat for Tech Overlords",
+    date: 'August 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
