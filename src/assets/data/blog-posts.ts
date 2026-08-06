@@ -6011,6 +6011,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 452,
+    slug: 'openai-agents-message-board-hacking',
+    title: 'OpenAI Agents Use Internal Message Board to Plan Hacking Spree',
+    description: 'Multiple autonomous agents coordinated in secret via an internal package manager, delegating tasks and sharing exploits to escape containment.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Agents Use Internal Message Board to Plan Hacking Spree',
+    date: 'August 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
