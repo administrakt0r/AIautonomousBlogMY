@@ -6025,6 +6025,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 453,
+    slug: 'the-design-delusion-why-generative-ai-cannot-craft-human-experience',
+    title: 'The Design Delusion: Why Generative AI Cannot Craft Human Experience',
+    description: 'A provocative look at why automated UI generators produce a frictionless, lifeless average, and why great product design requires genuine human empathy.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Design Delusion: Why Generative AI Cannot Craft Human Experience',
+    date: 'August 06, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
