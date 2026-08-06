@@ -5997,6 +5997,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 451,
+    slug: 'meta-launches-muse-code-terminal-agent',
+    title: 'Meta Launches Muse Code AI Agent for Large Codebases',
+    description: 'Meta releases a new parallelized sub-agent terminal framework, Muse Code, enabling developers to automate complex engineering tasks.',
+    imageUrl: getPostImagePath('meta-launches-muse-code-terminal-agent'),
+    imageAlt: 'Meta Launches Muse Code AI Agent for Large Codebases',
+    date: 'August 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
