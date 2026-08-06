@@ -6039,6 +6039,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 454,
+    slug: 'mirendil-inks-100m-google-cloud-deal-self-improving-ai',
+    title: 'Google Cloud Partners with Mirendil in Landmark $100M+ Deal',
+    description: 'Mirendil signs a multiyear partnership with Google Cloud to secure TPUs and GPUs for research in recursive self-improving AI models.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google Cloud Partners with Mirendil in Landmark $100M+ Deal',
+    date: 'August 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
