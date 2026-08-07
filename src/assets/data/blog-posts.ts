@@ -6053,6 +6053,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 455,
+    slug: 'openai-unlimited-chatgpt-free-users',
+    title: 'OpenAI Brings Unlimited ChatGPT Text Chats to Free Users',
+    description: 'OpenAI removes text-based chat limits on ChatGPT for all free users, powered by the new GPT-5.6 Luna model.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Brings Unlimited ChatGPT Text Chats to Free Users',
+    date: 'August 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
