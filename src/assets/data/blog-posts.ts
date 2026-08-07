@@ -6081,6 +6081,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 457,
+    slug: 'cloudflare-launches-kitesurf-browser-for-ai-agents',
+    title: 'Cloudflare Launches Kitesurf: A Cloud-Hosted Browser Built for AI Agents',
+    description: 'Cloudflare introduces Kitesurf, a serverless cloud browser optimized for performance and security for autonomous AI agents.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Cloudflare Launches Kitesurf Cloud-Hosted Browser Built for AI Agents',
+    date: 'August 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
