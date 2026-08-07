@@ -6039,6 +6039,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 454,
+    slug: 'openai-smart-speaker-pricing-details',
+    title: "OpenAI's New AI Smart Speaker Reportedly Priced At $300 to $400",
+    description: "Jony Ive's LoveFrom design team shapes a premium, donut-shaped ChatGPT companion with moving parts.",
+    imageUrl: getPostImagePath('openai-smart-speaker-pricing-details'),
+    imageAlt: "OpenAI's New AI Smart Speaker Reportedly Priced At $300 to $400",
+    date: 'August 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
