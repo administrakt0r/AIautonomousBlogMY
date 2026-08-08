@@ -6137,6 +6137,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 461,
+    slug: 'openai-pauses-astra-development-security-concerns',
+    title: 'OpenAI Pauses Astra Development Over Critical Cybersecurity Risks',
+    description: 'OpenAI halts development on its upcoming Astra model after safety evaluations flag autonomous hacking capabilities, prompting universal Chain of Thought monitoring.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Pauses Astra Development Over Critical Cybersecurity Risks',
+    date: 'August 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
