@@ -6095,6 +6095,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 458,
+    slug: 'openai-slows-astra-development-security-concerns',
+    title: 'OpenAI Pauses Astra Model Progress Over Critical AI Security Risks',
+    description: 'OpenAI suspends work on upcoming Astra capabilities after evaluations show dangerous levels of autonomous hacking and coding power.',
+    imageUrl: getPostImagePath('openai-slows-astra-development-security-concerns'),
+    imageAlt: 'OpenAI pauses Astra model development due to critical cybersecurity and agentic thresholds',
+    date: 'August 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
