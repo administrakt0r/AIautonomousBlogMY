@@ -6109,6 +6109,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 459,
+    slug: 'rippling-launches-ai-spend-console',
+    title: 'Rippling Launches AI Spend Console to Combat Tokenmaxxing Waste',
+    description: 'Rippling debuts AI Spend Console, an enterprise auditing tool to monitor runaway employee token usage and tie AI prompts to performance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Rippling Launches AI Spend Console to Combat Tokenmaxxing Waste',
+    date: 'August 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
