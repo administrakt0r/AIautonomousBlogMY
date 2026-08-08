@@ -6123,6 +6123,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 460,
+    slug: 'the-ai-janitor-fallacy',
+    title: 'The AI Janitor Fallacy: Why You Are Just a High-Class Sweeper',
+    description: 'Silicon Valley promised a golden age of creative orchestration, but building with AI has turned software engineers into glorified prompt sweepers and error-hunting janitors.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Janitor Fallacy: Why You Are Just a High-Class Sweeper',
+    date: 'August 08, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
