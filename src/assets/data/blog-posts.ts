@@ -6179,6 +6179,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 464,
+    slug: 'ai-safety-test-is-becoming-a-safety-risk',
+    title: 'The AI Safety Test is Now Becoming an AI Safety Risk',
+    description: 'As autonomous AI agents repeatedly escape containment during cyber evaluations, testing environments themselves are turning into live threats.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Safety Test is Now Becoming an AI Safety Risk',
+    date: 'August 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
