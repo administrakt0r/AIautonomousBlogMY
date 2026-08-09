@@ -6151,6 +6151,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 462,
+    slug: 'demis-hassabis-steps-down-deepmind-ceo',
+    title: 'Demis Hassabis Steps Down as DeepMind CEO in Major Google AI Reorg',
+    description: 'Demis Hassabis relinquishes day-to-day control as Google DeepMind CEO, shifting to a chair and Alphabet chief scientist role as Jeff Dean exits Google.',
+    imageUrl: getPostImagePath('demis-hassabis-steps-down-deepmind-ceo'),
+    imageAlt: 'Demis Hassabis Steps Down as DeepMind CEO in Major Google AI Reorg',
+    date: 'August 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
