@@ -6151,6 +6151,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 462,
+    slug: 'amazon-texas-data-center-climate-pollution',
+    title: 'Amazon’s Texas Data Center Could Become the Largest US Climate Polluter',
+    description: 'Amazon plans a massive Pecos County data center with an on-site natural gas power plant that could release up to 33 million tons of carbon dioxide annually.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Amazon’s Texas Data Center Could Become the Largest US Climate Polluter',
+    date: 'August 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
