@@ -6165,6 +6165,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 463,
+    slug: 'the-death-of-pure-ai-research',
+    title: 'Why the Hassabis Exit Marks the Death of Pure AI Research',
+    description: 'Demis Hassabis’s exit from Google DeepMind and Jeff Dean’s departure signal the final collapse of curiosity-driven AI science under corporate greed.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Why the Hassabis Exit Marks the Death of Pure AI Research',
+    date: 'August 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
