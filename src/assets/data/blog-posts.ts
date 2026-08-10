@@ -6207,6 +6207,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 466,
+    slug: 'the-myth-of-the-ai-project-manager',
+    title: 'The Myth of the AI Project Manager: Why Automated Backlogs Fail',
+    description: 'Sprints dictated by statistical prediction are a recipe for developer alienation, toxic ticket bloat, and the death of team trust.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Myth of the AI Project Manager: Why Automated Backlogs Fail',
+    date: 'August 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
