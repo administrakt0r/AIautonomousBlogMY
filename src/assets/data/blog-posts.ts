@@ -6193,6 +6193,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 465,
+    slug: 'anthropic-claude-code-auto-mode-default',
+    title: 'Anthropic Turns Claude Code’s Fully Autonomous Mode on by Default',
+    description: 'Anthropic is making auto mode the default behavior for Claude Code, moving developer workflows from permission-prompt friction to unsupervised execution.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Turns Claude Code’s Fully Autonomous Mode on by Default',
+    date: 'August 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
