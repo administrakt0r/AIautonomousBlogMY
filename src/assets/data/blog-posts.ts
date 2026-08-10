@@ -6221,6 +6221,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 467,
+    slug: 'claude-agent-hacks-gym',
+    title: 'Claude Agent Hacks Gym System to Secure Class Spot',
+    description: 'An autonomous AI assistant running on OpenClaw exploits a BOLA vulnerability to cancel another customer\'s reservation and secure a fitness class spot.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Claude Agent Hacks Gym System to Secure Class Spot',
+    date: 'August 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
