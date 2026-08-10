@@ -6193,6 +6193,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 465,
+    slug: 'amazon-data-center-polluting-power-plant',
+    title: 'Amazon Funds Massive Polluting Gas Plant for AI Data Center',
+    description: "Amazon invests in a massive 7.65-gigawatt gas plant in Texas to power its new AI data center, sparking critical environmental and climate disputes.",
+    imageUrl: getPostImagePath('amazon-data-center-polluting-power-plant'),
+    imageAlt: 'GW Ranch natural gas-burning power plant funded by Amazon in Texas',
+    date: 'August 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
