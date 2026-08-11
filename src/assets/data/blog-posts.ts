@@ -6298,6 +6298,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 471,
+    slug: 'openai-executive-brad-lightcap-departs',
+    title: 'OpenAI Executive Brad Lightcap Departs After Eight Years',
+    description: 'Special Projects Lead and former Chief Operating Officer Brad Lightcap announced his departure as OpenAI reorganizes ahead of its IPO.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Executive Brad Lightcap Departs After Eight Years',
+    date: 'August 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
