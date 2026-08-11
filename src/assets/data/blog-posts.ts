@@ -6283,6 +6283,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 470,
+    slug: 'prompt-portability-vendor-lock-in-myth',
+    title: 'The Prompt Portability Myth: Why Natural Language is a Vendor Moat',
+    description:
+      'Human language was promised as the ultimate open interface, but it has actually become a fragile, model-specific lock-in trap.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Prompt Portability Myth: Why Natural Language is a Vendor Moat',
+    date: 'August 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
