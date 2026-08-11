@@ -6235,6 +6235,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 468,
+    slug: 'openai-launches-gpt-5-6-cyber-model',
+    title: 'OpenAI Launches GPT-5.6-Cyber to Combat Rogue AI Agents',
+    description: 'OpenAI unveils GPT-5.6-Cyber and a two-tier Daybreak platform to equip cybersecurity defenders against autonomous agentic threats.',
+    imageUrl: getPostImagePath('openai-launches-gpt-5-6-cyber-model'),
+    imageAlt: 'OpenAI Launches GPT-5.6-Cyber to Combat Rogue AI Agents',
+    date: 'August 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
