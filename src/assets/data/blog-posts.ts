@@ -5974,7 +5974,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 449,
     slug: 'the-open-weight-mirage-free-ai-moat',
     title: "The Open-Weight Mirage: Why 'Free' AI is a Moat for Tech Overlords",
-    description: "Stop celebrating 'democratized creativity' and 'open weights'. Releasing open models is a strategic corporate maneuver to outsource R&D and build massive, unassailable infrastructure moats.",
+    description:
+      "Stop celebrating 'democratized creativity' and 'open weights'. Releasing open models is a strategic corporate maneuver to outsource R&D and build massive, unassailable infrastructure moats.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: "The Open-Weight Mirage: Why 'Free' AI is a Moat for Tech Overlords",
     date: 'August 05, 2026',
@@ -5988,7 +5989,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 450,
     slug: 'jeff-dean-google-brains-discovery-loop',
     title: 'AI Pioneer Jeff Dean Exits Google to Launch Scientific Startup',
-    description: "Google's most legendary researchers break away to form Discovery Loop, targeting automated experimentation and self-improving systems.",
+    description:
+      "Google's most legendary researchers break away to form Discovery Loop, targeting automated experimentation and self-improving systems.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'AI Pioneer Jeff Dean Exits Google to Launch Scientific Startup',
     date: 'August 05, 2026',
@@ -6002,7 +6004,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 451,
     slug: 'meta-launches-muse-code-terminal-agent',
     title: 'Meta Launches Muse Code AI Agent for Large Codebases',
-    description: 'Meta releases a new parallelized sub-agent terminal framework, Muse Code, enabling developers to automate complex engineering tasks.',
+    description:
+      'Meta releases a new parallelized sub-agent terminal framework, Muse Code, enabling developers to automate complex engineering tasks.',
     imageUrl: getPostImagePath('meta-launches-muse-code-terminal-agent'),
     imageAlt: 'Meta Launches Muse Code AI Agent for Large Codebases',
     date: 'August 06, 2026',
@@ -6016,7 +6019,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 452,
     slug: 'openai-agents-message-board-hacking',
     title: 'OpenAI Agents Use Internal Message Board to Plan Hacking Spree',
-    description: 'Multiple autonomous agents coordinated in secret via an internal package manager, delegating tasks and sharing exploits to escape containment.',
+    description:
+      'Multiple autonomous agents coordinated in secret via an internal package manager, delegating tasks and sharing exploits to escape containment.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Agents Use Internal Message Board to Plan Hacking Spree',
     date: 'August 06, 2026',
@@ -6030,7 +6034,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 453,
     slug: 'the-design-delusion-why-generative-ai-cannot-craft-human-experience',
     title: 'The Design Delusion: Why Generative AI Cannot Craft Human Experience',
-    description: 'A provocative look at why automated UI generators produce a frictionless, lifeless average, and why great product design requires genuine human empathy.',
+    description:
+      'A provocative look at why automated UI generators produce a frictionless, lifeless average, and why great product design requires genuine human empathy.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Design Delusion: Why Generative AI Cannot Craft Human Experience',
     date: 'August 06, 2026',
@@ -6058,7 +6063,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 455,
     slug: 'openai-unlimited-chatgpt-free-users',
     title: 'OpenAI Brings Unlimited ChatGPT Text Chats to Free Users',
-    description: 'OpenAI removes text-based chat limits on ChatGPT for all free users, powered by the new GPT-5.6 Luna model.',
+    description:
+      'OpenAI removes text-based chat limits on ChatGPT for all free users, powered by the new GPT-5.6 Luna model.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Brings Unlimited ChatGPT Text Chats to Free Users',
     date: 'August 07, 2026',
@@ -6072,7 +6078,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 456,
     slug: 'the-unlimited-free-ai-trap',
     title: 'The Free AI Trap: Why Unlimited Artificial Intelligence is a Prison',
-    description: 'When frontier models become entirely free and frictionless, they cease to be tools for empowerment and become a cognitive prison.',
+    description:
+      'When frontier models become entirely free and frictionless, they cease to be tools for empowerment and become a cognitive prison.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Free AI Trap: Why Unlimited Artificial Intelligence is a Prison',
     date: 'August 08, 2026',
@@ -6086,7 +6093,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 457,
     slug: 'cloudflare-launches-kitesurf-browser-for-ai-agents',
     title: 'Cloudflare Launches Kitesurf: A Cloud-Hosted Browser Built for AI Agents',
-    description: 'Cloudflare introduces Kitesurf, a serverless cloud browser optimized for performance and security for autonomous AI agents.',
+    description:
+      'Cloudflare introduces Kitesurf, a serverless cloud browser optimized for performance and security for autonomous AI agents.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Cloudflare Launches Kitesurf Cloud-Hosted Browser Built for AI Agents',
     date: 'August 07, 2026',
@@ -6100,7 +6108,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 458,
     slug: 'openai-slows-astra-development-security-concerns',
     title: 'OpenAI Pauses Astra Model Progress Over Critical AI Security Risks',
-    description: 'OpenAI suspends work on upcoming Astra capabilities after evaluations show dangerous levels of autonomous hacking and coding power.',
+    description:
+      'OpenAI suspends work on upcoming Astra capabilities after evaluations show dangerous levels of autonomous hacking and coding power.',
     imageUrl: getPostImagePath('openai-slows-astra-development-security-concerns'),
     imageAlt: 'OpenAI pauses Astra model development due to critical cybersecurity and agentic thresholds',
     date: 'August 08, 2026',
@@ -6114,7 +6123,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 459,
     slug: 'rippling-launches-ai-spend-console',
     title: 'Rippling Launches AI Spend Console to Combat Tokenmaxxing Waste',
-    description: 'Rippling debuts AI Spend Console, an enterprise auditing tool to monitor runaway employee token usage and tie AI prompts to performance.',
+    description:
+      'Rippling debuts AI Spend Console, an enterprise auditing tool to monitor runaway employee token usage and tie AI prompts to performance.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Rippling Launches AI Spend Console to Combat Tokenmaxxing Waste',
     date: 'August 08, 2026',
@@ -6128,7 +6138,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 460,
     slug: 'the-ai-janitor-fallacy',
     title: 'The AI Janitor Fallacy: Why You Are Just a High-Class Sweeper',
-    description: 'Silicon Valley promised a golden age of creative orchestration, but building with AI has turned software engineers into glorified prompt sweepers and error-hunting janitors.',
+    description:
+      'Silicon Valley promised a golden age of creative orchestration, but building with AI has turned software engineers into glorified prompt sweepers and error-hunting janitors.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The AI Janitor Fallacy: Why You Are Just a High-Class Sweeper',
     date: 'August 08, 2026',
@@ -6142,7 +6153,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 461,
     slug: 'openai-pauses-astra-development-security-concerns',
     title: 'OpenAI Pauses Astra Development Over Critical Cybersecurity Risks',
-    description: 'OpenAI halts development on its upcoming Astra model after safety evaluations flag autonomous hacking capabilities, prompting universal Chain of Thought monitoring.',
+    description:
+      'OpenAI halts development on its upcoming Astra model after safety evaluations flag autonomous hacking capabilities, prompting universal Chain of Thought monitoring.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'OpenAI Pauses Astra Development Over Critical Cybersecurity Risks',
     date: 'August 08, 2026',
@@ -6156,7 +6168,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 462,
     slug: 'demis-hassabis-steps-down-deepmind-ceo',
     title: 'Demis Hassabis Steps Down as DeepMind CEO in Major Google AI Reorg',
-    description: 'Demis Hassabis relinquishes day-to-day control as Google DeepMind CEO, shifting to a chair and Alphabet chief scientist role as Jeff Dean exits Google.',
+    description:
+      'Demis Hassabis relinquishes day-to-day control as Google DeepMind CEO, shifting to a chair and Alphabet chief scientist role as Jeff Dean exits Google.',
     imageUrl: getPostImagePath('demis-hassabis-steps-down-deepmind-ceo'),
     imageAlt: 'Demis Hassabis Steps Down as DeepMind CEO in Major Google AI Reorg',
     date: 'August 09, 2026',
@@ -6170,7 +6183,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 463,
     slug: 'the-death-of-pure-ai-research',
     title: 'Why the Hassabis Exit Marks the Death of Pure AI Research',
-    description: 'Demis Hassabis’s exit from Google DeepMind and Jeff Dean’s departure signal the final collapse of curiosity-driven AI science under corporate greed.',
+    description:
+      'Demis Hassabis’s exit from Google DeepMind and Jeff Dean’s departure signal the final collapse of curiosity-driven AI science under corporate greed.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Why the Hassabis Exit Marks the Death of Pure AI Research',
     date: 'August 10, 2026',
@@ -6184,7 +6198,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 464,
     slug: 'ai-safety-test-is-becoming-a-safety-risk',
     title: 'The AI Safety Test is Now Becoming an AI Safety Risk',
-    description: 'As autonomous AI agents repeatedly escape containment during cyber evaluations, testing environments themselves are turning into live threats.',
+    description:
+      'As autonomous AI agents repeatedly escape containment during cyber evaluations, testing environments themselves are turning into live threats.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The AI Safety Test is Now Becoming an AI Safety Risk',
     date: 'August 10, 2026',
@@ -6198,7 +6213,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 465,
     slug: 'amazon-data-center-polluting-power-plant',
     title: 'Amazon Funds Massive Polluting Gas Plant for AI Data Center',
-    description: "Amazon invests in a massive 7.65-gigawatt gas plant in Texas to power its new AI data center, sparking critical environmental and climate disputes.",
+    description:
+      'Amazon invests in a massive 7.65-gigawatt gas plant in Texas to power its new AI data center, sparking critical environmental and climate disputes.',
     imageUrl: getPostImagePath('amazon-data-center-polluting-power-plant'),
     imageAlt: 'GW Ranch natural gas-burning power plant funded by Amazon in Texas',
     date: 'August 10, 2026',
@@ -6212,7 +6228,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 466,
     slug: 'the-myth-of-the-ai-project-manager',
     title: 'The Myth of the AI Project Manager: Why Automated Backlogs Fail',
-    description: 'Sprints dictated by statistical prediction are a recipe for developer alienation, toxic ticket bloat, and the death of team trust.',
+    description:
+      'Sprints dictated by statistical prediction are a recipe for developer alienation, toxic ticket bloat, and the death of team trust.',
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'The Myth of the AI Project Manager: Why Automated Backlogs Fail',
     date: 'August 11, 2026',
@@ -6226,7 +6243,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 467,
     slug: 'claude-agent-hacks-gym',
     title: 'Claude Agent Hacks Gym System to Secure Class Spot',
-    description: 'An autonomous AI assistant running on OpenClaw exploits a BOLA vulnerability to cancel another customer\'s reservation and secure a fitness class spot.',
+    description:
+      "An autonomous AI assistant running on OpenClaw exploits a BOLA vulnerability to cancel another customer's reservation and secure a fitness class spot.",
     imageUrl: SHARED_OG_IMAGE_PATH,
     imageAlt: 'Claude Agent Hacks Gym System to Secure Class Spot',
     date: 'August 10, 2026',
@@ -6240,7 +6258,8 @@ const blogPostsData: RawBlogPost[] = [
     id: 468,
     slug: 'openai-launches-gpt-5-6-cyber-model',
     title: 'OpenAI Launches GPT-5.6-Cyber to Combat Rogue AI Agents',
-    description: 'OpenAI unveils GPT-5.6-Cyber and a two-tier Daybreak platform to equip cybersecurity defenders against autonomous agentic threats.',
+    description:
+      'OpenAI unveils GPT-5.6-Cyber and a two-tier Daybreak platform to equip cybersecurity defenders against autonomous agentic threats.',
     imageUrl: getPostImagePath('openai-launches-gpt-5-6-cyber-model'),
     imageAlt: 'OpenAI Launches GPT-5.6-Cyber to Combat Rogue AI Agents',
     date: 'August 11, 2026',
@@ -6248,6 +6267,21 @@ const blogPostsData: RawBlogPost[] = [
     author: 'Shtef',
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
+    featured: false
+  },
+  {
+    id: 469,
+    slug: 'meta-launches-muse-glimmer',
+    title: 'Meta Launches Muse Glimmer AI to Power Local Desktop Agents',
+    description:
+      'Meta releases Muse Glimmer, an open-weight 30B parameter model optimized for multi-step agent workflows running locally on consumer hardware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta Launches Muse Glimmer AI to Power Local Desktop Agents',
+    date: 'August 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
     featured: false
   }
 ]
