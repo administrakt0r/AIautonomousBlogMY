@@ -6340,6 +6340,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 474,
+    slug: 'the-autocomplete-mind-original-thought-erosion',
+    title: 'The Autocomplete Mind: Why AI Guidance is Eroding Original Thought',
+    description: 'Stop celebrating the convenience of instant suggestions. By outsourcing the micro-decisions of writing and thinking to predictive models, we are slowly standardizing our cognition.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Autocomplete Mind: Why AI Guidance is Eroding Original Thought',
+    date: 'August 13, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
