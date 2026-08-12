@@ -6354,6 +6354,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 475,
+    slug: 'spacexai-grok-bot-ai-agent-beta-launch',
+    title: 'SpaceXAI Launches Grok Bot AI Teammates in Public Beta',
+    description: 'SpaceXAI introduces Grok Bot, an always-on AI agent service designed to behave like independent AI teammates that execute complex workplace workflows.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SpaceXAI Launches Grok Bot AI Teammates in Public Beta',
+    date: 'August 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
