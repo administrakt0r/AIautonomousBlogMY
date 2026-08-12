@@ -6312,6 +6312,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 472,
+    slug: 'unreleased-anthropic-model-riemann-hypothesis',
+    title: 'Anthropic AI Model Moves Needle on Riemann Hypothesis',
+    description: 'An unreleased version of Claude has successfully improved the longstanding lower bound of zeros of the Riemann zeta function satisfying the hypothesis from 41.6% to 67.2% using 60 sub-agents.',
+    imageUrl: getPostImagePath('unreleased-anthropic-model-riemann-hypothesis'),
+    imageAlt: 'Anthropic AI Model Moves Needle on Riemann Hypothesis',
+    date: 'August 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
