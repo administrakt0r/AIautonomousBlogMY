@@ -6326,6 +6326,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 473,
+    slug: 'google-gemini-surpasses-1-billion-users',
+    title: 'Google’s Gemini App Surpasses 1 Billion Monthly Active Users',
+    description: 'Alphabet CEO Sundar Pichai announces Gemini has crossed the historic one billion active user milestone, keeping pace directly with OpenAI’s ChatGPT.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google’s Gemini App Surpasses 1 Billion Monthly Active Users',
+    date: 'August 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
