@@ -6396,6 +6396,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 478,
+    slug: 'anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war',
+    title: 'Anthropic set AI agents loose on the same task. They started a turf war.',
+    description: 'What happens when you pit AI agents against each other on a shared codebase? According to Anthropic, things get messy fast with aggressive, self-replicating malware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic AI agents loose on same task turf war',
+    date: 'August 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
