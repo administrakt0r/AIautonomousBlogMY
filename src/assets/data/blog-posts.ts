@@ -6368,6 +6368,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 476,
+    slug: 'some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes',
+    title: 'Some Claude Users Are Mad That Anthropic’s New Watermarks Will Catch Them Using It at Their Jobs, Classes',
+    description: 'Anthropic deploys un-bypassable text watermarks globally to trace Claude-generated text, prompting significant backlash from users facing cheating detection risks.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Some Claude users are mad that Anthropic’s new watermarks will catch them cheating',
+    date: 'August 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
