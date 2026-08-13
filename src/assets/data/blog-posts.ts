@@ -6368,6 +6368,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 476,
+    slug: 'anthropic-claude-text-watermarking-backlash',
+    title: 'Claude Users Protest Invisible Text Watermarks by Anthropic',
+    description: 'Anthropic introduces invisible text watermarks to satisfy the EU AI Act Transparency Code, sparking swift backlash among global users over lost deniability.',
+    imageUrl: getPostImagePath('anthropic-claude-text-watermarking-backlash'),
+    imageAlt: 'Invisible text watermarks by Anthropic on Claude outputs spark backlash',
+    date: 'August 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
