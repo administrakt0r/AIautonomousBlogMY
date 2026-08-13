@@ -6382,6 +6382,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 477,
+    slug: 'the-democratization-delusion-why-frictionless-ai-kills-creative-agency',
+    title: 'The Democratization Delusion: Why Frictionless AI Kills Creative Agency',
+    description: 'Generative tools are marketed as liberating human genius, but eliminating the friction of craftsmanship destroys the very agency of creation and hollows out human taste.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Democratization Delusion: Why Frictionless AI Kills Creative Agency',
+    date: 'August 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
