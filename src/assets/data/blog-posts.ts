@@ -6438,6 +6438,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 481,
+    slug: 'google-allows-removing-visible-watermarks-ai-generations',
+    title: 'Google Now Allows Users to Remove Visible AI Watermarks',
+    description: 'Google updates Gemini, Flow, and Lyria models to make visual AI watermarks optional while retaining invisible SynthID and C2PA metadata.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google Now Allows Users to Remove Visible AI Watermarks',
+    date: 'August 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
