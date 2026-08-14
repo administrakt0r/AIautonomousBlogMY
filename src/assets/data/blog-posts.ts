@@ -6410,6 +6410,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 479,
+    slug: 'openai-introduces-ultrafast-mode',
+    title: 'OpenAI Launches Ultrafast Mode to Accelerate GPT-5.6 Sol',
+    description: 'OpenAI releases Ultrafast mode for GPT-5.6 Sol, delivering up to 14x speeds and 750 tokens per second for real-time enterprise workflows.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches Ultrafast Mode to Accelerate GPT-5.6 Sol',
+    date: 'August 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
