@@ -6424,6 +6424,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 480,
+    slug: 'the-ai-documentation-delusion',
+    title: 'The AI Documentation Delusion: Why Automated Docs Kill Codebases',
+    description: 'Automated documentation is not a developer superpower; it is a lazy, high-speed dilution of codebase readability and system literacy.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Documentation Delusion: Why Automated Docs Kill Codebases',
+    date: 'August 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
