@@ -6466,6 +6466,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 483,
+    slug: 'joshua-kushner-warns-vcs-against-ai-euphoria',
+    title: 'Joshua Kushner Warns VCs Against AI Euphoria in Leaked Thrive Letter',
+    description: 'Thrive Capital founder Joshua Kushner chides Silicon Valley VCs for letting AI excitement weaken investment discipline in a leaked investor letter.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Joshua Kushner Warns VCs Against AI Euphoria in Leaked Thrive Letter',
+    date: 'August 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
