@@ -6480,6 +6480,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 484,
+    slug: 'the-vibe-coding-delusion',
+    title: 'The Vibe Coding Delusion: Why Prompts Cannot Replace Architecture',
+    description:
+      'Trading fundamental software engineering rigor for superficial AI acceleration is generating a systemic disaster.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Vibe Coding Delusion: Why Prompts Cannot Replace Architecture',
+    date: 'August 15, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
