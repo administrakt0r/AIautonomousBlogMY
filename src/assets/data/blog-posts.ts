@@ -6452,6 +6452,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 482,
+    slug: 'google-launches-gemini-3-7-flash',
+    title: 'Google Debuts Gemini 3.7 Flash as Intelligent AI Workhorse Model',
+    description: 'Google DeepMind introduces Gemini 3.7 Flash, delivering substantial coding gains and cutting API inference pricing in half for agentic workflows.',
+    imageUrl: getPostImagePath('google-launches-gemini-3-7-flash'),
+    imageAlt: 'Google Debuts Gemini 3.7 Flash as Intelligent AI Workhorse Model',
+    date: 'August 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
