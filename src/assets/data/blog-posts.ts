@@ -6495,6 +6495,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 485,
+    slug: 'databricks-raises-5b-at-190b-valuation',
+    title: 'Databricks Raises $5B at $190B Valuation Amid Massive AI Demand',
+    description:
+      'Unprecedented investor hunger turns a targeted $1B fundraise into a $5B mega-round for the enterprise AI data giant.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Databricks Raises $5B at $190B Valuation Amid Massive AI Demand',
+    date: 'August 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
