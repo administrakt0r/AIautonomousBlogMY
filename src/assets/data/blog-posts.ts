@@ -6555,6 +6555,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 489,
+    slug: 'stripe-acquires-openrouter-7b',
+    title: 'Stripe Acquires AI Gateway OpenRouter in $7B Mega-Deal',
+    description:
+      'Fintech giant Stripe reportedly acquires OpenRouter for over $7B to integrate payment infrastructure with multi-model AI routing.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Stripe Acquires AI Gateway OpenRouter in $7B Mega-Deal',
+    date: 'August 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
