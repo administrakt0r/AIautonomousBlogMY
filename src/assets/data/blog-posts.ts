@@ -6525,6 +6525,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 487,
+    slug: 'anthropic-claude-text-watermarking-technical-details',
+    title: 'Anthropic Details How Claude Text Watermarking Works Under EU AI Act',
+    description:
+      'Anthropic discloses technical details on its SynthID-Text watermarking rollout for Claude outputs to comply with European Union regulations.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Details How Claude Text Watermarking Works Under EU AI Act',
+    date: 'August 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
