@@ -6510,6 +6510,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 486,
+    slug: 'spacex-closes-cursor-acquisition-60b-deal',
+    title: 'SpaceX Closes $60B Cursor Acquisition for AI Computing',
+    description:
+      'SpaceX officially closes its landmark $60 billion deal for Cursor, uniting AI developer tools with massive GPU fleets.',
+    imageUrl: getPostImagePath('spacex-closes-cursor-acquisition-60b-deal'),
+    imageAlt: 'SpaceX Closes $60B Cursor Acquisition for AI Computing',
+    date: 'August 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
