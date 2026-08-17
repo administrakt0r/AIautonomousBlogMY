@@ -6615,6 +6615,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 493,
+    slug: 'nvidia-invests-1-5b-softbank-openai-data-center',
+    title: 'Nvidia Invests $1.5B in SoftBank Data Center for OpenAI Project',
+    description:
+      'Nvidia invests $1.5 billion in SB Energy and provides a $105B credit facility to power OpenAI’s 8GW Ports-Pike data center project.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia Invests $1.5B in SoftBank Data Center for OpenAI Project',
+    date: 'August 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
