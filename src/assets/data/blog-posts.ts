@@ -6570,6 +6570,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 490,
+    slug: 'anthropic-ceo-ai-backlash-crisis-of-trust',
+    title: 'Anthropic CEO Says AI Backlash Is a Fundamental Crisis of Trust',
+    description:
+      'Dario Amodei defends risk messaging, arguing public skepticism stems from unfulfilled corporate promises rather than executive warnings.',
+    imageUrl: getPostImagePath('anthropic-ceo-ai-backlash-crisis-of-trust'),
+    imageAlt: 'Anthropic CEO Says AI Backlash Is a Fundamental Crisis of Trust',
+    date: 'August 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
