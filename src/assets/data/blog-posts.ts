@@ -6600,6 +6600,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 492,
+    slug: 'the-preparedness-paradox-wall-street-ai-safety',
+    title: 'The Preparedness Paradox: Why Wall Street Silences AI Safety',
+    description:
+      'Disbanding internal AI safety teams ahead of mega-IPOs is not organizational maturity—it is financialized censorship of existential risk to satisfy Wall Street.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Preparedness Paradox: Why Wall Street Silences AI Safety',
+    date: 'August 17, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
