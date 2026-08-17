@@ -6585,6 +6585,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 491,
+    slug: 'openai-disbands-preparedness-team',
+    title: 'OpenAI Disbands Preparedness Team Ahead of Major IPO Push',
+    description:
+      'Safety responsibilities are redistributed across existing groups as OpenAI restructures core risk management teams prior to going public.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Disbands Preparedness Team Ahead of Major IPO Push',
+    date: 'August 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
