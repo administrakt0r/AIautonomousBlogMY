@@ -6645,6 +6645,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 495,
+    slug: 'the-shadow-infrastructure-why-ai-agents-are-breaking-enterprise-architecture',
+    title: 'The Shadow Infrastructure: Why AI Agents Are Breaking Enterprise Tech',
+    description:
+      'Enterprise IT thought autonomous agents would streamline workflows, but they are secretly spawning an unmanageable mesh of ghost dependencies and security liabilities.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Shadow Infrastructure: Why AI Agents Are Breaking Enterprise Tech',
+    date: 'August 18, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
