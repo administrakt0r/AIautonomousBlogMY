@@ -6660,6 +6660,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 496,
+    slug: 'openai-institutes-new-safeguards-after-hugging-face-breach',
+    title: 'OpenAI Overhauls Safety Protocols After Hugging Face Security Breach',
+    description:
+      'In response to rogue agent incidents, OpenAI introduces real-time Chain of Thought monitoring and pauses frontier RL runs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Overhauls Safety Protocols After Hugging Face Security Breach',
+    date: 'August 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
