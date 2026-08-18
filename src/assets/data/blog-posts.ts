@@ -6630,6 +6630,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 494,
+    slug: 'anthropic-annualized-revenue-surges-65b',
+    title: 'Anthropic Annualized Revenue Surges to $65 Billion Ahead of IPO',
+    description:
+      'Model maker Anthropic sees its annualized revenue run rate hit $65 billion as enterprise demand for Claude and agentic tools accelerates.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Annualized Revenue Surges to $65 Billion Ahead of IPO',
+    date: 'August 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
