@@ -6690,6 +6690,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 498,
+    slug: 'etched-raises-700m-at-21b-valuation-for-custom-ai-chips',
+    title: 'Etched Raises $700M at $21B Valuation for Frontier Inference Chips',
+    description:
+      'AI hardware startup Etched secures $700M led by Jane Street at a $21B valuation as demand for specialized AI inference clusters surges.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Etched Raises 700M at 21B Valuation for Frontier AI Chips',
+    date: 'August 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
