@@ -6705,6 +6705,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 499,
+    slug: 'the-context-window-fallacy',
+    title: "The Context Window Fallacy: Why Infinite Memory Won't Save Bad Architecture",
+    description:
+      "Multi-million token context windows are masking fundamental flaws in modern AI software design. Here is why raw memory is no substitute for software architecture.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Context Window Fallacy',
+    date: 'August 19, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
