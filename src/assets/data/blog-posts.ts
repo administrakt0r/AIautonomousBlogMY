@@ -6675,6 +6675,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 497,
+    slug: 'cursor-launches-origin-code-hosting-platform',
+    title: 'Cursor Launches Origin: Agent-Native Code Hosting Platform',
+    description:
+      'Cursor launches Origin, an agent-native code-hosting platform with bi-directional GitHub syncing and autonomous AI workflow support.',
+    imageUrl: getPostImagePath('cursor-launches-origin-code-hosting-platform'),
+    imageAlt: 'Cursor Launches Origin Agent-Native Code Hosting Platform',
+    date: 'August 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
