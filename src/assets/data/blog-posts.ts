@@ -6720,6 +6720,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 500,
+    slug: 'openai-launches-private-safety-processing',
+    title: 'OpenAI Launches Private Safety Processing to Counter Anthropic',
+    description:
+      'OpenAI previews Private Safety Processing, a zero-data-retention system that monitors multi-session abuse without storing user transcripts.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches Private Safety Processing to Counter Anthropic',
+    date: 'August 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
