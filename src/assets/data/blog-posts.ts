@@ -6750,6 +6750,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 502,
+    slug: 'coders-bypass-claude-invisible-watermarks',
+    title: "Coders Defeat Claude's Invisible Watermarks Days After Launch",
+    description: "Developers and security researchers discover simple workarounds to bypass Anthropic's new output tracking system.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Coders Defeat Claude's Invisible Watermarks Days After Launch",
+    date: 'August 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
