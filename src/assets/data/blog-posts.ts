@@ -6764,6 +6764,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 503,
+    slug: 'pew-study-third-of-web-ai-authored',
+    title: 'Pew Study: A Third of New Web Pages Show Signs of AI Authorship',
+    description: 'Over one-third of web pages published since ChatGPT show signs of AI generation or heavy AI editing, according to a Pew Research study.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Pew Study: A Third of New Web Pages Show Signs of AI Authorship',
+    date: 'August 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
