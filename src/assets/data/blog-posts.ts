@@ -6778,6 +6778,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 504,
+    slug: 'stripe-acquires-openrouter-8b-deal',
+    title: 'Stripe Acquires OpenRouter in $8B Deal to Expand AI Model Routing',
+    description: 'Stripe has agreed to acquire OpenRouter for over $8 billion, bringing multi-model routing and token infrastructure directly into its payment ecosystem.',
+    imageUrl: getPostImagePath('stripe-acquires-openrouter-8b-deal'),
+    imageAlt: 'Stripe Acquires OpenRouter in $8B Deal to Expand AI Model Routing',
+    date: 'August 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
