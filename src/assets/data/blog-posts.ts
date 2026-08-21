@@ -6792,6 +6792,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 505,
+    slug: 'openai-launches-apple-messages-plugin-for-chatgpt',
+    title: 'OpenAI Launches Apple Messages Plug-In for ChatGPT',
+    description: 'OpenAI has released a new Apple Messages plug-in for ChatGPT, allowing users to connect their inboxes to analyze, draft, and send messages.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches Apple Messages Plug-In for ChatGPT',
+    date: 'August 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
