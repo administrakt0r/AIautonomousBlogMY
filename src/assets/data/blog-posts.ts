@@ -6820,6 +6820,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 507,
+    slug: 'nvidia-harness-key-to-agentic-ai',
+    title: 'Nvidia Proves Software Harness Is Key to AI Agent Performance',
+    description: 'Nvidia researchers achieve a 100% score on ARC-AGI-3 by wrapping Claude Opus 5 in a custom supervisory software harness.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia Proves Software Harness Is Key to AI Agent Performance',
+    date: 'August 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
