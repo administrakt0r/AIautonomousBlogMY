@@ -6848,6 +6848,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 509,
+    slug: 'openai-gains-on-anthropic-in-enterprise-market',
+    title: 'OpenAI Gains on Anthropic in Enterprise AI Market Share',
+    description: 'New corporate transaction data from Ramp shows OpenAI closing the gap on Anthropic among business users in Q3 2026.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI vs Anthropic market share visualization',
+    date: 'August 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
