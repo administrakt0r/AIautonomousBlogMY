@@ -6877,6 +6877,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 511,
+    slug: 'inherent-faraday-ai-agent-outperforms-anthropic-openai',
+    title: 'Inherent AI Agent Faraday Beats OpenAI and Anthropic',
+    description:
+      'A 27B parameter agent from DeepMind alumni outperforms Claude Opus 4.8 and GPT-5.5 at scientific paper replication.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Inherent AI Agent Faraday Beats OpenAI and Anthropic',
+    date: 'August 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
