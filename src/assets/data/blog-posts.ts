@@ -6862,6 +6862,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 510,
+    slug: 'the-multi-agent-complexity-trap',
+    title: 'The Multi-Agent Complexity Trap: Why Agent Swarms Fail',
+    description:
+      'Deploying swarms of autonomous agents is introducing non-deterministic chaos and an unmanageable web of failure modes into software systems.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Multi-Agent Complexity Trap: Why Agent Swarms Fail',
+    date: 'August 22, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
