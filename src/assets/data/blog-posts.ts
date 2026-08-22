@@ -6834,6 +6834,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 508,
+    slug: 'starcloud-raises-250m-orbital-ai-data-centers',
+    title: 'Starcloud Raises $250M for Orbital AI Data Center Expansion',
+    description: 'Nvidia and Cisco back a $420M Series A extension to secure launch capacity for Starship-ready compute satellites.',
+    imageUrl: getPostImagePath('starcloud-raises-250m-orbital-ai-data-centers'),
+    imageAlt: 'Starcloud orbital AI data center satellite in earth orbit',
+    date: 'August 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
