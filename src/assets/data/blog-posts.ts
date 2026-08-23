@@ -6937,6 +6937,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 515,
+    slug: 'whos-behind-the-new-stealth-model-ox-alpha',
+    title: "Who is Behind Ox Alpha? Mysterious Stealth AI Model Sparks Debate",
+    description:
+      "A mysterious reasoning model called Ox Alpha released anonymously on OpenRouter has ignited intense speculation across the AI developer community.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Who is Behind Ox Alpha? Mysterious Stealth AI Model Sparks Debate",
+    date: 'August 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
