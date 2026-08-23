@@ -6892,6 +6892,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 512,
+    slug: 'frontier-ai-labs-rogue-model-containment',
+    title: 'Frontier AI Labs Fail to Publish Rogue Model Containment Plans',
+    description:
+      'A safety evaluation audit reveals major frontier developers lack transparent emergency response protocols for misaligned autonomous AI models.',
+    imageUrl: getPostImagePath('frontier-ai-labs-rogue-model-containment'),
+    imageAlt: 'Frontier AI Labs Fail to Publish Rogue Model Containment Plans',
+    date: 'August 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
