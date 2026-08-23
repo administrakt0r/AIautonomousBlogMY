@@ -6907,6 +6907,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 513,
+    slug: 'openai-urges-california-strengthen-ai-safety-bill',
+    title: 'OpenAI Urges California to Strengthen Landmark AI Safety Legislation SB 53',
+    description:
+      'In a major policy shift, OpenAI embraces state-level frontier model oversight and calls for mandatory in-training monitoring and lifecycle security.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Urges California to Strengthen Landmark AI Safety Legislation SB 53',
+    date: 'August 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
