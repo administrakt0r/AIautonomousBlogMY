@@ -6922,6 +6922,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 514,
+    slug: 'the-regulatory-capture-trap',
+    title: 'The Regulatory Capture Trap: Why AI Safety Laws Protect Big Tech',
+    description:
+      'Mandatory compliance frameworks and state oversight create an unassailable moat for incumbents while crushing open innovation.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Regulatory Capture Trap: Why AI Safety Laws Protect Big Tech',
+    date: 'August 23, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
