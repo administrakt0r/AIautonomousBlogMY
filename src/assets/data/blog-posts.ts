@@ -6997,6 +6997,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 519,
+    slug: 'hugging-face-13b-acquisition-talks',
+    title: 'Hugging Face in Talks for $13 Billion Acquisition Deal',
+    description:
+      'Open-source AI powerhouse Hugging Face fields $13B buyout bids as demand for neutral developer infrastructure surges.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Hugging Face in Talks for $13 Billion Acquisition Deal',
+    date: 'August 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
