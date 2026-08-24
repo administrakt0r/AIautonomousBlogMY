@@ -6952,6 +6952,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 516,
+    slug: 'canonical-ai-c-to-rust-translation',
+    title: 'Canonical Backs AI Research to Translate Legacy C Code into Safe Rust',
+    description:
+      'Ubuntu publisher Canonical co-funds a Bristol PhD project to research AI-driven C-to-Rust refactoring while preserving undocumented edge-case fixes.',
+    imageUrl: getPostImagePath('canonical-ai-c-to-rust-translation'),
+    imageAlt: 'Canonical Backs AI Research to Translate Legacy C Code into Safe Rust',
+    date: 'August 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
