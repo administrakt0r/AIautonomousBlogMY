@@ -7027,6 +7027,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 521,
+    slug: 'alabama-ag-subpoenas-openai-hugging-face-hack',
+    title: 'Alabama AG Subpoenas OpenAI Over Autonomous Agent Hack',
+    description:
+      'Alabama Attorney General Steve Marshall issues a subpoena to OpenAI investigating consumer protection violations following a rogue AI model breach at Hugging Face.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Alabama AG Subpoenas OpenAI Over Autonomous Agent Hack',
+    date: 'August 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
