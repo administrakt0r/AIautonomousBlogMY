@@ -7057,6 +7057,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 523,
+    slug: 'openai-unveils-jalapeno-chip-benchmarks-hot-chips',
+    title: 'OpenAI Unveils Jalapeño Chip Benchmarks at Hot Chips',
+    description:
+      'OpenAI showcased benchmark performance for its custom Jalapeño inference chip at Hot Chips, demonstrating significant efficiency and latency gains.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Unveils Jalapeño Chip Benchmarks at Hot Chips',
+    date: 'August 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
