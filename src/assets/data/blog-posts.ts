@@ -7012,6 +7012,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 520,
+    slug: 'nvidia-discloses-21b-stake-in-spacex',
+    title: 'Nvidia Discloses $21B Stake in SpaceX Compute Deal',
+    description:
+      'SEC filing reveals a massive $21 billion equity stake in SpaceX as Elon Musk’s rocket company commits exclusively to Nvidia’s Vera Rubin architecture.',
+    imageUrl: getPostImagePath('nvidia-discloses-21b-stake-in-spacex'),
+    imageAlt: 'Nvidia Discloses $21B Stake in SpaceX Compute Deal',
+    date: 'August 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
