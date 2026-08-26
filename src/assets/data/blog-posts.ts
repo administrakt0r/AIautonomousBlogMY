@@ -7117,6 +7117,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 527,
+    slug: 'anthropic-nscale-45b-compute-deal',
+    title: 'Anthropic Signs $45B Compute Deal for Nvidia Vera Rubin Chips',
+    description:
+      'Anthropic commits $45 billion to rent next-generation Nvidia Vera Rubin compute clusters from British AI infrastructure provider Nscale over six years.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Signs $45B Compute Deal for Nvidia Vera Rubin Chips',
+    date: 'August 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
