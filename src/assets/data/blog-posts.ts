@@ -7072,6 +7072,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 524,
+    slug: 'anthropic-unifies-claude-memory-across-chat-and-cowork',
+    title: 'Anthropic Unifies Claude Memory Across Chat and Cowork Workflows',
+    description:
+      'Anthropic announced a major memory unification update for Claude, allowing contextual memory to persist seamlessly between conversational chat and Claude Cowork workspace agents.',
+    imageUrl: getPostImagePath('anthropic-unifies-claude-memory-across-chat-and-cowork'),
+    imageAlt: 'Anthropic Unifies Claude Memory Across Chat and Cowork Workflows',
+    date: 'August 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
