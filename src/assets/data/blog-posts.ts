@@ -7087,6 +7087,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 525,
+    slug: 'openai-loses-data-center-exec-malone',
+    title: 'OpenAI Head of Data Centers Departs Amid Executive Churn',
+    description:
+      "OpenAI's head of data centers Chris Malone has stepped down following an infrastructure reorganization, adding to a string of high-profile executive exits in 2026.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Head of Data Centers Departs Amid Executive Churn',
+    date: 'August 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
