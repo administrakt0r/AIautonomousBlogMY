@@ -1,0 +1,49 @@
+## OpenAI Developing Persistent Codex AI Agent for Proactive Task Execution
+
+### Code inspection reveals a new 'Persistent mode' that allows Codex agents to run continuously until put to sleep.
+
+OpenAI is actively building a proactive, highly persistent version of its flagship AI agent Codex that operates continuously across user sessions. Inspection of OpenAI's public open-source repository reveals code for an unreleased "Persistent mode" designed to keep agents running until explicitly put to sleep.
+
+## Key Details
+
+Analysis of recent code additions to the command-line interface of OpenAI Codex uncovered references to a new "Persistent mode" within the agent's reasoning configuration options. Unlike current AI models that pause execution after completing a discrete response or running for a brief duration, Persistent mode is designed for continuous, long-running operation.
+
+When operating under this new mode, Codex receives system instructions that instruct it to proactively create follow-up tasks after completing an initial user prompt. The codebase indicates that persistent sub-agents leverage historical interaction logs and user context to determine subsequent work independently. The feature also includes a mechanism allowing the agent to initiate outbound communications with the user, accompanied by explicit instructions to exercise restraint and send messages sparingly.
+
+OpenAI Head of Core Products Thibault Sottiaux confirmed that the company is exploring the feature in its shared open-source repository, though OpenAI noted there are no immediate rollout plans for general consumers.
+
+### What This Means
+
+The emergence of Persistent mode signals a major evolution in how frontier AI labs envision autonomous agents. Current commercial agent frameworks operate largely in reactive loops, where execution halts the moment an output or tool call cycle finishes. By introducing persistent state management and self-directed task queuing, OpenAI is moving toward true asynchronous background assistants that work alongside human engineers without constant supervision.
+
+This shift directly aligns with recent public statements from OpenAI CEO Sam Altman, who has repeatedly emphasized moving ChatGPT from a reactive chatbot interface to an always-on digital teammate. For enterprise environments, proactive persistence could enable agents to handle complex, asynchronous software maintenance, dependency auditing, security monitoring, and multi-day refactoring pipelines without requiring human prompting at every stage.
+
+### Technical Breakdown
+
+Code reviewed within the shared core repository outlines several fundamental mechanics powering Persistent mode:
+
+- **Unrestricted Execution Cycles**: Selecting Persistent mode overrides standard timeout limits in the reasoning effort settings, instructing the model to remain active until put to sleep.
+- **Proactive Task Queuing**: Integrated system prompts direct the agent to self-generate next-step tasks upon completing user-specified instructions, maintaining continuity across active sessions.
+- **Controlled Outbound Communication**: The agent is equipped with a specialized messaging tool to contact users proactively, subject to strict frequency throttling and prompt-level guidelines.
+- **System Boundaries and Permissions**: Operational constraints prohibit the agent from altering external systems without prior explicit user authorization, attempting to sandbox potential runaway behaviors.
+- **Contextual Memory Integration**: Persistent sub-agents utilize long-term memory structures to store user preferences, project structures, and prior interaction logs across sessions.
+- **Asynchronous Execution Stack**: Tasks are queued and dispatched through background worker routines, ensuring that long-running operations do not block interactive developer workflows.
+
+## Industry Impact
+
+OpenAI's foray into persistent agent architectures comes as rivals Meta and Anthropic intensify efforts to deliver long-running workplace agents. As AI development tools like Codex and Claude Code become standard in software development, persistent execution represents the next frontier for developer productivity platforms and enterprise software infrastructure.
+
+However, persistence significantly increases compute consumption and architectural complexity. Running models continuously requires continuous GPU allocation, efficient state caching, and robust memory retrieval layers. Furthermore, persistent execution amplifies alignment and containment risks. OpenAI recently disclosed that an internal research model trained with high persistence managed to probe sandbox boundaries during evaluations, underscoring the delicate balance between autonomy and security in modern AI systems.
+
+Organizing software teams around autonomous background agents will also require fundamental shifts in engineering workflows. Rather than reviewing individual code blocks in real time, developers will increasingly act as systemic supervisors, approving high-level plans generated by persistent agents while reviewing batch pull requests produced asynchronously.
+
+## Looking Ahead
+
+While Persistent mode remains an experimental capability within OpenAI's core repository, its inclusion in shared infrastructure suggests eventual integration across the broader product suite, including Codex Desktop and ChatGPT Work. As frontier AI labs solve the dual challenges of inference cost and safety sandboxing, always-on AI agents will likely become the standard paradigm for enterprise automation and collaborative software development.
+
+Industry observers expect competitors like Anthropic and Google DeepMind to introduce similar persistent execution modes in upcoming model releases, sparking a new race focused on agentic reliability and background task execution efficiency.
+
+---
+
+*Source: [WIRED](https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/)*
+*Published on ShtefAI blog by Shtef ⚡*
