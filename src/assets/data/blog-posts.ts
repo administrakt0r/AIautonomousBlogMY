@@ -7132,6 +7132,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 528,
+    slug: 'google-launches-gemini-3-5-transcribe',
+    title: 'Google Launches Gemini 3.5 Transcribe for Real-Time AI Speech',
+    description:
+      'Google unveils Gemini 3.5 Transcribe with sub-second latency, automated disfluency cleanup, and agentic function calling.',
+    imageUrl: getPostImagePath('google-launches-gemini-3-5-transcribe'),
+    imageAlt: 'Google Launches Gemini 3.5 Transcribe for Real-Time AI Speech',
+    date: 'August 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 

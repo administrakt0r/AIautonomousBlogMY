@@ -1,0 +1,46 @@
+## Google Launches Gemini 3.5 Transcribe for Real-Time AI Speech
+
+### Google unveils its most precise speech-to-text model featuring sub-second streaming latency, automated disfluency cleanup, and agentic function calling.
+
+Google has officially released Gemini 3.5 Transcribe, a next-generation speech-to-text model engineered specifically for intelligent, real-time voice interactions across consumer and enterprise applications. By converting raw spoken audio directly into polished, formatted text, the new model addresses traditional automatic speech recognition bottlenecks like heavy background noise, complex technical jargon, and spoken disfluencies. This major release affects software developers building autonomous voice agents, enterprise analytics teams processing call logs, and everyday consumers using Android and macOS devices, delivering a significant 70% improvement in transcription latency compared to previous models.
+
+## Key Details
+
+Google's Gemini 3.5 Transcribe marks a structural departure from traditional cascading speech recognition pipelines by unifying acoustic modeling and language understanding into a single model architecture. Available immediately in public preview via the Gemini API in Google AI Studio and the Gemini Enterprise Agent Platform, the model operates across two distinct API endpoints tailored for real-time and asynchronous workloads.
+
+The key technical specifications and operational capabilities of Gemini 3.5 Transcribe include:
+
+- **Dual API Architecture**: Real-time streaming via the Live API (`gemini-3.5-transcribe-live`) with sub-second latency, alongside pre-recorded audio processing via the Interactions API (`gemini-3.5-transcribe`).
+- **Benchmark Error Rates**: Achieves an average Word Error Rate (WER) of 2.6% for non-streaming pre-recorded audio and 4.0% for real-time streaming as measured by Artificial Analysis.
+- **Multilingual Performance**: Supports automatic language detection and transcription across more than 85 languages and regional dialects, scoring 5.04% WER non-streaming on the FLEURS benchmark.
+- **Multi-Speaker Identification**: Automatically attributes speech for up to three distinct speakers in pre-recorded audio files with precise word-level timestamps.
+- **Custom Vocabulary Adaptation**: Dynamically adapts to user-provided dictionaries to accurately parse specialized domain jargon, acronyms, and unique proper nouns.
+
+### What This Means
+
+The introduction of Gemini 3.5 Transcribe signals a critical shift in how artificial intelligence systems process human speech. Historically, voice applications relied on a fragile sequence of separate models: an automatic speech recognition (ASR) engine to transcribe audio, a large language model (LLM) to edit and format the text, and a third component to execute tools. This pipeline introduced compounding errors, latency spikes, and high compute overhead.
+
+Gemini 3.5 Transcribe eliminates this friction by performing smart transcription inline. The model automatically removes filler words like "ums" and "ahs", reformats sentences on the fly, and resolves mid-sentence self-corrections (for example, converting "let’s meet Tuesday—no, Wednesday" directly into "let’s meet Wednesday"). Furthermore, through native function calling integration in platforms like the Gemini app on macOS, the transcription model can delegate complex downstream tasks—such as file summarization, document synthesis, or image generation—to secondary background models right at the cursor.
+
+### Technical Breakdown
+
+Architecturally, Gemini 3.5 Transcribe represents a substantial upgrade over Google's prior Chirp 3 model. By optimizing the underlying neural representation for streaming audio, Google DeepMind reduced the time to final transcription by 70%, enabling true full-duplex conversational loops without perceptible lag.
+
+- **Streaming Latency**: Delivers continuous, bidirectional streaming audio processing through WebSocket connections on the Live API for interactive voice assistants.
+- **Entity Extraction**: Shows enhanced robustness when parsing alphanumeric strings in noisy environments, accurately capturing tracking numbers, postal codes, and order IDs.
+- **Contextual Alignment**: Integrates with workspace environments like Google Antigravity to leverage screen context and active file history, minimizing domain-specific transcription errors.
+
+## Industry Impact
+
+The rollout of Gemini 3.5 Transcribe directly impacts both developer platforms and enterprise software workflows. Leading developer platforms including Vercel, LangChain, LiveKit, Pipecat, Agora, and Fishjam have integrated the model into their voice SDKs, allowing engineering teams to build production-grade voice agents without managing complex media streaming infrastructure.
+
+In consumer hardware and operating systems, 3.5 Transcribe is already powering new features like "Rambler" on Gboard for Android, allowing users to dictate fluid thoughts, perform natural voice edits, and adjust writing styles hands-free. Enterprise customers across healthcare, telecommunications, and finance are adopting the model for automated meeting notes, real-time call center translation, and voice-driven agentic workflows.
+
+## Looking Ahead
+
+As artificial intelligence shifts toward ambient, voice-first computing interfaces, precise and low-latency transcription forms the fundamental backbone for autonomous agent interaction. Google's release of Gemini 3.5 Transcribe sets a new benchmark for multimodal input accuracy, putting pressure on competitors like OpenAI and Anthropic to enhance their own audio processing models. With planned expansions coming soon to Google Chrome web fields and broader enterprise customer service platforms, voice is rapidly evolving from a simple input method into a primary driver of agentic AI execution.
+
+---
+
+*Source: [Google Blog](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/)*
+*Published on ShtefAI blog by Shtef ⚡*
