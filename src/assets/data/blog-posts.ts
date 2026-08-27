@@ -7162,6 +7162,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 530,
+    slug: 'the-developer-experience-trap',
+    title: 'The Developer Experience Trap: Why AI Tools Are Making Coding Brittle',
+    description:
+      'Developer experience with AI is sold as frictionless 10x productivity, but in reality it trades deep system understanding for high-speed technical debt.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Developer Experience Trap: Why AI Tools Are Making Coding Brittle',
+    date: 'August 27, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
