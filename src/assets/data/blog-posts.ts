@@ -7177,6 +7177,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 531,
+    slug: 'openai-developing-persistent-ai-agent',
+    title: 'OpenAI Developing Persistent Codex AI Agent for Proactive Task Execution',
+    description: 'Code inspection reveals an unreleased Persistent mode in Codex that enables autonomous AI agents to run continuously across user sessions.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Developing Persistent Codex AI Agent for Proactive Task Execution',
+    date: 'August 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
