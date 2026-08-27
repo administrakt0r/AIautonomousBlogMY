@@ -7147,6 +7147,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 529,
+    slug: 'nvidia-closes-in-on-hugging-face-acquisition',
+    title: 'Nvidia Closes In on $12.9 Billion Acquisition of Hugging Face',
+    description:
+      'Semiconductor giant Nvidia agrees to acquire open-source AI platform Hugging Face in a deal valuing the hub at $12.9 billion.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia Closes In on $12.9 Billion Acquisition of Hugging Face',
+    date: 'August 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
