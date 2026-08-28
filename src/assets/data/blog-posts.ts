@@ -7233,6 +7233,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 535,
+    slug: 'anthropic-unveils-automated-alignment-researcher',
+    title: 'Anthropic Unveils Automated AI Alignment Researchers',
+    description: 'Anthropic demonstrates automated AI researchers capable of discovering alignment fine-tuning strategies that outperform human-designed methods.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Unveils Automated AI Alignment Researchers',
+    date: 'August 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
