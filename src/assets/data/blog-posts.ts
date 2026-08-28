@@ -7191,6 +7191,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 532,
+    slug: 'judge-blocks-pentagon-anthropic-blacklist',
+    title: 'Judge Blocks Pentagon Attempt to Blacklist Anthropic',
+    description: 'A federal judge rules the Department of Defense’s designation of Anthropic as a national security risk was illegal retaliation.',
+    imageUrl: getPostImagePath('judge-blocks-pentagon-anthropic-blacklist'),
+    imageAlt: 'Judge Blocks Pentagon Attempt to Blacklist Anthropic',
+    date: 'August 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
