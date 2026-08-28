@@ -7219,6 +7219,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 534,
+    slug: 'the-micro-agent-mirage',
+    title: 'The Micro-Agent Mirage: Why Subagent Swarms Are a Software Architecture Nightmare',
+    description: 'Decomposing complex software engineering tasks into swarms of autonomous micro-agents is creating unmanageable non-deterministic chaos.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Micro-Agent Mirage: Why Subagent Swarms Are a Software Architecture Nightmare',
+    date: 'August 28, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
