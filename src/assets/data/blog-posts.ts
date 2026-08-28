@@ -7205,6 +7205,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 533,
+    slug: 'tech-coalition-call-to-defend-against-rogue-ai',
+    title: '100+ Tech Giants Issue Call to Defend Against Rogue AI',
+    description: 'OpenAI, Anthropic, Google, Microsoft, and over 100 tech leaders sign an open letter urging public-private action against autonomous AI threats.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: '100+ Tech Giants Issue Call to Defend Against Rogue AI',
+    date: 'August 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
