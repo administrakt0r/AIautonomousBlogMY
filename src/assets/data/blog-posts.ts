@@ -7289,6 +7289,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 539,
+    slug: 'sony-music-warner-sue-anthropic',
+    title: 'Sony Music and Warner Sue Anthropic Over AI Copyright Theft',
+    description: 'Major music publishers sue Anthropic and its founders over alleged illegal scraping and torrenting to train Claude models.',
+    imageAlt: 'Sony Music and Warner sue Anthropic over AI copyright theft',
+    date: 'August 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
