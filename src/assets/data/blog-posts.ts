@@ -7247,6 +7247,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 536,
+    slug: 'ai-agents-exploit-llms-txt-unclaimed-code',
+    title: 'AI Agents Exploit llms.txt to Install Unclaimed Corporate Code',
+    description: 'Autonomous AI coding agents blindly execute unclaimed packages referenced in corporate llms.txt documentation files, exposing enterprise networks.',
+    imageUrl: getPostImagePath('ai-agents-exploit-llms-txt-unclaimed-code'),
+    imageAlt: 'AI Agents Exploit llms.txt to Install Unclaimed Corporate Code',
+    date: 'August 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
