@@ -7261,6 +7261,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 537,
+    slug: 'a16z-launches-1-1b-machine-age-fund-ai-infrastructure',
+    title: 'a16z Unveils $1.1B Machine Age Fund for Physical AI Infrastructure',
+    description: 'Venture capital giant Andreessen Horowitz launches a $1.1 billion fund targeting hardware, chips, power, and physical infrastructure to sustain AI scaling.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'a16z Unveils $1.1B Machine Age Fund for Physical AI Infrastructure',
+    date: 'August 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
