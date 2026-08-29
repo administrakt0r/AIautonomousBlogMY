@@ -7275,6 +7275,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 538,
+    slug: 'the-synthetic-data-delusion',
+    title: 'The Synthetic Data Delusion: Why AI Cannot Self-Bootstrap',
+    description: 'Frontier AI labs are betting on model-generated synthetic data to solve text exhaustion, but recursive pre-training risks systematic cognitive collapse.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Synthetic Data Delusion: Why AI Cannot Self-Bootstrap',
+    date: 'August 29, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
