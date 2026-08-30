@@ -7317,6 +7317,20 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: getPostImagePath('nvidias-ai-advantage-moves-beyond-gpus'),
     readTime: 5,
     featured: false
+  },
+  {
+    id: 541,
+    slug: 'lambda-secures-1b-debt-nvidia-chips',
+    title: 'Neocloud Lambda Secures $1B in Debt to Buy Nvidia AI Chips',
+    description: 'Lambda raises $1B in private debt to acquire Nvidia AI hardware for leasing directly to Microsoft as debt-financed compute surges.',
+    imageAlt: 'Neocloud Lambda Secures $1B in Private Debt to Buy Nvidia AI Chips',
+    date: 'August 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
