@@ -7346,6 +7346,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 543,
+    slug: 'court-rules-trumps-anthropic-supply-chain-risk-label-illegal',
+    title: 'Court Rules Trump’s Anthropic Supply-Chain Risk Label Was Illegal',
+    description:
+      'Federal judge rules Defense Secretary Hegseth’s blacklist of Anthropic was unconstitutional retaliation over AI safety guardrails.',
+    imageAlt: 'Court Rules Trump’s Anthropic Supply-Chain Risk Label Was Illegal',
+    date: 'August 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
