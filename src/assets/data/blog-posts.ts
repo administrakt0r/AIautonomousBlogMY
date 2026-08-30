@@ -7303,6 +7303,20 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 540,
+    slug: 'nvidias-ai-advantage-moves-beyond-gpus',
+    title: 'Nvidia’s AI Advantage Moves Beyond GPUs to System Orchestration',
+    description: 'Nvidia shifts focus toward gigawatt-scale data center orchestration and specialized CPUs as hyperscalers build custom silicon.',
+    imageAlt: 'Nvidia Vera Rubin architecture and data center orchestration chips',
+    date: 'August 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: getPostImagePath('nvidias-ai-advantage-moves-beyond-gpus'),
+    readTime: 5,
+    featured: false
   }
 ]
 
