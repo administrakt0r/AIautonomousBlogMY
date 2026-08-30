@@ -7331,6 +7331,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 542,
+    slug: 'the-architectural-amnesia',
+    title: 'The Architectural Amnesia: Why AI Coding Erases System Memory',
+    description:
+      'As AI subagents generate local patches at light speed, software teams are suffering a fatal loss of structural comprehension and historical context.',
+    imageAlt: 'The Architectural Amnesia: Why AI Coding Erases System Memory',
+    date: 'August 30, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
