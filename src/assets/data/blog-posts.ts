@@ -7361,6 +7361,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 544,
+    slug: 'us-drones-robots-tariffs-china-scale',
+    title: 'US Tariffs Target AI Robots as China Accelerates Manufacturing Scale',
+    description:
+      'Washington raises trade barriers on autonomous drones and humanoids, but China’s manufacturing depth and scale continue to reshape global physical AI.',
+    imageAlt: 'US Tariffs Target AI Robots as China Accelerates Manufacturing Scale',
+    date: 'August 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
