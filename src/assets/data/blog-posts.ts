@@ -7361,6 +7361,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 544,
+    slug: 'us-robotics-barriers-china-scale',
+    title: 'US AI Robotics Trade Barriers Face China Scale Challenge',
+    description:
+      'Regulatory tariffs and component export restrictions aim to shield Western automation, but massive domestic manufacturing scale gives Chinese robotics an enduring lead.',
+    imageAlt: 'US AI Robotics Trade Barriers Face China Scale Challenge',
+    date: 'August 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: getPostImagePath('us-robotics-barriers-china-scale'),
+    readTime: 5,
+    featured: false
   }
 ]
 
