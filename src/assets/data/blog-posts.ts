@@ -7376,6 +7376,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: getPostImagePath('us-robotics-barriers-china-scale'),
     readTime: 5,
     featured: false
+  },
+  {
+    id: 545,
+    slug: 'the-refactoring-delusion',
+    title: 'The Refactoring Delusion: Why AI Cannot Clean Up Its Own Mess',
+    description:
+      'Automated refactoring promises pristine codebases, but trading human architectural intent for probabilistic pattern matching produces fragile software.',
+    imageAlt: 'The Refactoring Delusion: Why AI Cannot Clean Up Its Own Mess',
+    date: 'August 31, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
