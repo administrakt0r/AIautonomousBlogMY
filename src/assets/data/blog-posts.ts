@@ -7391,6 +7391,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 546,
+    slug: 'pentagon-launches-chatgpt-mil-grok-government',
+    title: 'Pentagon Launches Custom ChatGPT and Grok for 3M Military Personnel',
+    description:
+      'The Department of Defense expands GenAI.mil, bringing tailored ChatGPT Mil and Grok for Government to 3 million service members.',
+    imageAlt: 'Pentagon Launches Custom ChatGPT and Grok for 3M Military Personnel',
+    date: 'August 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
