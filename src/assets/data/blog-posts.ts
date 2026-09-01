@@ -7406,6 +7406,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 547,
+    slug: 'apple-evidence-openai-data-theft-lawsuit',
+    title: "Apple Reveals 'Shocking' Data Theft Evidence in OpenAI Lawsuit",
+    description:
+      'Apple files newly uncovered forensic evidence alleging a former engineer stole confidential circuit schematics and destroyed files for OpenAI.',
+    imageAlt: "Apple Reveals 'Shocking' Data Theft Evidence in OpenAI Lawsuit",
+    date: 'September 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: getPostImagePath('apple-evidence-openai-data-theft-lawsuit'),
+    readTime: 6,
+    featured: false
   }
 ]
 
