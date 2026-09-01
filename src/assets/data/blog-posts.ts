@@ -7451,6 +7451,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 550,
+    slug: 'openai-astra-cybersecurity-threshold-release',
+    title: 'OpenAI Previews Astra Model Crossing Critical Cyber Threshold',
+    description:
+      'OpenAI reveals its upcoming Astra model has met critical cybersecurity thresholds with autonomous zero-day exploit discovery.',
+    imageAlt: 'OpenAI Previews Astra Model Crossing Critical Cyber Threshold',
+    date: 'September 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
