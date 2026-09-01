@@ -7421,6 +7421,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: getPostImagePath('apple-evidence-openai-data-theft-lawsuit'),
     readTime: 6,
     featured: false
+  },
+  {
+    id: 548,
+    slug: 'nvidia-3-5b-mediatek-custom-ai-chip-bet',
+    title: 'Nvidia Bets $3.5B on MediaTek to Counter Big Tech Custom AI Silicon',
+    description:
+      'Nvidia invests $3.5 billion in MediaTek to bring NVLink Fusion to third-party custom AI chips and preserve its data center dominance.',
+    imageAlt: 'Nvidia Bets $3.5B on MediaTek to Counter Big Tech Custom AI Silicon',
+    date: 'September 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
