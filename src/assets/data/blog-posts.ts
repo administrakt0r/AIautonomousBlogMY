@@ -7481,6 +7481,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: getPostImagePath('anthropic-releases-fable-5-1-and-mythos-5-1'),
     readTime: 5,
     featured: false
+  },
+  {
+    id: 552,
+    slug: 'afterquery-raises-round-at-3-2b-valuation',
+    title: "AfterQuery Becomes Y Combinator's Fastest Unicorn at $3.2B Valuation",
+    description:
+      'AI training-data provider AfterQuery reaches a $3.2B valuation just five months after its Series A, capturing expert reasoning for frontier AI agents.',
+    imageAlt: "AfterQuery Becomes Y Combinator's Fastest Unicorn at $3.2B Valuation",
+    date: 'September 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
