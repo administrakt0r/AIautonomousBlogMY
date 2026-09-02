@@ -7466,6 +7466,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 551,
+    slug: 'anthropic-releases-fable-5-1-and-mythos-5-1',
+    title: 'Anthropic Releases Fable 5.1 and Mythos 5.1 Frontier AI',
+    description:
+      'Anthropic updates its flagship AI models with a 45% reduction in API pricing, zero data retention safeguards, and improved refusal guardrails.',
+    imageAlt: 'Anthropic Releases Fable 5.1 and Mythos 5.1 Frontier AI',
+    date: 'September 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: getPostImagePath('anthropic-releases-fable-5-1-and-mythos-5-1'),
+    readTime: 5,
+    featured: false
   }
 ]
 
