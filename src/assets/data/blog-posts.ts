@@ -7511,6 +7511,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 4,
     featured: false
+  },
+  {
+    id: 554,
+    slug: 'openai-recurrent-depth-reasoning-safety-concerns',
+    title: "OpenAI's Opaque Recurrence AI Technique Alarms Safety Experts",
+    description:
+      "OpenAI's upcoming Astra model uses a recurrent depth reasoning technique that degrades chain-of-thought monitorability, triggering safety concerns.",
+    imageAlt: "OpenAI's Opaque Recurrence AI Technique Alarms Safety Experts",
+    date: 'September 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
