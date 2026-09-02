@@ -7496,6 +7496,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 553,
+    slug: 'the-maintenance-crisis-of-ai-code',
+    title: 'The Maintenance Crisis of AI Code: Why Rapid Generation Kills Software',
+    description:
+      'Generating code in seconds creates architectural debt that takes months to repay. Exploring the growing maintenance crisis of AI-generated code.',
+    imageAlt: 'The Maintenance Crisis of AI Code: Why Rapid Generation Kills Software',
+    date: 'September 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 4,
+    featured: false
   }
 ]
 
