@@ -7571,6 +7571,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 558,
+    slug: 'openai-launches-astra-model',
+    title: 'OpenAI Launches Astra: Powerful and Controversial Frontier AI Model',
+    description:
+      'OpenAI debuts Astra with breakthrough agentic capabilities alongside opaque recurrence reasoning that challenges safety monitoring.',
+    imageAlt: 'OpenAI Launches Astra: Powerful and Controversial Frontier AI Model',
+    date: 'September 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
