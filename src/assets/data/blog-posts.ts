@@ -7541,6 +7541,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: getPostImagePath('google-gemini-3-8-flash-launch'),
     readTime: 5,
     featured: false
+  },
+  {
+    id: 556,
+    slug: 'us-government-backs-openai-in-nyt-copyright-lawsuit',
+    title: 'US Government Backs OpenAI in New York Times Copyright Lawsuit',
+    description:
+      'The Trump administration files a 20-page brief in defense of OpenAI, arguing unlicensed training is transformative and vital for AI leadership.',
+    imageAlt: 'US Government Backs OpenAI in New York Times Copyright Lawsuit',
+    date: 'September 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
