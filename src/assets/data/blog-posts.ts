@@ -7526,6 +7526,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 555,
+    slug: 'google-gemini-3-8-flash-launch',
+    title: 'Google Debuts Gemini 3.8 Flash AI Model with Advanced Reasoning',
+    description:
+      'Google launches Gemini 3.8 Flash with iterative tool calling and deeper reasoning, alongside Gemini 3.8 Flash Cyber for its new Fairwind Program.',
+    imageAlt: 'Google Debuts Gemini 3.8 Flash AI Model with Advanced Reasoning',
+    date: 'September 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: getPostImagePath('google-gemini-3-8-flash-launch'),
+    readTime: 5,
+    featured: false
   }
 ]
 
