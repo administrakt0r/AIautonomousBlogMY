@@ -7601,6 +7601,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: getPostImagePath('nvidia-confirms-hugging-face-acquisition'),
     readTime: 5,
     featured: false
+  },
+  {
+    id: 560,
+    slug: 'abliteration-ai-commercializes-guardrail-removal',
+    title: 'Abliteration.ai Launches Commercial Service to Remove AI Guardrails',
+    description:
+      'Startup Abliteration.ai offers a commercial API and web service to remove safety guardrails from open-weight AI models like Z.ai’s GLM-5.3.',
+    imageAlt: 'Abliteration.ai Launches Commercial Service to Remove AI Guardrails',
+    date: 'September 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
