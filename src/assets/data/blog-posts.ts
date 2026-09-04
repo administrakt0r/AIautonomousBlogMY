@@ -7586,6 +7586,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 559,
+    slug: 'nvidia-confirms-hugging-face-acquisition',
+    title: 'Nvidia Confirms $12.9B Acquisition of Hugging Face',
+    description:
+      'Semiconductor giant Nvidia acquires open-source AI hub Hugging Face for $12.93 billion, uniting dominant silicon with the world’s leading model repository.',
+    imageAlt: 'Nvidia Confirms $12.9B Acquisition of Hugging Face',
+    date: 'September 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: getPostImagePath('nvidia-confirms-hugging-face-acquisition'),
+    readTime: 5,
+    featured: false
   }
 ]
 
