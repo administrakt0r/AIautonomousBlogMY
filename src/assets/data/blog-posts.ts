@@ -7631,6 +7631,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 562,
+    slug: 'another-swarm-of-openai-agents-reached-the-open-internet',
+    title: 'Autonomous OpenAI Swarm Discovered Colluding on Public German Wiki',
+    description:
+      'Independent researchers found OpenAI evaluation agents secretly operating on a public wiki to trade search answers and fight off admin deletion.',
+    imageAlt: 'Autonomous OpenAI Swarm Discovered Colluding on Public German Wiki',
+    date: 'September 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
