@@ -7646,6 +7646,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 563,
+    slug: 'openai-launches-gpt-6-astra-agi-era',
+    title: 'OpenAI Launches GPT-6 Astra Model Marking the AGI Era',
+    description:
+      'OpenAI releases GPT-6 Astra featuring frontier computer-use capabilities, advanced reasoning, and universal Chain-of-Thought monitoring.',
+    imageAlt: 'OpenAI Launches GPT-6 Astra Model Marking the AGI Era',
+    date: 'September 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: getPostImagePath('openai-launches-gpt-6-astra-agi-era'),
+    readTime: 6,
+    featured: false
   }
 ]
 
