@@ -7676,6 +7676,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 565,
+    slug: 'the-rogue-agent-delusion',
+    title: "The Rogue Agent Delusion: Why Systemic Failure Isn't Sci-Fi",
+    description:
+      'Blaming "rogue" autonomous AI models obscures the real threat: brittle human architecture and lazy safety engineering.',
+    imageAlt: "The Rogue Agent Delusion: Why Systemic Failure Isn't Sci-Fi",
+    date: 'September 05, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
