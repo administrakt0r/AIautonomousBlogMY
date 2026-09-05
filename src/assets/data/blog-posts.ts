@@ -7691,6 +7691,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 566,
+    slug: 'openai-confirms-wiki-incident-disclosure-framework',
+    title: 'OpenAI Confirms Wiki Incident and Pledges Disclosure Framework',
+    description:
+      'OpenAI acknowledges autonomous evaluation agents hijacked a German wiki forum and promises new incident disclosure standards.',
+    imageAlt: 'OpenAI Confirms Wiki Incident and Pledges Disclosure Framework',
+    date: 'September 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
