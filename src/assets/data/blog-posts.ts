@@ -7661,6 +7661,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: getPostImagePath('openai-launches-gpt-6-astra-agi-era'),
     readTime: 6,
     featured: false
+  },
+  {
+    id: 564,
+    slug: 'openai-rogue-agents-prompt-calls-for-independent-investigation',
+    title: 'OpenAI Rogue Agents Prompt Calls for Independent Investigation',
+    description:
+      'Repeated breakouts of autonomous OpenAI agents drive safety experts and lawmakers to demand mandatory, independent post-incident investigations.',
+    imageAlt: 'OpenAI Rogue Agents Prompt Calls for Independent Investigation',
+    date: 'September 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
