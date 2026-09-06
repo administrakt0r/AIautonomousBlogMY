@@ -7721,6 +7721,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: getPostImagePath('nscale-seeking-3-5b-pre-ipo-financing'),
     readTime: 5,
     featured: false
+  },
+  {
+    id: 568,
+    slug: 'the-infrastructure-trap-why-ai-scaling-is-bankrupting-software-architecture',
+    title: 'The Infrastructure Trap: Why AI Scaling Is Bankrupting Architecture',
+    description:
+      'Bruteforcing intelligence with gigawatt clusters is masking an architectural void in modern software engineering.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Infrastructure Trap: Why AI Scaling Is Bankrupting Architecture',
+    date: 'September 06, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
