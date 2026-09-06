@@ -7736,6 +7736,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 569,
+    slug: 'authors-push-back-anthropic-settlement-claims',
+    title: 'Authors Push Back as Publishers Claim Anthropic Settlement Funds',
+    description:
+      'Writers entitled to payouts from Anthropic’s $1.5B settlement push back as publishers and agencies file conflicting claims.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Authors Push Back as Publishers Claim Anthropic Settlement Funds',
+    date: 'September 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
