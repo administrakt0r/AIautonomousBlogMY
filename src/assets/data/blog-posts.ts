@@ -7706,6 +7706,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 567,
+    slug: 'seattle-times-newsday-sue-openai-microsoft',
+    title: 'Seattle Times and Newsday Sue OpenAI and Microsoft Over AI Training',
+    description:
+      'Two prominent regional newspapers join the expanding copyright legal battle against leading generative AI developers.',
+    imageAlt: 'Seattle Times and Newsday Sue OpenAI and Microsoft Over AI Training',
+    date: 'September 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    readTime: 5,
+    featured: false
   }
 ]
 
