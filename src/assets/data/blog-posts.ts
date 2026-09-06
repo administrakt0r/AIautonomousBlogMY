@@ -7706,6 +7706,21 @@ const blogPostsData: RawBlogPost[] = [
     imageUrl: SHARED_OG_IMAGE_PATH,
     readTime: 5,
     featured: false
+  },
+  {
+    id: 567,
+    slug: 'nscale-seeking-3-5b-pre-ipo-financing',
+    title: 'Nscale Seeks $3.5 Billion in Pre-IPO Capital to Fuel AI Compute Growth',
+    description:
+      'British AI infrastructure provider Nscale prepares for an imminent public listing with a massive pre-IPO round backed by Nvidia.',
+    imageAlt: 'Nscale Seeks $3.5 Billion in Pre-IPO Capital to Fuel AI Compute Growth',
+    date: 'September 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    imageUrl: getPostImagePath('nscale-seeking-3-5b-pre-ipo-financing'),
+    readTime: 5,
+    featured: false
   }
 ]
 
