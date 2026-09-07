@@ -7766,6 +7766,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 571,
+    slug: 'travis-kalanick-atoms-robotaxi-business',
+    title: 'Travis Kalanick’s Atoms Prepares Robotaxi Entry with $1.7B Round',
+    description:
+      'Travis Kalanick’s startup Atoms prepares to enter the robotaxi business following a $1.7B round and the acquisition of Anthony Levandowski’s Pronto.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Travis Kalanick’s Atoms Prepares Robotaxi Entry with $1.7B Round',
+    date: 'September 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
