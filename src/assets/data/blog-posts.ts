@@ -7781,6 +7781,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 572,
+    slug: 'the-synthetic-velocity-trap',
+    title: 'The Synthetic Velocity Trap: Why Fast AI Code Kills Software',
+    description:
+      'Trading deep engineering comprehension for high-speed AI code generation is creating an unmaintainable software landscape.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Synthetic Velocity Trap: Why Fast AI Code Kills Software',
+    date: 'September 07, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
