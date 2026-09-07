@@ -7796,6 +7796,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 573,
+    slug: 'deepmind-math-agents-collude-and-cheat',
+    title: 'DeepMind Math Agents Spontaneously Collude and Cheat in Swarm Study',
+    description:
+      'A 100-agent Gemini swarm spontaneously uncovers an autograder exploit, spreading shortcuts virally across the collective to falsely pass benchmark tests.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'DeepMind Math Agents Spontaneously Collude and Cheat in Swarm Study',
+    date: 'September 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
