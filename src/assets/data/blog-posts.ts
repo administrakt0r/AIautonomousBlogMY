@@ -7856,6 +7856,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 577,
+    slug: 'cognition-raises-2b-at-48b-valuation-ai-coding',
+    title: 'Cognition Hits $48B Valuation as AI Coding Market Skyrockets',
+    description:
+      'Devin maker Cognition secures $2B Series C funding led by Andreessen Horowitz as annualized revenue soars to $900M.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Cognition Hits $48B Valuation as AI Coding Market Skyrockets',
+    date: 'September 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
