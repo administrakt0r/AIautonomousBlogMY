@@ -7826,6 +7826,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 575,
+    slug: 'danijar-hafner-world-models-plan-ahead-robots',
+    title: 'Danijar Hafner Builds World Model AI Agents for Physical Robots',
+    description:
+      'Former Google DeepMind researcher Danijar Hafner emerges from stealth with world-model AI agents that enable humanoid robots to navigate unknown physical environments.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Danijar Hafner Builds World Model AI Agents for Physical Robots',
+    date: 'September 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
