@@ -7841,6 +7841,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 576,
+    slug: 'the-world-model-fallacy',
+    title: 'The World Model Fallacy: Why Pixel Prediction Isn\'t Physical Reasoning',
+    description:
+      'Generating high-fidelity video frames is not the same as understanding physical laws. Why neural world models are statistical renderers, not true simulators.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The World Model Fallacy: Why Pixel Prediction Isn\'t Physical Reasoning',
+    date: 'September 08, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
