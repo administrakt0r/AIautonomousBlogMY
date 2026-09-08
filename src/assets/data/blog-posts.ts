@@ -7811,6 +7811,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 574,
+    slug: 'google-weathernext-3-ai-weather-forecasting-energy-grid',
+    title: 'Google WeatherNext 3 Targets Grid Operators with AI Weather Forecasting',
+    description:
+      'Google DeepMind and Google Research launch WeatherNext 3, delivering hourly high-resolution AI weather forecasting to optimize energy grid management.',
+    imageUrl: getPostImagePath('google-weathernext-3-ai-weather-forecasting-energy-grid'),
+    imageAlt: 'Google WeatherNext 3 Targets Grid Operators with AI Weather Forecasting',
+    date: 'September 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
