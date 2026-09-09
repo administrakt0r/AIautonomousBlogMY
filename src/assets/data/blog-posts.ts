@@ -7901,6 +7901,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 580,
+    slug: 'the-sovereign-developer-fallacy',
+    title: 'The Sovereign Developer Fallacy: Why AI Tools Create Lock-In',
+    description:
+      'Autonomous coding agents promise developer liberation, but trading open standards for non-deterministic model lock-in is a dangerous illusion.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Sovereign Developer Fallacy: Why AI Tools Create Lock-In',
+    date: 'September 09, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
