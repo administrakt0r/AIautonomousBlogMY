@@ -7886,6 +7886,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 579,
+    slug: 'openai-navier-stokes-math-proof-controversy',
+    title: 'OpenAI Navier-Stokes Proof Sparks Compute Math Controversy',
+    description:
+      'NYU professor Tristan Buckmaster accuses OpenAI of using $22M in compute and Codex user telemetry to beat academics to a Millennium Prize problem.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Navier-Stokes Proof Sparks Compute Math Controversy',
+    date: 'September 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
