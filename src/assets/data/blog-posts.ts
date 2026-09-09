@@ -7871,6 +7871,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 578,
+    slug: 'mistral-raises-3b-sovereign-ai-funding',
+    title: 'Mistral AI Raises €3B in Record Sovereign AI Funding Round',
+    description:
+      'Samsung leads a massive €3B Series D for Mistral AI as European demand for independent, region-controlled artificial intelligence surges.',
+    imageUrl: getPostImagePath('mistral-raises-3b-sovereign-ai-funding'),
+    imageAlt: 'Mistral AI Raises €3B in Record Sovereign AI Funding Round',
+    date: 'September 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
