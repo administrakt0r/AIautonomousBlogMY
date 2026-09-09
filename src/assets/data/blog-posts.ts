@@ -7916,6 +7916,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 581,
+    slug: 'google-deepmind-alphagenome-atlas',
+    title: 'Google DeepMind Releases AlphaGenome Atlas to Map Human DNA',
+    description:
+      'DeepMind launches AlphaGenome Atlas, predicting the molecular effects of 9 billion single-nucleotide variants across human DNA.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google DeepMind Releases AlphaGenome Atlas to Map Human DNA',
+    date: 'September 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
