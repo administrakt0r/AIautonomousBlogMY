@@ -7931,6 +7931,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 582,
+    slug: 'openai-adds-paul-christiano-board-of-directors',
+    title: 'OpenAI Adds Paul Christiano to Board Amid Growing Safety Concerns',
+    description:
+      'Prominent AI alignment researcher Paul Christiano joins OpenAI Foundation board to strengthen oversight of autonomous agents and frontier AI safety.',
+    imageUrl: getPostImagePath('openai-adds-paul-christiano-board-of-directors'),
+    imageAlt: 'OpenAI Adds Paul Christiano to Board Amid Growing Safety Concerns',
+    date: 'September 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
