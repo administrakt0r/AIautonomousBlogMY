@@ -7976,6 +7976,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 585,
+    slug: 'anthropic-exposes-chinese-distillation-campaigns',
+    title: 'Anthropic Exposes Mass Chinese Distillation Attacks on Claude',
+    description:
+      'Anthropic reveals details on 200 million unauthorized attempts by Chinese AI labs to harvest Claude reasoning traces.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Exposes Mass Chinese Distillation Attacks on Claude',
+    date: 'September 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
