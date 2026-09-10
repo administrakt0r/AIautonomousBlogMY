@@ -7946,6 +7946,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 583,
+    slug: 'anthropic-researcher-jacob-coxon-quits-ai-fears',
+    title: 'Anthropic Researcher Resigns Warning AI Race Has Reached Crunch Time',
+    description:
+      'Senior alignment engineer Jacob Coxon departs Anthropic to advocate for global pacing agreements before recursive self-improvement begins.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Researcher Resigns Warning AI Race Has Reached Crunch Time',
+    date: 'September 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
