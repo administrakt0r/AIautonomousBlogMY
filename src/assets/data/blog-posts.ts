@@ -7961,6 +7961,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 584,
+    slug: 'the-safety-board-illusion',
+    title: 'The Safety Board Illusion: Why AI Governance is Pure Theater',
+    description:
+      'Appointing high-profile ethicists to corporate boards will not prevent the systemic risks of commercialized AI.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Safety Board Illusion: Why AI Governance is Pure Theater',
+    date: 'September 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
