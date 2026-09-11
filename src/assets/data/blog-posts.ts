@@ -8036,6 +8036,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 589,
+    slug: 'y-combinator-garry-tan-proposes-us-open-weight-ai-distillation-regime',
+    title: "Y Combinator's Garry Tan Proposes US Open-Weight AI Distillation",
+    description:
+      'Y Combinator CEO Garry Tan advocates for domestic model distillation to prevent frontier monopolies and boost American open-source AI.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Y Combinator's Garry Tan Proposes US Open-Weight AI Distillation",
+    date: 'September 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
