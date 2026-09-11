@@ -8021,6 +8021,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 588,
+    slug: 'the-antitrust-excuse',
+    title: 'The Antitrust Excuse: Why AI Labs Are Hiding Behind Competition Law',
+    description:
+      'OpenAI asking Congress if voluntary safety slowdowns violate antitrust law is a performative distraction to avoid slowing down while blaming regulators.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Antitrust Excuse: Why AI Labs Are Hiding Behind Competition Law',
+    date: 'September 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
