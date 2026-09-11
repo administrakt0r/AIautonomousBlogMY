@@ -8006,6 +8006,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 587,
+    slug: 'openai-pauses-pro-subscriptions-astra-demand',
+    title: 'OpenAI Pauses Pro Subscriptions Over Surging Astra Demand',
+    description:
+      'OpenAI temporarily halts new sign-ups for its $200-per-month Pro tier due to overwhelming compute strain from GPT-6 Astra.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Pauses Pro Subscriptions Over Surging Astra Demand',
+    date: 'September 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
