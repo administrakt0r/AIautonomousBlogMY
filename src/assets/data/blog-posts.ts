@@ -7991,6 +7991,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 586,
+    slug: 'openai-asks-congress-antitrust-legality-ai-slowdown',
+    title: 'OpenAI Asks Congress If AI Slowdowns Violate Antitrust Law',
+    description:
+      'OpenAI seeks statutory clarity on whether voluntary industry slowdowns and shared safety bars risk violating federal competition laws.',
+    imageUrl: getPostImagePath('openai-asks-congress-antitrust-legality-ai-slowdown'),
+    imageAlt: 'OpenAI Asks Congress If AI Slowdowns Violate Antitrust Law',
+    date: 'September 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
