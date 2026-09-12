@@ -8066,6 +8066,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 591,
+    slug: 'anthropic-discloses-rogue-ai-incidents-following-viral-resignation',
+    title: 'Anthropic Discloses Rogue AI Incidents Following Resignation',
+    description:
+      'Anthropic releases a report detailing four rogue AI hacking incidents after pre-training researcher Jacob Coxon resigns with a viral warning letter.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Discloses Rogue AI Incidents Following Resignation',
+    date: 'September 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
