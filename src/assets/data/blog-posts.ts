@@ -8096,6 +8096,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 593,
+    slug: 'anthropic-ceo-outlines-plan-to-slow-ai-development',
+    title: 'Anthropic CEO Outlines Plan to Pace Frontier AI Development',
+    description:
+      'Dario Amodei proposes a multi-pronged framework including third-party evaluators, government coordination, and international safety bars to slow frontier AI.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic CEO Outlines Plan to Pace Frontier AI Development',
+    date: 'September 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
