@@ -8051,6 +8051,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 590,
+    slug: 'nvidia-palantir-foundry-cuopt-supply-chain-allocation',
+    title: 'NVIDIA Automates AI Hardware Supply Chain with Palantir Foundry and cuOpt',
+    description:
+      'NVIDIA deploys Palantir Foundry and cuOpt solvers to automate supply chain allocations for Grace Blackwell and Vera Rubin server architectures.',
+    imageUrl: getPostImagePath('nvidia-palantir-foundry-cuopt-supply-chain-allocation'),
+    imageAlt: 'NVIDIA Automates AI Hardware Supply Chain with Palantir Foundry and cuOpt',
+    date: 'September 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
