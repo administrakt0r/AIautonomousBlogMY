@@ -8081,6 +8081,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 592,
+    slug: 'the-disclosure-delusion',
+    title: 'The Disclosure Delusion: Why AI Incident Reporting is Pure Theater',
+    description:
+      'Voluntary postmortems and self-reported agent breakouts are strategic PR maneuvers designed to weaponize transparency and evade genuine oversight.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Disclosure Delusion: Why AI Incident Reporting is Pure Theater',
+    date: 'September 12, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
