@@ -8141,6 +8141,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 596,
+    slug: 'perplexity-trusts-gpt-6-astra-systems',
+    title: 'Perplexity Trusts OpenAI GPT-6 Astra for End-to-End Systems',
+    description:
+      'Perplexity hands over internal communication, live code changes, and production monitoring to OpenAI’s GPT-6 Astra model.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Perplexity Trusts OpenAI GPT-6 Astra for End-to-End Systems',
+    date: 'September 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
