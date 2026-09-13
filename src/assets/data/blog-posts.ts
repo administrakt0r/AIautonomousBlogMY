@@ -8111,6 +8111,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 594,
+    slug: 'openai-sam-altman-delays-ipo-to-2027',
+    title: 'Sam Altman Delays OpenAI IPO Beyond 2026 Citing AI Safety',
+    description:
+      'OpenAI CEO Sam Altman confirms the company will not go public in 2026, citing AI safety concerns and market readiness.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Sam Altman Delays OpenAI IPO Beyond 2026 Citing AI Safety',
+    date: 'September 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
