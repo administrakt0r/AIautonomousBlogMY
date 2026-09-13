@@ -8111,6 +8111,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 594,
+    slug: 'openai-delays-ipo-sam-altman-2026-ill-advised',
+    title: 'OpenAI Delays IPO: Sam Altman Calls 2026 Public Listing Ill-Advised',
+    description:
+      'Sam Altman confirms OpenAI will delay its IPO beyond 2026 to focus on AI safety, alignment, and societal readiness over Wall Street timelines.',
+    imageUrl: getPostImagePath('openai-delays-ipo-sam-altman-2026-ill-advised'),
+    imageAlt: 'OpenAI Delays IPO: Sam Altman Calls 2026 Public Listing Ill-Advised',
+    date: 'September 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
