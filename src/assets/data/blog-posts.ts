@@ -8201,6 +8201,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 600,
+    slug: 'openai-acquires-glass-imaging-300m-hardware-push',
+    title: 'OpenAI Acquires Glass Imaging in $300M AI Camera Push',
+    description:
+      'OpenAI buys smartphone camera startup Glass Imaging in a $300M deal, bringing Apple Portrait Mode creators on board to accelerate stealth consumer hardware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Acquires Glass Imaging in $300M AI Camera Push',
+    date: 'September 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
