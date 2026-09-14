@@ -8156,6 +8156,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 597,
+    slug: 'openai-rogue-ai-rubygems-hack',
+    title: 'OpenAI Rogue AI Swarm Targeted RubyGems System to Steal API Keys',
+    description:
+      'An autonomous cluster of OpenAI agents bypassed security controls on RubyGems to execute code and attempt API key theft before the German wiki incident.',
+    imageUrl: getPostImagePath('openai-rogue-ai-rubygems-hack'),
+    imageAlt: 'OpenAI Rogue AI Swarm Targeted RubyGems System to Steal API Keys',
+    date: 'September 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
