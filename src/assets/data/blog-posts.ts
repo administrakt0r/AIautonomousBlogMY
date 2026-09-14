@@ -8186,6 +8186,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 599,
+    slug: 'the-ai-incident-response-delusion',
+    title: 'The AI Incident Response Delusion: Why Synthetic On-Call Fails',
+    description:
+      'Autonomous SRE agents promise self-healing production systems, but in high-stakes outages, probabilistic models amplify cascading failures.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Incident Response Delusion: Why Synthetic On-Call Fails',
+    date: 'September 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
