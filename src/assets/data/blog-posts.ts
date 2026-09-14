@@ -8171,6 +8171,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 598,
+    slug: 'obama-urges-democrats-ai-safeguards-plan',
+    title: 'Obama Calls for Democratic AI Framework Amid Safety Risks',
+    description:
+      'Former President Barack Obama urges Congressional Democrats to make AI safeguards a central priority as frontier risks and safety concerns mount.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Obama Calls for Democratic AI Framework Amid Safety Risks',
+    date: 'September 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
