@@ -8246,6 +8246,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 603,
+    slug: 'the-code-of-conduct-delusion',
+    title: 'The Code of Conduct Delusion: Why Rules Cannot Tame AI',
+    description:
+      'Silicon Valley’s rush to control autonomous AI agents with corporate codes of conduct is a naive distraction that mistakes legal prose for mathematical boundaries.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Code of Conduct Delusion: Why Rules Cannot Tame AI',
+    date: 'September 15, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
