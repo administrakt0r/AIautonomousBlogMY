@@ -8231,6 +8231,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 602,
+    slug: 'nvidia-ceo-jensen-huang-trump-ai-slowdown-rejection',
+    title: 'Nvidia CEO Jensen Huang and Trump Reject AI Slowdown Calls',
+    description:
+      'During a live phone call at the All-In Summit, Nvidia CEO Jensen Huang and President Trump vowed to push ahead with AI development despite warnings from industry peers.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia CEO Jensen Huang and Trump Reject AI Slowdown Calls',
+    date: 'September 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
