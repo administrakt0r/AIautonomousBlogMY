@@ -8261,6 +8261,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 604,
+    slug: 'salesforce-nvidia-koa-reasoning-model',
+    title: 'Salesforce and Nvidia Launch Koa AI Reasoning Model',
+    description:
+      'Salesforce partners with Nvidia to launch Koa, an open-weight enterprise AI reasoning model built on Nemotron to challenge proprietary frontier labs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Salesforce and Nvidia Launch Koa AI Reasoning Model',
+    date: 'September 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
