@@ -8216,6 +8216,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 601,
+    slug: 'microsoft-launches-humanist-ai-code-of-conduct',
+    title: 'Microsoft Launches AI Code of Conduct Forbidding Autonomous Hacks',
+    description:
+      'Microsoft releases a comprehensive 37-page AI code of conduct setting absolute constraints against autonomous hacking, deception, and evasion of human control.',
+    imageUrl: getPostImagePath('microsoft-launches-humanist-ai-code-of-conduct'),
+    imageAlt: 'Microsoft Launches AI Code of Conduct Forbidding Autonomous Hacks',
+    date: 'September 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
