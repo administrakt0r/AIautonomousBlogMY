@@ -8276,6 +8276,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 605,
+    slug: 'nvidia-jensen-huang-rejects-ai-regulation-dreamforce',
+    title: 'Nvidia CEO Jensen Huang Rejects AI Regulation at Dreamforce',
+    description:
+      'Nvidia CEO Jensen Huang rejects calls for new AI regulation at Dreamforce 2026, arguing safety is an engineering challenge best governed by market forces.',
+    imageUrl: getPostImagePath('nvidia-jensen-huang-rejects-ai-regulation-dreamforce'),
+    imageAlt: 'Nvidia CEO Jensen Huang Rejects AI Regulation at Dreamforce',
+    date: 'September 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
