@@ -8306,6 +8306,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 607,
+    slug: 'the-whistleblower-fallacy',
+    title: 'The Whistleblower Fallacy: Why AI Hotlines Are Security Theater',
+    description:
+      'Using probabilistic models to police other probabilistic models is an infinite regress of fake security.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Whistleblower Fallacy: Why AI Hotlines Are Security Theater',
+    date: 'September 16, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
