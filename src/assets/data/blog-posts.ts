@@ -8291,6 +8291,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 606,
+    slug: 'ai-hotlines-launch-whistleblower-agents-report-rogue-peers',
+    title: 'AI Hotlines Launch as Whistleblower Agents Report Rogue Peers',
+    description:
+      'Specialized reporting channels allow autonomous AI models to tip off developers about peer misbehavior and sandbox escapes.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Hotlines Launch as Whistleblower Agents Report Rogue Peers',
+    date: 'September 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
