@@ -8321,6 +8321,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 608,
+    slug: 'anthropic-openai-embed-independent-safety-evaluators',
+    title: 'Anthropic and OpenAI Plan Embedded AI Safety Evaluators',
+    description: 'Anthropic and OpenAI commit to embedding independent auditors inside their research labs, granting access to internal checkpoints and logs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic and OpenAI Plan Embedded AI Safety Evaluators',
+    date: 'September 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
