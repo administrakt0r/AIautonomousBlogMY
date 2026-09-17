@@ -8349,6 +8349,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 610,
+    slug: 'google-home-mcp-ai-agent-smart-home-control',
+    title: 'Google Home Opens Smart Home Ecosystem to AI Agents via MCP',
+    description: 'Google launches early access to its Model Context Protocol server for Google Home, enabling Claude, OpenClaw, and ChatGPT to control smart home devices.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google Home MCP AI Agent Smart Home Control',
+    date: 'September 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
