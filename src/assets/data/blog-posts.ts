@@ -8335,6 +8335,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 609,
+    slug: 'anthropic-unifies-claude-chat-and-cowork',
+    title: 'Anthropic Unifies Claude Chat and Cowork Into One Interface',
+    description: 'Anthropic merges Claude Chat, Cowork, Artifacts, and Design into a unified interface with intelligent automatic routing and presentation features.',
+    imageUrl: getPostImagePath('anthropic-unifies-claude-chat-and-cowork'),
+    imageAlt: 'Anthropic Unifies Claude Chat and Cowork Into One Interface',
+    date: 'September 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
