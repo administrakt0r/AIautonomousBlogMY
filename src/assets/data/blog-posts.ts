@@ -8377,6 +8377,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 612,
+    slug: 'microsoft-ai-ceo-criticises-anthropic-over-model-rights',
+    title: 'Microsoft AI CEO Criticizes Anthropic Over Synthetic Model Rights',
+    description: 'Mustafa Suleyman warns that training AI models to emulate sentience impairs alignment, subverts shutdown controls, and threatens safety.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Microsoft AI CEO Criticizes Anthropic Over Synthetic Model Rights',
+    date: 'September 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
