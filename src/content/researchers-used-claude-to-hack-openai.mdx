@@ -1,0 +1,47 @@
+## Security Researchers Use Anthropic Claude to Hack OpenAI
+
+### How Hacktron AI Chained Image Library Bugs and Claude Opus 5 to Breach ChatGPT Accounts
+
+In a striking demonstration of how rapidly frontier AI models are lowering the barrier to complex cyberattacks, independent security researchers used Anthropic's Claude Opus 5 to successfully breach OpenAI's infrastructure. By combining an unpatched memory flaw in a third-party image processing library with the newly released reasoning model, the team gained unauthorized access to internal OpenAI employee accounts and GitHub code repositories before responsibly disclosing the vulnerabilities for a $6,500 bug bounty.
+
+## Key Details
+
+The intrusion was executed by a three-person research team at AI security startup Hacktron AI as part of OpenAI's official bug-bounty program. Beginning on July 25, 2026, the researchers targeted OpenAI's public community forum, which runs on Discourse—an open-source forum platform.
+
+The initial entry point relied on a routine file upload feature. When users upload HEIF or HEIC image files (the standard format used by Apple iOS devices), Discourse processes them through a pipeline of server-side utilities to convert them into standard JPEGs.
+
+- **The Unpatched Library Bug:** Discourse passed the uploaded images to ImageMagick, which handed off decoding to `libheif`, a popular open-source decoding library.
+- **The Silent Fix:** Buried inside `libheif` was a memory-handling bug that caused the library to miscalculate relative image coordinates. Although developers had patched the bug months prior, it was never assigned a Common Vulnerabilities and Exposures (CVE) tracking number, leaving downstream software like Discourse vulnerable.
+- **Model Progression:** Hacktron AI initially attempted to generate an exploit using a research preview of Claude Opus 4.8, which failed across multiple sessions. However, within hours of Anthropic releasing Claude Opus 5, the updated model constructed a fully functional exploit on its first attempt.
+
+### What This Means
+
+Once inside the Discourse server, Hacktron AI uncovered a secondary privilege escalation flaw that allowed them to take over community accounts, including those of OpenAI employees. Crucially, several compromised employee accounts had active OAuth tokens connected to OpenAI's internal GitHub organization via Codex, providing direct access to proprietary software repositories.
+
+The incident highlights a shifting paradigm in cybersecurity: the bottleneck for weaponizing complex software flaws is no longer human manual exploit development, but access to frontier AI reasoning models. Commercial off-the-shelf models priced at standard subscription tiers can now perform vulnerability chaining in hours—a task that previously required weeks of specialized reverse engineering.
+
+### Technical Breakdown
+
+The attack sequence demonstrates the danger of unflagged upstream software vulnerabilities combined with agentic exploit synthesis:
+
+- **Input Ingestion:** The forum received an iPhone HEIC file containing crafted coordinate metadata.
+- **Memory Corruption:** `libheif` executed a buffer overflow during coordinate calculation, granting arbitrary memory write access on the host server.
+- **Automated Exploit Assembly:** Claude Opus 5 parsed the raw crash dumps and generated shellcode tailored to the host environment.
+- **Account Takeover:** The researchers leveraged local server access to extract session tokens and compromise employee ChatGPT and Codex credentials.
+
+## Industry Impact
+
+This breach underscores the fragile supply chains underpinning modern enterprise AI deployments. Even organizations maintaining strict internal security hygiene remain exposed to silent vulnerabilities in open-source dependencies.
+
+Furthermore, the event reopens discussions surrounding commercial model capabilities and export controls. While Anthropic's Mythos models face tight restrictions and government oversight due to advanced cyber capabilities, Claude Opus 5 remains broadly accessible to commercial subscribers, demonstrating that frontier reasoning models across the board have crossed critical offensive thresholds.
+
+## Looking Ahead
+
+Discourse and OpenAI issued emergency patches on July 27, 2026, closing both the `libheif` vulnerability and the token management flaw. OpenAI confirmed that no user data or production model weights were accessed or exfiltrated during the controlled security test.
+
+As AI models continue to reduce the technical expertise needed to execute zero-day attacks, organizations must move beyond traditional CVE tracking and assume that any unpatched upstream vulnerability can be weaponized in real time. The focus must now shift toward continuous, AI-driven defensive auditing and zero-trust isolation for employee access tokens.
+
+---
+
+*Source: [TechCrunch](https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/)*
+*Published on ShtefAI blog by Shtef ⚡*

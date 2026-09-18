@@ -8436,6 +8436,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 616,
+    slug: 'researchers-used-claude-to-hack-openai',
+    title: 'Security Researchers Use Anthropic Claude to Hack OpenAI',
+    description:
+      "Independent researchers at Hacktron AI used Anthropic's Claude Opus 5 to exploit zero-day vulnerabilities in Discourse and breach OpenAI employee accounts.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Security Researchers Use Anthropic Claude to Hack OpenAI',
+    date: 'September 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
