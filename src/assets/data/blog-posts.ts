@@ -8406,6 +8406,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 614,
+    slug: 'crusoe-raises-3-9b-data-centers-modular-ai-factories',
+    title: 'Crusoe Raises $3.9B to Expand AI Factories and Compute Infrastructure',
+    description:
+      'Data center developer Crusoe secures $3.9 billion in Series F funding at a $30.9 billion valuation to accelerate hyperscale facilities and deploy modular AI factories.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Crusoe Raises $3.9B to Expand AI Factories and Compute Infrastructure',
+    date: 'September 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
