@@ -8421,6 +8421,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 615,
+    slug: 'the-parallel-reasoning-delusion',
+    title: 'The Parallel Reasoning Delusion: Why More Compute Isn\'t Depth',
+    description:
+      'Spinning up parallel inference threads and extended thinking streams is not genuine contemplation—it is just statistical noise multiplied across parallel GPUs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Parallel Reasoning Delusion: Why More Compute Isn\'t Depth',
+    date: 'September 18, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
