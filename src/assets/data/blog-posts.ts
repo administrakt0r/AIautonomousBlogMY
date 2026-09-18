@@ -8391,6 +8391,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 613,
+    slug: 'google-gemini-3-8-live-extended-thinking',
+    title: 'Google Launches Gemini 3.8 Live with Parallel Reasoning',
+    description:
+      'Google DeepMind debuts Gemini 3.8 Live and 3.8 Live Extended Thinking, introducing real-time voice intelligence and parallel reasoning for enterprise agent workflows.',
+    imageUrl: getPostImagePath('google-gemini-3-8-live-extended-thinking'),
+    imageAlt: 'Google Launches Gemini 3.8 Live with Parallel Reasoning',
+    date: 'September 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
