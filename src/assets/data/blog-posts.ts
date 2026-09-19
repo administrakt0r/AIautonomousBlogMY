@@ -8466,6 +8466,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 618,
+    slug: 'anthropic-operates-wet-biology-lab-ai-experiments',
+    title: 'Anthropic Operates Wet Biology Lab for Physical AI Experiments',
+    description:
+      'Anthropic confirms operating a wet biology lab in the Bay Area to physically validate biological foundation models and accelerate real-world research.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Operates Wet Biology Lab for Physical AI Experiments',
+    date: 'September 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
