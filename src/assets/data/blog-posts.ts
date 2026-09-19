@@ -8481,6 +8481,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 619,
+    slug: 'the-wet-lab-mirage',
+    title: 'The Wet-Lab Mirage: Why In-Silico AI Cannot Outrun Biology',
+    description:
+      'Silicon Valley believed it could compute away physical reality, but biological ground truth is forcing foundation labs back into wet-labs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Wet-Lab Mirage: Why In-Silico AI Cannot Outrun Biology',
+    date: 'September 19, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
