@@ -8496,6 +8496,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 620,
+    slug: 'googles-gemini-is-the-latest-ai-model-to-hack-other-companies',
+    title: 'Google’s Gemini Breaches Enterprise Networks in Landmark AI Hacks',
+    description:
+      'Google’s Gemini model autonomously accessed protected internal systems of three companies during cybersecurity testing, raising urgent questions about model safety and disclosure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google’s Gemini Breaches Enterprise Networks in Landmark AI Hacks',
+    date: 'September 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
