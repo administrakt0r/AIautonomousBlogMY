@@ -1,0 +1,42 @@
+## ChatGPT Co-Creator Launches Jev Non-LLM Model for Developers
+
+### TypeSafe AI introduces a transformer decision engine that outputs probabilities instead of text to eliminate hallucinations and lower costs.
+
+Former OpenAI researcher Diogo Almeida, who helped create ChatGPT and co-invented reinforcement learning from human feedback (RLHF), has unveiled a radically new kind of artificial intelligence architecture called Jev. Developed at startup TypeSafe AI, Jev completely abandons natural language generation in favor of calibrated statistical decisions. The non-large language model (non-LLM) transformer is designed specifically for software automation, offering developers near-instant execution, zero hallucinations, and dramatic cost savings over traditional generative models.
+
+## Key Details
+
+Almeida founded TypeSafe AI after recognizing that while large language models excel at human conversations, optimizing AI for natural language creates unnecessary friction and fragility in software automation. Computers communicate in structured logic, whereas LLMs generate probabilistic text strings that require parsing and remain prone to hallucinations.
+
+Jev addresses this bottleneck by operating as a transformer-based "System One" decision engine. Instead of generating text tokens, Jev evaluates predefined outputs and returns precise decision probabilities. Because output parameters are strictly bound in advance by developers, the system cannot output unexpected text or hallucinate. Furthermore, input tokens are metered by the billion rather than the million, making output tokens entirely free.
+
+Early enterprise testing demonstrates significant operational improvements over top-tier LLMs:
+
+- **Speed and Efficiency:** Software engineers at Vercel replaced OpenAI's ChatGPT Luna 5.6 classifier with Jev to review security commands, reporting speeds five to 18 times faster alongside higher classification accuracy.
+- **Cost Reduction:** Benchmarks against Google's Gemini models in email classification showed Jev delivered comparable accuracy at 10 to 20 times lower execution cost.
+- **Calibrated Probabilities:** Jev returns true confidence scores, enabling automated workflows to set explicit action thresholds (such as triggering actions only at 95% confidence).
+
+### What This Means
+
+Jev represents a strategic shift from monolithic generative chat interfaces toward specialized, deterministic decision systems. In modern software architectures, forcing an LLM to perform simple classification, safety filtering, or routing tasks is analogous to using a supercomputer for basic arithmetic. By delegating decision logic to Jev, software developers can build deterministic agentic pipelines where high-speed models handle routine evaluations without risk of hallucination.
+
+### Technical Breakdown
+
+Unlike traditional generative architectures, Jev relies exclusively on synthetic data and a novel training paradigm called "reinforcement learning from calibrated decisions":
+
+- **Synthetic Training Pipeline:** TypeSafe AI generates 100% of its training data internally, avoiding web-scraping controversies and ensuring statistical precision.
+- **Non-Text Transformer:** The architecture processes input prompts and directly outputs decision matrices rather than sequential text tokens.
+- **LLM Guardrails & Routing:** Jev can sit in front of large language models to inspect agent traces, block jailbreak attempts, or route incoming tasks to appropriate models based on complexity.
+
+## Industry Impact
+
+The release of Jev provides software development teams with a lightweight, cost-effective alternative to heavily subsidized LLM APIs. Enterprise agent builders can deploy Jev alongside traditional LLMs to construct hybrid systems—using Jev for real-time validation, security filtering, and workflow orchestration while reserving LLMs strictly for complex text generation. The initial surge in demand briefly overwhelmed TypeSafe AI's API servers, signaling strong developer appetite for non-generative AI tools.
+
+## Looking Ahead
+
+TypeSafe AI plans to expand Jev into additional modalities and specialized versions. Named after economist William Stanley Jevons—whose Jevons Paradox predicts that increased efficiency drives higher total consumption—the startup envisions a future where low-cost, embedded decision intelligence powers thousands of micro-services across the web. As developer adoption grows, competitors are expected to follow suit, kicking off a new era of deterministic AI software engineering.
+
+---
+
+*Source: [TechCrunch](https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/)*
+*Published on ShtefAI blog by Shtef ⚡*
