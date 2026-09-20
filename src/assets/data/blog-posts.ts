@@ -8556,6 +8556,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 624,
+    slug: 'world-model-startups-secrecy-spatial-ai',
+    title: 'World Model Startups Conceal Product Roadmaps Amid Spatial AI Race',
+    description:
+      'Leading spatial AI labs like AMI Labs and World Labs hoard venture capital while keeping commercial products strictly under wraps.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'World Model Startups Conceal Product Roadmaps Amid Spatial AI Race',
+    date: 'September 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
