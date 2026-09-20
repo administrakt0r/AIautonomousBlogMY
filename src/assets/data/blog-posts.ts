@@ -8511,6 +8511,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 621,
+    slug: 'trump-proposes-ai-rebranding-and-ai-force',
+    title: "Trump Proposes AI Rebranding and Creation of 'AI Force'",
+    description:
+      "President Donald Trump dismisses AI safety fears as a hoax, polls followers on renaming AI, and announces plans for a military 'AI Force'.",
+    imageUrl: getPostImagePath('trump-proposes-ai-rebranding-and-ai-force'),
+    imageAlt: "President Donald Trump proposes AI rebranding and AI Force creation",
+    date: 'September 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
