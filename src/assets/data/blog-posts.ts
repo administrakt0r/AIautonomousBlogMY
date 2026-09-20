@@ -8526,6 +8526,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 622,
+    slug: 'chatgpt-inventor-launches-jev-non-llm-model',
+    title: 'ChatGPT Co-Creator Launches Jev Non-LLM Model for Developers',
+    description:
+      'TypeSafe AI unveils Jev, a non-LLM decision engine that outputs probabilities instead of text to eliminate hallucinations and reduce compute costs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'TypeSafe AI launches Jev non-LLM decision model',
+    date: 'September 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
