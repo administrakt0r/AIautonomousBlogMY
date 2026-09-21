@@ -8556,6 +8556,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 624,
+    slug: 'un-scientific-panel-ai-precautionary-principle',
+    title: 'UN Panel Demands Precautionary Safeguards for Autonomous AI',
+    description:
+      'Global scientific body warns loss-of-control risks from autonomous AI agents require immediate regulation before full scientific consensus.',
+    imageUrl: getPostImagePath('un-scientific-panel-ai-precautionary-principle'),
+    imageAlt: 'UN Panel Demands Precautionary Safeguards for Autonomous AI',
+    date: 'September 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
