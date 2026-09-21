@@ -8600,6 +8600,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 627,
+    slug: 'openai-forms-math-advisory-group',
+    title: 'OpenAI Forms Math Advisory Group as AI Solves 100 Open Problems',
+    description:
+      'OpenAI announces a new independent math advisory panel at IAS Princeton as its internal reasoning AI resolves over 100 open mathematical problems.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Forms Math Advisory Group as AI Solves 100 Open Problems',
+    date: 'September 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
