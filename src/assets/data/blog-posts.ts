@@ -8585,6 +8585,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 626,
+    slug: 'the-walled-web-delusion',
+    title: 'The Walled Web Delusion: Why Blocking AI Agents Will Backfire',
+    description:
+      'Web platforms build digital fortresses to keep autonomous agents out, but they are only walling themselves off from the future economy.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Walled Web Delusion: Why Blocking AI Agents Will Backfire',
+    date: 'September 21, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
