@@ -8645,6 +8645,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 630,
+    slug: 'the-zero-trust-fallacy-why-securing-ai-agents-with-legacy-architecture-fails',
+    title: 'The Zero-Trust Fallacy: Why Securing AI Agents with Legacy Architecture Fails',
+    description:
+      'Enterprise cybersecurity is trying to bolt zero-trust perimeter defenses onto autonomous AI agents, oblivious to how probabilistic reasoning invalidates deterministic models.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Zero-Trust Fallacy: Why Securing AI Agents with Legacy Architecture Fails',
+    date: 'September 22, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
