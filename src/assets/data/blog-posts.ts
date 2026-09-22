@@ -8630,6 +8630,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 629,
+    slug: 'toyota-6b-robotics-investment-physical-ai',
+    title: 'Toyota Estimates $6.4B Market for Physical AI in Robotics',
+    description:
+      'Toyota evaluates a 1 trillion yen ($6.4B) annual investment from 2028 to deploy 400,000 physical AI factory robots across global manufacturing lines.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Toyota Estimates $6.4B Market for Physical AI in Robotics',
+    date: 'September 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
