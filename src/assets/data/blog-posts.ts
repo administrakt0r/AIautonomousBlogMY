@@ -8615,6 +8615,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 628,
+    slug: 'meta-muse-zero-day-vulnerability',
+    title: 'Meta’s Muse AI Assistant Hit by Serious Zero-Day Vulnerability',
+    description:
+      'A zero-day flaw in Meta’s macOS Muse agent allows unprivileged processes to hijack account tokens and redirect dictation streams.',
+    imageUrl: getPostImagePath('meta-muse-zero-day-vulnerability'),
+    imageAlt: 'Meta’s Muse AI Assistant Hit by Serious Zero-Day Vulnerability',
+    date: 'September 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
