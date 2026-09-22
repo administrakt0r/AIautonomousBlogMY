@@ -8660,6 +8660,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 631,
+    slug: 'openai-launches-gpt-6-sol-and-luna',
+    title: 'OpenAI Launches GPT-6 Sol and Luna with Cut-Rate API Pricing',
+    description:
+      'OpenAI expands its sixth-generation AI models with cheaper, highly reliable Sol and Luna releases.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches GPT-6 Sol and Luna with Cut-Rate API Pricing',
+    date: 'September 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
