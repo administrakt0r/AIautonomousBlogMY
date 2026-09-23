@@ -8720,6 +8720,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 635,
+    slug: 'chatgpt-mobile-app-voice-agentic-features',
+    title: 'OpenAI Brings Voice AI Agents to ChatGPT Mobile App',
+    description:
+      'Plus and Pro subscribers can now trigger multi-step agentic workflows and coding tasks on mobile via conversational voice controls.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Brings Voice AI Agents to ChatGPT Mobile App',
+    date: 'September 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
