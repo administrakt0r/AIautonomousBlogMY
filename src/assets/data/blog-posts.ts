@@ -8675,6 +8675,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 632,
+    slug: 'rand-report-us-superintelligence-strategy',
+    title: 'RAND Unveils US Geopolitical Strategy for Superintelligence Era',
+    description:
+      'The think tank advocates a flexible Freedom of Action strategy to maintain technological dominance amid rapid AI takeoff.',
+    imageUrl: getPostImagePath('rand-report-us-superintelligence-strategy'),
+    imageAlt: 'RAND Unveils US Geopolitical Strategy for Superintelligence Era',
+    date: 'September 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
