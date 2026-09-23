@@ -8690,6 +8690,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 633,
+    slug: 'anthropic-launches-claude-opus-5-5-with-stricter-cybersecurity-safeguards',
+    title: 'Anthropic Launches Claude Opus 5.5 With Stricter Cybersecurity Safeguards',
+    description:
+      'Anthropic releases Claude Opus 5.5 with 85% fewer sandbox circumvention attempts, 40% lower costs, and automated safety routing.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Claude Opus 5.5 launch announcement',
+    date: 'September 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
