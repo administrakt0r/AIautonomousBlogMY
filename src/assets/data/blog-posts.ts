@@ -8750,6 +8750,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 637,
+    slug: 'anthropic-biolab-discovers-novel-crispr-like-enzyme',
+    title: "Anthropic's Wet Biolab Discovers Novel CRISPR-Like Enzyme System",
+    description:
+      'Utilizing 950 coordinated Claude agents over 21 hours, Anthropic identified previously uncharacterized gene-editing enzyme mechanisms in bacteriophage DNA.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: "Anthropic's Wet Biolab Discovers Novel CRISPR-Like Enzyme System",
+    date: 'September 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
