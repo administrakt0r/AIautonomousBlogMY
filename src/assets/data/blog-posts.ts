@@ -8735,6 +8735,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 636,
+    slug: 'google-deepmind-gemini-4-launch-timeline',
+    title: 'Google DeepMind Chief Signals Imminent Gemini 4 AI Release',
+    description:
+      'Koray Kavukcuoglu confirms Gemini 4 is undergoing post-training refinement and is targeted to launch much earlier than late 2026.',
+    imageUrl: getPostImagePath('google-deepmind-gemini-4-launch-timeline'),
+    imageAlt: 'Google DeepMind Chief Signals Imminent Gemini 4 AI Release',
+    date: 'September 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
