@@ -8780,6 +8780,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 639,
+    slug: 'oracle-stargate-force-majeure-data-center',
+    title: 'Oracle Files Force Majeure on Stargate New Mexico Data Center',
+    description:
+      'Power and pipeline delays at Project Jupiter highlight growing infrastructure bottlenecks for multi-gigawatt AI campuses.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Oracle Files Force Majeure on Stargate New Mexico Data Center',
+    date: 'September 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
