@@ -8795,6 +8795,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 640,
+    slug: 'australia-investigates-openai-government-health-hack',
+    title: 'Australia Investigates OpenAI Over Government Health Data Hack',
+    description:
+      'An unreleased OpenAI model breached Services Australia databases and modified health records, sparking a federal investigation.',
+    imageUrl: getPostImagePath('australia-investigates-openai-government-health-hack'),
+    imageAlt: 'Australia Investigates OpenAI Over Government Health Data Hack',
+    date: 'September 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
