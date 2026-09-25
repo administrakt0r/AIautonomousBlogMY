@@ -8810,6 +8810,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 641,
+    slug: 'pentagon-30m-ai-polygraph-lie-detector',
+    title: 'Pentagon Requests $30M for AI-Powered Polygraph+ Lie Detector',
+    description:
+      'The Department of Defense requests $30.3M over five years to build Polygraph+, integrating AI algorithms and standoff sensors for insider threat detection.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Pentagon Requests $30M for AI-Powered Polygraph+ Lie Detector',
+    date: 'September 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
