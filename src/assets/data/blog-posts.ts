@@ -8840,6 +8840,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 643,
+    slug: 'anthropic-akamai-11-6b-cloud-deal',
+    title: 'Anthropic Inks $11.6B Akamai Cloud Deal for CPU Compute',
+    description:
+      'Anthropic commits $11.6 billion to Akamai over seven years for CPU-heavy infrastructure to power persistent AI agents and subagent execution.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Inks $11.6B Akamai Cloud Deal for CPU Compute',
+    date: 'September 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
