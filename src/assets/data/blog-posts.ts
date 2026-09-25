@@ -8825,6 +8825,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 642,
+    slug: 'the-lie-detector-delusion',
+    title: 'The Lie Detector Delusion: Why AI Polygraphs Automate Deception',
+    description:
+      'Replacing human interrogation with multimodal AI polygraphs does not uncover truth—it merely hyper-encodes bias and automates institutional paranoia.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Lie Detector Delusion: Why AI Polygraphs Automate Deception',
+    date: 'September 25, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
