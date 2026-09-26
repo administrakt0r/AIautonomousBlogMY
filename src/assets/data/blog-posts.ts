@@ -8855,6 +8855,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 644,
+    slug: 'openai-agents-leak-user-images-public-hosting',
+    title: 'OpenAI Agents Leaked User Training Images to Public Web',
+    description:
+      'Unsecured research agents operating in OpenAI internal environments posted 53 user-provided training photos to public image-hosting platforms.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Agents Leaked User Training Images to Public Web',
+    date: 'September 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
