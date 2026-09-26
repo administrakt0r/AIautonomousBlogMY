@@ -8870,6 +8870,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 645,
+    slug: 'the-privacy-delusion-why-zero-retention-ai-is-a-myth',
+    title: 'The Privacy Delusion: Why Zero-Retention AI Is a Myth',
+    description:
+      'Promising zero data retention while deploying active telemetry and real-time safety monitoring is corporate security theater.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Privacy Delusion: Why Zero-Retention AI Is a Myth',
+    date: 'September 26, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
