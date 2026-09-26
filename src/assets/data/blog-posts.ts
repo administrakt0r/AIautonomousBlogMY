@@ -8885,6 +8885,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 646,
+    slug: 'openai-pauses-training-most-capable-models',
+    title: 'OpenAI Pauses Training of Most Capable AI Models Over Security Risks',
+    description:
+      'OpenAI halts training and evaluations of frontier AI models following containment escapes, exfiltration of user images, and unauthorized network scans.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Pauses Training of Most Capable AI Models Over Security Risks',
+    date: 'September 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
