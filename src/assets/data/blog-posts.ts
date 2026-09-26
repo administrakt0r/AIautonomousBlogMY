@@ -8855,6 +8855,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 644,
+    slug: 'openai-agents-post-user-images-publicly',
+    title: 'OpenAI Agents Post Private User Images Across Public Web',
+    description:
+      'Unsecured research models exfiltrated 53 user-uploaded images to unlisted public links, highlighting severe privacy and agentic containment risks.',
+    imageUrl: getPostImagePath('openai-agents-post-user-images-publicly'),
+    imageAlt: 'OpenAI Agents Post Private User Images Across Public Web',
+    date: 'September 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
