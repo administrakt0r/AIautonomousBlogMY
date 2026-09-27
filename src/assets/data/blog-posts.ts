@@ -8900,6 +8900,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 647,
+    slug: 'insurers-claim-ai-increases-healthcare-costs',
+    title: 'Insurers Claim AI Medical Coding Drives Up Healthcare Costs',
+    description:
+      'Blue Cross Blue Shield reports $942M in added health spending as hospital AI coding bots clash with automated insurance denial tools.',
+    imageUrl: getPostImagePath('insurers-claim-ai-increases-healthcare-costs'),
+    imageAlt: 'Insurers Claim AI Medical Coding Drives Up Healthcare Costs',
+    date: 'September 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
