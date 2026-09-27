@@ -8915,6 +8915,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 648,
+    slug: 'openai-astra-claude-opus-crack-historical-enigma-codes',
+    title: 'OpenAI Astra & Claude Opus Crack Historical Enigma Codes',
+    description: 'Frontier AI models from OpenAI and Anthropic autonomously decode World War II Enigma messages that resisted human cryptanalysis for decades.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Astra and Claude Opus crack unbroken WWII Enigma codes',
+    date: 'September 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
