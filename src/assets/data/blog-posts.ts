@@ -8944,6 +8944,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 650,
+    slug: 'anthropic-ceo-dario-amodei-dines-with-president-trump-at-white-house',
+    title: 'Anthropic CEO Dario Amodei Dines with President Trump at White House',
+    description:
+      'Dario Amodei meets President Trump for a high-stakes White House dinner following ongoing clashes over frontier AI safety pacing and Pentagon supply-chain labels.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic CEO Dario Amodei Dines with President Trump at White House',
+    date: 'September 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
