@@ -8929,6 +8929,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 649,
+    slug: 'the-autonomous-sre-delusion',
+    title: 'The Autonomous SRE Delusion: Why AI On-Call Systems Will Fail',
+    description:
+      'Delegating production incident response to probabilistic models will create catastrophic cascading failures.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Autonomous SRE Delusion: Why AI On-Call Systems Will Fail',
+    date: 'September 27, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
