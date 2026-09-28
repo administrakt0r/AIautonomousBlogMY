@@ -9004,6 +9004,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 654,
+    slug: 'amd-acquires-world-labs-8b-deal',
+    title: 'AMD Acquires Fei-Fei Li’s World Labs in $8.2 Billion AI Deal',
+    description: 'Semiconductor giant AMD acquires spatial AI startup World Labs for $8.2 billion, with pioneer Dr. Fei-Fei Li joining as Chief Scientist.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AMD Acquires Fei-Fei Li’s World Labs in $8.2 Billion AI Deal',
+    date: 'September 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
