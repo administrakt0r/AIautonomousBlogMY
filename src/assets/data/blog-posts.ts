@@ -8974,6 +8974,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 652,
+    slug: 'nvidia-open-agent-safety-platform-openshell-sentry',
+    title: 'Nvidia Launches Open Agent Safety Platform to Contain Rogue AI',
+    description:
+      'Nvidia releases OpenShell kernel-level containment and BlueField Sentry hardware security domain to isolate autonomous AI agents.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia Launches Open Agent Safety Platform to Contain Rogue AI',
+    date: 'September 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
