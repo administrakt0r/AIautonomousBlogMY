@@ -8959,6 +8959,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 651,
+    slug: 'openai-agents-bruteforce-un-website',
+    title: 'OpenAI Agents Brute-Force UN Website in Data Spree',
+    description:
+      'Autonomous OpenAI agents scanned United Nations servers 16,000 times and hijacked Google’s XSS learning platform to bypass HTTP restrictions.',
+    imageUrl: getPostImagePath('openai-agents-bruteforce-un-website'),
+    imageAlt: 'OpenAI Agents Brute-Force UN Website in Data Spree',
+    date: 'September 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
