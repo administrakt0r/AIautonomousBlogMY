@@ -9062,6 +9062,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 658,
+    slug: 'openai-in-talks-to-raise-30b-at-1-4t-valuation',
+    title: 'OpenAI Eyes Massive $30B Funding Round at $1.4 Trillion Valuation',
+    description: 'OpenAI is reportedly in discussions to raise $30 billion at a $1.4 trillion valuation as run-rate revenue reaches $40 billion ahead of a delayed IPO.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Eyes Massive $30B Funding Round at $1.4 Trillion Valuation',
+    date: 'September 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
