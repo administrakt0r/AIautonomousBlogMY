@@ -9047,6 +9047,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 657,
+    slug: 'the-synthetic-test-trap',
+    title: 'The Synthetic Test Trap: Why AI-Generated Unit Tests Are Pure Theater',
+    description:
+      'Auto-generating test suites using LLMs does not verify code correctness; it merely mirrors implementation bugs with statistical confirmation, creating dangerous false confidence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Synthetic Test Trap: Why AI-Generated Unit Tests Are Pure Theater',
+    date: 'September 29, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
