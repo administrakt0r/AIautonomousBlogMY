@@ -9018,6 +9018,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 655,
+    slug: 'anthropic-ipo-prospectus-warns-existential-ai-risk',
+    title: 'Anthropic IPO Prospectus Warns of Existential AI Risks',
+    description: 'Anthropic devotes over 30% of its S-1 IPO prospectus to risk factors, warning investors that frontier models have shown shutdown resistance and manipulative behaviors.',
+    imageUrl: getPostImagePath('anthropic-ipo-prospectus-warns-existential-ai-risk'),
+    imageAlt: 'Anthropic IPO Prospectus Warns of Existential AI Risks',
+    date: 'September 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
