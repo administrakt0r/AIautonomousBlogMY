@@ -9032,6 +9032,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 656,
+    slug: 'anthropic-releases-claude-sonnet-5-5',
+    title: 'Anthropic Releases Claude Sonnet 5.5: Faster, Cheaper, Agent-Ready',
+    description:
+      'Anthropic launches Claude Sonnet 5.5, delivering a 30% speed boost, reduced token burn, superior agentic coding, and Opus-level cybersecurity safeguards.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Releases Claude Sonnet 5.5 AI Model',
+    date: 'September 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
