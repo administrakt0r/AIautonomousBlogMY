@@ -9076,6 +9076,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 659,
+    slug: 'openai-absent-nvidia-agent-safety-consortium',
+    title: 'OpenAI Absent From Nvidia AI Agent Safety Consortium',
+    description: 'OpenAI skips official endorsement of Nvidia Open Agent Safety Platform while actively collaborating on OpenShell sandboxing tech.',
+    imageUrl: getPostImagePath('openai-absent-nvidia-agent-safety-consortium'),
+    imageAlt: 'OpenAI Absent From Nvidia AI Agent Safety Consortium',
+    date: 'September 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
