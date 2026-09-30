@@ -9104,6 +9104,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 661,
+    slug: 'google-gemini-4-argon-launch',
+    title: 'Google Debuts Gemini 4 Argon Model with 1M Output Tokens',
+    description: 'Google DeepMind releases its next-generation frontier AI model featuring an unprecedented 1M output token window for autonomous coding and defensive cybersecurity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google Debuts Gemini 4 Argon Model with 1M Output Tokens',
+    date: 'September 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
