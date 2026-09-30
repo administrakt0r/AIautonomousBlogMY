@@ -9090,6 +9090,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 660,
+    slug: 'openai-launches-gpt-6-1-sol',
+    title: 'OpenAI Launches GPT-6.1 Sol Offering Astra Level Intelligence',
+    description: 'OpenAI unveils GPT-6.1 Sol at DevDay 2026, offering near-parity with GPT-6 Astra at one-fifth the token price following safety pauses on Astra.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches GPT-6.1 Sol Offering Astra Level Intelligence',
+    date: 'September 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
