@@ -9104,6 +9104,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 661,
+    slug: 'the-cheap-token-illusion',
+    title: 'The Cheap Token Illusion: Why Cut-Rate AI Compute Spawns Systemic Debt',
+    description:
+      'Slashing API token prices promises democratized intelligence, but hyper-cheap compute is actually flooding software architectures with unmaintainable complexity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Cheap Token Illusion: Why Cut-Rate AI Compute Spawns Systemic Debt',
+    date: 'September 30, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
