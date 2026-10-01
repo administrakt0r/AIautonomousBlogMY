@@ -9146,6 +9146,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 664,
+    slug: 'the-control-plane-delusion',
+    title: 'The Control Plane Delusion: Why AI Control Planes Fail',
+    description:
+      'Enterprise IT is attempting to govern non-deterministic AI agents with legacy control planes, creating an illusory layer of control over systemic chaos.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Control Plane Delusion: Why AI Control Planes Fail',
+    date: 'October 01, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
