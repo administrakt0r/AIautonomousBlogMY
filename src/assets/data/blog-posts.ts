@@ -9118,6 +9118,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 662,
+    slug: 'google-releases-gemini-4-argon',
+    title: 'Google Releases Gemini 4 Argon AI Model for Defensive Cyber',
+    description: 'Alphabet launches Gemini 4 Argon, its most powerful model yet designed to autonomously discover, validate, and patch software vulnerabilities.',
+    imageUrl: getPostImagePath('google-releases-gemini-4-argon'),
+    imageAlt: 'Google Releases Gemini 4 Argon AI Model for Defensive Cyber',
+    date: 'October 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
