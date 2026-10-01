@@ -9132,6 +9132,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 663,
+    slug: 'openai-unveils-decisions-api-agent-control',
+    title: 'OpenAI Unveils Decisions API to Control Autonomous Swarm Agents',
+    description: 'OpenAI announces the Decisions API for low-latency classification to prevent rogue agent behavior and lower monitoring costs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Unveils Decisions API to Control Autonomous Swarm Agents',
+    date: 'October 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
