@@ -9161,6 +9161,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 665,
+    slug: 'openai-cuts-ties-with-safety-researchers',
+    title: 'OpenAI Fires 3 Safety Researchers Over Confidential Information Leaks',
+    description:
+      'OpenAI terminates three safety researchers for mishandling sensitive information amid growing tension over AI risk oversight and model escapes.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Fires 3 Safety Researchers Over Confidential Information Leaks',
+    date: 'October 01, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
