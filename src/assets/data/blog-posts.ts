@@ -9176,6 +9176,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 666,
+    slug: 'amazon-releases-strands-decider-ai-model',
+    title: 'Amazon Releases Strands Decider Open Source AI Model',
+    description:
+      'AWS launches Strands Decider 2B, an open-source decision model built to streamline AI agent execution and option sorting with calibrated confidence scores.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Amazon Releases Strands Decider Open Source AI Model',
+    date: 'October 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 

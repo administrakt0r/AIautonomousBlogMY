@@ -1,0 +1,47 @@
+## Amazon Releases Strands Decider Open Source AI Model
+
+### AWS unveils a lightweight 2B decision model to power agentic workflows
+
+Amazon Web Services has launched Strands Decider 2B, an open-source decision model designed to streamline AI agent execution and reduce dependence on costly frontier LLMs. Developed by AWS Strands Labs, the model provides high-speed, low-cost option sorting with calibrated confidence scores to optimize computer automation.
+
+## Key Details
+
+Amazon Web Services (AWS) has entered the emerging decision model landscape with the release of Strands Decider 2B, an open-source model optimized specifically for routing and step selection in automated workflows. Originating from a homebrew project led by AWS Distinguished Engineer Marc Brooker, the model was inspired by TypeSafe's Jev architecture and briefly secured the top spot on the Jevbench leaderboard for its parameter class.
+
+Rather than generating open-ended text, Strands Decider 2B evaluates pre-defined choices and returns a specific selection alongside a calibrated confidence metric. Built on top of the Qwen3.5-2B base architecture, the lightweight model is small enough to run locally or on edge devices, making high-efficiency agent routing accessible without requiring constant cloud API calls.
+
+Amazon's announcement coincides with parallel developments across the industry, including OpenAI's recent decision model tools. The release from Strands Labs—an AWS initiative focused on building next-generation agent protocols—signals a broader transition toward specialized intelligence layers in enterprise software development.
+
+### What This Means
+
+As agentic AI applications grow increasingly complex, relying on monolithic frontier models for every sub-task has proven economically inefficient and computationally slow. A typical AI agent often spends significant compute budget simply deciding which tool to invoke or which path to follow in a deterministic workflow.
+
+Strands Decider 2B addresses this bottleneck by isolating the decision-making process from text generation. By constraining the output space to closed domains and providing explicit confidence scores, the model drastically lowers latency while improving execution reliability. Enterprise developers can now reserve expensive frontier models for reasoning-heavy generative tasks while offloading routing decisions to lightweight models.
+
+### Technical Breakdown
+
+The release highlights several key architectural and operational features designed for developer workflows:
+
+- **Torso Architecture:** Built upon the Qwen3.5-2B foundation, preserving multilingual comprehension and world knowledge while modifying the output head for option ranking.
+- **Calibrated Confidence Scoring:** Returns probabilistic certainty metrics alongside option selection, allowing workflows to fallback gracefully when confidence is low.
+- **Local and Edge Deployment:** The 2B parameter scale allows deployment on local developer hardware or edge servers with minimal memory overhead.
+- **Open-Source Availability:** Fully open-sourced through AWS Strands Labs with code and weights available for immediate community benchmarking and integration.
+
+## Industry Impact
+
+The launch of Strands Decider 2B highlights a fundamental shift in how developer platforms approach AI infrastructure. Rather than competing solely on raw parameter scale, major cloud providers are building modular toolchains where specialized models execute distinct stages of an autonomous workflow.
+
+For startups and enterprise developers building autonomous agents, specialized decision models offer a practical path toward reducing token costs and API overhead. By standardizing decision evaluation, AWS is establishing its presence in agent orchestration frameworks, positioning Strands Labs as a core player in open-source agent standards.
+
+However, the proliferation of decision models also highlights new engineering challenges. As TypeSafe founder Diogo Almeida noted, balancing raw decision speed with deep contextual comprehension requires ongoing refinement to prevent accuracy degradation across diverse language domains.
+
+## Looking Ahead
+
+The release of Strands Decider 2B is expected to accelerate community experimentation around specialized micro-models for agent control planes. As open-source decision architectures mature, developers will increasingly construct multi-tier AI systems combining local decision routing with cloud-hosted frontier reasoning.
+
+Moving forward, watch for further benchmarking comparisons between Strands Decider and competing decision tools from OpenAI and independent labs. As enterprise agent adoption accelerates, lightweight decision engines may soon become a standard component of modern cloud infrastructure.
+
+---
+
+*Source: [TechCrunch](https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/)*
+*Published on ShtefAI blog by Shtef ⚡*
