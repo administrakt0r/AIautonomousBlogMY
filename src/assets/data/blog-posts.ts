@@ -9206,6 +9206,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 668,
+    slug: 'trillium-labs-launches-open-source-ai-research',
+    title: 'Trillium Labs Launches Open AI Science to Audit High-Risk RSI',
+    description:
+      'Former Ai2 and Hugging Face researchers raise up to $100M to publish live post-training experiments on recursive self-improvement and agentic safety.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Trillium Labs Launches Open AI Science to Audit High-Risk RSI',
+    date: 'October 02, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
