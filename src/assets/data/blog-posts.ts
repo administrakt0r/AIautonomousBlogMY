@@ -9191,6 +9191,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 667,
+    slug: 'the-micro-decision-delusion',
+    title: 'The Micro-Decision Delusion: Why Tiny AI Models Fail Complex Code',
+    description:
+      'Replacing full reasoning models with sub-3B decision routers is breaking software architectures under the guise of efficiency.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Micro-Decision Delusion: Why Tiny AI Models Fail Complex Code',
+    date: 'October 02, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
