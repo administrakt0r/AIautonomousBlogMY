@@ -9251,6 +9251,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 671,
+    slug: 'the-edge-ai-delusion-why-local-hardware-is-still-a-cloud-anchor',
+    title: 'The Edge AI Delusion: Why Local Silicon is a Cloud Anchor',
+    description:
+      'Silicon vendors promise local AI hardware will liberate us from the cloud, but NPU chips are actually an expensive bridge back to hyperscale infrastructure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Edge AI Delusion: Why Local Silicon is a Cloud Anchor',
+    date: 'October 03, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
