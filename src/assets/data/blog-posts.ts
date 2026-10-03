@@ -9221,6 +9221,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 669,
+    slug: 'apple-tightens-macos-full-disk-access-ai-agent-risks',
+    title: 'Apple Tightens macOS Full Disk Access Over AI Agent Security',
+    description:
+      'Apple introduces stricter macOS Full Disk Access permissions after desktop AI agents sparked major privacy concerns by accessing sensitive user data.',
+    imageUrl: getPostImagePath('apple-tightens-macos-full-disk-access-ai-agent-risks'),
+    imageAlt: 'Apple Tightens macOS Full Disk Access Over AI Agent Security',
+    date: 'October 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
