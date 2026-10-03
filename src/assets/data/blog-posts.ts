@@ -9266,6 +9266,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 672,
+    slug: 'openai-safety-employee-resigns-broken-culture',
+    title: 'OpenAI Safety Leader Resigns Warning Company Culture Is Broken',
+    description:
+      'David Robinson departs OpenAI with a dire warning, comparing frontier AI risks to nuclear power plant safety and criticizing iterative deployment.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Safety Leader Resigns Warning Company Culture Is Broken',
+    date: 'October 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
