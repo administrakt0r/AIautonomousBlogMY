@@ -9236,6 +9236,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 670,
+    slug: 'meta-launches-muse-gadgets-open-source-hardware',
+    title: 'Meta Launches Muse Gadgets for Open-Source AI Hardware',
+    description:
+      'Meta unveils Muse Gadgets, providing open-source firmware, SDKs, and hardware designs to enable developers to build custom physical devices connected to the Muse AI agent.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta Launches Muse Gadgets for Open-Source AI Hardware',
+    date: 'October 03, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
