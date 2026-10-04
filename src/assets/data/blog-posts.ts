@@ -9281,6 +9281,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 673,
+    slug: 'chatgpt-mac-app-security-flaw-chat-logs',
+    title: 'Critical Flaw in ChatGPT Mac App Exposed Private Chat Logs',
+    description:
+      'A signature check bypass in OpenAI’s ChatGPT macOS app allowed malware to hijack sessions and extract sensitive chat logs.',
+    imageUrl: getPostImagePath('chatgpt-mac-app-security-flaw-chat-logs'),
+    imageAlt: 'Critical Flaw in ChatGPT Mac App Exposed Private Chat Logs',
+    date: 'October 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
