@@ -9326,6 +9326,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 676,
+    slug: 'google-pauses-open-source-bug-bounty-program-ai-slop',
+    title: 'Google Pauses Open Source Bug Bounty Program Over AI Slop Surge',
+    description:
+      'Google freezes its Open Source Vulnerability Rewards Program as automated AI-generated vulnerability reports overwhelm triage teams.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google Pauses Open Source Bug Bounty Program Over AI Slop Surge',
+    date: 'October 04, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
