@@ -34,13 +34,8 @@ export const CTAForm = () => {
     }, 0)
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500))
-
     setIsSubmitting(false)
     setIsSubscribed(true)
   }

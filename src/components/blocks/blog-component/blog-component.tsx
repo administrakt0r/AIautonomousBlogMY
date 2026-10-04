@@ -298,6 +298,7 @@ const Pagination = React.memo(
             if (typeof page === 'string') {
               return <Ellipsis key={page} />
             }
+
             return (
               <PageButton
                 key={page}
