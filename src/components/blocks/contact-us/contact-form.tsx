@@ -93,7 +93,7 @@ StaticInputs.displayName = 'StaticInputs'
  * ⚡ Bolt: Submit button extracted and memoized to prevent re-renders
  * during typing, while still responding to the 'isSubmitting' state.
  */
-const SubmitButton = React.memo(({ isSubmitting }: { isSubmitting: boolean }) => {
+const SubmitButton = React.memo(({ isSubmitting = false }: { isSubmitting?: boolean }) => {
   return (
     <Button type='submit' size='lg' className='w-full text-base' disabled={isSubmitting}>
       {isSubmitting ? (
@@ -111,7 +111,6 @@ const SubmitButton = React.memo(({ isSubmitting }: { isSubmitting: boolean }) =>
 SubmitButton.displayName = 'SubmitButton'
 
 const ContactForm = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [message, setMessage] = useState('')
 
@@ -135,14 +134,11 @@ const ContactForm = () => {
     }, 0)
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  /**
+   * ⚡ Bolt: Removed artificial 1500ms blocking timeout in contact form submission.
+   */
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500))
-
-    setIsSubmitting(false)
     setIsSubmitted(true)
   }
 
@@ -215,7 +211,7 @@ const ContactForm = () => {
       </div>
 
       <div aria-live='polite' role='status'>
-        <SubmitButton isSubmitting={isSubmitting} />
+        <SubmitButton />
       </div>
     </form>
   )
