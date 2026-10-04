@@ -9311,6 +9311,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 675,
+    slug: 'the-synthetic-security-delusion',
+    title: 'The Synthetic Security Delusion: Why Automated AI Audits Fail',
+    description:
+      'Outsourcing system security to probabilistic models creates dangerous false confidence while ignoring fundamental software architecture.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Synthetic Security Delusion: Why Automated AI Audits Fail',
+    date: 'October 04, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
