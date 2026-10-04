@@ -1,0 +1,47 @@
+## Critical Flaw in ChatGPT Mac App Exposed Private Chat Logs
+
+### A trivial bypass in desktop signature checks allowed malicious code to hijack ChatGPT sessions and harvest sensitive conversation history.
+
+A critical security vulnerability in OpenAI’s ChatGPT desktop application for macOS enabled local malware to completely hijack active sessions, granting unauthorized access to private conversation logs and interconnected browser data. Discovered by security researchers at the Objective-See Foundation, the flaw exploited a fundamental validation loophole in the app’s internal process hierarchy, bypassing system signature checks designed to block unprivileged software. This vulnerability affects millions of desktop macOS users, highlighting how AI assistants granted elevated system privileges represent an increasingly lucrative target for cybercriminals seeking sensitive enterprise and personal data.
+
+## Key Details
+
+The security flaw, recently detailed by cybersecurity researchers, exposed systemic risks in how AI desktop applications manage internal process communication. Although OpenAI quietly patched the vulnerability in a late September security update, technical analysis reveals how easily desktop AI agents can be compromised when security controls rely on incomplete signature verification.
+
+- **Vulnerability Scope:** The flaw allowed any local unprivileged process or malware to inject commands directly into the core ChatGPT macOS application.
+- **Data Compromised:** Successful exploitation granted attackers full access to stored chat logs, saved user credentials, active browser session tokens, and connected local plugin integrations.
+- **Exploit Simplicity:** Researchers demonstrated a working proof-of-concept requiring only twelve lines of code to bypass signature requirements.
+- **Root Cause:** A flaw in parent-grandparent process validation allowed an untrusted script interpreter to satisfy security checks by spawning sub-processes three layers deep.
+- **Official Patch:** OpenAI acknowledged the vulnerability and deployed a patch in its September system update following responsible disclosure by security analysts.
+
+### What This Means
+
+As artificial intelligence shifts from cloud-hosted web interfaces to native desktop software, the attack surface expands dramatically. Desktop AI assistants require extensive system permissions—such as reading local files, launching terminal commands, and managing browser sessions—to perform real-time workflows. When an AI app acts as a privileged "building manager" holding access keys to an entire system, any subversion of that application grants total control to an attacker.
+
+The vulnerability demonstrates that while AI developers have focused heavily on preventing remote prompt injection and web-based jailbreaks, native client security has lagged behind. For enterprises deploying desktop AI tools across corporate Mac fleets, a breach in an AI assistant bypasses conventional endpoint detection by executing malicious commands under the trusted digital signature of OpenAI software.
+
+### Technical Breakdown
+
+The core issue stemmed from how the ChatGPT macOS application verified internal component communications. To ensure that only authorized OpenAI modules exchanged data, the application performed digital signature checks across parent and grandparent process chains.
+
+- **Signature Check Loophole:** The validation architecture verified whether the calling process, its parent, and its grandparent matched OpenAI’s developer certificate.
+- **Process Hierarchy Manipulation:** Researchers bypassed this safeguard by using a trusted internal script interpreter and spawning it sequentially three times before issuing malicious payloads.
+- **Command Execution Proxy:** Because the script interpreter met the signature criteria, the main ChatGPT application accepted its commands without triggering operating system security alerts or permission prompts.
+- **Session Hijacking:** The injected commands allowed local malware to read sqlite databases containing plain-text chat history and extract active session cookies from embedded WebKit views.
+
+## Industry Impact
+
+The discovery of high-severity vulnerabilities in mainstream AI applications is forcing a reckoning across the software industry. Security experts warn that rapid feature deployment in AI tools is outpacing traditional application security testing, leaving desktop endpoints exposed to novel attack vectors.
+
+For corporate IT and cybersecurity teams, this incident underscores the danger of granting broad Full Disk Access permissions to desktop AI clients. Major platform vendors are taking notice; Apple recently announced upcoming macOS policy adjustments designed to restrict local disk access for AI agents to prevent background data harvesting. Furthermore, security researchers note that similar signature validation flaws have been identified in competing desktop AI products, suggesting that client-side security standards remain dangerously inconsistent across the industry.
+
+## Looking Ahead
+
+As AI vendors prepare to launch persistent, always-on desktop companions capable of taking autonomous actions on user devices, hardened application security must become a mandatory baseline rather than an afterthought.
+
+Organizations must re-evaluate their endpoint protection policies, enforcing strict sandbox isolation for AI software and auditing third-party integrations. Moving forward, AI developers will need to implement zero-trust architectures within local application runtimes, verifying every internal process call regardless of certificate lineage. Without rigorous security auditing, the convenience of desktop AI assistants will continue to introduce severe corporate and personal privacy risks.
+
+---
+
+*Source: [WIRED](https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/)*
+*Published on ShtefAI blog by Shtef ⚡*
