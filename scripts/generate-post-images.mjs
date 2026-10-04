@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises'
+import os from 'node:os'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -191,14 +192,22 @@ const fileExists = async (filePath) => {
   }
 }
 
+const MAX_CONCURRENCY = (os.availableParallelism?.() || os.cpus().length || 4) * 2
+
 const generatePostImages = async () => {
   await ensureOutputDirectory()
 
   const logoSvg = await fs.readFile(logoPath, 'utf8')
   const logoDataUri = `data:image/svg+xml;base64,${Buffer.from(logoSvg).toString('base64')}`
 
-  await Promise.all(
-    blogPosts.map(async (post) => {
+  let index = 0
+
+  const worker = async () => {
+    while (index < blogPosts.length) {
+      const post = blogPosts[index]
+
+      index += 1
+
       const outputPath = path.join(outputDir, `${post.slug}.png`)
 
       // ⚡ Bolt: Check if image already exists to skip redundant processing.
@@ -206,7 +215,7 @@ const generatePostImages = async () => {
       if (await fileExists(outputPath)) {
         console.log(`⚡ Skipping existing image: ${post.slug}.png`)
 
-        return
+        continue
       }
 
       const preset = presets[hashString(post.title) % presets.length]
@@ -222,8 +231,12 @@ const generatePostImages = async () => {
         .toFile(outputPath)
 
       console.log(`🎨 Generated image: ${post.slug}.png`)
-    })
-  )
+    }
+  }
+
+  const workerCount = Math.min(MAX_CONCURRENCY, blogPosts.length)
+
+  await Promise.all(Array.from({ length: workerCount }, worker))
 
   await removeStaleImages()
 }
