@@ -9341,6 +9341,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 677,
+    slug: 'trump-unveils-super-intelligence-force',
+    title: 'Trump Establishes Super Intelligence Force for AI Policy',
+    description:
+      'President Donald Trump launches the federal Super Intelligence Force led by Jay Clayton to direct executive AI policy and preempt state-level restrictions.',
+    imageUrl: getPostImagePath('trump-unveils-super-intelligence-force'),
+    imageAlt: 'Trump Establishes Super Intelligence Force for AI Policy',
+    date: 'October 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
