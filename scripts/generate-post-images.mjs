@@ -13,7 +13,7 @@ const publicDir = path.join(repoRoot, 'public')
 const outputDir = path.join(publicDir, 'images', 'posts')
 const logoPath = path.join(publicDir, 'shteflogo.svg')
 
-const presets = [
+export const presets = [
   {
     backgroundStart: '#1e1e2f',
     backgroundEnd: '#3a0ca3',
@@ -51,7 +51,7 @@ const presets = [
   },
 ]
 
-const hashString = (value) => {
+export const hashString = (value) => {
   let hash = 0
 
   for (let index = 0; index < value.length; index += 1) {
@@ -61,7 +61,7 @@ const hashString = (value) => {
   return Math.abs(hash)
 }
 
-const escapeXml = (value) =>
+export const escapeXml = (value) =>
   value
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
@@ -69,7 +69,7 @@ const escapeXml = (value) =>
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&apos;')
 
-const wrapTitle = (title) => {
+export const wrapTitle = (title) => {
   const words = title.split(/\s+/u)
   const maxCharsPerLine = title.length > 95 ? 22 : title.length > 72 ? 26 : 30
   const lines = []
@@ -102,14 +102,14 @@ const wrapTitle = (title) => {
   return compactedLines
 }
 
-const getFontSize = (lineCount, longestLineLength) => {
+export const getFontSize = (lineCount, longestLineLength) => {
   if (lineCount >= 4 || longestLineLength > 30) return 52
   if (lineCount === 3 || longestLineLength > 26) return 60
 
   return 72
 }
 
-const getTitleLinesSvg = (title) => {
+export const getTitleLinesSvg = (title) => {
   const lines = wrapTitle(title)
   const longestLineLength = Math.max(...lines.map(line => line.length))
   const fontSize = getFontSize(lines.length, longestLineLength)
@@ -134,7 +134,7 @@ const getTitleLinesSvg = (title) => {
     .join('')
 }
 
-const getOgSvg = ({ title, logoDataUri, preset }) => `<?xml version="1.0" encoding="UTF-8"?>
+export const getOgSvg = ({ title, logoDataUri, preset }) => `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg-gradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
@@ -194,7 +194,7 @@ const fileExists = async (filePath) => {
 
 const MAX_CONCURRENCY = (os.availableParallelism?.() || os.cpus().length || 4) * 2
 
-const generatePostImages = async () => {
+export const generatePostImages = async () => {
   await ensureOutputDirectory()
 
   const logoSvg = await fs.readFile(logoPath, 'utf8')
@@ -241,4 +241,10 @@ const generatePostImages = async () => {
   await removeStaleImages()
 }
 
-await generatePostImages()
+const isDirectExecution =
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
+
+if (isDirectExecution) {
+  await generatePostImages()
+}
