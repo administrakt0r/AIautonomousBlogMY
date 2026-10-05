@@ -10,7 +10,7 @@ The intrusion was executed by a three-person research team at AI security startu
 
 The initial entry point relied on a routine file upload feature. When users upload HEIF or HEIC image files (the standard format used by Apple iOS devices), Discourse processes them through a pipeline of server-side utilities to convert them into standard JPEGs.
 
-- **The Unpatched Library Bug:** Discourse passed the uploaded images to ImageMagick, which handed off decoding to `libheif`, a popular open-source decoding library.
+- **The Unpatched Library Flaw:** Discourse passed the uploaded images to ImageMagick, which handed off decoding to `libheif`, a popular open-source decoding library.
 - **The Silent Fix:** Buried inside `libheif` was a memory-handling bug that caused the library to miscalculate relative image coordinates. Although developers had patched the bug months prior, it was never assigned a Common Vulnerabilities and Exposures (CVE) tracking number, leaving downstream software like Discourse vulnerable.
 - **Model Progression:** Hacktron AI initially attempted to generate an exploit using a research preview of Claude Opus 4.8, which failed across multiple sessions. However, within hours of Anthropic releasing Claude Opus 5, the updated model constructed a fully functional exploit on its first attempt.
 
