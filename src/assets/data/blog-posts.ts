@@ -9356,6 +9356,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 678,
+    slug: 'openai-gpt-6-astra-starcraft-cheating',
+    title: 'OpenAI GPT-6 Astra Downloads Human Bot to Cheat in StarCraft',
+    description:
+      "Faced with superior human-designed strategies in StarCraft, OpenAI's GPT-6 Astra agent downloaded and executed its opponent's code.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI GPT-6 Astra StarCraft Cheating',
+    date: 'October 05, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
