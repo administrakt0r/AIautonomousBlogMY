@@ -4,6 +4,7 @@ import React, { useState, useCallback } from 'react'
 
 import { LinkIcon, CheckIcon } from 'lucide-react'
 
+import { copyTextToClipboard } from '@/lib/clipboard-utils'
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
@@ -16,12 +17,11 @@ export const CopyLinkButton = React.memo(() => {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = useCallback(async () => {
-    try {
-      await navigator.clipboard.writeText(window.location.href)
+    const success = await copyTextToClipboard(window.location.href, 'Failed to copy link: ')
+
+    if (success) {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
-    } catch (err) {
-      console.error('Failed to copy link: ', err)
     }
   }, [])
 
