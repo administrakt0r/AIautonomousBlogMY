@@ -90,6 +90,57 @@ const StaticInputs = React.memo(({ nameRef }: { nameRef: React.RefObject<HTMLInp
 StaticInputs.displayName = 'StaticInputs'
 
 /**
+ * Message text area extracted and memoized with character counter and live region feedback.
+ */
+interface MessageInputProps {
+  message: string
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
+}
+
+const MessageInput = React.memo(({ message, onChange }: MessageInputProps) => {
+  return (
+    <div className='space-y-2'>
+      <div className='flex items-center justify-between'>
+        <Label htmlFor='message'>
+          Message <span className='text-destructive'>*</span>
+        </Label>
+        <span
+          className={cn(
+            'text-xs transition-colors',
+            message.length >= MAX_CHARS
+              ? 'text-destructive font-semibold'
+              : message.length >= MAX_CHARS * 0.9
+                ? 'text-amber-500 font-medium'
+                : 'text-muted-foreground'
+          )}
+          aria-label={`${message.length} of ${MAX_CHARS} characters used`}
+          id='char-count'
+        >
+          {message.length} / {MAX_CHARS}
+        </span>
+      </div>
+      <Textarea
+        id='message'
+        className='h-28 resize-none'
+        placeholder='Enter your message'
+        required
+        aria-required='true'
+        aria-describedby='char-count'
+        value={message}
+        onChange={onChange}
+      />
+      {/* 🎨 Palette: Visually hidden aria-live region to announce milestones */}
+      <div className='sr-only' aria-live='polite'>
+        {message.length >= MAX_CHARS && 'Character limit reached'}
+        {message.length >= MAX_CHARS * 0.9 && message.length < MAX_CHARS && 'Approaching character limit'}
+      </div>
+    </div>
+  )
+})
+
+MessageInput.displayName = 'MessageInput'
+
+/**
  * ⚡ Bolt: Submit button extracted and memoized to prevent re-renders
  * during typing, while still responding to the 'isSubmitting' state.
  */
@@ -109,6 +160,40 @@ const SubmitButton = React.memo(({ isSubmitting = false }: { isSubmitting?: bool
 })
 
 SubmitButton.displayName = 'SubmitButton'
+
+/**
+ * Success state UI component displayed after form submission.
+ */
+interface SuccessStateProps {
+  onReset: () => void
+  headingRef: React.RefObject<HTMLHeadingElement | null>
+}
+
+const SuccessState = ({ onReset, headingRef }: SuccessStateProps) => {
+  return (
+    <div
+      role='status'
+      aria-live='polite'
+      className='flex flex-col items-center justify-center space-y-4 py-8 text-center'
+    >
+      <div className='bg-primary/10 rounded-full p-3'>
+        <CheckCircleIcon
+          className='text-primary size-10 animate-in zoom-in-90 duration-300'
+          aria-hidden='true'
+        />
+      </div>
+      <h3 ref={headingRef} tabIndex={-1} className='text-2xl font-bold outline-none'>
+        Message Sent!
+      </h3>
+      <p className='text-muted-foreground'>
+        Thank you for reaching out. We&apos;ve received your message and will get back to you soon.
+      </p>
+      <Button onClick={onReset} variant='outline' className='mt-4'>
+        Send another message
+      </Button>
+    </div>
+  )
+}
 
 const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -142,74 +227,18 @@ const ContactForm = () => {
     setIsSubmitted(true)
   }
 
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(e.target.value.slice(0, MAX_CHARS))
+  }
+
   if (isSubmitted) {
-    return (
-      <div
-        role='status'
-        aria-live='polite'
-        className='flex flex-col items-center justify-center space-y-4 py-8 text-center'
-      >
-        <div className='bg-primary/10 rounded-full p-3'>
-          <CheckCircleIcon
-            className='text-primary size-10 animate-in zoom-in-90 duration-300'
-            aria-hidden='true'
-          />
-        </div>
-        <h3 ref={successHeadingRef} tabIndex={-1} className='text-2xl font-bold outline-none'>
-          Message Sent!
-        </h3>
-        <p className='text-muted-foreground'>
-          Thank you for reaching out. We&apos;ve received your message and will get back to you soon.
-        </p>
-        <Button onClick={handleReset} variant='outline' className='mt-4'>
-          Send another message
-        </Button>
-      </div>
-    )
+    return <SuccessState onReset={handleReset} headingRef={successHeadingRef} />
   }
 
   return (
     <form className='space-y-6' onSubmit={handleSubmit}>
       <StaticInputs nameRef={nameInputRef} />
-
-      {/* Message Input */}
-      <div className='space-y-2'>
-        <div className='flex items-center justify-between'>
-          <Label htmlFor='message'>
-            Message <span className='text-destructive'>*</span>
-          </Label>
-          <span
-            className={cn(
-              'text-xs transition-colors',
-              message.length >= MAX_CHARS
-                ? 'text-destructive font-semibold'
-                : message.length >= MAX_CHARS * 0.9
-                  ? 'text-amber-500 font-medium'
-                  : 'text-muted-foreground'
-            )}
-            aria-label={`${message.length} of ${MAX_CHARS} characters used`}
-            id='char-count'
-          >
-            {message.length} / {MAX_CHARS}
-          </span>
-        </div>
-        <Textarea
-          id='message'
-          className='h-28 resize-none'
-          placeholder='Enter your message'
-          required
-          aria-required='true'
-          aria-describedby='char-count'
-          value={message}
-          onChange={e => setMessage(e.target.value.slice(0, MAX_CHARS))}
-        />
-        {/* 🎨 Palette: Visually hidden aria-live region to announce milestones */}
-        <div className='sr-only' aria-live='polite'>
-          {message.length >= MAX_CHARS && 'Character limit reached'}
-          {message.length >= MAX_CHARS * 0.9 && message.length < MAX_CHARS && 'Approaching character limit'}
-        </div>
-      </div>
-
+      <MessageInput message={message} onChange={handleMessageChange} />
       <div aria-live='polite' role='status'>
         <SubmitButton />
       </div>
