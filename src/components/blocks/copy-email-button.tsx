@@ -4,6 +4,7 @@ import React, { useState, useCallback } from 'react'
 
 import { CopyIcon, CheckIcon } from 'lucide-react'
 
+import { copyTextToClipboard } from '@/lib/clipboard-utils'
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
@@ -16,12 +17,11 @@ export const CopyEmailButton = React.memo(({ email }: { email: string }) => {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = useCallback(async () => {
-    try {
-      await navigator.clipboard.writeText(email)
+    const success = await copyTextToClipboard(email, 'Failed to copy email: ')
+
+    if (success) {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
-    } catch (err) {
-      console.error('Failed to copy email: ', err)
     }
   }, [email])
 
