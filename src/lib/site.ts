@@ -14,6 +14,14 @@ export const APPLE_TOUCH_ICON_PATH = '/favicon/apple-touch-icon.png'
 // ⚡ Bolt: Optimized URL generation using string concatenation to avoid the overhead of 'new URL()'.
 const CLEAN_SITE_URL = SITE_URL.replace(/\/$/, '')
 
-export const getAbsoluteUrl = (path: string) => `${CLEAN_SITE_URL}/${path.replace(/^\//, '')}`
+export const getAbsoluteUrl = (path: string, siteUrl: string = CLEAN_SITE_URL) => {
+  const cleanBase = siteUrl.replace(/\/$/, '')
 
-export const getPostUrl = (slug: string) => `${CLEAN_SITE_URL}/blog-detail/${slug}`
+  return `${cleanBase}/${path.replace(/^\//, '')}`
+}
+
+export const getPostUrl = (slug: string, siteUrl: string = CLEAN_SITE_URL) => {
+  const cleanBase = siteUrl.replace(/\/$/, '')
+
+  return `${cleanBase}/blog-detail/${slug}`
+}
