@@ -8,6 +8,7 @@ import Blog from '@/components/blocks/blog-related-post/blog-related-post'
 import { ReadingProgressBar } from '@/components/blocks/reading-progress-bar'
 import { CopyLinkButton } from '@/components/blocks/copy-link-button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { getInitials } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
@@ -244,13 +245,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   <div className='flex flex-wrap items-center gap-3'>
                     <Avatar className='size-11.5'>
                       <AvatarImage src={post.avatarUrl} alt={post.author} />
-                      <AvatarFallback className='text-xs'>
-                        {post.author
-                          .split(' ')
-                          .map(n => n[0])
-                          .join('')
-                          .toUpperCase()}
-                      </AvatarFallback>
+                      <AvatarFallback className='text-xs'>{getInitials(post.author)}</AvatarFallback>
                     </Avatar>
                     <div className='flex flex-col gap-1'>
                       <span className='text-muted-foreground text-sm'>Written by</span>

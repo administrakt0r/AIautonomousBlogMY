@@ -1,7 +1,31 @@
 import assert from 'node:assert/strict'
 import { describe, it } from 'node:test'
 
-import { cn } from './utils.ts'
+import { cn, getInitials } from './utils.ts'
+
+describe('getInitials utility', () => {
+  it('extracts initials from single and multi-word names', () => {
+    assert.equal(getInitials('Shtef'), 'S')
+    assert.equal(getInitials('John Doe'), 'JD')
+    assert.equal(getInitials('Jane Mary Watson-Smith'), 'JMW')
+  })
+
+  it('handles multiple spaces and extra whitespace', () => {
+    assert.equal(getInitials('   John    Doe   '), 'JD')
+    assert.equal(getInitials('  Shtef  '), 'S')
+  })
+
+  it('handles empty string or missing input', () => {
+    assert.equal(getInitials(''), '')
+    assert.equal(getInitials(null as unknown as string), '')
+    assert.equal(getInitials(undefined as unknown as string), '')
+  })
+
+  it('converts lowercase initials to uppercase', () => {
+    assert.equal(getInitials('john doe'), 'JD')
+    assert.equal(getInitials('a b c'), 'ABC')
+  })
+})
 
 describe('cn utility', () => {
   it('merges multiple string class names', () => {
