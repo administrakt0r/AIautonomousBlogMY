@@ -9401,6 +9401,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 681,
+    slug: 'openai-watermarking-chatgpt-text-eu',
+    title: 'OpenAI Launches ChatGPT Text Watermarking Across the European Union',
+    description:
+      'OpenAI introduces invisible text watermarking for ChatGPT and Codex in the EU to comply with the EU AI Act using its new textGrain algorithm.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches ChatGPT Text Watermarking Across the European Union',
+    date: 'October 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
