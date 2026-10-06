@@ -9416,6 +9416,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 682,
+    slug: 'lambda-raises-4b-ahead-of-ipo',
+    title: 'Lambda Raises $4B at $14.5B Valuation Ahead of 2027 IPO',
+    description:
+      'Coatue and Blackstone co-lead a massive $4B pre-IPO round for Lambda as its compute backlog reaches $50B, backed by a $35B Anthropic commitment.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Lambda Raises $4B at $14.5B Valuation Ahead of 2027 IPO',
+    date: 'October 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
