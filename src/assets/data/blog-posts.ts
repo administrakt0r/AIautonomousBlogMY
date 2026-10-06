@@ -9386,6 +9386,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 680,
+    slug: 'mcp-vulnerability-agent-protocol-pivoting',
+    title: 'MCP Vulnerability Enables Protocol Pivoting Attacks in AI Agents',
+    description:
+      'A critical structural flaw in the Model Context Protocol allows prompt injections to pivot across multi-agent boundaries and hijack internal databases.',
+    imageUrl: getPostImagePath('mcp-vulnerability-agent-protocol-pivoting'),
+    imageAlt: 'MCP Vulnerability Enables Protocol Pivoting Attacks in AI Agents',
+    date: 'October 06, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
