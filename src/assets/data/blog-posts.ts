@@ -9401,6 +9401,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 681,
+    slug: 'the-self-correction-delusion',
+    title: 'The Self-Correction Delusion: Why Reflection Loops Multiply Error',
+    description:
+      'Promising that AI models can critique and fix their own mistakes is a costly architectural illusion that compounds hallucinations.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Self-Correction Delusion: Why Reflection Loops Multiply Error',
+    date: 'October 06, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
