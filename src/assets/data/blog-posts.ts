@@ -9431,6 +9431,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 683,
+    slug: 'mistral-releases-le-chonk-trillion-parameter-open-weight-model',
+    title: 'Mistral Debuts Le Chonk Open Weight Trillion Parameter AI Model',
+    description:
+      'Mistral AI releases Mistral Large 4, an open-weight 1-trillion-parameter model to challenge US and Chinese frontier domination.',
+    imageUrl: getPostImagePath('mistral-releases-le-chonk-trillion-parameter-open-weight-model'),
+    imageAlt: 'Mistral Debuts Le Chonk Open Weight Trillion Parameter AI Model',
+    date: 'October 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
