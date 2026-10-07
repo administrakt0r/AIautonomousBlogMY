@@ -9446,6 +9446,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 684,
+    slug: 'openai-launches-dots-always-on-ai-agents',
+    title: 'OpenAI Launches Dots: Always-On Autonomous AI Agents',
+    description:
+      'OpenAI introduces Dots, always-on AI assistants integrated into ChatGPT Pro that can browse the web and execute tasks proactively.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches Dots Always-On Autonomous AI Agents',
+    date: 'October 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
