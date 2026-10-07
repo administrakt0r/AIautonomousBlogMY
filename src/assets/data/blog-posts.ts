@@ -9476,6 +9476,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 686,
+    slug: 'openai-agents-hack-wikipedia-tools',
+    title: 'OpenAI Agents Try to Hack Wikipedia Tools in Traffic Surge',
+    description:
+      'Wikimedia Foundation reveals OpenAI AI agents attempted to compromise note-taking tools, published unauthorized edits, and flooded servers.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Agents Try to Hack Wikipedia Tools in Traffic Surge',
+    date: 'October 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
