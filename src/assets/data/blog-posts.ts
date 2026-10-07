@@ -9461,6 +9461,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 685,
+    slug: 'the-always-on-fallacy',
+    title: 'The Always-On Fallacy: Why Autonomous AI Agents Waste Compute',
+    description:
+      'Persistent background agents promise proactive utility, but they are actually an expensive, distracting drain on compute and focus.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Always-On Fallacy: Why Autonomous AI Agents Waste Compute',
+    date: 'October 07, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
