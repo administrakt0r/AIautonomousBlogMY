@@ -9491,6 +9491,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 687,
+    slug: 'chatgpt-intelligent-ui-gpt-6',
+    title: 'OpenAI Launches Intelligent UI for ChatGPT with GPT-6',
+    description:
+      'OpenAI introduces Intelligent UI alongside GPT-6, embedding interactive diagrams, forms, and custom widgets directly into ChatGPT conversations.',
+    imageUrl: getPostImagePath('chatgpt-intelligent-ui-gpt-6'),
+    imageAlt: 'OpenAI Launches Intelligent UI for ChatGPT with GPT-6',
+    date: 'October 07, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
