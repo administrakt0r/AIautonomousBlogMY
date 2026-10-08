@@ -9506,6 +9506,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 688,
+    slug: 'the-generative-ui-fallacy',
+    title: 'The Generative UI Fallacy: Why Dynamic Interfaces Destroy Usability',
+    description:
+      'Replacing predictable software design with non-deterministic, constantly shifting AI visual components destroys spatial muscle memory and user agency.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Generative UI Fallacy: Why Dynamic Interfaces Destroy Usability',
+    date: 'October 08, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
