@@ -9521,6 +9521,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 689,
+    slug: 'fired-openai-safety-researchers-dispute-misconduct-claims',
+    title: 'Fired OpenAI Safety Researchers Dispute Misconduct Claims',
+    description:
+      'Three former OpenAI safety researchers issue an open letter denying claims of misconduct and warning of a chilling effect on AI safety culture.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Fired OpenAI Safety Researchers Dispute Misconduct Claims',
+    date: 'October 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
