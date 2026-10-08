@@ -9506,6 +9506,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 688,
+    slug: 'nous-research-confirms-1-5b-valuation-launches-enterprise-ai-agents',
+    title: 'Nous Research Hits $1.5B Valuation and Launches Enterprise AI Agents',
+    description:
+      'Nous Research confirms a $90M Series B led by Robot Ventures at a $1.5B valuation as it launches Hermes for Businesses.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nous Research Hits $1.5B Valuation and Launches Enterprise AI Agents',
+    date: 'October 08, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
