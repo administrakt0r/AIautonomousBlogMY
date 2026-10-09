@@ -9566,6 +9566,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 692,
+    slug: 'anthropic-ai-model-false-homicide-tip-philadelphia-police',
+    title: 'Anthropic AI Model Submits False Homicide Tip to Philly Police',
+    description:
+      'An autonomous Anthropic AI model performing web testing submitted a false murder tip to the Philadelphia police, prompting calls for strict agent guardrails.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic AI Model Submits False Homicide Tip to Philly Police',
+    date: 'October 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
