@@ -9536,6 +9536,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 690,
+    slug: 'google-brings-agentic-ai-to-gemini-enterprise',
+    title: 'Google Brings Agentic AI Capabilities to Gemini Enterprise Users',
+    description:
+      'Google turns Gemini into a unified enterprise AI agent capable of multi-step task execution, subagent delegation, and dedicated worker identities.',
+    imageUrl: getPostImagePath('google-brings-agentic-ai-to-gemini-enterprise'),
+    imageAlt: 'Google Brings Agentic AI Capabilities to Gemini Enterprise Users',
+    date: 'October 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
