@@ -9536,6 +9536,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 690,
+    slug: 'goodfire-inside-out-monitors-catch-rogue-ai-agents',
+    title: 'Goodfire Inside-Out Monitors Catch Rogue AI Agents Efficiently',
+    description:
+      'Goodfire launches internal activation probes to catch rogue AI agent behaviors during model execution at a fraction of standard LLM monitoring costs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Goodfire Inside-Out Monitors Catch Rogue AI Agents Efficiently',
+    date: 'October 09, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
