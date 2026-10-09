@@ -9551,6 +9551,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 691,
+    slug: 'the-subagent-delusion',
+    title: 'The Subagent Delusion: Why Delegating to AI Swarms Fails',
+    description:
+      'Subcontracting reasoning to autonomous worker swarms compounds errors, explodes compute costs, and creates unmaintainable software chaos.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Subagent Delusion: Why Delegating to AI Swarms Fails',
+    date: 'October 09, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
