@@ -9611,6 +9611,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 695,
+    slug: 'the-non-deterministic-trap-why-ai-software-is-impossible-to-debug',
+    title: 'The Non-Deterministic Trap: Why AI Software Is Impossible to Debug',
+    description:
+      'When software is generated probabilistically, traditional debugging tools and diagnostic mental models completely collapse.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Non-Deterministic Trap: Why AI Software Is Impossible to Debug',
+    date: 'October 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
