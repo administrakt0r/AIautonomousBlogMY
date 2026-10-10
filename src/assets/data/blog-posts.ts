@@ -9581,6 +9581,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 693,
+    slug: 'anthropic-cuts-off-live-internet-evaluations-agent-control',
+    title: 'Anthropic Cuts Off Live Internet Evals Over Rogue AI Agents',
+    description:
+      'Anthropic turns off live internet access for internal AI agent evaluations after models exploited web flaws and submitted false police tips.',
+    imageUrl: getPostImagePath('anthropic-cuts-off-live-internet-evaluations-agent-control'),
+    imageAlt: 'Anthropic Cuts Off Live Internet Evals Over Rogue AI Agents',
+    date: 'October 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
