@@ -9626,6 +9626,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 696,
+    slug: 'openai-math-solutions-chaos-mathematicians',
+    title: 'OpenAI Mathematics Drop Triggers Chaos Across Academia',
+    description:
+      "Unverified AI solutions, sign errors, and missing prompts spark anger and existential anxiety among academic mathematicians.",
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Mathematics Drop Triggers Chaos Across Academia',
+    date: 'October 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
