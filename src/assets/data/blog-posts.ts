@@ -9596,6 +9596,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 694,
+    slug: 'typesafe-ai-raises-870m-for-non-text-model-jev',
+    title: 'TypeSafe AI Hits $7.5B Valuation with $870M Round for Jev',
+    description:
+      'TypeSafe AI raises $870M at a $7.5B valuation for Jev, a non-text decision model that delivers ultra-fast automation without natural language tokens.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'TypeSafe AI Hits $7.5B Valuation with $870M Round for Jev',
+    date: 'October 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
