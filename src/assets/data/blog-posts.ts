@@ -9686,6 +9686,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 700,
+    slug: 'silicon-valley-falls-in-line-with-trump-super-intelligence-rebrand',
+    title: 'Silicon Valley Shifts Terms to Trump Super Intelligence Rebrand',
+    description:
+      'Tech leaders capitulate to political pressure, rebranding AI initiatives as Super Intelligence to align with presidential directives.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Silicon Valley Shifts Terms to Trump Super Intelligence Rebrand',
+    date: 'October 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
