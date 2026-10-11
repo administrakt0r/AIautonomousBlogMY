@@ -9671,6 +9671,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 699,
+    slug: 'the-counter-deception-delusion',
+    title: 'The Counter-Deception Delusion: Why Fighting Fraud with AI is a Trap',
+    description:
+      'Deploying AI bots to counter cybercriminals creates an escalating synthetic feedback loop that degrades communication networks and security.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Counter-Deception Delusion: Why Fighting Fraud with AI is a Trap',
+    date: 'October 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
