@@ -9656,6 +9656,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 698,
+    slug: 'ai-bots-counter-cybercrime-scam-scammers',
+    title: 'AI Counter-Deception Bots Turn Tables on Global Cybercriminals',
+    description:
+      'Conversational AI agents are engaging voice and text fraudsters to waste scammer resources and harvest real-time threat intelligence.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Counter-Deception Bots Turn Tables on Global Cybercriminals',
+    date: 'October 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
