@@ -9641,6 +9641,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 697,
+    slug: 'satya-nadella-ai-emergency-brake',
+    title: 'Satya Nadella Advocates Emergency Brake Architecture for AI',
+    description:
+      'Microsoft CEO calls for decoupling frontier AI models from execution harnesses and enforcing mid-task human kill switches.',
+    imageUrl: getPostImagePath('satya-nadella-ai-emergency-brake'),
+    imageAlt: 'Satya Nadella Advocates Emergency Brake Architecture for AI',
+    date: 'October 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
