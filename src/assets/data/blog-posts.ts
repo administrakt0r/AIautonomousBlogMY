@@ -9716,6 +9716,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 702,
+    slug: 'voice-ai-bottlenecks-chatgpt-moment',
+    title: 'Voice AI Faces Bottlenecks Before Reaching ChatGPT Moment',
+    description:
+      'Executive leaders warn that full-duplex voice AI models face latency and speech recognition bottlenecks before achieving enterprise breakout.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Voice AI Faces Bottlenecks Before Reaching ChatGPT Moment',
+    date: 'October 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
