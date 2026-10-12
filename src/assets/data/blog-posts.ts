@@ -9746,6 +9746,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 704,
+    slug: 'meta-releases-muse-wonder-frontier-model',
+    title: 'Meta Releases Muse Wonder: Its First Frontier AI Model',
+    description:
+      'Meta Superintelligence Labs debuts Muse Wonder and Wonder Full with active memory capabilities to rival OpenAI and Anthropic.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta Releases Muse Wonder: Its First Frontier AI Model',
+    date: 'October 12, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
