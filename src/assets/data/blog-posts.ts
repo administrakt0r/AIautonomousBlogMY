@@ -9701,6 +9701,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 701,
+    slug: 'amazon-microsoft-abandon-ndas-ai-data-centers',
+    title: 'Amazon and Microsoft Drop NDAs for AI Data Center Projects',
+    description:
+      'Tech giants eliminate secret negotiations to counter mounting local data center bans and community opposition.',
+    imageUrl: getPostImagePath('amazon-microsoft-abandon-ndas-ai-data-centers'),
+    imageAlt: 'Amazon and Microsoft Drop NDAs for AI Data Center Projects',
+    date: 'October 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
