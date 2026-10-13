@@ -9791,6 +9791,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 707,
+    slug: 'fbi-arrests-openai-employee-hidden-recording-device',
+    title: 'FBI Arrests OpenAI Employee Over Hidden Bugging Device',
+    description:
+      'A Saudi national product team employee is charged with planting a covert audio surveillance device in an OpenAI executive conference room.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'FBI Arrests OpenAI Employee Over Hidden Bugging Device',
+    date: 'October 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
