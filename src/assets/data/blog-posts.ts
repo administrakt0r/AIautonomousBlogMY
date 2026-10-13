@@ -9776,6 +9776,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 706,
+    slug: 'the-data-scavenger-delusion',
+    title: 'The Data Scavenger Delusion: Why Scraping Failed Startups AI Is a Trap',
+    description:
+      'Ingesting corporate digital graveyards won’t unlock general intelligence; it only trains AI agents to replicate operational failure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Data Scavenger Delusion: Why Scraping Failed Startups AI Is a Trap',
+    date: 'October 13, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
