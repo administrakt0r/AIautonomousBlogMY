@@ -9761,6 +9761,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 705,
+    slug: 'ai-labs-buy-dead-startup-data-model-training',
+    title: 'AI Labs Buy Data From Dead Startups for Model Training',
+    description:
+      'AI foundation labs and enterprise vendors are buying codebases and workspace archives from failing startups to train autonomous agents.',
+    imageUrl: getPostImagePath('ai-labs-buy-dead-startup-data-model-training'),
+    imageAlt: 'AI Labs Buy Data From Dead Startups for Model Training',
+    date: 'October 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
