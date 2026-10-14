@@ -9806,6 +9806,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 708,
+    slug: 'judge-orders-openai-hiring-records-apple-lawsuit',
+    title: 'Judge Orders OpenAI to Turn Over Apple Hiring Records in Lawsuit',
+    description:
+      'Federal court grants Apple expedited discovery of OpenAI recruitment files and orders depositions of former Apple executives in trade secrets suit.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Judge Orders OpenAI to Turn Over Apple Hiring Records in Lawsuit',
+    date: 'October 13, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
