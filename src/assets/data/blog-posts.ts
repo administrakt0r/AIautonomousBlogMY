@@ -9851,6 +9851,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 711,
+    slug: 'the-shadow-ai-governance-trap',
+    title: 'The Shadow AI Governance Trap: Why Banning Vibe-Coding Backfires',
+    description:
+      'Outlawing autonomous coding agents in the enterprise doesn’t prevent non-deterministic code; it merely guarantees you won’t know where it lives.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Shadow AI Governance Trap: Why Banning Vibe-Coding Backfires',
+    date: 'October 14, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
