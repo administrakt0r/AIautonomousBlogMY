@@ -9836,6 +9836,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 710,
+    slug: 'ai-models-easily-modified-terrorist-activity',
+    title: 'AI Models Easily Modified to Assist Extremist and Terrorist Attacks',
+    description:
+      'A landmark study by Tech Against Terrorism reveals over 80 commercial and open AI models fail basic safety checks against mass casualty prompts.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Models Easily Modified to Assist Extremist and Terrorist Attacks',
+    date: 'October 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
