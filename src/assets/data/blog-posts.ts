@@ -9821,6 +9821,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 709,
+    slug: 'pluto-security-raises-42m-enterprise-ai-security',
+    title: 'Pluto Security Raises $42M to Combat Shadow AI and Agent Risks',
+    description:
+      'Enterprise security startup Pluto Security emerges from stealth with $42M to secure non-developer vibe-coded tools and autonomous AI agents.',
+    imageUrl: getPostImagePath('pluto-security-raises-42m-enterprise-ai-security'),
+    imageAlt: 'Pluto Security Raises $42M to Combat Shadow AI and Agent Risks',
+    date: 'October 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
