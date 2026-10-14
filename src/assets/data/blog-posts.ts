@@ -9866,6 +9866,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 712,
+    slug: 'eight-states-sue-openai-over-child-safety-concerns',
+    title: 'Eight States Sue OpenAI Over ChatGPT Youth Safety Deficiencies',
+    description:
+      'A coalition of eight US states files lawsuits against OpenAI, alleging deceptive safety claims, minor privacy violations, and profit prioritization.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Eight States Sue OpenAI Over ChatGPT Youth Safety Deficiencies',
+    date: 'October 14, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
