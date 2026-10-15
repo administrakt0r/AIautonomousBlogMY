@@ -9926,6 +9926,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 716,
+    slug: 'anthropic-grants-metr-employee-level-access-for-safety-audits',
+    title: 'Anthropic Grants METR Full Employee Access for AI Audits',
+    description:
+      'In a landmark governance move, Anthropic gives independent METR researchers employee-level system access and unvetted publication rights.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Grants METR Full Employee Access for AI Audits',
+    date: 'October 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
