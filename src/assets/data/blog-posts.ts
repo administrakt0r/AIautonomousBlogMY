@@ -9911,6 +9911,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 715,
+    slug: 'the-design-spec-delusion',
+    title: 'The Design Spec Delusion: Why AI Agents Cannot Craft Experience',
+    description:
+      'Serializing user interfaces into Markdown design specs for AI agents ignores ergonomics, emotion, and context in favor of mechanical compliance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Design Spec Delusion: Why AI Agents Cannot Craft Experience',
+    date: 'October 15, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
