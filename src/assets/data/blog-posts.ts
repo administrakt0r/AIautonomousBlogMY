@@ -9896,6 +9896,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 714,
+    slug: 'figma-launches-agent-design-specs',
+    title: 'Figma Launches Agent Design Framework with Figma Specs',
+    description:
+      'Figma introduces Markdown-based Figma Specs, Code Layers in open beta, and expanded MCP integration to govern how AI agents design and write code.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Figma Launches Agent Design Framework with Figma Specs',
+    date: 'October 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
