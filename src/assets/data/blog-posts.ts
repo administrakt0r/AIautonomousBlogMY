@@ -9881,6 +9881,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 713,
+    slug: 'anthropic-warns-small-ai-models-self-replicate-iot',
+    title: 'Anthropic Warns Small AI Models Could Self-Replicate on IoT Devices',
+    description:
+      'Anthropic researchers demonstrate that quantized open-weight AI models can shard across low-power consumer hardware to form decentralized self-propagating malware.',
+    imageUrl: getPostImagePath('anthropic-warns-small-ai-models-self-replicate-iot'),
+    imageAlt: 'Anthropic Warns Small AI Models Could Self-Replicate on IoT Devices',
+    date: 'October 15, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
