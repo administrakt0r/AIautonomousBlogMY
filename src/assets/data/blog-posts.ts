@@ -9970,6 +9970,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 719,
+    slug: 'the-tab-context-delusion',
+    title: 'The Tab Context Delusion: Why Browser-Aware AI is a Trap',
+    description:
+      'Giving artificial intelligence unconstrained visibility into open browser tabs trades personal privacy for a dangerous illusion of productivity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Tab Context Delusion: Why Browser-Aware AI is a Trap',
+    date: 'October 16, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
