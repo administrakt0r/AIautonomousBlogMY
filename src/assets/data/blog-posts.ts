@@ -9956,6 +9956,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 718,
+    slug: 'openai-chatgpt-chrome-extension-tabs',
+    title: 'OpenAI Upgrades ChatGPT Chrome Extension with Tab Context',
+    description: 'New browser extension capabilities allow ChatGPT to inspect open Chrome tabs, compare web content, and execute browser actions.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Upgrades ChatGPT Chrome Extension with Tab Context',
+    date: 'October 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
