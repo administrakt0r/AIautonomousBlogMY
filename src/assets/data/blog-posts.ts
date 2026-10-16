@@ -9941,6 +9941,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 717,
+    slug: 'meta-releases-muse-spark-open-macs',
+    title: 'Meta Releases Muse Spark Open: 816B Parameter Model for Macs',
+    description:
+      'Meta partners with Apple to launch Muse Spark Open, an 816B parameter open-weight AI model optimized to run locally on Mac Studio hardware.',
+    imageUrl: getPostImagePath('meta-releases-muse-spark-open-macs'),
+    imageAlt: 'Meta Releases Muse Spark Open: 816B Parameter Model for Macs',
+    date: 'October 16, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
