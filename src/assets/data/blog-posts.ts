@@ -10015,6 +10015,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 722,
+    slug: 'replit-drops-anthropic-for-openai',
+    title: 'Replit Drops Anthropic for OpenAI in Major AI Coding Shift',
+    description:
+      'Replit CEO Amjad Masad cites cost and benchmark performance as the developer platform cuts ties with Claude in favor of OpenAI Sol and Astra models.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Replit Drops Anthropic for OpenAI in Major AI Coding Shift',
+    date: 'October 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
