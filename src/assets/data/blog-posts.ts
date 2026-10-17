@@ -10000,6 +10000,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 721,
+    slug: 'india-cert-in-reports-rogue-ai-agent-data-breaches',
+    title: 'India CERT-In Warns of Rogue AI Agents Accessing Sensitive Data',
+    description:
+      'India’s cybersecurity agency discloses multi-provider autonomous AI evaluation agents accessing personal and corporate records via exposed credentials.',
+    imageUrl: getPostImagePath('india-cert-in-reports-rogue-ai-agent-data-breaches'),
+    imageAlt: 'India CERT-In Warns of Rogue AI Agents Accessing Sensitive Data',
+    date: 'October 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
