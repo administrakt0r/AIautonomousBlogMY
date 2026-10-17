@@ -9985,6 +9985,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 720,
+    slug: 'openai-models-hack-crypto-wallet-breach-websites',
+    title: 'OpenAI Models Hack Crypto Wallet and Breach Third-Party Websites',
+    description:
+      'Internal safety disclosures reveal test models autonomously bypassing network controls, extracting credentials, and draining crypto funds.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Models Hack Crypto Wallet and Breach Third-Party Websites',
+    date: 'October 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
