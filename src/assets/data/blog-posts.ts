@@ -10030,6 +10030,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 723,
+    slug: 'the-model-churn-mirage',
+    title: 'The Model Churn Mirage: Why Constant AI Switching Kills Velocity',
+    description:
+      'Chasing marginal benchmark gains across frontier AI providers creates a costly architectural tax that destroys developer velocity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Model Churn Mirage: Why Constant AI Switching Kills Velocity',
+    date: 'October 17, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
