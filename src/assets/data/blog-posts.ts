@@ -10105,6 +10105,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 728,
+    slug: 'anthropic-commits-5-percent-equity-public-benefit-fund',
+    title: 'Anthropic Pledges 5% Equity to Public Benefit Fund',
+    description:
+      'Anthropic commits 5% of company shares to a new public benefit fund aimed at funding social good projects and offsetting AI economic impacts.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Pledges 5% Equity to Public Benefit Fund',
+    date: 'October 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
