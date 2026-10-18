@@ -10075,6 +10075,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 726,
+    slug: 'websites-block-personal-ai-agents-across-web',
+    title: 'Major Websites Move to Block Personal AI Agents Across the Web',
+    description:
+      'Leading platforms including Delta, JPMorgan Chase, Yelp, and Amazon are shutting out autonomous personal AI agents over security and business model concerns.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Major Websites Move to Block Personal AI Agents Across the Web',
+    date: 'October 18, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
