@@ -10060,6 +10060,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 725,
+    slug: 'meta-removes-ai-scraping-terms-publishers',
+    title: 'Meta Removes AI Data Scraping Terms After Publisher Backlash',
+    description:
+      'Meta has backtracked on commercial terms allowing AI web scraping across business accounts following copyright concerns from news publishers.',
+    imageUrl: getPostImagePath('meta-removes-ai-scraping-terms-publishers'),
+    imageAlt: 'Meta Removes AI Data Scraping Terms After Publisher Backlash',
+    date: 'October 17, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
