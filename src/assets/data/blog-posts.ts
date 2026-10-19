@@ -10135,6 +10135,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 730,
+    slug: 'claude-virtual-island-playful-learning-mit-study',
+    title: 'MIT Strands Claude AI on Virtual Island: Playful Learning Emerges',
+    description:
+      'In an MIT CSAIL experiment, unguided Anthropic Claude agents stranded on a virtual island invented games, created art, and demonstrated self-improving playful learning.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'MIT Strands Claude AI on Virtual Island: Playful Learning Emerges',
+    date: 'October 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
