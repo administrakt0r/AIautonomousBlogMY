@@ -10165,6 +10165,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 732,
+    slug: 'hackers-hit-ai-coding-tool-opencode-unauthorized-charges',
+    title: 'Hackers Breach AI Coding Tool OpenCode as Charges Surge',
+    description:
+      'A cyberattack targeting OpenCode Console exposed user API keys, driving unauthorized AI charges and revealing guardrail deadlocks.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Hackers Breach AI Coding Tool OpenCode as Charges Surge',
+    date: 'October 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
