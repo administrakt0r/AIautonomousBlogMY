@@ -10150,6 +10150,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 731,
+    slug: 'the-playful-intelligence-delusion',
+    title: 'The Playful Intelligence Delusion: Why Synthetic Play Is Fake AGI',
+    description:
+      'Celebrating simulated play in virtual AI sandboxes as intrinsic curiosity is a category error that confuses stochastic imitation with autonomous drive.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Playful Intelligence Delusion: Why Synthetic Play Is Fake AGI',
+    date: 'October 19, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
