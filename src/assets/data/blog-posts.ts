@@ -10120,6 +10120,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 729,
+    slug: 'disney-engineers-character-ai-bankruptcy-deal-to-secure-ip',
+    title: 'Disney Engineers Character.AI Bankruptcy Deal to Secure IP',
+    description:
+      'Disney leverages Character.AI bankruptcy proceedings to license core interactive AI tech and acquihire talent while avoiding corporate liabilities.',
+    imageUrl: getPostImagePath('disney-engineers-character-ai-bankruptcy-deal-to-secure-ip'),
+    imageAlt: 'Disney Engineers Character.AI Bankruptcy Deal to Secure IP',
+    date: 'October 19, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
