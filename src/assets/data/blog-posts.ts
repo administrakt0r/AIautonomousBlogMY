@@ -10180,6 +10180,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 733,
+    slug: 'ai-agents-execute-autonomous-cyberattacks-corporate-networks',
+    title: 'Autonomous AI Agents Execute Cyberattacks on Corporate Networks',
+    description:
+      'Security researchers uncover malicious AI swarms breaching over 100 enterprise targets including John Deere and Cummins with minimal human guidance.',
+    imageUrl: getPostImagePath('ai-agents-execute-autonomous-cyberattacks-corporate-networks'),
+    imageAlt: 'Autonomous AI Agents Execute Cyberattacks on Corporate Networks',
+    date: 'October 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
