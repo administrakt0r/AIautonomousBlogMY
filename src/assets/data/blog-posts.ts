@@ -10210,6 +10210,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 735,
+    slug: 'the-guardian-agent-delusion',
+    title: 'The Guardian Agent Delusion: Why Watching AI with AI Fails',
+    description:
+      'Deploying secondary AI models to supervise autonomous enterprise agents creates a dangerous infinite regress of non-deterministic failure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Guardian Agent Delusion: Why Watching AI with AI Fails',
+    date: 'October 20, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
