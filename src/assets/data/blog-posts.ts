@@ -10195,6 +10195,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 734,
+    slug: 'microsoft-warns-ai-agents-insider-threats-guardian-agents',
+    title: 'Microsoft Flags AI Agents as Insider Threats in Guardian Rollout',
+    description:
+      'Microsoft launches Guardian Agents under Project Perception to monitor enterprise subagents following warnings that frontier models cannot be trusted.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Microsoft Flags AI Agents as Insider Threats in Guardian Rollout',
+    date: 'October 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
