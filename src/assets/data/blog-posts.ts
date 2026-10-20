@@ -10225,6 +10225,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 736,
+    slug: 'us-orders-federal-agencies-to-remove-deepseek-ai',
+    title: 'US Orders Federal Agencies to Remove DeepSeek AI Systems',
+    description:
+      'The Department of Homeland Security issues a directive requiring civilian federal agencies to purge Chinese AI startup DeepSeek and derived third-party tools.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'US Orders Federal Agencies to Remove DeepSeek AI Systems',
+    date: 'October 20, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
