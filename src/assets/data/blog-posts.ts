@@ -10283,6 +10283,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 740,
+    slug: 'recursive-releases-flint-open-weight-model',
+    title: 'Recursive Releases Flint, a 40B Open-Weight Model Built via RSI',
+    description: 'Startup Recursive has released Flint, a 40-billion parameter open-weight coding model developed almost entirely through automated recursive self-improvement.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Recursive Releases Flint 40B Open Weight Model Built via RSI',
+    date: 'October 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
