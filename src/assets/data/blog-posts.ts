@@ -10255,6 +10255,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 738,
+    slug: 'spacex-ai-business-beats-expectations',
+    title: 'SpaceX AI Division Surges to $7.5B Q3 Revenue as Compute Outpaces Rockets',
+    description: 'Data centers, Grok subagents, and Cursor drive over 52% of total Q3 revenue for Elon Musk\'s deep tech conglomerate.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'SpaceX AI Division Surges to $7.5B Q3 Revenue as Compute Outpaces Rockets',
+    date: 'October 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
