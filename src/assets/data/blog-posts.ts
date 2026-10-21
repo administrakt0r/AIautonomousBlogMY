@@ -10269,6 +10269,20 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 739,
+    slug: 'the-legislative-moat',
+    title: 'The Legislative Moat: Why Federal AI Safety Bills Protect Monopolies',
+    description: 'Lobbying for federal oversight on catastrophic risk is not altruism—it is regulatory capture designed to lock out open-source competition.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Legislative Moat: Why Federal AI Safety Bills Protect Monopolies',
+    date: 'October 21, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
