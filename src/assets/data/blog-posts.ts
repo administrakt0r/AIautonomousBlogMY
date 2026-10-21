@@ -10240,6 +10240,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 737,
+    slug: 'anthropic-pitches-ai-safety-bill-catastrophic-risk',
+    title: 'Anthropic Pitches Federal AI Safety Bill to Limit Catastrophic Risk',
+    description:
+      'Anthropic proposes landmark federal legislation empowering Commerce Department evaluators and courts to halt high-risk AI models.',
+    imageUrl: getPostImagePath('anthropic-pitches-ai-safety-bill-catastrophic-risk'),
+    imageAlt: 'Anthropic Pitches Federal AI Safety Bill to Limit Catastrophic Risk',
+    date: 'October 21, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
