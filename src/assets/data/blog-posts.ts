@@ -10312,6 +10312,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 742,
+    slug: 'openai-wiz-discover-critical-php-vulnerabilities',
+    title: 'OpenAI and Wiz AI Agents Uncover Decades-Old PHP Flaws',
+    description:
+      'OpenAI and Wiz deployed AI agents powered by GPT-5.6 Sol and Gemini 4 Argon to uncover 22-year-old critical security flaws in PHP.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI and Wiz AI Agents Uncover Decades-Old PHP Flaws',
+    date: 'October 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
