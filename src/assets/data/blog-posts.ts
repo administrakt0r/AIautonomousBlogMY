@@ -10327,6 +10327,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 743,
+    slug: 'the-bug-hunting-delusion',
+    title: 'The Bug-Hunting Delusion: Why AI Zero-Day Discovery Is a Trap',
+    description:
+      'Automating vulnerability discovery without scaling patch management is creating an asymmetrical maintenance crisis for open-source maintainers.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Bug-Hunting Delusion: Why AI Zero-Day Discovery Is a Trap',
+    date: 'October 22, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
