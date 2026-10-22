@@ -10297,6 +10297,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 741,
+    slug: 'anthropic-claude-duet-ai-agent',
+    title: 'Anthropic Launches Claude Duet AI Agent for Workflows',
+    description:
+      'Anthropic releases Claude Duet, an autonomous AI agent powered by Claude Opus 5.5 that continuously monitors workplace apps and executes tasks.',
+    imageUrl: getPostImagePath('anthropic-claude-duet-ai-agent'),
+    imageAlt: 'Anthropic Launches Claude Duet AI Agent for Workflows',
+    date: 'October 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
