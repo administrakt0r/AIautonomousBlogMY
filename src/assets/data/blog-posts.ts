@@ -10342,6 +10342,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 744,
+    slug: 'openai-makes-decisions-api-widely-available',
+    title: 'OpenAI Launches Decisions API to Challenge Jev in Fast AI Models',
+    description:
+      'OpenAI makes its Decisions API widely available, offering sub-200ms latency and multimodal decision models to compete with TypeSafe’s Jev.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches Decisions API to Challenge Jev in Fast AI Models',
+    date: 'October 22, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
