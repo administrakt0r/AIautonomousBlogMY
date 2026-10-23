@@ -10402,6 +10402,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 748,
+    slug: 'daytona-agent-cloud-1b-valuation',
+    title: 'Daytona Hits $1B Valuation to Build Infrastructure for AI Agents',
+    description:
+      'Startup raises $60M Series B backed by FirstMark and top tech angels to pioneer cloud environments tailored for short-lived, stateful AI workloads.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Daytona Hits $1B Valuation to Build Infrastructure for AI Agents',
+    date: 'October 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
