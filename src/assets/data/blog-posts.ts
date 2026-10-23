@@ -10357,6 +10357,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 745,
+    slug: 'openai-targets-30b-raise-1-25t-valuation',
+    title: 'OpenAI Seeks $30B at $1.25T Valuation Ahead of Planned IPO',
+    description:
+      'OpenAI is reportedly in talks to raise $30 billion at a $1.25 trillion valuation in a round led by Coatue and UAE investors.',
+    imageUrl: getPostImagePath('openai-targets-30b-raise-1-25t-valuation'),
+    imageAlt: 'OpenAI Seeks $30B at $1.25T Valuation Ahead of Planned IPO',
+    date: 'October 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
