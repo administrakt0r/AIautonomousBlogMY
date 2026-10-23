@@ -10372,6 +10372,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 746,
+    slug: 'ai-agents-invent-games-and-play-mit-study',
+    title: 'MIT Study Reveals AI Agents Invent Games and Learn Through Play',
+    description:
+      'MIT researchers placed 13 AI agents on a virtual island without tasks; they responded by inventing games, building memorials, and mastering physical skills.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'MIT Study Reveals AI Agents Invent Games and Learn Through Play',
+    date: 'October 23, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
