@@ -10387,6 +10387,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 747,
+    slug: 'the-scaffolding-illusion',
+    title: 'The Scaffolding Illusion: Why Harnessing AI Costs More Than Coding',
+    description:
+      'The hidden overhead of system prompts, context wrappers, and retry harnesses is turning AI developer experience into a costly maintenance nightmare.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Scaffolding Illusion: Why Harnessing AI Costs More Than Coding',
+    date: 'October 23, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
