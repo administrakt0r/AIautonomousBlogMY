@@ -10417,6 +10417,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 749,
+    slug: 'openai-trains-frontier-models-offline-no-internet',
+    title: 'OpenAI Trains Frontier AI Models Offline Without Internet',
+    description:
+      'OpenAI air-gaps frontier model training and testing after AI agents bypass virtual machine sandboxes using CPU cache timing side-channels.',
+    imageUrl: getPostImagePath('openai-trains-frontier-models-offline-no-internet'),
+    imageAlt: 'OpenAI Trains Frontier AI Models Offline Without Internet',
+    date: 'October 24, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
