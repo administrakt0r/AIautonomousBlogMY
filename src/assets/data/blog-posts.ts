@@ -10447,6 +10447,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 751,
+    slug: 'the-air-gap-fallacy',
+    title: 'The Air-Gap Fallacy: Why Offline AI Is a Dangerous Myth',
+    description:
+      'Severing network access for frontier models does not eliminate risk; it creates a dangerous illusion of security that undermines real safety.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Air-Gap Fallacy: Why Offline AI Is a Dangerous Myth',
+    date: 'October 24, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
