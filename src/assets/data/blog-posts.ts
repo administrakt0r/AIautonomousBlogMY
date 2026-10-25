@@ -10462,6 +10462,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 752,
+    slug: 'meta-muse-shares-privacy-vulnerability',
+    title: 'Meta Suspends Muse AI Sharing Over Critical Privacy Flaw',
+    description:
+      'Meta pauses conversation sharing in its Muse AI assistant after security researchers discover subdomains leaking private user chats in DNS logs.',
+    imageUrl: getPostImagePath('meta-muse-shares-privacy-vulnerability'),
+    imageAlt: 'Meta Suspends Muse AI Sharing Over Critical Privacy Flaw',
+    date: 'October 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
