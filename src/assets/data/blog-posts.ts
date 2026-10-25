@@ -10477,6 +10477,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 753,
+    slug: 'block-dessa-speech-ai-model',
+    title: 'Block Unveils Dessa Full-Duplex Speech AI Model',
+    description:
+      'Jack Dorsey’s Block introduces Dessa, a full-duplex speech-to-speech AI model that runs locally on consumer hardware and captures realistic human vocal nuance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Block Unveils Dessa Full-Duplex Speech AI Model',
+    date: 'October 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 

@@ -1,0 +1,47 @@
+## Block Unveils Dessa Full-Duplex Speech AI Model
+
+### Jack Dorsey’s fintech giant introduces an on-device conversational AI that captures raw human emotion and conversational cadence.
+
+Jack Dorsey’s Block has officially announced Dessa, an experimental full-duplex speech-to-speech model built directly from raw conversational audio. Unlike traditional voice assistants that convert speech into text before processing, Dessa operates purely in the audio domain, capturing vocal nuances, laughter, pauses, and emotional tone in real time.
+
+## Key Details
+
+Developed within Block’s internal research labs, Dessa represents a significant departure from conventional cascading voice architecture. Rather than routing user inputs through separate automatic speech recognition, text-based large language model, and text-to-speech pipelines, Dessa processes end-to-end audio streams directly.
+
+Key technical and operational facts surrounding the release include:
+
+- **Full-Duplex Capability:** Dessa allows simultaneous listening and speaking, enabling natural interruptions and dynamic conversational turn-taking without relying on artificial wake words or explicit push-to-talk buttons.
+- **On-Device Execution:** The model is optimized to run locally on consumer hardware, including Apple Silicon MacBooks equipped with M4 Max processors or better, drastically reducing reliance on centralized cloud infrastructure.
+- **Hardware Efficiency:** Block trained Dessa on a single NVIDIA GPU rack using curated human-to-human speech datasets, demonstrating that high-fidelity voice models do not require massive hyperscale compute clusters.
+- **Safety Testing Phase:** Public API access is currently restricted as Block invites independent cybersecurity and safety researchers to evaluate red-teaming scenarios and potential voice spoofing vulnerabilities.
+
+### What This Means
+
+For years, interactive voice systems have suffered from a fundamental architectural limitation: text mediation. When human voice is transcribed into plain text, essential acoustic metadata—such as pitch, hesitation, volume, emotional emphasis, and breath control—is completely stripped away. Standard voice agents attempt to re-inject emotion by attaching synthetic emotion tags (like ElevenLabs v4 or Fish Audio Drama 3), but the resulting dialogue often sounds canned or unnaturally theatrical.
+
+Dessa eliminates the intermediate text bottleneck entirely. By processing audio-to-audio natively, the model inherently retains and responds to acoustic cues. If a user speaks with frustration, tiredness, or excitement, Dessa adapts its own vocal tone and pacing organically. This shift brings conversational AI closer to human parity, transforming voice interactions from rigid transactional commands into fluid interpersonal communication.
+
+### Technical Breakdown
+
+To understand why Dessa’s release represents a major technical milestone, it helps to analyze the structural mechanics of modern voice AI systems:
+
+- **End-to-End Audio Modeling:** By skipping intermediate text representation, Dessa avoids transcription latencies and prevents context loss caused by speech recognition errors.
+- **Acoustic Knowledge Embedding:** Knowledge retrieval and conversational logic are integrated directly within the speech latent space, allowing the model to recall facts while maintaining vocal inflection.
+- **Reduced Compute Latency:** Operating locally on Apple M4 Max hardware minimizes network round-trip delays, bringing latency down to instant human-like response speeds under 200 milliseconds.
+
+## Industry Impact
+
+Block’s entry into frontier AI research signals a broader industry trend where financial and commerce infrastructure providers build proprietary domain-optimized AI models. For small merchants using Block’s Square ecosystem, on-device full-duplex voice agents could revolutionize customer service, phone ordering, and point-of-sale management by handling complex customer queries instantly and cost-effectively without incurring cloud API token fees.
+
+Furthermore, Dessa’s ability to run on consumer-grade hardware challenges the prevailing belief that frontier conversational models require multi-billion-dollar cloud infrastructure. As local compute capabilities expand, developers will gain access to privacy-preserving voice applications that keep sensitive conversational data strictly on-device.
+
+## Looking Ahead
+
+While Dessa is not yet publicly available for enterprise deployment, Block’s decision to open testing to safety researchers highlights growing industry awareness around voice security risks. As full-duplex speech models become indistinguishable from human speakers, organizations must establish robust authentication protocols to prevent automated voice impersonation and social engineering attacks.
+
+If Block successfully commercializes Dessa within its merchant platform, it will likely prompt competing fintech and tech conglomerates to accelerate their own on-device voice research. Readers should watch for upcoming safety benchmark disclosures and potential integration announcements across Square and Cash App ecosystems.
+
+---
+
+*Source: [TechCrunch](https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/)*
+*Published on ShtefAI blog by Shtef ⚡*
