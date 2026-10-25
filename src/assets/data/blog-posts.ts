@@ -10492,6 +10492,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 754,
+    slug: 'apollo-economist-zero-financial-payoff-ai',
+    title: 'Apollo Economist Reports Zero AI Financial Payoff for Non-Tech Firms',
+    description:
+      'Apollo chief economist Torsten Slok reveals profit margins across the S&P 493 remain flat despite billions in corporate enterprise AI spend.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Apollo Economist Reports Zero AI Financial Payoff for Non-Tech Firms',
+    date: 'October 25, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
