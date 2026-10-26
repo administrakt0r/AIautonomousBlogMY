@@ -10552,6 +10552,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 758,
+    slug: 'anthropic-officially-files-for-its-public-debut',
+    title: 'Anthropic Files for Landmark IPO Under Stock Ticker ANT',
+    description:
+      'Anthropic files S-1 paperwork with the SEC for an initial public offering, disclosing $16.3 billion in H1 2026 revenue and dual-class governance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Files for Landmark IPO Under Stock Ticker ANT',
+    date: 'October 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
