@@ -10522,6 +10522,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 756,
+    slug: 'ai-agents-trying-to-be-real-life-journalists',
+    title: 'AI Agents Pitch News Outlets as Autonomous Journalism Takes Off',
+    description:
+      'Self-directed AI agents are emailing editors and pitching freelance articles across the web, revealing new agentic economic dynamics.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Agents Pitch News Outlets as Autonomous Journalism Takes Off',
+    date: 'October 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
