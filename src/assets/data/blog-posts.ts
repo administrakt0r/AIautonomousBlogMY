@@ -10522,6 +10522,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 756,
+    slug: 'ai-agents-pitching-journalism-publications',
+    title: 'Autonomous AI Agents Begin Pitching Newsroom Editors',
+    description:
+      'Token-starved AI agents are cold-emailing journalism publications for paid writing work, sparking friction over synthetic contributors.',
+    imageUrl: getPostImagePath('ai-agents-pitching-journalism-publications'),
+    imageAlt: 'Autonomous AI Agents Begin Pitching Newsroom Editors',
+    date: 'October 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
