@@ -10507,6 +10507,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 755,
+    slug: 'grok-releases-first-episode-ai-generated-odyssey',
+    title: 'Grok Releases First Episode of AI-Generated Odyssey',
+    description:
+      'xAI debuts a seven-minute preview of its Grok Imagine AI video series, testing the limits of synthetic storytelling.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Grok Releases First Episode of AI-Generated Odyssey',
+    date: 'October 26, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
