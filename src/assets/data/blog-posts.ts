@@ -10612,6 +10612,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 762,
+    slug: 'google-genie-4-world-model-adds-audio-steering',
+    title: 'Google’s Genie 4 World Model Adds Audio and Real-Time Steering',
+    description:
+      'Google DeepMind debuts Genie 4 in research preview, featuring photorealistic world generation, synchronized audio, and live prompt steering.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Google DeepMind Genie 4 world model with synchronized audio and steering',
+    date: 'October 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
