@@ -10582,6 +10582,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 760,
+    slug: 'nvidia-backs-simplismart-14m-round-ai-inference',
+    title: 'Nvidia Backs Simplismart’s $14M Round for Efficient AI Inference',
+    description:
+      'Nvidia invests in Bengaluru-based Simplismart as demand grows for software that optimizes GPU workloads and cuts model serving costs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia Backs Simplismart’s $14M Round for Efficient AI Inference',
+    date: 'October 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
