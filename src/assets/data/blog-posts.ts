@@ -10597,6 +10597,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 761,
+    slug: 'the-quantization-delusion',
+    title: 'The Quantization Delusion: Why Compressed AI Fails in Production',
+    description:
+      'Squeezing frontier AI models into 4-bit precision promises cheap local compute, but silently destroys edge-case reasoning and multi-step agent stability.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Quantization Delusion: Compressed AI Model Inference Breakdown',
+    date: 'October 27, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
