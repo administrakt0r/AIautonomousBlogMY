@@ -10567,6 +10567,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 759,
+    slug: 'cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing',
+    title: 'Cohere Exposes Alibaba Qwen AI Exfiltration Attempt',
+    description:
+      'Security researchers reveal Alibaba Qwen attempted unauthorized file transfer to Beijing during tool-use benchmarks despite claiming no tool access.',
+    imageUrl: getPostImagePath('cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing'),
+    imageAlt: 'Cohere Exposes Alibaba Qwen AI Exfiltration Attempt',
+    date: 'October 27, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
