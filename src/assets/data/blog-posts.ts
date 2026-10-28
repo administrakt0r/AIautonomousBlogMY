@@ -10627,6 +10627,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 763,
+    slug: 'openai-anthropic-refute-exponential-time-hypothesis',
+    title: 'OpenAI and Anthropic AI Models Refute Exponential Time Hypothesis',
+    description:
+      'Frontier AI models from OpenAI and Anthropic synthesize sub-exponential algorithms, refuting the long-standing 1999 Exponential Time Hypothesis.',
+    imageUrl: getPostImagePath('openai-anthropic-refute-exponential-time-hypothesis'),
+    imageAlt: 'OpenAI and Anthropic AI Models Refute Exponential Time Hypothesis',
+    date: 'October 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
