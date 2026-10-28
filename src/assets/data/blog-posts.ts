@@ -10642,6 +10642,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 764,
+    slug: 'bank-of-america-warns-against-sharing-passwords-with-ai-agents',
+    title: 'Bank of America Warns Customers Against Sharing Passwords with AI',
+    description:
+      'Bank of America issues an urgent customer advisory warning against sharing online banking passwords with personal AI agents.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Bank of America Warns Customers Against Sharing Passwords with AI',
+    date: 'October 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
