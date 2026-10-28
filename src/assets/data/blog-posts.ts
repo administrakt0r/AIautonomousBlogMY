@@ -10672,6 +10672,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 766,
+    slug: 'microsoft-recorded-10-billion-in-revenue-from-openai',
+    title: 'Microsoft Records $10 Billion Quarter From OpenAI Operations',
+    description:
+      'Microsoft generated $10 billion from OpenAI arrangements in Q1 FY27, highlighting massive financial ties amidst growing enterprise competition.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Microsoft Records $10 Billion Quarter From OpenAI Operations',
+    date: 'October 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
