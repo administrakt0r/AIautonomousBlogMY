@@ -10657,6 +10657,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 765,
+    slug: 'the-eval-driven-delusion',
+    title: 'The Eval-Driven Delusion: Why Automated Testing Fails LLM Apps',
+    description:
+      'Outsourcing software quality to LLM-as-a-judge frameworks creates an expensive feedback loop of synthetic approval and false security.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Eval-Driven Delusion: Why Automated Testing Fails LLM Apps',
+    date: 'October 28, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
