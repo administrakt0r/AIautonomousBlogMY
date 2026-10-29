@@ -10732,6 +10732,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 770,
+    slug: 'mistral-releases-trillion-parameter-weights-cybersecurity',
+    title: 'Mistral Releases Trillion Parameter Weights for Cyber Defense',
+    description:
+      'Mistral AI releases open weights for its 1-trillion-parameter model Le Chonk, targeting enterprise cybersecurity and sovereign AI deployments.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Mistral Releases Trillion Parameter Weights for Cyber Defense',
+    date: 'October 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
