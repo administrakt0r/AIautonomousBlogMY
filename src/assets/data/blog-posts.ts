@@ -10702,6 +10702,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 768,
+    slug: 'anthropic-launches-ai-spending-roi-tools',
+    title: 'Anthropic Launches ROI Tracking Tools for Enterprise AI Spend',
+    description:
+      'Anthropic debuts enterprise financial analytics and token telemetry tools to help companies measure and optimize AI model productivity.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Launches ROI Tracking Tools for Enterprise AI Spend',
+    date: 'October 29, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
