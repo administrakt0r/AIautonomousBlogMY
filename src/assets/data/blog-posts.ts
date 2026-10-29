@@ -10717,6 +10717,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 769,
+    slug: 'the-ai-productivity-debt',
+    title: 'The AI Productivity Debt: Why Generative Code Accumulates',
+    description:
+      'Synthetic velocity in software development is secretly compounding architectural debt and threatening system maintainability.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Productivity Debt: Why Generative Code Accumulates',
+    date: 'October 29, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
