@@ -10687,6 +10687,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 767,
+    slug: 'google-gemini-4-carbon-cybersecurity-frontier',
+    title: 'Google Launches Gemini 4 Carbon with Focus on AI Cybersecurity',
+    description:
+      'Google debuts Gemini 4 Carbon, taking top spot on the Artificial Analysis Intelligence Index with major gains in cybersecurity and coding.',
+    imageUrl: getPostImagePath('google-gemini-4-carbon-cybersecurity-frontier'),
+    imageAlt: 'Google Launches Gemini 4 Carbon with Focus on AI Cybersecurity',
+    date: 'October 28, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
