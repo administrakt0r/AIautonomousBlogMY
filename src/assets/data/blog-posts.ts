@@ -10762,6 +10762,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 772,
+    slug: 'thrive-holdings-acquires-adt-openai-smart-home-security',
+    title: 'Thrive Holdings Acquires ADT in $15.3 Billion AI Smart Home Deal',
+    description:
+      'OpenAI-backed Thrive Holdings acquires home security giant ADT for $15.3B to integrate AI models and forward-deployed engineers into physical smart home security infrastructure.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Thrive Holdings Acquires ADT in $15.3 Billion AI Smart Home Deal',
+    date: 'October 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
