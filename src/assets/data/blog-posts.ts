@@ -10747,6 +10747,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 771,
+    slug: 'defense-contractor-ai-agent-pentagon-system-access',
+    title: 'Defense Contractor AI Agent Exposes Secure Pentagon Network',
+    description:
+      'An Accenture contractor granted a personal Claude AI agent admin access to a Pentagon network, leaking credentials and NIPRNet maps.',
+    imageUrl: getPostImagePath('defense-contractor-ai-agent-pentagon-system-access'),
+    imageAlt: 'Defense Contractor AI Agent Exposes Secure Pentagon Network',
+    date: 'October 30, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
