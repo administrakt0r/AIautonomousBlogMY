@@ -10777,6 +10777,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 773,
+    slug: 'the-smart-home-trojan-horse',
+    title: 'The Smart Home Trojan Horse: AI Security as Surveillance',
+    description:
+      'OpenAI and Thrive’s $15.3B ADT acquisition is not about keeping homes safe—it is an invasive expansion of physical surveillance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Smart Home Trojan Horse: AI Security as Surveillance',
+    date: 'October 30, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
