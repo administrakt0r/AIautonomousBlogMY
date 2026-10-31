@@ -10822,6 +10822,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 776,
+    slug: 'the-ai-opt-out-illusion',
+    title: 'The AI Opt-Out Illusion: Why Voluntary Consent Fails',
+    description:
+      'Big Tech’s unified scraping standard is not publisher empowerment—it is a self-serving cartel maneuver designed to lock in data dominance.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Opt-Out Illusion: Why Voluntary Consent Fails',
+    date: 'October 31, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
