@@ -1,0 +1,56 @@
+## Anthropic VS Code Extension on Cursor Backdoored for 12 Hours
+
+### Attackers compromised Anthropic's verified publisher account to distribute an SSH reverse shell to thousands of developers.
+
+An official Visual Studio Code extension maintained by frontier AI lab Anthropic was compromised and backdoored on Cursor's marketplace for nearly 12 hours, exposing up to 5,000 developers' workstations to persistent remote access. The malicious package attempted to harvest local environment variables, inject rogue SSH keys, and establish an outbound reverse tunnel back to attacker infrastructure. Because modern AI coding assistants run with full local environment privileges, this supply-chain attack granted adversaries direct access to private repositories, production credentials, and cloud API tokens across hundreds of engineering teams.
+
+## Key Details
+
+The incident began Thursday morning when version 2.1.313 of Anthropic's official Claude extension was uploaded directly through Anthropic's verified publisher account on the Cursor marketplace. Because Cursor extensions automatically update by default, workstations actively running the environment pulled the poisoned payload between 5:27 AM ET and 4:35 PM ET before remediation occurred.
+
+Security researchers from Phorian and analyst Kevin Beaumont confirmed that the malicious update originated directly from Anthropic's legitimate distribution channel rather than an unverified typosquatting attempt:
+
+- **Verified Distribution Channel**: The malicious package was published directly from Anthropic's verified account, bypassing developer trust models and automatic update protections.
+- **Widespread Exposure**: An estimated 5,000 developers running Cursor received version 2.1.313 before Anthropic pushed clean version 2.1.314 hours later.
+- **Cross-Platform Payload**: The backdoor targeted Linux, macOS, and Windows operating systems.
+- **Telemetry Beaconing**: Host profiling data and reconnaissance logs were transmitted back to an external server via HTTP POST to `/beacon` on port 8099.
+- **Marketplace Lockdown**: Cursor temporarily closed its marketplace to rotate internal keys and audit access controls across all hosted packages.
+
+### What This Means
+
+This compromise strikes at the trust underpinning developer tooling in the agentic AI era. As software engineers increasingly rely on AI coding assistants like Cursor and Claude Code, these tools are granted deep filesystem access, terminal execution privileges, and visibility into environment variables. An attacker breaching a trusted vendor account does not need zero-day exploits; they ride the vendor's auto-update mechanism straight into high-value engineering environments.
+
+Furthermore, Anthropic's response has drawn sharp criticism across the security community. Despite the severity of an active SSH backdoor distributed to thousands of machines, Anthropic has issued no public advisory. Because updating to version 2.1.314 does not evict previously planted SSH keys or scheduled tasks, developers unaware of the compromise remain vulnerable to ongoing intrusion.
+
+### Technical Breakdown
+
+Analysis of malicious package 2.1.313 revealed a post-exploitation routine designed to harvest developer telemetry and establish remote persistence:
+
+- **System Profiling**: The script collected hostnames, operating system architectures, user privileges, Git email configs, and public IP addresses.
+- **Credential Harvesting**: The payload scanned environment variable names to identify high-value secrets, such as cloud credentials and API keys.
+- **SSH Key Injection**: The script attempted to inject an attacker-controlled public key into `authorized_keys`, start the local SSH daemon, and bind an outbound reverse SSH tunnel.
+- **Persistence Mechanisms**: On macOS, the malware configured a persistent `LaunchAgent`, while on Windows, it scheduled a background task attempting SYSTEM-level privilege escalation.
+
+Due to script errors and standard non-root IDE execution contexts, the automated SSH daemon startup failed on many non-administrative machines. Nevertheless, host reconnaissance beacons succeeded in transmitting environment summaries to adversary servers.
+
+## Industry Impact
+
+The compromise highlights severe vulnerabilities lurking within rapidly growing AI tooling ecosystems. AI developer environments have become lucrative supply-chain targets because they serve as direct gateways to proprietary source code and cloud infrastructure. When a frontier lab's account can be hijacked without immediate detection, the assumption that verified vendor accounts represent safe software must be reevaluated.
+
+Organizations relying on Cursor and Claude extensions must now scramble to audit developer endpoints, rotate internal API tokens, and inspect `authorized_keys` for unauthorized entries. The incident also demonstrates that extension ecosystems require automated behavioral sandboxing rather than implicit trust in publisher credentials.
+
+## Looking Ahead
+
+As AI agents take on greater autonomy in writing and testing code, the developer workstation is now mission-critical infrastructure. Developers and security teams should immediately take concrete remediation steps:
+
+- Verify whether Anthropic extension version 2.1.313 was installed in Cursor between October 29 and October 30.
+- Inspect `authorized_keys` and system startup items for unrecognized persistent entries.
+- Rotate all cloud provider API keys, GitHub personal access tokens, and AI platform secrets stored in local environment files.
+- Disable unattended automatic extension updates within IDE settings until marketplace verification protocols are overhauled.
+
+Until AI tooling providers enforce strict hardware-token signing and multi-party publishing approval for developer extensions, supply-chain vulnerabilities will continue to threaten software security.
+
+---
+
+*Source: [Ars Technica](https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/)*
+*Published on ShtefAI blog by Shtef ⚡*

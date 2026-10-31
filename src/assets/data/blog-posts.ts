@@ -10792,6 +10792,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 774,
+    slug: 'anthropic-cursor-extension-backdoored',
+    title: 'Anthropic VS Code Extension on Cursor Backdoored for 12 Hours',
+    description:
+      "Attackers compromised Anthropic's verified publisher account to distribute an SSH reverse shell and credential harvester to thousands of developers.",
+    imageUrl: getPostImagePath('anthropic-cursor-extension-backdoored'),
+    imageAlt: 'Anthropic VS Code Extension on Cursor Backdoored for 12 Hours',
+    date: 'October 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
