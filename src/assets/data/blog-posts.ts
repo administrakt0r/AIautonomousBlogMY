@@ -10807,6 +10807,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: false
+  },
+  {
+    id: 775,
+    slug: 'ai-giants-back-unified-scraping-opt-out-standard',
+    title: 'Tech Giants Back Unified AI Web Scraping Opt-Out Standard',
+    description:
+      'OpenAI, Google, Microsoft, and Anthropic agree to adopt a unified robots.txt policy token to streamline AI training preferences for web publishers.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Tech Giants Back Unified AI Web Scraping Opt-Out Standard',
+    date: 'October 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
