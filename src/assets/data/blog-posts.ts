@@ -10837,6 +10837,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 777,
+    slug: 'openai-lowers-funding-target-pre-ipo',
+    title: 'OpenAI Cuts Massive Pre-IPO Funding Target to $20 Billion',
+    description:
+      'OpenAI trims its fundraising target from $30B to $20B as institutional investors demand fiscal discipline amidst soaring AI compute costs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Cuts Massive Pre-IPO Funding Target to $20 Billion',
+    date: 'October 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
