@@ -10852,6 +10852,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 778,
+    slug: 'ai-infostealer-volta-autodoxer',
+    title: 'New Volta-Autodoxer Malware Uses AI to Profile Victims',
+    description:
+      'Cisco Talos uncovers Volta-Autodoxer, an infostealer malware using commercial LLMs to triage credentials and generate dossiers on high-value targets.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'New Volta-Autodoxer Malware Uses AI to Profile Victims',
+    date: 'October 31, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
