@@ -10897,6 +10897,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 781,
+    slug: 'openai-rebranding-data-centers-compute-campuses',
+    title: 'OpenAI Plans to Rebrand Data Centers as AI Compute Campuses',
+    description:
+      'OpenAI readies a post-midterms political blitz, proposing AI speed limits and rebranding contested data centers as community compute campuses.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Plans to Rebrand Data Centers as AI Compute Campuses',
+    date: 'November 1, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
