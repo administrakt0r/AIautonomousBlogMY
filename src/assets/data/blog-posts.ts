@@ -10867,6 +10867,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 779,
+    slug: 'ai-agent-performs-mouse-brain-surgery',
+    title: 'AI Agent Performs Brain Surgery on Live Mouse in Landmark Lab Test',
+    description:
+      'Exin Therapeutics connects Anthropic’s Claude to a motorized surgical rig to deliver gene therapy in a live animal brain, proving AI agents can operate lab hardware.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'AI Agent Performs Brain Surgery on Live Mouse in Landmark Lab Test',
+    date: 'November 1, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
