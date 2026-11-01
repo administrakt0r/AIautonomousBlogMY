@@ -10882,6 +10882,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 780,
+    slug: 'the-embodied-ai-illusion',
+    title: 'The Embodied AI Illusion: Why Language Models Cannot Operate Matter',
+    description:
+      'Frontier labs are hooking language models up to robotic arms and surgical rigs, confusing linguistic simulation with physical understanding.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Embodied AI Illusion: Why Language Models Cannot Operate Matter',
+    date: 'November 1, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
