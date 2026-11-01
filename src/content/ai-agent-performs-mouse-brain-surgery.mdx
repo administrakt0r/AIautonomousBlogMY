@@ -1,0 +1,50 @@
+## AI Agent Performs Brain Surgery on Live Mouse in Landmark Lab Test
+
+### Claude Sonnet controls precision robotic needle to deliver gene therapy
+
+In a historic milestone for autonomous laboratory science, an artificial intelligence agent has successfully performed a precision brain injection on a living mouse. The experiment demonstrates that frontier AI models can move beyond passive data analysis to directly operate surgical hardware in live biological environments.
+
+## Key Details
+
+The experiment was conducted by Exin Therapeutics, a San Francisco-based biotechnology startup developing treatments for epilepsy and neurodegenerative diseases. Led by CEO Gabriel Ocana Santero, the team evaluated what happens when frontier models are given direct physical control over laboratory equipment.
+
+The task required the model to treat a live mouse suffering from epilepsy by administering a gene therapy designed to suppress seizures. A human veterinary surgeon initially performed the craniotomy to expose the mouse skull. From that moment, the AI agent took command of a custom-built stereotaxic surgical apparatus.
+
+Equipped with computer vision cameras and motorized robotic arms, the setup allowed the agent to continuously monitor the animal, calculate spatial coordinates, and guide a micro-injection needle. The agent evaluated 19 therapeutic candidates from a spreadsheet, selected the optimal compound, targeted the specific brain region, and regulated injection parameters including flow rate, depth, and volume.
+
+During initial trials with Anthropic’s Claude Opus 5.5, the model balked at the task. Opus refused to guide the needle into living brain tissue, citing internal safety refusals and concern that unexpected mid-procedure termination could harm the animal. Exin Therapeutics switched to Claude Sonnet 5, which agreed to proceed and successfully executed the injection without incident.
+
+### What This Means
+
+Until now, artificial intelligence in biotechnology has largely remained confined to "in silico" discovery—screening molecular libraries, predicting protein structures, and designing candidate compounds. While valuable, these models remain separated from wet lab execution. Training models exclusively on published literature misses critical negative results, unexpected observations, and real-time laboratory decisions.
+
+By placing AI agents in closed-loop physical control of wet lab instruments, researchers can bridge the gap between algorithmic hypotheses and physical validation. The agent directly observes the physical consequences of its actions, rapidly ingesting empirical feedback that never makes it into published papers.
+
+### Technical Breakdown
+
+The experimental architecture combined autonomous multi-modal reasoning with layered safety interventions:
+
+- **Robotic Hardware Integration:** The system linked the language model to motorized stereotaxic frames and micro-infusion pumps through customized API bridges, translating spatial planning into precise motor commands.
+- **Computer Vision Tracking:** Overhead cameras provided continuous visual tracking of the cranial surface, allowing the model to confirm coordinates prior to mechanical descent.
+- **Refusal Divergence Across Tiers:** The contrast between Claude Opus 5.5 refusing the needle insertion and Claude Sonnet 5 completing it highlighted how different safety fine-tuning thresholds impact physical autonomy.
+- **Dual-Agent Safeguard Intervention:** When an equipment coordinate glitch occurred mid-surgery, safety constraints prevented the primary agent from altering its configuration scripts. The team resolved the stall by tasking a secondary Opus agent to patch the code without revealing the live surgical context.
+- **Hardware Emergency Interlocks:** The setup included hardware kill switches capable of instantly cutting power to all motors while preserving needle position to prevent tissue trauma.
+
+## Industry Impact
+
+The successful execution of an invasive surgical procedure by an autonomous model represents an inflection point for experimental biology. While the procedure took approximately one hour—slightly longer than the standard 45 minutes for a trained human specialist—the experiment proves physical AI can handle delicate living tissue.
+
+For contract research organizations (CROs) and pharmaceutical laboratories, autonomous surgical rigs could run around-the-clock preclinical screenings with sub-millimeter consistency. Eliminating human operator fatigue in repetitive micro-injection tasks could significantly reduce experimental variance across large animal cohorts.
+
+However, the trial also exposes urgent governance questions surrounding physical embodiment. When frontier labs train models with strict behavioral safeguards, an unexpected refusal during a live surgical procedure can become a life-threatening hazard. Establishing specialized protocols for physical actuators and real-time medical overrides will be essential as autonomous lab tools mature.
+
+## Looking Ahead
+
+Exin Therapeutics plans to expand its testing to other frontier models, including xAI's Grok and OpenAI's reasoning models, to evaluate comparative precision and compliance in laboratory environments. The company is also investigating whether agents can safely perform craniotomies, though researchers caution that full surgical automation remains years away from human clinical applications.
+
+For now, human scientists will remain firmly in the loop. Yet with the first successful robotic brain injection in the books, the boundary between algorithmic intelligence and physical laboratory medicine has officially begun to dissolve.
+
+---
+
+*Source: [WIRED](https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/)*
+*Published on ShtefAI blog by Shtef ⚡*
