@@ -10867,6 +10867,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 779,
+    slug: 'ai-agent-performs-mouse-brain-surgery',
+    title: 'AI Agent Performs Mouse Brain Surgery in Live Biotech Lab Experiment',
+    description:
+      'Biotech startup Exin Therapeutics uses an autonomous AI agent running Claude Sonnet 5 to select gene therapies and guide surgical needles into living mouse brains.',
+    imageUrl: getPostImagePath('ai-agent-performs-mouse-brain-surgery'),
+    imageAlt: 'AI Agent Performs Mouse Brain Surgery in Live Biotech Lab Experiment',
+    date: 'November 1, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
