@@ -10927,6 +10927,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 783,
+    slug: 'the-death-of-code-comprehension',
+    title: 'The Death of Code Comprehension: Why AI Velocity Kills Software',
+    description:
+      'High-speed token generation has severed the link between writing code and understanding systems, fostering an unhedged debt against systemic collapse.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Death of Code Comprehension: Why AI Velocity Kills Software',
+    date: 'November 2, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
