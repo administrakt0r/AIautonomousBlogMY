@@ -10912,6 +10912,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 782,
+    slug: 'the-agentic-web-arrives-ai-assistants',
+    title: 'The Agentic Web Arrives as AI Assistants Reshape the Internet',
+    description:
+      'Autonomous software agents like Meta Muse and Claude Duet are transforming web infrastructure from human browsing to direct machine-to-machine interactions.',
+    imageUrl: getPostImagePath('the-agentic-web-arrives-ai-assistants'),
+    imageAlt: 'The Agentic Web Arrives as AI Assistants Reshape the Internet',
+    date: 'November 2, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
