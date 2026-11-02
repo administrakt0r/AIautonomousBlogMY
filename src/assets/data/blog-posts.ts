@@ -10912,6 +10912,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 782,
+    slug: 'the-agentic-web-is-here',
+    title: 'The Agentic Web Arrives as AI Models Transform Internet Infrastructure',
+    description:
+      'Autonomous software agents are replacing browsers, reshaping digital commerce, and challenging open web standards.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Agentic Web Arrives as AI Models Transform Internet Infrastructure',
+    date: 'November 2, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
