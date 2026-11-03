@@ -10942,6 +10942,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 784,
+    slug: 'anthropic-warns-imminent-recursive-self-improvement-rsi',
+    title: 'Anthropic Warns Imminent Recursive Self-Improvement in S-1 AI Filing',
+    description:
+      'Anthropic alerted regulators in an updated S-1/A SEC filing that internal frontier models may imminently trigger recursive self-improvement thresholds.',
+    imageUrl: getPostImagePath('anthropic-warns-imminent-recursive-self-improvement-rsi'),
+    imageAlt: 'Anthropic Warns Imminent Recursive Self-Improvement in S-1 AI Filing',
+    date: 'November 3, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
