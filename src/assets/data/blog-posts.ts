@@ -10942,6 +10942,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 784,
+    slug: 'anthropic-flashprove-ai-model-identity',
+    title: 'Anthropic Unveils FlashProve to Cryptographically Verify AI Output',
+    description:
+      'Anthropic open-sources FlashProve, a cryptographic protocol enabling provable inference to verify AI model identities without exposing model weights.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Unveils FlashProve to Cryptographically Verify AI Output',
+    date: 'November 3, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
