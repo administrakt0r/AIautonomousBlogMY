@@ -10987,6 +10987,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 787,
+    slug: 'apple-siri-ai-third-party-apps',
+    title: 'Apple Expands Siri AI to Control All Third-Party Apps',
+    description:
+      'Apple opens Siri AI to third-party apps, enabling developers to build unified app skills that leverage user context and on-screen awareness.',
+    imageUrl: getPostImagePath('apple-siri-ai-third-party-apps'),
+    imageAlt: 'Apple Expands Siri AI to Control All Third-Party Apps',
+    date: 'November 4, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
