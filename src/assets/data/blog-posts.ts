@@ -11002,6 +11002,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 788,
+    slug: 'meta-acquires-ai-coding-startup-conductor',
+    title: 'Meta Acquires AI Coding Startup Conductor for Parallel Agent Workspaces',
+    description:
+      'Meta acquires AI coding startup Conductor to bring multi-agent parallel workspaces and collaborative software engineering into its Superintelligence Labs.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Meta Acquires AI Coding Startup Conductor for Parallel Agent Workspaces',
+    date: 'November 4, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
