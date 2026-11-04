@@ -10987,6 +10987,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 787,
+    slug: 'crowdstrike-acquires-fiddler-ai-and-dreadnode',
+    title: 'CrowdStrike Acquires Fiddler AI and Dreadnode for $500M to Secure Autonomous Agents',
+    description:
+      'CrowdStrike expands its Falcon platform into agentic observability and adversarial red-teaming with a blockbuster $500M dual acquisition of Fiddler AI and Dreadnode.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'CrowdStrike Acquires Fiddler AI and Dreadnode for $500M to Secure Autonomous Agents',
+    date: 'November 4, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
