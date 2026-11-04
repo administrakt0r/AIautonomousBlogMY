@@ -10957,6 +10957,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 785,
+    slug: 'the-unsolvable-jailbreak-why-prompt-injection-is-forever',
+    title: 'The Unsolvable Jailbreak: Why Prompt Injection Is Forever',
+    description:
+      'Prompt injection is not an engineering bug to be patched—it is an architectural consequence of collapsing code and data into natural language.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Unsolvable Jailbreak: Why Prompt Injection Is Forever',
+    date: 'November 4, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
