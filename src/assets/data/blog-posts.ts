@@ -11047,6 +11047,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 791,
+    slug: 'the-ai-observability-delusion',
+    title: 'The AI Observability Delusion: Why Traces Cannot Explain Model Chaos',
+    description:
+      'Logging token traces and span graphs creates an illusion of control while masking semantic drift, hallucinated invariants, and latent agent failures.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The AI Observability Delusion: Why Traces Cannot Explain Model Chaos',
+    date: 'November 5, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
