@@ -11032,6 +11032,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 790,
+    slug: 'big-tech-commits-720b-to-ai-infrastructure',
+    title: 'Big Tech Pours $720B Into AI Infrastructure Despite Mounting Doubts',
+    description:
+      'Amazon, Microsoft, Alphabet, and Meta pledge over $720B in AI infrastructure as Google search ad growth slows under rising AI query adoption.',
+    imageUrl: getPostImagePath('big-tech-commits-720b-to-ai-infrastructure'),
+    imageAlt: 'Big Tech Pours $720B Into AI Infrastructure Despite Mounting Doubts',
+    date: 'November 5, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
