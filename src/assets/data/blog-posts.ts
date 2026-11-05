@@ -11017,6 +11017,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 789,
+    slug: 'the-sandbox-illusion',
+    title: 'The Sandbox Illusion: Why Isolated Runtimes Cannot Contain AI Agents',
+    description:
+      'Containerizing autonomous AI agents treats execution boundaries as security barriers while ignoring the fatal risks of semantic authority and ambient credentials.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Sandbox Illusion: Why Isolated Runtimes Cannot Contain AI Agents',
+    date: 'November 5, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
