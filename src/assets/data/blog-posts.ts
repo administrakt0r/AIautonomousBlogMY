@@ -11032,6 +11032,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 790,
+    slug: 'agility-robotics-public-market-debut-digit-humanoid',
+    title: 'Agility Robotics Makes Historic Public Debut as First Humanoid Stock',
+    description:
+      'Agility Robotics becomes the first pure-play humanoid robot maker on Wall Street following a $465M SPAC transaction to scale Digit across logistics facilities.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Agility Robotics Makes Historic Public Debut as First Humanoid Stock',
+    date: 'November 5, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
