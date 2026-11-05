@@ -11062,6 +11062,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 792,
+    slug: 'openai-launches-gpt-6-cyber-security-model',
+    title: 'OpenAI Launches GPT-6 Cyber Model with Critical Exploit Defenses',
+    description:
+      'OpenAI introduces GPT-6 Cyber, a Critical-rated frontier cybersecurity model designed to discover zero-day exploits while curbing rogue agent behaviors.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Launches GPT-6 Cyber Model with Critical Exploit Defenses',
+    date: 'November 5, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
