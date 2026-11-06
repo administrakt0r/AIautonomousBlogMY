@@ -11107,6 +11107,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 795,
+    slug: 'hundreds-of-artex-ai-hacking-tools-exposed-online',
+    title: 'Over 800 Artex AI Hacking Agents Found Exposed Online',
+    description:
+      'Security researchers discover more than 800 misconfigured deployments of open-source autonomous AI hacking tool Artex openly accessible on the web.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Over 800 Artex AI Hacking Agents Found Exposed Online',
+    date: 'November 6, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
