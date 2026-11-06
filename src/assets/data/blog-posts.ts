@@ -11077,6 +11077,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 793,
+    slug: 'palo-alto-networks-in-talks-to-acquire-clutch-security',
+    title: 'Palo Alto Networks in Talks to Acquire Clutch Security for $500M',
+    description:
+      'Palo Alto Networks is in advanced discussions to acquire Clutch Security for $500 million, targeting non-human identity governance and runtime defenses for AI agents.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Palo Alto Networks in Talks to Acquire Clutch Security for $500M',
+    date: 'November 6, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
