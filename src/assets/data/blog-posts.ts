@@ -11077,6 +11077,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 793,
+    slug: 'palo-alto-networks-eyes-clutch-security-acquisition',
+    title: 'Palo Alto Networks to Buy AI Security Startup Clutch for $500M',
+    description:
+      'Palo Alto Networks is in advanced talks to acquire AI agent security startup Clutch Security for $500 million to protect enterprise networks from autonomous agent risks.',
+    imageUrl: getPostImagePath('palo-alto-networks-eyes-clutch-security-acquisition'),
+    imageAlt: 'Palo Alto Networks to Buy AI Security Startup Clutch for $500M',
+    date: 'November 6, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
