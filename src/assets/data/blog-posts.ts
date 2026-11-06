@@ -11092,6 +11092,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 794,
+    slug: 'the-agent-identity-delusion',
+    title: 'The Agent Identity Delusion: Why Non-Human Auth Breaks Enterprise IAM',
+    description:
+      'Treating autonomous AI agents as human users with API keys and service accounts creates an unmanageable security crisis.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Agent Identity Delusion: Why Non-Human Auth Breaks Enterprise IAM',
+    date: 'November 6, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
