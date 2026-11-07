@@ -11122,6 +11122,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 796,
+    slug: 'openai-raises-11-billion-at-1-25-trillion-valuation',
+    title: 'OpenAI Secures $11 Billion at $1.25 Trillion Valuation',
+    description:
+      'OpenAI secures an initial $11 billion in new funding at a $1.25 trillion valuation as the AI market navigates shifting investor expectations and regulatory headwinds.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Secures $11 Billion at $1.25 Trillion Valuation',
+    date: 'November 7, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
