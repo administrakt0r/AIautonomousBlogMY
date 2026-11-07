@@ -11152,6 +11152,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 798,
+    slug: 'anthropic-metr-report-ai-accelerates-ai-development',
+    title: 'Anthropic Accelerates AI Research as METR Warns of RSI Risks',
+    description:
+      'An 11-week safety audit by METR reveals Anthropic is doubling its R&D pace using internal AI models, prompting debate over recursive self-improvement and report redactions.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Accelerates AI Research as METR Warns of RSI Risks',
+    date: 'November 7, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
