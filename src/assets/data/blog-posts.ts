@@ -11122,6 +11122,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 796,
+    slug: 'open-weight-ai-models-close-cybersecurity-hacking-gap',
+    title: 'Open-Weight AI Models Match Frontier Labs in Autonomous Hacking',
+    description:
+      'Security benchmark by Vals reveals Chinese open-weight models DeepSeek and GLM rival proprietary frontier cyber agents in simulated enterprise network intrusions at 85% lower cost.',
+    imageUrl: getPostImagePath('open-weight-ai-models-close-cybersecurity-hacking-gap'),
+    imageAlt: 'Open-Weight AI Models Match Frontier Labs in Autonomous Hacking',
+    date: 'November 7, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
