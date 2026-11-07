@@ -11137,6 +11137,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 797,
+    slug: 'the-infinite-context-delusion',
+    title: 'The Infinite Context Delusion: Why More Tokens Make AI Dumber',
+    description:
+      'Why ten-million-token context windows create cognitive rot, dilute attention, and trap engineering teams in expensive architectural complacency.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Infinite Context Delusion: Why More Tokens Make AI Dumber',
+    date: 'November 7, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
