@@ -11167,6 +11167,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 799,
+    slug: 'us-approves-nvidia-chip-sales-to-chinese-front-companies',
+    title: 'US Approves Nvidia AI Chip Sales to Chinese Shell Companies',
+    description:
+      'An investigation reveals the Commerce Department cleared sales of advanced Nvidia H200 AI chips to hollow Chinese shell entities tied to blacklisted private equity firms.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'US Approves Nvidia AI Chip Sales to Chinese Shell Companies',
+    date: 'November 8, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
