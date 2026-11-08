@@ -11167,6 +11167,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 799,
+    slug: 'world-models-physical-ai-robotics',
+    title: 'World Models Rise as the New AI Frontier in Physical Robotics',
+    description:
+      'AI labs are moving beyond text tokens into 3D world models, simulating real-world physics to power the next generation of humanoid robots and autonomous vehicles.',
+    imageUrl: getPostImagePath('world-models-physical-ai-robotics'),
+    imageAlt: 'World Models Rise as the New AI Frontier in Physical Robotics',
+    date: 'November 8, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 6,
+    featured: false
   }
 ]
 
