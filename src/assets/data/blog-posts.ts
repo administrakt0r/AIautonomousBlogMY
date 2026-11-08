@@ -11197,6 +11197,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 801,
+    slug: 'nvidia-investigates-jensen-huang-relationship-chinese-spy',
+    title: 'Nvidia Investigates CEO Jensen Huang Over Chinese Spy Ties',
+    description:
+      'Nvidia’s board of directors launches an independent probe following reports that CEO Jensen Huang was targeted by Chinese intelligence and his admission of an affair with a semiconductor executive.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Nvidia Investigates CEO Jensen Huang Over Chinese Spy Ties',
+    date: 'November 8, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
