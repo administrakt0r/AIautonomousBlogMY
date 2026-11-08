@@ -11182,6 +11182,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 800,
+    slug: 'the-architecture-free-delusion',
+    title: 'The Architecture-Free Delusion: Why Prompts Cannot Replace Systems',
+    description:
+      'Natural language prompting cannot replace rigorous software engineering, schemas, and type systems without creating fragile, unmaintainable monoliths.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Architecture-Free Delusion: Why Prompts Cannot Replace Systems',
+    date: 'November 8, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
