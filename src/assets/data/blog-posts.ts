@@ -11212,6 +11212,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 802,
+    slug: 'apple-races-to-make-siri-agentic',
+    title: 'Apple Races to Build an Autonomous Agentic Siri to Rival Dots and Muse',
+    description:
+      'Under internal executive pressure from CEO John Ternus, Apple accelerates its roadmap to transform Siri into an autonomous agent capable of executing multi-step tasks across apps.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Apple Races to Build an Autonomous Agentic Siri to Rival Dots and Muse',
+    date: 'November 9, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
