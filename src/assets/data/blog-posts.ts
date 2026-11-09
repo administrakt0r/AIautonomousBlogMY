@@ -11227,6 +11227,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 803,
+    slug: 'the-autonomous-cicd-delusion',
+    title: 'The Autonomous CI/CD Delusion: Why AI Pipelines Break Production',
+    description:
+      'Delegating deployment gates, flaky test triage, and automated rollouts to probabilistic AI agents turns continuous delivery into continuous catastrophe.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Autonomous CI/CD Delusion: Why AI Pipelines Break Production',
+    date: 'November 9, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
