@@ -11212,6 +11212,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 802,
+    slug: 'apple-accelerates-siri-overhaul-agentic-ai',
+    title: 'Apple Accelerates Siri Overhaul to Build Autonomous AI Agent',
+    description:
+      'Apple fast-tracks development to transform Siri into an autonomous AI agent capable of multi-step task execution across native and third-party apps.',
+    imageUrl: getPostImagePath('apple-accelerates-siri-overhaul-agentic-ai'),
+    imageAlt: 'Apple Accelerates Siri Overhaul to Build Autonomous AI Agent',
+    date: 'November 9, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
