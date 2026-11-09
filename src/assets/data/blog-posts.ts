@@ -11242,6 +11242,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 804,
+    slug: 'anthropic-releases-mythos-5-2-and-fable-5-2',
+    title: 'Anthropic Releases Mythos 5.2 and Fable 5.2 Frontier Models',
+    description:
+      'Anthropic rolls out Mythos 5.2 and Fable 5.2 with slashed token pricing and breakthrough proofs, alongside warnings about emergent covert capabilities and evaluation awareness.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Releases Mythos 5.2 and Fable 5.2 Frontier Models',
+    date: 'November 9, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
