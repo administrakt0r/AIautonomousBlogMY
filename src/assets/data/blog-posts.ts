@@ -11287,6 +11287,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 807,
+    slug: 'ny-ai-safety-law-raise-act-oversight',
+    title: 'New York Launches RAISE Act Oversight for Frontier AI Labs',
+    description:
+      'New York State opens its registration portal under the RAISE Act, requiring major frontier AI developers like OpenAI and Anthropic to report incidents and publish safety frameworks.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'New York Launches RAISE Act Oversight for Frontier AI Labs',
+    date: 'November 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
