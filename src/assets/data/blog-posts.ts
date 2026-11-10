@@ -11257,6 +11257,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 805,
+    slug: 'meta-releases-muse-ember-agent-model',
+    title: 'Meta Releases Muse Ember Lightweight Model for AI Agent Execution',
+    description:
+      'Meta launches Muse Ember, an ultra-low cost multimodal model priced at $0.10 per million tokens built for high-throughput enterprise agent execution and tool use.',
+    imageUrl: getPostImagePath('meta-releases-muse-ember-agent-model'),
+    imageAlt: 'Meta Releases Muse Ember Lightweight Model for AI Agent Execution',
+    date: 'November 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
