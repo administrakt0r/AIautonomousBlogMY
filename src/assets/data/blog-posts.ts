@@ -11272,6 +11272,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 806,
+    slug: 'the-automated-migration-delusion',
+    title: 'The Automated Migration Delusion: Why AI Cannot Modernize Legacy Code',
+    description:
+      'Transpiling antique code into modern syntax does not modernize an architecture; it merely preserves systemic technical debt and historical operational dysfunction.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Automated Migration Delusion: Why AI Cannot Modernize Legacy Code',
+    date: 'November 10, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
