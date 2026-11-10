@@ -11257,6 +11257,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 5,
     featured: false
+  },
+  {
+    id: 805,
+    slug: 'deepmind-alphaproof-code-signal-formal-verification',
+    title: 'DeepMind AlphaProof Code Formally Verifies Signal Protocol',
+    description:
+      'Google DeepMind introduces AlphaProof Code, an agentic framework that generated six million lines of Lean proofs to mathematically verify the core Signal cryptographic protocol.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'DeepMind AlphaProof Code Formally Verifies Signal Protocol',
+    date: 'November 10, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
