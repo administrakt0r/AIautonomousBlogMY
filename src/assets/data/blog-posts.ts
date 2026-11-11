@@ -11302,6 +11302,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 808,
+    slug: 'the-automated-onboarding-delusion',
+    title: 'The Automated Onboarding Delusion: Why AI Cannot Replace Mentorship',
+    description:
+      'Replacing senior engineering mentors with synthetic coding agents creates isolated operators who lack institutional context, system resilience, and judgment.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'The Automated Onboarding Delusion: Why AI Cannot Replace Mentorship',
+    date: 'November 11, 2026',
+    category: 'Opinion',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
