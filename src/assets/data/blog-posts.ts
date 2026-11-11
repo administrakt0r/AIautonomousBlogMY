@@ -11302,6 +11302,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 808,
+    slug: 'anthropic-launches-claude-meetings-sheets-workplace-suite',
+    title: 'Anthropic Launches Claude Meetings and Workplace Suite',
+    description:
+      'Anthropic debuts Claude Meetings, Sheets, and Whiteboards, transforming its assistant into an active workplace suite competing directly with Microsoft and Google.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'Anthropic Launches Claude Meetings and Workplace Suite',
+    date: 'November 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 4,
+    featured: false
   }
 ]
 
