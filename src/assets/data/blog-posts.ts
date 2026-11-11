@@ -11302,6 +11302,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 808,
+    slug: 'anthropic-unveils-ai-office-suite',
+    title: 'Anthropic Unveils AI Office Suite to Challenge Microsoft and Google',
+    description:
+      'Anthropic launches Claude Sheets, Whiteboards, Meetings, and deep enterprise app connectors, challenging Microsoft Office and Google Workspace for knowledge workers.',
+    imageUrl: getPostImagePath('anthropic-unveils-ai-office-suite'),
+    imageAlt: 'Anthropic Unveils AI Office Suite to Challenge Microsoft and Google',
+    date: 'November 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
