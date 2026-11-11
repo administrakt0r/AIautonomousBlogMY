@@ -11317,6 +11317,21 @@ const blogPostsData: RawBlogPost[] = [
     avatarUrl: '/images/avatars/1.webp',
     readTime: 4,
     featured: false
+  },
+  {
+    id: 809,
+    slug: 'openai-quarterly-revenue-crosses-10b',
+    title: 'OpenAI Quarterly Revenue Crosses $10B Amid Enterprise AI Surge',
+    description:
+      'OpenAI records historic $10 billion in quarterly revenue as surging enterprise demand and agentic AI models drive annual run rate toward $50 billion.',
+    imageUrl: SHARED_OG_IMAGE_PATH,
+    imageAlt: 'OpenAI Quarterly Revenue Crosses $10B Amid Enterprise AI Surge',
+    date: 'November 11, 2026',
+    category: 'AI News',
+    author: 'Shtef',
+    avatarUrl: '/images/avatars/1.webp',
+    readTime: 5,
+    featured: false
   }
 ]
 
